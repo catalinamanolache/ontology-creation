@@ -7,3 +7,5 @@ pydantic
 pydantic-settings
 networkx
 chromadb
+langchain-google-genai
+python-dotenv
