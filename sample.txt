@@ -1,0 +1,544 @@
+ 
+ 
+© STM Journals 2021. All Rights Reserved 19  
+ 
+ISSN: 2349-9036   
+Volume 8, Issue 3, 2021 
+DOI (Journal): 10.37591/RRJoDDD 
+STM JOURNALS
+Research & Reviews: A Journal of 
+Drug Design & Discovery 
+ 
+http://pharmajournals.stmjournals.in/index.php/RRJoDDD/index 
+Review RRJoDDD 
+ 
+A Review on Amino Acids 
+ 
+Chandani Kamble1,*, Rohankumar Chavan2, Vikas Kamble3 
+ 
+Abstract 
+Protein is made up of amino acids, which are the building blocks of the molecule. Only 20 amino 
+acids are involved in protein synthesis, even though more than 300 amino acids have been identified. 
+In nature, all twenty amino acids did not appear at the same time. Rather, some of them appeared 
+first, while others were later incorporated into the genetic code. It is vital to include them in one's diet 
+since a lack of them causes a reduction in protein synthesis, which leads to disease. In this article, 
+amino acids, their properties, functions, and associated diseases have been elaborated. 
+ 
+Keywords: Amino acids, protein, activity, diseases  
+ 
+ 
+INTRODUCTION  
+Amino acids are the building blocks of proteins. Amino acids are a class of chemicals that contain 
+two functional groups: Amino (NH 2) and Carboxyl (COOH) ( -COOH). The amino ( -NH2) group is 
+basic, whereas the c arboxyl ( -COOH) group is acidic [1–6, 7]. Multiple processes associated with 
+gene expression are regulated by amino acids, including the control of the function of proteins that 
+mediate messenger RNA (mRNA) translation [7]. Acidic, basic, and neutral amino acids are the three 
+types of amino acids. Because some amino acids are not produced by the body, they must be 
+consumed through the food. These amino acids are referred to as essential amino acids. Some amino 
+acids are generated in the body and do not require supplementation; these amino acids are referred to 
+as non -essential amino acids. Some amino acids are generated in the body, but production is 
+insufficient; these amino acids are referred to as semi-essential amino acids [8]. 
+ 
+GENERAL STRUCTURE OF AMINO ACID 
+Amino acid, any of a group of organic molecules that contains a basic amino group (−NH 2), an 
+acidic carboxyl group (−COOH), and an organic R group (or side chain) that's unique to every amino 
+acid. The term amino acid is brief for α -amino [alpha-amino] acid. Each molecule contains a central 
+carbon (C) atom, called the α-carbon, to which both an amino and a carboxyl group are attached. The 
+remaining two bonds of the α -carbon atom are generally satisfied by a hydrogen (H) atom and the R 
+group [1–6, 9]. The key elements of an amino acid  
+are carbon (C), hydrogen (H), oxygen (O), and 
+nitrogen (N), although other elements are found 
+within the side chains of certain amino acids [9]. 
+About 500 present amino acids are known (though 
+only 20 a ppear within the genetic code) and may 
+be classified in some ways [ 10]. They will be 
+classified in step with the core structural-functional 
+groups' locations as alpha- (α-), beta- (β-), gamma- 
+(γ-) or delta- (δ-) amino acids [9]. 
+ 
+PROPERTIES OF AMINO ACIDS [4, 11, 12] 
+Physical Properties of Amino Acids 
+Solubility 
+Most of the amino acids are usually soluble in 
+water and insoluble in organic solvents. 
+*Author for Correspondence 
+Chandani Kamble 
+E-mail: chandanikamble2597@gmail.com 
+ 
+1Student, Department of Pharmaceutical Quality Assurance, 
+Ashokrao Mane College of Pharmacy, Pethvadgaon , 
+Kolhapur, Maharashtra, India  
+2Assistant Professor, Department of Chemistry, Bharati 
+Vidyapeeth College of Pharmacy, Kolhapur, Maharashtra, 
+India  
+3Student, Department of Pharmacy, Adarsh Pharmacy 
+College, Vita, Maharashtra, India 
+ 
+Received Date: September 17, 2021 
+Accepted Date: October 21, 2021 
+Published Date: November 10, 2021 
+ 
+Citation: Chandani Kamble, Rohankumar Chavan, Vikas 
+Kamble. A Review on Amino Acids . Research & Reviews: A 
+Journal of Drug Design & Discovery. 2021; 8(3): 19–27p. 
+ 
+ 
+A Review on Amino Acids                                                                                                                   Kamble et al. 
+ 
+ 
+© STM Journals 2021. All Rights Reserved 20  
+ 
+Melting Point 
+Amino acids are generally melted at a higher temperature often above 2000 C.  
+ 
+Taste 
+Amino acids are also sweet (Glycine, Alanine and Valine), tasteless (Leucine) or Bitter (Arginine & 
+Isoleucine). 
+ 
+Optical Properties 
+Optical Properties: All amino acids except glycine possess optical isomers because of the presence 
+of asymmetric α-carbon atoms and show optical activity. 
+ 
+Zwitterion and Isoelectric Point 
+Zwitterion and Isoelectric point: The name zwitter is derived from the German word which implies 
+hybrid. Zwitter ion (or) dipolar ion is a hybrid molecule containing positive & negatively ionic 
+groups. The proton shifts from the carboxyl group to the amino group of the self -molecule at normal 
+pH cellular levels. 
+ 
+Titration Curve of Glycine 
+Glycine is optically inactive, the simplest amino acid because which don't have an asymmetric carbon 
+atom. Acid-Base titration involves the gradual addition (or) removal of protons. It’s three different 
+stages when the Glycine undergoes acid-base titration. 
+ 
+Chemical Properties of Amino acids 
+Chemical reactions of amino acids due to carboxyl and amino groups.  
+ 
+Due to Carboxyl group 
+Decarboxylation 
+The amino acids will undergo alpha Decarboxylation to make the corresponding amines. 
+Histidine → Histamine + CO2 
+Tyrosine → Tyramine + CO2 
+Tryptophan → Tryptamine + CO2 
+ 
+Reaction with Alkalies (Salt formation) 
+Amino acids react with alkalies to make Salts. 
+ 
+Reaction with Alcohols (Esterification) 
+Amino acids are reacted with an alcohol to form, Ester.  
+ 
+Reaction with Ammonia: 
+The carboxyl group of dicarboxylic amino acids reacts with NH3 to form Amides. 
+Aspartic acid + NH3→ Asparagine 
+Glutamic acid + NH3→Glutamine 
+ 
+Due to Amino group 
+Reaction with Mineral acids (Salt formation) 
+When the amino acids are treated with mineral acids (like HCl), it forms Acid Salts. 
+ 
+Due to Amino and Carboxyl Group 
+Ninhydrin reaction 
+When Amino acids (or) Imino acid react with Ninhydrin molecule it gives Color. When it gives 
+Purple color (Ruhemanns Complex) the Unknown sample is Amino acids (Which have primary amine 
+NH2) or it gives Yellow color the Unknown sample is Imino acid (-NH-). 
+ 
+Research & Reviews: A Journal of Drug Design & Discovery 
+Volume 8, Issue 3 
+ISSN: 2349-9036 
+ 
+© STM Journals 2021. All Rights Reserved 21  
+ 
+Amino acid + Ninhydrin → Keto acid + NH3 + CO2 + Hydrindantin 
+Hydrindantin + NH3 + Ninhydrin → Ruhemanns purple 
+ 
+L- AND D- AMINO ACIDS  
+Only L-amino acids are manufactured in cells and incorporated into proteins. Some D -amino acids 
+are found within the cell walls of bacteria, but not in bacterial proteins. Glycine, the only amino acid, 
+has no enantiomers because it has two hydrogen atoms attached to the central carbon atom. Only if all 
+four attachments are different can enantiomers occur [1, 2]. 
+ 
+ESSENTIAL, SEMI-ESSENTIAL AND NON-ESSENTIAL AMINO ACIDS  
+Essential Amino Acids 
+These are amino acids that are not produced by the body and must be obtained through food. 
+They're also known as essential amino acids. Essential amino acid deficiency can induc e a variety of 
+disorders, including neurological breakdown, suppression of normal mental development, and even 
+death in young animals. Eight amino acids are very important for humans.  
+ E.g. Valine, Leucine, Isoleucine, Threonine, Methionine, Phenylalanine,  Tryptophan, and 
+Lysine.  
+ An adequate amount of essential amino acids are required to maintain the proper nitrogen 
+balance.  
+ 
+Semi-Essential Amino Acids 
+The body produces some of these amino acids, but not at a rate that is sufficient to meet the body's 
+demands. 
+e.g.: Arginine and Histidine.  
+ 
+Non-Essential Amino Acids 
+These are the amino acids that the human body produces. The carbon skeletons of lipids and 
+carbohydrates metabolism, as well as the transformation of necessary amino acids, provide these 
+amino acids. 12 non -essential amino acids in humans are particularly important to their health.  e.g.: 
+Alanine, Arginine, Aspartic acid, Asparagine, Cystine, Cysteine, Glutamic acid, Glutamine, Glycine, 
+Histidine, Proline, and Serine [1-5, 8].  
+ 
+CLASSIFICATION  
+Amino acids can be classified into 5 types [1-6, 13, 10] 
+a. Classification based on the structure: 
+b. Classification based on the position of-NH2: 
+c. Classification based on the Nutritional requirement: 
+d. Classification based on the Metabolic Fates 
+e. Classification based on polarity: 
+f. Classification Based On the Structure: 
+ 
+A three -letter or one -letter symbol is allocated to each amino acid. The amino acids in protein 
+structure are typically represented by these symbols. Proteins include 20 amino acids, which  are split 
+into the following classes. 
+ 
+Amino Acids with Aliphatic Side Chains 
+Monoamine monocarboxylic acids are what they're called. The simplest amino acids are glycine, 
+alanine, valine, leucine, and isoleucine, which make up this category. Because the last three amino 
+acids (leucine, isoleucine, and valine) have branched aliphatic side chains, they are known as 
+branched-chain amino acids. 
+ 
+Hydroxyl Group-containing Amino Acids 
+Serine, threonine, and tyrosine are amino acids with hydroxyl groups. Because  of its aromatic 
+character, tyrosine is frequently classified as an aromatic amino acid. 
+ 
+ 
+A Review on Amino Acids                                                                                                                   Kamble et al. 
+ 
+ 
+© STM Journals 2021. All Rights Reserved 22  
+ 
+Sulphur Containing Amino acids 
+The two amino acids absorbed during protein synthesis are cysteine with a sulfohydryl group and 
+methionine with a thioether group. 
+ 
+Acidic Amino Acids and their Amides 
+Aspartic acid and glutamic acids are dicarboxylic monoamino acids while asparagine and glutamine 
+are their respective amide derivatives.  
+ 
+Basic Amino Acids 
+The three amino acids lysine, arginine (with guanidino group) a nd histidine (with imidazole ring) 
+are dibasic monocarboxylic acids. They are highly basic in character. 
+ 
+Aromatic Amino Acids 
+Aromatic amino acids include phenylalanine, tyrosine, and tryptophan (which have an indole ring). 
+Apart from them, histidine may also fall under this category. 
+ 
+Imino Acids 
+An unusual amino acid is a proline, which has a Pyrrolidine ring. Instead of the amino group  
+(-NH2) found in other amino acids, it possesses an Imino group (=NH). As a result, proline is a -amino 
+acid. 
+ 
+Heterocyclic Amino Acids 
+Histidine, Tryptophan, and Proline. 
+ 
+Classification Based on the Position of -NH2 
+Amino acids can be classified into three types: 
+1. α-amino acid: The amino group attached to the next carbon of the carboxyl group is called α -
+amino acid. All naturally occurring amino acids are in α-L-amino acids. 
+2. Beta -amino acid : β-amino acid refers to the amino group attached to the third carbon 
+(numbering from the Carboxyl group) of amino acid. For example, one of the end products of 
+Pyrimidine catabolism is -alanine. 
+3. γ-amino acid:  γ -amino acid refers to the amino group connected to the amino acids fourth 
+carbon (numbering from the Carboxyl group). e.g. GABA (Gamma Amino Butyric Acid). 
+ 
+Classification Based On the Nutritional Requirement 
+Based on Nutritional requirements, amino acids can be divided into three types. 
+1. Essential Amino acids (EAA) 
+2. Non-Essential Amino acids (NEAA) 
+3. Semi-Essential Amino acids (SEAA) 
+ 
+Essential Amino acids (EAA)  
+In the human body, some amino acids are not synthesized. It should be obtained from food. They 
+are essential for the individual's appropriate development and maintenance [14].  
+e.g.: MATT VIL PHLy (Or) 
+PVT TIM HALL 
+M=Methionine A=Arginine T=Threonine T=Tryptophan V=Valine I=Isoleucine L=Leucine 
+P=Phenylalanine H=Histidine L=Lysine 
+ 
+Non-Essential Amino acids (NEAA) 
+To meet biological demands, the body can synthesis roughly 10 amino acids, thus they do not need 
+to be eaten in the food.  e.g.: Glycine, Alanine, Serine, Cysteine, Aspargine, Aspartic acid, Glutamic 
+acid, Glutamine, Tyrosine, and Proline. 
+ 
+Research & Reviews: A Journal of Drug Design & Discovery 
+Volume 8, Issue 3 
+ISSN: 2349-9036 
+ 
+© STM Journals 2021. All Rights Reserved 23  
+ 
+Semi-Essential Amino acid: 
+The amino acids histidine and arginine are semi -essential. They are required in the diet of growing 
+children. However, they are not required for mature individuals. 
+ 
+Classification Based On the Metabolic Fates 
+Amino acids can be classified based on the metabolic fate into three groups: 
+1. Purely ketogenic amino acids 
+2. Ketogenic and Glucogenic amino acids 
+3. Purely Glucogenic amino acids 
+ 
+Purely ketogenic amino acids 
+These amino acids can be used to make fat. Because it is transformed into ketone bodies, leucine 
+and lysine are completely ketogenic. 
+ 
+Ketogenic and Glucogenic amino acids: 
+Part of the carbon skeleton of these amino acids will enter the ketogenic pathway d uring 
+metabolism, while the other will enter the glucogenic pathway.  e.g.: Lysine, Isoleucine, 
+Phenylalanine, Tyrosine & Tryptophan are partially ketogenic and partially glucogenic. 
+ 
+Purely Glucogenic amino acids 
+These amino acids can be used as a starting  point for the production of glucose or glycogen. 
+Because they solely enter the glucogenic pathway, the remaining 14 amino acids are all fully 
+glucogenic. 
+ 
+Classification Based On Polarity: 
+Amino acids can be classified based on their polarity into four groups: 
+1. Non-polar amino acids 
+2. Polar amino acids with no charge on 'R' group 
+3. Polar amino acids with positive 'R' group 
+4. Polar amino acids with negative 'R 'group 
+ 
+Non-polar amino acids 
+These amino acids are also known as hydrophobic amino acids (water -hating) they have no charge 
+on the 'R' group. e.g.: Alanine, Leucine, Isoleucine, Valine, Methionine, Phenylalanine, Tryptophan, 
+and Proline. 
+ 
+Polar amino acids with no charge on 'R' group: 
+As a result, the 'R' group of these amino acids is uncharged. They do, however, have groups like 
+hydroxyl, sulfhydryl, and amide, and they contribute to protein structure hydrogen bonding. 
+e.g.: Glycine, Serine, Threonine, Cysteine, Glutamine, Asparagine, and Tyrosine. 
+ 
+Polar amino acids with positive 'R' group: 
+e.g.: Lysine, Arginine, and Histidine. 
+ 
+Polar amino acids with negative 'R ‘group: 
+The aromatic dicarboxylic monoamino acids-e.g.: Aspartic acid and Glutamic acid. 
+ 
+GENERAL SYNTHETIC METHODS FOR THE PREPARATION OF AMINO ACIDS  
+Streckers Synthesis  
+An aldehyde or ketone is treated with a solution of ammonium chloride and potassium cyanide in 
+this procedure (ammonium cyanide). When the product is hydrolyzed, the corresponding amino acid 
+is produced. The nucleophilic addition of ammonia to aldehyde starts the reaction. Alpha amino acids 
+ 
+ 
+A Review on Amino Acids                                                                                                                   Kamble et al. 
+ 
+ 
+© STM Journals 2021. All Rights Reserved 24  
+ 
+are produced by removing water and then adding cyanide to aldimine.  The method is useful for 
+preparing Glycine, Alanine, Serine, Valine, Methionine, Glutamic acid, Leuci ne, Isoleucine, 
+Norleucine, and Phenylalanine [13, 15, 16]. 
+ 
+Gabriel Phthalimide Synthesis 
+This approach involves treating an alpha halogenated acid ester with potassium phthalimide to 
+produce a substituted phthalimide, which when hydrolyzed yields phthalic  acid and amino acid   
+[11, 17, 18].  
+ 
+AMINO ACIDS 
+Glycine 
+Glycine is used to treat schizophrenia, stroke, sleep issues, BPH, metabolic syndrome, and a few 
+uncommon inherited metabolic illnesses. 
+ 
+Alanine 
+Alanine is utilized to boost immunity and provide the brain and central nervous system more 
+energy [15]. 
+ 
+Valine 
+L-valine is most commonly used in health supplements for its involvement in muscle synthesis and 
+maintenance. Stress management, child growth, and immune system support are some of the other 
+benefits of L-valine. 
+ 
+Leucine 
+It Increases the  physical performance or strength in the short term. Also increases  long-term 
+physical performance or preventing muscle loss in a variety of conditions, including immobility. 
+Lowering blood glucose levels in type 2 diabetes. 
+ 
+Isoleucine 
+It is required for children's optimum growth and the maintenance of nitrogen balance in adults. 
+ 
+Norleucine 
+Norleucine is an artificial amino acid that has been used to research protein structure and fu nction 
+in the lab. It has a similar structure to METHIONINE. 
+ 
+Phenylalanine 
+Depression, Parkinson's illness, multiple sclerosis, pain, acupuncture anesthesia, and osteoarthritis 
+are all treated with phenylalanine. 
+ 
+Tyrosine 
+Tyrosine is commonly utilizedin the production of thyroid hormone. Tyrosine is a supplement that 
+helps with mental performance, alertness, and memory. 
+ 
+Serine 
+Serine is particularly significant for the brain and central nervous system to function correctly. 
+ 
+Cysteine 
+In medicine, cysteine is used to boost the efficiency of corticosteroid medications.  
+ 
+Cystine 
+L-Cystine can be used in the treatment of surgery and trauma. 
+ 
+Research & Reviews: A Journal of Drug Design & Discovery 
+Volume 8, Issue 3 
+ISSN: 2349-9036 
+ 
+© STM Journals 2021. All Rights Reserved 25  
+ 
+Threonine 
+Spinal spasticity, multiple sclerosis, familial spastic paraparesis, and amyotrophic late ral sclerosis 
+are all conditions that are treated with threonine. 
+ 
+Methionine 
+Methionine is used to prevent and cure a variety of ailments, including depression, inflammation, 
+liver illness, and muscle discomfort. 
+ 
+Iodogorgic acid 
+Diiodothyronine is a horm one. It's a type of medicine. Diiodothyronine is used to help people 
+reduce weight, lower cholesterol, and develop muscle. 
+ 
+Thyroxine 
+Thyroid underactivity is treated with levothyroxine (hypothyroidism). It replaces or increases the 
+amount of thyroid hormone generated by the thyroid gland. 
+ 
+Tryptophan 
+Tryptophan has been used to treat anxiety and depression in the past. It is used to treat migraines, 
+headaches, and to boost the production of growth hormones. 
+ 
+Proline 
+One of the most important reasons to use L-proline supplements is to improve joint and skin health. 
+It could also help with muscle development and injury healing. 
+ 
+Hydroxyproline 
+Hydroxyproline is required for the formation of collagen, the body's principal structural protein. 
+ 
+Aspartic acid 
+It's occasionally used to treat stress and exhaustion. It aids in the generation of energy from 
+carbohydrates as well as the manufacturing of RNA and DNA. 
+ 
+Asparagine 
+It is necessary for brain development and function. 
+ 
+Glutamic acid 
+Glutamic acid serves as a source of energy for the brain. It improves brain clarity, mental alertness, 
+and mood. As a result, it's utilizedto treat Parkinson's, Fatigue, and Schizophrenia. 
+ 
+Beta-hydroxy glutamic acid 
+It is used to treat acne, photoaging, dry skin, psoriasis, an d melasma, among other dermatological 
+diseases. They've also been studied for fibromyalgia, dental scaling, and dry mouth, as well as the 
+prevention and treatment of urinary tract stones. 
+ 
+Glutamine 
+It's used to keep blood sugar levels under control and consistent. 
+ 
+Ornithine 
+L-ornithine is primarily used in health supplements to support sports and performance. It's also 
+utilized to help with liver function and wound healing. 
+ 
+Arginine 
+Because of its antiatherogenic, anti -ischemic, antiplatelet, and antithr ombotic effects, L-arginine is 
+a non-essential amino acid that may play an important role in the treatment of cardiovascular disease. 
+ 
+ 
+A Review on Amino Acids                                                                                                                   Kamble et al. 
+ 
+ 
+© STM Journals 2021. All Rights Reserved 26  
+ 
+Lysine 
+Lysine appears to minimize cold sores when taken orally and when applied to the skin as a cream. 
+ 
+Histidine 
+Hemoglobin has a high percentage of histidine. As a result, it is used to treat anemia. It can reduce 
+blood pressure. In baby feeding, histidine is critical. 
+ 
+AMINO ACIDS ARE USEFUL AS DRUGS 
+Certain non-standard Amino acids are used as drugs (Table 1) [1]: 
+ D-Penicillamine: It is a metabolite of penicillin. It is employed in the chelation therapy of 
+Wilson’s disease.  
+ N-Acetylcysteine: It is used in cystic fibrosis, and chronic renal insufficiency, as it can 
+function as an antioxidant. 
+ Gabapentin: It is used as anticonvulsant. 
+ 
+Table 1. Overview of amino acids. 
+Amino Acids Chemical Name Three–letter 
+abbreviation 
+One–letter 
+abbreviation 
+Glycine Amino acetic acid Gly G 
+Alanine Alpha Aminopropionic acid Ala A 
+Valine alpha-Aminoisovaleric acid Val V 
+Leucine alpha-Aminoisocaproic acid Leu L 
+Isoleucine alpha-Amino-beta-methyl n-valeric acid Ile I 
+Norleucine alpha-Amino n-caproic acid Nle - 
+Phenylalanine alpha-Amino-beta-phenyl propionic acid Phe F 
+Tyrosine alpha-Amino-beta-(p-hydroxyphenyl) propionic acid Tyr Y 
+Serine alpha-Amino-beta-hydroxypropionic acid Ser S 
+Cysteine alpha-Amino-beta-mercaptopropionic acid Csy C 
+Threonine alpha-Amino-beta-hydroxy-n-butyric acid Thr T 
+Methionine alpha-Amino-gamma-methyl-thio-n-butyric acid Met M 
+Tryptophan alpha-Amino-beta-indolepropionic acid Trp W 
+Proline Pyrrolidine-alpha-carboxylic acid Pro P 
+Hydroxyproline Gamma-Hydroxypyrolidine alpha-carboxylic acid Hyp - 
+Aspartic Acid alpha-Aminosuccinic acid Asp D 
+Asparagine alpha-Aminosuccinamic acid Asn N 
+Glutamic Acid alpha-Aminoglutaric acid Glu E 
+Beta-Hydroxy Glutamic Acid Alpha-Amino-beta-hydroxyglutaric acid Glx Z 
+Glutamine Alpha-Amino glutamic acid Gln Q 
+Ornithine alpha-delta-Diamino-n-valeric acid Orn O 
+Arginine alpha-Amino-delta-guanidino-n-valeric acid Arg R 
+Lysine alpha-Diaminocaproic acid Lys K 
+Histidine alpha-Amino-beta-imidazolepropionic acid His H 
+ 
+CONCLUSIONS 
+Amino acids are necessary for protein synthesis and have various functions in the body. It is 
+necessary to take them in the diet because their deficiency results in decreased formation of protein or 
+protein are not formed as a result protein deficiency may occur. It is concluded that amino acids play 
+important role in our body. 
+ 
+Research & Reviews: A Journal of Drug Design & Discovery 
+Volume 8, Issue 3 
+ISSN: 2349-9036 
+ 
+© STM Journals 2021. All Rights Reserved 27  
+ 
+Acknowledgments 
+The authors acknowledge the family, friends and staff members for their support and 
+encouragement in carrying work.  
+ 
+REFERENCES 
+1. Satyanarayana U, Chakrapani U, Biochemistry, 4th Edn. Books & Allied Pvt. Ltd; 2013, 44-52. 
+2. Chatwal GR, Organic Chemistry of Natural Products, 1st Edn. Vol-I, Himalaya Publishing House, 
+2005, 2.1-2.13. 
+3. Agrawal OP, Organic Chemistry of Natural Products, 4 th Edn. Vol-I, GOEL Publishing House; 
+2015, 122-137. 
+4. Deb AC, Fundamentals of Biochemistry, 10th Edn. New Central Book Agency (P) Ltd; 2016, 86. 
+5. Bahl A, Bahl AS, Advanced Organic Chemistry, 1 st Edn. S. Chand and Company Pvt. Ltd; 1977, 
+854-868. 
+6. Agarkar P, Kulkarni Y, Biochemistry, 4th Edn. Nirali Prakashan; 2015, 2.1-2.7.  
+7. National Center for Biotechnology Informat ion (2021). PubChem Compound Summary for CID 
+5950, Alanine. Retrieved August 12, 2021 from  https://pubchem.ncbi.nlm.nih.gov/ 
+compound/Alanine. 
+8. Donald AU, and Victor J H, A General Method for the Prepara tion of a-Labeled Amino Acids, J. 
+Org. Chem, 1977; Vol. 42: 13p.  
+9. KCAS. AMINO ACIDS. Available online at: https://kcasbio.com/compound-class/amino-acids/  
+10. Biochem. Amino acids – Proteins (Basic Overview). https://biochemden.com/amino -acids-
+protein-fundamental-molecules/  
+11. Akram M, Asif HM , Uzair M. et.al. Amino acids: A review article, Journal of Medicinal Plant s 
+Research, 9 September, 2011; 5(17): 3997-4000p, Available online at 
+http://www.academicjournals.org/JMPR ISSN 1996-0875 ©2011 Academic Journals.  
+12. H.D. Belitz, H. D., Grosch, W., Schieberle, P., Amino Acids, Peptides, Proteins, December 2008 
+DOI: 10.1007/978-3-540-69934-7_2 
+13. Finar IL, Organic Chemistry: Stereochemistry & the Chemistry of Natural Product, 5th Edn. Vol-I, 
+Darling Kindersley (India) Pvt. Ltd; 2013, 652-669.  
+14. Scot R, Leonard S, New functions for amino acids: effects on gen e transcription and translation,  
+Am. J. Clin. Nut, 2006; 83(2): 500-507p. 
+15. Théo Magrino, Fabio Pietrucci and A. Marco Saitta, Step by Step Strecker Amino Acid Synthesis 
+from Ab Initio Prebiotic Chemistry, J. Phys. Chem. Lett. 2021; 12(10): 2630–2637  
+16. Wu G. Amino acids: biochemistry and nutrition, Boca Raton (FL): CRC Press; 2013.  
+17. Hellwinkel D,  Systematic Nomenclature of Organic Chemistry, Springer -Verlag, Berlin und 
+Heidelberg, Germany, 2001; 209-210p.  
+18. Wikipedia. Amino acid. 23 October 2021. Available online at: 
+https://en.wikipedia.org/wiki/Amino_acid 
+ 
+ 
+ 
