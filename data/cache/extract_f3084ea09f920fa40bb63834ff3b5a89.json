@@ -1,0 +1,292 @@
+{
+  "reasoning_steps": [
+    "Identify all mentions of 'amino acids' and specific amino acids, classifying them as 'ex:AminoAcid' or its subclasses like 'ex:AcidicAminoAcid', 'ex:BasicAminoAcid', 'ex:NeutralAminoAcid', 'ex:AlphaAminoAcid', 'ex:IminoAcid'.",
+    "Identify mentions of 'protein' and classify it as 'ex:Protein'.",
+    "Identify mentions of 'disease' and classify it as 'ex:Disease'.",
+    "Identify chemical groups like 'Amino (NH 2)' and 'Carboxyl (COOH)' and classify them as 'ex:ChemicalGroup'.",
+    "Identify chemical compounds that are products of amino acid reactions, such as 'Histamine', 'Tyramine', 'Tryptamine', 'Asparagine', 'Glutamine', and classify them as 'ex:ChemicalCompound'.",
+    "Extract relations where 'amino acids' are described as 'building blocks of proteins' using 'ex:isBuildingBlockOf'.",
+    "Extract relations indicating that 'lack of amino acids causes disease' using 'ex:causesDiseaseWhenDeficient'.",
+    "Extract relations describing the chemical groups present in amino acids using 'ex:hasChemicalGroup'.",
+    "Extract relations describing characteristics of chemical groups (e.g., 'basic', 'acidic') using 'ex:hasChemicalGroupCharacteristic'.",
+    "Extract relations describing processes regulated by amino acids using 'ex:regulatesProcess'.",
+    "Extract relations specifying the melting point of amino acids using 'ex:hasMeltingPoint'.",
+    "Extract relations describing the taste of specific amino acids using 'ex:hasTaste'.",
+    "Extract relations indicating optical activity for amino acids, noting exceptions like Glycine, using 'ex:hasOpticalActivity'.",
+    "Extract relations stating that amino acids exist as zwitterions using 'ex:isZwitterion'.",
+    "Extract relations where chemical compounds are metabolites of amino acids (e.g., Histamine from Histidine) using 'ex:isMetaboliteOf'.",
+    "Re-evaluate potential 'ex:canBePreparedBy' relations. The text describes reactions *of* amino acids (decarboxylation, salt formation, esterification, amide formation) rather than methods to *synthesize* amino acids themselves. Therefore, no 'ex:canBePreparedBy' relations are extracted for amino acids based on these descriptions."
+  ],
+  "entities": [
+    {
+      "id": "protein",
+      "class_uri": "ex:Protein",
+      "evidence_span": "Protein"
+    },
+    {
+      "id": "amino_acids",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "amino acids"
+    },
+    {
+      "id": "disease",
+      "class_uri": "ex:Disease",
+      "evidence_span": "disease"
+    },
+    {
+      "id": "amino_group",
+      "class_uri": "ex:ChemicalGroup",
+      "evidence_span": "Amino (NH 2)"
+    },
+    {
+      "id": "carboxyl_group",
+      "class_uri": "ex:ChemicalGroup",
+      "evidence_span": "Carboxyl (COOH)"
+    },
+    {
+      "id": "acidic_amino_acids",
+      "class_uri": "ex:AcidicAminoAcid",
+      "evidence_span": "Acidic amino acids"
+    },
+    {
+      "id": "basic_amino_acids",
+      "class_uri": "ex:BasicAminoAcid",
+      "evidence_span": "basic amino acids"
+    },
+    {
+      "id": "neutral_amino_acids",
+      "class_uri": "ex:NeutralAminoAcid",
+      "evidence_span": "neutral amino acids"
+    },
+    {
+      "id": "alpha_amino_acid",
+      "class_uri": "ex:AlphaAminoAcid",
+      "evidence_span": "α -amino [alpha-amino] acid"
+    },
+    {
+      "id": "glycine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Glycine"
+    },
+    {
+      "id": "alanine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Alanine"
+    },
+    {
+      "id": "valine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Valine"
+    },
+    {
+      "id": "leucine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Leucine"
+    },
+    {
+      "id": "arginine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Arginine"
+    },
+    {
+      "id": "isoleucine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Isoleucine"
+    },
+    {
+      "id": "histidine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Histidine"
+    },
+    {
+      "id": "tyrosine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Tyrosine"
+    },
+    {
+      "id": "tryptophan",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Tryptophan"
+    },
+    {
+      "id": "histamine",
+      "class_uri": "ex:ChemicalCompound",
+      "evidence_span": "Histamine"
+    },
+    {
+      "id": "tyramine",
+      "class_uri": "ex:ChemicalCompound",
+      "evidence_span": "Tyramine"
+    },
+    {
+      "id": "tryptamine",
+      "class_uri": "ex:ChemicalCompound",
+      "evidence_span": "Tryptamine"
+    },
+    {
+      "id": "aspartic_acid",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Aspartic acid"
+    },
+    {
+      "id": "asparagine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Asparagine"
+    },
+    {
+      "id": "glutamic_acid",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Glutamic acid"
+    },
+    {
+      "id": "glutamine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Glutamine"
+    },
+    {
+      "id": "imino_acid",
+      "class_uri": "ex:IminoAcid",
+      "evidence_span": "Imino acid"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "amino_acids",
+      "property_uri": "ex:isBuildingBlockOf",
+      "target_id": "protein",
+      "evidence_span": "amino acids, which are the building blocks of the molecule"
+    },
+    {
+      "source_id": "amino_acids",
+      "property_uri": "ex:causesDiseaseWhenDeficient",
+      "target_id": "disease",
+      "evidence_span": "a lack of them causes a reduction in protein synthesis, which leads to disease"
+    },
+    {
+      "source_id": "amino_acids",
+      "property_uri": "ex:hasChemicalGroup",
+      "target_id": "amino_group",
+      "evidence_span": "Amino acids are a class of chemicals that contain two functional groups: Amino (NH 2)"
+    },
+    {
+      "source_id": "amino_acids",
+      "property_uri": "ex:hasChemicalGroup",
+      "target_id": "carboxyl_group",
+      "evidence_span": "Amino acids are a class of chemicals that contain two functional groups: Amino (NH 2) and Carboxyl (COOH)"
+    },
+    {
+      "source_id": "amino_group",
+      "property_uri": "ex:hasChemicalGroupCharacteristic",
+      "target_id": "basic",
+      "evidence_span": "The amino ( -NH2) group is basic"
+    },
+    {
+      "source_id": "carboxyl_group",
+      "property_uri": "ex:hasChemicalGroupCharacteristic",
+      "target_id": "acidic",
+      "evidence_span": "the c arboxyl ( -COOH) group is acidic"
+    },
+    {
+      "source_id": "amino_acids",
+      "property_uri": "ex:regulatesProcess",
+      "target_id": "gene expression",
+      "evidence_span": "Multiple processes associated with gene expression are regulated by amino acids"
+    },
+    {
+      "source_id": "amino_acids",
+      "property_uri": "ex:regulatesProcess",
+      "target_id": "control of the function of proteins that mediate messenger RNA (mRNA) translation",
+      "evidence_span": "control of the function of proteins that mediate messenger RNA (mRNA) translation"
+    },
+    {
+      "source_id": "amino_acids",
+      "property_uri": "ex:hasMeltingPoint",
+      "target_id": "above 2000 C",
+      "evidence_span": "Amino acids are generally melted at a higher temperature often above 2000 C."
+    },
+    {
+      "source_id": "glycine",
+      "property_uri": "ex:hasTaste",
+      "target_id": "sweet",
+      "evidence_span": "sweet (Glycine, Alanine and Valine)"
+    },
+    {
+      "source_id": "alanine",
+      "property_uri": "ex:hasTaste",
+      "target_id": "sweet",
+      "evidence_span": "sweet (Glycine, Alanine and Valine)"
+    },
+    {
+      "source_id": "valine",
+      "property_uri": "ex:hasTaste",
+      "target_id": "sweet",
+      "evidence_span": "sweet (Glycine, Alanine and Valine)"
+    },
+    {
+      "source_id": "leucine",
+      "property_uri": "ex:hasTaste",
+      "target_id": "tasteless",
+      "evidence_span": "tasteless (Leucine)"
+    },
+    {
+      "source_id": "arginine",
+      "property_uri": "ex:hasTaste",
+      "target_id": "Bitter",
+      "evidence_span": "Bitter (Arginine & Isoleucine)"
+    },
+    {
+      "source_id": "isoleucine",
+      "property_uri": "ex:hasTaste",
+      "target_id": "Bitter",
+      "evidence_span": "Bitter (Arginine & Isoleucine)"
+    },
+    {
+      "source_id": "amino_acids",
+      "property_uri": "ex:hasOpticalActivity",
+      "target_id": "true",
+      "evidence_span": "All amino acids except glycine possess optical isomers because of the presence of asymmetric α-carbon atoms and show optical activity."
+    },
+    {
+      "source_id": "glycine",
+      "property_uri": "ex:hasOpticalActivity",
+      "target_id": "false",
+      "evidence_span": "All amino acids except glycine possess optical isomers because of the presence of asymmetric α-carbon atoms and show optical activity."
+    },
+    {
+      "source_id": "amino_acids",
+      "property_uri": "ex:isZwitterion",
+      "target_id": "true",
+      "evidence_span": "Zwitter ion (or) dipolar ion is a hybrid molecule containing positive & negatively ionic groups."
+    },
+    {
+      "source_id": "histamine",
+      "property_uri": "ex:isMetaboliteOf",
+      "target_id": "histidine",
+      "evidence_span": "Histidine → Histamine + CO2"
+    },
+    {
+      "source_id": "tyramine",
+      "property_uri": "ex:isMetaboliteOf",
+      "target_id": "tyrosine",
+      "evidence_span": "Tyrosine → Tyramine + CO2"
+    },
+    {
+      "source_id": "tryptamine",
+      "property_uri": "ex:isMetaboliteOf",
+      "target_id": "tryptophan",
+      "evidence_span": "Tryptophan → Tryptamine + CO2"
+    },
+    {
+      "source_id": "asparagine",
+      "property_uri": "ex:isMetaboliteOf",
+      "target_id": "aspartic_acid",
+      "evidence_span": "Aspartic acid + NH3→ Asparagine"
+    },
+    {
+      "source_id": "glutamine",
+      "property_uri": "ex:isMetaboliteOf",
+      "target_id": "glutamic_acid",
+      "evidence_span": "Glutamic acid + NH3→Glutamine"
+    }
+  ]
+}

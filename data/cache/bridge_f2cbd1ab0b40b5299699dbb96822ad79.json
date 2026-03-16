@@ -1,0 +1,464 @@
+{
+  "reasoning_steps": [
+    "Identify all anchor nodes and disconnected nodes mentioned in the text.",
+    "For each identified node, determine the most specific `class_uri` from the Approved Ontology based on the textual evidence.",
+    "Extract all explicit and implicit relationships between these nodes that align with the `property_uri` definitions in the Approved Ontology.",
+    "Ensure that each extracted entity has a unique snake_case `id`, a `class_uri`, and an `evidence_span`.",
+    "Ensure that each extracted relation has a `source_id`, a `property_uri`, a `target_id`, and an `evidence_span`.",
+    "Handle cases where an amino acid belongs to multiple categories by selecting the most specific class for the entity's `class_uri` if directly stated, or `ex:AminoAcid` if only generally mentioned.",
+    "Omit relations or entities that do not have a direct mapping to the Approved Ontology classes or properties (e.g., 'anticonvulsant' or 'antioxidant' as direct properties of drugs, or 'uses' for synthesis methods)."
+  ],
+  "entities": [
+    {
+      "id": "gabapentin",
+      "class_uri": "ex:Drug",
+      "evidence_span": "Gabapentin"
+    },
+    {
+      "id": "glycine",
+      "class_uri": "ex:NeutralAminoAcid",
+      "evidence_span": "Glycine"
+    },
+    {
+      "id": "valine",
+      "class_uri": "ex:NonPolarAminoAcid",
+      "evidence_span": "Valine"
+    },
+    {
+      "id": "leucine",
+      "class_uri": "ex:NonPolarAminoAcid",
+      "evidence_span": "Leucine"
+    },
+    {
+      "id": "phenylalanine",
+      "class_uri": "ex:AromaticAminoAcid",
+      "evidence_span": "Phenylalanine"
+    },
+    {
+      "id": "threonine",
+      "class_uri": "ex:HydroxylContainingAminoAcid",
+      "evidence_span": "Threonine"
+    },
+    {
+      "id": "methionine",
+      "class_uri": "ex:SulfurContainingAminoAcid",
+      "evidence_span": "Methionine"
+    },
+    {
+      "id": "tryptophan",
+      "class_uri": "ex:AromaticAminoAcid",
+      "evidence_span": "Tryptophan"
+    },
+    {
+      "id": "glutamic_acid",
+      "class_uri": "ex:AcidicAminoAcid",
+      "evidence_span": "Glutamic Acid"
+    },
+    {
+      "id": "proteins",
+      "class_uri": "ex:Protein",
+      "evidence_span": "protein"
+    },
+    {
+      "id": "amino_acids",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Amino acids"
+    },
+    {
+      "id": "d_penicillamine",
+      "class_uri": "ex:Drug",
+      "evidence_span": "D-Penicillamine"
+    },
+    {
+      "id": "penicillin",
+      "class_uri": "ex:ChemicalCompound",
+      "evidence_span": "penicillin"
+    },
+    {
+      "id": "wilsons_disease",
+      "class_uri": "ex:Disease",
+      "evidence_span": "Wilson’s disease"
+    },
+    {
+      "id": "n_acetylcysteine",
+      "class_uri": "ex:Drug",
+      "evidence_span": "N-Acetylcysteine"
+    },
+    {
+      "id": "streckers_synthesis",
+      "class_uri": "ex:SynthesisMethod",
+      "evidence_span": "Streckers Synthesis"
+    },
+    {
+      "id": "aldehyde",
+      "class_uri": "ex:ChemicalCompound",
+      "evidence_span": "aldehyde"
+    },
+    {
+      "id": "ketone",
+      "class_uri": "ex:ChemicalCompound",
+      "evidence_span": "ketone"
+    },
+    {
+      "id": "ammonium_chloride",
+      "class_uri": "ex:ChemicalCompound",
+      "evidence_span": "ammonium chloride"
+    },
+    {
+      "id": "potassium_cyanide",
+      "class_uri": "ex:ChemicalCompound",
+      "evidence_span": "potassium cyanide"
+    },
+    {
+      "id": "ammonium_cyanide",
+      "class_uri": "ex:ChemicalCompound",
+      "evidence_span": "ammonium cyanide"
+    },
+    {
+      "id": "alpha_amino_acids",
+      "class_uri": "ex:AlphaAminoAcid",
+      "evidence_span": "Alpha amino acids"
+    },
+    {
+      "id": "aldimine",
+      "class_uri": "ex:ChemicalCompound",
+      "evidence_span": "aldimine"
+    },
+    {
+      "id": "gabriel_phthalimide_synthesis",
+      "class_uri": "ex:SynthesisMethod",
+      "evidence_span": "Gabriel Phthalimide Synthesis"
+    },
+    {
+      "id": "alpha_halogenated_acid_ester",
+      "class_uri": "ex:ChemicalCompound",
+      "evidence_span": "alpha halogenated acid ester"
+    },
+    {
+      "id": "potassium_phthalimide",
+      "class_uri": "ex:ChemicalCompound",
+      "evidence_span": "potassium phthalimide"
+    },
+    {
+      "id": "substituted_phthalimide",
+      "class_uri": "ex:ChemicalCompound",
+      "evidence_span": "substituted phthalimide"
+    },
+    {
+      "id": "schizophrenia",
+      "class_uri": "ex:Disease",
+      "evidence_span": "schizophrenia"
+    },
+    {
+      "id": "stroke",
+      "class_uri": "ex:Disease",
+      "evidence_span": "stroke"
+    },
+    {
+      "id": "sleep_issues",
+      "class_uri": "ex:Disease",
+      "evidence_span": "sleep issues"
+    },
+    {
+      "id": "bph",
+      "class_uri": "ex:Disease",
+      "evidence_span": "BPH"
+    },
+    {
+      "id": "metabolic_syndrome",
+      "class_uri": "ex:Disease",
+      "evidence_span": "metabolic syndrome"
+    },
+    {
+      "id": "inherited_metabolic_illnesses",
+      "class_uri": "ex:Disease",
+      "evidence_span": "inherited metabolic illnesses"
+    },
+    {
+      "id": "muscle_synthesis",
+      "class_uri": "xsd:string",
+      "evidence_span": "muscle synthesis"
+    },
+    {
+      "id": "muscle_maintenance",
+      "class_uri": "xsd:string",
+      "evidence_span": "maintenance"
+    },
+    {
+      "id": "stress_management",
+      "class_uri": "xsd:string",
+      "evidence_span": "Stress management"
+    },
+    {
+      "id": "child_growth",
+      "class_uri": "xsd:string",
+      "evidence_span": "child growth"
+    },
+    {
+      "id": "immune_system_support",
+      "class_uri": "xsd:string",
+      "evidence_span": "immune system support"
+    },
+    {
+      "id": "physical_performance",
+      "class_uri": "xsd:string",
+      "evidence_span": "physical performance"
+    },
+    {
+      "id": "preventing_muscle_loss",
+      "class_uri": "xsd:string",
+      "evidence_span": "preventing muscle loss"
+    },
+    {
+      "id": "lowering_blood_glucose_levels",
+      "class_uri": "xsd:string",
+      "evidence_span": "Lowering blood glucose levels"
+    },
+    {
+      "id": "type_2_diabetes",
+      "class_uri": "ex:Disease",
+      "evidence_span": "type 2 diabetes"
+    },
+    {
+      "id": "disorders",
+      "class_uri": "ex:Disease",
+      "evidence_span": "disorders"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "amino_acids",
+      "property_uri": "ex:isBuildingBlockOf",
+      "target_id": "proteins",
+      "evidence_span": "Amino acids are necessary for protein synthesis"
+    },
+    {
+      "source_id": "glycine",
+      "property_uri": "ex:isBuildingBlockOf",
+      "target_id": "proteins",
+      "evidence_span": "glycine, alanine, valine, leucine, and isoleucine, which make up this category. ... Proteins include 20 amino acids"
+    },
+    {
+      "source_id": "valine",
+      "property_uri": "ex:isBuildingBlockOf",
+      "target_id": "proteins",
+      "evidence_span": "glycine, alanine, valine, leucine, and isoleucine, which make up this category. ... Proteins include 20 amino acids"
+    },
+    {
+      "source_id": "leucine",
+      "property_uri": "ex:isBuildingBlockOf",
+      "target_id": "proteins",
+      "evidence_span": "glycine, alanine, valine, leucine, and isoleucine, which make up this category. ... Proteins include 20 amino acids"
+    },
+    {
+      "source_id": "threonine",
+      "property_uri": "ex:isBuildingBlockOf",
+      "target_id": "proteins",
+      "evidence_span": "Serine, threonine, and tyrosine are amino acids with hydroxyl groups. ... Proteins include 20 amino acids"
+    },
+    {
+      "source_id": "methionine",
+      "property_uri": "ex:isBuildingBlockOf",
+      "target_id": "proteins",
+      "evidence_span": "methionine with a thioether group. ... Proteins include 20 amino acids"
+    },
+    {
+      "source_id": "tryptophan",
+      "property_uri": "ex:isBuildingBlockOf",
+      "target_id": "proteins",
+      "evidence_span": "tryptophan (which have an indole ring). ... Proteins include 20 amino acids"
+    },
+    {
+      "source_id": "phenylalanine",
+      "property_uri": "ex:isBuildingBlockOf",
+      "target_id": "proteins",
+      "evidence_span": "phenylalanine, tyrosine, and tryptophan ... Proteins include 20 amino acids"
+    },
+    {
+      "source_id": "glutamic_acid",
+      "property_uri": "ex:isBuildingBlockOf",
+      "target_id": "proteins",
+      "evidence_span": "Glutamic acid ... Proteins include 20 amino acids"
+    },
+    {
+      "source_id": "d_penicillamine",
+      "property_uri": "ex:isMetaboliteOf",
+      "target_id": "penicillin",
+      "evidence_span": "D-Penicillamine: It is a metabolite of penicillin."
+    },
+    {
+      "source_id": "d_penicillamine",
+      "property_uri": "ex:treatsDisease",
+      "target_id": "wilsons_disease",
+      "evidence_span": "It is employed in the chelation therapy of Wilson’s disease."
+    },
+    {
+      "source_id": "alpha_amino_acids",
+      "property_uri": "ex:canBePreparedBy",
+      "target_id": "streckers_synthesis",
+      "evidence_span": "GENERAL SYNTHETIC METHODS FOR THE PREPARATION OF AMINO ACIDS Streckers Synthesis ... Alpha amino acids ... are produced"
+    },
+    {
+      "source_id": "glycine",
+      "property_uri": "ex:canBePreparedBy",
+      "target_id": "streckers_synthesis",
+      "evidence_span": "The method is useful for preparing Glycine"
+    },
+    {
+      "source_id": "valine",
+      "property_uri": "ex:canBePreparedBy",
+      "target_id": "streckers_synthesis",
+      "evidence_span": "The method is useful for preparing ... Valine"
+    },
+    {
+      "source_id": "methionine",
+      "property_uri": "ex:canBePreparedBy",
+      "target_id": "streckers_synthesis",
+      "evidence_span": "The method is useful for preparing ... Methionine"
+    },
+    {
+      "source_id": "glutamic_acid",
+      "property_uri": "ex:canBePreparedBy",
+      "target_id": "streckers_synthesis",
+      "evidence_span": "The method is useful for preparing ... Glutamic acid"
+    },
+    {
+      "source_id": "leucine",
+      "property_uri": "ex:canBePreparedBy",
+      "target_id": "streckers_synthesis",
+      "evidence_span": "The method is useful for preparing ... Leucine"
+    },
+    {
+      "source_id": "phenylalanine",
+      "property_uri": "ex:canBePreparedBy",
+      "target_id": "streckers_synthesis",
+      "evidence_span": "The method is useful for preparing ... Phenylalanine"
+    },
+    {
+      "source_id": "amino_acids",
+      "property_uri": "ex:canBePreparedBy",
+      "target_id": "gabriel_phthalimide_synthesis",
+      "evidence_span": "Gabriel Phthalimide Synthesis This approach ... yields phthalic acid and amino acid"
+    },
+    {
+      "source_id": "glycine",
+      "property_uri": "ex:treatsDisease",
+      "target_id": "schizophrenia",
+      "evidence_span": "Glycine is used to treat schizophrenia"
+    },
+    {
+      "source_id": "glycine",
+      "property_uri": "ex:treatsDisease",
+      "target_id": "stroke",
+      "evidence_span": "Glycine is used to treat schizophrenia, stroke"
+    },
+    {
+      "source_id": "glycine",
+      "property_uri": "ex:treatsDisease",
+      "target_id": "sleep_issues",
+      "evidence_span": "Glycine is used to treat schizophrenia, stroke, sleep issues"
+    },
+    {
+      "source_id": "glycine",
+      "property_uri": "ex:treatsDisease",
+      "target_id": "bph",
+      "evidence_span": "Glycine is used to treat schizophrenia, stroke, sleep issues, BPH"
+    },
+    {
+      "source_id": "glycine",
+      "property_uri": "ex:treatsDisease",
+      "target_id": "metabolic_syndrome",
+      "evidence_span": "Glycine is used to treat schizophrenia, stroke, sleep issues, BPH, metabolic syndrome"
+    },
+    {
+      "source_id": "glycine",
+      "property_uri": "ex:treatsDisease",
+      "target_id": "inherited_metabolic_illnesses",
+      "evidence_span": "Glycine is used to treat schizophrenia, stroke, sleep issues, BPH, metabolic syndrome, and a few uncommon inherited metabolic illnesses."
+    },
+    {
+      "source_id": "valine",
+      "property_uri": "ex:regulatesProcess",
+      "target_id": "muscle_synthesis",
+      "evidence_span": "L-valine is most commonly used in health supplements for its involvement in muscle synthesis"
+    },
+    {
+      "source_id": "valine",
+      "property_uri": "ex:regulatesProcess",
+      "target_id": "muscle_maintenance",
+      "evidence_span": "muscle synthesis and maintenance"
+    },
+    {
+      "source_id": "valine",
+      "property_uri": "ex:regulatesProcess",
+      "target_id": "stress_management",
+      "evidence_span": "Stress management"
+    },
+    {
+      "source_id": "valine",
+      "property_uri": "ex:regulatesProcess",
+      "target_id": "child_growth",
+      "evidence_span": "child growth"
+    },
+    {
+      "source_id": "valine",
+      "property_uri": "ex:regulatesProcess",
+      "target_id": "immune_system_support",
+      "evidence_span": "immune system support"
+    },
+    {
+      "source_id": "leucine",
+      "property_uri": "ex:regulatesProcess",
+      "target_id": "physical_performance",
+      "evidence_span": "Leucine It Increases the physical performance or strength"
+    },
+    {
+      "source_id": "leucine",
+      "property_uri": "ex:regulatesProcess",
+      "target_id": "preventing_muscle_loss",
+      "evidence_span": "preventing muscle loss"
+    },
+    {
+      "source_id": "leucine",
+      "property_uri": "ex:regulatesProcess",
+      "target_id": "lowering_blood_glucose_levels",
+      "evidence_span": "Lowering blood glucose levels in type 2 diabetes"
+    },
+    {
+      "source_id": "valine",
+      "property_uri": "ex:causesDiseaseWhenDeficient",
+      "target_id": "disorders",
+      "evidence_span": "Essential amino acid deficiency can induce a variety of disorders, including neurological breakdown... E.g. Valine"
+    },
+    {
+      "source_id": "leucine",
+      "property_uri": "ex:causesDiseaseWhenDeficient",
+      "target_id": "disorders",
+      "evidence_span": "Essential amino acid deficiency can induce a variety of disorders, including neurological breakdown... E.g. Valine, Leucine"
+    },
+    {
+      "source_id": "threonine",
+      "property_uri": "ex:causesDiseaseWhenDeficient",
+      "target_id": "disorders",
+      "evidence_span": "Essential amino acid deficiency can induce a variety of disorders, including neurological breakdown... E.g. Valine, Leucine, Isoleucine, Threonine"
+    },
+    {
+      "source_id": "methionine",
+      "property_uri": "ex:causesDiseaseWhenDeficient",
+      "target_id": "disorders",
+      "evidence_span": "Essential amino acid deficiency can induce a variety of disorders, including neurological breakdown... E.g. Valine, Leucine, Isoleucine, Threonine, Methionine"
+    },
+    {
+      "source_id": "phenylalanine",
+      "property_uri": "ex:causesDiseaseWhenDeficient",
+      "target_id": "disorders",
+      "evidence_span": "Essential amino acid deficiency can induce a variety of disorders, including neurological breakdown... E.g. Valine, Leucine, Isoleucine, Threonine, Methionine, Phenylalanine"
+    },
+    {
+      "source_id": "tryptophan",
+      "property_uri": "ex:causesDiseaseWhenDeficient",
+      "target_id": "disorders",
+      "evidence_span": "Essential amino acid deficiency can induce a variety of disorders, including neurological breakdown... E.g. Valine, Leucine, Isoleucine, Threonine, Methionine, Phenylalanine, Tryptophan"
+    }
+  ]
+}

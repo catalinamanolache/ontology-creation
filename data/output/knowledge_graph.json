@@ -1,0 +1,2722 @@
+{
+    "directed": true,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "entity",
+            "class_uri": "ex:Protein",
+            "label": "protein",
+            "id": "protein"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:AminoAcid",
+            "label": "Amino acids",
+            "id": "amino_acids"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:Disease",
+            "label": "disease",
+            "id": "disease"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:ChemicalGroup",
+            "label": "amino group (-NH2)",
+            "id": "amino_group"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:ChemicalGroup",
+            "label": "Carboxyl (COOH)",
+            "id": "carboxyl_group"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:AcidicAminoAcid",
+            "label": "Acidic amino acids",
+            "id": "acidic_amino_acids"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:BasicAminoAcid",
+            "label": "basic amino acids",
+            "id": "basic_amino_acids"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:NeutralAminoAcid",
+            "label": "neutral amino acids",
+            "id": "neutral_amino_acids"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:AlphaAminoAcid",
+            "label": "\u03b1-amino acid",
+            "id": "alpha_amino_acid"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:PolarAminoAcid",
+            "label": "Glycine",
+            "id": "glycine"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:AminoAcid",
+            "label": "Alanine",
+            "id": "alanine"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:NonPolarAminoAcid",
+            "label": "Valine",
+            "id": "valine"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:NonPolarAminoAcid",
+            "label": "Leucine",
+            "id": "leucine"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:AminoAcid",
+            "label": "Arginine",
+            "id": "arginine"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:AminoAcid",
+            "label": "Isoleucine",
+            "id": "isoleucine"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:AminoAcid",
+            "label": "Histidine",
+            "id": "histidine"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:AminoAcid",
+            "label": "Tyrosine",
+            "id": "tyrosine"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:NonPolarAminoAcid",
+            "label": "Tryptophan",
+            "id": "tryptophan"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:ChemicalCompound",
+            "label": "Histamine",
+            "id": "histamine"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:ChemicalCompound",
+            "label": "Tyramine",
+            "id": "tyramine"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:ChemicalCompound",
+            "label": "Tryptamine",
+            "id": "tryptamine"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:AminoAcid",
+            "label": "Aspartic Acid",
+            "id": "aspartic_acid"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:AminoAcid",
+            "label": "Asparagine",
+            "id": "asparagine"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:PolarAminoAcid",
+            "label": "Glutamic Acid",
+            "id": "glutamic_acid"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:AminoAcid",
+            "label": "Glutamine",
+            "id": "glutamine"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:IminoAcid",
+            "label": "Imino Acids",
+            "id": "imino_acid"
+        },
+        {
+            "id": "basic"
+        },
+        {
+            "id": "acidic"
+        },
+        {
+            "id": "gene expression"
+        },
+        {
+            "id": "control of the function of proteins that mediate messenger RNA (mRNA) translation"
+        },
+        {
+            "id": "above 2000 C"
+        },
+        {
+            "id": "sweet"
+        },
+        {
+            "id": "tasteless"
+        },
+        {
+            "id": "Bitter"
+        },
+        {
+            "id": "true"
+        },
+        {
+            "id": "false"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:PolarAminoAcid",
+            "label": "Threonine",
+            "id": "threonine"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:NonPolarAminoAcid",
+            "label": "Methionine",
+            "id": "methionine"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:NonPolarAminoAcid",
+            "label": "Phenylalanine",
+            "id": "phenylalanine"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:AminoAcid",
+            "label": "Lysine",
+            "id": "lysine"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:AminoAcid",
+            "label": "Cystine",
+            "id": "cystine"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:AminoAcid",
+            "label": "Cysteine",
+            "id": "cysteine"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:AminoAcid",
+            "label": "Proline",
+            "id": "proline"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:AminoAcid",
+            "label": "Serine",
+            "id": "serine"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:Protein",
+            "label": "proteins",
+            "id": "proteins"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:Disease",
+            "label": "neurological breakdown",
+            "id": "neurological_breakdown"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:Disease",
+            "label": "suppression of normal mental development",
+            "id": "suppression_of_normal_mental_development"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:Disease",
+            "label": "death",
+            "id": "death"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:ChemicalGroup",
+            "label": "hydroxyl",
+            "id": "hydroxyl_group"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:ChemicalGroup",
+            "label": "sulfohydryl group",
+            "id": "sulfohydryl_group"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:ChemicalGroup",
+            "label": "thioether group",
+            "id": "thioether_group"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:ChemicalGroup",
+            "label": "guanidino group",
+            "id": "guanidino_group"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:ChemicalGroup",
+            "label": "imidazole ring",
+            "id": "imidazole_ring"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:ChemicalGroup",
+            "label": "indole ring",
+            "id": "indole_ring"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:ChemicalGroup",
+            "label": "Pyrrolidine ring",
+            "id": "pyrrolidine_ring"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:ChemicalGroup",
+            "label": "Imino group (=NH)",
+            "id": "imino_group"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:AminoAcid",
+            "label": "\u03b2-alanine",
+            "id": "beta_alanine"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:AminoAcid",
+            "label": "GABA (Gamma Amino Butyric Acid)",
+            "id": "gaba"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:AlphaAminoAcid",
+            "label": "Alpha amino acids",
+            "id": "alpha_amino_acid_class"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:PolarAminoAcid",
+            "label": "Polar amino acids",
+            "id": "polar_amino_acid_class"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:NeutralAminoAcid",
+            "label": "neutral amino acids",
+            "id": "neutral_amino_acid_class"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:SynthesisMethod",
+            "label": "Streckers Synthesis",
+            "id": "streckers_synthesis"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:ChemicalCompound",
+            "label": "aldehyde",
+            "id": "aldehyde"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:ChemicalCompound",
+            "label": "ketone",
+            "id": "ketone"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:ChemicalCompound",
+            "label": "ammonium chloride",
+            "id": "ammonium_chloride"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:ChemicalCompound",
+            "label": "potassium cyanide",
+            "id": "potassium_cyanide"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:ChemicalCompound",
+            "label": "ammonium cyanide",
+            "id": "ammonium_cyanide"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:AlphaAminoAcid",
+            "label": "Alpha amino acids",
+            "id": "alpha_amino_acids"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:ChemicalCompound",
+            "label": "aldimine",
+            "id": "aldimine"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:AminoAcid",
+            "label": "Norleucine",
+            "id": "norleucine"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:SynthesisMethod",
+            "label": "Gabriel Phthalimide Synthesis",
+            "id": "gabriel_phthalimide_synthesis"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:ChemicalCompound",
+            "label": "alpha halogenated acid ester",
+            "id": "alpha_halogenated_acid_ester"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:ChemicalCompound",
+            "label": "potassium phthalimide",
+            "id": "potassium_phthalimide"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:ChemicalCompound",
+            "label": "substituted phthalimide",
+            "id": "substituted_phthalimide"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:ChemicalCompound",
+            "label": "phthalic acid",
+            "id": "phthalic_acid"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:Disease",
+            "label": "schizophrenia",
+            "id": "schizophrenia"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:Disease",
+            "label": "stroke",
+            "id": "stroke"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:Disease",
+            "label": "sleep issues",
+            "id": "sleep_issues"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:Disease",
+            "label": "BPH",
+            "id": "bph"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:Disease",
+            "label": "metabolic syndrome",
+            "id": "metabolic_syndrome"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:Disease",
+            "label": "uncommon inherited metabolic illnesses",
+            "id": "uncommon_inherited_metabolic_illnesses"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:Disease",
+            "label": "type 2 diabetes",
+            "id": "type_2_diabetes"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:Disease",
+            "label": "Depression",
+            "id": "depression"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:Disease",
+            "label": "Parkinson's illness",
+            "id": "parkinsons_illness"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:Disease",
+            "label": "multiple sclerosis",
+            "id": "multiple_sclerosis"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:Disease",
+            "label": "pain",
+            "id": "pain"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:Disease",
+            "label": "acupuncture anesthesia",
+            "id": "acupuncture_anesthesia"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:Disease",
+            "label": "osteoarthritis",
+            "id": "osteoarthritis"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:Disease",
+            "label": "surgery",
+            "id": "surgery"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:Disease",
+            "label": "trauma",
+            "id": "trauma"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:Disease",
+            "label": "Spinal spasticity",
+            "id": "spinal_spasticity"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:Disease",
+            "label": "familial spastic paraparesis",
+            "id": "familial_spastic_paraparesis"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:Disease",
+            "label": "amyotrophic lateral sclerosis",
+            "id": "amyotrophic_lateral_sclerosis"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:Disease",
+            "label": "inflammation",
+            "id": "inflammation"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:Disease",
+            "label": "liver illness",
+            "id": "liver_illness"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:Disease",
+            "label": "muscle discomfort",
+            "id": "muscle_discomfort"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:AminoAcid",
+            "label": "Iodogorgic acid",
+            "id": "iodogorgic_acid"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:Drug",
+            "label": "Diiodothyronine",
+            "id": "diiodothyronine"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:AminoAcid",
+            "label": "Thyroxine",
+            "id": "thyroxine"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:Drug",
+            "label": "levothyroxine",
+            "id": "levothyroxine"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:Disease",
+            "label": "Thyroid underactivity (hypothyroidism)",
+            "id": "thyroid_underactivity_hypothyroidism"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:Disease",
+            "label": "anxiety",
+            "id": "anxiety"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:Disease",
+            "label": "migraines",
+            "id": "migraines"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:Disease",
+            "label": "headaches",
+            "id": "headaches"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:AminoAcid",
+            "label": "Hydroxyproline",
+            "id": "hydroxyproline"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:Disease",
+            "label": "stress",
+            "id": "stress"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:Disease",
+            "label": "exhaustion",
+            "id": "exhaustion"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:Disease",
+            "label": "Parkinson's",
+            "id": "parkinsons"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:Disease",
+            "label": "Fatigue",
+            "id": "fatigue"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:AminoAcid",
+            "label": "Beta-Hydroxy Glutamic Acid",
+            "id": "beta_hydroxy_glutamic_acid"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:Disease",
+            "label": "acne",
+            "id": "acne"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:Disease",
+            "label": "photoaging",
+            "id": "photoaging"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:Disease",
+            "label": "dry skin",
+            "id": "dry_skin"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:Disease",
+            "label": "psoriasis",
+            "id": "psoriasis"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:Disease",
+            "label": "melasma",
+            "id": "melasma"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:Disease",
+            "label": "fibromyalgia",
+            "id": "fibromyalgia"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:Disease",
+            "label": "dental scaling",
+            "id": "dental_scaling"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:Disease",
+            "label": "dry mouth",
+            "id": "dry_mouth"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:Disease",
+            "label": "urinary tract stones",
+            "id": "urinary_tract_stones"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:AminoAcid",
+            "label": "Ornithine",
+            "id": "ornithine"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:Disease",
+            "label": "cardiovascular disease",
+            "id": "cardiovascular_disease"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:Disease",
+            "label": "cold sores",
+            "id": "cold_sores"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:Disease",
+            "label": "anemia",
+            "id": "anemia"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:Drug",
+            "label": "D-Penicillamine",
+            "id": "d_penicillamine"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:ChemicalCompound",
+            "label": "penicillin",
+            "id": "penicillin"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:Disease",
+            "label": "Wilson\u2019s disease",
+            "id": "wilsons_disease"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:ChemicalGroup",
+            "label": "sulfhydryl",
+            "id": "sulfhydryl_group"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:ChemicalGroup",
+            "label": "amide",
+            "id": "amide_group"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:ChemicalGroup",
+            "label": "aromatic ring structure",
+            "id": "aromatic_ring_structure"
+        },
+        {
+            "id": "Lowering blood glucose levels"
+        },
+        {
+            "id": "reduce weight"
+        },
+        {
+            "id": "lower cholesterol"
+        },
+        {
+            "id": "develop muscle"
+        },
+        {
+            "id": "boost the production of growth hormones"
+        },
+        {
+            "id": "improve joint and skin health"
+        },
+        {
+            "id": "muscle development"
+        },
+        {
+            "id": "injury healing"
+        },
+        {
+            "id": "formation of collagen"
+        },
+        {
+            "id": "generation of energy from carbohydrates"
+        },
+        {
+            "id": "manufacturing of RNA and DNA"
+        },
+        {
+            "id": "brain development and function"
+        },
+        {
+            "id": "source of energy for the brain"
+        },
+        {
+            "id": "improves brain clarity"
+        },
+        {
+            "id": "mental alertness"
+        },
+        {
+            "id": "mood"
+        },
+        {
+            "id": "keep blood sugar levels under control and consistent"
+        },
+        {
+            "id": "support sports and performance"
+        },
+        {
+            "id": "liver function"
+        },
+        {
+            "id": "wound healing"
+        },
+        {
+            "id": "boost immunity"
+        },
+        {
+            "id": "provide the brain and central nervous system more energy"
+        },
+        {
+            "id": "muscle synthesis and maintenance"
+        },
+        {
+            "id": "stress management"
+        },
+        {
+            "id": "child growth"
+        },
+        {
+            "id": "immune system support"
+        },
+        {
+            "id": "Increases the physical performance or strength"
+        },
+        {
+            "id": "preventing muscle loss"
+        },
+        {
+            "id": "children's optimum growth"
+        },
+        {
+            "id": "maintenance of nitrogen balance"
+        },
+        {
+            "id": "production of thyroid hormone"
+        },
+        {
+            "id": "mental performance"
+        },
+        {
+            "id": "alertness"
+        },
+        {
+            "id": "memory"
+        },
+        {
+            "id": "brain and central nervous system to function correctly"
+        },
+        {
+            "id": "boost the efficiency of corticosteroid medications"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:Drug",
+            "label": "D-Penicillamine",
+            "id": "d_penicillamine_drug"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:Disease",
+            "label": "Wilson\u2019s disease",
+            "id": "wilson_s_disease"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:Drug",
+            "label": "N-Acetylcysteine",
+            "id": "n_acetylcysteine"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:Drug",
+            "label": "N-Acetylcysteine",
+            "id": "n_acetylcysteine_drug"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:Disease",
+            "label": "cystic fibrosis",
+            "id": "cystic_fibrosis"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:Disease",
+            "label": "chronic renal insufficiency",
+            "id": "chronic_renal_insufficiency"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:Drug",
+            "label": "Gabapentin",
+            "id": "gabapentin"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:Drug",
+            "label": "Gabapentin",
+            "id": "gabapentin_drug"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:AlphaAminoAcid",
+            "label": "Glycine",
+            "id": "glycine_alpha"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:NeutralAminoAcid",
+            "label": "Glycine",
+            "id": "glycine_neutral"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:NonPolarAminoAcid",
+            "label": "Glycine",
+            "id": "glycine_nonpolar"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:ChemicalCompound",
+            "label": "Amino acetic acid",
+            "id": "amino_acetic_acid"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:AlphaAminoAcid",
+            "label": "Alanine",
+            "id": "alanine_alpha"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:NeutralAminoAcid",
+            "label": "Alanine",
+            "id": "alanine_neutral"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:NonPolarAminoAcid",
+            "label": "Alanine",
+            "id": "alanine_nonpolar"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:ChemicalCompound",
+            "label": "Alpha Aminopropionic acid",
+            "id": "alpha_aminopropionic_acid"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:AlphaAminoAcid",
+            "label": "Valine",
+            "id": "valine_alpha"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:NeutralAminoAcid",
+            "label": "Valine",
+            "id": "valine_neutral"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:NonPolarAminoAcid",
+            "label": "Valine",
+            "id": "valine_nonpolar"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:ChemicalCompound",
+            "label": "alpha-Aminoisovaleric acid",
+            "id": "alpha_aminoisovaleric_acid"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:AlphaAminoAcid",
+            "label": "Leucine",
+            "id": "leucine_alpha"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:NeutralAminoAcid",
+            "label": "Leucine",
+            "id": "leucine_neutral"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:NonPolarAminoAcid",
+            "label": "Leucine",
+            "id": "leucine_nonpolar"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:ChemicalCompound",
+            "label": "alpha-Aminoisocaproic acid",
+            "id": "alpha_aminoisocaproic_acid"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:AlphaAminoAcid",
+            "label": "Isoleucine",
+            "id": "isoleucine_alpha"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:NeutralAminoAcid",
+            "label": "Isoleucine",
+            "id": "isoleucine_neutral"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:NonPolarAminoAcid",
+            "label": "Isoleucine",
+            "id": "isoleucine_nonpolar"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:ChemicalCompound",
+            "label": "alpha-Amino-beta-methyl n-valeric acid",
+            "id": "alpha_amino_beta_methyl_n_valeric_acid"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:AlphaAminoAcid",
+            "label": "Norleucine",
+            "id": "norleucine_alpha"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:NeutralAminoAcid",
+            "label": "Norleucine",
+            "id": "norleucine_neutral"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:NonPolarAminoAcid",
+            "label": "Norleucine",
+            "id": "norleucine_nonpolar"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:ChemicalCompound",
+            "label": "alpha-Amino n-caproic acid",
+            "id": "alpha_amino_n_caproic_acid"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:AlphaAminoAcid",
+            "label": "Phenylalanine",
+            "id": "phenylalanine_alpha"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:AromaticAminoAcid",
+            "label": "Phenylalanine",
+            "id": "phenylalanine_aromatic"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:NonPolarAminoAcid",
+            "label": "Phenylalanine",
+            "id": "phenylalanine_nonpolar"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:ChemicalCompound",
+            "label": "alpha-Amino-beta-phenyl propionic acid",
+            "id": "alpha_amino_beta_phenyl_propionic_acid"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:AlphaAminoAcid",
+            "label": "Tyrosine",
+            "id": "tyrosine_alpha"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:AromaticAminoAcid",
+            "label": "Tyrosine",
+            "id": "tyrosine_aromatic"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:PolarAminoAcid",
+            "label": "Tyrosine",
+            "id": "tyrosine_polar"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:HydroxylContainingAminoAcid",
+            "label": "Tyrosine",
+            "id": "tyrosine_hydroxyl"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:ChemicalCompound",
+            "label": "alpha-Amino-beta-(p-hydroxyphenyl) propionic acid",
+            "id": "alpha_amino_beta_p_hydroxyphenyl_propionic_acid"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:AlphaAminoAcid",
+            "label": "Serine",
+            "id": "serine_alpha"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:PolarAminoAcid",
+            "label": "Serine",
+            "id": "serine_polar"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:HydroxylContainingAminoAcid",
+            "label": "Serine",
+            "id": "serine_hydroxyl"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:ChemicalCompound",
+            "label": "alpha-Amino-beta-hydroxypropionic acid",
+            "id": "alpha_amino_beta_hydroxypropionic_acid"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:AlphaAminoAcid",
+            "label": "Cysteine",
+            "id": "cysteine_alpha"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:PolarAminoAcid",
+            "label": "Cysteine",
+            "id": "cysteine_polar"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:SulfurContainingAminoAcid",
+            "label": "Cysteine",
+            "id": "cysteine_sulfur"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:ChemicalCompound",
+            "label": "alpha-Amino-beta-mercaptopropionic acid",
+            "id": "alpha_amino_beta_mercaptopropionic_acid"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:AlphaAminoAcid",
+            "label": "Threonine",
+            "id": "threonine_alpha"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:PolarAminoAcid",
+            "label": "Threonine",
+            "id": "threonine_polar"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:HydroxylContainingAminoAcid",
+            "label": "Threonine",
+            "id": "threonine_hydroxyl"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:ChemicalCompound",
+            "label": "alpha-Amino-beta-hydroxy-n-butyric acid",
+            "id": "alpha_amino_beta_hydroxy_n_butyric_acid"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:AlphaAminoAcid",
+            "label": "Methionine",
+            "id": "methionine_alpha"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:NonPolarAminoAcid",
+            "label": "Methionine",
+            "id": "methionine_nonpolar"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:SulfurContainingAminoAcid",
+            "label": "Methionine",
+            "id": "methionine_sulfur"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:ChemicalCompound",
+            "label": "alpha-Amino-gamma-methyl-thio-n-butyric acid",
+            "id": "alpha_amino_gamma_methyl_thio_n_butyric_acid"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:AlphaAminoAcid",
+            "label": "Tryptophan",
+            "id": "tryptophan_alpha"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:AromaticAminoAcid",
+            "label": "Tryptophan",
+            "id": "tryptophan_aromatic"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:PolarAminoAcid",
+            "label": "Tryptophan",
+            "id": "tryptophan_polar"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:HeterocyclicAminoAcid",
+            "label": "Tryptophan",
+            "id": "tryptophan_heterocyclic"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:ChemicalCompound",
+            "label": "alpha-Amino-beta-indolepropionic acid",
+            "id": "alpha_amino_beta_indolepropionic_acid"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:IminoAcid",
+            "label": "Proline",
+            "id": "proline_imino"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:HeterocyclicAminoAcid",
+            "label": "Proline",
+            "id": "proline_heterocyclic"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:ChemicalCompound",
+            "label": "Pyrrolidine-alpha-carboxylic acid",
+            "id": "pyrrolidine_alpha_carboxylic_acid"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:IminoAcid",
+            "label": "Hydroxyproline",
+            "id": "hydroxyproline_imino"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:HydroxylContainingAminoAcid",
+            "label": "Hydroxyproline",
+            "id": "hydroxyproline_hydroxyl"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:ChemicalCompound",
+            "label": "Gamma-Hydroxypyrolidine alpha-carboxylic acid",
+            "id": "gamma_hydroxypyrolidine_alpha_carboxylic_acid"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:AlphaAminoAcid",
+            "label": "Aspartic Acid",
+            "id": "aspartic_acid_alpha"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:AcidicAminoAcid",
+            "label": "Aspartic Acid",
+            "id": "aspartic_acid_acidic"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:ChemicalCompound",
+            "label": "alpha-Aminosuccinic acid",
+            "id": "alpha_aminosuccinic_acid"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:AlphaAminoAcid",
+            "label": "Asparagine",
+            "id": "asparagine_alpha"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:PolarAminoAcid",
+            "label": "Asparagine",
+            "id": "asparagine_polar"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:ChemicalCompound",
+            "label": "alpha-Aminosuccinamic acid",
+            "id": "alpha_aminosuccinamic_acid"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:AlphaAminoAcid",
+            "label": "Glutamic Acid",
+            "id": "glutamic_acid_alpha"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:AcidicAminoAcid",
+            "label": "Glutamic Acid",
+            "id": "glutamic_acid_acidic"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:ChemicalCompound",
+            "label": "alpha-Aminoglutaric acid",
+            "id": "alpha_aminoglutaric_acid"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:AlphaAminoAcid",
+            "label": "Beta-Hydroxy Glutamic Acid",
+            "id": "beta_hydroxy_glutamic_acid_alpha"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:HydroxylContainingAminoAcid",
+            "label": "Beta-Hydroxy Glutamic Acid",
+            "id": "beta_hydroxy_glutamic_acid_hydroxyl"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:ChemicalCompound",
+            "label": "Alpha-Amino-beta-hydroxyglutaric acid",
+            "id": "alpha_amino_beta_hydroxyglutaric_acid"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:AlphaAminoAcid",
+            "label": "Glutamine",
+            "id": "glutamine_alpha"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:PolarAminoAcid",
+            "label": "Glutamine",
+            "id": "glutamine_polar"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:ChemicalCompound",
+            "label": "Alpha-Amino glutamic acid",
+            "id": "alpha_amino_glutamic_acid"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:BasicAminoAcid",
+            "label": "Ornithine",
+            "id": "ornithine_basic"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:ChemicalCompound",
+            "label": "alpha-delta-Diamino-n-valeric acid",
+            "id": "alpha_delta_diamino_n_valeric_acid"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:AlphaAminoAcid",
+            "label": "Arginine",
+            "id": "arginine_alpha"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:BasicAminoAcid",
+            "label": "Arginine",
+            "id": "arginine_basic"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:ChemicalCompound",
+            "label": "alpha-Amino-delta-guanidino-n-valeric acid",
+            "id": "alpha_amino_delta_guanidino_n_valeric_acid"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:AlphaAminoAcid",
+            "label": "Lysine",
+            "id": "lysine_alpha"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:BasicAminoAcid",
+            "label": "Lysine",
+            "id": "lysine_basic"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:ChemicalCompound",
+            "label": "alpha-Diaminocaproic acid",
+            "id": "alpha_diaminocaproic_acid"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:AlphaAminoAcid",
+            "label": "Histidine",
+            "id": "histidine_alpha"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:BasicAminoAcid",
+            "label": "Histidine",
+            "id": "histidine_basic"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:HeterocyclicAminoAcid",
+            "label": "Histidine",
+            "id": "histidine_heterocyclic"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:ChemicalCompound",
+            "label": "alpha-Amino-beta-imidazolepropionic acid",
+            "id": "alpha_amino_beta_imidazolepropionic_acid"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:AminoAcid",
+            "label": "Amino acids",
+            "id": "amino_acids_general"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:Disease",
+            "label": "protein deficiency",
+            "id": "protein_deficiency"
+        },
+        {
+            "id": "antioxidant"
+        },
+        {
+            "id": "anticonvulsant"
+        },
+        {
+            "id": "amino group attached to the next carbon of the carboxyl group"
+        },
+        {
+            "id": "amino group attached to the third carbon (numbering from the Carboxyl group)"
+        },
+        {
+            "id": "amino group connected to the amino acids fourth carbon (numbering from the Carboxyl group)"
+        },
+        {
+            "id": "neutral"
+        },
+        {
+            "id": "aromatic"
+        },
+        {
+            "id": "Imino group (=NH)"
+        },
+        {
+            "id": "sulfur-containing"
+        },
+        {
+            "id": "hydroxyl-containing"
+        },
+        {
+            "id": "non-polar"
+        },
+        {
+            "id": "polar"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:Disease",
+            "label": "inherited metabolic illnesses",
+            "id": "inherited_metabolic_illnesses"
+        },
+        {
+            "type": "entity",
+            "class_uri": "xsd:string",
+            "label": "muscle synthesis",
+            "id": "muscle_synthesis"
+        },
+        {
+            "type": "entity",
+            "class_uri": "xsd:string",
+            "label": "maintenance",
+            "id": "muscle_maintenance"
+        },
+        {
+            "type": "entity",
+            "class_uri": "xsd:string",
+            "label": "Stress management",
+            "id": "stress_management"
+        },
+        {
+            "type": "entity",
+            "class_uri": "xsd:string",
+            "label": "child growth",
+            "id": "child_growth"
+        },
+        {
+            "type": "entity",
+            "class_uri": "xsd:string",
+            "label": "immune system support",
+            "id": "immune_system_support"
+        },
+        {
+            "type": "entity",
+            "class_uri": "xsd:string",
+            "label": "physical performance",
+            "id": "physical_performance"
+        },
+        {
+            "type": "entity",
+            "class_uri": "xsd:string",
+            "label": "preventing muscle loss",
+            "id": "preventing_muscle_loss"
+        },
+        {
+            "type": "entity",
+            "class_uri": "xsd:string",
+            "label": "Lowering blood glucose levels",
+            "id": "lowering_blood_glucose_levels"
+        },
+        {
+            "type": "entity",
+            "class_uri": "ex:Disease",
+            "label": "disorders",
+            "id": "disorders"
+        },
+        {
+            "id": "physical performance or strength"
+        }
+    ],
+    "edges": [
+        {
+            "property_uri": "ex:isBuildingBlockOf",
+            "source": "amino_acids",
+            "target": "protein"
+        },
+        {
+            "property_uri": "ex:causesDiseaseWhenDeficient",
+            "source": "amino_acids",
+            "target": "disease"
+        },
+        {
+            "property_uri": "ex:hasChemicalGroup",
+            "source": "amino_acids",
+            "target": "amino_group"
+        },
+        {
+            "property_uri": "ex:hasChemicalGroup",
+            "source": "amino_acids",
+            "target": "carboxyl_group"
+        },
+        {
+            "property_uri": "ex:regulatesProcess",
+            "source": "amino_acids",
+            "target": "gene expression"
+        },
+        {
+            "property_uri": "ex:regulatesProcess",
+            "source": "amino_acids",
+            "target": "control of the function of proteins that mediate messenger RNA (mRNA) translation"
+        },
+        {
+            "property_uri": "ex:hasMeltingPoint",
+            "source": "amino_acids",
+            "target": "above 2000 C"
+        },
+        {
+            "property_uri": "ex:isZwitterion",
+            "source": "amino_acids",
+            "target": "true"
+        },
+        {
+            "property_uri": "ex:isBuildingBlockOf",
+            "source": "amino_acids",
+            "target": "proteins"
+        },
+        {
+            "property_uri": "ex:canBePreparedBy",
+            "source": "amino_acids",
+            "target": "gabriel_phthalimide_synthesis"
+        },
+        {
+            "property_uri": "ex:hasChemicalGroupCharacteristic",
+            "source": "amino_group",
+            "target": "basic"
+        },
+        {
+            "property_uri": "ex:hasChemicalGroupCharacteristic",
+            "source": "carboxyl_group",
+            "target": "acidic"
+        },
+        {
+            "property_uri": "ex:hasChemicalGroupCharacteristic",
+            "source": "acidic_amino_acids",
+            "target": "acidic"
+        },
+        {
+            "property_uri": "ex:hasChemicalGroupCharacteristic",
+            "source": "basic_amino_acids",
+            "target": "basic"
+        },
+        {
+            "property_uri": "ex:hasChemicalGroupCharacteristic",
+            "source": "neutral_amino_acids",
+            "target": "neutral"
+        },
+        {
+            "property_uri": "ex:canBePreparedBy",
+            "source": "alpha_amino_acid",
+            "target": "streckers_synthesis"
+        },
+        {
+            "property_uri": "ex:hasTaste",
+            "source": "glycine",
+            "target": "sweet"
+        },
+        {
+            "property_uri": "ex:hasOpticalActivity",
+            "source": "glycine",
+            "target": "false"
+        },
+        {
+            "property_uri": "ex:isBuildingBlockOf",
+            "source": "glycine",
+            "target": "proteins"
+        },
+        {
+            "property_uri": "ex:canBePreparedBy",
+            "source": "glycine",
+            "target": "streckers_synthesis"
+        },
+        {
+            "property_uri": "ex:treatsDisease",
+            "source": "glycine",
+            "target": "schizophrenia"
+        },
+        {
+            "property_uri": "ex:treatsDisease",
+            "source": "glycine",
+            "target": "stroke"
+        },
+        {
+            "property_uri": "ex:treatsDisease",
+            "source": "glycine",
+            "target": "sleep_issues"
+        },
+        {
+            "property_uri": "ex:treatsDisease",
+            "source": "glycine",
+            "target": "bph"
+        },
+        {
+            "property_uri": "ex:treatsDisease",
+            "source": "glycine",
+            "target": "metabolic_syndrome"
+        },
+        {
+            "property_uri": "ex:treatsDisease",
+            "source": "glycine",
+            "target": "uncommon_inherited_metabolic_illnesses"
+        },
+        {
+            "property_uri": "ex:hasChemicalGroup",
+            "source": "glycine",
+            "target": "hydroxyl_group"
+        },
+        {
+            "property_uri": "ex:hasChemicalGroupCharacteristic",
+            "source": "glycine",
+            "target": "polar"
+        },
+        {
+            "property_uri": "ex:treatsDisease",
+            "source": "glycine",
+            "target": "inherited_metabolic_illnesses"
+        },
+        {
+            "property_uri": "ex:hasTaste",
+            "source": "alanine",
+            "target": "sweet"
+        },
+        {
+            "property_uri": "ex:isBuildingBlockOf",
+            "source": "alanine",
+            "target": "proteins"
+        },
+        {
+            "property_uri": "ex:canBePreparedBy",
+            "source": "alanine",
+            "target": "streckers_synthesis"
+        },
+        {
+            "property_uri": "ex:regulatesProcess",
+            "source": "alanine",
+            "target": "boost immunity"
+        },
+        {
+            "property_uri": "ex:regulatesProcess",
+            "source": "alanine",
+            "target": "provide the brain and central nervous system more energy"
+        },
+        {
+            "property_uri": "ex:hasTaste",
+            "source": "valine",
+            "target": "sweet"
+        },
+        {
+            "property_uri": "ex:isBuildingBlockOf",
+            "source": "valine",
+            "target": "proteins"
+        },
+        {
+            "property_uri": "ex:causesDiseaseWhenDeficient",
+            "source": "valine",
+            "target": "neurological_breakdown"
+        },
+        {
+            "property_uri": "ex:causesDiseaseWhenDeficient",
+            "source": "valine",
+            "target": "suppression_of_normal_mental_development"
+        },
+        {
+            "property_uri": "ex:causesDiseaseWhenDeficient",
+            "source": "valine",
+            "target": "death"
+        },
+        {
+            "property_uri": "ex:canBePreparedBy",
+            "source": "valine",
+            "target": "streckers_synthesis"
+        },
+        {
+            "property_uri": "ex:regulatesProcess",
+            "source": "valine",
+            "target": "muscle synthesis and maintenance"
+        },
+        {
+            "property_uri": "ex:regulatesProcess",
+            "source": "valine",
+            "target": "stress management"
+        },
+        {
+            "property_uri": "ex:regulatesProcess",
+            "source": "valine",
+            "target": "child growth"
+        },
+        {
+            "property_uri": "ex:regulatesProcess",
+            "source": "valine",
+            "target": "immune system support"
+        },
+        {
+            "property_uri": "ex:hasChemicalGroupCharacteristic",
+            "source": "valine",
+            "target": "non-polar"
+        },
+        {
+            "property_uri": "ex:regulatesProcess",
+            "source": "valine",
+            "target": "muscle_synthesis"
+        },
+        {
+            "property_uri": "ex:regulatesProcess",
+            "source": "valine",
+            "target": "muscle_maintenance"
+        },
+        {
+            "property_uri": "ex:regulatesProcess",
+            "source": "valine",
+            "target": "stress_management"
+        },
+        {
+            "property_uri": "ex:regulatesProcess",
+            "source": "valine",
+            "target": "child_growth"
+        },
+        {
+            "property_uri": "ex:regulatesProcess",
+            "source": "valine",
+            "target": "immune_system_support"
+        },
+        {
+            "property_uri": "ex:causesDiseaseWhenDeficient",
+            "source": "valine",
+            "target": "disorders"
+        },
+        {
+            "property_uri": "ex:hasTaste",
+            "source": "leucine",
+            "target": "tasteless"
+        },
+        {
+            "property_uri": "ex:isBuildingBlockOf",
+            "source": "leucine",
+            "target": "proteins"
+        },
+        {
+            "property_uri": "ex:causesDiseaseWhenDeficient",
+            "source": "leucine",
+            "target": "neurological_breakdown"
+        },
+        {
+            "property_uri": "ex:causesDiseaseWhenDeficient",
+            "source": "leucine",
+            "target": "suppression_of_normal_mental_development"
+        },
+        {
+            "property_uri": "ex:causesDiseaseWhenDeficient",
+            "source": "leucine",
+            "target": "death"
+        },
+        {
+            "property_uri": "ex:canBePreparedBy",
+            "source": "leucine",
+            "target": "streckers_synthesis"
+        },
+        {
+            "property_uri": "ex:regulatesProcess",
+            "source": "leucine",
+            "target": "Lowering blood glucose levels"
+        },
+        {
+            "property_uri": "ex:regulatesProcess",
+            "source": "leucine",
+            "target": "Increases the physical performance or strength"
+        },
+        {
+            "property_uri": "ex:regulatesProcess",
+            "source": "leucine",
+            "target": "preventing muscle loss"
+        },
+        {
+            "property_uri": "ex:hasChemicalGroupCharacteristic",
+            "source": "leucine",
+            "target": "non-polar"
+        },
+        {
+            "property_uri": "ex:regulatesProcess",
+            "source": "leucine",
+            "target": "physical_performance"
+        },
+        {
+            "property_uri": "ex:regulatesProcess",
+            "source": "leucine",
+            "target": "preventing_muscle_loss"
+        },
+        {
+            "property_uri": "ex:regulatesProcess",
+            "source": "leucine",
+            "target": "lowering_blood_glucose_levels"
+        },
+        {
+            "property_uri": "ex:causesDiseaseWhenDeficient",
+            "source": "leucine",
+            "target": "disorders"
+        },
+        {
+            "property_uri": "ex:regulatesProcess",
+            "source": "leucine",
+            "target": "physical performance or strength"
+        },
+        {
+            "property_uri": "ex:hasTaste",
+            "source": "arginine",
+            "target": "Bitter"
+        },
+        {
+            "property_uri": "ex:isBuildingBlockOf",
+            "source": "arginine",
+            "target": "proteins"
+        },
+        {
+            "property_uri": "ex:hasChemicalGroup",
+            "source": "arginine",
+            "target": "guanidino_group"
+        },
+        {
+            "property_uri": "ex:treatsDisease",
+            "source": "arginine",
+            "target": "cardiovascular_disease"
+        },
+        {
+            "property_uri": "ex:hasTaste",
+            "source": "isoleucine",
+            "target": "Bitter"
+        },
+        {
+            "property_uri": "ex:isBuildingBlockOf",
+            "source": "isoleucine",
+            "target": "proteins"
+        },
+        {
+            "property_uri": "ex:causesDiseaseWhenDeficient",
+            "source": "isoleucine",
+            "target": "neurological_breakdown"
+        },
+        {
+            "property_uri": "ex:causesDiseaseWhenDeficient",
+            "source": "isoleucine",
+            "target": "suppression_of_normal_mental_development"
+        },
+        {
+            "property_uri": "ex:causesDiseaseWhenDeficient",
+            "source": "isoleucine",
+            "target": "death"
+        },
+        {
+            "property_uri": "ex:canBePreparedBy",
+            "source": "isoleucine",
+            "target": "streckers_synthesis"
+        },
+        {
+            "property_uri": "ex:regulatesProcess",
+            "source": "isoleucine",
+            "target": "children's optimum growth"
+        },
+        {
+            "property_uri": "ex:regulatesProcess",
+            "source": "isoleucine",
+            "target": "maintenance of nitrogen balance"
+        },
+        {
+            "property_uri": "ex:isBuildingBlockOf",
+            "source": "histidine",
+            "target": "proteins"
+        },
+        {
+            "property_uri": "ex:hasChemicalGroup",
+            "source": "histidine",
+            "target": "imidazole_ring"
+        },
+        {
+            "property_uri": "ex:treatsDisease",
+            "source": "histidine",
+            "target": "anemia"
+        },
+        {
+            "property_uri": "ex:isBuildingBlockOf",
+            "source": "tyrosine",
+            "target": "proteins"
+        },
+        {
+            "property_uri": "ex:hasChemicalGroup",
+            "source": "tyrosine",
+            "target": "hydroxyl_group"
+        },
+        {
+            "property_uri": "ex:hasChemicalGroup",
+            "source": "tyrosine",
+            "target": "aromatic_ring_structure"
+        },
+        {
+            "property_uri": "ex:regulatesProcess",
+            "source": "tyrosine",
+            "target": "production of thyroid hormone"
+        },
+        {
+            "property_uri": "ex:regulatesProcess",
+            "source": "tyrosine",
+            "target": "mental performance"
+        },
+        {
+            "property_uri": "ex:regulatesProcess",
+            "source": "tyrosine",
+            "target": "alertness"
+        },
+        {
+            "property_uri": "ex:regulatesProcess",
+            "source": "tyrosine",
+            "target": "memory"
+        },
+        {
+            "property_uri": "ex:isBuildingBlockOf",
+            "source": "tryptophan",
+            "target": "proteins"
+        },
+        {
+            "property_uri": "ex:hasChemicalGroup",
+            "source": "tryptophan",
+            "target": "indole_ring"
+        },
+        {
+            "property_uri": "ex:causesDiseaseWhenDeficient",
+            "source": "tryptophan",
+            "target": "neurological_breakdown"
+        },
+        {
+            "property_uri": "ex:causesDiseaseWhenDeficient",
+            "source": "tryptophan",
+            "target": "suppression_of_normal_mental_development"
+        },
+        {
+            "property_uri": "ex:causesDiseaseWhenDeficient",
+            "source": "tryptophan",
+            "target": "death"
+        },
+        {
+            "property_uri": "ex:treatsDisease",
+            "source": "tryptophan",
+            "target": "anxiety"
+        },
+        {
+            "property_uri": "ex:treatsDisease",
+            "source": "tryptophan",
+            "target": "depression"
+        },
+        {
+            "property_uri": "ex:treatsDisease",
+            "source": "tryptophan",
+            "target": "migraines"
+        },
+        {
+            "property_uri": "ex:treatsDisease",
+            "source": "tryptophan",
+            "target": "headaches"
+        },
+        {
+            "property_uri": "ex:regulatesProcess",
+            "source": "tryptophan",
+            "target": "boost the production of growth hormones"
+        },
+        {
+            "property_uri": "ex:hasChemicalGroup",
+            "source": "tryptophan",
+            "target": "aromatic_ring_structure"
+        },
+        {
+            "property_uri": "ex:hasChemicalGroupCharacteristic",
+            "source": "tryptophan",
+            "target": "aromatic"
+        },
+        {
+            "property_uri": "ex:hasChemicalGroupCharacteristic",
+            "source": "tryptophan",
+            "target": "non-polar"
+        },
+        {
+            "property_uri": "ex:causesDiseaseWhenDeficient",
+            "source": "tryptophan",
+            "target": "disorders"
+        },
+        {
+            "property_uri": "ex:isMetaboliteOf",
+            "source": "histamine",
+            "target": "histidine"
+        },
+        {
+            "property_uri": "ex:isMetaboliteOf",
+            "source": "tyramine",
+            "target": "tyrosine"
+        },
+        {
+            "property_uri": "ex:isMetaboliteOf",
+            "source": "tryptamine",
+            "target": "tryptophan"
+        },
+        {
+            "property_uri": "ex:isBuildingBlockOf",
+            "source": "aspartic_acid",
+            "target": "proteins"
+        },
+        {
+            "property_uri": "ex:treatsDisease",
+            "source": "aspartic_acid",
+            "target": "stress"
+        },
+        {
+            "property_uri": "ex:treatsDisease",
+            "source": "aspartic_acid",
+            "target": "exhaustion"
+        },
+        {
+            "property_uri": "ex:regulatesProcess",
+            "source": "aspartic_acid",
+            "target": "generation of energy from carbohydrates"
+        },
+        {
+            "property_uri": "ex:regulatesProcess",
+            "source": "aspartic_acid",
+            "target": "manufacturing of RNA and DNA"
+        },
+        {
+            "property_uri": "ex:isMetaboliteOf",
+            "source": "asparagine",
+            "target": "aspartic_acid"
+        },
+        {
+            "property_uri": "ex:isBuildingBlockOf",
+            "source": "asparagine",
+            "target": "proteins"
+        },
+        {
+            "property_uri": "ex:regulatesProcess",
+            "source": "asparagine",
+            "target": "brain development and function"
+        },
+        {
+            "property_uri": "ex:hasChemicalGroup",
+            "source": "asparagine",
+            "target": "amide_group"
+        },
+        {
+            "property_uri": "ex:isBuildingBlockOf",
+            "source": "glutamic_acid",
+            "target": "proteins"
+        },
+        {
+            "property_uri": "ex:canBePreparedBy",
+            "source": "glutamic_acid",
+            "target": "streckers_synthesis"
+        },
+        {
+            "property_uri": "ex:regulatesProcess",
+            "source": "glutamic_acid",
+            "target": "source of energy for the brain"
+        },
+        {
+            "property_uri": "ex:regulatesProcess",
+            "source": "glutamic_acid",
+            "target": "improves brain clarity"
+        },
+        {
+            "property_uri": "ex:regulatesProcess",
+            "source": "glutamic_acid",
+            "target": "mental alertness"
+        },
+        {
+            "property_uri": "ex:regulatesProcess",
+            "source": "glutamic_acid",
+            "target": "mood"
+        },
+        {
+            "property_uri": "ex:treatsDisease",
+            "source": "glutamic_acid",
+            "target": "parkinsons"
+        },
+        {
+            "property_uri": "ex:treatsDisease",
+            "source": "glutamic_acid",
+            "target": "fatigue"
+        },
+        {
+            "property_uri": "ex:treatsDisease",
+            "source": "glutamic_acid",
+            "target": "schizophrenia"
+        },
+        {
+            "property_uri": "ex:hasChemicalGroupCharacteristic",
+            "source": "glutamic_acid",
+            "target": "acidic"
+        },
+        {
+            "property_uri": "ex:hasChemicalGroupCharacteristic",
+            "source": "glutamic_acid",
+            "target": "polar"
+        },
+        {
+            "property_uri": "ex:isMetaboliteOf",
+            "source": "glutamine",
+            "target": "glutamic_acid"
+        },
+        {
+            "property_uri": "ex:isBuildingBlockOf",
+            "source": "glutamine",
+            "target": "proteins"
+        },
+        {
+            "property_uri": "ex:regulatesProcess",
+            "source": "glutamine",
+            "target": "keep blood sugar levels under control and consistent"
+        },
+        {
+            "property_uri": "ex:hasChemicalGroup",
+            "source": "glutamine",
+            "target": "amide_group"
+        },
+        {
+            "property_uri": "ex:hasChemicalGroupCharacteristic",
+            "source": "imino_acid",
+            "target": "Imino group (=NH)"
+        },
+        {
+            "property_uri": "ex:isBuildingBlockOf",
+            "source": "threonine",
+            "target": "proteins"
+        },
+        {
+            "property_uri": "ex:hasChemicalGroup",
+            "source": "threonine",
+            "target": "hydroxyl_group"
+        },
+        {
+            "property_uri": "ex:causesDiseaseWhenDeficient",
+            "source": "threonine",
+            "target": "neurological_breakdown"
+        },
+        {
+            "property_uri": "ex:causesDiseaseWhenDeficient",
+            "source": "threonine",
+            "target": "suppression_of_normal_mental_development"
+        },
+        {
+            "property_uri": "ex:causesDiseaseWhenDeficient",
+            "source": "threonine",
+            "target": "death"
+        },
+        {
+            "property_uri": "ex:treatsDisease",
+            "source": "threonine",
+            "target": "spinal_spasticity"
+        },
+        {
+            "property_uri": "ex:treatsDisease",
+            "source": "threonine",
+            "target": "multiple_sclerosis"
+        },
+        {
+            "property_uri": "ex:treatsDisease",
+            "source": "threonine",
+            "target": "familial_spastic_paraparesis"
+        },
+        {
+            "property_uri": "ex:treatsDisease",
+            "source": "threonine",
+            "target": "amyotrophic_lateral_sclerosis"
+        },
+        {
+            "property_uri": "ex:hasChemicalGroupCharacteristic",
+            "source": "threonine",
+            "target": "hydroxyl-containing"
+        },
+        {
+            "property_uri": "ex:hasChemicalGroupCharacteristic",
+            "source": "threonine",
+            "target": "polar"
+        },
+        {
+            "property_uri": "ex:causesDiseaseWhenDeficient",
+            "source": "threonine",
+            "target": "disorders"
+        },
+        {
+            "property_uri": "ex:isBuildingBlockOf",
+            "source": "methionine",
+            "target": "proteins"
+        },
+        {
+            "property_uri": "ex:hasChemicalGroup",
+            "source": "methionine",
+            "target": "thioether_group"
+        },
+        {
+            "property_uri": "ex:causesDiseaseWhenDeficient",
+            "source": "methionine",
+            "target": "neurological_breakdown"
+        },
+        {
+            "property_uri": "ex:causesDiseaseWhenDeficient",
+            "source": "methionine",
+            "target": "suppression_of_normal_mental_development"
+        },
+        {
+            "property_uri": "ex:causesDiseaseWhenDeficient",
+            "source": "methionine",
+            "target": "death"
+        },
+        {
+            "property_uri": "ex:canBePreparedBy",
+            "source": "methionine",
+            "target": "streckers_synthesis"
+        },
+        {
+            "property_uri": "ex:treatsDisease",
+            "source": "methionine",
+            "target": "depression"
+        },
+        {
+            "property_uri": "ex:treatsDisease",
+            "source": "methionine",
+            "target": "inflammation"
+        },
+        {
+            "property_uri": "ex:treatsDisease",
+            "source": "methionine",
+            "target": "liver_illness"
+        },
+        {
+            "property_uri": "ex:treatsDisease",
+            "source": "methionine",
+            "target": "muscle_discomfort"
+        },
+        {
+            "property_uri": "ex:hasChemicalGroupCharacteristic",
+            "source": "methionine",
+            "target": "sulfur-containing"
+        },
+        {
+            "property_uri": "ex:hasChemicalGroupCharacteristic",
+            "source": "methionine",
+            "target": "non-polar"
+        },
+        {
+            "property_uri": "ex:causesDiseaseWhenDeficient",
+            "source": "methionine",
+            "target": "disorders"
+        },
+        {
+            "property_uri": "ex:isBuildingBlockOf",
+            "source": "phenylalanine",
+            "target": "proteins"
+        },
+        {
+            "property_uri": "ex:causesDiseaseWhenDeficient",
+            "source": "phenylalanine",
+            "target": "neurological_breakdown"
+        },
+        {
+            "property_uri": "ex:causesDiseaseWhenDeficient",
+            "source": "phenylalanine",
+            "target": "suppression_of_normal_mental_development"
+        },
+        {
+            "property_uri": "ex:causesDiseaseWhenDeficient",
+            "source": "phenylalanine",
+            "target": "death"
+        },
+        {
+            "property_uri": "ex:canBePreparedBy",
+            "source": "phenylalanine",
+            "target": "streckers_synthesis"
+        },
+        {
+            "property_uri": "ex:treatsDisease",
+            "source": "phenylalanine",
+            "target": "depression"
+        },
+        {
+            "property_uri": "ex:treatsDisease",
+            "source": "phenylalanine",
+            "target": "parkinsons_illness"
+        },
+        {
+            "property_uri": "ex:treatsDisease",
+            "source": "phenylalanine",
+            "target": "multiple_sclerosis"
+        },
+        {
+            "property_uri": "ex:treatsDisease",
+            "source": "phenylalanine",
+            "target": "pain"
+        },
+        {
+            "property_uri": "ex:treatsDisease",
+            "source": "phenylalanine",
+            "target": "acupuncture_anesthesia"
+        },
+        {
+            "property_uri": "ex:treatsDisease",
+            "source": "phenylalanine",
+            "target": "osteoarthritis"
+        },
+        {
+            "property_uri": "ex:hasChemicalGroup",
+            "source": "phenylalanine",
+            "target": "aromatic_ring_structure"
+        },
+        {
+            "property_uri": "ex:hasChemicalGroupCharacteristic",
+            "source": "phenylalanine",
+            "target": "aromatic"
+        },
+        {
+            "property_uri": "ex:hasChemicalGroupCharacteristic",
+            "source": "phenylalanine",
+            "target": "non-polar"
+        },
+        {
+            "property_uri": "ex:causesDiseaseWhenDeficient",
+            "source": "phenylalanine",
+            "target": "disorders"
+        },
+        {
+            "property_uri": "ex:isBuildingBlockOf",
+            "source": "lysine",
+            "target": "proteins"
+        },
+        {
+            "property_uri": "ex:causesDiseaseWhenDeficient",
+            "source": "lysine",
+            "target": "neurological_breakdown"
+        },
+        {
+            "property_uri": "ex:causesDiseaseWhenDeficient",
+            "source": "lysine",
+            "target": "suppression_of_normal_mental_development"
+        },
+        {
+            "property_uri": "ex:causesDiseaseWhenDeficient",
+            "source": "lysine",
+            "target": "death"
+        },
+        {
+            "property_uri": "ex:treatsDisease",
+            "source": "lysine",
+            "target": "cold_sores"
+        },
+        {
+            "property_uri": "ex:treatsDisease",
+            "source": "cystine",
+            "target": "surgery"
+        },
+        {
+            "property_uri": "ex:treatsDisease",
+            "source": "cystine",
+            "target": "trauma"
+        },
+        {
+            "property_uri": "ex:isBuildingBlockOf",
+            "source": "cystine",
+            "target": "proteins"
+        },
+        {
+            "property_uri": "ex:isBuildingBlockOf",
+            "source": "cysteine",
+            "target": "proteins"
+        },
+        {
+            "property_uri": "ex:hasChemicalGroup",
+            "source": "cysteine",
+            "target": "sulfohydryl_group"
+        },
+        {
+            "property_uri": "ex:hasChemicalGroup",
+            "source": "cysteine",
+            "target": "sulfhydryl_group"
+        },
+        {
+            "property_uri": "ex:regulatesProcess",
+            "source": "cysteine",
+            "target": "boost the efficiency of corticosteroid medications"
+        },
+        {
+            "property_uri": "ex:isBuildingBlockOf",
+            "source": "proline",
+            "target": "proteins"
+        },
+        {
+            "property_uri": "ex:hasChemicalGroup",
+            "source": "proline",
+            "target": "pyrrolidine_ring"
+        },
+        {
+            "property_uri": "ex:hasChemicalGroup",
+            "source": "proline",
+            "target": "imino_group"
+        },
+        {
+            "property_uri": "ex:regulatesProcess",
+            "source": "proline",
+            "target": "improve joint and skin health"
+        },
+        {
+            "property_uri": "ex:regulatesProcess",
+            "source": "proline",
+            "target": "muscle development"
+        },
+        {
+            "property_uri": "ex:regulatesProcess",
+            "source": "proline",
+            "target": "injury healing"
+        },
+        {
+            "property_uri": "ex:isBuildingBlockOf",
+            "source": "serine",
+            "target": "proteins"
+        },
+        {
+            "property_uri": "ex:hasChemicalGroup",
+            "source": "serine",
+            "target": "hydroxyl_group"
+        },
+        {
+            "property_uri": "ex:canBePreparedBy",
+            "source": "serine",
+            "target": "streckers_synthesis"
+        },
+        {
+            "property_uri": "ex:regulatesProcess",
+            "source": "serine",
+            "target": "brain and central nervous system to function correctly"
+        },
+        {
+            "property_uri": "ex:hasChemicalGroupCharacteristic",
+            "source": "guanidino_group",
+            "target": "basic"
+        },
+        {
+            "property_uri": "ex:hasChemicalGroupCharacteristic",
+            "source": "imidazole_ring",
+            "target": "basic"
+        },
+        {
+            "property_uri": "ex:isBuildingBlockOf",
+            "source": "beta_alanine",
+            "target": "proteins"
+        },
+        {
+            "property_uri": "ex:hasChemicalGroupCharacteristic",
+            "source": "beta_alanine",
+            "target": "amino group attached to the third carbon (numbering from the Carboxyl group)"
+        },
+        {
+            "property_uri": "ex:isBuildingBlockOf",
+            "source": "gaba",
+            "target": "proteins"
+        },
+        {
+            "property_uri": "ex:hasChemicalGroupCharacteristic",
+            "source": "gaba",
+            "target": "amino group connected to the amino acids fourth carbon (numbering from the Carboxyl group)"
+        },
+        {
+            "property_uri": "ex:canBePreparedBy",
+            "source": "alpha_amino_acid_class",
+            "target": "streckers_synthesis"
+        },
+        {
+            "property_uri": "ex:hasChemicalGroupCharacteristic",
+            "source": "alpha_amino_acid_class",
+            "target": "amino group attached to the next carbon of the carboxyl group"
+        },
+        {
+            "property_uri": "ex:canBePreparedBy",
+            "source": "alpha_amino_acids",
+            "target": "gabriel_phthalimide_synthesis"
+        },
+        {
+            "property_uri": "ex:canBePreparedBy",
+            "source": "alpha_amino_acids",
+            "target": "streckers_synthesis"
+        },
+        {
+            "property_uri": "ex:canBePreparedBy",
+            "source": "norleucine",
+            "target": "streckers_synthesis"
+        },
+        {
+            "property_uri": "ex:regulatesProcess",
+            "source": "diiodothyronine",
+            "target": "reduce weight"
+        },
+        {
+            "property_uri": "ex:regulatesProcess",
+            "source": "diiodothyronine",
+            "target": "lower cholesterol"
+        },
+        {
+            "property_uri": "ex:regulatesProcess",
+            "source": "diiodothyronine",
+            "target": "develop muscle"
+        },
+        {
+            "property_uri": "ex:treatsDisease",
+            "source": "levothyroxine",
+            "target": "thyroid_underactivity_hypothyroidism"
+        },
+        {
+            "property_uri": "ex:regulatesProcess",
+            "source": "hydroxyproline",
+            "target": "formation of collagen"
+        },
+        {
+            "property_uri": "ex:isBuildingBlockOf",
+            "source": "hydroxyproline",
+            "target": "proteins"
+        },
+        {
+            "property_uri": "ex:hasChemicalGroupCharacteristic",
+            "source": "hydroxyproline",
+            "target": "Imino group (=NH)"
+        },
+        {
+            "property_uri": "ex:treatsDisease",
+            "source": "beta_hydroxy_glutamic_acid",
+            "target": "acne"
+        },
+        {
+            "property_uri": "ex:treatsDisease",
+            "source": "beta_hydroxy_glutamic_acid",
+            "target": "photoaging"
+        },
+        {
+            "property_uri": "ex:treatsDisease",
+            "source": "beta_hydroxy_glutamic_acid",
+            "target": "dry_skin"
+        },
+        {
+            "property_uri": "ex:treatsDisease",
+            "source": "beta_hydroxy_glutamic_acid",
+            "target": "psoriasis"
+        },
+        {
+            "property_uri": "ex:treatsDisease",
+            "source": "beta_hydroxy_glutamic_acid",
+            "target": "melasma"
+        },
+        {
+            "property_uri": "ex:treatsDisease",
+            "source": "beta_hydroxy_glutamic_acid",
+            "target": "fibromyalgia"
+        },
+        {
+            "property_uri": "ex:treatsDisease",
+            "source": "beta_hydroxy_glutamic_acid",
+            "target": "dental_scaling"
+        },
+        {
+            "property_uri": "ex:treatsDisease",
+            "source": "beta_hydroxy_glutamic_acid",
+            "target": "dry_mouth"
+        },
+        {
+            "property_uri": "ex:treatsDisease",
+            "source": "beta_hydroxy_glutamic_acid",
+            "target": "urinary_tract_stones"
+        },
+        {
+            "property_uri": "ex:isBuildingBlockOf",
+            "source": "beta_hydroxy_glutamic_acid",
+            "target": "proteins"
+        },
+        {
+            "property_uri": "ex:regulatesProcess",
+            "source": "ornithine",
+            "target": "support sports and performance"
+        },
+        {
+            "property_uri": "ex:regulatesProcess",
+            "source": "ornithine",
+            "target": "liver function"
+        },
+        {
+            "property_uri": "ex:regulatesProcess",
+            "source": "ornithine",
+            "target": "wound healing"
+        },
+        {
+            "property_uri": "ex:isBuildingBlockOf",
+            "source": "ornithine",
+            "target": "proteins"
+        },
+        {
+            "property_uri": "ex:isMetaboliteOf",
+            "source": "d_penicillamine",
+            "target": "penicillin"
+        },
+        {
+            "property_uri": "ex:treatsDisease",
+            "source": "d_penicillamine",
+            "target": "wilsons_disease"
+        },
+        {
+            "property_uri": "ex:treatsDisease",
+            "source": "d_penicillamine_drug",
+            "target": "wilson_s_disease"
+        },
+        {
+            "property_uri": "ex:isMetaboliteOf",
+            "source": "d_penicillamine_drug",
+            "target": "penicillin"
+        },
+        {
+            "property_uri": "ex:treatsDisease",
+            "source": "d_penicillamine_drug",
+            "target": "wilsons_disease"
+        },
+        {
+            "property_uri": "ex:regulatesProcess",
+            "source": "n_acetylcysteine",
+            "target": "antioxidant"
+        },
+        {
+            "property_uri": "ex:treatsDisease",
+            "source": "n_acetylcysteine_drug",
+            "target": "cystic_fibrosis"
+        },
+        {
+            "property_uri": "ex:treatsDisease",
+            "source": "n_acetylcysteine_drug",
+            "target": "chronic_renal_insufficiency"
+        },
+        {
+            "property_uri": "ex:regulatesProcess",
+            "source": "n_acetylcysteine_drug",
+            "target": "antioxidant"
+        },
+        {
+            "property_uri": "ex:regulatesProcess",
+            "source": "gabapentin",
+            "target": "anticonvulsant"
+        },
+        {
+            "property_uri": "ex:isBuildingBlockOf",
+            "source": "amino_acids_general",
+            "target": "protein"
+        },
+        {
+            "property_uri": "ex:causesDiseaseWhenDeficient",
+            "source": "amino_acids_general",
+            "target": "protein_deficiency"
+        }
+    ]
+}

@@ -1,9 +1,10 @@
 import requests
 import json
 import time
+import os
 
 def direct_test():
-    api_key = "AIzaSyCb36G3wHdtCeVFGhKGwhtXZynhVNl6--o"
+    api_key = os.getenv("GOOGLE_API_KEY", os.getenv("OPENAI_API_KEY", ""))
     # We use the direct REST endpoint for the most "naked" test possible
     url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key={api_key}"
     

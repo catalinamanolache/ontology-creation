@@ -1,0 +1,681 @@
+{
+  "reasoning_steps": [
+    "The text was analyzed to identify all mentions of chemical compounds, amino acids (including specific types), proteins, drugs, and diseases, aligning them with the provided Approved Ontology classes.",
+    "For each identified entity, the most specific class(es) from the ontology were assigned. For amino acids, common classifications (e.g., AlphaAminoAcid, NonPolarAminoAcid, AcidicAminoAcid) were applied where applicable, as these specific classes are present in the ontology.",
+    "Relationships between extracted entities were identified based on the defined properties in the Approved Ontology.",
+    "Literal values for properties like 'regulatesProcess' were extracted as strings.",
+    "Unique snake_case IDs were generated for each entity, and exact evidence spans were recorded for both entities and relations."
+  ],
+  "entities": [
+    {
+      "id": "d_penicillamine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "D-Penicillamine"
+    },
+    {
+      "id": "d_penicillamine_drug",
+      "class_uri": "ex:Drug",
+      "evidence_span": "D-Penicillamine"
+    },
+    {
+      "id": "penicillin",
+      "class_uri": "ex:ChemicalCompound",
+      "evidence_span": "penicillin"
+    },
+    {
+      "id": "wilson_s_disease",
+      "class_uri": "ex:Disease",
+      "evidence_span": "Wilson’s disease"
+    },
+    {
+      "id": "n_acetylcysteine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "N-Acetylcysteine"
+    },
+    {
+      "id": "n_acetylcysteine_drug",
+      "class_uri": "ex:Drug",
+      "evidence_span": "N-Acetylcysteine"
+    },
+    {
+      "id": "cystic_fibrosis",
+      "class_uri": "ex:Disease",
+      "evidence_span": "cystic fibrosis"
+    },
+    {
+      "id": "chronic_renal_insufficiency",
+      "class_uri": "ex:Disease",
+      "evidence_span": "chronic renal insufficiency"
+    },
+    {
+      "id": "gabapentin",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Gabapentin"
+    },
+    {
+      "id": "gabapentin_drug",
+      "class_uri": "ex:Drug",
+      "evidence_span": "Gabapentin"
+    },
+    {
+      "id": "glycine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Glycine"
+    },
+    {
+      "id": "glycine_alpha",
+      "class_uri": "ex:AlphaAminoAcid",
+      "evidence_span": "Glycine"
+    },
+    {
+      "id": "glycine_neutral",
+      "class_uri": "ex:NeutralAminoAcid",
+      "evidence_span": "Glycine"
+    },
+    {
+      "id": "glycine_nonpolar",
+      "class_uri": "ex:NonPolarAminoAcid",
+      "evidence_span": "Glycine"
+    },
+    {
+      "id": "amino_acetic_acid",
+      "class_uri": "ex:ChemicalCompound",
+      "evidence_span": "Amino acetic acid"
+    },
+    {
+      "id": "alanine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Alanine"
+    },
+    {
+      "id": "alanine_alpha",
+      "class_uri": "ex:AlphaAminoAcid",
+      "evidence_span": "Alanine"
+    },
+    {
+      "id": "alanine_neutral",
+      "class_uri": "ex:NeutralAminoAcid",
+      "evidence_span": "Alanine"
+    },
+    {
+      "id": "alanine_nonpolar",
+      "class_uri": "ex:NonPolarAminoAcid",
+      "evidence_span": "Alanine"
+    },
+    {
+      "id": "alpha_aminopropionic_acid",
+      "class_uri": "ex:ChemicalCompound",
+      "evidence_span": "Alpha Aminopropionic acid"
+    },
+    {
+      "id": "valine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Valine"
+    },
+    {
+      "id": "valine_alpha",
+      "class_uri": "ex:AlphaAminoAcid",
+      "evidence_span": "Valine"
+    },
+    {
+      "id": "valine_neutral",
+      "class_uri": "ex:NeutralAminoAcid",
+      "evidence_span": "Valine"
+    },
+    {
+      "id": "valine_nonpolar",
+      "class_uri": "ex:NonPolarAminoAcid",
+      "evidence_span": "Valine"
+    },
+    {
+      "id": "alpha_aminoisovaleric_acid",
+      "class_uri": "ex:ChemicalCompound",
+      "evidence_span": "alpha-Aminoisovaleric acid"
+    },
+    {
+      "id": "leucine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Leucine"
+    },
+    {
+      "id": "leucine_alpha",
+      "class_uri": "ex:AlphaAminoAcid",
+      "evidence_span": "Leucine"
+    },
+    {
+      "id": "leucine_neutral",
+      "class_uri": "ex:NeutralAminoAcid",
+      "evidence_span": "Leucine"
+    },
+    {
+      "id": "leucine_nonpolar",
+      "class_uri": "ex:NonPolarAminoAcid",
+      "evidence_span": "Leucine"
+    },
+    {
+      "id": "alpha_aminoisocaproic_acid",
+      "class_uri": "ex:ChemicalCompound",
+      "evidence_span": "alpha-Aminoisocaproic acid"
+    },
+    {
+      "id": "isoleucine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Isoleucine"
+    },
+    {
+      "id": "isoleucine_alpha",
+      "class_uri": "ex:AlphaAminoAcid",
+      "evidence_span": "Isoleucine"
+    },
+    {
+      "id": "isoleucine_neutral",
+      "class_uri": "ex:NeutralAminoAcid",
+      "evidence_span": "Isoleucine"
+    },
+    {
+      "id": "isoleucine_nonpolar",
+      "class_uri": "ex:NonPolarAminoAcid",
+      "evidence_span": "Isoleucine"
+    },
+    {
+      "id": "alpha_amino_beta_methyl_n_valeric_acid",
+      "class_uri": "ex:ChemicalCompound",
+      "evidence_span": "alpha-Amino-beta-methyl n-valeric acid"
+    },
+    {
+      "id": "norleucine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Norleucine"
+    },
+    {
+      "id": "norleucine_alpha",
+      "class_uri": "ex:AlphaAminoAcid",
+      "evidence_span": "Norleucine"
+    },
+    {
+      "id": "norleucine_neutral",
+      "class_uri": "ex:NeutralAminoAcid",
+      "evidence_span": "Norleucine"
+    },
+    {
+      "id": "norleucine_nonpolar",
+      "class_uri": "ex:NonPolarAminoAcid",
+      "evidence_span": "Norleucine"
+    },
+    {
+      "id": "alpha_amino_n_caproic_acid",
+      "class_uri": "ex:ChemicalCompound",
+      "evidence_span": "alpha-Amino n-caproic acid"
+    },
+    {
+      "id": "phenylalanine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Phenylalanine"
+    },
+    {
+      "id": "phenylalanine_alpha",
+      "class_uri": "ex:AlphaAminoAcid",
+      "evidence_span": "Phenylalanine"
+    },
+    {
+      "id": "phenylalanine_aromatic",
+      "class_uri": "ex:AromaticAminoAcid",
+      "evidence_span": "Phenylalanine"
+    },
+    {
+      "id": "phenylalanine_nonpolar",
+      "class_uri": "ex:NonPolarAminoAcid",
+      "evidence_span": "Phenylalanine"
+    },
+    {
+      "id": "alpha_amino_beta_phenyl_propionic_acid",
+      "class_uri": "ex:ChemicalCompound",
+      "evidence_span": "alpha-Amino-beta-phenyl propionic acid"
+    },
+    {
+      "id": "tyrosine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Tyrosine"
+    },
+    {
+      "id": "tyrosine_alpha",
+      "class_uri": "ex:AlphaAminoAcid",
+      "evidence_span": "Tyrosine"
+    },
+    {
+      "id": "tyrosine_aromatic",
+      "class_uri": "ex:AromaticAminoAcid",
+      "evidence_span": "Tyrosine"
+    },
+    {
+      "id": "tyrosine_polar",
+      "class_uri": "ex:PolarAminoAcid",
+      "evidence_span": "Tyrosine"
+    },
+    {
+      "id": "tyrosine_hydroxyl",
+      "class_uri": "ex:HydroxylContainingAminoAcid",
+      "evidence_span": "Tyrosine"
+    },
+    {
+      "id": "alpha_amino_beta_p_hydroxyphenyl_propionic_acid",
+      "class_uri": "ex:ChemicalCompound",
+      "evidence_span": "alpha-Amino-beta-(p-hydroxyphenyl) propionic acid"
+    },
+    {
+      "id": "serine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Serine"
+    },
+    {
+      "id": "serine_alpha",
+      "class_uri": "ex:AlphaAminoAcid",
+      "evidence_span": "Serine"
+    },
+    {
+      "id": "serine_polar",
+      "class_uri": "ex:PolarAminoAcid",
+      "evidence_span": "Serine"
+    },
+    {
+      "id": "serine_hydroxyl",
+      "class_uri": "ex:HydroxylContainingAminoAcid",
+      "evidence_span": "Serine"
+    },
+    {
+      "id": "alpha_amino_beta_hydroxypropionic_acid",
+      "class_uri": "ex:ChemicalCompound",
+      "evidence_span": "alpha-Amino-beta-hydroxypropionic acid"
+    },
+    {
+      "id": "cysteine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Cysteine"
+    },
+    {
+      "id": "cysteine_alpha",
+      "class_uri": "ex:AlphaAminoAcid",
+      "evidence_span": "Cysteine"
+    },
+    {
+      "id": "cysteine_polar",
+      "class_uri": "ex:PolarAminoAcid",
+      "evidence_span": "Cysteine"
+    },
+    {
+      "id": "cysteine_sulfur",
+      "class_uri": "ex:SulfurContainingAminoAcid",
+      "evidence_span": "Cysteine"
+    },
+    {
+      "id": "alpha_amino_beta_mercaptopropionic_acid",
+      "class_uri": "ex:ChemicalCompound",
+      "evidence_span": "alpha-Amino-beta-mercaptopropionic acid"
+    },
+    {
+      "id": "threonine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Threonine"
+    },
+    {
+      "id": "threonine_alpha",
+      "class_uri": "ex:AlphaAminoAcid",
+      "evidence_span": "Threonine"
+    },
+    {
+      "id": "threonine_polar",
+      "class_uri": "ex:PolarAminoAcid",
+      "evidence_span": "Threonine"
+    },
+    {
+      "id": "threonine_hydroxyl",
+      "class_uri": "ex:HydroxylContainingAminoAcid",
+      "evidence_span": "Threonine"
+    },
+    {
+      "id": "alpha_amino_beta_hydroxy_n_butyric_acid",
+      "class_uri": "ex:ChemicalCompound",
+      "evidence_span": "alpha-Amino-beta-hydroxy-n-butyric acid"
+    },
+    {
+      "id": "methionine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Methionine"
+    },
+    {
+      "id": "methionine_alpha",
+      "class_uri": "ex:AlphaAminoAcid",
+      "evidence_span": "Methionine"
+    },
+    {
+      "id": "methionine_nonpolar",
+      "class_uri": "ex:NonPolarAminoAcid",
+      "evidence_span": "Methionine"
+    },
+    {
+      "id": "methionine_sulfur",
+      "class_uri": "ex:SulfurContainingAminoAcid",
+      "evidence_span": "Methionine"
+    },
+    {
+      "id": "alpha_amino_gamma_methyl_thio_n_butyric_acid",
+      "class_uri": "ex:ChemicalCompound",
+      "evidence_span": "alpha-Amino-gamma-methyl-thio-n-butyric acid"
+    },
+    {
+      "id": "tryptophan",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Tryptophan"
+    },
+    {
+      "id": "tryptophan_alpha",
+      "class_uri": "ex:AlphaAminoAcid",
+      "evidence_span": "Tryptophan"
+    },
+    {
+      "id": "tryptophan_aromatic",
+      "class_uri": "ex:AromaticAminoAcid",
+      "evidence_span": "Tryptophan"
+    },
+    {
+      "id": "tryptophan_polar",
+      "class_uri": "ex:PolarAminoAcid",
+      "evidence_span": "Tryptophan"
+    },
+    {
+      "id": "tryptophan_heterocyclic",
+      "class_uri": "ex:HeterocyclicAminoAcid",
+      "evidence_span": "Tryptophan"
+    },
+    {
+      "id": "alpha_amino_beta_indolepropionic_acid",
+      "class_uri": "ex:ChemicalCompound",
+      "evidence_span": "alpha-Amino-beta-indolepropionic acid"
+    },
+    {
+      "id": "proline",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Proline"
+    },
+    {
+      "id": "proline_imino",
+      "class_uri": "ex:IminoAcid",
+      "evidence_span": "Proline"
+    },
+    {
+      "id": "proline_heterocyclic",
+      "class_uri": "ex:HeterocyclicAminoAcid",
+      "evidence_span": "Proline"
+    },
+    {
+      "id": "pyrrolidine_alpha_carboxylic_acid",
+      "class_uri": "ex:ChemicalCompound",
+      "evidence_span": "Pyrrolidine-alpha-carboxylic acid"
+    },
+    {
+      "id": "hydroxyproline",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Hydroxyproline"
+    },
+    {
+      "id": "hydroxyproline_imino",
+      "class_uri": "ex:IminoAcid",
+      "evidence_span": "Hydroxyproline"
+    },
+    {
+      "id": "hydroxyproline_hydroxyl",
+      "class_uri": "ex:HydroxylContainingAminoAcid",
+      "evidence_span": "Hydroxyproline"
+    },
+    {
+      "id": "gamma_hydroxypyrolidine_alpha_carboxylic_acid",
+      "class_uri": "ex:ChemicalCompound",
+      "evidence_span": "Gamma-Hydroxypyrolidine alpha-carboxylic acid"
+    },
+    {
+      "id": "aspartic_acid",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Aspartic Acid"
+    },
+    {
+      "id": "aspartic_acid_alpha",
+      "class_uri": "ex:AlphaAminoAcid",
+      "evidence_span": "Aspartic Acid"
+    },
+    {
+      "id": "aspartic_acid_acidic",
+      "class_uri": "ex:AcidicAminoAcid",
+      "evidence_span": "Aspartic Acid"
+    },
+    {
+      "id": "alpha_aminosuccinic_acid",
+      "class_uri": "ex:ChemicalCompound",
+      "evidence_span": "alpha-Aminosuccinic acid"
+    },
+    {
+      "id": "asparagine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Asparagine"
+    },
+    {
+      "id": "asparagine_alpha",
+      "class_uri": "ex:AlphaAminoAcid",
+      "evidence_span": "Asparagine"
+    },
+    {
+      "id": "asparagine_polar",
+      "class_uri": "ex:PolarAminoAcid",
+      "evidence_span": "Asparagine"
+    },
+    {
+      "id": "alpha_aminosuccinamic_acid",
+      "class_uri": "ex:ChemicalCompound",
+      "evidence_span": "alpha-Aminosuccinamic acid"
+    },
+    {
+      "id": "glutamic_acid",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Glutamic Acid"
+    },
+    {
+      "id": "glutamic_acid_alpha",
+      "class_uri": "ex:AlphaAminoAcid",
+      "evidence_span": "Glutamic Acid"
+    },
+    {
+      "id": "glutamic_acid_acidic",
+      "class_uri": "ex:AcidicAminoAcid",
+      "evidence_span": "Glutamic Acid"
+    },
+    {
+      "id": "alpha_aminoglutaric_acid",
+      "class_uri": "ex:ChemicalCompound",
+      "evidence_span": "alpha-Aminoglutaric acid"
+    },
+    {
+      "id": "beta_hydroxy_glutamic_acid",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Beta-Hydroxy Glutamic Acid"
+    },
+    {
+      "id": "beta_hydroxy_glutamic_acid_alpha",
+      "class_uri": "ex:AlphaAminoAcid",
+      "evidence_span": "Beta-Hydroxy Glutamic Acid"
+    },
+    {
+      "id": "beta_hydroxy_glutamic_acid_hydroxyl",
+      "class_uri": "ex:HydroxylContainingAminoAcid",
+      "evidence_span": "Beta-Hydroxy Glutamic Acid"
+    },
+    {
+      "id": "alpha_amino_beta_hydroxyglutaric_acid",
+      "class_uri": "ex:ChemicalCompound",
+      "evidence_span": "Alpha-Amino-beta-hydroxyglutaric acid"
+    },
+    {
+      "id": "glutamine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Glutamine"
+    },
+    {
+      "id": "glutamine_alpha",
+      "class_uri": "ex:AlphaAminoAcid",
+      "evidence_span": "Glutamine"
+    },
+    {
+      "id": "glutamine_polar",
+      "class_uri": "ex:PolarAminoAcid",
+      "evidence_span": "Glutamine"
+    },
+    {
+      "id": "alpha_amino_glutamic_acid",
+      "class_uri": "ex:ChemicalCompound",
+      "evidence_span": "Alpha-Amino glutamic acid"
+    },
+    {
+      "id": "ornithine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Ornithine"
+    },
+    {
+      "id": "ornithine_basic",
+      "class_uri": "ex:BasicAminoAcid",
+      "evidence_span": "Ornithine"
+    },
+    {
+      "id": "alpha_delta_diamino_n_valeric_acid",
+      "class_uri": "ex:ChemicalCompound",
+      "evidence_span": "alpha-delta-Diamino-n-valeric acid"
+    },
+    {
+      "id": "arginine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Arginine"
+    },
+    {
+      "id": "arginine_alpha",
+      "class_uri": "ex:AlphaAminoAcid",
+      "evidence_span": "Arginine"
+    },
+    {
+      "id": "arginine_basic",
+      "class_uri": "ex:BasicAminoAcid",
+      "evidence_span": "Arginine"
+    },
+    {
+      "id": "alpha_amino_delta_guanidino_n_valeric_acid",
+      "class_uri": "ex:ChemicalCompound",
+      "evidence_span": "alpha-Amino-delta-guanidino-n-valeric acid"
+    },
+    {
+      "id": "lysine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Lysine"
+    },
+    {
+      "id": "lysine_alpha",
+      "class_uri": "ex:AlphaAminoAcid",
+      "evidence_span": "Lysine"
+    },
+    {
+      "id": "lysine_basic",
+      "class_uri": "ex:BasicAminoAcid",
+      "evidence_span": "Lysine"
+    },
+    {
+      "id": "alpha_diaminocaproic_acid",
+      "class_uri": "ex:ChemicalCompound",
+      "evidence_span": "alpha-Diaminocaproic acid"
+    },
+    {
+      "id": "histidine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Histidine"
+    },
+    {
+      "id": "histidine_alpha",
+      "class_uri": "ex:AlphaAminoAcid",
+      "evidence_span": "Histidine"
+    },
+    {
+      "id": "histidine_basic",
+      "class_uri": "ex:BasicAminoAcid",
+      "evidence_span": "Histidine"
+    },
+    {
+      "id": "histidine_heterocyclic",
+      "class_uri": "ex:HeterocyclicAminoAcid",
+      "evidence_span": "Histidine"
+    },
+    {
+      "id": "alpha_amino_beta_imidazolepropionic_acid",
+      "class_uri": "ex:ChemicalCompound",
+      "evidence_span": "alpha-Amino-beta-imidazolepropionic acid"
+    },
+    {
+      "id": "protein",
+      "class_uri": "ex:Protein",
+      "evidence_span": "protein"
+    },
+    {
+      "id": "amino_acids_general",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Amino acids"
+    },
+    {
+      "id": "protein_deficiency",
+      "class_uri": "ex:Disease",
+      "evidence_span": "protein deficiency"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "d_penicillamine",
+      "property_uri": "ex:isMetaboliteOf",
+      "target_id": "penicillin",
+      "evidence_span": "D-Penicillamine: It is a metabolite of penicillin."
+    },
+    {
+      "source_id": "d_penicillamine_drug",
+      "property_uri": "ex:treatsDisease",
+      "target_id": "wilson_s_disease",
+      "evidence_span": "It is employed in the chelation therapy of Wilson’s disease."
+    },
+    {
+      "source_id": "n_acetylcysteine_drug",
+      "property_uri": "ex:treatsDisease",
+      "target_id": "cystic_fibrosis",
+      "evidence_span": "N-Acetylcysteine: It is used in cystic fibrosis"
+    },
+    {
+      "source_id": "n_acetylcysteine_drug",
+      "property_uri": "ex:treatsDisease",
+      "target_id": "chronic_renal_insufficiency",
+      "evidence_span": "chronic renal insufficiency"
+    },
+    {
+      "source_id": "n_acetylcysteine",
+      "property_uri": "ex:regulatesProcess",
+      "target_id": "antioxidant",
+      "evidence_span": "as it can function as an antioxidant."
+    },
+    {
+      "source_id": "gabapentin",
+      "property_uri": "ex:regulatesProcess",
+      "target_id": "anticonvulsant",
+      "evidence_span": "It is used as anticonvulsant."
+    },
+    {
+      "source_id": "amino_acids_general",
+      "property_uri": "ex:isBuildingBlockOf",
+      "target_id": "protein",
+      "evidence_span": "Amino acids are necessary for protein synthesis"
+    },
+    {
+      "source_id": "amino_acids_general",
+      "property_uri": "ex:causesDiseaseWhenDeficient",
+      "target_id": "protein_deficiency",
+      "evidence_span": "their deficiency results in decreased formation of protein or protein are not formed as a result protein deficiency may occur."
+    }
+  ]
+}

@@ -56,7 +56,7 @@ def generate_graph(processor, extractor, search_db, pdf_path, run_id="A"):
     approved_ontology_str = state_tracker.format_for_prompt()
 
     # Phase 3b: Extract triples in batches to reduce API calls
-    BATCH_SIZE = 3  # 3 chunks per LLM call → 6 calls instead of 18
+    BATCH_SIZE = 5  # Reduce back to 5 so we don't hit max-output-tokens or break JSON parsers
 
     extraction_chunks = chunks if settings.EXTRACT_ALL_CHUNKS else chunks[:settings.EXTRACT_MAX_CHUNKS or len(chunks)]
 
@@ -87,21 +87,25 @@ def generate_graph(processor, extractor, search_db, pdf_path, run_id="A"):
             print("Graph is fully connected. Refinement complete.")
             break
 
-        print(f"  Iteration {iteration}: {len(c_small_list)} disconnected component(s) found.")
+        print(f"  Iteration {iteration}: {len(c_small_list)} disconnected component(s) found. Consolidating into 1 batch call...")
         state_size_before = state_tracker.get_ontology_size()
-        main_anchors = graph_builder.get_top_degree_nodes(c_main, top_k=5)
+        main_anchors = graph_builder.get_top_degree_nodes(c_main, top_k=10) # take more anchors for better coverage
 
-        for idx, c_j in enumerate(c_small_list[:10]):
-            disconnected_anchors = graph_builder.get_top_degree_nodes(c_j, top_k=3)
-            bridging_context = search_db.retrieve_context(main_anchors, disconnected_anchors)
+        # Collect anchors from up to 20 disconnected subgraphs
+        all_disconnected_anchors = []
+        for c_j in c_small_list[:20]:
+            all_disconnected_anchors.extend(graph_builder.get_top_degree_nodes(c_j, top_k=3))
+            
+        if not all_disconnected_anchors:
+            break
 
-            if not bridging_context:
-                continue
+        bridging_context = search_db.retrieve_context(main_anchors, all_disconnected_anchors, top_k=10)
 
+        if bridging_context:
             bridge_result = extractor.bridge_subgraphs(
                 text_context=bridging_context,
                 main_anchors=main_anchors,
-                disconnected_anchors=disconnected_anchors,
+                disconnected_anchors=all_disconnected_anchors,
                 approved_ontology=state_tracker.format_for_prompt()
             )
 

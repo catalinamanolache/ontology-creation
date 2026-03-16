@@ -1,0 +1,158 @@
+{
+  "reasoning_steps": [
+    "Analyzed the text to identify key entities and concepts related to amino acids, proteins, diseases, and chemical properties.",
+    "Extracted major concepts such as 'Amino Acid', 'Protein', 'Disease', 'Chemical Group', 'Synthesis Method', 'Drug', and 'Chemical Compound' to define core classes.",
+    "Identified various classifications and types of amino acids (e.g., Acidic, Basic, Polar, Aromatic) and modeled them as distinct subclasses of 'ex:AminoAcid' to capture hierarchical relationships.",
+    "Defined object properties to represent relationships between classes (e.g., 'ex:isBuildingBlockOf') and data properties to represent attributes of classes (e.g., 'ex:hasMeltingPoint').",
+    "Ensured properties are general and reusable, with appropriate domains and ranges, and provided concise, single-sentence comments for each class and property.",
+    "Avoided creating instance-level classes, focusing instead on general concepts and their relationships."
+  ],
+  "classes": [
+    {
+      "uri": "ex:AminoAcid",
+      "comment": "The fundamental building block of proteins, characterized by amino and carboxyl functional groups."
+    },
+    {
+      "uri": "ex:Protein",
+      "comment": "A macromolecule composed of amino acids linked by peptide bonds."
+    },
+    {
+      "uri": "ex:Disease",
+      "comment": "A disorder or illness affecting an organism, potentially linked to amino acid deficiency or treated by specific amino acids."
+    },
+    {
+      "uri": "ex:ChemicalGroup",
+      "comment": "A specific group of atoms within a molecule that contributes to its chemical properties and reactivity."
+    },
+    {
+      "uri": "ex:SynthesisMethod",
+      "comment": "A procedure or process used for the chemical preparation of a compound."
+    },
+    {
+      "uri": "ex:Drug",
+      "comment": "A substance used for the diagnosis, cure, treatment, or prevention of disease."
+    },
+    {
+      "uri": "ex:ChemicalCompound",
+      "comment": "A substance formed when two or more chemical elements are chemically bonded together."
+    },
+    {
+      "uri": "ex:AcidicAminoAcid",
+      "comment": "An amino acid characterized by an acidic R-group, typically containing an extra carboxyl group."
+    },
+    {
+      "uri": "ex:BasicAminoAcid",
+      "comment": "An amino acid characterized by a basic R-group, typically containing an extra amino or guanidino group."
+    },
+    {
+      "uri": "ex:NeutralAminoAcid",
+      "comment": "An amino acid characterized by a neutral R-group, neither acidic nor basic."
+    },
+    {
+      "uri": "ex:NonPolarAminoAcid",
+      "comment": "An amino acid with a hydrophobic R-group that has no charge, often referred to as water-hating."
+    },
+    {
+      "uri": "ex:PolarAminoAcid",
+      "comment": "An amino acid with a hydrophilic R-group, capable of forming hydrogen bonds."
+    },
+    {
+      "uri": "ex:AromaticAminoAcid",
+      "comment": "An amino acid containing an aromatic ring structure in its side chain."
+    },
+    {
+      "uri": "ex:SulfurContainingAminoAcid",
+      "comment": "An amino acid that includes sulfur in its chemical structure, such as cysteine or methionine."
+    },
+    {
+      "uri": "ex:HydroxylContainingAminoAcid",
+      "comment": "An amino acid that contains a hydroxyl (-OH) group in its side chain."
+    },
+    {
+      "uri": "ex:IminoAcid",
+      "comment": "An unusual amino acid that contains an imino (=NH) group as part of a ring structure, instead of a primary amino group."
+    },
+    {
+      "uri": "ex:HeterocyclicAminoAcid",
+      "comment": "An amino acid containing a heterocyclic ring structure in its side chain."
+    },
+    {
+      "uri": "ex:AlphaAminoAcid",
+      "comment": "An amino acid where the amino group is attached to the alpha-carbon atom, adjacent to the carboxyl group."
+    }
+  ],
+  "properties": [
+    {
+      "uri": "ex:isBuildingBlockOf",
+      "domain": "ex:AminoAcid",
+      "range": "ex:Protein",
+      "comment": "Indicates that an amino acid is a fundamental component used to construct a protein."
+    },
+    {
+      "uri": "ex:hasChemicalGroup",
+      "domain": "ex:ChemicalCompound",
+      "range": "ex:ChemicalGroup",
+      "comment": "Indicates that a chemical compound possesses a specific chemical group."
+    },
+    {
+      "uri": "ex:hasChemicalGroupCharacteristic",
+      "domain": "ex:ChemicalGroup",
+      "range": "xsd:string",
+      "comment": "Describes a particular chemical characteristic of a chemical group, such as being basic or acidic."
+    },
+    {
+      "uri": "ex:causesDiseaseWhenDeficient",
+      "domain": "ex:AminoAcid",
+      "range": "ex:Disease",
+      "comment": "Indicates that a deficiency in a specific amino acid can lead to a particular disease."
+    },
+    {
+      "uri": "ex:treatsDisease",
+      "domain": "ex:Drug",
+      "range": "ex:Disease",
+      "comment": "Indicates that a drug is used to alleviate or cure a specific disease."
+    },
+    {
+      "uri": "ex:hasMeltingPoint",
+      "domain": "ex:AminoAcid",
+      "range": "xsd:string",
+      "comment": "Specifies the melting temperature of an amino acid, often expressed with units or descriptive phrases."
+    },
+    {
+      "uri": "ex:hasTaste",
+      "domain": "ex:AminoAcid",
+      "range": "xsd:string",
+      "comment": "Describes the taste characteristic of an amino acid, such as sweet, tasteless, or bitter."
+    },
+    {
+      "uri": "ex:hasOpticalActivity",
+      "domain": "ex:AminoAcid",
+      "range": "xsd:boolean",
+      "comment": "Indicates whether an amino acid demonstrates the ability to rotate plane-polarized light due to chirality."
+    },
+    {
+      "uri": "ex:isZwitterion",
+      "domain": "ex:AminoAcid",
+      "range": "xsd:boolean",
+      "comment": "Indicates whether an amino acid exists as a hybrid molecule containing both positive and negative ionic groups."
+    },
+    {
+      "uri": "ex:canBePreparedBy",
+      "domain": "ex:AminoAcid",
+      "range": "ex:SynthesisMethod",
+      "comment": "Indicates that an amino acid can be synthesized using a specific chemical method."
+    },
+    {
+      "uri": "ex:isMetaboliteOf",
+      "domain": "ex:ChemicalCompound",
+      "range": "ex:ChemicalCompound",
+      "comment": "Indicates that a chemical compound is a product of the metabolism of another compound."
+    },
+    {
+      "uri": "ex:regulatesProcess",
+      "domain": "ex:AminoAcid",
+      "range": "xsd:string",
+      "comment": "Describes a biological process that an amino acid helps to control or influence."
+    }
+  ]
+}

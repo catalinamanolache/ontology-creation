@@ -29,17 +29,18 @@ APPROVED ONTOLOGY:
 """
 
 SYSTEM_PROMPT_BRIDGING = """
-You are a Graph topology refinement AI. We have two disconnected subgraphs in our Knowledge Graph. We must determine if there is a valid, text-supported relationship between the anchor nodes of Subgraph A and Subgraph B.
+You are a Graph topology refinement AI. We have a main knowledge graph and several disconnected subgraphs. We must determine if there is a valid, text-supported relationship linking the disconnected components to the main graph.
 
 CRITICAL INSTRUCTIONS:
 1. Analyze the retrieved Text Context. 
-2. Look specifically at Anchor Nodes from Subgraph A and Anchor Nodes from Subgraph B.
-3. If the text provides explicit evidence of a relationship between any Node A and Node B, extract it.
+2. Look specifically for relationships between the Anchor Nodes from the Main Graph and any of the Disconnected Nodes.
+3. You may also find relationships between different disconnected nodes.
+4. Extracted relations must use the APPROVED ONTOLOGY.
 
-ANCHOR NODES SUBGRAPH A (Main):
+ANCHOR NODES (MAIN GRAPH):
 {main_subgraph_anchors}
 
-ANCHOR NODES SUBGRAPH B (Disconnected):
+DISCONNECTED NODES:
 {disconnected_subgraph_anchors}
 
 APPROVED ONTOLOGY SUMMARY:

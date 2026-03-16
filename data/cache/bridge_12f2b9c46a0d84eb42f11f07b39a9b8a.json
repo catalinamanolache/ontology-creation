@@ -1,0 +1,429 @@
+{
+  "reasoning_steps": [
+    "Scanned the text for mentions of all ANCHOR NODES and DISCONNECTED NODES.",
+    "For each identified mention, created an entity with a unique snake_case ID, assigned the most appropriate class_uri from the APPROVED ONTOLOGY, and recorded the evidence_span.",
+    "Specifically classified amino acids based on their chemical properties (e.g., acidic, basic, neutral, aromatic, sulfur-containing, hydroxyl-containing, non-polar, polar, alpha-amino, imino) as described in the text and the ontology.",
+    "Identified explicit relationships between these entities as stated in the text.",
+    "Mapped these relationships to the property_uri from the APPROVED ONTOLOGY, ensuring the source_id, target_id, and evidence_span were correctly captured.",
+    "Ensured that all amino acids mentioned in the context are considered building blocks of proteins, as stated in the text 'Amino acids are necessary for protein synthesis' and 'Protein is made up of amino acids, which are the building blocks of the molecule.'",
+    "Handled cases where a disconnected node name directly corresponds to a class (e.g., alpha_amino_acids -> ex:AlphaAminoAcid) or a characteristic (e.g., anticonvulsant as a process regulated by a drug)."
+  ],
+  "entities": [
+    {
+      "id": "gabapentin",
+      "class_uri": "ex:Drug",
+      "evidence_span": "Gabapentin"
+    },
+    {
+      "id": "beta_hydroxy_glutamic_acid",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Beta-Hydroxy Glutamic Acid"
+    },
+    {
+      "id": "glycine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Glycine"
+    },
+    {
+      "id": "valine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Valine"
+    },
+    {
+      "id": "leucine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Leucine"
+    },
+    {
+      "id": "phenylalanine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Phenylalanine"
+    },
+    {
+      "id": "threonine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Threonine"
+    },
+    {
+      "id": "methionine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Methionine"
+    },
+    {
+      "id": "tryptophan",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Tryptophan"
+    },
+    {
+      "id": "hydroxyproline",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Hydroxyproline"
+    },
+    {
+      "id": "glutamic_acid",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Glutamic Acid"
+    },
+    {
+      "id": "ornithine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Ornithine"
+    },
+    {
+      "id": "proteins",
+      "class_uri": "ex:Protein",
+      "evidence_span": "proteins"
+    },
+    {
+      "id": "cystine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Cystine"
+    },
+    {
+      "id": "trauma",
+      "class_uri": "ex:Disease",
+      "evidence_span": "trauma"
+    },
+    {
+      "id": "surgery",
+      "class_uri": "ex:Disease",
+      "evidence_span": "surgery"
+    },
+    {
+      "id": "d_penicillamine",
+      "class_uri": "ex:Drug",
+      "evidence_span": "D-Penicillamine"
+    },
+    {
+      "id": "penicillin",
+      "class_uri": "ex:ChemicalCompound",
+      "evidence_span": "penicillin"
+    },
+    {
+      "id": "wilsons_disease",
+      "class_uri": "ex:Disease",
+      "evidence_span": "Wilson’s disease"
+    },
+    {
+      "id": "n_acetylcysteine_drug",
+      "class_uri": "ex:Drug",
+      "evidence_span": "N-Acetylcysteine"
+    },
+    {
+      "id": "cystic_fibrosis",
+      "class_uri": "ex:Disease",
+      "evidence_span": "cystic fibrosis"
+    },
+    {
+      "id": "chronic_renal_insufficiency",
+      "class_uri": "ex:Disease",
+      "evidence_span": "chronic renal insufficiency"
+    },
+    {
+      "id": "acidic_amino_acids",
+      "class_uri": "ex:AcidicAminoAcid",
+      "evidence_span": "Acidic amino acids"
+    },
+    {
+      "id": "basic_amino_acids",
+      "class_uri": "ex:BasicAminoAcid",
+      "evidence_span": "basic amino acids"
+    },
+    {
+      "id": "neutral_amino_acids",
+      "class_uri": "ex:NeutralAminoAcid",
+      "evidence_span": "neutral amino acids"
+    },
+    {
+      "id": "streckers_synthesis",
+      "class_uri": "ex:SynthesisMethod",
+      "evidence_span": "Streckers Synthesis"
+    },
+    {
+      "id": "alpha_amino_acid_class",
+      "class_uri": "ex:AlphaAminoAcid",
+      "evidence_span": "Alpha amino acids"
+    },
+    {
+      "id": "beta_alanine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "β-alanine"
+    },
+    {
+      "id": "gaba",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "GABA (Gamma Amino Butyric Acid)"
+    },
+    {
+      "id": "imino_acid",
+      "class_uri": "ex:IminoAcid",
+      "evidence_span": "Imino Acids"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "gabapentin",
+      "property_uri": "ex:regulatesProcess",
+      "target_id": "anticonvulsant",
+      "evidence_span": "It is used as anticonvulsant"
+    },
+    {
+      "source_id": "glycine",
+      "property_uri": "ex:isBuildingBlockOf",
+      "target_id": "proteins",
+      "evidence_span": "Amino acids are necessary for protein synthesis"
+    },
+    {
+      "source_id": "valine",
+      "property_uri": "ex:isBuildingBlockOf",
+      "target_id": "proteins",
+      "evidence_span": "Amino acids are necessary for protein synthesis"
+    },
+    {
+      "source_id": "leucine",
+      "property_uri": "ex:isBuildingBlockOf",
+      "target_id": "proteins",
+      "evidence_span": "Amino acids are necessary for protein synthesis"
+    },
+    {
+      "source_id": "phenylalanine",
+      "property_uri": "ex:isBuildingBlockOf",
+      "target_id": "proteins",
+      "evidence_span": "Amino acids are necessary for protein synthesis"
+    },
+    {
+      "source_id": "threonine",
+      "property_uri": "ex:isBuildingBlockOf",
+      "target_id": "proteins",
+      "evidence_span": "Amino acids are necessary for protein synthesis"
+    },
+    {
+      "source_id": "methionine",
+      "property_uri": "ex:isBuildingBlockOf",
+      "target_id": "proteins",
+      "evidence_span": "Amino acids are necessary for protein synthesis"
+    },
+    {
+      "source_id": "tryptophan",
+      "property_uri": "ex:isBuildingBlockOf",
+      "target_id": "proteins",
+      "evidence_span": "Amino acids are necessary for protein synthesis"
+    },
+    {
+      "source_id": "hydroxyproline",
+      "property_uri": "ex:isBuildingBlockOf",
+      "target_id": "proteins",
+      "evidence_span": "Amino acids are necessary for protein synthesis"
+    },
+    {
+      "source_id": "glutamic_acid",
+      "property_uri": "ex:isBuildingBlockOf",
+      "target_id": "proteins",
+      "evidence_span": "Amino acids are necessary for protein synthesis"
+    },
+    {
+      "source_id": "beta_hydroxy_glutamic_acid",
+      "property_uri": "ex:isBuildingBlockOf",
+      "target_id": "proteins",
+      "evidence_span": "Amino acids are necessary for protein synthesis"
+    },
+    {
+      "source_id": "ornithine",
+      "property_uri": "ex:isBuildingBlockOf",
+      "target_id": "proteins",
+      "evidence_span": "Amino acids are necessary for protein synthesis"
+    },
+    {
+      "source_id": "cystine",
+      "property_uri": "ex:isBuildingBlockOf",
+      "target_id": "proteins",
+      "evidence_span": "Amino acids are necessary for protein synthesis"
+    },
+    {
+      "source_id": "beta_alanine",
+      "property_uri": "ex:isBuildingBlockOf",
+      "target_id": "proteins",
+      "evidence_span": "Amino acids are necessary for protein synthesis"
+    },
+    {
+      "source_id": "gaba",
+      "property_uri": "ex:isBuildingBlockOf",
+      "target_id": "proteins",
+      "evidence_span": "Amino acids are necessary for protein synthesis"
+    },
+    {
+      "source_id": "cystine",
+      "property_uri": "ex:treatsDisease",
+      "target_id": "surgery",
+      "evidence_span": "Cystine In medicine, cysteine is used to boost the efficiency of corticosteroid medications. Cystine L-Cystine can be used in the treatment of surgery and trauma."
+    },
+    {
+      "source_id": "cystine",
+      "property_uri": "ex:treatsDisease",
+      "target_id": "trauma",
+      "evidence_span": "Cystine L-Cystine can be used in the treatment of surgery and trauma."
+    },
+    {
+      "source_id": "d_penicillamine",
+      "property_uri": "ex:isMetaboliteOf",
+      "target_id": "penicillin",
+      "evidence_span": "D-Penicillamine: It is a metabolite of penicillin."
+    },
+    {
+      "source_id": "d_penicillamine",
+      "property_uri": "ex:treatsDisease",
+      "target_id": "wilsons_disease",
+      "evidence_span": "It is employed in the chelation therapy of Wilson’s disease."
+    },
+    {
+      "source_id": "n_acetylcysteine_drug",
+      "property_uri": "ex:treatsDisease",
+      "target_id": "cystic_fibrosis",
+      "evidence_span": "N-Acetylcysteine: It is used in cystic fibrosis, and chronic renal insufficiency"
+    },
+    {
+      "source_id": "n_acetylcysteine_drug",
+      "property_uri": "ex:treatsDisease",
+      "target_id": "chronic_renal_insufficiency",
+      "evidence_span": "N-Acetylcysteine: It is used in cystic fibrosis, and chronic renal insufficiency"
+    },
+    {
+      "source_id": "n_acetylcysteine_drug",
+      "property_uri": "ex:regulatesProcess",
+      "target_id": "antioxidant",
+      "evidence_span": "as it can function as an antioxidant"
+    },
+    {
+      "source_id": "alpha_amino_acid_class",
+      "property_uri": "ex:canBePreparedBy",
+      "target_id": "streckers_synthesis",
+      "evidence_span": "Streckers Synthesis ... Alpha amino acids"
+    },
+    {
+      "source_id": "alpha_amino_acid_class",
+      "property_uri": "ex:hasChemicalGroupCharacteristic",
+      "target_id": "amino group attached to the next carbon of the carboxyl group",
+      "evidence_span": "α-amino acid: The amino group attached to the next carbon of the carboxyl group is called α - amino acid."
+    },
+    {
+      "source_id": "beta_alanine",
+      "property_uri": "ex:hasChemicalGroupCharacteristic",
+      "target_id": "amino group attached to the third carbon (numbering from the Carboxyl group)",
+      "evidence_span": "β-amino acid refers to the amino group attached to the third carbon (numbering from the Carboxyl group) of amino acid. For example, one of the end products of Pyrimidine catabolism is -alanine."
+    },
+    {
+      "source_id": "gaba",
+      "property_uri": "ex:hasChemicalGroupCharacteristic",
+      "target_id": "amino group connected to the amino acids fourth carbon (numbering from the Carboxyl group)",
+      "evidence_span": "γ-amino acid refers to the amino group connected to the amino acids fourth carbon (numbering from the Carboxyl group). e.g. GABA (Gamma Amino Butyric Acid)."
+    },
+    {
+      "source_id": "acidic_amino_acids",
+      "property_uri": "ex:hasChemicalGroupCharacteristic",
+      "target_id": "acidic",
+      "evidence_span": "Acidic, basic, and neutral amino acids are the three types of amino acids"
+    },
+    {
+      "source_id": "basic_amino_acids",
+      "property_uri": "ex:hasChemicalGroupCharacteristic",
+      "target_id": "basic",
+      "evidence_span": "Acidic, basic, and neutral amino acids are the three types of amino acids"
+    },
+    {
+      "source_id": "neutral_amino_acids",
+      "property_uri": "ex:hasChemicalGroupCharacteristic",
+      "target_id": "neutral",
+      "evidence_span": "Acidic, basic, and neutral amino acids are the three types of amino acids"
+    },
+    {
+      "source_id": "glutamic_acid",
+      "property_uri": "ex:hasChemicalGroupCharacteristic",
+      "target_id": "acidic",
+      "evidence_span": "Acidic Amino Acids and their Amides Aspartic acid and glutamic acids are dicarboxylic monoamino acids"
+    },
+    {
+      "source_id": "phenylalanine",
+      "property_uri": "ex:hasChemicalGroupCharacteristic",
+      "target_id": "aromatic",
+      "evidence_span": "Aromatic amino acids include phenylalanine, tyrosine, and tryptophan"
+    },
+    {
+      "source_id": "tryptophan",
+      "property_uri": "ex:hasChemicalGroupCharacteristic",
+      "target_id": "aromatic",
+      "evidence_span": "Aromatic amino acids include phenylalanine, tyrosine, and tryptophan"
+    },
+    {
+      "source_id": "imino_acid",
+      "property_uri": "ex:hasChemicalGroupCharacteristic",
+      "target_id": "Imino group (=NH)",
+      "evidence_span": "Imino Acids An unusual amino acid is a proline, which has a Pyrrolidine ring. Instead of the amino group (-NH2) found in other amino acids, it possesses an Imino group (=NH)."
+    },
+    {
+      "source_id": "hydroxyproline",
+      "property_uri": "ex:hasChemicalGroupCharacteristic",
+      "target_id": "Imino group (=NH)",
+      "evidence_span": "Proline Pyrrolidine-alpha-carboxylic acid Pro P Hydroxyproline Gamma-Hydroxypyrolidine alpha-carboxylic acid Hyp - ... Imino Acids An unusual amino acid is a proline, which has a Pyrrolidine ring. Instead of the amino group (-NH2) found in other amino acids, it possesses an Imino group (=NH)."
+    },
+    {
+      "source_id": "methionine",
+      "property_uri": "ex:hasChemicalGroupCharacteristic",
+      "target_id": "sulfur-containing",
+      "evidence_span": "Sulphur Containing Amino acids The two amino acids absorbed during protein synthesis are cysteine with a sulfohydryl group and methionine with a thioether group."
+    },
+    {
+      "source_id": "threonine",
+      "property_uri": "ex:hasChemicalGroupCharacteristic",
+      "target_id": "hydroxyl-containing",
+      "evidence_span": "Hydroxyl Group-containing Amino Acids Serine, threonine, and tyrosine are amino acids with hydroxyl groups."
+    },
+    {
+      "source_id": "valine",
+      "property_uri": "ex:hasChemicalGroupCharacteristic",
+      "target_id": "non-polar",
+      "evidence_span": "Non-polar amino acids These amino acids are also known as hydrophobic amino acids (water -hating) they have no charge on the 'R' group. e.g.: Alanine, Leucine, Isoleucine, Valine, Methionine, Phenylalanine, Tryptophan, and Proline."
+    },
+    {
+      "source_id": "leucine",
+      "property_uri": "ex:hasChemicalGroupCharacteristic",
+      "target_id": "non-polar",
+      "evidence_span": "Non-polar amino acids These amino acids are also known as hydrophobic amino acids (water -hating) they have no charge on the 'R' group. e.g.: Alanine, Leucine, Isoleucine, Valine, Methionine, Phenylalanine, Tryptophan, and Proline."
+    },
+    {
+      "source_id": "methionine",
+      "property_uri": "ex:hasChemicalGroupCharacteristic",
+      "target_id": "non-polar",
+      "evidence_span": "Non-polar amino acids These amino acids are also known as hydrophobic amino acids (water -hating) they have no charge on the 'R' group. e.g.: Alanine, Leucine, Isoleucine, Valine, Methionine, Phenylalanine, Tryptophan, and Proline."
+    },
+    {
+      "source_id": "phenylalanine",
+      "property_uri": "ex:hasChemicalGroupCharacteristic",
+      "target_id": "non-polar",
+      "evidence_span": "Non-polar amino acids These amino acids are also known as hydrophobic amino acids (water -hating) they have no charge on the 'R' group. e.g.: Alanine, Leucine, Isoleucine, Valine, Methionine, Phenylalanine, Tryptophan, and Proline."
+    },
+    {
+      "source_id": "tryptophan",
+      "property_uri": "ex:hasChemicalGroupCharacteristic",
+      "target_id": "non-polar",
+      "evidence_span": "Non-polar amino acids These amino acids are also known as hydrophobic amino acids (water -hating) they have no charge on the 'R' group. e.g.: Alanine, Leucine, Isoleucine, Valine, Methionine, Phenylalanine, Tryptophan, and Proline."
+    },
+    {
+      "source_id": "glycine",
+      "property_uri": "ex:hasChemicalGroupCharacteristic",
+      "target_id": "polar",
+      "evidence_span": "Polar amino acids with no charge on 'R' group: ... e.g.: Glycine, Serine, Threonine, Cysteine, Glutamine, Asparagine, and Tyrosine."
+    },
+    {
+      "source_id": "threonine",
+      "property_uri": "ex:hasChemicalGroupCharacteristic",
+      "target_id": "polar",
+      "evidence_span": "Polar amino acids with no charge on 'R' group: ... e.g.: Glycine, Serine, Threonine, Cysteine, Glutamine, Asparagine, and Tyrosine."
+    },
+    {
+      "source_id": "glutamic_acid",
+      "property_uri": "ex:hasChemicalGroupCharacteristic",
+      "target_id": "polar",
+      "evidence_span": "Polar amino acids with negative 'R ‘group: The aromatic dicarboxylic monoamino acids-e.g.: Aspartic acid and Glutamic acid."
+    }
+  ]
+}

@@ -1,0 +1,551 @@
+{
+  "reasoning_steps": [
+    "Identify all mentions of amino acids and classify them based on the provided ontology classes (e.g., ex:AminoAcid, ex:AcidicAminoAcid, ex:NonPolarAminoAcid, etc.).",
+    "Identify mentions of proteins and diseases.",
+    "Identify mentions of specific chemical groups.",
+    "For each identified amino acid, create an entity with a unique snake_case ID and its most specific class_uri(s) based on the text and ontology.",
+    "For other identified entities like proteins, diseases, and chemical groups, create entities with appropriate class_uris.",
+    "Extract 'ex:isBuildingBlockOf' relations by linking the 20 common amino acids mentioned to 'Proteins', as the text states 'Proteins include 20 amino acids'.",
+    "Extract 'ex:hasChemicalGroup' relations by identifying amino acids described as having specific chemical groups.",
+    "Extract 'ex:hasChemicalGroupCharacteristic' relations by finding descriptions of the characteristics of identified chemical groups.",
+    "Extract 'ex:causesDiseaseWhenDeficient' relations by identifying essential amino acids and the diseases their deficiency can cause, as explicitly stated in the text.",
+    "Ensure that Proline is not classified as an ex:AlphaAminoAcid, as the text explicitly states it possesses an Imino group instead of an amino group, which contradicts the definition of an alpha-amino acid provided.",
+    "Ensure that Beta-alanine and GABA are classified as ex:AminoAcid but not ex:AlphaAminoAcid, as they are explicitly described as beta and gamma amino acids respectively.",
+    "Verify all extracted entities and relations strictly adhere to the APPROVED ONTOLOGY, using only specified classes and properties."
+  ],
+  "entities": [
+    {
+      "id": "glycine",
+      "class_uri": "ex:NonPolarAminoAcid",
+      "evidence_span": "Glycine"
+    },
+    {
+      "id": "valine",
+      "class_uri": "ex:NonPolarAminoAcid",
+      "evidence_span": "Valine"
+    },
+    {
+      "id": "leucine",
+      "class_uri": "ex:NonPolarAminoAcid",
+      "evidence_span": "Leucine"
+    },
+    {
+      "id": "isoleucine",
+      "class_uri": "ex:NonPolarAminoAcid",
+      "evidence_span": "Isoleucine"
+    },
+    {
+      "id": "threonine",
+      "class_uri": "ex:HydroxylContainingAminoAcid",
+      "evidence_span": "Threonine"
+    },
+    {
+      "id": "methionine",
+      "class_uri": "ex:SulfurContainingAminoAcid",
+      "evidence_span": "Methionine"
+    },
+    {
+      "id": "phenylalanine",
+      "class_uri": "ex:AromaticAminoAcid",
+      "evidence_span": "Phenylalanine"
+    },
+    {
+      "id": "tryptophan",
+      "class_uri": "ex:HeterocyclicAminoAcid",
+      "evidence_span": "Tryptophan"
+    },
+    {
+      "id": "lysine",
+      "class_uri": "ex:BasicAminoAcid",
+      "evidence_span": "Lysine"
+    },
+    {
+      "id": "arginine",
+      "class_uri": "ex:BasicAminoAcid",
+      "evidence_span": "Arginine"
+    },
+    {
+      "id": "histidine",
+      "class_uri": "ex:HeterocyclicAminoAcid",
+      "evidence_span": "Histidine"
+    },
+    {
+      "id": "alanine",
+      "class_uri": "ex:NonPolarAminoAcid",
+      "evidence_span": "Alanine"
+    },
+    {
+      "id": "aspartic_acid",
+      "class_uri": "ex:AcidicAminoAcid",
+      "evidence_span": "Aspartic acid"
+    },
+    {
+      "id": "asparagine",
+      "class_uri": "ex:PolarAminoAcid",
+      "evidence_span": "Asparagine"
+    },
+    {
+      "id": "cystine",
+      "class_uri": "ex:SulfurContainingAminoAcid",
+      "evidence_span": "Cystine"
+    },
+    {
+      "id": "cysteine",
+      "class_uri": "ex:SulfurContainingAminoAcid",
+      "evidence_span": "Cysteine"
+    },
+    {
+      "id": "glutamic_acid",
+      "class_uri": "ex:AcidicAminoAcid",
+      "evidence_span": "Glutamic acid"
+    },
+    {
+      "id": "glutamine",
+      "class_uri": "ex:PolarAminoAcid",
+      "evidence_span": "Glutamine"
+    },
+    {
+      "id": "proline",
+      "class_uri": "ex:IminoAcid",
+      "evidence_span": "Proline"
+    },
+    {
+      "id": "serine",
+      "class_uri": "ex:HydroxylContainingAminoAcid",
+      "evidence_span": "Serine"
+    },
+    {
+      "id": "tyrosine",
+      "class_uri": "ex:AromaticAminoAcid",
+      "evidence_span": "tyrosine"
+    },
+    {
+      "id": "proteins",
+      "class_uri": "ex:Protein",
+      "evidence_span": "Proteins"
+    },
+    {
+      "id": "neurological_breakdown",
+      "class_uri": "ex:Disease",
+      "evidence_span": "neurological breakdown"
+    },
+    {
+      "id": "suppression_of_normal_mental_development",
+      "class_uri": "ex:Disease",
+      "evidence_span": "suppression of normal mental development"
+    },
+    {
+      "id": "death",
+      "class_uri": "ex:Disease",
+      "evidence_span": "death"
+    },
+    {
+      "id": "hydroxyl_group",
+      "class_uri": "ex:ChemicalGroup",
+      "evidence_span": "hydroxyl groups"
+    },
+    {
+      "id": "sulfohydryl_group",
+      "class_uri": "ex:ChemicalGroup",
+      "evidence_span": "sulfohydryl group"
+    },
+    {
+      "id": "thioether_group",
+      "class_uri": "ex:ChemicalGroup",
+      "evidence_span": "thioether group"
+    },
+    {
+      "id": "guanidino_group",
+      "class_uri": "ex:ChemicalGroup",
+      "evidence_span": "guanidino group"
+    },
+    {
+      "id": "imidazole_ring",
+      "class_uri": "ex:ChemicalGroup",
+      "evidence_span": "imidazole ring"
+    },
+    {
+      "id": "indole_ring",
+      "class_uri": "ex:ChemicalGroup",
+      "evidence_span": "indole ring"
+    },
+    {
+      "id": "pyrrolidine_ring",
+      "class_uri": "ex:ChemicalGroup",
+      "evidence_span": "Pyrrolidine ring"
+    },
+    {
+      "id": "imino_group",
+      "class_uri": "ex:ChemicalGroup",
+      "evidence_span": "Imino group (=NH)"
+    },
+    {
+      "id": "amino_group",
+      "class_uri": "ex:ChemicalGroup",
+      "evidence_span": "amino group (-NH2)"
+    },
+    {
+      "id": "beta_alanine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "-alanine"
+    },
+    {
+      "id": "gaba",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "GABA (Gamma Amino Butyric Acid)"
+    },
+    {
+      "id": "alpha_amino_acid_class",
+      "class_uri": "ex:AlphaAminoAcid",
+      "evidence_span": "α-amino acid"
+    },
+    {
+      "id": "polar_amino_acid_class",
+      "class_uri": "ex:PolarAminoAcid",
+      "evidence_span": "Polar amino acids"
+    },
+    {
+      "id": "neutral_amino_acid_class",
+      "class_uri": "ex:NeutralAminoAcid",
+      "evidence_span": "Monoamine monocarboxylic acids"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "glycine",
+      "property_uri": "ex:isBuildingBlockOf",
+      "target_id": "proteins",
+      "evidence_span": "Proteins include 20 amino acids"
+    },
+    {
+      "source_id": "alanine",
+      "property_uri": "ex:isBuildingBlockOf",
+      "target_id": "proteins",
+      "evidence_span": "Proteins include 20 amino acids"
+    },
+    {
+      "source_id": "valine",
+      "property_uri": "ex:isBuildingBlockOf",
+      "target_id": "proteins",
+      "evidence_span": "Proteins include 20 amino acids"
+    },
+    {
+      "source_id": "leucine",
+      "property_uri": "ex:isBuildingBlockOf",
+      "target_id": "proteins",
+      "evidence_span": "Proteins include 20 amino acids"
+    },
+    {
+      "source_id": "isoleucine",
+      "property_uri": "ex:isBuildingBlockOf",
+      "target_id": "proteins",
+      "evidence_span": "Proteins include 20 amino acids"
+    },
+    {
+      "source_id": "serine",
+      "property_uri": "ex:isBuildingBlockOf",
+      "target_id": "proteins",
+      "evidence_span": "Proteins include 20 amino acids"
+    },
+    {
+      "source_id": "threonine",
+      "property_uri": "ex:isBuildingBlockOf",
+      "target_id": "proteins",
+      "evidence_span": "Proteins include 20 amino acids"
+    },
+    {
+      "source_id": "tyrosine",
+      "property_uri": "ex:isBuildingBlockOf",
+      "target_id": "proteins",
+      "evidence_span": "Proteins include 20 amino acids"
+    },
+    {
+      "source_id": "cysteine",
+      "property_uri": "ex:isBuildingBlockOf",
+      "target_id": "proteins",
+      "evidence_span": "Proteins include 20 amino acids"
+    },
+    {
+      "source_id": "methionine",
+      "property_uri": "ex:isBuildingBlockOf",
+      "target_id": "proteins",
+      "evidence_span": "Proteins include 20 amino acids"
+    },
+    {
+      "source_id": "aspartic_acid",
+      "property_uri": "ex:isBuildingBlockOf",
+      "target_id": "proteins",
+      "evidence_span": "Proteins include 20 amino acids"
+    },
+    {
+      "source_id": "glutamic_acid",
+      "property_uri": "ex:isBuildingBlockOf",
+      "target_id": "proteins",
+      "evidence_span": "Proteins include 20 amino acids"
+    },
+    {
+      "source_id": "asparagine",
+      "property_uri": "ex:isBuildingBlockOf",
+      "target_id": "proteins",
+      "evidence_span": "Proteins include 20 amino acids"
+    },
+    {
+      "source_id": "glutamine",
+      "property_uri": "ex:isBuildingBlockOf",
+      "target_id": "proteins",
+      "evidence_span": "Proteins include 20 amino acids"
+    },
+    {
+      "source_id": "lysine",
+      "property_uri": "ex:isBuildingBlockOf",
+      "target_id": "proteins",
+      "evidence_span": "Proteins include 20 amino acids"
+    },
+    {
+      "source_id": "arginine",
+      "property_uri": "ex:isBuildingBlockOf",
+      "target_id": "proteins",
+      "evidence_span": "Proteins include 20 amino acids"
+    },
+    {
+      "source_id": "histidine",
+      "property_uri": "ex:isBuildingBlockOf",
+      "target_id": "proteins",
+      "evidence_span": "Proteins include 20 amino acids"
+    },
+    {
+      "source_id": "phenylalanine",
+      "property_uri": "ex:isBuildingBlockOf",
+      "target_id": "proteins",
+      "evidence_span": "Proteins include 20 amino acids"
+    },
+    {
+      "source_id": "tryptophan",
+      "property_uri": "ex:isBuildingBlockOf",
+      "target_id": "proteins",
+      "evidence_span": "Proteins include 20 amino acids"
+    },
+    {
+      "source_id": "proline",
+      "property_uri": "ex:isBuildingBlockOf",
+      "target_id": "proteins",
+      "evidence_span": "Proteins include 20 amino acids"
+    },
+    {
+      "source_id": "serine",
+      "property_uri": "ex:hasChemicalGroup",
+      "target_id": "hydroxyl_group",
+      "evidence_span": "Serine, threonine, and tyrosine are amino acids with hydroxyl groups."
+    },
+    {
+      "source_id": "threonine",
+      "property_uri": "ex:hasChemicalGroup",
+      "target_id": "hydroxyl_group",
+      "evidence_span": "Serine, threonine, and tyrosine are amino acids with hydroxyl groups."
+    },
+    {
+      "source_id": "tyrosine",
+      "property_uri": "ex:hasChemicalGroup",
+      "target_id": "hydroxyl_group",
+      "evidence_span": "Serine, threonine, and tyrosine are amino acids with hydroxyl groups."
+    },
+    {
+      "source_id": "cysteine",
+      "property_uri": "ex:hasChemicalGroup",
+      "target_id": "sulfohydryl_group",
+      "evidence_span": "cysteine with a sulfohydryl group"
+    },
+    {
+      "source_id": "methionine",
+      "property_uri": "ex:hasChemicalGroup",
+      "target_id": "thioether_group",
+      "evidence_span": "methionine with a thioether group"
+    },
+    {
+      "source_id": "arginine",
+      "property_uri": "ex:hasChemicalGroup",
+      "target_id": "guanidino_group",
+      "evidence_span": "arginine (with guanidino group)"
+    },
+    {
+      "source_id": "histidine",
+      "property_uri": "ex:hasChemicalGroup",
+      "target_id": "imidazole_ring",
+      "evidence_span": "histidine (with imidazole ring)"
+    },
+    {
+      "source_id": "tryptophan",
+      "property_uri": "ex:hasChemicalGroup",
+      "target_id": "indole_ring",
+      "evidence_span": "tryptophan (which have an indole ring)"
+    },
+    {
+      "source_id": "proline",
+      "property_uri": "ex:hasChemicalGroup",
+      "target_id": "pyrrolidine_ring",
+      "evidence_span": "proline, which has a Pyrrolidine ring"
+    },
+    {
+      "source_id": "proline",
+      "property_uri": "ex:hasChemicalGroup",
+      "target_id": "imino_group",
+      "evidence_span": "it possesses an Imino group (=NH)"
+    },
+    {
+      "source_id": "guanidino_group",
+      "property_uri": "ex:hasChemicalGroupCharacteristic",
+      "target_id": "basic",
+      "evidence_span": "They are highly basic in character."
+    },
+    {
+      "source_id": "imidazole_ring",
+      "property_uri": "ex:hasChemicalGroupCharacteristic",
+      "target_id": "basic",
+      "evidence_span": "They are highly basic in character."
+    },
+    {
+      "source_id": "valine",
+      "property_uri": "ex:causesDiseaseWhenDeficient",
+      "target_id": "neurological_breakdown",
+      "evidence_span": "Essential amino acid deficiency can induc e a variety of disorders, including neurological breakdown"
+    },
+    {
+      "source_id": "valine",
+      "property_uri": "ex:causesDiseaseWhenDeficient",
+      "target_id": "suppression_of_normal_mental_development",
+      "evidence_span": "Essential amino acid deficiency can induc e a variety of disorders, including neurological breakdown, suppression of normal mental development"
+    },
+    {
+      "source_id": "valine",
+      "property_uri": "ex:causesDiseaseWhenDeficient",
+      "target_id": "death",
+      "evidence_span": "Essential amino acid deficiency can induc e a variety of disorders, including neurological breakdown, suppression of normal mental development, and even death in young animals."
+    },
+    {
+      "source_id": "leucine",
+      "property_uri": "ex:causesDiseaseWhenDeficient",
+      "target_id": "neurological_breakdown",
+      "evidence_span": "Essential amino acid deficiency can induc e a variety of disorders, including neurological breakdown"
+    },
+    {
+      "source_id": "leucine",
+      "property_uri": "ex:causesDiseaseWhenDeficient",
+      "target_id": "suppression_of_normal_mental_development",
+      "evidence_span": "Essential amino acid deficiency can induc e a variety of disorders, including neurological breakdown, suppression of normal mental development"
+    },
+    {
+      "source_id": "leucine",
+      "property_uri": "ex:causesDiseaseWhenDeficient",
+      "target_id": "death",
+      "evidence_span": "Essential amino acid deficiency can induc e a variety of disorders, including neurological breakdown, suppression of normal mental development, and even death in young animals."
+    },
+    {
+      "source_id": "isoleucine",
+      "property_uri": "ex:causesDiseaseWhenDeficient",
+      "target_id": "neurological_breakdown",
+      "evidence_span": "Essential amino acid deficiency can induc e a variety of disorders, including neurological breakdown"
+    },
+    {
+      "source_id": "isoleucine",
+      "property_uri": "ex:causesDiseaseWhenDeficient",
+      "target_id": "suppression_of_normal_mental_development",
+      "evidence_span": "Essential amino acid deficiency can induc e a variety of disorders, including neurological breakdown, suppression of normal mental development"
+    },
+    {
+      "source_id": "isoleucine",
+      "property_uri": "ex:causesDiseaseWhenDeficient",
+      "target_id": "death",
+      "evidence_span": "Essential amino acid deficiency can induc e a variety of disorders, including neurological breakdown, suppression of normal mental development, and even death in young animals."
+    },
+    {
+      "source_id": "threonine",
+      "property_uri": "ex:causesDiseaseWhenDeficient",
+      "target_id": "neurological_breakdown",
+      "evidence_span": "Essential amino acid deficiency can induc e a variety of disorders, including neurological breakdown"
+    },
+    {
+      "source_id": "threonine",
+      "property_uri": "ex:causesDiseaseWhenDeficient",
+      "target_id": "suppression_of_normal_mental_development",
+      "evidence_span": "Essential amino acid deficiency can induc e a variety of disorders, including neurological breakdown, suppression of normal mental development"
+    },
+    {
+      "source_id": "threonine",
+      "property_uri": "ex:causesDiseaseWhenDeficient",
+      "target_id": "death",
+      "evidence_span": "Essential amino acid deficiency can induc e a variety of disorders, including neurological breakdown, suppression of normal mental development, and even death in young animals."
+    },
+    {
+      "source_id": "methionine",
+      "property_uri": "ex:causesDiseaseWhenDeficient",
+      "target_id": "neurological_breakdown",
+      "evidence_span": "Essential amino acid deficiency can induc e a variety of disorders, including neurological breakdown"
+    },
+    {
+      "source_id": "methionine",
+      "property_uri": "ex:causesDiseaseWhenDeficient",
+      "target_id": "suppression_of_normal_mental_development",
+      "evidence_span": "Essential amino acid deficiency can induc e a variety of disorders, including neurological breakdown, suppression of normal mental development"
+    },
+    {
+      "source_id": "methionine",
+      "property_uri": "ex:causesDiseaseWhenDeficient",
+      "target_id": "death",
+      "evidence_span": "Essential amino acid deficiency can induc e a variety of disorders, including neurological breakdown, suppression of normal mental development, and even death in young animals."
+    },
+    {
+      "source_id": "phenylalanine",
+      "property_uri": "ex:causesDiseaseWhenDeficient",
+      "target_id": "neurological_breakdown",
+      "evidence_span": "Essential amino acid deficiency can induc e a variety of disorders, including neurological breakdown"
+    },
+    {
+      "source_id": "phenylalanine",
+      "property_uri": "ex:causesDiseaseWhenDeficient",
+      "target_id": "suppression_of_normal_mental_development",
+      "evidence_span": "Essential amino acid deficiency can induc e a variety of disorders, including neurological breakdown, suppression of normal mental development"
+    },
+    {
+      "source_id": "phenylalanine",
+      "property_uri": "ex:causesDiseaseWhenDeficient",
+      "target_id": "death",
+      "evidence_span": "Essential amino acid deficiency can induc e a variety of disorders, including neurological breakdown, suppression of normal mental development, and even death in young animals."
+    },
+    {
+      "source_id": "tryptophan",
+      "property_uri": "ex:causesDiseaseWhenDeficient",
+      "target_id": "neurological_breakdown",
+      "evidence_span": "Essential amino acid deficiency can induc e a variety of disorders, including neurological breakdown"
+    },
+    {
+      "source_id": "tryptophan",
+      "property_uri": "ex:causesDiseaseWhenDeficient",
+      "target_id": "suppression_of_normal_mental_development",
+      "evidence_span": "Essential amino acid deficiency can induc e a variety of disorders, including neurological breakdown, suppression of normal mental development"
+    },
+    {
+      "source_id": "tryptophan",
+      "property_uri": "ex:causesDiseaseWhenDeficient",
+      "target_id": "death",
+      "evidence_span": "Essential amino acid deficiency can induc e a variety of disorders, including neurological breakdown, suppression of normal mental development, and even death in young animals."
+    },
+    {
+      "source_id": "lysine",
+      "property_uri": "ex:causesDiseaseWhenDeficient",
+      "target_id": "neurological_breakdown",
+      "evidence_span": "Essential amino acid deficiency can induc e a variety of disorders, including neurological breakdown"
+    },
+    {
+      "source_id": "lysine",
+      "property_uri": "ex:causesDiseaseWhenDeficient",
+      "target_id": "suppression_of_normal_mental_development",
+      "evidence_span": "Essential amino acid deficiency can induc e a variety of disorders, including neurological breakdown, suppression of normal mental development"
+    },
+    {
+      "source_id": "lysine",
+      "property_uri": "ex:causesDiseaseWhenDeficient",
+      "target_id": "death",
+      "evidence_span": "Essential amino acid deficiency can induc e a variety of disorders, including neurological breakdown, suppression of normal mental development, and even death in young animals."
+    }
+  ]
+}

@@ -1,0 +1,276 @@
+{
+  "reasoning_steps": [
+    "Identify all named entities from the ANCHOR NODES and DISCONNECTED NODES that are explicitly mentioned in the provided text context.",
+    "Classify each identified entity using the most specific 'class_uri' available in the APPROVED ONTOLOGY. For example, if 'Valine' is described as a 'Non-polar amino acid', classify it as 'ex:NonPolarAminoAcid' instead of 'ex:AminoAcid'.",
+    "Extract the exact 'evidence_span' from the text that supports the existence and classification of each entity.",
+    "Identify relationships between these entities as described in the text, using only the 'property_uri' from the APPROVED ONTOLOGY.",
+    "Ensure that all extracted relations adhere to the domain and range constraints specified in the APPROVED ONTOLOGY. For instance, 'ex:regulatesProcess' has a domain of 'ex:AminoAcid' and a range of 'xsd:string'.",
+    "For concepts like 'antioxidant' or 'anticonvulsant' that describe drug functions, if no suitable property exists in the ontology with 'ex:Drug' as a domain and 'xsd:string' as a range, these characteristics will be noted but no relation will be created.",
+    "Consolidate duplicate disconnected nodes (e.g., 'n_acetylcysteine' and 'n_acetylcysteine_drug') to a single, consistent ID.",
+    "For general statements about amino acids being building blocks of proteins, apply the relation to all specific amino acids mentioned in the anchor nodes, using the general statement as evidence."
+  ],
+  "entities": [
+    {
+      "id": "proteins",
+      "class_uri": "ex:Protein",
+      "evidence_span": "proteins"
+    },
+    {
+      "id": "valine",
+      "class_uri": "ex:NonPolarAminoAcid",
+      "evidence_span": "Valine"
+    },
+    {
+      "id": "tryptophan",
+      "class_uri": "ex:NonPolarAminoAcid",
+      "evidence_span": "Tryptophan"
+    },
+    {
+      "id": "phenylalanine",
+      "class_uri": "ex:NonPolarAminoAcid",
+      "evidence_span": "Phenylalanine"
+    },
+    {
+      "id": "leucine",
+      "class_uri": "ex:NonPolarAminoAcid",
+      "evidence_span": "Leucine"
+    },
+    {
+      "id": "glycine",
+      "class_uri": "ex:PolarAminoAcid",
+      "evidence_span": "Glycine"
+    },
+    {
+      "id": "methionine",
+      "class_uri": "ex:NonPolarAminoAcid",
+      "evidence_span": "Methionine"
+    },
+    {
+      "id": "glutamic_acid",
+      "class_uri": "ex:PolarAminoAcid",
+      "evidence_span": "Glutamic Acid"
+    },
+    {
+      "id": "threonine",
+      "class_uri": "ex:PolarAminoAcid",
+      "evidence_span": "Threonine"
+    },
+    {
+      "id": "streckers_synthesis",
+      "class_uri": "ex:SynthesisMethod",
+      "evidence_span": "Streckers Synthesis"
+    },
+    {
+      "id": "n_acetylcysteine_drug",
+      "class_uri": "ex:Drug",
+      "evidence_span": "N-Acetylcysteine"
+    },
+    {
+      "id": "d_penicillamine_drug",
+      "class_uri": "ex:Drug",
+      "evidence_span": "D-Penicillamine"
+    },
+    {
+      "id": "wilsons_disease",
+      "class_uri": "ex:Disease",
+      "evidence_span": "Wilson’s disease"
+    },
+    {
+      "id": "penicillin",
+      "class_uri": "ex:ChemicalCompound",
+      "evidence_span": "penicillin"
+    },
+    {
+      "id": "neutral_amino_acid_class",
+      "class_uri": "ex:NeutralAminoAcid",
+      "evidence_span": "neutral amino acids"
+    },
+    {
+      "id": "gabapentin",
+      "class_uri": "ex:Drug",
+      "evidence_span": "Gabapentin"
+    },
+    {
+      "id": "alpha_amino_acid",
+      "class_uri": "ex:AlphaAminoAcid",
+      "evidence_span": "α-amino acid"
+    },
+    {
+      "id": "polar_amino_acid_class",
+      "class_uri": "ex:PolarAminoAcid",
+      "evidence_span": "Polar amino acids"
+    },
+    {
+      "id": "aldehyde",
+      "class_uri": "ex:ChemicalCompound",
+      "evidence_span": "aldehyde"
+    },
+    {
+      "id": "ketone",
+      "class_uri": "ex:ChemicalCompound",
+      "evidence_span": "ketone"
+    },
+    {
+      "id": "ammonium_chloride",
+      "class_uri": "ex:ChemicalCompound",
+      "evidence_span": "ammonium chloride"
+    },
+    {
+      "id": "potassium_cyanide",
+      "class_uri": "ex:ChemicalCompound",
+      "evidence_span": "potassium cyanide"
+    },
+    {
+      "id": "ammonium_cyanide",
+      "class_uri": "ex:ChemicalCompound",
+      "evidence_span": "ammonium cyanide"
+    },
+    {
+      "id": "aldimine",
+      "class_uri": "ex:ChemicalCompound",
+      "evidence_span": "aldimine"
+    },
+    {
+      "id": "alpha_halogenated_acid_ester",
+      "class_uri": "ex:ChemicalCompound",
+      "evidence_span": "alpha halogenated acid ester"
+    },
+    {
+      "id": "potassium_phthalimide",
+      "class_uri": "ex:ChemicalCompound",
+      "evidence_span": "potassium phthalimide"
+    },
+    {
+      "id": "substituted_phthalimide",
+      "class_uri": "ex:ChemicalCompound",
+      "evidence_span": "substituted phthalimide"
+    },
+    {
+      "id": "phthalic_acid",
+      "class_uri": "ex:ChemicalCompound",
+      "evidence_span": "phthalic acid"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "glycine",
+      "property_uri": "ex:isBuildingBlockOf",
+      "target_id": "proteins",
+      "evidence_span": "Amino acids are necessary for protein synthesis"
+    },
+    {
+      "source_id": "valine",
+      "property_uri": "ex:isBuildingBlockOf",
+      "target_id": "proteins",
+      "evidence_span": "Amino acids are necessary for protein synthesis"
+    },
+    {
+      "source_id": "leucine",
+      "property_uri": "ex:isBuildingBlockOf",
+      "target_id": "proteins",
+      "evidence_span": "Amino acids are necessary for protein synthesis"
+    },
+    {
+      "source_id": "phenylalanine",
+      "property_uri": "ex:isBuildingBlockOf",
+      "target_id": "proteins",
+      "evidence_span": "Amino acids are necessary for protein synthesis"
+    },
+    {
+      "source_id": "threonine",
+      "property_uri": "ex:isBuildingBlockOf",
+      "target_id": "proteins",
+      "evidence_span": "Amino acids are necessary for protein synthesis"
+    },
+    {
+      "source_id": "methionine",
+      "property_uri": "ex:isBuildingBlockOf",
+      "target_id": "proteins",
+      "evidence_span": "Amino acids are necessary for protein synthesis"
+    },
+    {
+      "source_id": "tryptophan",
+      "property_uri": "ex:isBuildingBlockOf",
+      "target_id": "proteins",
+      "evidence_span": "Amino acids are necessary for protein synthesis"
+    },
+    {
+      "source_id": "glutamic_acid",
+      "property_uri": "ex:isBuildingBlockOf",
+      "target_id": "proteins",
+      "evidence_span": "Amino acids are necessary for protein synthesis"
+    },
+    {
+      "source_id": "d_penicillamine_drug",
+      "property_uri": "ex:isMetaboliteOf",
+      "target_id": "penicillin",
+      "evidence_span": "D-Penicillamine: It is a metabolite of penicillin."
+    },
+    {
+      "source_id": "d_penicillamine_drug",
+      "property_uri": "ex:treatsDisease",
+      "target_id": "wilsons_disease",
+      "evidence_span": "It is employed in the chelation therapy of Wilson’s disease."
+    },
+    {
+      "source_id": "glycine",
+      "property_uri": "ex:canBePreparedBy",
+      "target_id": "streckers_synthesis",
+      "evidence_span": "The method is useful for preparing Glycine, Alanine, Serine, Valine, Methionine, Glutamic acid, Leucine, Isoleucine, Norleucine, and Phenylalanine"
+    },
+    {
+      "source_id": "valine",
+      "property_uri": "ex:canBePreparedBy",
+      "target_id": "streckers_synthesis",
+      "evidence_span": "The method is useful for preparing Glycine, Alanine, Serine, Valine, Methionine, Glutamic acid, Leucine, Isoleucine, Norleucine, and Phenylalanine"
+    },
+    {
+      "source_id": "methionine",
+      "property_uri": "ex:canBePreparedBy",
+      "target_id": "streckers_synthesis",
+      "evidence_span": "The method is useful for preparing Glycine, Alanine, Serine, Valine, Methionine, Glutamic acid, Leucine, Isoleucine, Norleucine, and Phenylalanine"
+    },
+    {
+      "source_id": "glutamic_acid",
+      "property_uri": "ex:canBePreparedBy",
+      "target_id": "streckers_synthesis",
+      "evidence_span": "The method is useful for preparing Glycine, Alanine, Serine, Valine, Methionine, Glutamic acid, Leucine, Isoleucine, Norleucine, and Phenylalanine"
+    },
+    {
+      "source_id": "leucine",
+      "property_uri": "ex:canBePreparedBy",
+      "target_id": "streckers_synthesis",
+      "evidence_span": "The method is useful for preparing Glycine, Alanine, Serine, Valine, Methionine, Glutamic acid, Leucine, Isoleucine, Norleucine, and Phenylalanine"
+    },
+    {
+      "source_id": "phenylalanine",
+      "property_uri": "ex:canBePreparedBy",
+      "target_id": "streckers_synthesis",
+      "evidence_span": "The method is useful for preparing Glycine, Alanine, Serine, Valine, Methionine, Glutamic acid, Leucine, Isoleucine, Norleucine, and Phenylalanine"
+    },
+    {
+      "source_id": "alpha_amino_acid",
+      "property_uri": "ex:canBePreparedBy",
+      "target_id": "streckers_synthesis",
+      "evidence_span": "Alpha amino acids ... are produced by removing water and then adding cyanide to aldimine."
+    },
+    {
+      "source_id": "valine",
+      "property_uri": "ex:regulatesProcess",
+      "target_id": "muscle synthesis and maintenance",
+      "evidence_span": "L-valine is most commonly used in health supplements for its involvement in muscle synthesis and maintenance."
+    },
+    {
+      "source_id": "leucine",
+      "property_uri": "ex:regulatesProcess",
+      "target_id": "physical performance or strength",
+      "evidence_span": "Leucine It Increases the physical performance or strength in the short term."
+    },
+    {
+      "source_id": "leucine",
+      "property_uri": "ex:regulatesProcess",
+      "target_id": "preventing muscle loss",
+      "evidence_span": "Also increases long-term physical performance or preventing muscle loss in a variety of conditions, including immobility."
+    }
+  ]
+}
