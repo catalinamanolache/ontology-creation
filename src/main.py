@@ -1,17 +1,15 @@
 import os
 import sys
-import json
-import networkx as nx
+import re
+import glob
+import hashlib
 
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 from config.settings import settings
 from src.extraction import OntologyExtractor
-from src.graph_builder import KnowledgeGraphBuilder
 from src.document_processor import DocumentProcessor
-from src.state_tracker import KnowledgeStateTracker
-from src.semantic_search import SemanticSearch
-from src.verifier import OntologyVerifier
+from src.ontology_similarity import jaccard_similarity_from_ttl
 
 
 def select_bootstrap_chunks(all_chunks, k, distributed=True):
@@ -33,16 +31,12 @@ def select_bootstrap_chunks(all_chunks, k, distributed=True):
     return [all_chunks[i] for i in unique_idxs]
 
 
-def generate_graph(processor, extractor, search_db, pdf_path, run_id="A"):
+def build_ontology(processor, extractor, pdf_path, run_id="A", chunk_limit=0, batch_size_override=0):
     print(f"\n{'='*20} Starting Run {run_id} {'='*20}")
-
-    graph_builder = KnowledgeGraphBuilder()
-    state_tracker = KnowledgeStateTracker()
-
     chunks = processor.process_pdf(pdf_path)
     print(f"Total chunks in document: {len(chunks)}")
 
-    # Phase 3a: Bootstrap ontology from distributed chunks
+    # Bootstrap ontology from representative chunks.
     bootstrap_chunks = select_bootstrap_chunks(
         chunks,
         settings.BOOTSTRAP_CHUNKS,
@@ -50,91 +44,79 @@ def generate_graph(processor, extractor, search_db, pdf_path, run_id="A"):
     )
     print(f"Bootstrapping ontology from {len(bootstrap_chunks)} distributed chunks...")
     bootstrap_text = "\n".join(bootstrap_chunks)
-    bootstrap_result = extractor.bootstrap_ontology(bootstrap_text)
-    state_tracker.ingest_bootstrap(bootstrap_result)
+    ontology_ttl = extractor.bootstrap_ontology(bootstrap_text)
 
-    approved_ontology_str = state_tracker.format_for_prompt()
+    # Ontology refinement over chunk batches (no graph construction).
+    batch_size = batch_size_override if batch_size_override > 0 else 3
+    target_chunks = chunks if settings.EXTRACT_ALL_CHUNKS else chunks[:settings.EXTRACT_MAX_CHUNKS or len(chunks)]
+    if chunk_limit and chunk_limit > 0:
+        target_chunks = target_chunks[:chunk_limit]
+    total_batches = (len(target_chunks) + batch_size - 1) // batch_size if target_chunks else 0
+    print(f"Refining ontology over {len(target_chunks)} chunks (batch size: {batch_size})...")
 
-    # Phase 3b: Extract triples in batches to reduce API calls
-    BATCH_SIZE = 5  # Reduce back to 5 so we don't hit max-output-tokens or break JSON parsers
-
-    extraction_chunks = chunks if settings.EXTRACT_ALL_CHUNKS else chunks[:settings.EXTRACT_MAX_CHUNKS or len(chunks)]
-
-    print(f"Extracting triples from {len(extraction_chunks)} chunks (batch size: {BATCH_SIZE})...")
-    for batch_start in range(0, len(extraction_chunks), BATCH_SIZE):
-        batch = extraction_chunks[batch_start:batch_start + BATCH_SIZE]
-        batch_num = batch_start // BATCH_SIZE + 1
-        total_batches = (len(extraction_chunks) + BATCH_SIZE - 1) // BATCH_SIZE
-        print(f"  Processing batch {batch_num}/{total_batches} (chunks {batch_start+1}-{batch_start+len(batch)})...")
+    for batch_start in range(0, len(target_chunks), batch_size):
+        batch = target_chunks[batch_start:batch_start + batch_size]
+        batch_num = batch_start // batch_size + 1
+        print(f"  Refinement batch {batch_num}/{total_batches} (chunks {batch_start+1}-{batch_start+len(batch)})...")
         combined_chunk = "\n\n---\n\n".join(batch)
-        extraction_result = extractor.extract_triples(combined_chunk, approved_ontology_str)
-        for entity in extraction_result.entities:
-            graph_builder.add_entity(entity.id, entity.class_uri, label=entity.evidence_span)
-        for relation in extraction_result.relations:
-            graph_builder.add_relation(relation.source_id, relation.target_id, relation.property_uri)
-
-    # Phase 4: Topological Refinement (runs AFTER all chunks are extracted)
-    search_db.index_chunks(chunks)
-    epsilon = 0.1
-    iteration = 1
-
-    print("Starting topological refinement loop...")
-    MAX_REFINEMENT_ITERATIONS = 3  # or from settings
-
-    while iteration <= MAX_REFINEMENT_ITERATIONS:
-        c_main, c_small_list = graph_builder.get_components()
-        if not c_small_list:
-            print("Graph is fully connected. Refinement complete.")
-            break
-
-        print(f"  Iteration {iteration}: {len(c_small_list)} disconnected component(s) found. Consolidating into 1 batch call...")
-        state_size_before = state_tracker.get_ontology_size()
-        main_anchors = graph_builder.get_top_degree_nodes(c_main, top_k=10) # take more anchors for better coverage
-
-        # Collect anchors from up to 20 disconnected subgraphs
-        all_disconnected_anchors = []
-        for c_j in c_small_list[:20]:
-            all_disconnected_anchors.extend(graph_builder.get_top_degree_nodes(c_j, top_k=3))
-            
-        if not all_disconnected_anchors:
-            break
-
-        bridging_context = search_db.retrieve_context(main_anchors, all_disconnected_anchors, top_k=10)
-
-        if bridging_context:
-            bridge_result = extractor.bridge_subgraphs(
-                text_context=bridging_context,
-                main_anchors=main_anchors,
-                disconnected_anchors=all_disconnected_anchors,
-                approved_ontology=state_tracker.format_for_prompt()
-            )
-
-            for entity in bridge_result.entities:
-                graph_builder.add_entity(entity.id, entity.class_uri, label=entity.evidence_span)
-            for relation in bridge_result.relations:
-                graph_builder.add_relation(relation.source_id, relation.target_id, relation.property_uri)
-
-        state_size_after = state_tracker.get_ontology_size()
-        delta_o = (state_size_after - state_size_before) / state_size_before if state_size_before > 0 else 0
-        print(f"Refinement stopped after {iteration-1} iteration(s).")
-
-        if delta_o <= epsilon and len(c_small_list) == len(graph_builder.get_components()[1]):
-            print(f"  Convergence reached (delta_O={delta_o:.3f} <= eps={epsilon}).")
-            break
-        iteration += 1
+        ontology_ttl = extractor.refine_ontology(ontology_ttl, combined_chunk)
 
     print(f"Run {run_id} completed.")
-    return graph_builder.graph
+    return ontology_ttl
+
+
+def _list_numbered_ontologies(folder_path):
+    pattern = re.compile(r"^ontology_(\d{4})\.ttl$")
+    entries = []
+    for name in os.listdir(folder_path):
+        match = pattern.match(name)
+        if match:
+            entries.append((int(match.group(1)), name))
+    return sorted(entries, key=lambda x: x[0])
+
+
+def save_numbered_ontology(ontology_ttl, output_dir):
+    runs_dir = os.path.join(output_dir, "ontologies")
+    os.makedirs(runs_dir, exist_ok=True)
+
+    numbered = _list_numbered_ontologies(runs_dir)
+    next_index = 1 if not numbered else numbered[-1][0] + 1
+    file_name = f"ontology_{next_index:04d}.ttl"
+    run_path = os.path.join(runs_dir, file_name)
+
+    with open(run_path, "w", encoding="utf-8") as f:
+        f.write(ontology_ttl)
+
+    prev_path = None
+    if numbered:
+        prev_path = os.path.join(runs_dir, numbered[-1][1])
+
+    return run_path, prev_path
+
+
+def compute_sha256(text: str) -> str:
+    return hashlib.sha256(text.encode("utf-8")).hexdigest()
+
+
+def clear_ontology_cache():
+    cache_dir = os.path.join("data", "cache")
+    if not os.path.isdir(cache_dir):
+        return
+    for path in glob.glob(os.path.join(cache_dir, "bootstrap_ontology_*.txt")):
+        os.remove(path)
+    for path in glob.glob(os.path.join(cache_dir, "refine_ontology_*.txt")):
+        os.remove(path)
 
 
 def main():
-    print("Starting Deterministic Ontology Generation Algorithm...")
-    print(f"Loaded Settings. Chunk Size: {settings.CHUNK_SIZE} | Temp: {settings.TEMPERATURE}")
+    print("Starting Ontology-Only Generation Pipeline (Hugging Face)...")
+    print(
+        f"Loaded Settings. Chunk Size: {settings.CHUNK_SIZE} | Temp: {settings.TEMPERATURE} | "
+        f"Use Cache: {settings.USE_CACHE} | Determinism Runs: {settings.DET_TEST_RUNS}"
+    )
 
     processor = DocumentProcessor(chunk_size=settings.CHUNK_SIZE, chunk_overlap=settings.CHUNK_OVERLAP)
     extractor = OntologyExtractor()
-    search_db = SemanticSearch()
-    verifier = OntologyVerifier()
 
     pdf_path = os.path.join(settings.INPUT_DIR, "sample.pdf")
     if not os.path.exists(pdf_path):
@@ -143,18 +125,64 @@ def main():
     os.makedirs(settings.OUTPUT_DIR, exist_ok=True)
 
     print("\n" + "="*50)
-    print("Phase 5: Live Ontology Extraction & Export")
+    print("Ontology Bootstrapping + Refinement")
 
-    graph = generate_graph(processor, extractor, search_db, pdf_path, run_id="FINAL")
+    runs = max(1, settings.DET_TEST_RUNS)
+    run_hashes = []
 
-    output_path = os.path.join(settings.OUTPUT_DIR, "knowledge_graph.json")
-    data = nx.node_link_data(graph)
-    with open(output_path, "w") as f:
-        json.dump(data, f, indent=4)
+    fast_mode_active = runs > 1 and settings.DET_FAST_MODE
+    chunk_limit = settings.DET_CHUNK_LIMIT if fast_mode_active else 0
+    batch_size_override = settings.DET_BATCH_SIZE if fast_mode_active else 0
+    if fast_mode_active:
+        print(
+            f"[INFO] Determinism fast mode active: chunk_limit={chunk_limit}, "
+            f"batch_size={batch_size_override}"
+        )
 
-    print(f"\n[SUCCESS] Ontology successfully generated!")
-    print(f"Nodes: {graph.number_of_nodes()} | Edges: {graph.number_of_edges()}")
-    print(f"Output saved to: {output_path}")
+    for idx in range(runs):
+        run_label = f"FINAL_{idx+1}" if runs > 1 else "FINAL"
+        if settings.CLEAR_CACHE_EACH_RUN:
+            clear_ontology_cache()
+            print("[INFO] Cleared ontology cache before run.")
+
+        ontology_ttl = build_ontology(
+            processor,
+            extractor,
+            pdf_path,
+            run_id=run_label,
+            chunk_limit=chunk_limit,
+            batch_size_override=batch_size_override,
+        )
+        run_sha = compute_sha256(ontology_ttl)
+        run_hashes.append(run_sha)
+
+        run_path, prev_path = save_numbered_ontology(ontology_ttl, settings.OUTPUT_DIR)
+
+        output_path = os.path.join(settings.OUTPUT_DIR, settings.ONTOLOGY_OUTPUT_FILE)
+        with open(output_path, "w", encoding="utf-8") as f:
+            f.write(ontology_ttl)
+
+        print("\n[SUCCESS] Ontology successfully generated!")
+        print(f"Numbered ontology saved to: {run_path}")
+        print(f"Output saved to: {output_path}")
+        print(f"SHA256: {run_sha}")
+
+        if prev_path:
+            with open(prev_path, "r", encoding="utf-8") as f:
+                prev_ttl = f.read()
+            score = jaccard_similarity_from_ttl(prev_ttl, ontology_ttl)
+            prev_sha = compute_sha256(prev_ttl)
+            print(f"Similarity vs previous run ({os.path.basename(prev_path)}): {score:.4f}")
+            print(f"Exact hash match vs previous run: {run_sha == prev_sha}")
+        else:
+            print("Similarity vs previous run: N/A (this is the first numbered ontology run)")
+
+    if runs > 1:
+        unique_hashes = len(set(run_hashes))
+        identical = unique_hashes == 1
+        print(f"\nDeterminism summary: all runs identical by hash = {identical}")
+        print(f"Unique ontology hashes: {unique_hashes}")
+
     print("\nPipeline Implementation Complete.")
 
 if __name__ == "__main__":

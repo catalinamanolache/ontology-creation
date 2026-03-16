@@ -9,3 +9,5 @@ networkx
 chromadb
 langchain-google-genai
 python-dotenv
+huggingface_hub
+rdflib

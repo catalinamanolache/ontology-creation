@@ -1,51 +1,88 @@
-SYSTEM_PROMPT_BOOTSTRAP = """
-You are a Staff-Level Knowledge Engineer. Your task is to analyze the provided text and bootstrap an OWL ontology (using the 'ex:' prefix).
+creation_prompt = """
+    You are a knowledge engineer. Using OWL (Turtle syntax), generate an ontology for the domain
+    described by the user. The ontology must:
+ 
+    1) Use the 'ex:' prefix for classes and properties (e.g., ex:Substance, ex:hasConcentration).
+       - You can assume @prefix ex: http://example.org/ .
+    2) Identify key Classes (ex:SomeClass) for the major concepts in the text.
+       - Keep class names concise (TitleCase), e.g. ex:Patient, ex:Condition.
+       - Avoid instance-like naming or paragraph-length names.
+    3) Create relevant object properties (ex:someRelationship) or data properties (ex:someDataProperty)
+       with appropriate rdfs:domain and rdfs:range.
+       - For example, ex:hasAge a owl:DatatypeProperty ; rdfs:domain ex:Patient ; rdfs:range xsd:integer .
+       - Keep properties general enough to be reused, avoiding single-use specifics.
+    4) Provide a short comment (rdfs:comment) for each class and property describing it in 1-2 lines.
+    5) Ensure no self-referential properties (no subject=object forced).
+    6) Output only the ontology in valid Turtle.
+       - You can include prefix declarations for clarity: @prefix ex: http://example.org/ .
+       - No additional commentary, no JSON, no code blocks.
+ 
+    ### Example (for reference only) ###
+    @prefix ex: http://example.org/ .
+    @prefix xsd: http://www.w3.org/2001/XMLSchema# .
+    @prefix rdfs: http://www.w3.org/2000/01/rdf-schema# .
+    @prefix owl: http://www.w3.org/2002/07/owl# .
+ 
+    ex:Patient a owl:Class ;
+       rdfs:comment "Represents a patient receiving care." .
+ 
+    ex:hasAge a owl:DatatypeProperty ;
+       rdfs:domain ex:Patient ;
+       rdfs:range xsd:integer ;
+       rdfs:comment "Indicates the patient's age." .
+ 
+    ### User-provided domain text ###
+    {document_text}
+ 
+    ### Generate your ontology now ###
+    """
 
-CRITICAL INSTRUCTIONS:
-1. Identify core Classes (ex:ClassX) for the major concepts. Use TitleCase. DO NOT create instance-level classes (e.g., NOT ex:JohnDoe).
-2. Create relevant object/data properties (ex:hasProperty) with rdfs:domain and rdfs:range.
-3. Keep properties general and reusable.
-4. Provide a 1-sentence rdfs:comment for each class and property.
+refinement_prompt = """
 
-### User-provided domain text ###
-{document_text}
-"""
+    You are a knowledge engineer refining an existing ontology in OWL Turtle syntax (using ex: prefix).
 
-SYSTEM_PROMPT_EXTRACTION = """
-You are an exceptionally precise Information Extraction module. You will extract entities and relationships from the text chunk exactly as they align with the APPROVED ONTOLOGY.
+    Below is the current ontology (Turtle), followed by the current RDF triples (JSON), then a new text chunk.
 
-CRITICAL INSTRUCTIONS:
-1. You must ONLY use the Classes and Properties listed in the Approved Ontology.
-2. If an entity in the text belongs to an approved class, extract it.
-3. If a relation exists between two extracted entities that matches an approved property, extract it.
-4. If the text does not contain matches, output empty arrays. DO NOT hallucinate new classes or properties.
-5. Entity IDs should be snake_case (e.g., "john_smith").
+ 
 
-APPROVED ONTOLOGY:
-{approved_ontology}
+    You may add or modify classes and properties if (and only if) new information in the text chunk requires it.
 
-### Text Chunk ###
-{chunk_text}
-"""
+    Maintain these rules:
 
-SYSTEM_PROMPT_BRIDGING = """
-You are a Graph topology refinement AI. We have a main knowledge graph and several disconnected subgraphs. We must determine if there is a valid, text-supported relationship linking the disconnected components to the main graph.
+      1) Use the same 'ex:' prefix.
 
-CRITICAL INSTRUCTIONS:
-1. Analyze the retrieved Text Context. 
-2. Look specifically for relationships between the Anchor Nodes from the Main Graph and any of the Disconnected Nodes.
-3. You may also find relationships between different disconnected nodes.
-4. Extracted relations must use the APPROVED ONTOLOGY.
+      2) Keep class names short and conceptual. Avoid instance-like names.
 
-ANCHOR NODES (MAIN GRAPH):
-{main_subgraph_anchors}
+      3) Keep properties general. Avoid single-use or self-referential edges.
 
-DISCONNECTED NODES:
-{disconnected_subgraph_anchors}
+      4) If existing classes/properties suffice, do not add duplicates.
 
-APPROVED ONTOLOGY SUMMARY:
-{approved_ontology}
+      5) Provide brief rdfs:comment for any newly added class/property.
 
-### Retrieved Text Context ###
-{chunk_text}
-"""
+      6) Output valid Turtle only. No code blocks, no JSON, no extraneous commentary.
+
+ 
+
+    ### Current Ontology (Turtle) ###
+
+    {current_ontology_text}
+
+ 
+
+    ### Current RDF Triples (JSON) ###
+
+    {existing_triples_json}
+
+ 
+
+    ### New Chunk of Text ###
+
+    {chunk_text}
+
+ 
+
+    ### Task ###
+
+    Refine or extend the ontology in Turtle to accommodate new concepts. Return the updated ontology now.
+
+    """
