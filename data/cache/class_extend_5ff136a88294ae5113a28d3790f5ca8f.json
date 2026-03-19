@@ -1,0 +1,65 @@
+{
+  "reasoning_steps": [
+    "Identify new classes based on the provided text and BFO ontology.",
+    "Ensure each class is a specific sub-type or has a unique property not covered by existing classes."
+  ],
+  "classes": [
+    {
+      "uri": "ex:SemiEssentialAminoAcid",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": null,
+      "aristotelian_definition": "A SemiEssentialAminoAcid is a MaterialEntity that can be produced in the body but its production may not be sufficient, and it is particularly important for growing children.",
+      "comment": "Extends the existing ex:SemiEssentialAminoAcid class with additional properties."
+    },
+    {
+      "uri": "ex:PurelyKetogenicAminoAcid",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": null,
+      "aristotelian_definition": "A PurelyKetogenicAminoAcid is a MaterialEntity that can be used to make fat and is transformed into ketone bodies during metabolism, specifically leucine and lysine.",
+      "comment": "Introduces a new class for purely ketogenic amino acids."
+    },
+    {
+      "uri": "ex:KetogenicAndGlucogenicAminoAcid",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": null,
+      "aristotelian_definition": "A KetogenicAndGlucogenicAminoAcid is a MaterialEntity that can be used as both ketogenic and glucogenic during metabolism, specifically lysine, isoleucine, phenylalanine, tyrosine, and tryptophan.",
+      "comment": "Introduces a new class for amino acids with dual metabolic fate."
+    },
+    {
+      "uri": "ex:PurelyGlucogenicAminoAcid",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": null,
+      "aristotelian_definition": "A PurelyGlucogenicAminoAcid is a MaterialEntity that can be used as a starting point for the production of glucose or glycogen and solely enters the glucogenic pathway, specifically 14 amino acids.",
+      "comment": "Introduces a new class for purely glucogenic amino acids."
+    },
+    {
+      "uri": "ex:NonPolarAminoAcid",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": null,
+      "aristotelian_definition": "A NonPolarAminoAcid is a MaterialEntity that has no charge on the 'R' group and is also known as hydrophobic amino acids, specifically alanine, leucine, isoleucine, valine, methionine, phenylalanine, tryptophan, and proline.",
+      "comment": "Introduces a new class for non-polar amino acids."
+    },
+    {
+      "uri": "ex:PolarAminoAcidWithNoChargeOnRGroup",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": null,
+      "aristotelian_definition": "A PolarAminoAcidWithNoChargeOnRGroup is a MaterialEntity that has an uncharged 'R' group but contributes to protein structure hydrogen bonding, specifically glycine, serine, threonine, cysteine, glutamine, asparagine, and tyrosine.",
+      "comment": "Introduces a new class for polar amino acids with no charge on the R group."
+    },
+    {
+      "uri": "ex:PolarAminoAcidWithPositiveChargeOnRGroup",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": null,
+      "aristotelian_definition": "A PolarAminoAcidWithPositiveChargeOnRGroup is a MaterialEntity that has a positive 'R' group and contributes to the basic character of amino acids, specifically lysine, arginine, and histidine.",
+      "comment": "Introduces a new class for polar amino acids with a positive charge on the R group."
+    },
+    {
+      "uri": "ex:PolarAminoAcidWithNegativeChargeOnRGroup",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": null,
+      "aristotelian_definition": "A PolarAminoAcidWithNegativeChargeOnRGroup is a MaterialEntity that has a negative 'R' group and contributes to the acidic character of amino acids, specifically aspartic acid and glutamic acid.",
+      "comment": "Introduces a new class for polar amino acids with a negative charge on the R group."
+    }
+  ],
+  "canonical_terms": {}
+}

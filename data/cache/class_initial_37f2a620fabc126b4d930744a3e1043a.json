@@ -1,0 +1,41 @@
+{
+  "reasoning_steps": [
+    "Identify classes based on the text content.",
+    "Ensure each class is anchored under a BFO leaf category."
+  ],
+  "classes": [
+    {
+      "uri": "ex:AminoAcid",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": null,
+      "aristotelian_definition": "A AminoAcid is a MaterialEntity that contains an amino group (NH2) and a carboxyl group (-COOH).",
+      "comment": ""
+    },
+    {
+      "uri": "ex:EssentialAminoAcid",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": null,
+      "aristotelian_definition": "An EssentialAminoAcid is a MaterialEntity that cannot be produced by the body and must be obtained through food.",
+      "comment": ""
+    },
+    {
+      "uri": "ex:SemiEssentialAminoAcid",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": null,
+      "aristotelian_definition": "A SemiEssentialAminoAcid is a MaterialEntity that can be produced in the body but its production may not be sufficient.",
+      "comment": ""
+    },
+    {
+      "uri": "ex:NonEssentialAminoAcid",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": null,
+      "aristotelian_definition": "A NonEssentialAminoAcid is a MaterialEntity that can be produced by the body and does not require supplementation through food.",
+      "comment": ""
+    }
+  ],
+  "canonical_terms": {
+    "essential amino acids": "ex:EssentialAminoAcid",
+    "semi-essential amino acids": "ex:SemiEssentialAminoAcid",
+    "non-essential amino acids": "ex:NonEssentialAminoAcid"
+  }
+}

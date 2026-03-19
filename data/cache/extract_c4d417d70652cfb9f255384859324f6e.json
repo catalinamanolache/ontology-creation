@@ -1,0 +1,131 @@
+{
+  "reasoning_steps": [
+    "Identified amino acids and their properties based on the provided text.",
+    "Mapped entities to ontology classes and properties."
+  ],
+  "entities": [
+    {
+      "id": "glycine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Glycine, Alanine, Serine, Valine, Methionine, Glutamic acid, Leuci ne, Isoleucine, Norleucine, and Phenylalanine"
+    },
+    {
+      "id": "alanine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Glycine, Alanine, Serine, Valine, Methionine, Glutamic acid, Leuci ne, Isoleucine, Norleucine, and Phenylalanine"
+    },
+    {
+      "id": "valine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "L-valine is most commonly used in health supplements for its involvement in muscle synthesis and maintenance. Stress management, child growth, and immune system support are some of the other benefits of L-valine."
+    },
+    {
+      "id": "leucine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "It Increases the physical performance or strength in the short term. Also increases long-term physical performance or preventing muscle loss in a variety of conditions, including immobility. Lowering blood glucose levels in type 2 diabetes."
+    },
+    {
+      "id": "isoleucine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "It is required for children's optimum growth and the maintenance of nitrogen balance in adults."
+    },
+    {
+      "id": "norleucine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Norleucine is an artificial amino acid that has been used to research protein structure and fu nction in the lab. It has a similar structure to METHIONINE."
+    },
+    {
+      "id": "phenylalanine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Depression, Parkinson's illness, multiple sclerosis, pain, acupuncture anesthesia, and osteoarthritis are all treated with phenylalanine."
+    },
+    {
+      "id": "tyrosine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Tyrosine is commonly utilizedin the production of thyroid hormone. Tyrosine is a supplement that helps with mental performance, alertness, and memory."
+    },
+    {
+      "id": "serine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Serine is particularly significant for the brain and central nervous system to function correctly."
+    },
+    {
+      "id": "cysteine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "In medicine, cysteine is used to boost the efficiency of corticosteroid medications. Cystine L-Cystine can be used in the treatment of surgery and trauma."
+    },
+    {
+      "id": "threonine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Spinal spasticity, multiple sclerosis, familial spastic paraparesis, and amyotrophic late ral sclerosis are all conditions that are treated with threonine"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "glycine",
+      "property_uri": "ex:methodForSynthesis",
+      "target_id": "gabriel_phthalimide_synthesis",
+      "evidence_span": "Gabriel Phthalimide Synthesis This approach involves treating an alpha halogenated acid ester with potassium phthalimide to produce a substituted phthalimide, which when hydrolyzed yields phthalic acid and amino acid [11, 17, 18]."
+    },
+    {
+      "source_id": "alanine",
+      "property_uri": "ex:hasFunction",
+      "target_id": "boost immunity and provide the brain and central nervous system more energy",
+      "evidence_span": "Alanine Alanine is utilized to boost immunity and provide the brain and central nervous system more energy [15]."
+    },
+    {
+      "source_id": "valine",
+      "property_uri": "ex:hasFunction",
+      "target_id": "muscle synthesis and maintenance, stress management, child growth, immune system support",
+      "evidence_span": "L-valine is most commonly used in health supplements for its involvement in muscle synthesis and maintenance. Stress management, child growth, and immune system support are some of the other benefits of L-valine."
+    },
+    {
+      "source_id": "leucine",
+      "property_uri": "ex:hasFunction",
+      "target_id": "increases physical performance or strength, increases long-term physical performance, prevents muscle loss in various conditions, lowers blood glucose levels in type 2 diabetes",
+      "evidence_span": "It Increases the physical performance or strength in the short term. Also increases long-term physical performance or preventing muscle loss in a variety of conditions, including immobility. Lowering blood glucose levels in type 2 diabetes."
+    },
+    {
+      "source_id": "isoleucine",
+      "property_uri": "ex:hasFunction",
+      "target_id": "children's optimum growth and maintenance of nitrogen balance in adults",
+      "evidence_span": "It is required for children's optimum growth and the maintenance of nitrogen balance in adults."
+    },
+    {
+      "source_id": "norleucine",
+      "property_uri": "ex:hasFunction",
+      "target_id": "research protein structure and function, similar to methionine",
+      "evidence_span": "Norleucine is an artificial amino acid that has been used to research protein structure and fu nction in the lab. It has a similar structure to METHIONINE."
+    },
+    {
+      "source_id": "phenylalanine",
+      "property_uri": "ex:hasFunction",
+      "target_id": "treatment of depression, parkinson's illness, multiple sclerosis, pain, acupuncture anesthesia, osteoarthritis",
+      "evidence_span": "Depression, Parkinson's illness, multiple sclerosis, pain, acupuncture anesthesia, and osteoarthritis are all treated with phenylalanine."
+    },
+    {
+      "source_id": "tyrosine",
+      "property_uri": "ex:hasFunction",
+      "target_id": "production of thyroid hormone, mental performance, alertness, memory",
+      "evidence_span": "Tyrosine is commonly utilizedin the production of thyroid hormone. Tyrosine is a supplement that helps with mental performance, alertness, and memory."
+    },
+    {
+      "source_id": "serine",
+      "property_uri": "ex:hasFunction",
+      "target_id": "brain and central nervous system function correctly",
+      "evidence_span": "Serine is particularly significant for the brain and central nervous system to function correctly."
+    },
+    {
+      "source_id": "cysteine",
+      "property_uri": "ex:hasFunction",
+      "target_id": "boost efficiency of corticosteroid medications, treatment of surgery and trauma",
+      "evidence_span": "In medicine, cysteine is used to boost the efficiency of corticosteroid medications. Cystine L-Cystine can be used in the treatment of surgery and trauma."
+    },
+    {
+      "source_id": "threonine",
+      "property_uri": "ex:hasFunction",
+      "target_id": "treatment of spinal spasticity, multiple sclerosis, familial spastic paraparesis, amyotrophic lateral sclerosis",
+      "evidence_span": "Spinal spasticity, multiple sclerosis, familial spastic paraparesis, and amyotrophic late ral sclerosis are all conditions that are treated with threonine"
+    }
+  ]
+}

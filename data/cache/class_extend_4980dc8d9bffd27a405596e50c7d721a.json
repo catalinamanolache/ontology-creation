@@ -1,0 +1,34 @@
+{
+  "reasoning_steps": [
+    "Identify new classes based on the provided text and ensure they fit into BFO categories.",
+    "Ensure no redundancy by checking against existing classes."
+  ],
+  "classes": [
+    {
+      "uri": "ex:HydrolysisProduct",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": null,
+      "aristotelian_definition": "A HydrolysisProduct is a MaterialEntity produced as a result of the hydrolysis reaction.",
+      "comment": "This class covers products like glycine, alanine, serine, valine, methionine, glutamic acid, leucine, isoleucine, norleucine, and phenylalanine."
+    },
+    {
+      "uri": "ex:GabrielPhthalimideSynthesis",
+      "bfo_parent": "bfo:Process",
+      "subclass_of": null,
+      "aristotelian_definition": "A GabrielPhthalimideSynthesis is a Process involving the treatment of an alpha halogenated acid ester with potassium phthalimide to produce a substituted phthalimide.",
+      "comment": "This class describes the method used for preparing amino acids like glycine."
+    },
+    {
+      "uri": "ex:WilsonDiseaseTreatment",
+      "bfo_parent": "bfo:Process",
+      "subclass_of": null,
+      "aristotelian_definition": "A WilsonDiseaseTreatment is a Process involving chelation therapy using D-Penicillamine to treat Wilson’s disease.",
+      "comment": "This class describes the treatment method for Wilson's disease."
+    }
+  ],
+  "canonical_terms": {
+    "HydrolysisProduct": "ex:HydrolysisProduct",
+    "GabrielPhthalimideSynthesis": "ex:GabrielPhthalimideSynthesis",
+    "WilsonDiseaseTreatment": "ex:WilsonDiseaseTreatment"
+  }
+}

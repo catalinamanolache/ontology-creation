@@ -1,0 +1,33 @@
+{
+  "reasoning_steps": [
+    "Identified properties and classifications based on the text content.",
+    "Mapped entities to ontology classes and properties."
+  ],
+  "entities": [
+    {
+      "id": "amino_acid",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Amino Acids"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "amino_acid",
+      "property_uri": "ex:taste",
+      "target_id": "",
+      "evidence_span": "Amino acids are also sweet (Glycine, Alanine and Valine), tasteless (Leucine) or Bitter (Arginine & Isoleucine)."
+    },
+    {
+      "source_id": "amino_acid",
+      "property_uri": "ex:hasOpticalIsomer",
+      "target_id": "",
+      "evidence_span": "All amino acids except glycine possess optical isomers because of the presence of asymmetric α-carbon atoms and show optical activity."
+    },
+    {
+      "source_id": "amino_acid",
+      "property_uri": "ex:isZwitterion",
+      "target_id": "",
+      "evidence_span": "The name zwitter is derived from the German word which implies hybrid. Zwitter ion (or) dipolar ion is a hybrid molecule containing positive & negatively ionic groups."
+    }
+  ]
+}

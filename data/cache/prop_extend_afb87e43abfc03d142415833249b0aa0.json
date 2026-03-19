@@ -1,0 +1,19 @@
+{
+  "reasoning_steps": [
+    "Based on the provided text and existing properties, we can derive new properties that are not covered by the current set."
+  ],
+  "properties": [
+    {
+      "uri": "ex:requiresSupplementationThroughFoodForChildren",
+      "domain": "ex:AminoAcid",
+      "range": "xsd:boolean",
+      "comment": "Indicates if an amino acid requires supplementation through food specifically for children"
+    },
+    {
+      "uri": "ex:isProducedInBodyForAdults",
+      "domain": "ex:AminoAcid",
+      "range": "xsd:boolean",
+      "comment": "Indicates if an amino acid is produced in the body at a sufficient rate for adults"
+    }
+  ]
+}

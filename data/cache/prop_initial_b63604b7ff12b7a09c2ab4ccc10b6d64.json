@@ -1,0 +1,86 @@
+{
+  "reasoning_steps": [
+    "Extracted properties based on the given text and available classes.",
+    "Ensured domain and range constraints were followed."
+  ],
+  "properties": [
+    {
+      "uri": "ex:hasFunction",
+      "domain": "ex:AminoAcid",
+      "range": "xsd:string",
+      "comment": "Describes the function of an amino acid"
+    },
+    {
+      "uri": "ex:isProducedInBody",
+      "domain": "ex:AminoAcid",
+      "range": "xsd:boolean",
+      "comment": "Indicates whether an amino acid is produced in the body or not"
+    },
+    {
+      "uri": "ex:requiresSupplementationThroughFood",
+      "domain": "ex:AminoAcid",
+      "range": "xsd:boolean",
+      "comment": "Indicates if an amino acid requires supplementation through food"
+    },
+    {
+      "uri": "ex:taste",
+      "domain": "ex:AminoAcid",
+      "range": "xsd:string",
+      "comment": "Describes the taste of an amino acid (sweet, bitter, or tasteless)"
+    },
+    {
+      "uri": "ex:hasOpticalIsomer",
+      "domain": "ex:AminoAcid",
+      "range": "xsd:boolean",
+      "comment": "Indicates if an amino acid has optical isomers"
+    },
+    {
+      "uri": "ex:isZwitterion",
+      "domain": "ex:AminoAcid",
+      "range": "xsd:boolean",
+      "comment": "Indicates if an amino acid is a zwitterion"
+    },
+    {
+      "uri": "ex:hasIsomer",
+      "domain": "ex:AminoAcid",
+      "range": "xsd:string",
+      "comment": "Describes the type of isomer (L or D) for an amino acid"
+    },
+    {
+      "uri": "ex:undergoesDecarboxylation",
+      "domain": "ex:AminoAcid",
+      "range": "xsd:boolean",
+      "comment": "Indicates if an amino acid undergoes decarboxylation"
+    },
+    {
+      "uri": "ex:formsSaltWithAlkali",
+      "domain": "ex:AminoAcid",
+      "range": "xsd:boolean",
+      "comment": "Indicates if an amino acid forms a salt with alkali"
+    },
+    {
+      "uri": "ex:formsEsterWithAlcohol",
+      "domain": "ex:AminoAcid",
+      "range": "xsd:boolean",
+      "comment": "Indicates if an amino acid forms an ester with alcohol"
+    },
+    {
+      "uri": "ex:reactsWithAmmonia",
+      "domain": "ex:AminoAcid",
+      "range": "xsd:boolean",
+      "comment": "Indicates if an amino acid reacts with ammonia to form amides"
+    },
+    {
+      "uri": "ex:formsSaltWithMineralAcid",
+      "domain": "ex:AminoAcid",
+      "range": "xsd:boolean",
+      "comment": "Indicates if an amino acid forms a salt with mineral acids"
+    },
+    {
+      "uri": "ex:reactsWithNinhydrin",
+      "domain": "ex:AminoAcid",
+      "range": "xsd:boolean",
+      "comment": "Indicates if an amino acid reacts with ninhydrin to form a color change"
+    }
+  ]
+}

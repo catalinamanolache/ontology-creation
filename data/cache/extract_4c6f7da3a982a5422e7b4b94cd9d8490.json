@@ -1,0 +1,42 @@
+{
+  "reasoning_steps": [
+    "Identified essential, semi-essential, and non-essential amino acids from the text.",
+    "Mapped these to the ontology classes."
+  ],
+  "entities": [
+    {
+      "id": "amino_acid",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Amino acid"
+    },
+    {
+      "id": "essential_amino_acid",
+      "class_uri": "ex:EssentialAminoAcid",
+      "evidence_span": "These amino acids are referred to as essential amino acids."
+    },
+    {
+      "id": "semi_essential_amino_acid",
+      "class_uri": "ex:SemiEssentialAminoAcid",
+      "evidence_span": "Some amino acids are generated in the body, but production is insufficient; these amino acids are referred to as semi-essential amino acids."
+    },
+    {
+      "id": "non_essential_amino_acid",
+      "class_uri": "ex:NonEssentialAminoAcid",
+      "evidence_span": "Some amino acids are generated in the body and do not require supplementation; these amino acids are referred to as non-essential amino acids."
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "amino_acid",
+      "property_uri": "ex:isProducedInBodyForAdults",
+      "target_id": "non_essential_amino_acid",
+      "evidence_span": "Some amino acids are generated in the body and do not require supplementation; these amino acids are referred to as non-essential amino acids."
+    },
+    {
+      "source_id": "amino_acid",
+      "property_uri": "ex:requiresSupplementationThroughFoodForChildren",
+      "target_id": "essential_amino_acid",
+      "evidence_span": "These amino acids are referred to as essential amino acids."
+    }
+  ]
+}

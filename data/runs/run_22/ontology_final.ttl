@@ -1,0 +1,176 @@
+@prefix ex: <http://example.org/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ===== OWL Classes =====
+ex:AminoAcid rdf:type owl:Class ;
+    rdfs:comment "Amino acid, any of a group of organic molecules that contain a basic amino group (NH2) and an acidic carboxyl group (COOH)." .
+
+ex:EssentialAminoAcid rdf:type owl:Class ;
+    rdfs:comment "Amino acid that is not produced by the body and must be obtained through food." .
+
+ex:NonEssentialAminoAcid rdf:type owl:Class ;
+    rdfs:comment "Amino acid that is produced by the body and does not require supplementation." .
+
+ex:SemiEssentialAminoAcid rdf:type owl:Class ;
+    rdfs:comment "Amino acid that is produced in the body but in insufficient amounts, requiring supplementation." .
+
+ex:BranchedChainAminoAcid rdf:type owl:Class ;
+    rdfs:comment "Amino acid with a branched aliphatic side chain." .
+
+ex:HydroxylGroupContainingAminoAcid rdf:type owl:Class ;
+    rdfs:comment "Amino acid with a hydroxyl group." .
+
+ex:SulphurContainingAminoAcid rdf:type owl:Class ;
+    rdfs:comment "Amino acid containing a sulfohydryl or thioether group." .
+
+ex:AcidicAminoAcid rdf:type owl:Class ;
+    rdfs:comment "Amino acid with a dicarboxylic monoamino structure." .
+
+ex:BasicAminoAcid rdf:type owl:Class ;
+    rdfs:comment "Amino acid with a dibasic monocarboxylic structure." .
+
+ex:AromaticAminoAcid rdf:type owl:Class ;
+    rdfs:comment "Amino acid with an aromatic ring." .
+
+ex:IminoAminoAcid rdf:type owl:Class ;
+    rdfs:comment "Amino acid with an imino group." .
+
+ex:HeterocyclicAminoAcid rdf:type owl:Class ;
+    rdfs:comment "Amino acid with a heterocyclic ring." .
+
+ex:AlphaAminoAcid rdf:type owl:Class ;
+    rdfs:comment "Amino acid with the amino group attached to the next carbon of the carboxyl group." .
+
+ex:BetaAminoAcid rdf:type owl:Class ;
+    rdfs:comment "Amino acid with the amino group attached to the third carbon of the carboxyl group." .
+
+ex:GammaAminoAcid rdf:type owl:Class ;
+    rdfs:comment "Amino acid with the amino group attached to the fourth carbon of the carboxyl group." .
+
+ex:PurelyKetogenicAminoAcid rdf:type owl:Class ;
+    rdfs:comment "Amino acid that can be used to make fat and is transformed into ketone bodies." .
+
+ex:KetogenicAndGlucogenicAminoAcid rdf:type owl:Class ;
+    rdfs:comment "Amino acid that can be metabolized into both ketogenic and glucogenic pathways." .
+
+ex:PurelyGlucogenicAminoAcid rdf:type owl:Class ;
+    rdfs:comment "Amino acid that can be used as a starting point for glucose or glycogen production." .
+
+ex:NonPolarAminoAcid rdf:type owl:Class ;
+    rdfs:comment "Amino acid with no charge on the 'R' group." .
+
+ex:PolarAminoAcidWithNoChargeOnRGroup rdf:type owl:Class ;
+    rdfs:comment "Amino acid with an uncharged 'R' group but with groups like hydroxyl, sulfhydryl, and amide." .
+
+ex:PolarAminoAcidWithPositiveChargeOnRGroup rdf:type owl:Class ;
+    rdfs:comment "Amino acid with a positive charge on the 'R' group." .
+
+ex:PolarAminoAcidWithNegativeChargeOnRGroup rdf:type owl:Class ;
+    rdfs:comment "Amino acid with a negative charge on the 'R' group." .
+
+ex:Hydroxyproline rdf:type owl:Class ;
+    rdfs:comment "Amino acid with a hydroxyl group." .
+
+ex:Glycine rdf:type owl:Class ;
+    rdfs:comment "Amino acid with the amino group attached to the next carbon of the carboxyl group." .
+
+ex:Alanine rdf:type owl:Class ;
+    rdfs:comment "Amino acid with the amino group attached to the next carbon of the carboxyl group." .
+
+ex:Valine rdf:type owl:Class ;
+    rdfs:comment "Amino acid with the amino group attached to the next carbon of the carboxyl group." .
+
+ex:Leucine rdf:type owl:Class ;
+    rdfs:comment "Amino acid with the amino group attached to the next carbon of the carboxyl group." .
+
+ex:Isoleucine rdf:type owl:Class ;
+    rdfs:comment "Amino acid with the amino group attached to the next carbon of the carboxyl group." .
+
+ex:Norleucine rdf:type owl:Class ;
+    rdfs:comment "Amino acid with the amino group attached to the next carbon of the carboxyl group." .
+
+ex:Phenylalanine rdf:type owl:Class ;
+    rdfs:comment "Amino acid with the amino group attached to the next carbon of the carboxyl group." .
+
+ex:Tyrosine rdf:type owl:Class ;
+    rdfs:comment "Amino acid with the amino group attached to the next carbon of the carboxyl group." .
+
+ex:Serine rdf:type owl:Class ;
+    rdfs:comment "Amino acid with the amino group attached to the next carbon of the carboxyl group." .
+
+ex:Cysteine rdf:type owl:Class ;
+    rdfs:comment "Amino acid with the amino group attached to the next carbon of the carboxyl group." .
+
+ex:Cystine rdf:type owl:Class ;
+    rdfs:comment "Amino acid with the amino group attached to the next carbon of the carboxyl group." .
+
+ex:Threonine rdf:type owl:Class ;
+    rdfs:comment "Amino acid with the amino group attached to the next carbon of the carboxyl group." .
+
+ex:Methionine rdf:type owl:Class ;
+    rdfs:comment "Amino acid with the amino group attached to the next carbon of the carboxyl group." .
+
+ex:Tryptophan rdf:type owl:Class ;
+    rdfs:comment "Amino acid with the amino group attached to the next carbon of the carboxyl group." .
+
+ex:Proline rdf:type owl:Class ;
+    rdfs:comment "Amino acid with the amino group attached to the next carbon of the carboxyl group." .
+
+ex:AsparticAcid rdf:type owl:Class ;
+    rdfs:comment "Amino acid with the amino group attached to the next carbon of the carboxyl group." .
+
+ex:Asparagine rdf:type owl:Class ;
+    rdfs:comment "Amino acid with the amino group attached to the next carbon of the carboxyl group." .
+
+ex:GlutamicAcid rdf:type owl:Class ;
+    rdfs:comment "Amino acid with the amino group attached to the next carbon of the carboxyl group." .
+
+ex:BetaHydroxyGlutamicAcid rdf:type owl:Class ;
+    rdfs:comment "Amino acid with the amino group attached to the next carbon of the carboxyl group." .
+
+ex:Glutamine rdf:type owl:Class ;
+    rdfs:comment "Amino acid with the amino group attached to the next carbon of the carboxyl group." .
+
+ex:Ornithine rdf:type owl:Class ;
+    rdfs:comment "Amino acid with the amino group attached to the next carbon of the carboxyl group." .
+
+ex:Arginine rdf:type owl:Class ;
+    rdfs:comment "Amino acid with the amino group attached to the next carbon of the carboxyl group." .
+
+ex:Lysine rdf:type owl:Class ;
+    rdfs:comment "Amino acid with the amino group attached to the next carbon of the carboxyl group." .
+
+ex:Histidine rdf:type owl:Class ;
+    rdfs:comment "Amino acid with the amino group attached to the next carbon of the carboxyl group." .
+
+# ===== Properties =====
+ex:hasAminoGroup rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Indicates the presence of an amino group in the amino acid." .
+
+ex:hasCarboxylGroup rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Indicates the presence of a carboxyl group in the amino acid." .
+
+ex:isEssential rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates whether the amino acid is essential or not." .
+
+ex:isNonEssential rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates whether the amino acid is non-essential or not." .
+
+ex:isSemiEssential rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates whether the amino acid is semi-essential or not." .
+
+# ===== Instances =====
+# ===== Relations =====

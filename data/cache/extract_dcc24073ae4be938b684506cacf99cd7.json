@@ -1,0 +1,62 @@
+{
+  "reasoning_steps": [
+    "Identified relevant properties based on the text content.",
+    "Mapped entities and relations using approved ontology."
+  ],
+  "entities": [
+    {
+      "id": "amino_acid",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "L- AND D- AMINO ACIDS"
+    },
+    {
+      "id": "glycine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Glycine, the only amino acid, has no enantiomers because it has two hydrogen atoms attached to the central carbon atom."
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "amino_acid",
+      "property_uri": "ex:undergoesDecarboxylation",
+      "target_id": "",
+      "evidence_span": "The amino acids will undergo alpha Decarboxylation to make the corresponding amines."
+    },
+    {
+      "source_id": "glycine",
+      "property_uri": "ex:undergoesDecarboxylation",
+      "target_id": "",
+      "evidence_span": "Glycine, the only amino acid, has no enantiomers because it has two hydrogen atoms attached to the central carbon atom."
+    },
+    {
+      "source_id": "amino_acid",
+      "property_uri": "ex:formsSaltWithAlkali",
+      "target_id": "",
+      "evidence_span": "Amino acids react with alkalies to make Salts."
+    },
+    {
+      "source_id": "amino_acid",
+      "property_uri": "ex:formsEsterWithAlcohol",
+      "target_id": "",
+      "evidence_span": "Amino acids are reacted with an alcohol to form, Ester."
+    },
+    {
+      "source_id": "amino_acid",
+      "property_uri": "ex:reactsWithAmmonia",
+      "target_id": "",
+      "evidence_span": "The carboxyl group of dicarboxylic amino acids reacts with NH3 to form Amides."
+    },
+    {
+      "source_id": "amino_acid",
+      "property_uri": "ex:formsSaltWithMineralAcid",
+      "target_id": "",
+      "evidence_span": "When the amino acids are treated with mineral acids (like HCl), it forms Acid Salts."
+    },
+    {
+      "source_id": "glycine",
+      "property_uri": "ex:reactsWithNinhydrin",
+      "target_id": "",
+      "evidence_span": "When Amino acids (or) Imino acid react with Ninhydrin molecule it gives Color. When it gives Purple color (Ruhemanns Complex) the Unknown sample is Amino acids (Which have primary amine NH2)"
+    }
+  ]
+}

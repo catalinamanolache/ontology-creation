@@ -1,0 +1,32 @@
+{
+  "questions": [
+    {
+      "question": "How many types of amino acids are involved in protein synthesis according to the text?",
+      "scope": "class"
+    },
+    {
+      "question": "What is the significance of essential amino acids for human health?",
+      "scope": "property"
+    },
+    {
+      "question": "Which amino acid does not have enantiomers and why?",
+      "scope": "instance"
+    },
+    {
+      "question": "Can you list any two types of chemical reactions involving amino acids mentioned in the text?",
+      "scope": "property"
+    },
+    {
+      "question": "What are the three classifications of amino acids based on their properties as described in the text?",
+      "scope": "class"
+    },
+    {
+      "question": "How do amino acids contribute to gene expression regulation according to the text?",
+      "scope": "property"
+    },
+    {
+      "question": "Which two types of amino acids are sweet-tasting and which one is bitter-tasting?",
+      "scope": "instance"
+    }
+  ]
+}

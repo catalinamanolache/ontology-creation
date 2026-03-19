@@ -1,0 +1,366 @@
+@prefix ex: <http://example.org/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ===== OWL Classes =====
+ex:AminoAcid rdf:type owl:Class ;
+    rdfs:comment "Amino acid, any of a group of organic molecules that contain a basic amino group (−NH2), an acidic carboxyl group (−COOH), and an organic R group (or side chain) that's unique to every amino acid." .
+
+ex:EssentialAminoAcid rdf:type owl:Class ;
+    rdfs:comment "Amino acid that is not produced by the body and must be obtained through food." .
+
+ex:NonEssentialAminoAcid rdf:type owl:Class ;
+    rdfs:comment "Amino acid that is produced by the body and does not require supplementation." .
+
+ex:SemiEssentialAminoAcid rdf:type owl:Class ;
+    rdfs:comment "Amino acid that is produced by the body but in insufficient amounts." .
+
+ex:Valine rdf:type owl:Class ;
+    rdfs:comment "A specific type of ex:EssentialAminoAcid." .
+
+ex:Leucine rdf:type owl:Class ;
+    rdfs:comment "A specific type of ex:EssentialAminoAcid." .
+
+ex:Isoleucine rdf:type owl:Class ;
+    rdfs:comment "A specific type of ex:EssentialAminoAcid." .
+
+ex:Threonine rdf:type owl:Class ;
+    rdfs:comment "A specific type of ex:EssentialAminoAcid." .
+
+ex:Methionine rdf:type owl:Class ;
+    rdfs:comment "A specific type of ex:EssentialAminoAcid." .
+
+ex:Phenylalanine rdf:type owl:Class ;
+    rdfs:comment "A specific type of ex:EssentialAminoAcid." .
+
+ex:Tryptophan rdf:type owl:Class ;
+    rdfs:comment "A specific type of ex:EssentialAminoAcid." .
+
+ex:Lysine rdf:type owl:Class ;
+    rdfs:comment "A specific type of ex:EssentialAminoAcid." .
+
+ex:Arginine rdf:type owl:Class ;
+    rdfs:comment "A specific type of ex:SemiEssentialAminoAcid." .
+
+ex:Histidine rdf:type owl:Class ;
+    rdfs:comment "A specific type of ex:SemiEssentialAminoAcid." .
+
+ex:Alanine rdf:type owl:Class ;
+    rdfs:comment "A specific type of ex:NonEssentialAminoAcid." .
+
+ex:AsparticAcid rdf:type owl:Class ;
+    rdfs:comment "A specific type of ex:NonEssentialAminoAcid." .
+
+ex:Asparagine rdf:type owl:Class ;
+    rdfs:comment "A specific type of ex:NonEssentialAminoAcid." .
+
+ex:Cystine rdf:type owl:Class ;
+    rdfs:comment "A specific type of ex:NonEssentialAminoAcid." .
+
+ex:Cysteine rdf:type owl:Class ;
+    rdfs:comment "A specific type of ex:NonEssentialAminoAcid." .
+
+ex:GlutamicAcid rdf:type owl:Class ;
+    rdfs:comment "A specific type of ex:NonEssentialAminoAcid." .
+
+ex:Glutamine rdf:type owl:Class ;
+    rdfs:comment "A specific type of ex:NonEssentialAminoAcid." .
+
+ex:Glycine rdf:type owl:Class ;
+    rdfs:comment "A specific type of ex:NonEssentialAminoAcid." .
+
+ex:Proline rdf:type owl:Class ;
+    rdfs:comment "A specific type of ex:NonEssentialAminoAcid." .
+
+ex:Serine rdf:type owl:Class ;
+    rdfs:comment "A specific type of ex:NonEssentialAminoAcid." .
+
+ex:AliphaticSideChainAminoAcid rdf:type owl:Class ;
+    rdfs:comment "A specific type of ex:AminoAcid." .
+
+ex:MonoamineMonocarboxylicAcid rdf:type owl:Class ;
+    rdfs:comment "A specific type of ex:AminoAcid." .
+
+ex:BranchedChainAminoAcid rdf:type owl:Class ;
+    rdfs:comment "A specific type of ex:AminoAcid." .
+
+ex:HydroxylGroupContainingAminoAcid rdf:type owl:Class ;
+    rdfs:comment "A specific type of ex:AminoAcid." .
+
+ex:SulphurContainingAminoAcid rdf:type owl:Class ;
+    rdfs:comment "A specific type of ex:AminoAcid." .
+
+ex:AcidicAminoAcid rdf:type owl:Class ;
+    rdfs:comment "A specific type of ex:AminoAcid." .
+
+ex:BasicAminoAcid rdf:type owl:Class ;
+    rdfs:comment "A specific type of ex:AminoAcid." .
+
+ex:AromaticAminoAcid rdf:type owl:Class ;
+    rdfs:comment "A specific type of ex:AminoAcid." .
+
+ex:IminoAminoAcid rdf:type owl:Class ;
+    rdfs:comment "A specific type of ex:AminoAcid." .
+
+ex:HeterocyclicAminoAcid rdf:type owl:Class ;
+    rdfs:comment "A specific type of ex:AminoAcid." .
+
+ex:AlphaAminoAcid rdf:type owl:Class ;
+    rdfs:comment "A specific type of ex:AminoAcid." .
+
+ex:BetaAminoAcid rdf:type owl:Class ;
+    rdfs:comment "A specific type of ex:AminoAcid." .
+
+ex:GammaAminoAcid rdf:type owl:Class ;
+    rdfs:comment "A specific type of ex:AminoAcid." .
+
+ex:PurelyKetogenicAminoAcid rdf:type owl:Class ;
+    rdfs:comment "A specific type of ex:AminoAcid." .
+
+ex:KetogenicAndGlucogenicAminoAcid rdf:type owl:Class ;
+    rdfs:comment "A specific type of ex:AminoAcid." .
+
+ex:PurelyGlucogenicAminoAcid rdf:type owl:Class ;
+    rdfs:comment "A specific type of ex:AminoAcid." .
+
+ex:NonPolarAminoAcid rdf:type owl:Class ;
+    rdfs:comment "A specific type of ex:AminoAcid." .
+
+ex:PolarAminoAcidWithNoCharge rdf:type owl:Class ;
+    rdfs:comment "A specific type of ex:AminoAcid." .
+
+ex:PolarAminoAcidWithPositiveCharge rdf:type owl:Class ;
+    rdfs:comment "A specific type of ex:AminoAcid." .
+
+ex:PolarAminoAcidWithNegativeCharge rdf:type owl:Class ;
+    rdfs:comment "A specific type of ex:AminoAcid." .
+
+ex:Norleucine rdf:type owl:Class ;
+    rdfs:comment "A specific type of ex:NonEssentialAminoAcid." .
+
+ex:Tyrosine rdf:type owl:Class ;
+    rdfs:comment "A specific type of ex:EssentialAminoAcid." .
+
+ex:Hydroxyproline rdf:type owl:Class ;
+    rdfs:comment "A specific type of ex:NonEssentialAminoAcid." .
+
+ex:BetaHydroxyGlutamicAcid rdf:type owl:Class ;
+    rdfs:comment "A specific type of ex:NonEssentialAminoAcid." .
+
+ex:Ornithine rdf:type owl:Class ;
+    rdfs:comment "A specific type of ex:NonEssentialAminoAcid." .
+
+ex:DPenicillamine rdf:type owl:Class ;
+    rdfs:comment "A specific type of ex:AminoAcid." .
+
+ex:NACysteine rdf:type owl:Class ;
+    rdfs:comment "A specific type of ex:AminoAcid." .
+
+ex:Gabapentin rdf:type owl:Class ;
+    rdfs:comment "A specific type of ex:AminoAcid." .
+
+# ===== Properties =====
+ex:hasAminoGroup rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Contains a basic amino group (−NH2)" .
+
+ex:hasCarboxylGroup rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Contains an acidic carboxyl group (−COOH)" .
+
+ex:hasRGroup rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Contains an organic R group (or side chain) that's unique to every amino acid" .
+
+ex:isEssential rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates if the amino acid is essential" .
+
+ex:isNonEssential rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates if the amino acid is non-essential" .
+
+ex:isSemiEssential rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates if the amino acid is semi-essential" .
+
+ex:hasSolubility rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Describes the solubility of the amino acid in water and organic solvents" .
+
+ex:hasMeltingPoint rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Describes the melting point of the amino acid" .
+
+ex:hasTaste rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Describes the taste of the amino acid" .
+
+ex:hasOpticalActivity rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates if the amino acid has optical activity" .
+
+ex:hasZwitterion rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates if the amino acid is a zwitterion" .
+
+ex:hasIsoelectricPoint rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Describes the isoelectric point of the amino acid" .
+
+ex:undergoesDecarboxylation rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range ex:AminoAcid ;
+    rdfs:comment "Describes the decarboxylation reaction of the amino acid" .
+
+ex:formsSaltWithAlkali rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range ex:AminoAcid ;
+    rdfs:comment "Describes the salt formation reaction of the amino acid with an alkali" .
+
+ex:formsEsterWithAlcohol rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range ex:AminoAcid ;
+    rdfs:comment "Describes the esterification reaction of the amino acid with an alcohol" .
+
+ex:formsAmideWithAmmonia rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range ex:AminoAcid ;
+    rdfs:comment "Describes the amide formation reaction of the amino acid with ammonia" .
+
+ex:reactsWithMineralAcid rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range ex:AminoAcid ;
+    rdfs:comment "Describes the reaction of the amino acid with a mineral acid" .
+
+ex:reactsWithNinhydrin rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range ex:AminoAcid ;
+    rdfs:comment "Describes the ninhydrin reaction of the amino acid" .
+
+ex:hasAliphaticSideChain rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates if the amino acid has an aliphatic side chain." .
+
+ex:hasMonoamineMonocarboxylicAcid rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates if the amino acid is a monoamine monocarboxylic acid." .
+
+ex:hasBranchedChain rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates if the amino acid is a branched-chain amino acid." .
+
+ex:hasHydroxylGroup rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates if the amino acid has a hydroxyl group." .
+
+ex:hasSulphur rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates if the amino acid has a sulphur group." .
+
+ex:isAcidic rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates if the amino acid is acidic." .
+
+ex:isBasic rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates if the amino acid is basic." .
+
+ex:isAromatic rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates if the amino acid is aromatic." .
+
+ex:isImino rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates if the amino acid is imino." .
+
+ex:isHeterocyclic rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates if the amino acid is heterocyclic." .
+
+ex:isAlphaAminoAcid rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates if the amino acid is an alpha amino acid." .
+
+ex:isBetaAminoAcid rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates if the amino acid is a beta amino acid." .
+
+ex:isGammaAminoAcid rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates if the amino acid is a gamma amino acid." .
+
+ex:isPurelyKetogenic rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates if the amino acid is purely ketogenic." .
+
+ex:isKetogenicAndGlucogenic rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates if the amino acid is ketogenic and glucogenic." .
+
+ex:isPurelyGlucogenic rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates if the amino acid is purely glucogenic." .
+
+ex:isNonPolar rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates if the amino acid is non-polar." .
+
+ex:isPolarWithNoCharge rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates if the amino acid is polar with no charge." .
+
+ex:isPolarWithPositiveCharge rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates if the amino acid is polar with a positive charge." .
+
+ex:isPolarWithNegativeCharge rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates if the amino acid is polar with a negative charge." .
+
+ex:hasChemicalName rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Describes the chemical name of the amino acid." .
+
+ex:hasUse rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Describes the uses of the amino acid." .
+
+# ===== Instances =====
+# ===== Relations =====

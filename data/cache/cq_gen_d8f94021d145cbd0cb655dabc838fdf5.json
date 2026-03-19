@@ -1,0 +1,36 @@
+{
+  "questions": [
+    {
+      "question": "What product is produced when an alpha amino acid undergoes hydrolysis?",
+      "scope": "property"
+    },
+    {
+      "question": "Which method involves treating an alpha halogenated acid ester with potassium phthalimide to produce a substituted phthalimide?",
+      "scope": "property"
+    },
+    {
+      "question": "What are some of the health benefits associated with glycine according to the text?",
+      "scope": "instance"
+    },
+    {
+      "question": "How is leucine used in muscle-related conditions?",
+      "scope": "instance"
+    },
+    {
+      "question": "Which amino acid is used to treat anemia and reduce blood pressure?",
+      "scope": "instance"
+    },
+    {
+      "question": "What are the two-letter abbreviations for alanine and aspartic acid in the provided table?",
+      "scope": "class"
+    },
+    {
+      "question": "Which amino acid is used to treat Wilson’s disease through chelation therapy?",
+      "scope": "instance"
+    },
+    {
+      "question": "What are the main functions of amino acids as mentioned in the text?",
+      "scope": "property"
+    }
+  ]
+}

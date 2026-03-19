@@ -1,0 +1,229 @@
+{
+  "reasoning_steps": [
+    "Identified essential and semi-essential amino acids from the text.",
+    "Mapped non-essential amino acids based on provided information."
+  ],
+  "entities": [
+    {
+      "id": "valine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Valine, Leucine, Isoleucine"
+    },
+    {
+      "id": "leucine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Valine, Leucine, Isoleucine"
+    },
+    {
+      "id": "isoleucine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Valine, Leucine, Isoleucine"
+    },
+    {
+      "id": "threonine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Threonine, Methionine, Phenylalanine, Tryptophan, and Lysine."
+    },
+    {
+      "id": "methionine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Threonine, Methionine, Phenylalanine, Tryptophan, and Lysine."
+    },
+    {
+      "id": "phenylalanine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Threonine, Methionine, Phenylalanine, Tryptophan, and Lysine."
+    },
+    {
+      "id": "tryptophan",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Threonine, Methionine, Phenylalanine, Tryptophan, and Lysine."
+    },
+    {
+      "id": "lysine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Threonine, Methionine, Phenylalanine, Tryptophan, and Lysine."
+    },
+    {
+      "id": "arginine",
+      "class_uri": "ex:SemiEssentialAminoAcid",
+      "evidence_span": "Semi-Essential Amino Acids The body produces some of these amino acids, but not at a rate that is sufficient to meet the body's demands. e.g.: Arginine and Histidine."
+    },
+    {
+      "id": "histidine",
+      "class_uri": "ex:SemiEssentialAminoAcid",
+      "evidence_span": "Semi-Essential Amino Acids The body produces some of these amino acids, but not at a rate that is sufficient to meet the body's demands. e.g.: Arginine and Histidine."
+    },
+    {
+      "id": "alanine",
+      "class_uri": "ex:NonEssentialAminoAcid",
+      "evidence_span": "12 non -essential amino acids in humans are particularly important to their health. e.g.: Alanine, Arginine, Aspartic acid, Asparagine, Cystine, Cysteine, Glutamic acid, Glutamine, Glycine, Histidine, Proline, and Serine"
+    },
+    {
+      "id": "arginine",
+      "class_uri": "ex:NonEssentialAminoAcid",
+      "evidence_span": "12 non -essential amino acids in humans are particularly important to their health. e.g.: Alanine, Arginine, Aspartic acid, Asparagine, Cystine, Cysteine, Glutamic acid, Glutamine, Glycine, Histidine, Proline, and Serine"
+    },
+    {
+      "id": "aspartic_acid",
+      "class_uri": "ex:NonEssentialAminoAcid",
+      "evidence_span": "12 non -essential amino acids in humans are particularly important to their health. e.g.: Alanine, Arginine, Aspartic acid, Asparagine, Cystine, Cysteine, Glutamic acid, Glutamine, Glycine, Histidine, Proline, and Serine"
+    },
+    {
+      "id": "asparagine",
+      "class_uri": "ex:NonEssentialAminoAcid",
+      "evidence_span": "12 non -essential amino acids in humans are particularly important to their health. e.g.: Alanine, Arginine, Aspartic acid, Asparagine, Cystine, Cysteine, Glutamic acid, Glutamine, Glycine, Histidine, Proline, and Serine"
+    },
+    {
+      "id": "cystine",
+      "class_uri": "ex:NonEssentialAminoAcid",
+      "evidence_span": "12 non -essential amino acids in humans are particularly important to their health. e.g.: Alanine, Arginine, Aspartic acid, Asparagine, Cystine, Cysteine, Glutamic acid, Glutamine, Glycine, Histidine, Proline, and Serine"
+    },
+    {
+      "id": "cysteine",
+      "class_uri": "ex:NonEssentialAminoAcid",
+      "evidence_span": "12 non -essential amino acids in humans are particularly important to their health. e.g.: Alanine, Arginine, Aspartic acid, Asparagine, Cystine, Cysteine, Glutamic acid, Glutamine, Glycine, Histidine, Proline, and Serine"
+    },
+    {
+      "id": "glutamic_acid",
+      "class_uri": "ex:NonEssentialAminoAcid",
+      "evidence_span": "12 non -essential amino acids in humans are particularly important to their health. e.g.: Alanine, Arginine, Aspartic acid, Asparagine, Cystine, Cysteine, Glutamic acid, Glutamine, Glycine, Histidine, Proline, and Serine"
+    },
+    {
+      "id": "glutamine",
+      "class_uri": "ex:NonEssentialAminoAcid",
+      "evidence_span": "12 non -essential amino acids in humans are particularly important to their health. e.g.: Alanine, Arginine, Aspartic acid, Asparagine, Cystine, Cysteine, Glutamic acid, Glutamine, Glycine, Histidine, Proline, and Serine"
+    },
+    {
+      "id": "glycine",
+      "class_uri": "ex:NonEssentialAminoAcid",
+      "evidence_span": "12 non -essential amino acids in humans are particularly important to their health. e.g.: Alanine, Arginine, Aspartic acid, Asparagine, Cystine, Cysteine, Glutamic acid, Glutamine, Glycine, Histidine, Proline, and Serine"
+    },
+    {
+      "id": "proline",
+      "class_uri": "ex:NonEssentialAminoAcid",
+      "evidence_span": "12 non -essential amino acids in humans are particularly important to their health. e.g.: Alanine, Arginine, Aspartic acid, Asparagine, Cystine, Cysteine, Glutamic acid, Glutamine, Glycine, Histidine, Proline, and Serine"
+    },
+    {
+      "id": "serine",
+      "class_uri": "ex:NonEssentialAminoAcid",
+      "evidence_span": "12 non -essential amino acids in humans are particularly important to their health. e.g.: Alanine, Arginine, Aspartic acid, Asparagine, Cystine, Cysteine, Glutamic acid, Glutamine, Glycine, Histidine, Proline, and Serine"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "valine",
+      "property_uri": "ex:isEssential",
+      "target_id": "true",
+      "evidence_span": "Valine, Leucine, Isoleucine are essential amino acids."
+    },
+    {
+      "source_id": "leucine",
+      "property_uri": "ex:isEssential",
+      "target_id": "true",
+      "evidence_span": "Valine, Leucine, Isoleucine are essential amino acids."
+    },
+    {
+      "source_id": "isoleucine",
+      "property_uri": "ex:isEssential",
+      "target_id": "true",
+      "evidence_span": "Valine, Leucine, Isoleucine are essential amino acids."
+    },
+    {
+      "source_id": "threonine",
+      "property_uri": "ex:isSemiEssential",
+      "target_id": "false",
+      "evidence_span": "Threonine is a semi-essential amino acid."
+    },
+    {
+      "source_id": "methionine",
+      "property_uri": "ex:isSemiEssential",
+      "target_id": "false",
+      "evidence_span": "Methionine is a semi-essential amino acid."
+    },
+    {
+      "source_id": "phenylalanine",
+      "property_uri": "ex:isSemiEssential",
+      "target_id": "false",
+      "evidence_span": "Phenylalanine is a semi-essential amino acid."
+    },
+    {
+      "source_id": "tryptophan",
+      "property_uri": "ex:isSemiEssential",
+      "target_id": "false",
+      "evidence_span": "Tryptophan is a semi-essential amino acid."
+    },
+    {
+      "source_id": "lysine",
+      "property_uri": "ex:isSemiEssential",
+      "target_id": "false",
+      "evidence_span": "Lysine is a semi-essential amino acid."
+    },
+    {
+      "source_id": "alanine",
+      "property_uri": "ex:isNonEssential",
+      "target_id": "true",
+      "evidence_span": "Alanine, Arginine, Aspartic acid, Asparagine, Cystine, Cysteine, Glutamic acid, Glutamine, Glycine, Histidine, Proline, and Serine are non-essential amino acids."
+    },
+    {
+      "source_id": "arginine",
+      "property_uri": "ex:isNonEssential",
+      "target_id": "true",
+      "evidence_span": "Alanine, Arginine, Aspartic acid, Asparagine, Cystine, Cysteine, Glutamic acid, Glutamine, Glycine, Histidine, Proline, and Serine are non-essential amino acids."
+    },
+    {
+      "source_id": "aspartic_acid",
+      "property_uri": "ex:isNonEssential",
+      "target_id": "true",
+      "evidence_span": "Alanine, Arginine, Aspartic acid, Asparagine, Cystine, Cysteine, Glutamic acid, Glutamine, Glycine, Histidine, Proline, and Serine are non-essential amino acids."
+    },
+    {
+      "source_id": "asparagine",
+      "property_uri": "ex:isNonEssential",
+      "target_id": "true",
+      "evidence_span": "Alanine, Arginine, Aspartic acid, Asparagine, Cystine, Cysteine, Glutamic acid, Glutamine, Glycine, Histidine, Proline, and Serine are non-essential amino acids."
+    },
+    {
+      "source_id": "cystine",
+      "property_uri": "ex:isNonEssential",
+      "target_id": "true",
+      "evidence_span": "Alanine, Arginine, Aspartic acid, Asparagine, Cystine, Cysteine, Glutamic acid, Glutamine, Glycine, Histidine, Proline, and Serine are non-essential amino acids."
+    },
+    {
+      "source_id": "cysteine",
+      "property_uri": "ex:isNonEssential",
+      "target_id": "true",
+      "evidence_span": "Alanine, Arginine, Aspartic acid, Asparagine, Cystine, Cysteine, Glutamic acid, Glutamine, Glycine, Histidine, Proline, and Serine are non-essential amino acids."
+    },
+    {
+      "source_id": "glutamic_acid",
+      "property_uri": "ex:isNonEssential",
+      "target_id": "true",
+      "evidence_span": "Alanine, Arginine, Aspartic acid, Asparagine, Cystine, Cysteine, Glutamic acid, Glutamine, Glycine, Histidine, Proline, and Serine are non-essential amino acids."
+    },
+    {
+      "source_id": "glutamine",
+      "property_uri": "ex:isNonEssential",
+      "target_id": "true",
+      "evidence_span": "Alanine, Arginine, Aspartic acid, Asparagine, Cystine, Cysteine, Glutamic acid, Glutamine, Glycine, Histidine, Proline, and Serine are non-essential amino acids."
+    },
+    {
+      "source_id": "glycine",
+      "property_uri": "ex:isNonEssential",
+      "target_id": "true",
+      "evidence_span": "Alanine, Arginine, Aspartic acid, Asparagine, Cystine, Cysteine, Glutamic acid, Glutamine, Glycine, Histidine, Proline, and Serine are non-essential amino acids."
+    },
+    {
+      "source_id": "proline",
+      "property_uri": "ex:isNonEssential",
+      "target_id": "true",
+      "evidence_span": "Alanine, Arginine, Aspartic acid, Asparagine, Cystine, Cysteine, Glutamic acid, Glutamine, Glycine, Histidine, Proline, and Serine are non-essential amino acids."
+    },
+    {
+      "source_id": "serine",
+      "property_uri": "ex:isNonEssential",
+      "target_id": "true",
+      "evidence_span": "Alanine, Arginine, Aspartic acid, Asparagine, Cystine, Cysteine, Glutamic acid, Glutamine, Glycine, Histidine, Proline, and Serine are non-essential amino acids."
+    }
+  ]
+}

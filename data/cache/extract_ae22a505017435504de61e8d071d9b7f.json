@@ -1,0 +1,153 @@
+{
+  "reasoning_steps": [
+    "Identified relevant facts based on the approved ontology and extracted entities.",
+    "Mapped text spans to appropriate classes and properties."
+  ],
+  "entities": [
+    {
+      "id": "leucine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "leucine"
+    },
+    {
+      "id": "lysine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "lysine"
+    },
+    {
+      "id": "glycine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Glycine, Serine, Threonine, Cysteine, Glutamine, Asparagine, and Tyrosine."
+    },
+    {
+      "id": "alanine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Alanine"
+    },
+    {
+      "id": "serine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Serine, Threonine, Cysteine, Glutamine, Asparagine, and Tyrosine."
+    },
+    {
+      "id": "threonine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Serine, Threonine, Cysteine, Glutamine, Asparagine, and Tyrosine."
+    },
+    {
+      "id": "cysteine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Serine, Threonine, Cysteine, Glutamine, Asparagine, and Tyrosine."
+    },
+    {
+      "id": "glutamine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Serine, Threonine, Cysteine, Glutamine, Asparagine, and Tyrosine."
+    },
+    {
+      "id": "asparagine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Serine, Threonine, Cysteine, Glutamine, Asparagine, and Tyrosine."
+    },
+    {
+      "id": "tyrosine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Glycine, Serine, Threonine, Cysteine, Glutamine, Asparagine, and Tyrosine."
+    },
+    {
+      "id": "lysine",
+      "class_uri": "ex:SemiEssentialAminoAcid",
+      "evidence_span": "Lysine"
+    },
+    {
+      "id": "arginine",
+      "class_uri": "ex:SemiEssentialAminoAcid",
+      "evidence_span": "Arginine"
+    },
+    {
+      "id": "histidine",
+      "class_uri": "ex:SemiEssentialAminoAcid",
+      "evidence_span": "Histidine"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "leucine",
+      "property_uri": "ex:isProducedInBodyForAdults",
+      "target_id": "false",
+      "evidence_span": "Because it is transformed into ketone bodies, leucine and lysine are completely ketogenic."
+    },
+    {
+      "source_id": "lysine",
+      "property_uri": "ex:isProducedInBodyForAdults",
+      "target_id": "false",
+      "evidence_span": "Because it is transformed into ketone bodies, leucine and lysine are completely ketogenic."
+    },
+    {
+      "source_id": "glycine",
+      "property_uri": "ex:hydrolysisProduct",
+      "target_id": "amino_acid",
+      "evidence_span": "When the product is hydrolyzed, the corresponding amino acid is produced."
+    },
+    {
+      "source_id": "alanine",
+      "property_uri": "ex:isProducedInBodyForAdults",
+      "target_id": "true",
+      "evidence_span": "Because they solely enter the glucogenic pathway, the remaining 14 amino acids are all fully glucogenic."
+    },
+    {
+      "source_id": "serine",
+      "property_uri": "ex:isProducedInBodyForAdults",
+      "target_id": "true",
+      "evidence_span": "Because they solely enter the glucogenic pathway, the remaining 14 amino acids are all fully glucogenic."
+    },
+    {
+      "source_id": "threonine",
+      "property_uri": "ex:isProducedInBodyForAdults",
+      "target_id": "true",
+      "evidence_span": "Because they solely enter the glucogenic pathway, the remaining 14 amino acids are all fully glucogenic."
+    },
+    {
+      "source_id": "cysteine",
+      "property_uri": "ex:isProducedInBodyForAdults",
+      "target_id": "true",
+      "evidence_span": "Because they solely enter the glucogenic pathway, the remaining 14 amino acids are all fully glucogenic."
+    },
+    {
+      "source_id": "glutamine",
+      "property_uri": "ex:isProducedInBodyForAdults",
+      "target_id": "true",
+      "evidence_span": "Because they solely enter the glucogenic pathway, the remaining 14 amino acids are all fully glucogenic."
+    },
+    {
+      "source_id": "asparagine",
+      "property_uri": "ex:isProducedInBodyForAdults",
+      "target_id": "true",
+      "evidence_span": "Because they solely enter the glucogenic pathway, the remaining 14 amino acids are all fully glucogenic."
+    },
+    {
+      "source_id": "tyrosine",
+      "property_uri": "ex:isProducedInBodyForAdults",
+      "target_id": "true",
+      "evidence_span": "Because they solely enter the glucogenic pathway, the remaining 14 amino acids are all fully glucogenic."
+    },
+    {
+      "source_id": "lysine",
+      "property_uri": "ex:requiresSupplementationThroughFoodForChildren",
+      "target_id": "true",
+      "evidence_span": "They are required in the diet of growing children. However, they are not required for mature individuals."
+    },
+    {
+      "source_id": "arginine",
+      "property_uri": "ex:requiresSupplementationThroughFoodForChildren",
+      "target_id": "true",
+      "evidence_span": "They are required in the diet of growing children. However, they are not required for mature individuals."
+    },
+    {
+      "source_id": "histidine",
+      "property_uri": "ex:requiresSupplementationThroughFoodForChildren",
+      "target_id": "true",
+      "evidence_span": "They are required in the diet of growing children. However, they are not required for mature individuals."
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "questions": [
+    {
+      "question": "What are the essential amino acids required for proper nitrogen balance in the human body?",
+      "scope": "property"
+    },
+    {
+      "question": "Which two semi-essential amino acids are particularly important for growing children but not for mature individuals?",
+      "scope": "instance"
+    },
+    {
+      "question": "How many non-essential amino acids does the human body produce, and can you list three of them?",
+      "scope": "property"
+    },
+    {
+      "question": "What are the characteristics of purely ketogenic amino acids in terms of their metabolic fate?",
+      "scope": "property"
+    },
+    {
+      "question": "Which group of amino acids is classified based on the presence or absence of a charge on the 'R' group, and can you provide an example from each subcategory?",
+      "scope": "class"
+    },
+    {
+      "question": "What are the three types of amino acids classified by their nutritional requirement, and which ones are essential for human development?",
+      "scope": "property"
+    },
+    {
+      "question": "Can you list the five types of amino acid classification mentioned in the text based on structure or properties?",
+      "scope": "class"
+    }
+  ]
+}

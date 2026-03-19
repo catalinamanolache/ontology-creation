@@ -1,0 +1,20 @@
+{
+  "reasoning_steps": [
+    "The new property 'ex:hydrolysisProduct' can be derived from the description of hydrolysis and its product.",
+    "The new property 'ex:methodForSynthesis' can be derived from the method described for synthesizing amino acids."
+  ],
+  "properties": [
+    {
+      "uri": "ex:hydrolysisProduct",
+      "domain": "ex:AminoAcid",
+      "range": "ex:HydrolysisProduct",
+      "comment": "Describes the product of hydrolysis for an amino acid."
+    },
+    {
+      "uri": "ex:methodForSynthesis",
+      "domain": "ex:AminoAcid",
+      "range": "ex:GabrielPhthalimideSynthesis",
+      "comment": "Indicates the method used to synthesize an amino acid."
+    }
+  ]
+}

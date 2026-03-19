@@ -1,0 +1,81 @@
+{
+  "reasoning_steps": [
+    "Identified essential, non-essential, and semi-essential amino acids based on their nutritional requirements.",
+    "Mapped specific amino acids to their respective classes."
+  ],
+  "entities": [
+    {
+      "id": "lysine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "lysine"
+    },
+    {
+      "id": "arginine",
+      "class_uri": "ex:SemiEssentialAminoAcid",
+      "evidence_span": "arginine (with guanidino group)"
+    },
+    {
+      "id": "histidine",
+      "class_uri": "ex:EssentialAminoAcid",
+      "evidence_span": "histidine (with imidazole ring)"
+    },
+    {
+      "id": "phenylalanine",
+      "class_uri": "ex:EssentialAminoAcid",
+      "evidence_span": "phenylalanine"
+    },
+    {
+      "id": "tyrosine",
+      "class_uri": "ex:EssentialAminoAcid",
+      "evidence_span": "tyrosine"
+    },
+    {
+      "id": "tryptophan",
+      "class_uri": "ex:EssentialAminoAcid",
+      "evidence_span": "trypthophan (which have an indole ring)"
+    },
+    {
+      "id": "proline",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "proline"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "lysine",
+      "property_uri": "ex:isProducedInBodyForAdults",
+      "target_id": "false",
+      "evidence_span": ""
+    },
+    {
+      "source_id": "arginine",
+      "property_uri": "ex:requiresSupplementationThroughFoodForChildren",
+      "target_id": "true",
+      "evidence_span": "However, they are required in the diet of growing children."
+    },
+    {
+      "source_id": "histidine",
+      "property_uri": "ex:isProducedInBodyForAdults",
+      "target_id": "false",
+      "evidence_span": ""
+    },
+    {
+      "source_id": "phenylalanine",
+      "property_uri": "ex:isProducedInBodyForAdults",
+      "target_id": "false",
+      "evidence_span": ""
+    },
+    {
+      "source_id": "tyrosine",
+      "property_uri": "ex:isProducedInBodyForAdults",
+      "target_id": "false",
+      "evidence_span": ""
+    },
+    {
+      "source_id": "tryptophan",
+      "property_uri": "ex:isProducedInBodyForAdults",
+      "target_id": "false",
+      "evidence_span": ""
+    }
+  ]
+}

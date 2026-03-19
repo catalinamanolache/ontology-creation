@@ -1,0 +1,119 @@
+{
+  "approved_classes": {
+    "ex:AminoAcid": "A general class representing amino acids.",
+    "ex:EssentialAminoAcid": "A specific type of amino acid that is essential for the body and must be obtained through food.",
+    "ex:SemiEssentialAminoAcid": "A specific type of amino acid that can be produced in small amounts by the body but may need to be supplemented from food.",
+    "ex:NonEssentialAminoAcid": "A specific type of amino acid that is not essential and can be synthesized by the body.",
+    "ex:NonPolarAminoAcid": "A class representing non-polar (hydrophobic) amino acids that have no charge on the 'R' group.",
+    "ex:PolarAminoAcidNoChargeRGroup": "A class representing polar amino acids with no charge on the 'R' group, which contribute to protein structure hydrogen bonding.",
+    "ex:PolarAminoAcidPositiveRGroup": "A class representing polar amino acids with a positive 'R' group.",
+    "ex:PolarAminoAcidNegativeRGroup": "A class representing polar amino acids with a negative 'R' group, which are aromatic dicarboxylic monoamino acids.",
+    "ex:Tyrosine": "A specific type of amino acid that is involved in thyroid hormone production and has various other health benefits.",
+    "ex:D-Penicillamine": "A non-standard amino acid used as a drug for chelation therapy, particularly in Wilson’s disease.",
+    "ex:N-Acetylcysteine": "A non-standard amino acid used as an antioxidant and in the treatment of cystic fibrosis and chronic renal insufficiency.",
+    "ex:Gabapentin": "A non-standard amino acid used as an anticonvulsant drug."
+  },
+  "approved_properties": {
+    "ex:hasCanonicalName": {
+      "domain": "ex:AminoAcid",
+      "range": "xsd:string",
+      "comment": "Maps an amino acid to its canonical name."
+    },
+    "ex:isEssential": {
+      "domain": "ex:AminoAcid",
+      "range": "xsd:boolean",
+      "comment": "Indicates whether the amino acid is essential for the body."
+    },
+    "ex:hasProperties": {
+      "domain": "ex:AminoAcid",
+      "range": "ex:AminoAcidProperty",
+      "comment": "Links an amino acid to its properties."
+    },
+    "ex:isProducedByBody": {
+      "domain": "ex:AminoAcid",
+      "range": "xsd:boolean",
+      "comment": "Indicates whether the amino acid is produced by the body or needs to be obtained through food."
+    },
+    "ex:hasStructure": {
+      "domain": "ex:AminoAcid",
+      "range": "ex:MolecularStructure",
+      "comment": "Describes the structure of an amino acid."
+    },
+    "ex:isDecarboxylatedTo": {
+      "domain": "ex:AminoAcid",
+      "range": "ex:AminoAcid",
+      "comment": "Indicates the amino acid that results from decarboxylation of another amino acid."
+    },
+    "ex:reactsWithAlcohol": {
+      "domain": "ex:AminoAcid",
+      "range": "xsd:boolean",
+      "comment": "Indicates whether an amino acid can react with alcohol to form esters."
+    },
+    "ex:reactsWithAmmonia": {
+      "domain": "ex:AminoAcid",
+      "range": "xsd:boolean",
+      "comment": "Indicates whether an amino acid can react with ammonia to form amides."
+    },
+    "ex:reactsWithMineralAcids": {
+      "domain": "ex:AminoAcid",
+      "range": "xsd:boolean",
+      "comment": "Indicates whether an amino acid can react with mineral acids to form salts."
+    },
+    "ex:reactsWithNinhydrin": {
+      "domain": "ex:AminoAcid",
+      "range": "xsd:boolean",
+      "comment": "Indicates whether an amino acid reacts with ninhydrin to produce a color change."
+    },
+    "ex:isSemiEssential": {
+      "domain": "ex:AminoAcid",
+      "range": "xsd:boolean",
+      "comment": "Indicates whether the amino acid is semi-essential and requires supplementation from food."
+    },
+    "ex:isNonPolar": {
+      "domain": "ex:AminoAcid",
+      "range": "xsd:boolean",
+      "comment": "Indicates whether the amino acid is non-polar (hydrophobic) with no charge on the 'R' group."
+    },
+    "ex:isPolarNoChargeRGroup": {
+      "domain": "ex:AminoAcid",
+      "range": "xsd:boolean",
+      "comment": "Indicates whether the amino acid is polar with no charge on the 'R' group, contributing to protein structure hydrogen bonding."
+    },
+    "ex:isPolarPositiveRGroup": {
+      "domain": "ex:AminoAcid",
+      "range": "xsd:boolean",
+      "comment": "Indicates whether the amino acid is polar with a positive 'R' group."
+    },
+    "ex:isPolarNegativeRGroup": {
+      "domain": "ex:AminoAcid",
+      "range": "xsd:boolean",
+      "comment": "Indicates whether the amino acid is polar with a negative 'R' group, being aromatic dicarboxylic monoamino acids."
+    },
+    "ex:treatsCondition": {
+      "domain": "ex:AminoAcid",
+      "range": "xsd:string",
+      "comment": "Indicates the conditions that can be treated by a specific amino acid."
+    },
+    "ex:isDrug": {
+      "domain": "ex:AminoAcid",
+      "range": "xsd:boolean",
+      "comment": "Indicates whether an amino acid is used as a drug."
+    }
+  },
+  "canonical_terms": {
+    "aa": "AminoAcid",
+    "essential": "EssentialAminoAcid",
+    "semi-essential": "SemiEssentialAminoAcid",
+    "non-essential": "NonEssentialAminoAcid",
+    "non-polar": "NonPolarAminoAcid",
+    "polar-no-charge-r-group": "PolarAminoAcidNoChargeRGroup",
+    "polar-positive-r-group": "PolarAminoAcidPositiveRGroup",
+    "polar-negative-r-group": "PolarAminoAcidNegativeRGroup",
+    "tyrosine": "Tyrosine",
+    "d-penicillamine": "D-Penicillamine",
+    "n-acetylcysteine": "N-Acetylcysteine",
+    "gabapentin": "Gabapentin"
+  },
+  "entities": {},
+  "relations": []
+}
