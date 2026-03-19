@@ -133,3 +133,22 @@ class RateLimiter:
             f"RPD: {s['rpd_used']}/{s['rpd_max']} | "
             f"Remaining today: {s['rpd_remaining']}"
         )
+
+    def reset(self, remove_file: bool = False):
+        """Reset the persisted daily counter and in-memory timestamps.
+
+        If `remove_file` is True the state file will be removed from disk.
+        Otherwise the on-disk state is overwritten with a zeroed counter
+        for the current date.
+        """
+        self.request_timestamps.clear()
+        self.daily_count = 0
+        self.daily_date = datetime.now().strftime("%Y-%m-%d")
+        if remove_file and os.path.exists(self.state_file):
+            try:
+                os.remove(self.state_file)
+            except OSError:
+                pass
+        # Persist the reset state (or recreate file if not removing)
+        self._save_state()
+        print(f"  [RATE LIMITER] State reset. remove_file={remove_file}")

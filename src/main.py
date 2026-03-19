@@ -334,9 +334,25 @@ if __name__ == "__main__":
     parser.add_argument("--fresh", action="store_true", help="Clear cache and fully re-run LLM calls")
     parser.add_argument("--blueprint-only", action="store_true", help="Only run Phase 1 & 2 (schema generation)")
     parser.add_argument("--no-cache", action="store_true", help="Disable cache for this run")
+    parser.add_argument(
+        "--reset-rate-limit",
+        action="store_true",
+        dest="reset_rate_limit",
+        help="Reset persisted rate limit state (daily count) and exit",
+    )
     args = parser.parse_args()
 
     if args.no_cache:
         settings.USE_CACHE = False
+
+    # If user requested a rate-limit reset, do it and exit immediately.
+    if args.reset_rate_limit:
+        rl = RateLimiter(
+            max_rpm=settings.RATE_LIMIT_RPM,
+            max_rpd=settings.RATE_LIMIT_RPD,
+            min_delay=settings.MIN_DELAY_BETWEEN_REQUESTS,
+        )
+        rl.reset(remove_file=True)
+        print("[MAIN] Rate limit state reset. Continuing with run.")
 
     main(fresh_run=args.fresh, blueprint_only=args.blueprint_only)
