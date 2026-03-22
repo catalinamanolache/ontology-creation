@@ -1,0 +1,76 @@
+{
+  "reasoning_steps": [
+    "The text discusses amino acids as the building blocks of proteins and details their chemical and physical properties, classifications, and importance in diet.",
+    "Identified core concepts like 'amino acid', 'protein', and classifications of amino acids (essential, non-essential, semi-essential) as distinct classes."
+  ],
+  "classes": [
+    {
+      "uri": "ex:AminoAcid",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": null,
+      "aristotelian_definition": "An AminoAcid is a MaterialEntity that contains a basic amino group, an acidic carboxyl group, and an organic R group.",
+      "comment": "An organic molecule that is a building block of proteins."
+    },
+    {
+      "uri": "ex:Protein",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": null,
+      "aristotelian_definition": "A Protein is a MaterialEntity that is a polymer composed of amino acid residues.",
+      "comment": "A large biomolecule consisting of one or more long chains of amino acid residues."
+    },
+    {
+      "uri": "ex:EssentialAminoAcid",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": "ex:AminoAcid",
+      "aristotelian_definition": "An EssentialAminoAcid is an AminoAcid that cannot be synthesized by the body and must be obtained from the diet.",
+      "comment": "An amino acid that must be supplied through the diet because the body cannot synthesize it."
+    },
+    {
+      "uri": "ex:NonEssentialAminoAcid",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": "ex:AminoAcid",
+      "aristotelian_definition": "A NonEssentialAminoAcid is an AminoAcid that can be synthesized by the body.",
+      "comment": "An amino acid that the body can synthesize and does not need to be obtained from the diet."
+    },
+    {
+      "uri": "ex:SemiEssentialAminoAcid",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": "ex:AminoAcid",
+      "aristotelian_definition": "A SemiEssentialAminoAcid is an AminoAcid that can be synthesized by the body, but not in sufficient quantities.",
+      "comment": "An amino acid that the body can synthesize, but may require dietary intake under certain conditions."
+    },
+    {
+      "uri": "ex:AminoGroup",
+      "bfo_parent": "bfo:Quality",
+      "subclass_of": null,
+      "aristotelian_definition": "An AminoGroup is a Quality that is a basic functional group containing a nitrogen atom bonded to hydrogen atoms or organic substituents.",
+      "comment": "A functional group with the general formula -NH2, -NHR, or -NR2."
+    },
+    {
+      "uri": "ex:CarboxylGroup",
+      "bfo_parent": "bfo:Quality",
+      "subclass_of": null,
+      "aristotelian_definition": "A CarboxylGroup is a Quality that is an acidic functional group with the formula -COOH.",
+      "comment": "A functional group consisting of a carbon atom double-bonded to an oxygen atom and single-bonded to a hydroxyl group."
+    },
+    {
+      "uri": "ex:RGroup",
+      "bfo_parent": "bfo:Quality",
+      "subclass_of": null,
+      "aristotelian_definition": "An RGroup is a Quality that is the unique side chain of an amino acid.",
+      "comment": "The variable side chain of an amino acid that determines its specific properties."
+    }
+  ],
+  "canonical_terms": {
+    "Amino acids": "ex:AminoAcid",
+    "Amino acid": "ex:AminoAcid",
+    "Proteins": "ex:Protein",
+    "Protein": "ex:Protein",
+    "Essential amino acids": "ex:EssentialAminoAcid",
+    "Non-essential amino acids": "ex:NonEssentialAminoAcid",
+    "Semi-essential amino acids": "ex:SemiEssentialAminoAcid",
+    "Amino (NH2)": "ex:AminoGroup",
+    "Carboxyl (COOH)": "ex:CarboxylGroup",
+    "R group": "ex:RGroup"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "reasoning_steps": [
+    "The source text introduces new data points related to employment metrics, production value per piece of wind turbines, and trade balance. These concepts are not covered by existing properties."
+  ],
+  "properties": [
+    {
+      "uri": "ex:hasSource",
+      "domain": "ex:EUEconomicIndicatorReport",
+      "range": "xsd:string",
+      "comment": "Identifies the source or origin of data used in an EUEconomicIndicatorReport."
+    },
+    {
+      "uri": "ex:affectsLabourProductivityMetric",
+      "domain": "ex:EmploymentMetric",
+      "range": "xsd:string",
+      "comment": "Describes how labour productivity metrics, such as full-time equivalents (FTE) per MW installed, affect employment estimates in the wind energy sector."
+    },
+    {
+      "uri": "ex:affectsProductionValueMetric",
+      "domain": "ex:EUEconomicIndicatorForManufacturingCapacity",
+      "range": "xsd:string",
+      "comment": "Describes how production value metrics, such as monetary value per unit produced, affect the manufacturing capacity of wind turbine components."
+    },
+    {
+      "uri": "ex:hasTradeBalanceMetric",
+      "domain": "ex:EUEconomicIndicatorForSupplyRisk",
+      "range": "xsd:string",
+      "comment": "Indicates the trade balance metric within a specific industry, typically expressed as the difference between imports and exports, affecting supply risk."
+    }
+  ]
+}

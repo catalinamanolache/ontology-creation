@@ -1,0 +1,37 @@
+{
+  "reasoning_steps": [
+    "The new source text introduces metrics related to publication activity, citation impact, and project funding that are not covered in the existing properties."
+  ],
+  "properties": [
+    {
+      "uri": "ex:hasFieldWeightedCitationImpact",
+      "domain": "ex:EUEconomicIndicatorForVCPE",
+      "range": "xsd:string",
+      "comment": "Describes the Field Weighted Citation Impact (FWCI) of EU's wind energy research compared to global averages."
+    },
+    {
+      "uri": "ex:hasHIndex",
+      "domain": "ex:EUEconomicIndicatorForVCPE",
+      "range": "xsd:string",
+      "comment": "Indicates the H-index of the EU for wind energy research compared to other major competitors like China, US and UK."
+    },
+    {
+      "uri": "ex:hasCollaborationTiesWithUK",
+      "domain": "ex:EUEconomicIndicatorForVCPE",
+      "range": "xsd:string",
+      "comment": "Identifies countries within the EU that show strong collaboration ties in publishing peer-reviewed articles with organizations from the UK."
+    },
+    {
+      "uri": "ex:hasFundingPercentageForRecyclingProjects",
+      "domain": "ex:EUEconomicIndicatorForVCPE",
+      "range": "xsd:string",
+      "comment": "Describes the percentage of European Union’s funding that went to wind energy projects focused on recycling and circularity in 2023."
+    },
+    {
+      "uri": "ex:hasProjectInvestmentAmount",
+      "domain": "ex:EUEconomicIndicatorForVCPE",
+      "range": "xsd:string",
+      "comment": "Indicates the investment amount for specific projects aimed at developing recycling solutions or floating wind technology."
+    }
+  ]
+}

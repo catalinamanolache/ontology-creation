@@ -1,0 +1,66 @@
+{
+  "reasoning_steps": [
+    "Identified classes related to amino acids and their properties from the text."
+  ],
+  "classes": [
+    {
+      "uri": "ex:AminoAcid",
+      "bfo_parent": "MaterialEntity",
+      "subclass_of": null,
+      "aristotelian_definition": "An AminoAcid is a MaterialEntity that contains both an amino group and a carboxyl group.",
+      "comment": "Amino acids are the building blocks of proteins."
+    },
+    {
+      "uri": "ex:EssentialAminoAcid",
+      "bfo_parent": "MaterialEntity",
+      "subclass_of": null,
+      "aristotelian_definition": "An EssentialAminoAcid is a MaterialEntity that must be obtained through diet as it cannot be synthesized by the body.",
+      "comment": "These amino acids are crucial for protein synthesis and overall health."
+    },
+    {
+      "uri": "ex:NonEssentialAminoAcid",
+      "bfo_parent": "MaterialEntity",
+      "subclass_of": null,
+      "aristotelian_definition": "A NonEssentialAminoAcid is a MaterialEntity that can be synthesized by the body.",
+      "comment": "These amino acids are produced within the body."
+    },
+    {
+      "uri": "ex:SemiEssentialAminoAcid",
+      "bfo_parent": "MaterialEntity",
+      "subclass_of": null,
+      "aristotelian_definition": "A SemiEssentialAminoAcid is a MaterialEntity that can be synthesized by the body but in insufficient amounts.",
+      "comment": "These amino acids require dietary supplementation."
+    },
+    {
+      "uri": "ex:AlphaAminoAcid",
+      "bfo_parent": "MaterialEntity",
+      "subclass_of": null,
+      "aristotelian_definition": "An AlphaAminoAcid is a MaterialEntity that has both an amino and carboxyl group attached to the alpha carbon.",
+      "comment": "The most common type of amino acid."
+    },
+    {
+      "uri": "ex:DecarboxylationReaction",
+      "bfo_parent": "Process",
+      "subclass_of": null,
+      "aristotelian_definition": "A DecarboxylationReaction is a Process that converts an amino acid into an amine and carbon dioxide.",
+      "comment": "Involves the removal of a carboxyl group."
+    },
+    {
+      "uri": "ex:Zwitterion",
+      "bfo_parent": "MaterialEntity",
+      "subclass_of": null,
+      "aristotelian_definition": "A Zwitterion is a MaterialEntity that contains both positive and negative ionic groups.",
+      "comment": "Characterized by the presence of an amino group and a carboxyl group."
+    },
+    {
+      "uri": "ex:NinhydrinReaction",
+      "bfo_parent": "Process",
+      "subclass_of": null,
+      "aristotelian_definition": "A NinhydrinReaction is a Process that identifies amino acids through color change.",
+      "comment": "Involves the reaction of ninhydrin with amino groups."
+    }
+  ],
+  "canonical_terms": {
+    "AA": "ex:AminoAcid"
+  }
+}

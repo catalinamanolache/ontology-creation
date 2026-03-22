@@ -1,0 +1,44 @@
+{
+  "questions": [
+    {
+      "question": "What is the cumulative percentage of private R&D funding invested by the EU from 2010 to 2020?",
+      "scope": "property"
+    },
+    {
+      "question": "Which country follows closely behind the EU in terms of private R&D investment according to the text?",
+      "scope": "instance"
+    },
+    {
+      "question": "What are the strengths mentioned for the EU wind energy sector in the CETO SWOT analysis?",
+      "scope": "class"
+    },
+    {
+      "question": "List two weaknesses identified for the EU wind energy sector.",
+      "scope": "property"
+    },
+    {
+      "question": "What opportunities does floating offshore wind present for Member States with steep shorelines?",
+      "scope": "instance"
+    },
+    {
+      "question": "Which chapter of the report introduces the current technology readiness level (TRL) of main technologies used in the wind energy industry?",
+      "scope": "class"
+    },
+    {
+      "question": "How is the competitiveness of EU companies potentially hindered according to the text?",
+      "scope": "property"
+    },
+    {
+      "question": "What are the raw and processed materials identified as critical for wind power plants?",
+      "scope": "instance"
+    },
+    {
+      "question": "Which chapter focuses on macroeconomic indicators like turnover, Gross Value Added (GVA), employment, and production in the wind energy value chain?",
+      "scope": "class"
+    },
+    {
+      "question": "How does the EU rank globally in terms of wind technological development according to the text?",
+      "scope": "property"
+    }
+  ]
+}

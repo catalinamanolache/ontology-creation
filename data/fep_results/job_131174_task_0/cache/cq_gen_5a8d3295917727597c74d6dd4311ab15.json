@@ -1,0 +1,44 @@
+{
+  "questions": [
+    {
+      "question": "What percentage of total electricity generation in Europe was attributed to wind energy in 2023?",
+      "scope": "property"
+    },
+    {
+      "question": "Which European Member State had the highest percentage of wind energy in its electricity mix as of 2023?",
+      "scope": "instance"
+    },
+    {
+      "question": "What is the projected share of wind energy in the EU's final energy consumption by 2030 according to the Renewable Energy Directive (RED III)?",
+      "scope": "property"
+    },
+    {
+      "question": "How much did the cost of onshore wind decrease between 2010 and 2022, and what was the global weighted average LCoE in 2022?",
+      "scope": "instance"
+    },
+    {
+      "question": "What are the projected installed capacities for onshore and offshore wind in Europe by 2050 according to the POTEnCIA CETO 2024 scenario?",
+      "scope": "property"
+    },
+    {
+      "question": "Which model projects a significant increase in global wind installations, covering 41% of the world's electricity needs by 2050 under the Global CETO 2°C scenario 2024?",
+      "scope": "instance"
+    },
+    {
+      "question": "What is the projected cost reduction trend for offshore wind LCoE from 2030 to 2050 according to the Global CETO 2°C scenario 2024?",
+      "scope": "property"
+    },
+    {
+      "question": "How does the EU's share of wind energy in primary energy consumption compare with that of Brazil, China, and the United States as of 2022?",
+      "scope": "instance"
+    },
+    {
+      "question": "What is the projected installed capacity for onshore wind in Europe by 2030 according to the POTEnCIA CETO 2024 scenario?",
+      "scope": "property"
+    },
+    {
+      "question": "How does the cost of offshore wind LCoE change from 2010 to 2022, and what are the projected costs for 2050?",
+      "scope": "instance"
+    }
+  ]
+}

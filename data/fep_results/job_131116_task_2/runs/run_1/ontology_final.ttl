@@ -1,0 +1,448 @@
+@prefix ex: <http://example.org/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix bfo: <http://purl.obolibrary.org/obo/BFO_> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+# ===== OWL Classes (BFO-anchored) =====
+ex:AminoAcid rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Entity ;
+    skos:definition "An AminoAcid is a MaterialEntity that contains both an amino group and a carboxyl group." ;
+    rdfs:comment "Amino acids are the building blocks of proteins." .
+
+ex:EssentialAminoAcid rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Entity ;
+    skos:definition "An EssentialAminoAcid is a MaterialEntity that must be obtained through diet as it cannot be synthesized by the body." ;
+    rdfs:comment "These amino acids are crucial for protein synthesis and overall health." .
+
+ex:NonEssentialAminoAcid rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Entity ;
+    skos:definition "A NonEssentialAminoAcid is a MaterialEntity that can be synthesized by the body." ;
+    rdfs:comment "These amino acids are produced within the body." .
+
+ex:SemiEssentialAminoAcid rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Entity ;
+    skos:definition "A SemiEssentialAminoAcid is a MaterialEntity that can be synthesized by the body but in insufficient amounts." ;
+    rdfs:comment "These amino acids require dietary supplementation." .
+
+ex:AlphaAminoAcid rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Entity ;
+    skos:definition "An AlphaAminoAcid is a MaterialEntity that has both an amino and carboxyl group attached to the alpha carbon." ;
+    rdfs:comment "The most common type of amino acid." .
+
+ex:DecarboxylationReaction rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Entity ;
+    skos:definition "A DecarboxylationReaction is a Process that converts an amino acid into an amine and carbon dioxide." ;
+    rdfs:comment "Involves the removal of a carboxyl group." .
+
+ex:Zwitterion rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Entity ;
+    skos:definition "A Zwitterion is a MaterialEntity that contains both positive and negative ionic groups." ;
+    rdfs:comment "Characterized by the presence of an amino group and a carboxyl group." .
+
+ex:NinhydrinReaction rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Entity ;
+    skos:definition "A NinhydrinReaction is a Process that identifies amino acids through color change." ;
+    rdfs:comment "Involves the reaction of ninhydrin with amino groups." .
+
+ex:AliphaticAminoAcid rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    skos:definition "An AliphaticAminoAcid is an AminoAcid with a side chain that consists of carbon atoms in open chains or unbranched rings." ;
+    rdfs:comment "Includes amino acids like glycine, alanine, valine, leucine, and isoleucine." .
+
+ex:HydroxylGroupContainingAminoAcid rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    skos:definition "A HydroxylGroupContainingAminoAcid is an AminoAcid with a hydroxyl group (-OH) attached to its side chain." ;
+    rdfs:comment "Includes serine, threonine, and tyrosine." .
+
+ex:SulphurContainingAminoAcid rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    skos:definition "A SulphurContainingAminoAcid is an AminoAcid with a sulfur-containing side chain." ;
+    rdfs:comment "Includes cysteine and methionine." .
+
+ex:BasicAminoAcid rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    skos:definition "A BasicAminoAcid is an AminoAcid with a side chain that has basic properties." ;
+    rdfs:comment "Includes lysine, arginine, and histidine." .
+
+ex:AromaticAminoAcid rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    skos:definition "An AromaticAminoAcid is an AminoAcid with a side chain that contains aromatic rings." ;
+    rdfs:comment "Includes phenylalanine, tyrosine, and tryptophan." .
+
+ex:IminoAcid rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    skos:definition "An IminoAcid is an AminoAcid with a side chain that contains an imino group (=NH) instead of the usual amino group (-NH2)." ;
+    rdfs:comment "Includes proline." .
+
+ex:BetaAminoAcid rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    skos:definition "A BetaAminoAcid is an AminoAcid with the amino group attached to the beta carbon." ;
+    rdfs:comment "Includes β-alanine." .
+
+ex:GammaAminoAcid rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    skos:definition "A GammaAminoAcid is an AminoAcid with the amino group attached to the gamma carbon." ;
+    rdfs:comment "Includes GABA (gamma-aminobutyric acid)." .
+
+ex:PurelyKetogenicAminoAcid rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    skos:definition "A PurelyKetogenicAminoAcid is an AminoAcid that can only be metabolized to produce ketone bodies." ;
+    rdfs:comment "Includes leucine and lysine." .
+
+ex:KetogenicAndGlucogenicAminoAcid rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    skos:definition "A KetogenicAndGlucogenicAminoAcid is an AminoAcid that can be metabolized to produce both ketone bodies and glucose." ;
+    rdfs:comment "Includes lysine, isoleucine, phenylalanine, tyrosine, and tryptophan." .
+
+ex:PurelyGlucogenicAminoAcid rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    skos:definition "A PurelyGlucogenicAminoAcid is an AminoAcid that can only be metabolized to produce glucose or glycogen." ;
+    rdfs:comment "Includes alanine, aspartic acid, glutamic acid, etc." .
+
+ex:NonPolarAminoAcid rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    skos:definition "A NonPolarAminoAcid is an AminoAcid with a side chain that does not have any charge." ;
+    rdfs:comment "Includes alanine, leucine, valine, methionine, phenylalanine, tryptophan, and proline." .
+
+ex:PolarAminoAcidWithNoCharge rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    skos:definition "A PolarAminoAcidWithNoCharge is an AminoAcid with a side chain that has polar groups but no charge." ;
+    rdfs:comment "Includes glycine, serine, threonine, cysteine, glutamine, asparagine, and tyrosine." .
+
+ex:PolarAminoAcidWithPositiveCharge rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    skos:definition "A PolarAminoAcidWithPositiveCharge is an AminoAcid with a side chain that has a positive charge." ;
+    rdfs:comment "Includes lysine, arginine, and histidine." .
+
+ex:PolarAminoAcidWithNegativeCharge rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    skos:definition "A PolarAminoAcidWithNegativeCharge is an AminoAcid with a side chain that has a negative charge." ;
+    rdfs:comment "Includes aspartic acid and glutamic acid." .
+
+ex:AminoAcidSynthesisProcess rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Process ;
+    skos:definition "An AminoAcidSynthesisProcess is a Process that involves the chemical reactions necessary to produce an amino acid from precursor molecules." ;
+    rdfs:comment "This class covers various synthetic pathways for amino acids." .
+
+ex:CyanideAdditionReaction rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Process ;
+    skos:definition "A CyanideAdditionReaction is a Process that involves the addition of cyanide to an aldimine, resulting in the formation of amino acids." ;
+    rdfs:comment "This reaction is part of the Gabriel synthesis method." .
+
+ex:PhthalimideSynthesisProcess rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Process ;
+    skos:definition "A PhthalimideSynthesisProcess is a Process that involves treating an alpha halogenated acid ester with potassium phthalimide to produce substituted phthalimides, which are then hydrolyzed to yield amino acids." ;
+    rdfs:comment "This process is used in the preparation of certain amino acids." .
+
+ex:NonStandardAminoAcid rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    skos:definition "A NonStandardAminoAcid is a MaterialEntity that does not conform to the standard set of 20 amino acids used in protein synthesis but has specific medical applications." ;
+    rdfs:comment "This class includes non-standard amino acids like D-Penicillamine." .
+
+ex:DPenicillamine rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    skos:definition "DPenicillamine is a NonStandardAminoAcid that acts as a chelating agent and is used in the treatment of Wilson's disease." ;
+    rdfs:comment "It is a metabolite of penicillin with specific medical applications." .
+
+ex:NAcetylcysteine rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    skos:definition "N-Acetylcysteine is a NonStandardAminoAcid that functions as an antioxidant and is used in the treatment of cystic fibrosis and chronic renal insufficiency." ;
+    rdfs:comment "It has various medical applications beyond amino acid synthesis." .
+
+ex:Gabapentin rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    skos:definition "Gabapentin is a NonStandardAminoAcid that acts as an anticonvulsant and is used in the treatment of epilepsy." ;
+    rdfs:comment "It has specific medical uses unrelated to protein synthesis." .
+
+# ===== Properties =====
+ex:undergoesDecarboxylationReaction rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range ex:DecarboxylationReaction ;
+    rdfs:comment "An AminoAcid undergoes a DecarboxylationReaction." .
+
+ex:identifiedByNinhydrinReaction rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range ex:NinhydrinReaction ;
+    rdfs:comment "An AminoAcid is identified by a NinhydrinReaction." .
+
+ex:classifiedAsEssentialAminoAcid rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range ex:EssentialAminoAcid ;
+    rdfs:comment "An AminoAcid is classified as an EssentialAminoAcid." .
+
+ex:classifiedAsNonEssentialAminoAcid rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range ex:NonEssentialAminoAcid ;
+    rdfs:comment "An AminoAcid is classified as a NonEssentialAminoAcid." .
+
+ex:classifiedAsSemiEssentialAminoAcid rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range ex:SemiEssentialAminoAcid ;
+    rdfs:comment "An AminoAcid is classified as a SemiEssentialAminoAcid." .
+
+ex:classifiedAsPurelyKetogenicAminoAcid rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range ex:PurelyKetogenicAminoAcid ;
+    rdfs:comment "An AminoAcid is classified as a PurelyKetogenicAminoAcid." .
+
+ex:classifiedAsKetogenicAndGlucogenicAminoAcid rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range ex:KetogenicAndGlucogenicAminoAcid ;
+    rdfs:comment "An AminoAcid is classified as a KetogenicAndGlucogenicAminoAcid." .
+
+ex:classifiedAsPurelyGlucogenicAminoAcid rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range ex:PurelyGlucogenicAminoAcid ;
+    rdfs:comment "An AminoAcid is classified as a PurelyGlucogenicAminoAcid." .
+
+ex:classifiedAsNonPolarAminoAcid rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range ex:NonPolarAminoAcid ;
+    rdfs:comment "An AminoAcid is classified as a NonPolarAminoAcid." .
+
+ex:classifiedAsPolarAminoAcidWithNoCharge rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range ex:PolarAminoAcidWithNoCharge ;
+    rdfs:comment "An AminoAcid is classified as a PolarAminoAcidWithNoCharge." .
+
+ex:classifiedAsPolarAminoAcidWithPositiveCharge rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range ex:PolarAminoAcidWithPositiveCharge ;
+    rdfs:comment "An AminoAcid is classified as a PolarAminoAcidWithPositiveCharge." .
+
+ex:classifiedAsPolarAminoAcidWithNegativeCharge rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range ex:PolarAminoAcidWithNegativeCharge ;
+    rdfs:comment "An AminoAcid is classified as a PolarAminoAcidWithNegativeCharge." .
+
+ex:classifiedAsAliphaticAminoAcid rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range ex:AliphaticAminoAcid ;
+    rdfs:comment "An AminoAcid is classified as an AliphaticAminoAcid." .
+
+ex:classifiedAsHydroxylGroupContainingAminoAcid rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range ex:HydroxylGroupContainingAminoAcid ;
+    rdfs:comment "An AminoAcid is classified as a HydroxylGroupContainingAminoAcid." .
+
+ex:classifiedAsSulphurContainingAminoAcid rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range ex:SulphurContainingAminoAcid ;
+    rdfs:comment "An AminoAcid is classified as a SulphurContainingAminoAcid." .
+
+ex:classifiedAsBasicAminoAcid rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range ex:BasicAminoAcid ;
+    rdfs:comment "An AminoAcid is classified as a BasicAminoAcid." .
+
+ex:classifiedAsAromaticAminoAcid rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range ex:AromaticAminoAcid ;
+    rdfs:comment "An AminoAcid is classified as an AromaticAminoAcid." .
+
+ex:classifiedAsIminoAcid rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range ex:IminoAcid ;
+    rdfs:comment "An AminoAcid is classified as an IminoAcid." .
+
+ex:classifiedAsBetaAminoAcid rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range ex:BetaAminoAcid ;
+    rdfs:comment "An AminoAcid is classified as a BetaAminoAcid." .
+
+ex:classifiedAsGammaAminoAcid rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range ex:GammaAminoAcid ;
+    rdfs:comment "An AminoAcid is classified as a GammaAminoAcid." .
+
+ex:producedByHydrolysis rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range ex:AminoAcidSynthesisProcess ;
+    rdfs:comment "An AminoAcid is produced by a Hydrolysis process." .
+
+# ===== Instances =====
+ex:amino_acids rdf:type ex:AminoAcid ;
+    rdfs:label "ex:amino_acids" .
+
+ex:essential_amino_acids rdf:type ex:EssentialAminoAcid ;
+    rdfs:label "ex:essential_amino_acids" .
+
+ex:non_essential_amino_acids rdf:type ex:NonEssentialAminoAcid ;
+    rdfs:label "ex:non_essential_amino_acids" .
+
+ex:semi_essential_amino_acids rdf:type ex:SemiEssentialAminoAcid ;
+    rdfs:label "ex:semi_essential_amino_acids" .
+
+ex:alpha_amino_acids rdf:type ex:AlphaAminoAcid ;
+    rdfs:label "ex:alpha_amino_acids" .
+
+ex:glycine rdf:type ex:AminoAcid ;
+    rdfs:label "ex:glycine" .
+
+ex:histidine rdf:type ex:AminoAcid ;
+    rdfs:label "ex:histidine" .
+
+ex:tyrosine rdf:type ex:AminoAcid ;
+    rdfs:label "ex:tyrosine" .
+
+ex:tryptophan rdf:type ex:AminoAcid ;
+    rdfs:label "ex:tryptophan" .
+
+ex:valine rdf:type ex:AminoAcid ;
+    rdfs:label "ex:valine" .
+
+ex:leucine rdf:type ex:AminoAcid ;
+    rdfs:label "ex:leucine" .
+
+ex:isoleucine rdf:type ex:AminoAcid ;
+    rdfs:label "ex:isoleucine" .
+
+ex:threonine rdf:type ex:AminoAcid ;
+    rdfs:label "ex:threonine" .
+
+ex:methionine rdf:type ex:AminoAcid ;
+    rdfs:label "ex:methionine" .
+
+ex:phenylalanine rdf:type ex:AminoAcid ;
+    rdfs:label "ex:phenylalanine" .
+
+ex:lysine rdf:type ex:AminoAcid ;
+    rdfs:label "ex:lysine" .
+
+ex:arginine rdf:type ex:AminoAcid ;
+    rdfs:label "ex:arginine" .
+
+ex:proline rdf:type ex:IminoAcid ;
+    rdfs:label "ex:proline" .
+
+ex:serine rdf:type ex:AminoAcid ;
+    rdfs:label "ex:serine" .
+
+ex:cysteine rdf:type ex:AminoAcid ;
+    rdfs:label "ex:cysteine" .
+
+ex:glutamine rdf:type ex:AminoAcid ;
+    rdfs:label "ex:glutamine" .
+
+ex:asparagine rdf:type ex:AminoAcid ;
+    rdfs:label "ex:asparagine" .
+
+ex:aspartic_acid rdf:type ex:AminoAcid ;
+    rdfs:label "ex:aspartic_acid" .
+
+ex:glutamic_acid rdf:type ex:AminoAcid ;
+    rdfs:label "ex:glutamic_acid" .
+
+ex:alanine rdf:type ex:AminoAcid ;
+    rdfs:label "ex:alanine" .
+
+ex:norleucine rdf:type ex:AminoAcid ;
+    rdfs:label "ex:norleucine" .
+
+ex:hydroxyproline rdf:type ex:AminoAcid ;
+    rdfs:label "ex:hydroxyproline" .
+
+ex:beta_hydroxy_glutamic_acid rdf:type ex:AminoAcid ;
+    rdfs:label "ex:beta_hydroxy_glutamic_acid" .
+
+ex:ornithine rdf:type ex:AminoAcid ;
+    rdfs:label "ex:ornithine" .
+
+ex:d_penicillamine rdf:type ex:DPenicillamine ;
+    rdfs:label "ex:d_penicillamine" .
+
+ex:n_acetylcysteine rdf:type ex:NAcetylcysteine ;
+    rdfs:label "ex:n_acetylcysteine" .
+
+ex:gabapentin rdf:type ex:Gabapentin ;
+    rdfs:label "ex:gabapentin" .
+
+# ===== Relations =====
+ex:amino_acids ex:classifiedAsEssentialAminoAcid ex:essential_amino_acids .
+ex:amino_acids ex:classifiedAsNonEssentialAminoAcid ex:non_essential_amino_acids .
+ex:amino_acids ex:classifiedAsSemiEssentialAminoAcid ex:semi_essential_amino_acids .
+ex:glycine ex:undergoesDecarboxylationReaction ex:DecarboxylationReaction .
+ex:histidine ex:undergoesDecarboxylationReaction ex:DecarboxylationReaction .
+ex:tyrosine ex:undergoesDecarboxylationReaction ex:DecarboxylationReaction .
+ex:tryptophan ex:undergoesDecarboxylationReaction ex:DecarboxylationReaction .
+ex:glycine ex:identifiedByNinhydrinReaction ex:NinhydrinReaction .
+ex:histidine ex:identifiedByNinhydrinReaction ex:NinhydrinReaction .
+ex:tyrosine ex:identifiedByNinhydrinReaction ex:NinhydrinReaction .
+ex:tryptophan ex:identifiedByNinhydrinReaction ex:NinhydrinReaction .
+ex:valine ex:classifiedAsEssentialAminoAcid ex:essential_amino_acids .
+ex:leucine ex:classifiedAsEssentialAminoAcid ex:essential_amino_acids .
+ex:isoleucine ex:classifiedAsEssentialAminoAcid ex:essential_amino_acids .
+ex:threonine ex:classifiedAsEssentialAminoAcid ex:essential_amino_acids .
+ex:methionine ex:classifiedAsEssentialAminoAcid ex:essential_amino_acids .
+ex:phenylalanine ex:classifiedAsEssentialAminoAcid ex:essential_amino_acids .
+ex:tryptophan ex:classifiedAsEssentialAminoAcid ex:essential_amino_acids .
+ex:lysine ex:classifiedAsEssentialAminoAcid ex:essential_amino_acids .
+ex:lysine ex:classifiedAsBasicAminoAcid ex:basic_amino_acids .
+ex:arginine ex:classifiedAsBasicAminoAcid ex:basic_amino_acids .
+ex:histidine ex:classifiedAsBasicAminoAcid ex:basic_amino_acids .
+ex:phenylalanine ex:classifiedAsAromaticAminoAcid ex:aromatic_amino_acids .
+ex:tyrosine ex:classifiedAsAromaticAminoAcid ex:aromatic_amino_acids .
+ex:tryptophan ex:classifiedAsAromaticAminoAcid ex:aromatic_amino_acids .
+ex:proline ex:classifiedAsIminoAcid ex:imino_acids .
+ex:leucine ex:classifiedAsPurelyKetogenicAminoAcid ex:PurelyKetogenicAminoAcid .
+ex:lysine ex:classifiedAsPurelyKetogenicAminoAcid ex:PurelyKetogenicAminoAcid .
+ex:phenylalanine ex:classifiedAsKetogenicAndGlucogenicAminoAcid ex:KetogenicAndGlucogenicAminoAcid .
+ex:tyrosine ex:classifiedAsKetogenicAndGlucogenicAminoAcid ex:KetogenicAndGlucogenicAminoAcid .
+ex:tryptophan ex:classifiedAsKetogenicAndGlucogenicAminoAcid ex:KetogenicAndGlucogenicAminoAcid .
+ex:valine ex:classifiedAsNonPolarAminoAcid ex:NonPolarAminoAcid .
+ex:isoleucine ex:classifiedAsNonPolarAminoAcid ex:NonPolarAminoAcid .
+ex:methionine ex:classifiedAsNonPolarAminoAcid ex:NonPolarAminoAcid .
+ex:glycine ex:classifiedAsPolarAminoAcidWithNoCharge ex:PolarAminoAcidWithNoCharge .
+ex:serine ex:classifiedAsPolarAminoAcidWithNoCharge ex:PolarAminoAcidWithNoCharge .
+ex:threonine ex:classifiedAsPolarAminoAcidWithNoCharge ex:PolarAminoAcidWithNoCharge .
+ex:cysteine ex:classifiedAsPolarAminoAcidWithNoCharge ex:PolarAminoAcidWithNoCharge .
+ex:glutamine ex:classifiedAsPolarAminoAcidWithNoCharge ex:PolarAminoAcidWithNoCharge .
+ex:asparagine ex:classifiedAsPolarAminoAcidWithNoCharge ex:PolarAminoAcidWithNoCharge .
+ex:aspartic_acid ex:classifiedAsPolarAminoAcidWithNegativeCharge ex:PolarAminoAcidWithNegativeCharge .
+ex:glutamic_acid ex:classifiedAsPolarAminoAcidWithNegativeCharge ex:PolarAminoAcidWithNegativeCharge .
+ex:cysteine ex:identifiedByNinhydrinReaction ex:NinhydrinReaction .
+ex:norleucine ex:classifiedAsSemiEssentialAminoAcid ex:SemiEssentialAminoAcid .
+ex:phenylalanine ex:classifiedAsKetogenicAndGlucogenicAminoAcid ex:KetogenicAndGlucogenicAminoAcid .
+ex:tyrosine ex:classifiedAsPolarAminoAcidWithNoCharge ex:PolarAminoAcidWithNoCharge .
+ex:cysteine ex:classifiedAsSulphurContainingAminoAcid ex:SulphurContainingAminoAcid .
+ex:norleucine ex:producedByHydrolysis ex:AminoAcidSynthesisProcess .
+ex:cysteine ex:undergoesDecarboxylationReaction ex:DecarboxylationReaction .
+ex:norleucine ex:classifiedAsAliphaticAminoAcid ex:AliphaticAminoAcid .
+ex:cysteine ex:classifiedAsHydroxylGroupContainingAminoAcid ex:HydroxylGroupContainingAminoAcid .
+ex:norleucine ex:classifiedAsEssentialAminoAcid ex:EssentialAminoAcid .
+ex:cysteine ex:classifiedAsPolarAminoAcidWithNoCharge ex:PolarAminoAcidWithNoCharge .
+ex:norleucine ex:classifiedAsNonEssentialAminoAcid ex:NonEssentialAminoAcid .
+ex:cysteine ex:classifiedAsSemiEssentialAminoAcid ex:SemiEssentialAminoAcid .
+ex:norleucine ex:classifiedAsPurelyKetogenicAminoAcid ex:PurelyKetogenicAminoAcid .
+ex:cysteine ex:classifiedAsPolarAminoAcidWithPositiveCharge ex:PolarAminoAcidWithPositiveCharge .
+ex:norleucine ex:classifiedAsPurelyGlucogenicAminoAcid ex:PurelyGlucogenicAminoAcid .
+ex:cysteine ex:classifiedAsPolarAminoAcidWithNegativeCharge ex:PolarAminoAcidWithNegativeCharge .
+ex:norleucine ex:classifiedAsNonPolarAminoAcid ex:NonPolarAminoAcid .
+ex:cysteine ex:classifiedAsAliphaticAminoAcid ex:AliphaticAminoAcid .
+ex:norleucine ex:classifiedAsHydroxylGroupContainingAminoAcid ex:HydroxylGroupContainingAminoAcid .
+ex:norleucine ex:classifiedAsBasicAminoAcid ex:BasicAminoAcid .
+ex:cysteine ex:classifiedAsIminoAcid ex:IminoAcid .
+ex:norleucine ex:classifiedAsAromaticAminoAcid ex:AromaticAminoAcid .
+ex:cysteine ex:classifiedAsBetaAminoAcid ex:BetaAminoAcid .
+ex:norleucine ex:classifiedAsGammaAminoAcid ex:GammaAminoAcid .
+ex:cysteine ex:classifiedAsPurelyKetogenicAminoAcid ex:PurelyKetogenicAminoAcid .
+ex:cysteine ex:classifiedAsPurelyGlucogenicAminoAcid ex:PurelyGlucogenicAminoAcid .
+ex:norleucine ex:undergoesDecarboxylationReaction ex:DecarboxylationReaction .
+ex:cysteine ex:classifiedAsNonPolarAminoAcid ex:NonPolarAminoAcid .
+ex:norleucine ex:identifiedByNinhydrinReaction ex:NinhydrinReaction .
+ex:methionine ex:classifiedAsSulphurContainingAminoAcid ex:SulphurContainingAminoAcid .
+ex:tryptophan ex:classifiedAsAromaticAminoAcid ex:AromaticAminoAcid .
+ex:proline ex:classifiedAsIminoAcid ex:IminoAcid .
+ex:hydroxyproline ex:classifiedAsHydroxylGroupContainingAminoAcid ex:HydroxylGroupContainingAminoAcid .
+ex:aspartic_acid ex:classifiedAsPolarAminoAcidWithNegativeCharge ex:PolarAminoAcidWithNegativeCharge .
+ex:glutamic_acid ex:classifiedAsPolarAminoAcidWithNegativeCharge ex:PolarAminoAcidWithNegativeCharge .
+ex:beta_hydroxy_glutamic_acid ex:classifiedAsHydroxylGroupContainingAminoAcid ex:HydroxylGroupContainingAminoAcid .
+ex:glutamine ex:classifiedAsPolarAminoAcidWithNoCharge ex:PolarAminoAcidWithNoCharge .
+ex:ornithine ex:classifiedAsNonEssentialAminoAcid ex:NonEssentialAminoAcid .
+ex:arginine ex:classifiedAsBasicAminoAcid ex:BasicAminoAcid .
+ex:lysine ex:classifiedAsPurelyKetogenicAminoAcid ex:PurelyKetogenicAminoAcid .
+ex:histidine ex:classifiedAsBasicAminoAcid ex:BasicAminoAcid .
+ex:histidine ex:classifiedAsEssentialAminoAcid ex:essential_amino_acids .

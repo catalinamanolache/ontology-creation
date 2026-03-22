@@ -1,0 +1,54 @@
+{
+  "reasoning_steps": [
+    "Identify amino acids and their properties from the text.",
+    "Match identified entities with existing IDs or create new ones if necessary."
+  ],
+  "entities": [
+    {
+      "id": "ex:histidine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Histidine Hemoglobin has a high percentage of histidine."
+    },
+    {
+      "id": "ex:d_penicillamine",
+      "class_uri": "ex:DPenicillamine",
+      "evidence_span": "D-Penicillamine: It is a metabolite of penicillin."
+    },
+    {
+      "id": "ex:n_acetylcysteine",
+      "class_uri": "ex:NAcetylcysteine",
+      "evidence_span": "N-Acetylcysteine: It is used in cystic fibrosis, and chronic renal insufficiency"
+    },
+    {
+      "id": "ex:gabapentin",
+      "class_uri": "ex:Gabapentin",
+      "evidence_span": "Gabapentin: It is used as anticonvulsant."
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "ex:histidine",
+      "property_uri": "ex:classifiedAsEssentialAminoAcid",
+      "target_id": "ex:essential_amino_acids",
+      "evidence_span": "Histidine Hemoglobin has a high percentage of histidine."
+    },
+    {
+      "source_id": "ex:d_penicillamine",
+      "property_uri": "ex:classifiedAsNonStandardAminoAcid",
+      "target_id": "ex:non_standard_aas",
+      "evidence_span": "D-Penicillamine: It is a metabolite of penicillin."
+    },
+    {
+      "source_id": "ex:n_acetylcysteine",
+      "property_uri": "ex:classifiedAsNonStandardAminoAcid",
+      "target_id": "ex:non_standard_aas",
+      "evidence_span": "N-Acetylcysteine: It is used in cystic fibrosis, and chronic renal insufficiency"
+    },
+    {
+      "source_id": "ex:gabapentin",
+      "property_uri": "ex:classifiedAsNonStandardAminoAcid",
+      "target_id": "ex:non_standard_aas",
+      "evidence_span": "Gabapentin: It is used as anticonvulsant."
+    }
+  ]
+}

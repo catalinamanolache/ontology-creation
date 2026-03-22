@@ -1,0 +1,121 @@
+{
+  "reasoning_steps": [
+    "The text introduces classifications and specific types of amino acids that are not yet represented in the existing ontology.",
+    "New classes for amino acid classifications based on structure, polarity, metabolic fates, and position of -NH2 need to be added."
+  ],
+  "classes": [
+    {
+      "uri": "ex:AliphaticAminoAcid",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": null,
+      "aristotelian_definition": "An AliphaticAminoAcid is an AminoAcid with a side chain that consists of carbon atoms in open chains or unbranched rings.",
+      "comment": "Includes amino acids like glycine, alanine, valine, leucine, and isoleucine."
+    },
+    {
+      "uri": "ex:HydroxylGroupContainingAminoAcid",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": null,
+      "aristotelian_definition": "A HydroxylGroupContainingAminoAcid is an AminoAcid with a hydroxyl group (-OH) attached to its side chain.",
+      "comment": "Includes serine, threonine, and tyrosine."
+    },
+    {
+      "uri": "ex:SulphurContainingAminoAcid",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": null,
+      "aristotelian_definition": "A SulphurContainingAminoAcid is an AminoAcid with a sulfur-containing side chain.",
+      "comment": "Includes cysteine and methionine."
+    },
+    {
+      "uri": "ex:BasicAminoAcid",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": null,
+      "aristotelian_definition": "A BasicAminoAcid is an AminoAcid with a side chain that has basic properties.",
+      "comment": "Includes lysine, arginine, and histidine."
+    },
+    {
+      "uri": "ex:AromaticAminoAcid",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": null,
+      "aristotelian_definition": "An AromaticAminoAcid is an AminoAcid with a side chain that contains aromatic rings.",
+      "comment": "Includes phenylalanine, tyrosine, and tryptophan."
+    },
+    {
+      "uri": "ex:IminoAcid",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": null,
+      "aristotelian_definition": "An IminoAcid is an AminoAcid with a side chain that contains an imino group (=NH) instead of the usual amino group (-NH2).",
+      "comment": "Includes proline."
+    },
+    {
+      "uri": "ex:AlphaAminoAcid",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": null,
+      "aristotelian_definition": "An AlphaAminoAcid is an AminoAcid with both the amino and carboxyl groups attached to the alpha carbon.",
+      "comment": "All naturally occurring amino acids are α-amino acids."
+    },
+    {
+      "uri": "ex:BetaAminoAcid",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": null,
+      "aristotelian_definition": "A BetaAminoAcid is an AminoAcid with the amino group attached to the beta carbon.",
+      "comment": "Includes β-alanine."
+    },
+    {
+      "uri": "ex:GammaAminoAcid",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": null,
+      "aristotelian_definition": "A GammaAminoAcid is an AminoAcid with the amino group attached to the gamma carbon.",
+      "comment": "Includes GABA (gamma-aminobutyric acid)."
+    },
+    {
+      "uri": "ex:PurelyKetogenicAminoAcid",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": null,
+      "aristotelian_definition": "A PurelyKetogenicAminoAcid is an AminoAcid that can only be metabolized to produce ketone bodies.",
+      "comment": "Includes leucine and lysine."
+    },
+    {
+      "uri": "ex:KetogenicAndGlucogenicAminoAcid",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": null,
+      "aristotelian_definition": "A KetogenicAndGlucogenicAminoAcid is an AminoAcid that can be metabolized to produce both ketone bodies and glucose.",
+      "comment": "Includes lysine, isoleucine, phenylalanine, tyrosine, and tryptophan."
+    },
+    {
+      "uri": "ex:PurelyGlucogenicAminoAcid",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": null,
+      "aristotelian_definition": "A PurelyGlucogenicAminoAcid is an AminoAcid that can only be metabolized to produce glucose or glycogen.",
+      "comment": "Includes alanine, aspartic acid, glutamic acid, etc."
+    },
+    {
+      "uri": "ex:NonPolarAminoAcid",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": null,
+      "aristotelian_definition": "A NonPolarAminoAcid is an AminoAcid with a side chain that does not have any charge.",
+      "comment": "Includes alanine, leucine, valine, methionine, phenylalanine, tryptophan, and proline."
+    },
+    {
+      "uri": "ex:PolarAminoAcidWithNoCharge",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": null,
+      "aristotelian_definition": "A PolarAminoAcidWithNoCharge is an AminoAcid with a side chain that has polar groups but no charge.",
+      "comment": "Includes glycine, serine, threonine, cysteine, glutamine, asparagine, and tyrosine."
+    },
+    {
+      "uri": "ex:PolarAminoAcidWithPositiveCharge",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": null,
+      "aristotelian_definition": "A PolarAminoAcidWithPositiveCharge is an AminoAcid with a side chain that has a positive charge.",
+      "comment": "Includes lysine, arginine, and histidine."
+    },
+    {
+      "uri": "ex:PolarAminoAcidWithNegativeCharge",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": null,
+      "aristotelian_definition": "A PolarAminoAcidWithNegativeCharge is an AminoAcid with a side chain that has a negative charge.",
+      "comment": "Includes aspartic acid and glutamic acid."
+    }
+  ],
+  "canonical_terms": {}
+}

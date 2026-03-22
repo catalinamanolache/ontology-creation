@@ -1,0 +1,261 @@
+@prefix ex: <http://example.org/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ===== OWL Classes =====
+ex:AminoAcid rdf:type owl:Class ;
+    rdfs:comment "Amino acids are the building blocks of proteins." .
+
+ex:ChemicalSubstance rdf:type owl:Class ;
+    rdfs:comment "A general class for substances with chemical properties, including amino acids." .
+
+ex:Protein rdf:type owl:Class ;
+    rdfs:comment "Proteins are made up of amino acids and are involved in various biological processes." .
+
+ex:EssentialAminoAcid rdf:type owl:Class ;
+    rdfs:comment "Amino acids that are not synthesized by the human body and must be obtained from food." .
+
+ex:SemiEssentialAminoAcid rdf:type owl:Class ;
+    rdfs:comment "Amino acids that can be produced by the body but may need to be supplemented in growing children." .
+
+ex:NonEssentialAminoAcid rdf:type owl:Class ;
+    rdfs:comment "Amino acids that can be synthesized by the human body and do not require dietary intake." .
+
+ex:AromaticAminoAcid rdf:type owl:Class ;
+    rdfs:comment "Amino acids with an aromatic ring in their structure, such as phenylalanine, tyrosine, and tryptophan." .
+
+ex:AliphaticAminoAcid rdf:type owl:Class ;
+    rdfs:comment "Amino acids with aliphatic side chains, including glycine, alanine, valine, leucine, isoleucine, etc." .
+
+ex:BranchedChainAminoAcid rdf:type owl:Class ;
+    rdfs:comment "A specific type of aliphatic amino acid with branched aliphatic side chains (leucine, isoleucine, valine)." .
+
+ex:HydroxylGroupContainingAminoAcid rdf:type owl:Class ;
+    rdfs:comment "Amino acids containing a hydroxyl group in their structure, such as serine and threonine." .
+
+ex:SulphurContainingAminoAcid rdf:type owl:Class ;
+    rdfs:comment "Amino acids with sulfur-containing groups, specifically cysteine and methionine." .
+
+ex:BasicAminoAcid rdf:type owl:Class ;
+    rdfs:comment "Amino acids that are highly basic due to their guanidino group (lysine) or imidazole ring (arginine, histidine)." .
+
+ex:AminoAcidWithAliphaticSideChain rdf:type owl:Class ;
+    rdfs:comment "A subclass of aliphatic amino acids with specific side chains." .
+
+ex:MonoamineMonocarboxylicAcid rdf:type owl:Class ;
+    rdfs:comment "A subclass of aliphatic amino acids that are simple monoamino monocarboxylic acids (glycine, alanine, valine, leucine, isoleucine)." .
+
+ex:PurelyKetogenicAminoAcid rdf:type owl:Class ;
+    rdfs:comment "Amino acids that can be completely converted into ketone bodies during metabolism." .
+
+ex:KetogenicAndGlucogenicAminoAcid rdf:type owl:Class ;
+    rdfs:comment "Amino acids that have both ketogenic and glucogenic metabolic fates." .
+
+ex:PurelyGlucogenicAminoAcid rdf:type owl:Class ;
+    rdfs:comment "Amino acids that can be fully converted into glucose or glycogen during metabolism." .
+
+ex:NonPolarAminoAcid rdf:type owl:Class ;
+    rdfs:comment "Amino acids with non-polar side chains, also known as hydrophobic amino acids." .
+
+ex:PolarAminoAcidWithNoChargeOnRGroup rdf:type owl:Class ;
+    rdfs:comment "Amino acids with polar side chains but no net charge (glycine, serine, threonine, cysteine, glutamine, asparagine, tyrosine)." .
+
+ex:PolarAminoAcidWithPositiveChargeOnRGroup rdf:type owl:Class ;
+    rdfs:comment "Amino acids with polar side chains and a positive charge (lysine, arginine, histidine)." .
+
+ex:PolarAminoAcidWithNegativeChargeOnRGroup rdf:type owl:Class ;
+    rdfs:comment "Amino acids with polar side chains and a negative charge (aspartic acid, glutamic acid)." .
+
+ex:http://example.org/amino_acids#Glycine rdf:type owl:Class ;
+    rdfs:comment "Produced by removing water and then adding cyanide to aldimine. Used in treating schizophrenia, stroke, sleep issues, BPH, metabolic syndrome, and a few uncommon inherited metabolic illnesses." .
+
+ex:http://example.org/amino_acids#Alanine rdf:type owl:Class ;
+    rdfs:comment "Produced by removing water and then adding cyanide to aldimine. Used in boosting immunity and providing energy to the brain and central nervous system." .
+
+ex:http://example.org/amino_acids#Valine rdf:type owl:Class ;
+    rdfs:comment "Produced by Gabriel Phthalimide Synthesis. Commonly used in health supplements for muscle synthesis and maintenance, stress management, child growth, and immune system support." .
+
+ex:http://example.org/amino_acids#Leucine rdf:type owl:Class ;
+    rdfs:comment "Produced by Gabriel Phthalimide Synthesis. Increases physical performance or strength in the short term, prevents muscle loss, lowers blood glucose levels in type 2 diabetes." .
+
+ex:http://example.org/amino_acids#Isoleucine rdf:type owl:Class ;
+    rdfs:comment "Produced by Gabriel Phthalimide Synthesis. Required for children's growth and maintaining nitrogen balance in adults." .
+
+ex:http://example.org/amino_acids#Norleucine rdf:type owl:Class ;
+    rdfs:comment "Produced by Gabriel Phthalimide Synthesis. Artificial amino acid used to research protein structure and function, similar to Methionine." .
+
+ex:http://example.org/amino_acids#Phenylalanine rdf:type owl:Class ;
+    rdfs:comment "Produced by removing water and then adding cyanide to aldimine. Used in treating depression, Parkinson's disease, multiple sclerosis, pain, acupuncture anesthesia, osteoarthritis." .
+
+ex:http://example.org/amino_acids#Tyrosine rdf:type owl:Class ;
+    rdfs:comment "Produced by removing water and then adding cyanide to aldimine. Commonly used in the production of thyroid hormone. Helps with mental performance, alertness, and memory." .
+
+ex:http://example.org/amino_acids#Serine rdf:type owl:Class ;
+    rdfs:comment "Produced by removing water and then adding cyanide to aldimine. Particularly significant for brain and central nervous system function." .
+
+ex:http://example.org/amino_acids#Cysteine rdf:type owl:Class ;
+    rdfs:comment "Used in medicine to enhance the efficiency of corticosteroid medications. Used in treating surgery and trauma as L-Cystine." .
+
+ex:http://example.org/amino_acids#Threonine rdf:type owl:Class ;
+    rdfs:comment "Produced by Gabriel Phthalimide Synthesis. Used for treating spinal spasticity, multiple sclerosis, familial spastic paraparesis, and amyotrophic lateral sclerosis." .
+
+ex:http://example.org/amino_acids#Methionine rdf:type owl:Class ;
+    rdfs:comment "Used to prevent and cure depression, inflammation, liver illness, muscle discomfort. Used in weight loss, cholesterol reduction, and muscle development as Diiodothyronine." .
+
+ex:http://example.org/amino_acids#IodogorgicAcid rdf:type owl:Class ;
+    rdfs:comment "Produced by treating an alpha halogenated acid ester with potassium phthalimide. Used in weight loss, cholesterol reduction, and muscle development as Diiodothyronine." .
+
+ex:http://example.org/amino_acids#Thyroxine rdf:type owl:Class ;
+    rdfs:comment "Produced by treating an alpha halogenated acid ester with potassium phthalimide. Used in treating thyroid underactivity (hypothyroidism)." .
+
+ex:http://example.org/amino_acids#Tryptophan rdf:type owl:Class ;
+    rdfs:comment "Used to treat anxiety and depression, migraines, headaches, and boosting growth hormone production." .
+
+ex:http://example.org/amino_acids#Proline rdf:type owl:Class ;
+    rdfs:comment "Produced by Gabriel Phthalimide Synthesis. Used for improving joint and skin health, muscle development, and injury healing." .
+
+ex:http://example.org/amino_acids#Hydroxyproline rdf:type owl:Class ;
+    rdfs:comment "Produced by removing water and then adding cyanide to aldimine. Required for collagen formation, the body's primary structural protein." .
+
+ex:http://example.org/amino_acids#AsparticAcid rdf:type owl:Class ;
+    rdfs:comment "Used in treating stress and exhaustion. Aids in energy generation from carbohydrates and RNA/DNA production." .
+
+ex:http://example.org/amino_acids#Asparagine rdf:type owl:Class ;
+    rdfs:comment "Produced by removing water and then adding cyanide to aldimine. Necessary for brain development and function." .
+
+ex:http://example.org/amino_acids#GlutamicAcid rdf:type owl:Class ;
+    rdfs:comment "Used in treating Parkinson's, fatigue, and schizophrenia. Serves as a source of energy for the brain, improving clarity, alertness, and mood." .
+
+ex:http://example.org/amino_acids#BetaHydroxyGlutamicAcid rdf:type owl:Class ;
+    rdfs:comment "Produced by removing water and then adding cyanide to aldimine. Used in treating acne, photoaging, dry skin, psoriasis, melasma, fibromyalgia, dental scaling, and preventing urinary tract stones." .
+
+ex:http://example.org/amino_acids#Glutamine rdf:type owl:Class ;
+    rdfs:comment "Used for maintaining blood sugar levels. Used in health supplements to support sports and performance, liver function, and wound healing." .
+
+ex:http://example.org/amino_acids#Ornithine rdf:type owl:Class ;
+    rdfs:comment "Produced by Gabriel Phthalimide Synthesis. Primarily used for supporting sports and performance, liver function, and wound healing." .
+
+ex:http://example.org/amino_acids#Arginine rdf:type owl:Class ;
+    rdfs:comment "Used in treating cardiovascular disease due to its antiatherogenic, anti-ischemic, antiplatelet, and antithrombotic effects." .
+
+ex:http://example.org/amino_acids#Lysine rdf:type owl:Class ;
+    rdfs:comment "Used for reducing cold sores when taken orally or applied as a cream. Used in treating anemia due to its presence in hemoglobin. Helps reduce blood pressure and is critical in baby feeding." .
+
+ex:http://example.org/amino_acids#Histidine rdf:type owl:Class ;
+    rdfs:comment "Used for treating anemia, reducing blood pressure, and being critical in baby feeding as it is present in high percentages of hemoglobin." .
+
+# ===== Properties =====
+ex:hasComposition rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range ex:ChemicalSubstance ;
+    rdfs:comment "Describes the composition of an amino acid as a chemical substance." .
+
+ex:isComponentOf rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:Protein ;
+    rdfs:range ex:AminoAcid ;
+    rdfs:comment "Indicates that proteins are composed of amino acids." .
+
+ex:isEssential rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates whether an amino acid is essential." .
+
+ex:isSemiEssential rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates whether an amino acid is semi-essential." .
+
+ex:isNonEssential rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates whether an amino acid is non-essential." .
+
+ex:hasAliphaticSideChain rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates whether an amino acid has aliphatic side chains." .
+
+ex:hasBranchedChain rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates whether an amino acid is a branched-chain amino acid." .
+
+ex:hasAromaticRing rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates whether an amino acid has an aromatic ring in its structure." .
+
+ex:hasHydroxylGroup rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates whether an amino acid contains a hydroxyl group." .
+
+ex:hasSulphurGroup rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates whether an amino acid has sulfur-containing groups." .
+
+ex:isBasic rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates whether an amino acid is basic." .
+
+ex:hasAliphaticSideChainMonocarboxylicAcid rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates whether an amino acid has aliphatic side chains and is a monocarboxylic acid." .
+
+ex:isPurelyKetogenic rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates whether an amino acid can be completely converted into ketone bodies." .
+
+ex:isKetogenicAndGlucogenic rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates whether an amino acid has both ketogenic and glucogenic metabolic fates." .
+
+ex:isPurelyGlucogenic rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates whether an amino acid can be fully converted into glucose or glycogen." .
+
+ex:hasNonPolarSideChain rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates whether an amino acid has non-polar side chains (hydrophobic)." .
+
+ex:hasPolarSideChainWithNoCharge rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates whether an amino acid has polar side chains with no net charge." .
+
+ex:hasPolarSideChainWithPositiveCharge rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates whether an amino acid has polar side chains with a positive charge." .
+
+ex:hasPolarSideChainWithNegativeCharge rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates whether an amino acid has polar side chains with a negative charge." .
+
+ex:http://example.org/amino_acids#chemical_name rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:http://example.org/amino_acids#AminoAcid ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The chemical name of the amino acid." .
+
+ex:http://example.org/amino_acids#three_letter_abbreviation rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:http://example.org/amino_acids#AminoAcid ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The three-letter abbreviation of the amino acid." .
+
+ex:http://example.org/amino_acids#one_letter_abbreviation rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:http://example.org/amino_acids#AminoAcid ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The one-letter abbreviation of the amino acid." .
+
+# ===== Instances =====
+# ===== Relations =====

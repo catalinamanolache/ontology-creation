@@ -1,0 +1,467 @@
+{
+  "reasoning_steps": [
+    "Identify entities and their classes based on the provided ontology.",
+    "Identify relations between entities based on the text and ontology.",
+    "Ensure all extracted information strictly adheres to the provided ontology and rules."
+  ],
+  "entities": [
+    {
+      "id": "lysine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "lysine"
+    },
+    {
+      "id": "arginine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "arginine"
+    },
+    {
+      "id": "histidine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "histidine"
+    },
+    {
+      "id": "phenylalanine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "phenylalanine"
+    },
+    {
+      "id": "tyrosine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "tyrosine"
+    },
+    {
+      "id": "tryptophan",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "tryptophan"
+    },
+    {
+      "id": "proline",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "proline"
+    },
+    {
+      "id": "alanine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "alanine"
+    },
+    {
+      "id": "glycine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "glycine"
+    },
+    {
+      "id": "serine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "serine"
+    },
+    {
+      "id": "cysteine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "cysteine"
+    },
+    {
+      "id": "asparagine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "asparagine"
+    },
+    {
+      "id": "aspatic_acid",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "aspatic acid"
+    },
+    {
+      "id": "glutamic_acid",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "glutamic acid"
+    },
+    {
+      "id": "glutamine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "glutamine"
+    },
+    {
+      "id": "methionine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Methionine"
+    },
+    {
+      "id": "threonine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Threonine"
+    },
+    {
+      "id": "valine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Valine"
+    },
+    {
+      "id": "isoleucine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Isoleucine"
+    },
+    {
+      "id": "basic_amino_acids",
+      "class_uri": "ex:BasicAminoAcid",
+      "evidence_span": "Basic Amino Acids"
+    },
+    {
+      "id": "aromatic_amino_acids",
+      "class_uri": "ex:AromaticAminoAcid",
+      "evidence_span": "Aromatic Amino Acids"
+    },
+    {
+      "id": "imino_acids",
+      "class_uri": "ex:IminoAcid",
+      "evidence_span": "Imino Acids"
+    },
+    {
+      "id": "heterocyclic_amino_acids",
+      "class_uri": "ex:HeterocyclicAminoAcid",
+      "evidence_span": "Heterocyclic Amino Acids"
+    },
+    {
+      "id": "alpha_amino_acid",
+      "class_uri": "ex:AlphaAminoAcid",
+      "evidence_span": "α-amino acid"
+    },
+    {
+      "id": "beta_amino_acid",
+      "class_uri": "ex:BetaAminoAcid",
+      "evidence_span": "Beta -amino acid"
+    },
+    {
+      "id": "gamma_amino_acid",
+      "class_uri": "ex:GammaAminoAcid",
+      "evidence_span": "γ-amino acid"
+    },
+    {
+      "id": "essential_amino_acids",
+      "class_uri": "ex:EssentialAminoAcid",
+      "evidence_span": "Essential Amino acids"
+    },
+    {
+      "id": "non_essential_amino_acids",
+      "class_uri": "ex:NonEssentialAminoAcid",
+      "evidence_span": "Non-Essential Amino acids"
+    },
+    {
+      "id": "semi_essential_amino_acids",
+      "class_uri": "ex:SemiEssentialAminoAcid",
+      "evidence_span": "Semi-Essential Amino acid"
+    },
+    {
+      "id": "guanidino_group",
+      "class_uri": "ex:AminoGroup",
+      "evidence_span": "guanidino group"
+    },
+    {
+      "id": "imidazole_ring",
+      "class_uri": "ex:AminoGroup",
+      "evidence_span": "imidazole ring"
+    },
+    {
+      "id": "indole_ring",
+      "class_uri": "ex:RGroup",
+      "evidence_span": "indole ring"
+    },
+    {
+      "id": "pyrrolidine_ring",
+      "class_uri": "ex:RGroup",
+      "evidence_span": "Pyrrolidine ring"
+    },
+    {
+      "id": "imino_group",
+      "class_uri": "ex:AminoGroup",
+      "evidence_span": "Imino group"
+    },
+    {
+      "id": "gaba",
+      "class_uri": "ex:GammaAminoAcid",
+      "evidence_span": "GABA (Gamma Amino Butyric Acid)"
+    },
+    {
+      "id": "pvtlvphly_mnemonic",
+      "class_uri": "ex:EssentialAminoAcid",
+      "evidence_span": "MATT VIL PHLy (Or) PVT TIM HALL"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "lysine",
+      "property_uri": "ex:isBasicAminoAcid",
+      "target_id": "basic_amino_acids",
+      "evidence_span": "lysine, arginine (with guanidino group) a nd histidine (with imidazole ring) are dibasic monocarboxylic acids. They are highly basic in character."
+    },
+    {
+      "source_id": "arginine",
+      "property_uri": "ex:isBasicAminoAcid",
+      "target_id": "basic_amino_acids",
+      "evidence_span": "lysine, arginine (with guanidino group) a nd histidine (with imidazole ring) are dibasic monocarboxylic acids. They are highly basic in character."
+    },
+    {
+      "source_id": "histidine",
+      "property_uri": "ex:isBasicAminoAcid",
+      "target_id": "basic_amino_acids",
+      "evidence_span": "lysine, arginine (with guanidino group) a nd histidine (with imidazole ring) are dibasic monocarboxylic acids. They are highly basic in character."
+    },
+    {
+      "source_id": "phenylalanine",
+      "property_uri": "ex:isAromaticAminoAcid",
+      "target_id": "aromatic_amino_acids",
+      "evidence_span": "Aromatic amino acids include phenylalanine, tyrosine, and tryptophan (which have an indole ring)."
+    },
+    {
+      "source_id": "tyrosine",
+      "property_uri": "ex:isAromaticAminoAcid",
+      "target_id": "aromatic_amino_acids",
+      "evidence_span": "Aromatic amino acids include phenylalanine, tyrosine, and tryptophan (which have an indole ring)."
+    },
+    {
+      "source_id": "tryptophan",
+      "property_uri": "ex:isAromaticAminoAcid",
+      "target_id": "aromatic_amino_acids",
+      "evidence_span": "Aromatic amino acids include phenylalanine, tyrosine, and tryptophan (which have an indole ring)."
+    },
+    {
+      "source_id": "histidine",
+      "property_uri": "ex:isAromaticAminoAcid",
+      "target_id": "aromatic_amino_acids",
+      "evidence_span": "Apart from them, histidine may also fall under this category."
+    },
+    {
+      "source_id": "proline",
+      "property_uri": "ex:isIminoAcid",
+      "target_id": "imino_acids",
+      "evidence_span": "An unusual amino acid is a proline, which has a Pyrrolidine ring."
+    },
+    {
+      "source_id": "proline",
+      "property_uri": "ex:isHeterocyclicAminoAcid",
+      "target_id": "heterocyclic_amino_acids",
+      "evidence_span": "Heterocyclic Amino Acids Histidine, Tryptophan, and Proline."
+    },
+    {
+      "source_id": "histidine",
+      "property_uri": "ex:isHeterocyclicAminoAcid",
+      "target_id": "heterocyclic_amino_acids",
+      "evidence_span": "Heterocyclic Amino Acids Histidine, Tryptophan, and Proline."
+    },
+    {
+      "source_id": "tryptophan",
+      "property_uri": "ex:isHeterocyclicAminoAcid",
+      "target_id": "heterocyclic_amino_acids",
+      "evidence_span": "Heterocyclic Amino Acids Histidine, Tryptophan, and Proline."
+    },
+    {
+      "source_id": "alpha_amino_acid",
+      "property_uri": "ex:isAlphaAminoAcid",
+      "target_id": "alpha_amino_acid",
+      "evidence_span": "1. α-amino acid: The amino group attached to the next carbon of the carboxyl group is called α - amino acid."
+    },
+    {
+      "source_id": "beta_amino_acid",
+      "property_uri": "ex:isBetaAminoAcid",
+      "target_id": "beta_amino_acid",
+      "evidence_span": "2. Beta -amino acid : β-amino acid refers to the amino group attached to the third carbon (numbering from the Carboxyl group) of amino acid."
+    },
+    {
+      "source_id": "gamma_amino_acid",
+      "property_uri": "ex:isGammaAminoAcid",
+      "target_id": "gamma_amino_acid",
+      "evidence_span": "3. γ-amino acid: γ -amino acid refers to the amino group connected to the amino acids fourth carbon (numbering from the Carboxyl group)."
+    },
+    {
+      "source_id": "essential_amino_acids",
+      "property_uri": "ex:isEssentialAminoAcid",
+      "target_id": "essential_amino_acids",
+      "evidence_span": "1. Essential Amino acids (EAA)"
+    },
+    {
+      "source_id": "non_essential_amino_acids",
+      "property_uri": "ex:isNonEssentialAminoAcid",
+      "target_id": "non_essential_amino_acids",
+      "evidence_span": "2. Non-Essential Amino acids (NEAA)"
+    },
+    {
+      "source_id": "semi_essential_amino_acids",
+      "property_uri": "ex:isSemiEssentialAminoAcid",
+      "target_id": "semi_essential_amino_acids",
+      "evidence_span": "3. Semi-Essential Amino acids (SEAA)"
+    },
+    {
+      "source_id": "arginine",
+      "property_uri": "ex:isSemiEssentialAminoAcid",
+      "target_id": "semi_essential_amino_acids",
+      "evidence_span": "The amino acids histidine and arginine are semi -essential."
+    },
+    {
+      "source_id": "histidine",
+      "property_uri": "ex:isSemiEssentialAminoAcid",
+      "target_id": "semi_essential_amino_acids",
+      "evidence_span": "The amino acids histidine and arginine are semi -essential."
+    },
+    {
+      "source_id": "lysine",
+      "property_uri": "ex:isEssentialAminoAcid",
+      "target_id": "essential_amino_acids",
+      "evidence_span": "L=Lysine"
+    },
+    {
+      "source_id": "arginine",
+      "property_uri": "ex:isEssentialAminoAcid",
+      "target_id": "essential_amino_acids",
+      "evidence_span": "A=Arginine"
+    },
+    {
+      "source_id": "threonine",
+      "property_uri": "ex:isEssentialAminoAcid",
+      "target_id": "essential_amino_acids",
+      "evidence_span": "T=Threonine"
+    },
+    {
+      "source_id": "tryptophan",
+      "property_uri": "ex:isEssentialAminoAcid",
+      "target_id": "essential_amino_acids",
+      "evidence_span": "T=Tryptophan"
+    },
+    {
+      "source_id": "valine",
+      "property_uri": "ex:isEssentialAminoAcid",
+      "target_id": "essential_amino_acids",
+      "evidence_span": "V=Valine"
+    },
+    {
+      "source_id": "isoleucine",
+      "property_uri": "ex:isEssentialAminoAcid",
+      "target_id": "essential_amino_acids",
+      "evidence_span": "I=Isoleucine"
+    },
+    {
+      "source_id": "leucine",
+      "property_uri": "ex:isEssentialAminoAcid",
+      "target_id": "essential_amino_acids",
+      "evidence_span": "L=Leucine"
+    },
+    {
+      "source_id": "phenylalanine",
+      "property_uri": "ex:isEssentialAminoAcid",
+      "target_id": "essential_amino_acids",
+      "evidence_span": "P=Phenylalanine"
+    },
+    {
+      "source_id": "histidine",
+      "property_uri": "ex:isEssentialAminoAcid",
+      "target_id": "essential_amino_acids",
+      "evidence_span": "H=Histidine"
+    },
+    {
+      "source_id": "methionine",
+      "property_uri": "ex:isEssentialAminoAcid",
+      "target_id": "essential_amino_acids",
+      "evidence_span": "M=Methionine"
+    },
+    {
+      "source_id": "glycine",
+      "property_uri": "ex:isNonEssentialAminoAcid",
+      "target_id": "non_essential_amino_acids",
+      "evidence_span": "Glycine, Alanine, Serine, Cysteine, Aspargine, Aspartic acid, Glutamic acid, Glutamine, Tyrosine, and Proline."
+    },
+    {
+      "source_id": "alanine",
+      "property_uri": "ex:isNonEssentialAminoAcid",
+      "target_id": "non_essential_amino_acids",
+      "evidence_span": "Glycine, Alanine, Serine, Cysteine, Aspargine, Aspartic acid, Glutamic acid, Glutamine, Tyrosine, and Proline."
+    },
+    {
+      "source_id": "serine",
+      "property_uri": "ex:isNonEssentialAminoAcid",
+      "target_id": "non_essential_amino_acids",
+      "evidence_span": "Glycine, Alanine, Serine, Cysteine, Aspargine, Aspartic acid, Glutamic acid, Glutamine, Tyrosine, and Proline."
+    },
+    {
+      "source_id": "cysteine",
+      "property_uri": "ex:isNonEssentialAminoAcid",
+      "target_id": "non_essential_amino_acids",
+      "evidence_span": "Glycine, Alanine, Serine, Cysteine, Aspargine, Aspartic acid, Glutamic acid, Glutamine, Tyrosine, and Proline."
+    },
+    {
+      "source_id": "asparagine",
+      "property_uri": "ex:isNonEssentialAminoAcid",
+      "target_id": "non_essential_amino_acids",
+      "evidence_span": "Glycine, Alanine, Serine, Cysteine, Aspargine, Aspartic acid, Glutamic acid, Glutamine, Tyrosine, and Proline."
+    },
+    {
+      "source_id": "aspatic_acid",
+      "property_uri": "ex:isNonEssentialAminoAcid",
+      "target_id": "non_essential_amino_acids",
+      "evidence_span": "Glycine, Alanine, Serine, Cysteine, Aspargine, Aspartic acid, Glutamic acid, Glutamine, Tyrosine, and Proline."
+    },
+    {
+      "source_id": "glutamic_acid",
+      "property_uri": "ex:isNonEssentialAminoAcid",
+      "target_id": "non_essential_amino_acids",
+      "evidence_span": "Glycine, Alanine, Serine, Cysteine, Aspargine, Aspartic acid, Glutamic acid, Glutamine, Tyrosine, and Proline."
+    },
+    {
+      "source_id": "glutamine",
+      "property_uri": "ex:isNonEssentialAminoAcid",
+      "target_id": "non_essential_amino_acids",
+      "evidence_span": "Glycine, Alanine, Serine, Cysteine, Aspargine, Aspartic acid, Glutamic acid, Glutamine, Tyrosine, and Proline."
+    },
+    {
+      "source_id": "tyrosine",
+      "property_uri": "ex:isNonEssentialAminoAcid",
+      "target_id": "non_essential_amino_acids",
+      "evidence_span": "Glycine, Alanine, Serine, Cysteine, Aspargine, Aspartic acid, Glutamic acid, Glutamine, Tyrosine, and Proline."
+    },
+    {
+      "source_id": "proline",
+      "property_uri": "ex:isNonEssentialAminoAcid",
+      "target_id": "non_essential_amino_acids",
+      "evidence_span": "Glycine, Alanine, Serine, Cysteine, Aspargine, Aspartic acid, Glutamic acid, Glutamine, Tyrosine, and Proline."
+    },
+    {
+      "source_id": "arginine",
+      "property_uri": "ex:hasFunctionalGroup",
+      "target_id": "guanidino_group",
+      "evidence_span": "arginine (with guanidino group)"
+    },
+    {
+      "source_id": "histidine",
+      "property_uri": "ex:hasFunctionalGroup",
+      "target_id": "imidazole_ring",
+      "evidence_span": "histidine (with imidazole ring)"
+    },
+    {
+      "source_id": "tryptophan",
+      "property_uri": "ex:hasUniqueSideChain",
+      "target_id": "indole_ring",
+      "evidence_span": "tryptophan (which have an indole ring)"
+    },
+    {
+      "source_id": "proline",
+      "property_uri": "ex:hasUniqueSideChain",
+      "target_id": "pyrrolidine_ring",
+      "evidence_span": "proline, which has a Pyrrolidine ring."
+    },
+    {
+      "source_id": "proline",
+      "property_uri": "ex:hasFunctionalGroup",
+      "target_id": "imino_group",
+      "evidence_span": "it possesses an Imino group (=NH)."
+    },
+    {
+      "source_id": "gaba",
+      "property_uri": "ex:isGammaAminoAcid",
+      "target_id": "gamma_amino_acid",
+      "evidence_span": "e.g. GABA (Gamma Amino Butyric Acid)."
+    },
+    {
+      "source_id": "pvtlvphly_mnemonic",
+      "property_uri": "ex:isEssentialAminoAcid",
+      "target_id": "essential_amino_acids",
+      "evidence_span": "MATT VIL PHLy (Or) PVT TIM HALL"
+    }
+  ]
+}

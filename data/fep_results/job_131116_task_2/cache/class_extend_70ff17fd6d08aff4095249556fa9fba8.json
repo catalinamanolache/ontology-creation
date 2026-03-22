@@ -1,0 +1,61 @@
+{
+  "reasoning_steps": [
+    "The text introduces new processes and specific amino acids used for medical purposes, requiring the addition of new classes to cover these concepts."
+  ],
+  "classes": [
+    {
+      "uri": "ex:AminoAcidSynthesisProcess",
+      "bfo_parent": "bfo:Process",
+      "subclass_of": null,
+      "aristotelian_definition": "An AminoAcidSynthesisProcess is a Process that involves the chemical reactions necessary to produce an amino acid from precursor molecules.",
+      "comment": "This class covers various synthetic pathways for amino acids."
+    },
+    {
+      "uri": "ex:CyanideAdditionReaction",
+      "bfo_parent": "bfo:Process",
+      "subclass_of": null,
+      "aristotelian_definition": "A CyanideAdditionReaction is a Process that involves the addition of cyanide to an aldimine, resulting in the formation of amino acids.",
+      "comment": "This reaction is part of the Gabriel synthesis method."
+    },
+    {
+      "uri": "ex:PhthalimideSynthesisProcess",
+      "bfo_parent": "bfo:Process",
+      "subclass_of": null,
+      "aristotelian_definition": "A PhthalimideSynthesisProcess is a Process that involves treating an alpha halogenated acid ester with potassium phthalimide to produce substituted phthalimides, which are then hydrolyzed to yield amino acids.",
+      "comment": "This process is used in the preparation of certain amino acids."
+    },
+    {
+      "uri": "ex:NonStandardAminoAcid",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": null,
+      "aristotelian_definition": "A NonStandardAminoAcid is a MaterialEntity that does not conform to the standard set of 20 amino acids used in protein synthesis but has specific medical applications.",
+      "comment": "This class includes non-standard amino acids like D-Penicillamine."
+    },
+    {
+      "uri": "ex:DPenicillamine",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": null,
+      "aristotelian_definition": "DPenicillamine is a NonStandardAminoAcid that acts as a chelating agent and is used in the treatment of Wilson's disease.",
+      "comment": "It is a metabolite of penicillin with specific medical applications."
+    },
+    {
+      "uri": "ex:NAcetylcysteine",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": null,
+      "aristotelian_definition": "N-Acetylcysteine is a NonStandardAminoAcid that functions as an antioxidant and is used in the treatment of cystic fibrosis and chronic renal insufficiency.",
+      "comment": "It has various medical applications beyond amino acid synthesis."
+    },
+    {
+      "uri": "ex:Gabapentin",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": null,
+      "aristotelian_definition": "Gabapentin is a NonStandardAminoAcid that acts as an anticonvulsant and is used in the treatment of epilepsy.",
+      "comment": "It has specific medical uses unrelated to protein synthesis."
+    }
+  ],
+  "canonical_terms": {
+    "DPenicillamine": "ex:DPenicillamine",
+    "N-Acetylcysteine": "ex:NAcetylcysteine",
+    "Gabapentin": "ex:Gabapentin"
+  }
+}

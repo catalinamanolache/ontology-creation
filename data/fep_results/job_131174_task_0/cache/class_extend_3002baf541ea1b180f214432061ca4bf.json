@@ -1,0 +1,44 @@
+{
+  "reasoning_steps": [
+    "The text introduces new concepts related to the objectives and activities of CETO, as well as specific themes addressed in its annual reports.",
+    "New classes are identified for project leadership roles, thematic report categories, and economic indicators relevant to wind energy."
+  ],
+  "classes": [
+    {
+      "uri": "ex:CETOProjectLeader",
+      "bfo_parent": "bfo:Role",
+      "subclass_of": null,
+      "aristotelian_definition": "A CETOProjectLeader is a Role that coordinates and supports the CleanEnergyTechnologyObservatory project.",
+      "comment": "The role of coordinating and supporting the CETO project."
+    },
+    {
+      "uri": "ex:CETOThematicReportCategory",
+      "bfo_parent": "bfo:InformationContentEntity",
+      "subclass_of": null,
+      "aristotelian_definition": "A CETOThematicReportCategory is an InformationContentEntity that categorizes themes addressed in annual reports by the CleanEnergyTechnologyObservatory.",
+      "comment": "Categories for thematic reports produced annually."
+    },
+    {
+      "uri": "ex:EUEnergyTarget",
+      "bfo_parent": "bfo:Quality",
+      "subclass_of": null,
+      "aristotelian_definition": "An EUEnergyTarget is a Quality that represents the target share of renewable energy in final energy consumption by 2030 as per EU directives.",
+      "comment": "The target for renewable energy share set by EU."
+    },
+    {
+      "uri": "ex:WindEnergyContribution",
+      "bfo_parent": "bfo:Quality",
+      "subclass_of": null,
+      "aristotelian_definition": "A WindEnergyContribution is a Quality that measures the contribution of wind energy to final energy consumption.",
+      "comment": "The percentage share of wind energy in total energy consumption."
+    },
+    {
+      "uri": "ex:EUEconomicIndicator",
+      "bfo_parent": "bfo:Quality",
+      "subclass_of": null,
+      "aristotelian_definition": "An EUEconomicIndicator is a Quality that measures economic factors such as turnover, GVA, and employment within the EU wind sector.",
+      "comment": "Economic metrics for the EU wind energy sector."
+    }
+  ],
+  "canonical_terms": {}
+}

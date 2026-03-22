@@ -1,0 +1,37 @@
+{
+  "reasoning_steps": [
+    "The text introduces new concepts related to R&D investment percentages, critical raw materials, deployment opportunities for floating offshore wind, and supply risks.",
+    "New classes were created based on the strengths, weaknesses, opportunities, and threats mentioned in the CETO SWOT analysis."
+  ],
+  "classes": [
+    {
+      "uri": "ex:PrivateRDIFundingPercentage",
+      "bfo_parent": "bfo:Quality",
+      "subclass_of": null,
+      "aristotelian_definition": "A Quality indicating the percentage of private R&D funding invested by a region or organization.",
+      "comment": "Represents the cumulative percentage of private R&D funding invested in the EU from 2010 to 2020."
+    },
+    {
+      "uri": "ex:CriticalRawMaterial",
+      "bfo_parent": "bfo:InformationContentEntity",
+      "subclass_of": null,
+      "aristotelian_definition": "An InformationContentEntity that identifies materials with high supply risk and critical importance in manufacturing processes.",
+      "comment": "Identifies rare earth elements and processed materials used in wind power plants as critical raw materials."
+    },
+    {
+      "uri": "ex:DeploymentOpportunity",
+      "bfo_parent": "bfo:InformationContentEntity",
+      "subclass_of": null,
+      "aristotelian_definition": "An InformationContentEntity that outlines potential benefits of deploying new technologies or solutions.",
+      "comment": "Describes opportunities for floating offshore wind deployment in Member States with steep shorelines."
+    },
+    {
+      "uri": "ex:SupplyRiskFactor",
+      "bfo_parent": "bfo:Quality",
+      "subclass_of": null,
+      "aristotelian_definition": "A Quality that measures the risk of supply chain disruptions due to production scaling or material scarcity.",
+      "comment": "Assesses potential bottlenecks and risks for critical raw materials in wind energy technology."
+    }
+  ],
+  "canonical_terms": {}
+}

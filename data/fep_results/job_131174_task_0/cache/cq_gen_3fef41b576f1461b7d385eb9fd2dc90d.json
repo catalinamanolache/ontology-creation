@@ -1,0 +1,44 @@
+{
+  "questions": [
+    {
+      "question": "What is the R&I priority of the TWAIN project?",
+      "scope": "class"
+    },
+    {
+      "question": "How much funding does the ULTFARMS project receive?",
+      "scope": "instance"
+    },
+    {
+      "question": "Which projects focus on environmental impacts of wind energy and what are their main objectives?",
+      "scope": "property"
+    },
+    {
+      "question": "What is the primary goal of the MADE4WIND project in terms of material innovation?",
+      "scope": "class"
+    },
+    {
+      "question": "How does the WHISPER project aim to reduce CO2 emissions in shipping?",
+      "scope": "instance"
+    },
+    {
+      "question": "Which R&I priority received the most funding from 2014-2023 according to Figure 30?",
+      "scope": "property"
+    },
+    {
+      "question": "What was the main objective of the i4Offshore project?",
+      "scope": "class"
+    },
+    {
+      "question": "How much funding is allocated for small-scale projects under the Innovation Fund programme?",
+      "scope": "instance"
+    },
+    {
+      "question": "Which airborne wind energy system project aimed to reduce costs and carbon footprint compared to conventional HAWTs?",
+      "scope": "property"
+    },
+    {
+      "question": "What innovative technologies are included in the Nordsee Two Offshore Windfarm Innovation Project (N2OWF)?",
+      "scope": "class"
+    }
+  ]
+}

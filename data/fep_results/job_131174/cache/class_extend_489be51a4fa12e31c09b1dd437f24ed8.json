@@ -1,0 +1,43 @@
+{
+  "reasoning_steps": [
+    "The text introduces new concepts related to R&D investment priorities, innovation funding programs, value chain analysis indicators, market competitiveness factors, and energy system models used in Annex 3."
+  ],
+  "classes": [
+    {
+      "uri": "ex:RDIPriority",
+      "bfo_parent": "bfo:InformationContentEntity",
+      "subclass_of": null,
+      "aristotelian_definition": "An RDIPriority is an InformationContentEntity that specifies the main priorities for R&D investment in a specific program or initiative.",
+      "comment": "Represents the strategic focus areas identified by Horizon Europe and Innovation Fund."
+    },
+    {
+      "uri": "ex:InnovationFundProgram",
+      "bfo_parent": "bfo:InformationContentEntity",
+      "subclass_of": null,
+      "aristotelian_definition": "An InnovationFundProgram is an InformationContentEntity that outlines a programme focusing on innovation funding within the EU.",
+      "comment": "Describes the structure and objectives of the Innovation Fund."
+    },
+    {
+      "uri": "ex:ValueChainIndicator",
+      "bfo_parent": "bfo:Quality",
+      "subclass_of": null,
+      "aristotelian_definition": "A ValueChainIndicator is a Quality that measures aspects such as turnover, gross value added, employment, labour productivity, and energy intensity within the wind industry.",
+      "comment": "Captures key performance metrics used in analyzing the wind energy sector."
+    },
+    {
+      "uri": "ex:MarketCompetitivenessFactor",
+      "bfo_parent": "bfo:Quality",
+      "subclass_of": null,
+      "aristotelian_definition": "A MarketCompetitivenessFactor is a Quality that assesses elements such as global market leadership, trade balance (import/export), and resource efficiency in relation to EU competitiveness.",
+      "comment": "Evaluates the factors influencing the competitive position of EU companies in the wind energy sector."
+    },
+    {
+      "uri": "ex:EnergySystemModel",
+      "bfo_parent": "bfo:InformationContentEntity",
+      "subclass_of": null,
+      "aristotelian_definition": "An EnergySystemModel is an InformationContentEntity that represents models used for simulating and analyzing future scenarios of energy systems.",
+      "comment": "Includes specific models like POTEnCIA and POLES-JRC mentioned in Annex 3."
+    }
+  ],
+  "canonical_terms": {}
+}

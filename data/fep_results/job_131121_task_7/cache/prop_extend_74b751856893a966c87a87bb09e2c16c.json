@@ -1,0 +1,115 @@
+{
+  "reasoning_steps": [
+    "The source text provides classifications and examples for various types of amino acids that are not directly covered by existing properties in the ontology."
+  ],
+  "properties": [
+    {
+      "uri": "ex:classifiedAsEssentialAminoAcid",
+      "domain": "ex:AminoAcid",
+      "range": "ex:EssentialAminoAcid",
+      "comment": "An AminoAcid is classified as an EssentialAminoAcid."
+    },
+    {
+      "uri": "ex:classifiedAsNonEssentialAminoAcid",
+      "domain": "ex:AminoAcid",
+      "range": "ex:NonEssentialAminoAcid",
+      "comment": "An AminoAcid is classified as a NonEssentialAminoAcid."
+    },
+    {
+      "uri": "ex:classifiedAsSemiEssentialAminoAcid",
+      "domain": "ex:AminoAcid",
+      "range": "ex:SemiEssentialAminoAcid",
+      "comment": "An AminoAcid is classified as a SemiEssentialAminoAcid."
+    },
+    {
+      "uri": "ex:classifiedAsPurelyKetogenicAminoAcid",
+      "domain": "ex:AminoAcid",
+      "range": "ex:PurelyKetogenicAminoAcid",
+      "comment": "An AminoAcid is classified as a PurelyKetogenicAminoAcid."
+    },
+    {
+      "uri": "ex:classifiedAsKetogenicAndGlucogenicAminoAcid",
+      "domain": "ex:AminoAcid",
+      "range": "ex:KetogenicAndGlucogenicAminoAcid",
+      "comment": "An AminoAcid is classified as a KetogenicAndGlucogenicAminoAcid."
+    },
+    {
+      "uri": "ex:classifiedAsPurelyGlucogenicAminoAcid",
+      "domain": "ex:AminoAcid",
+      "range": "ex:PurelyGlucogenicAminoAcid",
+      "comment": "An AminoAcid is classified as a PurelyGlucogenicAminoAcid."
+    },
+    {
+      "uri": "ex:classifiedAsNonPolarAminoAcid",
+      "domain": "ex:AminoAcid",
+      "range": "ex:NonPolarAminoAcid",
+      "comment": "An AminoAcid is classified as a NonPolarAminoAcid."
+    },
+    {
+      "uri": "ex:classifiedAsPolarAminoAcidWithNoCharge",
+      "domain": "ex:AminoAcid",
+      "range": "ex:PolarAminoAcidWithNoCharge",
+      "comment": "An AminoAcid is classified as a PolarAminoAcidWithNoCharge."
+    },
+    {
+      "uri": "ex:classifiedAsPolarAminoAcidWithPositiveCharge",
+      "domain": "ex:AminoAcid",
+      "range": "ex:PolarAminoAcidWithPositiveCharge",
+      "comment": "An AminoAcid is classified as a PolarAminoAcidWithPositiveCharge."
+    },
+    {
+      "uri": "ex:classifiedAsPolarAminoAcidWithNegativeCharge",
+      "domain": "ex:AminoAcid",
+      "range": "ex:PolarAminoAcidWithNegativeCharge",
+      "comment": "An AminoAcid is classified as a PolarAminoAcidWithNegativeCharge."
+    },
+    {
+      "uri": "ex:classifiedAsAliphaticAminoAcid",
+      "domain": "ex:AminoAcid",
+      "range": "ex:AliphaticAminoAcid",
+      "comment": "An AminoAcid is classified as an AliphaticAminoAcid."
+    },
+    {
+      "uri": "ex:classifiedAsHydroxylGroupContainingAminoAcid",
+      "domain": "ex:AminoAcid",
+      "range": "ex:HydroxylGroupContainingAminoAcid",
+      "comment": "An AminoAcid is classified as a HydroxylGroupContainingAminoAcid."
+    },
+    {
+      "uri": "ex:classifiedAsSulphurContainingAminoAcid",
+      "domain": "ex:AminoAcid",
+      "range": "ex:SulphurContainingAminoAcid",
+      "comment": "An AminoAcid is classified as a SulphurContainingAminoAcid."
+    },
+    {
+      "uri": "ex:classifiedAsBasicAminoAcid",
+      "domain": "ex:AminoAcid",
+      "range": "ex:BasicAminoAcid",
+      "comment": "An AminoAcid is classified as a BasicAminoAcid."
+    },
+    {
+      "uri": "ex:classifiedAsAromaticAminoAcid",
+      "domain": "ex:AminoAcid",
+      "range": "ex:AromaticAminoAcid",
+      "comment": "An AminoAcid is classified as an AromaticAminoAcid."
+    },
+    {
+      "uri": "ex:classifiedAsIminoAcid",
+      "domain": "ex:AminoAcid",
+      "range": "ex:IminoAcid",
+      "comment": "An AminoAcid is classified as an IminoAcid."
+    },
+    {
+      "uri": "ex:classifiedAsBetaAminoAcid",
+      "domain": "ex:AminoAcid",
+      "range": "ex:BetaAminoAcid",
+      "comment": "An AminoAcid is classified as a BetaAminoAcid."
+    },
+    {
+      "uri": "ex:classifiedAsGammaAminoAcid",
+      "domain": "ex:AminoAcid",
+      "range": "ex:GammaAminoAcid",
+      "comment": "An AminoAcid is classified as a GammaAminoAcid."
+    }
+  ]
+}

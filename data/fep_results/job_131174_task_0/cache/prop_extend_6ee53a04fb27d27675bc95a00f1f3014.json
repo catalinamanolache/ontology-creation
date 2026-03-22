@@ -1,0 +1,49 @@
+{
+  "reasoning_steps": [
+    "The text introduces new concepts such as public RD&I funding analysis based on IEA classification codes and private RD&I investment trends within the EU. It also mentions venture capital investments in wind energy start-ups."
+  ],
+  "properties": [
+    {
+      "uri": "ex:hasIEAClassificationCode",
+      "domain": "ex:EUEconomicIndicator",
+      "range": "ex:IEAClassificationCode",
+      "comment": "Describes the IEA classification codes used for categorizing public R&D investments in wind energy."
+    },
+    {
+      "uri": "ex:hasCumulativePrivateRDIFundingShare",
+      "domain": "ex:EUEconomicIndicator",
+      "range": "xsd:string",
+      "comment": "Indicates the cumulative percentage of global private R&D funding attributed to the EU from 2010-2020."
+    },
+    {
+      "uri": "ex:hasHighConcentrationMSs",
+      "domain": "ex:EUEconomicIndicator",
+      "range": "xsd:string",
+      "comment": "Identifies MSs with high concentration of private R&D investment within the EU for wind energy."
+    },
+    {
+      "uri": "ex:hasTopGlobalRDIInvestors",
+      "domain": "ex:EUEconomicIndicator",
+      "range": "xsd:string",
+      "comment": "Lists companies among the top global R&D investors in the wind energy sector from 2015-2019."
+    },
+    {
+      "uri": "ex:hasVentureCapitalInvestment",
+      "domain": "ex:EUEconomicIndicator",
+      "range": "ex:VentureCapitalInvestment",
+      "comment": "Describes the type of private equity financing offered to start-ups and small businesses with high growth potential in the wind industry."
+    },
+    {
+      "uri": "ex:hasVCPEInvestmentLevel",
+      "domain": "ex:EUEconomicIndicator",
+      "range": "xsd:string",
+      "comment": "Indicates the global VC/PE investment level in the wind energy sector for a specific year compared to peak years."
+    },
+    {
+      "uri": "ex:hasMajorVCPEInvestmentRegion",
+      "domain": "ex:EUEconomicIndicator",
+      "range": "xsd:string",
+      "comment": "Identifies regions representing more than half of all VC/PE investments in the wind energy sector for a specific year."
+    }
+  ]
+}

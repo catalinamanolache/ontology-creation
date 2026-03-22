@@ -1,0 +1,44 @@
+{
+  "questions": [
+    {
+      "question": "What are the building blocks of proteins?",
+      "scope": "class"
+    },
+    {
+      "question": "How many amino acids are involved in protein synthesis?",
+      "scope": "instance"
+    },
+    {
+      "question": "What are the two functional groups present in amino acids?",
+      "scope": "property"
+    },
+    {
+      "question": "What is the difference between essential, non-essential, and semi-essential amino acids?",
+      "scope": "class"
+    },
+    {
+      "question": "Which amino acids are sweet, tasteless, or bitter?",
+      "scope": "instance"
+    },
+    {
+      "question": "Which amino acid is optically inactive and why?",
+      "scope": "instance"
+    },
+    {
+      "question": "What are the products of decarboxylation of Histidine, Tyrosine, and Tryptophan?",
+      "scope": "property"
+    },
+    {
+      "question": "What is the result of the Ninhydrin reaction with amino acids and imino acids?",
+      "scope": "property"
+    },
+    {
+      "question": "Which type of amino acids are manufactured in cells and incorporated into proteins?",
+      "scope": "class"
+    },
+    {
+      "question": "What are the consequences of essential amino acid deficiency?",
+      "scope": "property"
+    }
+  ]
+}

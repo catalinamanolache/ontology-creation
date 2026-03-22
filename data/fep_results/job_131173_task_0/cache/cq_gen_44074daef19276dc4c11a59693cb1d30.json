@@ -1,0 +1,44 @@
+{
+  "questions": [
+    {
+      "question": "What are the overall objectives of CETO?",
+      "scope": "class"
+    },
+    {
+      "question": "Which themes does CETO's annual reports address?",
+      "scope": "property"
+    },
+    {
+      "question": "Who is the project leader for the CETO project?",
+      "scope": "instance"
+    },
+    {
+      "question": "How much did EU wind energy contribute to final energy consumption in 2022?",
+      "scope": "instance"
+    },
+    {
+      "question": "What percentage of global wind turbine market share do Chinese companies hold according to the text?",
+      "scope": "instance"
+    },
+    {
+      "question": "Which European countries are leading suppliers for onshore and offshore wind markets?",
+      "scope": "property"
+    },
+    {
+      "question": "How much has the cost of onshore wind decreased between 2010 and 2022?",
+      "scope": "instance"
+    },
+    {
+      "question": "What is the global weighted average levelised cost of energy (LCoE) for offshore wind in 2023?",
+      "scope": "instance"
+    },
+    {
+      "question": "How many full-time equivalents did the EU wind sector employ in 2022?",
+      "scope": "instance"
+    },
+    {
+      "question": "What is the target share of renewable energy in final energy consumption by 2030 according to RED III?",
+      "scope": "class"
+    }
+  ]
+}

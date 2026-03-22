@@ -1,0 +1,37 @@
+{
+  "reasoning_steps": [
+    "The source text introduces new information about wind energy generation shares, projected capacities, cost trends, and economic indicators that are not covered by existing properties."
+  ],
+  "properties": [
+    {
+      "uri": "ex:hasWindEnergyGenerationShare",
+      "domain": "ex:EUEnergyTarget",
+      "range": "xsd:string",
+      "comment": "Describes the share of electricity generation attributed to wind energy in a given region or globally."
+    },
+    {
+      "uri": "ex:projectsInstalledCapacityForOnshoreWind",
+      "domain": "ex:WindEnergyDeploymentScenario",
+      "range": "xsd:string",
+      "comment": "Projects the installed capacity for onshore wind in Europe by 2030 and 2050 according to specific scenarios."
+    },
+    {
+      "uri": "ex:projectsInstalledCapacityForOffshoreWind",
+      "domain": "ex:WindEnergyDeploymentScenario",
+      "range": "xsd:string",
+      "comment": "Projects the installed capacity for offshore wind in Europe by 2030 and 2050 according to specific scenarios."
+    },
+    {
+      "uri": "ex:affectsLCoEReductionTrend",
+      "domain": "ex:LCoEReductionTrend",
+      "range": "xsd:string",
+      "comment": "Describes the trend of levelized cost of energy reduction for wind power over a specified period."
+    },
+    {
+      "uri": "ex:projectsCostReductionForOffshoreWindLCoE",
+      "domain": "ex:LCoEReductionTrend",
+      "range": "xsd:string",
+      "comment": "Projects the cost reduction trend for offshore wind LCoE from 2030 to 2050 according to specific scenarios."
+    }
+  ]
+}

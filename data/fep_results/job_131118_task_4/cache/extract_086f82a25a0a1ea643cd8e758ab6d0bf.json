@@ -1,0 +1,98 @@
+{
+  "reasoning_steps": [
+    "Identify and classify amino acids based on the provided text and ontology.",
+    "Ensure all extracted entities and relations adhere to the approved ontology."
+  ],
+  "entities": [
+    {
+      "id": "ex:valine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Valine"
+    },
+    {
+      "id": "ex:leucine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Leucine"
+    },
+    {
+      "id": "ex:isoleucine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Isoleucine"
+    },
+    {
+      "id": "ex:threonine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Threonine"
+    },
+    {
+      "id": "ex:methionine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Methionine"
+    },
+    {
+      "id": "ex:phenylalanine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Phenylalanine"
+    },
+    {
+      "id": "ex:tryptophan",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Tryptophan"
+    },
+    {
+      "id": "ex:lysine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Lysine"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "ex:valine",
+      "property_uri": "ex:classifiedAsEssentialAminoAcid",
+      "target_id": "ex:essential_amino_acids",
+      "evidence_span": "Valine"
+    },
+    {
+      "source_id": "ex:leucine",
+      "property_uri": "ex:classifiedAsEssentialAminoAcid",
+      "target_id": "ex:essential_amino_acids",
+      "evidence_span": "Leucine"
+    },
+    {
+      "source_id": "ex:isoleucine",
+      "property_uri": "ex:classifiedAsEssentialAminoAcid",
+      "target_id": "ex:essential_amino_acids",
+      "evidence_span": "Isoleucine"
+    },
+    {
+      "source_id": "ex:threonine",
+      "property_uri": "ex:classifiedAsEssentialAminoAcid",
+      "target_id": "ex:essential_amino_acids",
+      "evidence_span": "Threonine"
+    },
+    {
+      "source_id": "ex:methionine",
+      "property_uri": "ex:classifiedAsEssentialAminoAcid",
+      "target_id": "ex:essential_amino_acids",
+      "evidence_span": "Methionine"
+    },
+    {
+      "source_id": "ex:phenylalanine",
+      "property_uri": "ex:classifiedAsEssentialAminoAcid",
+      "target_id": "ex:essential_amino_acids",
+      "evidence_span": "Phenylalanine"
+    },
+    {
+      "source_id": "ex:tryptophan",
+      "property_uri": "ex:classifiedAsEssentialAminoAcid",
+      "target_id": "ex:essential_amino_acids",
+      "evidence_span": "Tryptophan"
+    },
+    {
+      "source_id": "ex:lysine",
+      "property_uri": "ex:classifiedAsEssentialAminoAcid",
+      "target_id": "ex:essential_amino_acids",
+      "evidence_span": "Lysine"
+    }
+  ]
+}

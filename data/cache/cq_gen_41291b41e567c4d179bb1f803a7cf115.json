@@ -1,0 +1,164 @@
+{
+  "questions": [
+    {
+      "question": "What are the essential amino acids?",
+      "scope": "class"
+    },
+    {
+      "question": "Which amino acids are classified as semi-essential?",
+      "scope": "class"
+    },
+    {
+      "question": "What are the non-essential amino acids?",
+      "scope": "class"
+    },
+    {
+      "question": "How are amino acids classified based on their structure?",
+      "scope": "class"
+    },
+    {
+      "question": "What is the classification of amino acids based on their nutritional requirement?",
+      "scope": "class"
+    },
+    {
+      "question": "Which amino acids contain sulfur?",
+      "scope": "class"
+    },
+    {
+      "question": "What are the acidic amino acids and their amides?",
+      "scope": "class"
+    },
+    {
+      "question": "Which amino acids are classified as basic?",
+      "scope": "class"
+    },
+    {
+      "question": "What are aromatic amino acids?",
+      "scope": "class"
+    },
+    {
+      "question": "What is the difference between alpha, beta, and gamma amino acids?",
+      "scope": "class"
+    },
+    {
+      "question": "How are amino acids classified based on their metabolic fates?",
+      "scope": "class"
+    },
+    {
+      "question": "What are the purely ketogenic amino acids?",
+      "scope": "class"
+    },
+    {
+      "question": "What are the ketogenic and glucogenic amino acids?",
+      "scope": "class"
+    },
+    {
+      "question": "What are the purely glucogenic amino acids?",
+      "scope": "class"
+    },
+    {
+      "question": "How are amino acids classified based on polarity?",
+      "scope": "class"
+    },
+    {
+      "question": "What are non-polar amino acids?",
+      "scope": "class"
+    },
+    {
+      "question": "What are polar amino acids with no charge on the R group?",
+      "scope": "class"
+    },
+    {
+      "question": "What are polar amino acids with a positive charge on the R group?",
+      "scope": "class"
+    },
+    {
+      "question": "What are polar amino acids with a negative charge on the R group?",
+      "scope": "class"
+    },
+    {
+      "question": "What is the Strecker synthesis for amino acids?",
+      "scope": "property"
+    },
+    {
+      "question": "What is the role of essential amino acids in maintaining nitrogen balance?",
+      "scope": "property"
+    },
+    {
+      "question": "What is the characteristic feature of imino acids like proline?",
+      "scope": "property"
+    },
+    {
+      "question": "Which amino acids are considered branched-chain amino acids?",
+      "scope": "class"
+    },
+    {
+      "question": "Which amino acids contain hydroxyl groups?",
+      "scope": "class"
+    },
+    {
+      "question": "Which amino acids contain sulfur in their structure?",
+      "scope": "class"
+    },
+    {
+      "question": "What are the amide derivatives of aspartic acid and glutamic acid?",
+      "scope": "class"
+    },
+    {
+      "question": "Which amino acids have a guanidino group?",
+      "scope": "class"
+    },
+    {
+      "question": "Which amino acids have an imidazole ring?",
+      "scope": "class"
+    },
+    {
+      "question": "Which amino acids have an indole ring?",
+      "scope": "class"
+    },
+    {
+      "question": "Which amino acids have a pyrrolidine ring?",
+      "scope": "class"
+    },
+    {
+      "question": "What is the difference between an amino group and an imino group in amino acids?",
+      "scope": "property"
+    },
+    {
+      "question": "Are all naturally occurring amino acids alpha-L-amino acids?",
+      "scope": "instance"
+    },
+    {
+      "question": "What is an example of a beta-amino acid?",
+      "scope": "instance"
+    },
+    {
+      "question": "What is an example of a gamma-amino acid?",
+      "scope": "instance"
+    },
+    {
+      "question": "Are histidine and arginine required in the diet of mature individuals?",
+      "scope": "instance"
+    },
+    {
+      "question": "Which amino acids are purely ketogenic?",
+      "scope": "class"
+    },
+    {
+      "question": "Which amino acids are partially ketogenic and partially glucogenic?",
+      "scope": "class"
+    },
+    {
+      "question": "Which amino acids are purely glucogenic?",
+      "scope": "class"
+    },
+    {
+      "question": "Which amino acids are considered hydrophobic?",
+      "scope": "class"
+    },
+    {
+      "question": "Which amino acids contribute to protein structure hydrogen bonding due to their R group?",
+      "scope": "class"
+    }
+  ]
+}

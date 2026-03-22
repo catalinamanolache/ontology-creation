@@ -1,0 +1,44 @@
+{
+  "questions": [
+    {
+      "question": "What are the main priorities for R&D investment in Horizon Europe?",
+      "scope": "class"
+    },
+    {
+      "question": "Which programme focuses on innovation funding within the EU?",
+      "scope": "class"
+    },
+    {
+      "question": "How does turnover affect the analysis of the wind energy value chain?",
+      "scope": "property"
+    },
+    {
+      "question": "What is the role of EU companies in the wind energy sector?",
+      "scope": "instance"
+    },
+    {
+      "question": "Which indicators are used to assess labour productivity and energy intensity in the wind industry?",
+      "scope": "class"
+    },
+    {
+      "question": "How does global market leadership impact EU competitiveness in the wind energy sector?",
+      "scope": "property"
+    },
+    {
+      "question": "What is the purpose of the Clean Energy Technology Observatory (CETO)?",
+      "scope": "instance"
+    },
+    {
+      "question": "Which models are used for energy system scenarios in Annex 3?",
+      "scope": "class"
+    },
+    {
+      "question": "How does R&I project funding under Horizon Europe contribute to SET-Plan targets?",
+      "scope": "property"
+    },
+    {
+      "question": "What is the significance of trade balance (import/export) for EU competitiveness in wind energy?",
+      "scope": "property"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "reasoning_steps": [
+    "The new source text introduces several projects with specific R&I priorities, funding amounts, and objectives that are not covered by existing properties."
+  ],
+  "properties": [
+    {
+      "uri": "ex:hasRIPriority",
+      "domain": "ex:InformationContentEntity",
+      "range": "xsd:string",
+      "comment": "Describes the Research & Innovation priority of a project."
+    },
+    {
+      "uri": "ex:fundingAmount",
+      "domain": "ex:InformationContentEntity",
+      "range": "xsd:decimal",
+      "comment": "Indicates the funding amount allocated to a specific project in Euros."
+    }
+  ]
+}

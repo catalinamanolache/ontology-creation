@@ -1,0 +1,452 @@
+{
+  "reasoning_steps": [
+    "Identified new relationships described in the text that are not covered by existing properties.",
+    "Created new properties with appropriate URIs, domains, and ranges based on the identified relationships and available classes."
+  ],
+  "properties": [
+    {
+      "uri": "ex:isProducedByNucleophilicAdditionOfAmmoniaToAldehyde",
+      "domain": "ex:AminoAcid",
+      "range": "xsd:string",
+      "comment": "Indicates if an amino acid is produced by the nucleophilic addition of ammonia to an aldehyde."
+    },
+    {
+      "uri": "ex:isProducedByRemovingWaterAndAddingCyanideToAldimine",
+      "domain": "ex:AlphaAminoAcid",
+      "range": "xsd:string",
+      "comment": "Indicates if an alpha amino acid is produced by removing water and then adding cyanide to aldimine."
+    },
+    {
+      "uri": "ex:isProducedByTreatingAlphaHalogenatedAcidEsterWithPotassiumPhthalimideAndHydrolysis",
+      "domain": "ex:AminoAcid",
+      "range": "xsd:string",
+      "comment": "Indicates if an amino acid is produced via the Gabriel Phthalimide Synthesis."
+    },
+    {
+      "uri": "ex:isUsedToTreatSchizophrenia",
+      "domain": "ex:AminoAcid",
+      "range": "xsd:boolean",
+      "comment": "Indicates if an amino acid is used to treat schizophrenia."
+    },
+    {
+      "uri": "ex:isUsedToTreatStroke",
+      "domain": "ex:AminoAcid",
+      "range": "xsd:boolean",
+      "comment": "Indicates if an amino acid is used to treat stroke."
+    },
+    {
+      "uri": "ex:isUsedToTreatSleepIssues",
+      "domain": "ex:AminoAcid",
+      "range": "xsd:boolean",
+      "comment": "Indicates if an amino acid is used to treat sleep issues."
+    },
+    {
+      "uri": "ex:isUsedToTreatBPH",
+      "domain": "ex:AminoAcid",
+      "range": "xsd:boolean",
+      "comment": "Indicates if an amino acid is used to treat Benign Prostatic Hyperplasia (BPH)."
+    },
+    {
+      "uri": "ex:isUsedToTreatMetabolicSyndrome",
+      "domain": "ex:AminoAcid",
+      "range": "xsd:boolean",
+      "comment": "Indicates if an amino acid is used to treat metabolic syndrome."
+    },
+    {
+      "uri": "ex:isUsedToTreatInheritedMetabolicIllnesses",
+      "domain": "ex:AminoAcid",
+      "range": "xsd:boolean",
+      "comment": "Indicates if an amino acid is used to treat inherited metabolic illnesses."
+    },
+    {
+      "uri": "ex:isUsedToBoostImmunity",
+      "domain": "ex:AminoAcid",
+      "range": "xsd:boolean",
+      "comment": "Indicates if an amino acid is used to boost immunity."
+    },
+    {
+      "uri": "ex:isUsedToProvideEnergyToBrainAndCentralNervousSystem",
+      "domain": "ex:AminoAcid",
+      "range": "xsd:boolean",
+      "comment": "Indicates if an amino acid is used to provide energy to the brain and central nervous system."
+    },
+    {
+      "uri": "ex:increasesPhysicalPerformance",
+      "domain": "ex:AminoAcid",
+      "range": "xsd:boolean",
+      "comment": "Indicates if an amino acid increases physical performance."
+    },
+    {
+      "uri": "ex:preventsMuscleLoss",
+      "domain": "ex:AminoAcid",
+      "range": "xsd:boolean",
+      "comment": "Indicates if an amino acid prevents muscle loss."
+    },
+    {
+      "uri": "ex:lowersBloodGlucoseInType2Diabetes",
+      "domain": "ex:AminoAcid",
+      "range": "xsd:boolean",
+      "comment": "Indicates if an amino acid lowers blood glucose levels in type 2 diabetes."
+    },
+    {
+      "uri": "ex:isRequiredForChildrensOptimumGrowth",
+      "domain": "ex:AminoAcid",
+      "range": "xsd:boolean",
+      "comment": "Indicates if an amino acid is required for children's optimum growth."
+    },
+    {
+      "uri": "ex:maintainsNitrogenBalanceInAdults",
+      "domain": "ex:AminoAcid",
+      "range": "xsd:boolean",
+      "comment": "Indicates if an amino acid is required for maintaining nitrogen balance in adults."
+    },
+    {
+      "uri": "ex:isUsedToResearchProteinStructureAndFunction",
+      "domain": "ex:AminoAcid",
+      "range": "xsd:boolean",
+      "comment": "Indicates if an amino acid is used to research protein structure and function."
+    },
+    {
+      "uri": "ex:isUsedToTreatDepression",
+      "domain": "ex:AminoAcid",
+      "range": "xsd:boolean",
+      "comment": "Indicates if an amino acid is used to treat depression."
+    },
+    {
+      "uri": "ex:isUsedToTreatParkinsonsDisease",
+      "domain": "ex:AminoAcid",
+      "range": "xsd:boolean",
+      "comment": "Indicates if an amino acid is used to treat Parkinson's disease."
+    },
+    {
+      "uri": "ex:isUsedToTreatMultipleSclerosis",
+      "domain": "ex:AminoAcid",
+      "range": "xsd:boolean",
+      "comment": "Indicates if an amino acid is used to treat multiple sclerosis."
+    },
+    {
+      "uri": "ex:isUsedToTreatPain",
+      "domain": "ex:AminoAcid",
+      "range": "xsd:boolean",
+      "comment": "Indicates if an amino acid is used to treat pain."
+    },
+    {
+      "uri": "ex:isUsedToTreatAcupunctureAnesthesia",
+      "domain": "ex:AminoAcid",
+      "range": "xsd:boolean",
+      "comment": "Indicates if an amino acid is used to treat acupuncture anesthesia."
+    },
+    {
+      "uri": "ex:isUsedToTreatOsteoarthritis",
+      "domain": "ex:AminoAcid",
+      "range": "xsd:boolean",
+      "comment": "Indicates if an amino acid is used to treat osteoarthritis."
+    },
+    {
+      "uri": "ex:isUtilizedInProductionOfThyroidHormone",
+      "domain": "ex:AminoAcid",
+      "range": "xsd:boolean",
+      "comment": "Indicates if an amino acid is utilized in the production of thyroid hormone."
+    },
+    {
+      "uri": "ex:improvesMentalPerformance",
+      "domain": "ex:AminoAcid",
+      "range": "xsd:boolean",
+      "comment": "Indicates if an amino acid improves mental performance."
+    },
+    {
+      "uri": "ex:improvesAlertness",
+      "domain": "ex:AminoAcid",
+      "range": "xsd:boolean",
+      "comment": "Indicates if an amino acid improves alertness."
+    },
+    {
+      "uri": "ex:improvesMemory",
+      "domain": "ex:AminoAcid",
+      "range": "xsd:boolean",
+      "comment": "Indicates if an amino acid improves memory."
+    },
+    {
+      "uri": "ex:isSignificantForBrainAndCentralNervousSystemFunction",
+      "domain": "ex:AminoAcid",
+      "range": "xsd:boolean",
+      "comment": "Indicates if an amino acid is significant for the brain and central nervous system to function correctly."
+    },
+    {
+      "uri": "ex:isUsedToBoostEfficiencyOfCorticosteroidMedications",
+      "domain": "ex:AminoAcid",
+      "range": "xsd:boolean",
+      "comment": "Indicates if an amino acid is used to boost the efficiency of corticosteroid medications."
+    },
+    {
+      "uri": "ex:isUsedInTreatmentOfSurgeryAndTrauma",
+      "domain": "ex:AminoAcid",
+      "range": "xsd:boolean",
+      "comment": "Indicates if an amino acid is used in the treatment of surgery and trauma."
+    },
+    {
+      "uri": "ex:isUsedToTreatSpinalSpasticity",
+      "domain": "ex:AminoAcid",
+      "range": "xsd:boolean",
+      "comment": "Indicates if an amino acid is used to treat spinal spasticity."
+    },
+    {
+      "uri": "ex:isUsedToTreatFamilialSpasticParaparesis",
+      "domain": "ex:AminoAcid",
+      "range": "xsd:boolean",
+      "comment": "Indicates if an amino acid is used to treat familial spastic paraparesis."
+    },
+    {
+      "uri": "ex:isUsedToTreatAmyotrophicLateralSclerosis",
+      "domain": "ex:AminoAcid",
+      "range": "xsd:boolean",
+      "comment": "Indicates if an amino acid is used to treat amyotrophic lateral sclerosis."
+    },
+    {
+      "uri": "ex:isUsedToPreventAndCureInflammation",
+      "domain": "ex:AminoAcid",
+      "range": "xsd:boolean",
+      "comment": "Indicates if an amino acid is used to prevent and cure inflammation."
+    },
+    {
+      "uri": "ex:isUsedToPreventAndCureLiverIllness",
+      "domain": "ex:AminoAcid",
+      "range": "xsd:boolean",
+      "comment": "Indicates if an amino acid is used to prevent and cure liver illness."
+    },
+    {
+      "uri": "ex:isUsedToPreventAndCureMuscleDiscomfort",
+      "domain": "ex:AminoAcid",
+      "range": "xsd:boolean",
+      "comment": "Indicates if an amino acid is used to prevent and cure muscle discomfort."
+    },
+    {
+      "uri": "ex:isUsedToTreatAnxiety",
+      "domain": "ex:AminoAcid",
+      "range": "xsd:boolean",
+      "comment": "Indicates if an amino acid is used to treat anxiety."
+    },
+    {
+      "uri": "ex:isUsedToBoostGrowthHormoneProduction",
+      "domain": "ex:AminoAcid",
+      "range": "xsd:boolean",
+      "comment": "Indicates if an amino acid is used to boost growth hormone production."
+    },
+    {
+      "uri": "ex:improvesJointHealth",
+      "domain": "ex:AminoAcid",
+      "range": "xsd:boolean",
+      "comment": "Indicates if an amino acid improves joint health."
+    },
+    {
+      "uri": "ex:improvesSkinHealth",
+      "domain": "ex:AminoAcid",
+      "range": "xsd:boolean",
+      "comment": "Indicates if an amino acid improves skin health."
+    },
+    {
+      "uri": "ex:helpsWithMuscleDevelopment",
+      "domain": "ex:AminoAcid",
+      "range": "xsd:boolean",
+      "comment": "Indicates if an amino acid helps with muscle development."
+    },
+    {
+      "uri": "ex:helpsWithInjuryHealing",
+      "domain": "ex:AminoAcid",
+      "range": "xsd:boolean",
+      "comment": "Indicates if an amino acid helps with injury healing."
+    },
+    {
+      "uri": "ex:isRequiredForTheFormationOfCollagen",
+      "domain": "ex:AminoAcid",
+      "range": "xsd:boolean",
+      "comment": "Indicates if an amino acid is required for the formation of collagen."
+    },
+    {
+      "uri": "ex:isUsedToTreatStress",
+      "domain": "ex:AminoAcid",
+      "range": "xsd:boolean",
+      "comment": "Indicates if an amino acid is used to treat stress."
+    },
+    {
+      "uri": "ex:isUsedToTreatExhaustion",
+      "domain": "ex:AminoAcid",
+      "range": "xsd:boolean",
+      "comment": "Indicates if an amino acid is used to treat exhaustion."
+    },
+    {
+      "uri": "ex:aidsInEnergyGenerationFromCarbohydrates",
+      "domain": "ex:AminoAcid",
+      "range": "xsd:boolean",
+      "comment": "Indicates if an amino acid aids in energy generation from carbohydrates."
+    },
+    {
+      "uri": "ex:aidsInManufacturingOfRNAAndDNA",
+      "domain": "ex:AminoAcid",
+      "range": "xsd:boolean",
+      "comment": "Indicates if an amino acid aids in the manufacturing of RNA and DNA."
+    },
+    {
+      "uri": "ex:isNecessaryForBrainDevelopmentAndFunction",
+      "domain": "ex:AminoAcid",
+      "range": "xsd:boolean",
+      "comment": "Indicates if an amino acid is necessary for brain development and function."
+    },
+    {
+      "uri": "ex:servesAsEnergySourceForTheBrain",
+      "domain": "ex:AminoAcid",
+      "range": "xsd:boolean",
+      "comment": "Indicates if an amino acid serves as a source of energy for the brain."
+    },
+    {
+      "uri": "ex:improvesBrainClarity",
+      "domain": "ex:AminoAcid",
+      "range": "xsd:boolean",
+      "comment": "Indicates if an amino acid improves brain clarity."
+    },
+    {
+      "uri": "ex:improvesMood",
+      "domain": "ex:AminoAcid",
+      "range": "xsd:boolean",
+      "comment": "Indicates if an amino acid improves mood."
+    },
+    {
+      "uri": "ex:isUsedToTreatAcne",
+      "domain": "ex:AminoAcid",
+      "range": "xsd:boolean",
+      "comment": "Indicates if an amino acid is used to treat acne."
+    },
+    {
+      "uri": "ex:isUsedToTreatPhotoaging",
+      "domain": "ex:AminoAcid",
+      "range": "xsd:boolean",
+      "comment": "Indicates if an amino acid is used to treat photoaging."
+    },
+    {
+      "uri": "ex:isUsedToTreatDrySkin",
+      "domain": "ex:AminoAcid",
+      "range": "xsd:boolean",
+      "comment": "Indicates if an amino acid is used to treat dry skin."
+    },
+    {
+      "uri": "ex:isUsedToTreatPsoriasis",
+      "domain": "ex:AminoAcid",
+      "range": "xsd:boolean",
+      "comment": "Indicates if an amino acid is used to treat psoriasis."
+    },
+    {
+      "uri": "ex:isUsedToTreatMelasma",
+      "domain": "ex:AminoAcid",
+      "range": "xsd:boolean",
+      "comment": "Indicates if an amino acid is used to treat melasma."
+    },
+    {
+      "uri": "ex:hasBeenStudiedForFibromyalgia",
+      "domain": "ex:AminoAcid",
+      "range": "xsd:boolean",
+      "comment": "Indicates if an amino acid has been studied for fibromyalgia."
+    },
+    {
+      "uri": "ex:hasBeenStudiedForDentalScaling",
+      "domain": "ex:AminoAcid",
+      "range": "xsd:boolean",
+      "comment": "Indicates if an amino acid has been studied for dental scaling."
+    },
+    {
+      "uri": "ex:hasBeenStudiedForDryMouth",
+      "domain": "ex:AminoAcid",
+      "range": "xsd:boolean",
+      "comment": "Indicates if an amino acid has been studied for dry mouth."
+    },
+    {
+      "uri": "ex:isUsedForPreventionAndTreatmentOfUrinaryTractStones",
+      "domain": "ex:AminoAcid",
+      "range": "xsd:boolean",
+      "comment": "Indicates if an amino acid is used for the prevention and treatment of urinary tract stones."
+    },
+    {
+      "uri": "ex:isUsedToKeepBloodSugarLevelsUnderControlAndConsistent",
+      "domain": "ex:AminoAcid",
+      "range": "xsd:boolean",
+      "comment": "Indicates if an amino acid is used to keep blood sugar levels under control and consistent."
+    },
+    {
+      "uri": "ex:isUsedInHealthSupplementsToSupportSportsAndPerformance",
+      "domain": "ex:AminoAcid",
+      "range": "xsd:boolean",
+      "comment": "Indicates if an amino acid is used in health supplements to support sports and performance."
+    },
+    {
+      "uri": "ex:isUtilizedToHelpWithLiverFunction",
+      "domain": "ex:AminoAcid",
+      "range": "xsd:boolean",
+      "comment": "Indicates if an amino acid is utilized to help with liver function."
+    },
+    {
+      "uri": "ex:isUtilizedToHelpWithWoundHealing",
+      "domain": "ex:AminoAcid",
+      "range": "xsd:boolean",
+      "comment": "Indicates if an amino acid is utilized to help with wound healing."
+    },
+    {
+      "uri": "ex:hasAntiatherogenicEffects",
+      "domain": "ex:AminoAcid",
+      "range": "xsd:boolean",
+      "comment": "Indicates if an amino acid has antiatherogenic effects."
+    },
+    {
+      "uri": "ex:hasAntiischemicEffects",
+      "domain": "ex:AminoAcid",
+      "range": "xsd:boolean",
+      "comment": "Indicates if an amino acid has anti-ischemic effects."
+    },
+    {
+      "uri": "ex:hasAntiplateletEffects",
+      "domain": "ex:AminoAcid",
+      "range": "xsd:boolean",
+      "comment": "Indicates if an amino acid has antiplatelet effects."
+    },
+    {
+      "uri": "ex:hasAntithromboticEffects",
+      "domain": "ex:AminoAcid",
+      "range": "xsd:boolean",
+      "comment": "Indicates if an amino acid has antithrombotic effects."
+    },
+    {
+      "uri": "ex:appearsToMinimizeColdSores",
+      "domain": "ex:AminoAcid",
+      "range": "xsd:boolean",
+      "comment": "Indicates if an amino acid appears to minimize cold sores."
+    },
+    {
+      "uri": "ex:isCriticalInBabyFeeding",
+      "domain": "ex:AminoAcid",
+      "range": "xsd:boolean",
+      "comment": "Indicates if an amino acid is critical in baby feeding."
+    },
+    {
+      "uri": "ex:isEmployedInChelationTherapyOfWilsonsDisease",
+      "domain": "ex:NonStandardAminoAcid",
+      "range": "xsd:boolean",
+      "comment": "Indicates if a non-standard amino acid is employed in the chelation therapy of Wilson's disease."
+    },
+    {
+      "uri": "ex:functionsAsAntioxidantInCysticFibrosisAndChronicRenalInsufficiency",
+      "domain": "ex:NonStandardAminoAcid",
+      "range": "xsd:boolean",
+      "comment": "Indicates if a non-standard amino acid functions as an antioxidant in cystic fibrosis and chronic renal insufficiency."
+    },
+    {
+      "uri": "ex:isUsedAsAnticonvulsant",
+      "domain": "ex:NonStandardAminoAcid",
+      "range": "xsd:boolean",
+      "comment": "Indicates if a non-standard amino acid is used as an anticonvulsant."
+    },
+    {
+      "uri": "ex:hasChemicalName",
+      "domain": "ex:AminoAcid",
+      "range": "xsd:string",
+      "comment": "Relates an amino acid to its chemical name."
+    }
+  ]
+}

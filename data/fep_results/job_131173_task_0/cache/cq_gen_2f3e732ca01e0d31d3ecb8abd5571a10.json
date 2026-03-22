@@ -1,0 +1,44 @@
+{
+  "questions": [
+    {
+      "question": "What is the title of the report?",
+      "scope": "instance"
+    },
+    {
+      "question": "Who are the authors of the report?",
+      "scope": "instance"
+    },
+    {
+      "question": "What is the publication year of the report?",
+      "scope": "instance"
+    },
+    {
+      "question": "Which organization published this report?",
+      "scope": "class"
+    },
+    {
+      "question": "What is the purpose of the Clean Energy Technology Observatory?",
+      "scope": "property"
+    },
+    {
+      "question": "Who is Lucie Mc Govern and what is her role in relation to the report?",
+      "scope": "instance"
+    },
+    {
+      "question": "What methodology was used for compiling this report?",
+      "scope": "property"
+    },
+    {
+      "question": "Which countries are included in the EU 27 deployment mentioned in the report?",
+      "scope": "class"
+    },
+    {
+      "question": "How does the report categorize technology readiness levels (TRL)?",
+      "scope": "property"
+    },
+    {
+      "question": "What sources of data were used for compiling this report?",
+      "scope": "property"
+    }
+  ]
+}

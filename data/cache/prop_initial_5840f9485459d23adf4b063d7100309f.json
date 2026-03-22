@@ -1,0 +1,68 @@
+{
+  "reasoning_steps": [
+    "The text explicitly states that proteins are made up of amino acids, and amino acids contain amino and carboxyl groups.",
+    "The text also describes the R group as unique to each amino acid and mentions that only L-amino acids are incorporated into proteins."
+  ],
+  "properties": [
+    {
+      "uri": "ex:hasBuildingBlock",
+      "domain": "ex:Protein",
+      "range": "ex:AminoAcid",
+      "comment": "Relates a protein to the amino acids that constitute it."
+    },
+    {
+      "uri": "ex:hasFunctionalGroup",
+      "domain": "ex:AminoAcid",
+      "range": "ex:AminoGroup",
+      "comment": "Relates an amino acid to its basic amino functional group."
+    },
+    {
+      "uri": "ex:hasFunctionalGroup",
+      "domain": "ex:AminoAcid",
+      "range": "ex:CarboxylGroup",
+      "comment": "Relates an amino acid to its acidic carboxyl functional group."
+    },
+    {
+      "uri": "ex:hasUniqueSideChain",
+      "domain": "ex:AminoAcid",
+      "range": "ex:RGroup",
+      "comment": "Relates an amino acid to its unique organic R group or side chain."
+    },
+    {
+      "uri": "ex:isIncorporatedInto",
+      "domain": "ex:AminoAcid",
+      "range": "ex:Protein",
+      "comment": "Relates an amino acid that is incorporated into proteins."
+    },
+    {
+      "uri": "ex:isSynthesizedByBody",
+      "domain": "ex:AminoAcid",
+      "range": "xsd:boolean",
+      "comment": "Indicates whether an amino acid can be synthesized by the body."
+    },
+    {
+      "uri": "ex:hasTaste",
+      "domain": "ex:AminoAcid",
+      "range": "xsd:string",
+      "comment": "Describes the taste characteristic of an amino acid."
+    },
+    {
+      "uri": "ex:hasOpticalActivity",
+      "domain": "ex:AminoAcid",
+      "range": "xsd:boolean",
+      "comment": "Indicates whether an amino acid exhibits optical activity."
+    },
+    {
+      "uri": "ex:undergoesDecarboxylationTo",
+      "domain": "ex:AminoAcid",
+      "range": "xsd:string",
+      "comment": "Describes the product formed after decarboxylation of an amino acid."
+    },
+    {
+      "uri": "ex:reactsWithNinhydrinToGive",
+      "domain": "ex:AminoAcid",
+      "range": "xsd:string",
+      "comment": "Describes the color produced when an amino acid reacts with Ninhydrin."
+    }
+  ]
+}

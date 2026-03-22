@@ -1,0 +1,72 @@
+{
+  "reasoning_steps": [
+    "The text introduces new concepts related to research funding priorities, project objectives, and recycling solutions for wind energy components.",
+    "New classes are required to represent specific projects and their objectives."
+  ],
+  "classes": [
+    {
+      "uri": "ex:Blades2BuildProject",
+      "bfo_parent": "bfo:InformationContentEntity",
+      "subclass_of": null,
+      "aristotelian_definition": "A Blades2BuildProject is an Information Content Entity that represents a project aimed at developing recycling solutions for wind turbine blades.",
+      "comment": "This class captures the specific objectives and funding details of the Blades2Build project."
+    },
+    {
+      "uri": "ex:REFRESHProject",
+      "bfo_parent": "bfo:InformationContentEntity",
+      "subclass_of": null,
+      "aristotelian_definition": "A REFRESHProject is an Information Content Entity that represents a project aimed at creating a circular, smart system for recycling wind turbine components.",
+      "comment": "This class captures the specific objectives and funding details of the REFRESH project."
+    },
+    {
+      "uri": "ex:EoLOHUBsProject",
+      "bfo_parent": "bfo:InformationContentEntity",
+      "subclass_of": null,
+      "aristotelian_definition": "An EoLOHUBsProject is an Information Content Entity that represents a project aimed at developing efficient circular economies for wind turbine blades.",
+      "comment": "This class captures the specific objectives and funding details of the EoLO-HUBs project."
+    },
+    {
+      "uri": "ex:GR4FITE3Project",
+      "bfo_parent": "bfo:InformationContentEntity",
+      "subclass_of": null,
+      "aristotelian_definition": "A GR4FITE3Project is an Information Content Entity that represents a project aimed at establishing a sustainable supply chain for lithium-ion batteries.",
+      "comment": "This class captures the specific objectives and funding details of the GR4FITE3 project."
+    },
+    {
+      "uri": "ex:WHEELProject",
+      "bfo_parent": "bfo:InformationContentEntity",
+      "subclass_of": null,
+      "aristotelian_definition": "A WHEELProject is an Information Content Entity that represents a project aimed at demonstrating and bringing to pre-commercial TRL a novel floating wind technology.",
+      "comment": "This class captures the specific objectives and funding details of the WHEEL project."
+    },
+    {
+      "uri": "ex:BLOWProject",
+      "bfo_parent": "bfo:InformationContentEntity",
+      "subclass_of": null,
+      "aristotelian_definition": "A BLOWProject is an Information Content Entity that represents a project aimed at developing a 5 MW demonstrator in the Black Sea for floating offshore wind farms.",
+      "comment": "This class captures the specific objectives and funding details of the BLOW project."
+    },
+    {
+      "uri": "ex:ShareWindProject",
+      "bfo_parent": "bfo:InformationContentEntity",
+      "subclass_of": null,
+      "aristotelian_definition": "A ShareWindProject is an Information Content Entity that represents a project aimed at studying the use of shared anchors to reduce construction costs of floating wind turbines.",
+      "comment": "This class captures the specific objectives and funding details of the ShareWind project."
+    },
+    {
+      "uri": "ex:WILLOWProject",
+      "bfo_parent": "bfo:InformationContentEntity",
+      "subclass_of": null,
+      "aristotelian_definition": "A WILLOWProject is an Information Content Entity that represents a project aimed at developing a data-driven smart curtailment solution for grid integration.",
+      "comment": "This class captures the specific objectives and funding details of the WILLOW project."
+    },
+    {
+      "uri": "ex:InterOPERAProject",
+      "bfo_parent": "bfo:InformationContentEntity",
+      "subclass_of": null,
+      "aristotelian_definition": "An InterOPERAProject is an Information Content Entity that represents a project aimed at improving grid-forming capabilities of offshore and onshore converters.",
+      "comment": "This class captures the specific objectives and funding details of the InterOPERA project."
+    }
+  ],
+  "canonical_terms": {}
+}

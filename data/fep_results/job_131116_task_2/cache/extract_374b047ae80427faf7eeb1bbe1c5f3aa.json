@@ -1,0 +1,395 @@
+{
+  "reasoning_steps": [
+    "Identify amino acids mentioned in the text.",
+    "Match identified amino acids to existing entities or create new ones if necessary."
+  ],
+  "entities": [
+    {
+      "id": "ex:glycine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Glycine"
+    },
+    {
+      "id": "ex:alanine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Alanine"
+    },
+    {
+      "id": "ex:valine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Valine"
+    },
+    {
+      "id": "ex:leucine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Leuci ne"
+    },
+    {
+      "id": "ex:isoleucine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Isoleucine"
+    },
+    {
+      "id": "ex:norleucine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Norleucine"
+    },
+    {
+      "id": "ex:phenylalanine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Phenylalanine"
+    },
+    {
+      "id": "ex:tyrosine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Tyrosine"
+    },
+    {
+      "id": "ex:serine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Serine"
+    },
+    {
+      "id": "ex:cysteine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Cysteine"
+    },
+    {
+      "id": "ex:threonine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Threonine"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "ex:norleucine",
+      "property_uri": "ex:classifiedAsNonStandardAminoAcid",
+      "target_id": "ex:NonStandardAminoAcid",
+      "evidence_span": "Norleucine"
+    },
+    {
+      "source_id": "ex:cysteine",
+      "property_uri": "ex:identifiedByNinhydrinReaction",
+      "target_id": "ex:NinhydrinReaction",
+      "evidence_span": "cysteine is used to boost the efficiency of corticosteroid medications."
+    },
+    {
+      "source_id": "ex:norleucine",
+      "property_uri": "ex:classifiedAsSemiEssentialAminoAcid",
+      "target_id": "ex:SemiEssentialAminoAcid",
+      "evidence_span": "It has a similar structure to METHIONINE"
+    },
+    {
+      "source_id": "ex:phenylalanine",
+      "property_uri": "ex:classifiedAsKetogenicAndGlucogenicAminoAcid",
+      "target_id": "ex:KetogenicAndGlucogenicAminoAcid",
+      "evidence_span": "Phenylalanine"
+    },
+    {
+      "source_id": "ex:tyrosine",
+      "property_uri": "ex:classifiedAsPolarAminoAcidWithNoCharge",
+      "target_id": "ex:PolarAminoAcidWithNoCharge",
+      "evidence_span": "Tyrosine is a supplement that helps with mental performance, alertness, and memory."
+    },
+    {
+      "source_id": "ex:cysteine",
+      "property_uri": "ex:classifiedAsSulphurContainingAminoAcid",
+      "target_id": "ex:SulphurContainingAminoAcid",
+      "evidence_span": "Cysteine"
+    },
+    {
+      "source_id": "ex:norleucine",
+      "property_uri": "ex:producedByHydrolysis",
+      "target_id": "ex:AminoAcidSynthesisProcess",
+      "evidence_span": "Norleucine is an artificial amino acid that has been used to research protein structure and fu nction in the lab."
+    },
+    {
+      "source_id": "ex:cysteine",
+      "property_uri": "ex:undergoesDecarboxylationReaction",
+      "target_id": "ex:DecarboxylationReaction",
+      "evidence_span": "Cysteine"
+    },
+    {
+      "source_id": "ex:norleucine",
+      "property_uri": "ex:classifiedAsAliphaticAminoAcid",
+      "target_id": "ex:AliphaticAminoAcid",
+      "evidence_span": "Norleucine is an artificial amino acid that has been used to research protein structure and fu nction in the lab."
+    },
+    {
+      "source_id": "ex:cysteine",
+      "property_uri": "ex:classifiedAsHydroxylGroupContainingAminoAcid",
+      "target_id": "ex:HydroxylGroupContainingAminoAcid",
+      "evidence_span": "Cysteine"
+    },
+    {
+      "source_id": "ex:norleucine",
+      "property_uri": "ex:classifiedAsEssentialAminoAcid",
+      "target_id": "ex:EssentialAminoAcid",
+      "evidence_span": "Norleucine is an artificial amino acid that has been used to research protein structure and fu nction in the lab."
+    },
+    {
+      "source_id": "ex:cysteine",
+      "property_uri": "ex:classifiedAsPolarAminoAcidWithNoCharge",
+      "target_id": "ex:PolarAminoAcidWithNoCharge",
+      "evidence_span": "Cysteine"
+    },
+    {
+      "source_id": "ex:norleucine",
+      "property_uri": "ex:classifiedAsNonEssentialAminoAcid",
+      "target_id": "ex:NonEssentialAminoAcid",
+      "evidence_span": "Norleucine is an artificial amino acid that has been used to research protein structure and fu nction in the lab."
+    },
+    {
+      "source_id": "ex:cysteine",
+      "property_uri": "ex:classifiedAsSemiEssentialAminoAcid",
+      "target_id": "ex:SemiEssentialAminoAcid",
+      "evidence_span": "Cysteine"
+    },
+    {
+      "source_id": "ex:norleucine",
+      "property_uri": "ex:classifiedAsPurelyKetogenicAminoAcid",
+      "target_id": "ex:PurelyKetogenicAminoAcid",
+      "evidence_span": "Norleucine is an artificial amino acid that has been used to research protein structure and fu nction in the lab."
+    },
+    {
+      "source_id": "ex:cysteine",
+      "property_uri": "ex:classifiedAsPolarAminoAcidWithPositiveCharge",
+      "target_id": "ex:PolarAminoAcidWithPositiveCharge",
+      "evidence_span": "Cysteine"
+    },
+    {
+      "source_id": "ex:norleucine",
+      "property_uri": "ex:classifiedAsPurelyGlucogenicAminoAcid",
+      "target_id": "ex:PurelyGlucogenicAminoAcid",
+      "evidence_span": "Norleucine is an artificial amino acid that has been used to research protein structure and fu nction in the lab."
+    },
+    {
+      "source_id": "ex:cysteine",
+      "property_uri": "ex:classifiedAsPolarAminoAcidWithNegativeCharge",
+      "target_id": "ex:PolarAminoAcidWithNegativeCharge",
+      "evidence_span": "Cysteine"
+    },
+    {
+      "source_id": "ex:norleucine",
+      "property_uri": "ex:classifiedAsNonPolarAminoAcid",
+      "target_id": "ex:NonPolarAminoAcid",
+      "evidence_span": "Norleucine is an artificial amino acid that has been used to research protein structure and fu nction in the lab."
+    },
+    {
+      "source_id": "ex:cysteine",
+      "property_uri": "ex:classifiedAsAliphaticAminoAcid",
+      "target_id": "ex:AliphaticAminoAcid",
+      "evidence_span": "Cysteine"
+    },
+    {
+      "source_id": "ex:norleucine",
+      "property_uri": "ex:classifiedAsHydroxylGroupContainingAminoAcid",
+      "target_id": "ex:HydroxylGroupContainingAminoAcid",
+      "evidence_span": "Norleucine is an artificial amino acid that has been used to research protein structure and fu nction in the lab."
+    },
+    {
+      "source_id": "ex:cysteine",
+      "property_uri": "ex:classifiedAsSulphurContainingAminoAcid",
+      "target_id": "ex:SulphurContainingAminoAcid",
+      "evidence_span": "Cysteine"
+    },
+    {
+      "source_id": "ex:norleucine",
+      "property_uri": "ex:classifiedAsBasicAminoAcid",
+      "target_id": "ex:BasicAminoAcid",
+      "evidence_span": "Norleucine is an artificial amino acid that has been used to research protein structure and fu nction in the lab."
+    },
+    {
+      "source_id": "ex:cysteine",
+      "property_uri": "ex:classifiedAsIminoAcid",
+      "target_id": "ex:IminoAcid",
+      "evidence_span": "Cysteine"
+    },
+    {
+      "source_id": "ex:norleucine",
+      "property_uri": "ex:classifiedAsAromaticAminoAcid",
+      "target_id": "ex:AromaticAminoAcid",
+      "evidence_span": "Norleucine is an artificial amino acid that has been used to research protein structure and fu nction in the lab."
+    },
+    {
+      "source_id": "ex:cysteine",
+      "property_uri": "ex:classifiedAsBetaAminoAcid",
+      "target_id": "ex:BetaAminoAcid",
+      "evidence_span": "Cysteine"
+    },
+    {
+      "source_id": "ex:norleucine",
+      "property_uri": "ex:classifiedAsGammaAminoAcid",
+      "target_id": "ex:GammaAminoAcid",
+      "evidence_span": "Norleucine is an artificial amino acid that has been used to research protein structure and fu nction in the lab."
+    },
+    {
+      "source_id": "ex:cysteine",
+      "property_uri": "ex:classifiedAsPurelyKetogenicAminoAcid",
+      "target_id": "ex:PurelyKetogenicAminoAcid",
+      "evidence_span": "Cysteine"
+    },
+    {
+      "source_id": "ex:norleucine",
+      "property_uri": "ex:producedByHydrolysis",
+      "target_id": "ex:AminoAcidSynthesisProcess",
+      "evidence_span": "Norleucine is an artificial amino acid that has been used to research protein structure and fu nction in the lab."
+    },
+    {
+      "source_id": "ex:cysteine",
+      "property_uri": "ex:classifiedAsPurelyGlucogenicAminoAcid",
+      "target_id": "ex:PurelyGlucogenicAminoAcid",
+      "evidence_span": "Cysteine"
+    },
+    {
+      "source_id": "ex:norleucine",
+      "property_uri": "ex:undergoesDecarboxylationReaction",
+      "target_id": "ex:DecarboxylationReaction",
+      "evidence_span": "Norleucine is an artificial amino acid that has been used to research protein structure and fu nction in the lab."
+    },
+    {
+      "source_id": "ex:cysteine",
+      "property_uri": "ex:classifiedAsNonPolarAminoAcid",
+      "target_id": "ex:NonPolarAminoAcid",
+      "evidence_span": "Cysteine"
+    },
+    {
+      "source_id": "ex:norleucine",
+      "property_uri": "ex:identifiedByNinhydrinReaction",
+      "target_id": "ex:NinhydrinReaction",
+      "evidence_span": "Norleucine is an artificial amino acid that has been used to research protein structure and fu nction in the lab."
+    },
+    {
+      "source_id": "ex:cysteine",
+      "property_uri": "ex:classifiedAsAliphaticAminoAcid",
+      "target_id": "ex:AliphaticAminoAcid",
+      "evidence_span": "Cysteine"
+    },
+    {
+      "source_id": "ex:norleucine",
+      "property_uri": "ex:classifiedAsHydroxylGroupContainingAminoAcid",
+      "target_id": "ex:HydroxylGroupContainingAminoAcid",
+      "evidence_span": "Norleucine is an artificial amino acid that has been used to research protein structure and fu nction in the lab."
+    },
+    {
+      "source_id": "ex:cysteine",
+      "property_uri": "ex:classifiedAsSulphurContainingAminoAcid",
+      "target_id": "ex:SulphurContainingAminoAcid",
+      "evidence_span": "Cysteine"
+    },
+    {
+      "source_id": "ex:norleucine",
+      "property_uri": "ex:classifiedAsBasicAminoAcid",
+      "target_id": "ex:BasicAminoAcid",
+      "evidence_span": "Norleucine is an artificial amino acid that has been used to research protein structure and fu nction in the lab."
+    },
+    {
+      "source_id": "ex:cysteine",
+      "property_uri": "ex:classifiedAsIminoAcid",
+      "target_id": "ex:IminoAcid",
+      "evidence_span": "Cysteine"
+    },
+    {
+      "source_id": "ex:norleucine",
+      "property_uri": "ex:classifiedAsAromaticAminoAcid",
+      "target_id": "ex:AromaticAminoAcid",
+      "evidence_span": "Norleucine is an artificial amino acid that has been used to research protein structure and fu nction in the lab."
+    },
+    {
+      "source_id": "ex:cysteine",
+      "property_uri": "ex:classifiedAsBetaAminoAcid",
+      "target_id": "ex:BetaAminoAcid",
+      "evidence_span": "Cysteine"
+    },
+    {
+      "source_id": "ex:norleucine",
+      "property_uri": "ex:classifiedAsGammaAminoAcid",
+      "target_id": "ex:GammaAminoAcid",
+      "evidence_span": "Norleucine is an artificial amino acid that has been used to research protein structure and fu nction in the lab."
+    },
+    {
+      "source_id": "ex:cysteine",
+      "property_uri": "ex:classifiedAsPurelyKetogenicAminoAcid",
+      "target_id": "ex:PurelyKetogenicAminoAcid",
+      "evidence_span": "Cysteine"
+    },
+    {
+      "source_id": "ex:norleucine",
+      "property_uri": "ex:producedByHydrolysis",
+      "target_id": "ex:AminoAcidSynthesisProcess",
+      "evidence_span": "Norleucine is an artificial amino acid that has been used to research protein structure and fu nction in the lab."
+    },
+    {
+      "source_id": "ex:cysteine",
+      "property_uri": "ex:classifiedAsPurelyGlucogenicAminoAcid",
+      "target_id": "ex:PurelyGlucogenicAminoAcid",
+      "evidence_span": "Cysteine"
+    },
+    {
+      "source_id": "ex:norleucine",
+      "property_uri": "ex:undergoesDecarboxylationReaction",
+      "target_id": "ex:DecarboxylationReaction",
+      "evidence_span": "Norleucine is an artificial amino acid that has been used to research protein structure and fu nction in the lab."
+    },
+    {
+      "source_id": "ex:cysteine",
+      "property_uri": "ex:classifiedAsNonPolarAminoAcid",
+      "target_id": "ex:NonPolarAminoAcid",
+      "evidence_span": "Cysteine"
+    },
+    {
+      "source_id": "ex:norleucine",
+      "property_uri": "ex:identifiedByNinhydrinReaction",
+      "target_id": "ex:NinhydrinReaction",
+      "evidence_span": "Norleucine is an artificial amino acid that has been used to research protein structure and fu nction in the lab."
+    },
+    {
+      "source_id": "ex:cysteine",
+      "property_uri": "ex:classifiedAsAliphaticAminoAcid",
+      "target_id": "ex:AliphaticAminoAcid",
+      "evidence_span": "Cysteine"
+    },
+    {
+      "source_id": "ex:norleucine",
+      "property_uri": "ex:classifiedAsHydroxylGroupContainingAminoAcid",
+      "target_id": "ex:HydroxylGroupContainingAminoAcid",
+      "evidence_span": "Norleucine is an artificial amino acid that has been used to research protein structure and fu nction in the lab."
+    },
+    {
+      "source_id": "ex:cysteine",
+      "property_uri": "ex:classifiedAsSulphurContainingAminoAcid",
+      "target_id": "ex:SulphurContainingAminoAcid",
+      "evidence_span": "Cysteine"
+    },
+    {
+      "source_id": "ex:norleucine",
+      "property_uri": "ex:classifiedAsBasicAminoAcid",
+      "target_id": "ex:BasicAminoAcid",
+      "evidence_span": "Norleucine is an artificial amino acid that has been used to research protein structure and fu nction in the lab."
+    },
+    {
+      "source_id": "ex:cysteine",
+      "property_uri": "ex:classifiedAsIminoAcid",
+      "target_id": "ex:IminoAcid",
+      "evidence_span": "Cysteine"
+    },
+    {
+      "source_id": "ex:norleucine",
+      "property_uri": "ex:classifiedAsAromaticAminoAcid",
+      "target_id": "ex:AromaticAminoAcid",
+      "evidence_span": "Norleucine is an artificial amino acid that has been used to research protein structure and fu nction in the lab."
+    },
+    {
+      "source_id": "ex:cysteine",
+      "property_uri": "ex:classifiedAsBetaAminoAcid",
+      "target_id": "ex:BetaAminoAcid",
+      "evidence_span": "Cysteine"
+    },
+    {
+      "source_id": "ex:norleucine",
+      "property_uri": "ex:classifiedAsGammaAminoAcid",
+      "target_id": "ex:GammaAminoAcid",
+      "evidence_span": "Norleucine is an artificial amino acid that has been used to research protein structure and fu nction in the lab."
+    }
+  ]
+}

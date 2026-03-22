@@ -1,0 +1,37 @@
+{
+  "reasoning_steps": [
+    "The text introduces new concepts related to funding and investments in wind energy that are not covered by existing classes.",
+    "Venture capital financing for start-ups is a specific type of private equity financing described in the text."
+  ],
+  "classes": [
+    {
+      "uri": "ex:IEAClassificationCode",
+      "bfo_parent": "bfo:InformationContentEntity",
+      "subclass_of": null,
+      "aristotelian_definition": "An IEA Classification Code is an Information Content Entity that categorizes R&D investments according to specific technology areas.",
+      "comment": "This class represents the classification codes used by the International Energy Agency (IEA) for categorizing wind energy R&D investments."
+    },
+    {
+      "uri": "ex:PrivateRDIFundingShare",
+      "bfo_parent": "bfo:Quality",
+      "subclass_of": null,
+      "aristotelian_definition": "The Private RD&I Funding Share is a Quality that measures the proportion of private funding allocated to wind energy research and development.",
+      "comment": "This class represents the percentage share of global or regional private R&D investment in the wind energy sector."
+    },
+    {
+      "uri": "ex:VentureCapitalInvestment",
+      "bfo_parent": "bfo:InformationContentEntity",
+      "subclass_of": null,
+      "aristotelian_definition": "A Venture Capital Investment is an Information Content Entity that represents financial support provided to start-ups and small businesses with high growth potential.",
+      "comment": "This class describes the type of private equity financing offered to innovative companies in the wind industry."
+    },
+    {
+      "uri": "ex:LaterStageVCInvestment",
+      "bfo_parent": "bfo:InformationContentEntity",
+      "subclass_of": null,
+      "aristotelian_definition": "A Later Stage VC Investment is an Information Content Entity that represents financial support provided for scaling up start-ups or larger SMEs.",
+      "comment": "This class describes the type of venture capital investment focused on later stages of company growth."
+    }
+  ],
+  "canonical_terms": {}
+}

@@ -1,0 +1,37 @@
+{
+  "reasoning_steps": [
+    "The source text introduces new relationships between classes that are not covered by existing properties. These include priorities for R&D investment in Horizon Europe, indicators for labour productivity and energy intensity, impact of global market leadership on EU competitiveness, role of CETO, and models used for energy system scenarios."
+  ],
+  "properties": [
+    {
+      "uri": "ex:hasRDIPriority",
+      "domain": "ex:InnovationFundProgram",
+      "range": "ex:RDIPriority",
+      "comment": "Describes the main priorities for R&D investment in an Innovation Fund Program."
+    },
+    {
+      "uri": "ex:affectsValueChainIndicator",
+      "domain": "ex:ValueChainIndicator",
+      "range": "xsd:string",
+      "comment": "Indicates how a specific value chain indicator (e.g., turnover) affects analysis within the wind energy sector."
+    },
+    {
+      "uri": "ex:assessesCompetitivenessBy",
+      "domain": "ex:MarketCompetitivenessFactor",
+      "range": "xsd:string",
+      "comment": "Describes how market competitiveness factors, such as global market leadership, impact EU competitiveness in the wind energy sector."
+    },
+    {
+      "uri": "ex:hasPurpose",
+      "domain": "ex:CleanEnergyTechnologyObservatory",
+      "range": "xsd:string",
+      "comment": "Describes the role and purpose of the Clean Energy Technology Observatory (CETO)."
+    },
+    {
+      "uri": "ex:usesModelForScenarios",
+      "domain": "ex:InnovationFundProgram",
+      "range": "ex:EnergySystemModel",
+      "comment": "Indicates which energy system models are used for simulating future scenarios in an Innovation Fund Program."
+    }
+  ]
+}

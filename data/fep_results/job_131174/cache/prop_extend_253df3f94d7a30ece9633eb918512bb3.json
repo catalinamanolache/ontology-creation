@@ -1,0 +1,25 @@
+{
+  "reasoning_steps": [
+    "The new source text introduces several novel concepts such as VC/PE investment shares by region, high-value inventions, and scientific publications trends which are not covered by existing properties."
+  ],
+  "properties": [
+    {
+      "uri": "ex:hasGlobalVCPEInvestmentShare",
+      "domain": "ex:EUEconomicIndicatorForVCPE",
+      "range": "xsd:string",
+      "comment": "Describes the share of global VC/PE investment deals represented by the EU for a specific period."
+    },
+    {
+      "uri": "ex:hasHighValueInventionShareByCountry",
+      "domain": "ex:EUEconomicIndicatorForVCPE",
+      "range": "xsd:string",
+      "comment": "Indicates the proportion of high-value inventions within a specific country compared to international inventions."
+    },
+    {
+      "uri": "ex:affectsPublicationActivityTrend",
+      "domain": "ex:PublicationImpactMetric",
+      "range": "xsd:string",
+      "comment": "Describes trends in publication activity, such as the number of peer-reviewed articles published annually within a specific field or region."
+    }
+  ]
+}

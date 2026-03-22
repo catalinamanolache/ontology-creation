@@ -1,0 +1,239 @@
+@prefix ex: <http://example.org/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ===== OWL Classes =====
+ex:AminoAcid rdf:type owl:Class ;
+    rdfs:comment "A class representing an amino acid." .
+
+ex:EssentialAminoAcid rdf:type owl:Class ;
+    rdfs:comment "A subclass of AminoAcid that are not produced by the body and must be obtained through food." .
+
+ex:NonEssentialAminoAcid rdf:type owl:Class ;
+    rdfs:comment "A subclass of AminoAcid that can be synthesized by the body." .
+
+ex:SemiEssentialAminoAcid rdf:type owl:Class ;
+    rdfs:comment "A subclass of AminoAcid that is produced in the body but insufficiently, requiring dietary supplementation." .
+
+ex:AliphaticAminoAcid rdf:type owl:Class ;
+    rdfs:comment "A class representing aliphatic amino acids with simple side chains." .
+
+ex:BranchedChainAminoAcid rdf:type owl:Class ;
+    rdfs:comment "A subclass of AliphaticAminoAcid that has branched aliphatic side chains." .
+
+ex:HydroxylGroupContainingAminoAcid rdf:type owl:Class ;
+    rdfs:comment "A class representing amino acids with hydroxyl groups in their side chains." .
+
+ex:SulphurContainingAminoAcid rdf:type owl:Class ;
+    rdfs:comment "A class representing amino acids containing sulfur in their side chains." .
+
+ex:AcidicAminoAcid rdf:type owl:Class ;
+    rdfs:comment "A class representing acidic amino acids with carboxyl groups." .
+
+ex:BasicAminoAcid rdf:type owl:Class ;
+    rdfs:comment "A class representing basic amino acids with guanidino or imidazole rings." .
+
+ex:AromaticAminoAcid rdf:type owl:Class ;
+    rdfs:comment "A class representing aromatic amino acids with indole or benzene rings in their side chains." .
+
+ex:IminoAminoAcid rdf:type owl:Class ;
+    rdfs:comment "A class representing imino acids with an imino group instead of a primary amine." .
+
+ex:HeterocyclicAminoAcid rdf:type owl:Class ;
+    rdfs:comment "A class representing amino acids containing heterocyclic rings in their side chains." .
+
+ex:PurelyKetogenicAminoAcid rdf:type owl:Class ;
+    rdfs:comment "A subclass of AminoAcid that can be used to make fat and are completely ketogenic." .
+
+ex:KetogenicAndGlucogenicAminoAcid rdf:type owl:Class ;
+    rdfs:comment "A subclass of AminoAcid that has both ketogenic and glucogenic metabolic fates." .
+
+ex:PurelyGlucogenicAminoAcid rdf:type owl:Class ;
+    rdfs:comment "A subclass of AminoAcid that can be used as a starting point for glucose production." .
+
+ex:NonPolarAminoAcid rdf:type owl:Class ;
+    rdfs:comment "A class representing non-polar amino acids with no charge on the R group." .
+
+ex:PolarAminoAcidWithNoChargeOnRGroup rdf:type owl:Class ;
+    rdfs:comment "A subclass of PolarAminoAcid that has an uncharged R group but contributes to hydrogen bonding." .
+
+ex:PolarAminoAcidWithPositiveChargeOnRGroup rdf:type owl:Class ;
+    rdfs:comment "A subclass of PolarAminoAcid with a positively charged R group." .
+
+ex:PolarAminoAcidWithNegativeChargeOnRGroup rdf:type owl:Class ;
+    rdfs:comment "A subclass of PolarAminoAcid with a negatively charged R group." .
+
+ex:http://example.org/classes/AminoAcidHydrolysis rdf:type owl:Class ;
+    rdfs:comment "A class representing the process of amino acid hydrolysis to produce a specific amino acid." .
+
+ex:http://example.org/classes/PhthalimideSynthesis rdf:type owl:Class ;
+    rdfs:comment "A class for the method involving treating an alpha halogenated acid ester with potassium phthalimide to produce a substituted phthalimide, which when hydrolyzed yields phthalic acid and amino acid." .
+
+ex:http://example.org/classes/AminoAcidDrug rdf:type owl:Class ;
+    rdfs:comment "A class for non-standard amino acids used as drugs." .
+
+# ===== Properties =====
+ex:isEssential rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates whether an amino acid is essential or not." .
+
+ex:hasSideChain rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range ex:SideChain ;
+    rdfs:comment "The side chain of the amino acid." .
+
+ex:isProducedByBody rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates whether an amino acid is produced by the body or not." .
+
+ex:hasMeltingPoint rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:float ;
+    rdfs:comment "The melting point of the amino acid." .
+
+ex:isSweet rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates whether an amino acid is sweet or not." .
+
+ex:hasTaste rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range ex:Taste ;
+    rdfs:comment "The taste of the amino acid." .
+
+ex:isOpticallyActive rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates whether an amino acid is optically active or not." .
+
+ex:hasZwitterionForm rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates whether the amino acid can form a zwitterion." .
+
+ex:isDecarboxylated rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates whether an amino acid undergoes decarboxylation." .
+
+ex:formsSaltWithAlkali rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range ex:Salt ;
+    rdfs:comment "The salt formed when the amino acid reacts with alkali." .
+
+ex:formsEsterWithAlcohol rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range ex:Ester ;
+    rdfs:comment "The ester formed when the amino acid reacts with alcohol." .
+
+ex:reactsWithAmmonia rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range ex:Amide ;
+    rdfs:comment "The amide formed when the amino acid reacts with ammonia." .
+
+ex:formsSaltWithMineralAcid rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range ex:Sulfate ;
+    rdfs:comment "The salt formed when the amino acid reacts with a mineral acid." .
+
+ex:reactsWithNinhydrin rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range ex:NinhydrinReactionProduct ;
+    rdfs:comment "The product of the ninhydrin reaction with an amino acid." .
+
+ex:classifiesAsAliphaticAminoAcid rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates whether an amino acid is classified as aliphatic." .
+
+ex:classifiesAsBranchedChainAminoAcid rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates whether an amino acid is a branched-chain aliphatic amino acid." .
+
+ex:classifiesAsHydroxylGroupContainingAminoAcid rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates whether an amino acid contains a hydroxyl group in its side chain." .
+
+ex:classifiesAsSulphurContainingAminoAcid rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates whether an amino acid contains sulfur in its side chain." .
+
+ex:classifiesAsAcidicAminoAcid rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates whether an amino acid is classified as acidic with carboxyl groups." .
+
+ex:classifiesAsBasicAminoAcid rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates whether an amino acid is classified as basic with guanidino or imidazole rings." .
+
+ex:classifiesAsAromaticAminoAcid rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates whether an amino acid is classified as aromatic with indole or benzene rings in its side chain." .
+
+ex:classifiesAsIminoAminoAcid rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates whether an amino acid is classified as imino with an imino group instead of a primary amine." .
+
+ex:classifiesAsHeterocyclicAminoAcid rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates whether an amino acid is classified as heterocyclic with a ring in its side chain." .
+
+ex:classifiesAsPurelyKetogenicAminoAcid rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates whether an amino acid is classified as purely ketogenic and can be used to make fat." .
+
+ex:classifiesAsKetogenicAndGlucogenicAminoAcid rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates whether an amino acid is classified as ketogenic and glucogenic with both metabolic fates." .
+
+ex:classifiesAsPurelyGlucogenicAminoAcid rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates whether an amino acid is classified as purely glucogenic and can be used for glucose production." .
+
+ex:classifiesAsNonPolarAminoAcid rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates whether an amino acid is classified as non-polar with no charge on the R group." .
+
+ex:classifiesAsPolarAminoAcidWithNoChargeOnRGroup rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates whether an amino acid is classified as polar with an uncharged R group." .
+
+ex:classifiesAsPolarAminoAcidWithPositiveChargeOnRGroup rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates whether an amino acid is classified as polar with a positively charged R group." .
+
+ex:classifiesAsPolarAminoAcidWithNegativeChargeOnRGroup rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates whether an amino acid is classified as polar with a negatively charged R group." .
+
+ex:http://example.org/properties/usedForTreatment rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:http://example.org/classes/AminoAcidHydrolysis ;
+    rdfs:range xsd:string ;
+    rdfs:comment "A property indicating the treatments for which a specific amino acid is used." .
+
+ex:http://example.org/properties/drugApplication rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:http://example.org/classes/AminoAcidDrug ;
+    rdfs:range xsd:string ;
+    rdfs:comment "A property indicating the application of non-standard amino acids as drugs." .
+
+# ===== Instances =====
+# ===== Relations =====

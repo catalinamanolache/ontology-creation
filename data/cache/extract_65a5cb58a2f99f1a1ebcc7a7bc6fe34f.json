@@ -1,0 +1,497 @@
+{
+  "reasoning_steps": [
+    "Identify entities: 'Histidine', 'hemoglobin', 'anemia', 'blood pressure', 'baby feeding', 'D-Penicillamine', 'penicillin', 'Wilson's disease', 'N-Acetylcysteine', 'cystic fibrosis', 'chronic renal insufficiency', 'antioxidant', 'Gabapentin', 'anticonvulsant', 'Glycine', 'Alanine', 'Valine', 'Leucine', 'Isoleucine', 'Norleucine', 'Phenylalanine', 'Tyrosine', 'Serine', 'Cysteine', 'Threonine', 'Methionine', 'Tryptophan', 'Proline', 'Hydroxyproline', 'Aspartic Acid', 'Asparagine', 'Glutamic Acid', 'Beta-Hydroxy Glutamic Acid', 'Glutamine', 'Ornithine', 'Arginine', 'Lysine', 'Histidine', 'protein synthesis', 'diet', 'deficiency', 'protein formation', 'protein deficiency'.",
+    "Map entities to ontology classes: 'Histidine' (ex:Histidine), 'hemoglobin' (ex:Protein), 'anemia' (ex:AminoAcid), 'blood pressure' (ex:AminoAcid), 'baby feeding' (ex:AminoAcid), 'D-Penicillamine' (ex:DPenicillamine), 'penicillin' (ex:NonStandardAminoAcid), 'Wilson's disease' (ex:AminoAcid), 'N-Acetylcysteine' (ex:NAcetylcysteine), 'cystic fibrosis' (ex:AminoAcid), 'chronic renal insufficiency' (ex:AminoAcid), 'antioxidant' (ex:AminoAcid), 'Gabapentin' (ex:Gabapentin), 'anticonvulsant' (ex:AminoAcid), 'Glycine' (ex:Glycine), 'Alanine' (ex:Alanine), 'Valine' (ex:Valine), 'Leucine' (ex:Leucine), 'Isoleucine' (ex:Isoleucine), 'Norleucine' (ex:Norleucine), 'Phenylalanine' (ex:Phenylalanine), 'Tyrosine' (ex:Tyrosine), 'Serine' (ex:Serine), 'Cysteine' (ex:Cysteine), 'Threonine' (ex:Threonine), 'Methionine' (ex:Methionine), 'Tryptophan' (ex:Tryptophan), 'Proline' (ex:Proline), 'Hydroxyproline' (ex:Hydroxyproline), 'Aspartic Acid' (ex:AsparticAcid), 'Asparagine' (ex:Asparagine), 'Glutamic Acid' (ex:GlutamicAcid), 'Beta-Hydroxy Glutamic Acid' (ex:BetaHydroxyGlutamicAcid), 'Glutamine' (ex:Glutamine), 'Ornithine' (ex:Ornithine), 'Arginine' (ex:Arginine), 'Lysine' (ex:Lysine), 'Histidine' (ex:Histidine), 'protein synthesis' (ex:Protein), 'diet' (ex:AminoAcid), 'deficiency' (ex:AminoAcid), 'protein formation' (ex:Protein), 'protein deficiency' (ex:AminoAcid).",
+    "Identify relations: 'Histidine' has high percentage in 'hemoglobin', 'Histidine' is used to treat 'anemia', 'Histidine' can reduce 'blood pressure', 'Histidine' is critical in 'baby feeding', 'D-Penicillamine' is employed in chelation therapy of 'Wilson's disease', 'N-Acetylcysteine' is used in 'cystic fibrosis', 'N-Acetylcysteine' is used in 'chronic renal insufficiency', 'N-Acetylcysteine' can function as 'antioxidant', 'Gabapentin' is used as 'anticonvulsant'.",
+    "Map relations to ontology properties: 'has_building_block' (for Histidine in hemoglobin), 'is_used_to_treat' (for Histidine with anemia, blood pressure, baby feeding), 'is_employed_in_chelation_therapy_of' (for D-Penicillamine with Wilson's disease), 'is_used_in' (for N-Acetylcysteine with cystic fibrosis and chronic renal insufficiency), 'functions_as' (for N-Acetylcysteine with antioxidant), 'is_used_as' (for Gabapentin with anticonvulsant).",
+    "Filter relations based on ontology and cross-check domain/range: 'Histidine' (ex:Histidine) has 'high percentage' in 'hemoglobin' (ex:Protein) -> 'ex:hasBuildingBlock' is not directly supported for percentage, but 'ex:hasBuildingBlock' is a valid relation between Protein and AminoAcid. 'Histidine' is used to treat 'anemia' -> 'ex:isUsedToTreatAnemia' is not in ontology. 'Histidine' can reduce 'blood pressure' -> 'ex:isUsedToTreatBloodPressure' is not in ontology. 'Histidine' is critical in 'baby feeding' -> 'ex:isCriticalInBabyFeeding' is in ontology. 'D-Penicillamine' is employed in chelation therapy of 'Wilson's disease' -> 'ex:isEmployedInChelationTherapyOfWilsonsDisease' is in ontology. 'N-Acetylcysteine' is used in 'cystic fibrosis' -> 'ex:functionsAsAntioxidantInCysticFibrosisAndChronicRenalInsufficiency' is in ontology. 'N-Acetylcysteine' is used in 'chronic renal insufficiency' -> 'ex:functionsAsAntioxidantInCysticFibrosisAndChronicRenalInsufficiency' is in ontology. 'N-Acetylcysteine' can function as 'antioxidant' -> 'ex:functionsAsAntioxidantInCysticFibrosisAndChronicRenalInsufficiency' is in ontology. 'Gabapentin' is used as 'anticonvulsant' -> 'ex:isUsedAsAnticonvulsant' is in ontology.",
+    "Refine entities and relations based on filtering and cross-checking. The text mentions 'Histidine' and 'hemoglobin'. The relation 'ex:hasBuildingBlock' is valid between Protein and AminoAcid. The text states 'Histidine' is critical in 'baby feeding', which maps to 'ex:isCriticalInBabyFeeding'. 'D-Penicillamine' is employed in chelation therapy of 'Wilson's disease', mapping to 'ex:isEmployedInChelationTherapyOfWilsonsDisease'. 'N-Acetylcysteine' is used in 'cystic fibrosis' and 'chronic renal insufficiency' and functions as an 'antioxidant', mapping to 'ex:functionsAsAntioxidantInCysticFibrosisAndChronicRenalInsufficiency'. 'Gabapentin' is used as 'anticonvulsant', mapping to 'ex:isUsedAsAnticonvulsant'.",
+    "Extract chemical names for amino acids from the table. For example, 'Glycine' has chemical name 'Amino acetic acid', mapping to 'ex:hasChemicalName'.",
+    "Final check of all extracted entities and relations against the ontology and rules."
+  ],
+  "entities": [
+    {
+      "id": "histidine",
+      "class_uri": "ex:Histidine",
+      "evidence_span": "Histidine"
+    },
+    {
+      "id": "hemoglobin",
+      "class_uri": "ex:Protein",
+      "evidence_span": "Hemoglobin"
+    },
+    {
+      "id": "baby_feeding",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "baby feeding"
+    },
+    {
+      "id": "d_penicillamine",
+      "class_uri": "ex:DPenicillamine",
+      "evidence_span": "D-Penicillamine"
+    },
+    {
+      "id": "wilsons_disease",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Wilson’s disease"
+    },
+    {
+      "id": "n_acetylcysteine",
+      "class_uri": "ex:NAcetylcysteine",
+      "evidence_span": "N-Acetylcysteine"
+    },
+    {
+      "id": "cystic_fibrosis",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "cystic fibrosis"
+    },
+    {
+      "id": "chronic_renal_insufficiency",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "chronic renal insufficiency"
+    },
+    {
+      "id": "antioxidant",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "antioxidant"
+    },
+    {
+      "id": "gabapentin",
+      "class_uri": "ex:Gabapentin",
+      "evidence_span": "Gabapentin"
+    },
+    {
+      "id": "anticonvulsant",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "anticonvulsant"
+    },
+    {
+      "id": "glycine",
+      "class_uri": "ex:Glycine",
+      "evidence_span": "Glycine"
+    },
+    {
+      "id": "amino_acetic_acid",
+      "class_uri": "xsd:string",
+      "evidence_span": "Amino acetic acid"
+    },
+    {
+      "id": "alanine",
+      "class_uri": "ex:Alanine",
+      "evidence_span": "Alanine"
+    },
+    {
+      "id": "alpha_aminopropionic_acid",
+      "class_uri": "xsd:string",
+      "evidence_span": "Alpha Aminopropionic acid"
+    },
+    {
+      "id": "valine",
+      "class_uri": "ex:Valine",
+      "evidence_span": "Valine"
+    },
+    {
+      "id": "alpha_aminoisovaleric_acid",
+      "class_uri": "xsd:string",
+      "evidence_span": "alpha-Aminoisovaleric acid"
+    },
+    {
+      "id": "leucine",
+      "class_uri": "ex:Leucine",
+      "evidence_span": "Leucine"
+    },
+    {
+      "id": "alpha_aminoisocaproic_acid",
+      "class_uri": "xsd:string",
+      "evidence_span": "alpha-Aminoisocaproic acid"
+    },
+    {
+      "id": "isoleucine",
+      "class_uri": "ex:Isoleucine",
+      "evidence_span": "Isoleucine"
+    },
+    {
+      "id": "alpha_amino_beta_methyl_n_valeric_acid",
+      "class_uri": "xsd:string",
+      "evidence_span": "alpha-Amino-beta-methyl n-valeric acid"
+    },
+    {
+      "id": "norleucine",
+      "class_uri": "ex:Norleucine",
+      "evidence_span": "Norleucine"
+    },
+    {
+      "id": "alpha_amino_n_caproic_acid",
+      "class_uri": "xsd:string",
+      "evidence_span": "alpha-Amino n-caproic acid"
+    },
+    {
+      "id": "phenylalanine",
+      "class_uri": "ex:Phenylalanine",
+      "evidence_span": "Phenylalanine"
+    },
+    {
+      "id": "alpha_amino_beta_phenyl_propionic_acid",
+      "class_uri": "xsd:string",
+      "evidence_span": "alpha-Amino-beta-phenyl propionic acid"
+    },
+    {
+      "id": "tyrosine",
+      "class_uri": "ex:Tyrosine",
+      "evidence_span": "Tyrosine"
+    },
+    {
+      "id": "alpha_amino_beta_p_hydroxyphenyl_propionic_acid",
+      "class_uri": "xsd:string",
+      "evidence_span": "alpha-Amino-beta-(p-hydroxyphenyl) propionic acid"
+    },
+    {
+      "id": "serine",
+      "class_uri": "ex:Serine",
+      "evidence_span": "Serine"
+    },
+    {
+      "id": "alpha_amino_beta_hydroxypropionic_acid",
+      "class_uri": "xsd:string",
+      "evidence_span": "alpha-Amino-beta-hydroxypropionic acid"
+    },
+    {
+      "id": "cysteine",
+      "class_uri": "ex:Cysteine",
+      "evidence_span": "Cysteine"
+    },
+    {
+      "id": "alpha_amino_beta_mercaptopropionic_acid",
+      "class_uri": "xsd:string",
+      "evidence_span": "alpha-Amino-beta-mercaptopropionic acid"
+    },
+    {
+      "id": "threonine",
+      "class_uri": "ex:Threonine",
+      "evidence_span": "Threonine"
+    },
+    {
+      "id": "alpha_amino_beta_hydroxy_n_butyric_acid",
+      "class_uri": "xsd:string",
+      "evidence_span": "alpha-Amino-beta-hydroxy-n-butyric acid"
+    },
+    {
+      "id": "methionine",
+      "class_uri": "ex:Methionine",
+      "evidence_span": "Methionine"
+    },
+    {
+      "id": "alpha_amino_gamma_methylthio_n_butyric_acid",
+      "class_uri": "xsd:string",
+      "evidence_span": "alpha-Amino-gamma-methyl-thio-n-butyric acid"
+    },
+    {
+      "id": "tryptophan",
+      "class_uri": "ex:Tryptophan",
+      "evidence_span": "Tryptophan"
+    },
+    {
+      "id": "alpha_amino_beta_indolepropionic_acid",
+      "class_uri": "xsd:string",
+      "evidence_span": "alpha-Amino-beta-indolepropionic acid"
+    },
+    {
+      "id": "proline",
+      "class_uri": "ex:Proline",
+      "evidence_span": "Proline"
+    },
+    {
+      "id": "pyrrolidine_alpha_carboxylic_acid",
+      "class_uri": "xsd:string",
+      "evidence_span": "Pyrrolidine-alpha-carboxylic acid"
+    },
+    {
+      "id": "hydroxyproline",
+      "class_uri": "ex:Hydroxyproline",
+      "evidence_span": "Hydroxyproline"
+    },
+    {
+      "id": "gamma_hydroxypyrrolidine_alpha_carboxylic_acid",
+      "class_uri": "xsd:string",
+      "evidence_span": "Gamma-Hydroxypyrolidine alpha-carboxylic acid"
+    },
+    {
+      "id": "aspartic_acid",
+      "class_uri": "ex:AsparticAcid",
+      "evidence_span": "Aspartic Acid"
+    },
+    {
+      "id": "alpha_aminosuccinic_acid",
+      "class_uri": "xsd:string",
+      "evidence_span": "alpha-Aminosuccinic acid"
+    },
+    {
+      "id": "asparagine",
+      "class_uri": "ex:Asparagine",
+      "evidence_span": "Asparagine"
+    },
+    {
+      "id": "alpha_aminosuccinamic_acid",
+      "class_uri": "xsd:string",
+      "evidence_span": "alpha-Aminosuccinamic acid"
+    },
+    {
+      "id": "glutamic_acid",
+      "class_uri": "ex:GlutamicAcid",
+      "evidence_span": "Glutamic Acid"
+    },
+    {
+      "id": "alpha_aminoglutaric_acid",
+      "class_uri": "xsd:string",
+      "evidence_span": "alpha-Aminoglutaric acid"
+    },
+    {
+      "id": "beta_hydroxy_glutamic_acid",
+      "class_uri": "ex:BetaHydroxyGlutamicAcid",
+      "evidence_span": "Beta-Hydroxy Glutamic Acid"
+    },
+    {
+      "id": "alpha_amino_beta_hydroxyglutaric_acid",
+      "class_uri": "xsd:string",
+      "evidence_span": "Alpha-Amino-beta-hydroxyglutaric acid"
+    },
+    {
+      "id": "glutamine",
+      "class_uri": "ex:Glutamine",
+      "evidence_span": "Glutamine"
+    },
+    {
+      "id": "alpha_amino_glutamic_acid",
+      "class_uri": "xsd:string",
+      "evidence_span": "Alpha-Amino glutamic acid"
+    },
+    {
+      "id": "ornithine",
+      "class_uri": "ex:Ornithine",
+      "evidence_span": "Ornithine"
+    },
+    {
+      "id": "alpha_delta_diamino_n_valeric_acid",
+      "class_uri": "xsd:string",
+      "evidence_span": "alpha-delta-Diamino-n-valeric acid"
+    },
+    {
+      "id": "arginine",
+      "class_uri": "ex:Arginine",
+      "evidence_span": "Arginine"
+    },
+    {
+      "id": "alpha_amino_delta_guanidino_n_valeric_acid",
+      "class_uri": "xsd:string",
+      "evidence_span": "alpha-Amino-delta-guanidino-n-valeric acid"
+    },
+    {
+      "id": "lysine",
+      "class_uri": "ex:Lysine",
+      "evidence_span": "Lysine"
+    },
+    {
+      "id": "alpha_diaminocaproic_acid",
+      "class_uri": "xsd:string",
+      "evidence_span": "alpha-Diaminocaproic acid"
+    },
+    {
+      "id": "histidine_table",
+      "class_uri": "ex:Histidine",
+      "evidence_span": "Histidine"
+    },
+    {
+      "id": "alpha_amino_beta_imidazolepropionic_acid",
+      "class_uri": "xsd:string",
+      "evidence_span": "alpha-Amino-beta-imidazolepropionic acid"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "histidine",
+      "property_uri": "ex:hasBuildingBlock",
+      "target_id": "hemoglobin",
+      "evidence_span": "Histidine Hemoglobin has a high percentage of histidine"
+    },
+    {
+      "source_id": "histidine",
+      "property_uri": "ex:isCriticalInBabyFeeding",
+      "target_id": "baby_feeding",
+      "evidence_span": "In baby feeding, histidine is critical"
+    },
+    {
+      "source_id": "d_penicillamine",
+      "property_uri": "ex:isEmployedInChelationTherapyOfWilsonsDisease",
+      "target_id": "wilsons_disease",
+      "evidence_span": "It is employed in the chelation therapy of Wilson’s disease"
+    },
+    {
+      "source_id": "n_acetylcysteine",
+      "property_uri": "ex:functionsAsAntioxidantInCysticFibrosisAndChronicRenalInsufficiency",
+      "target_id": "cystic_fibrosis",
+      "evidence_span": "It is used in cystic fibrosis, and chronic renal insufficiency, as it can function as an antioxidant"
+    },
+    {
+      "source_id": "n_acetylcysteine",
+      "property_uri": "ex:functionsAsAntioxidantInCysticFibrosisAndChronicRenalInsufficiency",
+      "target_id": "chronic_renal_insufficiency",
+      "evidence_span": "It is used in cystic fibrosis, and chronic renal insufficiency, as it can function as an antioxidant"
+    },
+    {
+      "source_id": "n_acetylcysteine",
+      "property_uri": "ex:functionsAsAntioxidantInCysticFibrosisAndChronicRenalInsufficiency",
+      "target_id": "antioxidant",
+      "evidence_span": "as it can function as an antioxidant"
+    },
+    {
+      "source_id": "gabapentin",
+      "property_uri": "ex:isUsedAsAnticonvulsant",
+      "target_id": "anticonvulsant",
+      "evidence_span": "It is used as anticonvulsant"
+    },
+    {
+      "source_id": "glycine",
+      "property_uri": "ex:hasChemicalName",
+      "target_id": "amino_acetic_acid",
+      "evidence_span": "Amino acetic acid"
+    },
+    {
+      "source_id": "alanine",
+      "property_uri": "ex:hasChemicalName",
+      "target_id": "alpha_aminopropionic_acid",
+      "evidence_span": "Alpha Aminopropionic acid"
+    },
+    {
+      "source_id": "valine",
+      "property_uri": "ex:hasChemicalName",
+      "target_id": "alpha_aminoisovaleric_acid",
+      "evidence_span": "alpha-Aminoisovaleric acid"
+    },
+    {
+      "source_id": "leucine",
+      "property_uri": "ex:hasChemicalName",
+      "target_id": "alpha_aminoisocaproic_acid",
+      "evidence_span": "alpha-Aminoisocaproic acid"
+    },
+    {
+      "source_id": "isoleucine",
+      "property_uri": "ex:hasChemicalName",
+      "target_id": "alpha_amino_beta_methyl_n_valeric_acid",
+      "evidence_span": "alpha-Amino-beta-methyl n-valeric acid"
+    },
+    {
+      "source_id": "norleucine",
+      "property_uri": "ex:hasChemicalName",
+      "target_id": "alpha_amino_n_caproic_acid",
+      "evidence_span": "alpha-Amino n-caproic acid"
+    },
+    {
+      "source_id": "phenylalanine",
+      "property_uri": "ex:hasChemicalName",
+      "target_id": "alpha_amino_beta_phenyl_propionic_acid",
+      "evidence_span": "alpha-Amino-beta-phenyl propionic acid"
+    },
+    {
+      "source_id": "tyrosine",
+      "property_uri": "ex:hasChemicalName",
+      "target_id": "alpha_amino_beta_p_hydroxyphenyl_propionic_acid",
+      "evidence_span": "alpha-Amino-beta-(p-hydroxyphenyl) propionic acid"
+    },
+    {
+      "source_id": "serine",
+      "property_uri": "ex:hasChemicalName",
+      "target_id": "alpha_amino_beta_hydroxypropionic_acid",
+      "evidence_span": "alpha-Amino-beta-hydroxypropionic acid"
+    },
+    {
+      "source_id": "cysteine",
+      "property_uri": "ex:hasChemicalName",
+      "target_id": "alpha_amino_beta_mercaptopropionic_acid",
+      "evidence_span": "alpha-Amino-beta-mercaptopropionic acid"
+    },
+    {
+      "source_id": "threonine",
+      "property_uri": "ex:hasChemicalName",
+      "target_id": "alpha_amino_beta_hydroxy_n_butyric_acid",
+      "evidence_span": "alpha-Amino-beta-hydroxy-n-butyric acid"
+    },
+    {
+      "source_id": "methionine",
+      "property_uri": "ex:hasChemicalName",
+      "target_id": "alpha_amino_gamma_methylthio_n_butyric_acid",
+      "evidence_span": "alpha-Amino-gamma-methyl-thio-n-butyric acid"
+    },
+    {
+      "source_id": "tryptophan",
+      "property_uri": "ex:hasChemicalName",
+      "target_id": "alpha_amino_beta_indolepropionic_acid",
+      "evidence_span": "alpha-Amino-beta-indolepropionic acid"
+    },
+    {
+      "source_id": "proline",
+      "property_uri": "ex:hasChemicalName",
+      "target_id": "pyrrolidine_alpha_carboxylic_acid",
+      "evidence_span": "Pyrrolidine-alpha-carboxylic acid"
+    },
+    {
+      "source_id": "hydroxyproline",
+      "property_uri": "ex:hasChemicalName",
+      "target_id": "gamma_hydroxypyrrolidine_alpha_carboxylic_acid",
+      "evidence_span": "Gamma-Hydroxypyrolidine alpha-carboxylic acid"
+    },
+    {
+      "source_id": "aspartic_acid",
+      "property_uri": "ex:hasChemicalName",
+      "target_id": "alpha_aminosuccinic_acid",
+      "evidence_span": "alpha-Aminosuccinic acid"
+    },
+    {
+      "source_id": "asparagine",
+      "property_uri": "ex:hasChemicalName",
+      "target_id": "alpha_aminosuccinamic_acid",
+      "evidence_span": "alpha-Aminosuccinamic acid"
+    },
+    {
+      "source_id": "glutamic_acid",
+      "property_uri": "ex:hasChemicalName",
+      "target_id": "alpha_aminoglutaric_acid",
+      "evidence_span": "alpha-Aminoglutaric acid"
+    },
+    {
+      "source_id": "beta_hydroxy_glutamic_acid",
+      "property_uri": "ex:hasChemicalName",
+      "target_id": "alpha_amino_beta_hydroxyglutaric_acid",
+      "evidence_span": "Alpha-Amino-beta-hydroxyglutaric acid"
+    },
+    {
+      "source_id": "glutamine",
+      "property_uri": "ex:hasChemicalName",
+      "target_id": "alpha_amino_glutamic_acid",
+      "evidence_span": "Alpha-Amino glutamic acid"
+    },
+    {
+      "source_id": "ornithine",
+      "property_uri": "ex:hasChemicalName",
+      "target_id": "alpha_delta_diamino_n_valeric_acid",
+      "evidence_span": "alpha-delta-Diamino-n-valeric acid"
+    },
+    {
+      "source_id": "arginine",
+      "property_uri": "ex:hasChemicalName",
+      "target_id": "alpha_amino_delta_guanidino_n_valeric_acid",
+      "evidence_span": "alpha-Amino-delta-guanidino-n-valeric acid"
+    },
+    {
+      "source_id": "lysine",
+      "property_uri": "ex:hasChemicalName",
+      "target_id": "alpha_diaminocaproic_acid",
+      "evidence_span": "alpha-Diaminocaproic acid"
+    },
+    {
+      "source_id": "histidine_table",
+      "property_uri": "ex:hasChemicalName",
+      "target_id": "alpha_amino_beta_imidazolepropionic_acid",
+      "evidence_span": "alpha-Amino-beta-imidazolepropionic acid"
+    }
+  ]
+}

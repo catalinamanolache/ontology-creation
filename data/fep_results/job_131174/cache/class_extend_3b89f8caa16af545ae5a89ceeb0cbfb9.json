@@ -1,0 +1,30 @@
+{
+  "reasoning_steps": [
+    "The new text introduces concepts related to trade statistics, raw material usage in wind power plants, and alternative materials for turbine blades.",
+    "New classes are required to represent the economic indicators and raw materials discussed."
+  ],
+  "classes": [
+    {
+      "uri": "ex:WindTradeStatistics",
+      "bfo_parent": "bfo:InformationContentEntity",
+      "subclass_of": null,
+      "aristotelian_definition": "A WindTradeStatistics is an Information Content Entity that documents trade data for wind generating sets, including export and import values.",
+      "comment": "Represents the statistical information about EU exports and imports of wind generating sets."
+    },
+    {
+      "uri": "ex:RawMaterialUsage",
+      "bfo_parent": "bfo:InformationContentEntity",
+      "subclass_of": null,
+      "aristotelian_definition": "A RawMaterialUsage is an Information Content Entity that specifies the materials used in manufacturing wind power plants.",
+      "comment": "Captures the list of raw materials and their usage in wind power plant construction."
+    },
+    {
+      "uri": "ex:AlternativeBladeMaterial",
+      "bfo_parent": "bfo:InformationContentEntity",
+      "subclass_of": null,
+      "aristotelian_definition": "An AlternativeBladeMaterial is an Information Content Entity that identifies substitute materials for balsa wood used in wind turbine blades.",
+      "comment": "Represents the exploration and adoption of alternative materials to address supply bottlenecks."
+    }
+  ],
+  "canonical_terms": {}
+}

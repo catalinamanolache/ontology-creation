@@ -1,0 +1,78 @@
+{
+  "reasoning_steps": [
+    "Identified relevant reactions for specific amino acids based on provided text.",
+    "Matched amino acid names with approved ontology classes and properties."
+  ],
+  "entities": [
+    {
+      "id": "ex:glycine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Glycine"
+    },
+    {
+      "id": "ex:histidine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Histidine"
+    },
+    {
+      "id": "ex:tyrosine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Tyrosine"
+    },
+    {
+      "id": "ex:tryptophan",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Tryptophan"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "ex:glycine",
+      "property_uri": "ex:undergoesDecarboxylationReaction",
+      "target_id": "ex:DecarboxylationReaction",
+      "evidence_span": "Glycine undergoes acid-base titration"
+    },
+    {
+      "source_id": "ex:histidine",
+      "property_uri": "ex:undergoesDecarboxylationReaction",
+      "target_id": "ex:DecarboxylationReaction",
+      "evidence_span": "Histidine → Histamine + CO2"
+    },
+    {
+      "source_id": "ex:tyrosine",
+      "property_uri": "ex:undergoesDecarboxylationReaction",
+      "target_id": "ex:DecarboxylationReaction",
+      "evidence_span": "Tyrosine → Tyramine + CO2"
+    },
+    {
+      "source_id": "ex:tryptophan",
+      "property_uri": "ex:undergoesDecarboxylationReaction",
+      "target_id": "ex:DecarboxylationReaction",
+      "evidence_span": "Tryptophan → Tryptamine + CO2"
+    },
+    {
+      "source_id": "ex:glycine",
+      "property_uri": "ex:identifiedByNinhydrinReaction",
+      "target_id": "ex:NinhydrinReaction",
+      "evidence_span": "When Amino acids (or) Imino acid react with Ninhydrin molecule it gives Color."
+    },
+    {
+      "source_id": "ex:histidine",
+      "property_uri": "ex:identifiedByNinhydrinReaction",
+      "target_id": "ex:NinhydrinReaction",
+      "evidence_span": "When Amino acids (or) Imino acid react with Ninhydrin molecule it gives Color."
+    },
+    {
+      "source_id": "ex:tyrosine",
+      "property_uri": "ex:identifiedByNinhydrinReaction",
+      "target_id": "ex:NinhydrinReaction",
+      "evidence_span": "When Amino acids (or) Imino acid react with Ninhydrin molecule it gives Color."
+    },
+    {
+      "source_id": "ex:tryptophan",
+      "property_uri": "ex:identifiedByNinhydrinReaction",
+      "target_id": "ex:NinhydrinReaction",
+      "evidence_span": "When Amino acids (or) Imino acid react with Ninhydrin molecule it gives Color."
+    }
+  ]
+}

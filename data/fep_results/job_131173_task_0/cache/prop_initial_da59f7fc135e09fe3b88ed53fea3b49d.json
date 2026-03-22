@@ -1,0 +1,43 @@
+{
+  "reasoning_steps": [
+    "The text describes the structure, purpose, and content of a status report on wind energy technology in the European Union published by the Clean Energy Technology Observatory."
+  ],
+  "properties": [
+    {
+      "uri": "ex:hasPurpose",
+      "domain": "ex:CleanEnergyTechnologyObservatory",
+      "range": "xsd:string",
+      "comment": "Describes the purpose or role of the Clean Energy Technology Observatory."
+    },
+    {
+      "uri": "ex:writtenBy",
+      "domain": "ex:StatusReport",
+      "range": "xsd:string",
+      "comment": "Identifies the author(s) of the status report."
+    },
+    {
+      "uri": "ex:publishedBy",
+      "domain": "ex:StatusReport",
+      "range": "ex:CleanEnergyTechnologyObservatory",
+      "comment": "Indicates which organization published the status report."
+    },
+    {
+      "uri": "ex:hasMethodology",
+      "domain": "ex:StatusReport",
+      "range": "ex:Methodology",
+      "comment": "Describes the methodology used in compiling the status report."
+    },
+    {
+      "uri": "ex:coversDeploymentIn",
+      "domain": "ex:StatusReport",
+      "range": "ex:EUDeployment",
+      "comment": "Indicates which EU deployment area is covered by the status report."
+    },
+    {
+      "uri": "ex:classifiesByTRL",
+      "domain": "ex:StatusReport",
+      "range": "ex:TechnologyReadinessLevel",
+      "comment": "Describes how technology readiness levels are categorized in the status report."
+    }
+  ]
+}

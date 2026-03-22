@@ -1,0 +1,37 @@
+{
+  "reasoning_steps": [
+    "The new source text introduces specific funding details for projects under the Innovation Fund and economic indicators such as turnover, GVA, market shares, manufacturing capacity, and employment in the EU wind sector."
+  ],
+  "properties": [
+    {
+      "uri": "ex:hasTotalFunding",
+      "domain": "ex:EUEconomicIndicatorReport",
+      "range": "xsd:string",
+      "comment": "Describes the total funding allocated by the Innovation Fund for specific technology areas."
+    },
+    {
+      "uri": "ex:hasProjectInvestmentAmount",
+      "domain": "ex:FundingAllocationReport",
+      "range": "xsd:string",
+      "comment": "Indicates the investment amount for specific projects aimed at developing recycling solutions or floating wind technology."
+    },
+    {
+      "uri": "ex:affectsDirectGVA",
+      "domain": "ex:EUEconomicIndicatorForVCPE",
+      "range": "xsd:string",
+      "comment": "Describes the direct Gross Value Added (GVA) of EU companies in the wind sector according to specific methodologies."
+    },
+    {
+      "uri": "ex:hasGlobalMarketShare",
+      "domain": "ex:EUEconomicIndicatorForVCPE",
+      "range": "xsd:string",
+      "comment": "Indicates the market share of European Original Equipment Manufacturers (OEMs) in onshore and offshore wind turbine markets."
+    },
+    {
+      "uri": "ex:hasManufacturingCapacityShare",
+      "domain": "ex:EUEconomicIndicatorForVCPE",
+      "range": "xsd:string",
+      "comment": "Describes the manufacturing capacity share of European companies for wind turbine components compared to global capacities."
+    }
+  ]
+}

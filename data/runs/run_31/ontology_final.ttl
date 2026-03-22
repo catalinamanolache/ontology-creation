@@ -1,0 +1,2479 @@
+@prefix ex: <http://example.org/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix bfo: <http://purl.obolibrary.org/obo/BFO_> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+# ===== OWL Classes (BFO-anchored) =====
+ex:Report rdf:type owl:Class ;
+    rdfs:subClassOf bfo:InformationContentEntity ;
+    skos:definition "A Report is an InformationContentEntity that records structured information about technology development, trends, value chains and markets." ;
+    rdfs:comment "" .
+
+ex:TechnologyDevelopmentStatusReport rdf:type owl:Class ;
+    rdfs:subClassOf bfo:InformationContentEntity ;
+    skos:definition "A TechnologyDevelopmentStatusReport is an InformationContentEntity that documents the status and trends of technology development, including readiness levels, deployment, costs, funding, patenting, and scientific publication." ;
+    rdfs:comment "" .
+
+ex:WindEnergyTechnology rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    skos:definition "A WindEnergyTechnology is a MaterialEntity that represents the technology used for generating electricity from wind energy." ;
+    rdfs:comment "" .
+
+ex:CETOProject rdf:type owl:Class ;
+    rdfs:subClassOf bfo:InformationContentEntity ;
+    skos:definition "A project that monitors EU research and innovation activities on clean energy technologies, assesses the competitiveness of the EU clean energy sector, builds on existing Commission studies, and publishes reports." ;
+    rdfs:comment "Covers objectives and contributions from colleagues." .
+
+ex:AnnualProgressReport rdf:type owl:Class ;
+    rdfs:subClassOf bfo:InformationContentEntity ;
+    skos:definition "A report published annually by the Commission on the competitiveness of clean energy technologies, serving as a primary source of data." ;
+    rdfs:comment "Documents annual progress in clean energy technology." .
+
+ex:RenewableEnergyShareTarget rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Quality ;
+    skos:definition "A target set by the EU for its renewable energy share, aiming to reach at least 42.5% of final energy consumption by 2030." ;
+    rdfs:comment "Defines the renewable energy goal." .
+
+ex:OnshoreWindCostReduction rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Process ;
+    skos:definition "The process of reducing the cost of onshore wind between 2010 and 2022, resulting in a levelised cost of energy (LCoE) of EUR 31 per MWh." ;
+    rdfs:comment "Tracks the cost reduction trend." .
+
+ex:GlobalMarketShare rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Quality ;
+    skos:definition "The share of the global wind turbine market held by Chinese, European, and North American OEMs as of 2023." ;
+    rdfs:comment "Represents market position." .
+
+ex:EURDFrameworkProgrammeInvestment rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Process ;
+    skos:definition "The investment in wind energy research and development by the EU framework programmes, including Horizon 2020 and Horizon Europe." ;
+    rdfs:comment "Tracks R&D funding." .
+
+ex:PrivateRDInvestment rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Process ;
+    skos:definition "The process of private research and development funding invested in various technologies, particularly focusing on wind energy." ;
+    rdfs:comment "Covers the investment percentage from 2010 to 2020." .
+
+ex:SWOTAnalysis rdf:type owl:Class ;
+    rdfs:subClassOf bfo:InformationContentEntity ;
+    skos:definition "A structured analysis of strengths, weaknesses, opportunities, and threats related to the competitiveness of the EU wind energy sector." ;
+    rdfs:comment "Maps to CETO SWOT analysis for the competitiveness of the EU wind energy sector." .
+
+ex:TechnologyReadinessLevel rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Quality ;
+    skos:definition "The stage of technological development, indicating how close a technology is to commercialization." ;
+    rdfs:comment "Covers the current TRL of onshore and bottom-fixed offshore wind turbines." .
+
+ex:FloatingOffshoreWindSubstructure rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    skos:definition "The substructures used in floating offshore wind technology to provide buoyancy and stability." ;
+    rdfs:comment "Includes types like Spar-buoy, Semi-Submersible, TLP, Barge, and Multi-Platforms." .
+
+ex:PreCommercialFloatingOffshoreWindDesign rdf:type owl:Class ;
+    rdfs:subClassOf bfo:InformationContentEntity ;
+    skos:definition "The design of floating offshore wind technology that has been deployed pre-commercially." ;
+    rdfs:comment "Includes designs like Spar-buoy and Semi-Submersible in the North Sea and Atlantic Ocean." .
+
+ex:LowerTRLTechnology rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    skos:definition "Technologies generating electricity that are at a lower technology readiness level than onshore and bottom-fixed offshore wind turbines." ;
+    rdfs:comment "Includes technologies like Airborne Wind Energy Systems (AWES) and Vertical Axis Wind Turbines (VAWT)." .
+
+ex:AirborneWindEnergySystem rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    skos:definition "A technology that converts wind energy into electricity using autonomous kites or unmanned aircrafts, linked to the ground by one or more tethers." ;
+    rdfs:comment "Airborne wind energy systems are at a lower TRL than other wind technologies." .
+
+ex:VerticalAxisWindTurbine rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    skos:definition "A type of wind turbine that uses a vertical shaft around which the rotor turns, offering lower efficiency compared to horizontal axis wind turbines but potentially gaining momentum through hybridization or small-scale applications." ;
+    rdfs:comment "Vertical axis wind turbines are less efficient than conventional horizontal axis wind turbines." .
+
+ex:OnshoreWindInstalledCapacity2030 rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    skos:definition "The projected installed capacity of onshore wind in the EU by 2030 under the POTEnCIA CETO 2024 scenario." ;
+    rdfs:comment "This class represents a specific projection for onshore wind energy." .
+
+ex:OnshoreWindInstalledCapacity2050 rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    skos:definition "The projected installed capacity of onshore wind in the EU by 2050 under the POTEnCIA CETO 2024 scenario." ;
+    rdfs:comment "This class represents a specific projection for onshore wind energy." .
+
+ex:OffshoreWindInstalledCapacity2030 rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    skos:definition "The projected installed capacity of offshore wind in the EU by 2030 under the POTEnCIA CETO 2024 scenario." ;
+    rdfs:comment "This class represents a specific projection for offshore wind energy." .
+
+ex:OffshoreWindInstalledCapacity2050 rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    skos:definition "The projected installed capacity of offshore wind in the EU by 2050 under the POTEnCIA CETO 2024 scenario." ;
+    rdfs:comment "This class represents a specific projection for offshore wind energy." .
+
+ex:GlobalWindEnergyInstalledCapacity2030 rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    skos:definition "The projected installed capacity of global wind energy by 2030 under the Global CETO 2°C scenario 2024." ;
+    rdfs:comment "This class represents a specific projection for global wind energy." .
+
+ex:GlobalWindEnergyInstalledCapacity2050 rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    skos:definition "The projected installed capacity of global wind energy by 2050 under the Global CETO 2°C scenario 2024." ;
+    rdfs:comment "This class represents a specific projection for global wind energy." .
+
+ex:http://example.org/vc_pe_investment_stages rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Entity ;
+    skos:definition "A classification of venture capital and private equity investments based on the stage of development of the investee company." ;
+    rdfs:comment "This class is used to categorize different stages of VC/PE investment." .
+
+ex:InvestmentDealStage rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Quality ;
+    skos:definition "An InvestmentDealStage is a Quality that categorizes venture capital and private equity investments based on the developmental phase of the company receiving the investment." ;
+    rdfs:comment "A classification of venture capital and private equity investments based on the stage of development of the investee company." .
+
+ex:WindEnergyInvestment rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Process ;
+    skos:definition "A WindEnergyInvestment is a Process that represents the financial commitment of venture capital and private equity into the wind energy sector." ;
+    rdfs:comment "Venture capital and private equity investment in the wind energy sector." .
+
+ex:WindEnergyInvention rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    skos:definition "A WindEnergyInvention is a MaterialEntity that represents a novel creation or discovery within the field of wind energy, often protected by patent families." ;
+    rdfs:comment "A novel creation or discovery in the wind energy sector, represented by patent families." .
+
+ex:HighValueInvention rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Entity ;
+    skos:definition "A HighValueInvention is a WindEnergyInvention that is considered significant due to its broad protection across multiple patent offices, indicating substantial commercial or technological importance." ;
+    rdfs:comment "A wind energy invention considered high-value due to patent applications filed in more than one patent office." .
+
+ex:InternationalInvention rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Entity ;
+    skos:definition "An InternationalInvention is a WindEnergyInvention where the patent application is protected in a country other than the applicant's residence, signifying cross-border intellectual property protection." ;
+    rdfs:comment "A wind energy invention for which patent applications are protected in a country other than the applicant's residence." .
+
+ex:CooperativePatentClassificationCode rdf:type owl:Class ;
+    rdfs:subClassOf bfo:InformationContentEntity ;
+    skos:definition "A CooperativePatentClassificationCode is an InformationContentEntity that serves as a standardized code used to categorize and evaluate patenting activity within a specific technological domain." ;
+    rdfs:comment "A standardized code used for evaluating patenting activity in the wind sector." .
+
+ex:WindEnergyPublication rdf:type owl:Class ;
+    rdfs:subClassOf bfo:InformationContentEntity ;
+    skos:definition "A WindEnergyPublication is an InformationContentEntity that represents a peer-reviewed article or other scholarly work discussing research and findings in the field of wind energy." ;
+    rdfs:comment "A peer-reviewed article or scholarly work related to the wind energy sector." .
+
+ex:HighlyCitedPublication rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Entity ;
+    skos:definition "A HighlyCitedPublication is a WindEnergyPublication that belongs to the top 10% most cited papers within its field and year, indicating significant impact and recognition." ;
+    rdfs:comment "A wind energy publication that is among the top 10% most cited papers in its field and year." .
+
+ex:CountryPublicationImpact rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Quality ;
+    skos:definition "A CountryPublicationImpact is a Quality that measures the citation impact of publications from a specific country relative to the global average for that research field." ;
+    rdfs:comment "A measure of the citation impact of publications from a country compared to the global average in the research field." .
+
+ex:CountryPublicationProductivity rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Quality ;
+    skos:definition "A CountryPublicationProductivity is a Quality that assesses both the output (productivity) and the citation impact (h-index) of publications originating from a specific country." ;
+    rdfs:comment "A measure of both the productivity and citation impact of publications from a country." .
+
+ex:OriginalEquipmentManufacturer rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Role ;
+    skos:definition "An OriginalEquipmentManufacturer is a Role that designs, manufactures, and sells equipment under its own brand name, particularly in the context of the wind energy sector." ;
+    rdfs:comment "A company that manufactures and sells equipment, often in the wind energy sector, under its own brand." .
+
+ex:CountryPublicationActivity rdf:type owl:Class ;
+    rdfs:subClassOf bfo:InformationContentEntity ;
+    skos:definition "A CountryPublicationActivity is an InformationContentEntity that represents the scholarly output of a specific country in the field of wind energy research, measured by the number of peer-reviewed articles published within a defined period." ;
+    rdfs:comment "Represents the number of peer-reviewed articles published by a country in wind energy research." .
+
+ex:CollaborationNetwork rdf:type owl:Class ;
+    rdfs:subClassOf bfo:InformationContentEntity ;
+    skos:definition "A CollaborationNetwork is an InformationContentEntity that visualizes and describes the co-publication relationships between different entities (e.g., countries, organizations) in a specific research domain." ;
+    rdfs:comment "Describes the co-publication relationships between entities in a research domain." .
+
+ex:WindEnergyResearchProject rdf:type owl:Class ;
+    rdfs:subClassOf bfo:InformationContentEntity ;
+    skos:definition "A WindEnergyResearchProject is an InformationContentEntity that represents a funded initiative or program focused on advancing research and innovation within the wind energy sector." ;
+    rdfs:comment "Represents a funded initiative or program in wind energy research and innovation." .
+
+ex:RecyclingCircularityProject rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Entity ;
+    skos:definition "A RecyclingCircularityProject is a WindEnergyResearchProject that specifically focuses on developing solutions for recycling and promoting circular economy principles within the wind energy sector, particularly concerning end-of-life components." ;
+    rdfs:comment "A wind energy research project focused on recycling and circularity solutions." .
+
+ex:BladeRecyclingProject rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Entity ;
+    rdfs:subClassOf ex:RecyclingCircularityProject ;
+    skos:definition "A BladeRecyclingProject is a RecyclingCircularityProject that aims to develop and implement recycling solutions for wind turbine blades." ;
+    rdfs:comment "A project focused on developing recycling solutions for wind turbine blades." .
+
+ex:GridIntegrationProject rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Entity ;
+    rdfs:subClassOf ex:WindEnergyResearchProject ;
+    skos:definition "A GridIntegrationProject is a WindEnergyResearchProject that focuses on improving the integration of wind energy into existing power grids, including aspects like converter interoperability and smart curtailment." ;
+    rdfs:comment "A wind energy research project focused on improving grid integration." .
+
+ex:ConverterInteroperabilityProject rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Entity ;
+    rdfs:subClassOf ex:GridIntegrationProject ;
+    skos:definition "A ConverterInteroperabilityProject is a GridIntegrationProject that aims to enhance the grid-forming capabilities and interoperability of offshore and onshore converters within high-voltage direct current systems." ;
+    rdfs:comment "A project focused on improving the interoperability of converters for grid integration." .
+
+ex:FloatingOffshoreWindProject rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Entity ;
+    rdfs:subClassOf ex:WindEnergyResearchProject ;
+    skos:definition "A FloatingOffshoreWindProject is a WindEnergyResearchProject that focuses on the development, demonstration, or industrialization of floating offshore wind technologies." ;
+    rdfs:comment "A wind energy research project focused on floating offshore wind technology." .
+
+ex:BatterySupplyChainProject rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Entity ;
+    skos:definition "A BatterySupplyChainProject is a WindEnergyResearchProject that aims to establish a sustainable end-to-end supply chain for lithium-ion batteries, particularly for applications in electric vehicles and renewable energy sources like solar and wind farms." ;
+    rdfs:comment "A project focused on establishing a sustainable supply chain for lithium-ion batteries used in renewable energy." .
+
+ex:http://example.org/TWAIN rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Entity ;
+    skos:definition "A project focusing on the efficient deployment of AI in wind farm control and asset management to optimize operation for cost, performance, and efficiency while considering environmental and societal aspects." ;
+    rdfs:comment "Priority: Maintenance and condition monitoring systems" .
+
+ex:http://example.org/ULTFARMS rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Entity ;
+    skos:definition "A project developing novel designs in six low trophic aquaculture pilots in offshore wind farm locations across the North and Baltic Seas to understand environmental impacts." ;
+    rdfs:comment "Priority: Environmental impacts of wind energy" .
+
+ex:http://example.org/off-coustics rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Entity ;
+    skos:definition "A project aiming to achieve a comprehensive understanding of the acoustic repercussions of wind turbines, specifically their potential negative impact on marine life through acoustic damage." ;
+    rdfs:comment "Priority: Environmental impacts of wind energy" .
+
+ex:http://example.org/FLOW rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Entity ;
+    skos:definition "A project developing new prediction methods for production statistics and load performance of modern GW-scale and 400-metre tall offshore and onshore wind energy systems." ;
+    rdfs:comment "Priority: Resource assessment" .
+
+ex:http://example.org/MADE4WIND rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Entity ;
+    skos:definition "A project developing and testing innovative components for a 15 MW floating wind turbine, including new designs and manufacturing techniques in lightweight materials, recyclability, and advanced software tools." ;
+    rdfs:comment "Priority: New materials and components" .
+
+ex:http://example.org/Nanowings rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Entity ;
+    skos:definition "A project improving wind turbine performance and durability by developing nanocoating based on a blended formulation of super-glue polymers combined with nanoparticles, providing outstanding anti-icing and anti-fouling properties." ;
+    rdfs:comment "Priority: New materials and components" .
+
+ex:http://example.org/WIMBY rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Entity ;
+    skos:definition "A project studying the drivers and barriers of social acceptance to address related challenges, gaining more popular support for wind energy." ;
+    rdfs:comment "Priority: Social engagement" .
+
+ex:http://example.org/DATA-DRIVEN OFFSHORE rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Entity ;
+    skos:definition "A project revolutionizing aerohydroelastic simulations used in wind turbine research and development by integrating experimental data into these simulations." ;
+    rdfs:comment "Priority: Offshore technology" .
+
+ex:http://example.org/Orcelle rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Entity ;
+    skos:definition "A project developing a solution involving wind as the main form of propulsion, aiming for an energy efficiency gain of more than 50%." ;
+    rdfs:comment "Priority: Other (shipping sector)" .
+
+ex:http://example.org/WHISPER rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Entity ;
+    skos:definition "A project developing a modular retrofit solution, including a wingsail system for wind-assisted propulsion and testing efficiency savings of more than 20%." ;
+    rdfs:comment "Priority: Other (shipping sector)" .
+
+ex:http://example.org/i4Offshore rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Entity ;
+    skos:definition "A project aiming to reduce cost barriers in large-scale offshore developments by optimizing low-cost manufacturing through a hybrid-material gravity jacket foundation." ;
+    rdfs:comment "Priority: Offshore technology" .
+
+ex:http://example.org/COREWIND rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Entity ;
+    skos:definition "A project contributing to cost and environmental footprint reductions in floating offshore wind energy systems by using digital tools and optimizing designs for station-keeping systems and dynamic cables." ;
+    rdfs:comment "Priority: Offshore technology" .
+
+ex:http://example.org/SUSMAGPRO rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Entity ;
+    skos:definition "A project focusing on recycling and reusing neodymium-containing magnets from waste, creating a shorter recycling loop with higher recovery rate and increased yield." ;
+    rdfs:comment "Priority: Recycling and circularity" .
+
+ex:http://example.org/NAWEP rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Entity ;
+    skos:definition "A project aiming to construct and operate an onshore array of at least twelve 100 kW AWES devices, generating a combined 1.2 MW with targeted cost and carbon footprint reductions." ;
+    rdfs:comment "Priority: Airborne wind energy systems" .
+
+ex:http://example.org/Aquilon rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Entity ;
+    skos:definition "A project serving as a demonstrator for airborne wind energy production at 160 kW scale and an integrated renewable energy and storage solution." ;
+    rdfs:comment "Priority: Airborne wind energy systems" .
+
+ex:http://example.org/N2OWF rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Entity ;
+    skos:definition "A project building and operating a first-of-its-kind offshore wind farm with 450 MW capacity, combined with on-site production, storage, and offtake of green hydrogen." ;
+    rdfs:comment "Priority: Offshore technology" .
+
+ex:http://example.org/SUSTAIN-SEA rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Entity ;
+    skos:definition "A project using wind energy to reduce fuel use and GHG emissions in the maritime transport sector by integrating a wind propulsion system into five large cargo vessels." ;
+    rdfs:comment "Priority: Other (shipping sector)" .
+
+ex:http://example.org/HIPPOW rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Entity ;
+    skos:definition "A project aiming to build and operate a 15 MW floating wind turbine with innovative technologies including wind turbines, foundations, and hydrogen technology solutions." ;
+    rdfs:comment "Priority: Offshore technology" .
+
+ex:http://example.org/SEAWORTHY rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Entity ;
+    skos:definition "A project building and operating a 15 MW floating wind turbine with innovative technologies including wind turbines, foundations, and hydrogen technology solutions." ;
+    rdfs:comment "Priority: Offshore technology" .
+
+ex:http://example.org/hippow_project rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Entity ;
+    skos:definition "A commercial-scale demonstration of a technology capable of supplying clean dispatchable offshore power from wind, waves and hydrogen." ;
+    rdfs:comment "HIPPOW project is described as a commercial-scale demonstration integrating various renewable energy sources." .
+
+ex:http://example.org/seaworthy_project rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Entity ;
+    skos:definition "A commercial-scale demonstration of technology capable of supplying clean dispatchable offshore power from wind, waves and hydrogen." ;
+    rdfs:comment "SEAWORTHY project is described as a commercial-scale demonstration integrating various renewable energy sources." .
+
+ex:http://example.org/wind_energy_trade rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Entity ;
+    skos:definition "The exchange and flow of wind generating sets between different countries, particularly focusing on the EU's trade dynamics." ;
+    rdfs:comment "This class captures the overall context of international trade in wind generating sets." .
+
+ex:http://example.org/import_export_ratio rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Entity ;
+    skos:definition "The ratio between extra-EU imports and exports, indicating market share dynamics." ;
+    rdfs:comment "This class represents the quantitative relationship between imports and exports." .
+
+ex:http://example.org/critical_raw_materials_supply_chain rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Entity ;
+    skos:definition "The entire process from extraction to manufacturing of critical raw materials used in wind power plants, particularly focusing on rare earth elements and permanent magnets." ;
+    rdfs:comment "This class describes the supply chain for essential components of wind turbines." .
+
+ex:http://example.org/balsa_wood rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Entity ;
+    skos:definition "A lightweight, stiff material used in wind turbine blades, especially in spar caps and blade cores." ;
+    rdfs:comment "This class defines the specific material balsa wood and its usage." .
+
+ex:http://example.org/material_intensity rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Entity ;
+    skos:definition "The amount of raw or composite materials required per unit of installed capacity in wind turbines." ;
+    rdfs:comment "This class quantifies the material requirements for wind turbine construction." .
+
+ex:http://www.w3.org/2002/07/owl#Class rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Entity ;
+    skos:definition "Critical raw materials used in wind energy technology, specifically Neodymium magnets." ;
+    rdfs:comment "These are essential for the production of permanent magnets in turbine generators." .
+
+ex:http://example.org/new_knowledge rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Entity ;
+    skos:definition "A new piece of information derived from existing sources." ;
+    rdfs:comment "This class represents the newly generated knowledge based on the references provided." .
+
+ex:http://example.org/report_on_socio_economic_impacts_of_community_wind_power_projects_northern_scotland rdf:type owl:Class ;
+    rdfs:subClassOf bfo:InformationContentEntity ;
+    skos:definition "A report published by an organization on the socio-economic impacts of community wind power projects in Northern Scotland." ;
+    rdfs:comment "Describes the socio-economic impacts of community wind power projects in Northern Scotland." .
+
+ex:http://example.org/report_on_socio_economic_impact_study_of_offshore_wind rdf:type owl:Class ;
+    rdfs:subClassOf bfo:InformationContentEntity ;
+    skos:definition "A report published by an organization on the socio-economic impact study of offshore wind." ;
+    rdfs:comment "Describes the socio-economic impact of offshore wind projects." .
+
+ex:http://example.org/jrc_idees_2021_database_update_and_technical_documentation rdf:type owl:Class ;
+    rdfs:subClassOf bfo:InformationContentEntity ;
+    skos:definition "Technical documentation and database update for the Integrated Database of the European Energy System by the JRC." ;
+    rdfs:comment "Provides updates and documentation for the JRC's energy system database." .
+
+ex:http://example.org/wind_energy_technology_observatory_report rdf:type owl:Class ;
+    rdfs:subClassOf bfo:InformationContentEntity ;
+    skos:definition "A report published by the Clean Energy Technology Observatory on wind energy in the European Union." ;
+    rdfs:comment "Reports on the technology development, trends, value chains, and markets of wind energy in the EU." .
+
+ex:http://example.org/report_on_potencia_ceto_2024_scenario rdf:type owl:Class ;
+    rdfs:subClassOf bfo:InformationContentEntity ;
+    skos:definition "A report published by an organization on the POTEnCIA CETO 2024 scenario for EU energy outlook to 2050." ;
+    rdfs:comment "Describes the scenario for the EU energy outlook to 2050 under the POTEnCIA framework." .
+
+ex:OffshoreWindCapacityAddition rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Process ;
+    skos:definition "An OffshoreWindCapacityAddition is a Process that represents the addition of new offshore wind power generation capacity over a specific period." ;
+    rdfs:comment "Represents the annual or periodic increase in installed offshore wind power capacity." .
+
+ex:OnshoreWindCapacityAddition rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Process ;
+    skos:definition "An OnshoreWindCapacityAddition is a Process that represents the addition of new onshore wind power generation capacity over a specific period." ;
+    rdfs:comment "Represents the annual or periodic increase in installed onshore wind power capacity." .
+
+ex:OffshoreWindInstalledCapacity rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    skos:definition "An OffshoreWindInstalledCapacity is a MaterialEntity that represents the total cumulative installed capacity of offshore wind power generation at a specific point in time." ;
+    rdfs:comment "Represents the total cumulative installed capacity of offshore wind power generation." .
+
+ex:OnshoreWindInstalledCapacity rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    skos:definition "An OnshoreWindInstalledCapacity is a MaterialEntity that represents the total cumulative installed capacity of onshore wind power generation at a specific point in time." ;
+    rdfs:comment "Represents the total cumulative installed capacity of onshore wind power generation." .
+
+ex:WindEnergyGeneration rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Process ;
+    skos:definition "A WindEnergyGeneration is a Process that represents the production of electricity from wind energy over a specific period." ;
+    rdfs:comment "Represents the electricity generated by wind power." .
+
+ex:WindEnergyLCOE rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Quality ;
+    skos:definition "A WindEnergyLCOE is a Quality that represents the Levelized Cost of Energy for wind power, indicating the average revenue per unit of electricity generation needed to recover costs of building and operating a wind power plant." ;
+    rdfs:comment "Represents the Levelized Cost of Energy for wind power." .
+
+ex:WindEnergyInvestmentCost rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Quality ;
+    skos:definition "A WindEnergyInvestmentCost is a Quality that represents the initial capital expenditure required for building wind energy installations." ;
+    rdfs:comment "Represents the overnight investment costs for wind energy installations." .
+
+ex:PublicRAndIInvestmentWindEnergy rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Process ;
+    skos:definition "A PublicRAndIInvestmentWindEnergy is a Process that represents public funding allocated to research and innovation activities within the wind energy sector." ;
+    rdfs:comment "Represents public investment in research and development for wind energy." .
+
+ex:PrivateRAndIInvestmentWindEnergy rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Process ;
+    skos:definition "A PrivateRAndIInvestmentWindEnergy is a Process that represents private funding allocated to research and innovation activities within the wind energy sector." ;
+    rdfs:comment "Represents private investment in research and development for wind energy." .
+
+ex:WindEnergyVCPEInvestment rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Process ;
+    skos:definition "A WindEnergyVCPEInvestment is a Process that represents financial investment by venture capital and private equity firms into the wind energy sector." ;
+    rdfs:comment "Represents venture capital and private equity investment in the wind energy sector." .
+
+ex:WindEnergyInventionActivity rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Process ;
+    skos:definition "A WindEnergyInventionActivity is a Process that represents the creation and documentation of new inventions within the wind energy sector." ;
+    rdfs:comment "Represents the activity of inventing within the wind energy sector." .
+
+ex:WindEnergyPublicationActivity rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Process ;
+    skos:definition "A WindEnergyPublicationActivity is a Process that represents the creation and dissemination of peer-reviewed articles and scholarly works in the field of wind energy." ;
+    rdfs:comment "Represents the activity of publishing research in the wind energy sector." .
+
+ex:WindEnergyFundingEvolution rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Process ;
+    skos:definition "A WindEnergyFundingEvolution is a Process that tracks the changes and trends in research and innovation funding for wind energy over time." ;
+    rdfs:comment "Represents the evolution of funding for wind energy research and innovation." .
+
+ex:WindSectorTurnover rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Process ;
+    skos:definition "A WindSectorTurnover is a Process that represents the total revenue generated by the wind energy sector over a specific period." ;
+    rdfs:comment "Represents the turnover of the wind energy sector." .
+
+ex:WindSectorGVA rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Process ;
+    skos:definition "A WindSectorGVA is a Process that represents the Gross Value Added generated by the wind energy sector, indicating its contribution to the economy." ;
+    rdfs:comment "Represents the Gross Value Added of the wind energy sector." .
+
+ex:WindTurbineMarketShare rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Quality ;
+    skos:definition "A WindTurbineMarketShare is a Quality that represents the proportion of the global or regional market for wind turbines held by specific manufacturers or regions." ;
+    rdfs:comment "Represents the market share of wind turbines." .
+
+ex:WindEnergyEmployment rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Process ;
+    skos:definition "A WindEnergyEmployment is a Process that represents the number of direct and indirect jobs within the wind energy sector over a specific period." ;
+    rdfs:comment "Represents the evolution of direct and indirect jobs in the wind energy sector." .
+
+ex:RawMaterial rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    skos:definition "A RawMaterial is a MaterialEntity that is a basic substance in its natural or processed state, used as a component in the manufacturing of wind power plants." ;
+    rdfs:comment "Represents the basic substances used in the production of wind power plants." .
+
+ex:MaterialIntensity rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Quality ;
+    skos:definition "A MaterialIntensity is a Quality that quantifies the amount of raw or composite materials required per unit of installed capacity in wind turbines." ;
+    rdfs:comment "Measures the material consumption per unit of wind turbine capacity." .
+
+ex:WindTurbineType rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    rdfs:subClassOf ex:WindEnergyTechnology ;
+    skos:definition "A WindTurbineType is a MaterialEntity that represents a specific category or design of wind turbine used for generating electricity from wind energy." ;
+    rdfs:comment "Represents a specific classification or design of a wind turbine." .
+
+ex:RareEarthElement rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    rdfs:subClassOf ex:RawMaterial ;
+    skos:definition "A RareEarthElement is a RawMaterial that is a group of 17 chemically similar metallic elements with unique properties crucial for various high-tech applications, including wind turbine magnets." ;
+    rdfs:comment "Represents rare earth elements used in wind turbine components, particularly magnets." .
+
+ex:PermanentMagnet rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    rdfs:subClassOf ex:RawMaterial ;
+    skos:definition "A PermanentMagnet is a RawMaterial that is a magnetic material that retains its magnetism after being magnetized, commonly used in wind turbine generators." ;
+    rdfs:comment "Represents magnetic materials used in wind turbine generators." .
+
+ex:OnshoreWindTurbine rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    rdfs:subClassOf ex:WindTurbineType ;
+    skos:definition "An OnshoreWindTurbine is a WindTurbineType that is designed and installed for generating electricity from wind on land." ;
+    rdfs:comment "Represents a wind turbine installed on land." .
+
+ex:OffshoreWindTurbine rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    rdfs:subClassOf ex:WindTurbineType ;
+    skos:definition "An OffshoreWindTurbine is a WindTurbineType that is designed and installed for generating electricity from wind in bodies of water." ;
+    rdfs:comment "Represents a wind turbine installed offshore." .
+
+ex:GHGEmissions rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Quality ;
+    skos:definition "A GHGEmissions is a Quality that quantifies the amount of greenhouse gases released into the atmosphere per unit of energy produced by wind power plants." ;
+    rdfs:comment "Quantifies greenhouse gas emissions associated with wind energy generation." .
+
+ex:EnergyPaybackTime rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Quality ;
+    skos:definition "An EnergyPaybackTime is a Quality that represents the time required for a wind energy system to generate the amount of energy equivalent to the energy consumed during its entire lifecycle." ;
+    rdfs:comment "Measures the time it takes for a wind energy system to repay its energy investment." .
+
+ex:BenthicBiodiversity rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    skos:definition "A BenthicBiodiversity is a MaterialEntity that represents the variety of life forms and their ecological interactions within the seabed environment." ;
+    rdfs:comment "Refers to the biodiversity found on the bottom of marine or freshwater ecosystems." .
+
+ex:SeabedRecovery rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Process ;
+    skos:definition "A SeabedRecovery is a Process that describes the natural regeneration and restoration of the seabed ecosystem, potentially facilitated by reduced human activity." ;
+    rdfs:comment "The process by which the seabed ecosystem recovers from disturbances or pressures." .
+
+ex:BenthicFaunalBaseline rdf:type owl:Class ;
+    rdfs:subClassOf bfo:InformationContentEntity ;
+    skos:definition "A BenthicFaunalBaseline is an InformationContentEntity that serves as a reference point for the composition and abundance of benthic fauna against which future changes can be assessed." ;
+    rdfs:comment "A foundational dataset describing the state of benthic fauna before significant development or change." .
+
+ex:BlueWaterConsumption rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Quality ;
+    skos:definition "A BlueWaterConsumption is a Quality that quantifies the net balance of freshwater inputs and outputs throughout the lifecycle of a product or process." ;
+    rdfs:comment "Measures the freshwater footprint of an activity or product." .
+
+ex:WaterScarcityFootprint rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Quality ;
+    skos:definition "A WaterScarcityFootprint is a Quality that assesses the impact of water consumption on water availability in a specific region, using a defined methodology like AWARE." ;
+    rdfs:comment "Quantifies the contribution to water scarcity based on available water remaining." .
+
+ex:NdFeBMagnetProduction rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Process ;
+    skos:definition "A NdFeBMagnetProduction is a Process that encompasses the manufacturing steps involved in creating Neodymium-Iron-Boron permanent magnets." ;
+    rdfs:comment "The industrial process of manufacturing NdFeB permanent magnets." .
+
+ex:ResourceDepletionWater rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Quality ;
+    skos:definition "A ResourceDepletionWater is a Quality that measures the volume of water consumed during the extraction and processing of resources, contributing to water depletion." ;
+    rdfs:comment "Quantifies water used in resource extraction and processing that leads to depletion." .
+
+ex:HumanToxicityPotential rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Quality ;
+    skos:definition "A HumanToxicityPotential is a Quality that measures the potential impact on human health from toxic substances released into the environment." ;
+    rdfs:comment "An environmental impact category assessing health effects from toxic substances." .
+
+ex:InstalledPowerDensity rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Quality ;
+    skos:definition "An InstalledPowerDensity is a Quality that represents the amount of power generation capacity installed per unit of area." ;
+    rdfs:comment "Measures the power output relative to the land or sea area occupied." .
+
+ex:SoilAcidificationPotential rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Quality ;
+    skos:definition "A SoilAcidificationPotential is a Quality that quantifies the potential for substances released during a process to cause acidification of the soil." ;
+    rdfs:comment "An environmental impact category measuring the potential for soil acidification." .
+
+ex:SoilEutrophicationPotential rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Quality ;
+    skos:definition "A SoilEutrophicationPotential is a Quality that quantifies the potential for substances released during a process to cause excessive nutrient enrichment in the soil." ;
+    rdfs:comment "An environmental impact category measuring the potential for soil eutrophication." .
+
+ex:SoilPollution rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Quality ;
+    skos:definition "A SoilPollution is a Quality that describes the presence of contaminants in the soil that can be harmful to the environment or human health." ;
+    rdfs:comment "Contamination of soil by harmful substances." .
+
+ex:HazardousMaterial rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    skos:definition "A HazardousMaterial is a MaterialEntity that possesses properties that make it capable of causing harm to human health or the environment." ;
+    rdfs:comment "Substances that pose a risk due to their properties." .
+
+ex:EconomicLCCStandard rdf:type owl:Class ;
+    rdfs:subClassOf bfo:InformationContentEntity ;
+    skos:definition "An EconomicLCCStandard is an InformationContentEntity that defines best practices or methodologies for assessing the life cycle cost of economic activities or projects." ;
+    rdfs:comment "A standard or best practice for evaluating the total cost of ownership over a product's or project's lifecycle." .
+
+ex:CriticalRawMaterial rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    skos:definition "A CriticalRawMaterial is a MaterialEntity that is essential for technological applications but faces a high risk of supply disruption." ;
+    rdfs:comment "Raw materials vital for technology with a high risk of supply shortage." .
+
+ex:CompositeWaste rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    skos:definition "A CompositeWaste is a MaterialEntity that consists of discarded materials made from a combination of different components, such as those found in wind turbine blades." ;
+    rdfs:comment "Waste material derived from composite structures, particularly wind turbine blades." .
+
+ex:RecyclingInfrastructure rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    skos:definition "A RecyclingInfrastructure is a MaterialEntity that comprises the facilities, equipment, and systems necessary for processing waste materials for reuse or recovery." ;
+    rdfs:comment "The physical setup and resources required for recycling processes." .
+
+ex:PermittingProcess rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Process ;
+    skos:definition "A PermittingProcess is a Process that involves the procedures and requirements for obtaining official authorization to undertake a specific activity or project, such as constructing a wind farm." ;
+    rdfs:comment "The sequence of steps and regulations involved in obtaining official permission for a project." .
+
+ex:OneStopShopPermittingModel rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Process ;
+    skos:definition "A OneStopShopPermittingModel is a Process that centralizes all necessary administrative and regulatory steps for project permitting through a single point of contact or agency." ;
+    rdfs:comment "An administrative model that consolidates all permitting procedures into a single entity." .
+
+ex:LowFrequencyNoise rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Quality ;
+    skos:definition "A LowFrequencyNoise is a Quality that refers to sound waves with frequencies typically below 200 Hz, which can be emitted by wind turbines." ;
+    rdfs:comment "Sound characterized by low frequencies, often associated with wind turbine operation." .
+
+ex:PsychoMedicalEffect rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Quality ;
+    skos:definition "A PsychoMedicalEffect is a Quality that describes the psychological or medical symptoms experienced by individuals due to exposure to certain stimuli, such as noise." ;
+    rdfs:comment "Adverse psychological or physiological responses to environmental factors." .
+
+ex:DirectPhysicalEffect rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Quality ;
+    skos:definition "A DirectPhysicalEffect is a Quality that denotes a physiological impact on the human body directly caused by an external factor, independent of psychological perception." ;
+    rdfs:comment "A tangible, measurable physical impact on the body." .
+
+ex:ResidentAttitude rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Quality ;
+    skos:definition "A ResidentAttitude is a Quality that represents the disposition, feelings, or opinions held by individuals living in proximity to wind turbines regarding their presence and impact." ;
+    rdfs:comment "The perspective or stance of local residents towards wind energy installations." .
+
+ex:ExposureSymptom rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Quality ;
+    skos:definition "An ExposureSymptom is a Quality that describes a physical or psychological manifestation reported by individuals due to exposure to a specific factor, such as infrasound and low frequency noise from wind turbines." ;
+    rdfs:comment "Represents reported symptoms resulting from exposure to environmental factors like wind turbine noise." .
+
+ex:LowFrequencyNoiseEffect rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Quality ;
+    skos:definition "A LowFrequencyNoiseEffect is a Quality that describes a potential impact on human health or perception resulting from exposure to low-frequency noise, particularly from wind turbines, for which scientific understanding may be limited." ;
+    rdfs:comment "Describes the potential health or perceptual effects associated with low-frequency noise from wind turbines." .
+
+ex:InfrasoundEffect rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Quality ;
+    skos:definition "An InfrasoundEffect is a Quality that describes a potential impact on human health or perception resulting from exposure to infrasound, particularly from wind turbines, for which scientific understanding may be limited." ;
+    rdfs:comment "Describes the potential health or perceptual effects associated with infrasound from wind turbines." .
+
+ex:WindTurbineNoisePerception rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Quality ;
+    skos:definition "A WindTurbineNoisePerception is a Quality that represents how individuals perceive and interpret noise generated by wind turbines, which can be influenced by various factors beyond objective sound levels." ;
+    rdfs:comment "Refers to the subjective interpretation and experience of noise from wind turbines." .
+
+ex:SleepDisturbance rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Quality ;
+    skos:definition "A SleepDisturbance is a Quality that describes an alteration or disruption in normal sleep patterns, which can be self-reported and potentially associated with environmental factors like noise." ;
+    rdfs:comment "Represents a disruption in normal sleep patterns, potentially linked to environmental factors." .
+
+ex:ElectromagneticFieldExposure rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Quality ;
+    skos:definition "An ElectromagneticFieldExposure is a Quality that quantifies the level of electromagnetic fields to which individuals or the environment are subjected, particularly in the context of wind turbine operation." ;
+    rdfs:comment "Quantifies exposure to electromagnetic fields generated by wind turbines." .
+
+ex:ShadowFlickerImpact rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Quality ;
+    skos:definition "A ShadowFlickerImpact is a Quality that describes the effect on residents caused by the periodic casting of shadows from wind turbine rotors onto surrounding buildings during sunny intervals." ;
+    rdfs:comment "Describes the impact on residents due to the periodic shadows cast by wind turbine rotors." .
+
+ex:ShadowFlickerProtectionSystem rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Entity ;
+    skos:definition "A ShadowFlickerProtectionSystem is a WindEnergyTechnology that is integrated into the control system of a wind turbine to prevent or mitigate the impact of shadow flicker on surrounding areas." ;
+    rdfs:comment "A system used in wind turbines to prevent shadow flicker impacts on residents." .
+
+ex:PublicAcceptanceDriver rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Quality ;
+    skos:definition "A PublicAcceptanceDriver is a Quality that represents a factor influencing the level of public acceptance or opposition towards wind energy projects." ;
+    rdfs:comment "Factors that influence public acceptance or opposition to wind energy projects." .
+
+ex:RepoweringDriver rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Quality ;
+    skos:definition "A RepoweringDriver is a Quality that represents a factor motivating or influencing decisions related to the repowering of existing wind energy projects." ;
+    rdfs:comment "Factors that drive decisions for wind energy repowering projects." .
+
+ex:LandscapeImpact rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Quality ;
+    skos:definition "A LandscapeImpact is a Quality that describes the effect of wind energy projects, particularly repowering, on the visual and aesthetic characteristics of the surrounding landscape." ;
+    rdfs:comment "The effect of wind energy projects on the visual landscape." .
+
+ex:POTENCIAModel rdf:type owl:Class ;
+    rdfs:subClassOf bfo:InformationContentEntity ;
+    skos:definition "A POTENCIAModel is an InformationContentEntity that is an energy system simulation model designed to compare alternative pathways for the EU energy system, covering energy supply and all energy demand sectors." ;
+    rdfs:comment "The Policy Oriented Tool for Energy and Climate Change Impact Assessment (POTEnCIA) model used for EU energy system analysis." .
+
+ex:EnergySystemSimulationModel rdf:type owl:Class ;
+    rdfs:subClassOf bfo:InformationContentEntity ;
+    skos:definition "An EnergySystemSimulationModel is an InformationContentEntity that is a computational model designed to simulate the behavior and interactions of energy systems under various conditions and policies." ;
+    rdfs:comment "A model used to simulate energy systems and their responses to different policies and conditions." .
+
+ex:DecisionMakingSimulation rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Process ;
+    skos:definition "A DecisionMakingSimulation is a Process that models and replicates the process of decision-making, particularly by energy users or agents, under various constraints and policy regimes." ;
+    rdfs:comment "Simulates the process of decision-making in energy systems, considering imperfect foresight and user behavior." .
+
+ex:EnergyMarketOperationSimulation rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Process ;
+    skos:definition "An EnergyMarketOperationSimulation is a Process that models the economically-driven operation of energy markets, including supply-demand interactions and the behavior of representative agents seeking to optimize their outcomes." ;
+    rdfs:comment "Models the operation of energy markets based on economic principles and agent behavior." .
+
+ex:EnergySystemHistoricalDataCalibration rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Process ;
+    skos:definition "An EnergySystemHistoricalDataCalibration is a Process that involves adjusting the parameters and initial conditions of an energy system model using historical data to ensure accurate representation and forecasting." ;
+    rdfs:comment "The process of calibrating energy system models using historical data for accurate initial conditions." .
+
+ex:POTENCIACETOScenario rdf:type owl:Class ;
+    rdfs:subClassOf bfo:InformationContentEntity ;
+    skos:definition "A POTENCIACETOScenario is an InformationContentEntity that represents a climate-neutrality scenario for the EU energy system, aligning with the European Green Deal's GHG reduction objectives and incorporating policy instruments influencing technology uptake." ;
+    rdfs:comment "Represents the POTEnCIA CETO 2024 scenario for EU energy system modeling." .
+
+ex:POLESJRCModel rdf:type owl:Class ;
+    rdfs:subClassOf bfo:InformationContentEntity ;
+    rdfs:subClassOf ex:EnergySystemSimulationModel ;
+    skos:definition "A POLESJRCModel is an EnergySystemSimulationModel that is a global energy model used to evaluate the evolution of energy demand and supply, covering primary supply, transformation, and final sectoral demand, with endogenous calculation of international markets and prices." ;
+    rdfs:comment "The Prospective Outlook for the Long-term Energy System (POLES-JRC) global energy model." .
+
+ex:POLESJRCModelPowerSystem rdf:type owl:Class ;
+    rdfs:subClassOf bfo:InformationContentEntity ;
+    skos:definition "A POLESJRCModelPowerSystem is an InformationContentEntity that describes the power generation technologies, electricity demand, and power system operation and planning within the POLES-JRC model." ;
+    rdfs:comment "Details the power system component of the POLES-JRC model." .
+
+ex:POLESJRCModelHydrogenProduction rdf:type owl:Class ;
+    rdfs:subClassOf bfo:InformationContentEntity ;
+    skos:definition "A POLESJRCModelHydrogenProduction is an InformationContentEntity that outlines the various hydrogen production routes considered within the POLES-JRC model, including electrolysis, steam reforming, and gasification." ;
+    rdfs:comment "Describes the hydrogen production routes modeled in POLES-JRC." .
+
+ex:POLESJRCModelBioenergy rdf:type owl:Class ;
+    rdfs:subClassOf bfo:InformationContentEntity ;
+    skos:definition "A POLESJRCModelBioenergy is an InformationContentEntity that details how bioenergy demand and supply are modeled in the POLES-JRC model, often through soft-coupling with other models like GLOBIOM-G4M." ;
+    rdfs:comment "Represents the bioenergy modeling approach within the POLES-JRC model." .
+
+ex:POLESJRCModelCCUS rdf:type owl:Class ;
+    rdfs:subClassOf bfo:InformationContentEntity ;
+    skos:definition "A POLESJRCModelCCUS is an InformationContentEntity that specifies the applications of Carbon Capture, Utilization, and Storage (CCUS) technologies within the POLES-JRC model across power generation, hydrogen production, and industrial sectors." ;
+    rdfs:comment "Details the integration of CCUS technologies in the POLES-JRC model." .
+
+ex:TechnologyLearningInPOLESJRC rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Process ;
+    skos:definition "A TechnologyLearningInPOLESJRC is a Process that describes the enhancement of the POLES-JRC model to capture technology learning effects, particularly for clean energy technologies, through methods like learning-by-doing." ;
+    rdfs:comment "The process of incorporating technology learning into the POLES-JRC model." .
+
+ex:LearningByDoingApproach rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Process ;
+    skos:definition "A LearningByDoingApproach is a Process that models the reduction in cost or improvement in efficiency of a technology as its cumulative capacity or production increases." ;
+    rdfs:comment "Represents the concept of cost reduction or efficiency improvement in technologies due to accumulated experience and production." .
+
+ex:LearningRate rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Quality ;
+    skos:definition "A LearningRate is a Quality that quantifies the percentage change in the cost of an energy technology based on a doubling of its cumulative capacity or production." ;
+    rdfs:comment "A parameter within learning-by-doing models that indicates the rate of cost reduction with increased experience." .
+
+ex:FloorCost rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Quality ;
+    skos:definition "A FloorCost is a Quality that specifies the minimum achievable investment cost for a component or technology, acting as a limit for cost reduction through learning." ;
+    rdfs:comment "The minimum cost threshold for a component or technology, below which further cost reductions from learning are not expected." .
+
+ex:ComponentLevelLearning rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Process ;
+    rdfs:subClassOf ex:LearningByDoingApproach ;
+    skos:definition "A ComponentLevelLearning is a LearningByDoingApproach that applies learning-by-doing principles to individual components of technologies, allowing for the modeling of spillover effects across different technologies and sectors." ;
+    rdfs:comment "Applies learning-by-doing principles at the component level to capture cross-technology and cross-sectoral spillover effects." .
+
+ex:GlobalCarbonPriceScenario rdf:type owl:Class ;
+    rdfs:subClassOf bfo:InformationContentEntity ;
+    skos:definition "A GlobalCarbonPriceScenario is an InformationContentEntity that defines a pathway for limiting global temperature increase by implementing a single global carbon price across all regions, considering enacted climate policies but not long-term pledges." ;
+    rdfs:comment "A scenario driven by a global carbon price trajectory to limit global warming, incorporating enacted policies but not future pledges." .
+
+ex:DecarbonisationScenario rdf:type owl:Class ;
+    rdfs:subClassOf bfo:InformationContentEntity ;
+    skos:definition "A DecarbonisationScenario is an InformationContentEntity that outlines a trajectory for achieving net greenhouse gas emission reductions aligned with specific climate laws and considering sector-specific legislation." ;
+    rdfs:comment "A scenario focused on achieving net greenhouse gas emission reductions aligned with climate law objectives and sector-specific legislation." .
+
+ex:EnergySystemScenario rdf:type owl:Class ;
+    rdfs:subClassOf bfo:InformationContentEntity ;
+    skos:definition "An EnergySystemScenario is an InformationContentEntity that represents a simulation or projection of the future energy system, considering various techno-economic assumptions, fuel costs, and policy incentives." ;
+    rdfs:comment "A projection or simulation of the future energy system under specific assumptions and policy frameworks." .
+
+ex:TechnologyLearningEnhancement rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Process ;
+    skos:definition "A TechnologyLearningEnhancement is a Process that involves improving energy system models to better capture the effects of endogenous learning in clean energy technologies." ;
+    rdfs:comment "The process of enhancing energy system models to better represent endogenous learning effects in clean energy technologies." .
+
+ex:TechnoEconomicParameterUpdate rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Process ;
+    skos:definition "A TechnoEconomicParameterUpdate is a Process that involves revising and updating the techno-economic parameters used in energy system models, often based on expert knowledge and recent data." ;
+    rdfs:comment "The process of revising and updating techno-economic parameters within energy system models." .
+
+ex:HorizonEuropeRAndIProject rdf:type owl:Class ;
+    rdfs:subClassOf bfo:InformationContentEntity ;
+    skos:definition "A HorizonEuropeRAndIProject is a WindEnergyResearchProject that is funded under the Horizon Europe programme and focuses on research and innovation within the wind energy sector." ;
+    rdfs:comment "A research and innovation project funded by the Horizon Europe programme related to wind energy." .
+
+ex:FloatingOffshoreWindProjectHorizonEurope rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Entity ;
+    skos:definition "A FloatingOffshoreWindProjectHorizonEurope is a HorizonEuropeRAndIProject that specifically focuses on the development, demonstration, or industrialization of floating offshore wind technologies." ;
+    rdfs:comment "A Horizon Europe funded project focused on floating offshore wind technology." .
+
+ex:WindEnergySocialEngagementProject rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Entity ;
+    skos:definition "A WindEnergySocialEngagementProject is a HorizonEuropeRAndIProject that addresses social aspects, acceptance, or engagement related to wind energy projects." ;
+    rdfs:comment "A Horizon Europe funded project focused on social engagement aspects of wind energy." .
+
+ex:WindEnergyResourceAssessmentProject rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Entity ;
+    skos:definition "A WindEnergyResourceAssessmentProject is a HorizonEuropeRAndIProject that focuses on assessing and understanding the resources available for wind energy generation." ;
+    rdfs:comment "A Horizon Europe funded project focused on assessing wind energy resources." .
+
+ex:WindEnergyEnvironmentalImpactProject rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Entity ;
+    skos:definition "A WindEnergyEnvironmentalImpactProject is a HorizonEuropeRAndIProject that investigates the environmental impacts associated with wind energy technologies and projects." ;
+    rdfs:comment "A Horizon Europe funded project focused on the environmental impacts of wind energy." .
+
+ex:WindEnergyNewTurbineMaterialsProject rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Entity ;
+    skos:definition "A WindEnergyNewTurbineMaterialsProject is a HorizonEuropeRAndIProject that focuses on the development and application of new materials for wind turbine components." ;
+    rdfs:comment "A Horizon Europe funded project focused on new materials for wind turbines." .
+
+ex:WindEnergyMaintenanceProject rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Entity ;
+    skos:definition "A WindEnergyMaintenanceProject is a HorizonEuropeRAndIProject that focuses on improving maintenance strategies, condition monitoring systems, or related technologies for wind energy systems." ;
+    rdfs:comment "A Horizon Europe funded project focused on maintenance and condition monitoring for wind energy systems." .
+
+ex:WindEnergyGridIntegrationProjectHorizonEurope rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Entity ;
+    skos:definition "A WindEnergyGridIntegrationProjectHorizonEurope is a HorizonEuropeRAndIProject that focuses on enhancing the integration of wind energy into electrical grids." ;
+    rdfs:comment "A Horizon Europe funded project focused on grid integration of wind energy." .
+
+ex:http://example.org/BLOW rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Entity ;
+    rdfs:subClassOf ex:http://example.org/FloatingOffshoreWindProject ;
+    skos:definition "A project focused on developing and deploying floating offshore wind technologies, with a start date of January 1, 2023." ;
+    rdfs:comment "This project is a specific instance of a floating offshore wind project." .
+
+ex:http://example.org/ICONIC rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Entity ;
+    rdfs:subClassOf ex:http://example.org/WindEnergyNewTurbineMaterialsProject ;
+    skos:definition "A project focused on the development and application of new materials for wind turbine components, with a start date of December 1, 2023." ;
+    rdfs:comment "This project is a specific instance of a wind energy new turbine materials project." .
+
+ex:http://example.org/PhyDAWN rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Entity ;
+    rdfs:subClassOf ex:http://example.org/WindEnergyGridIntegrationProjectHorizonEurope ;
+    skos:definition "A project focused on enhancing the integration of wind energy into electrical grids, with a start date of July 1, 2023." ;
+    rdfs:comment "This project is a specific instance of a wind energy grid integration project." .
+
+ex:http://example.org/Blades2Build rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Entity ;
+    rdfs:subClassOf ex:http://example.org/BladeRecyclingProject ;
+    skos:definition "A project focused on developing and implementing recycling solutions for wind turbine blades, with a start date of January 1, 2023." ;
+    rdfs:comment "This project is a specific instance of a blade recycling project." .
+
+ex:http://example.org/EoLO-HUBs rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Entity ;
+    rdfs:subClassOf ex:http://example.org/RecyclingCircularityProject ;
+    skos:definition "A project focused on recycling and promoting circular economy principles within the wind energy sector, particularly concerning end-of-life components, with a start date of January 1, 2023." ;
+    rdfs:comment "This project is a specific instance of a recycling and circularity project." .
+
+ex:http://example.org/OCEANBATTERY rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Entity ;
+    rdfs:subClassOf ex:http://example.org/GridIntegrationProjectHorizonEurope ;
+    skos:definition "A project focused on improving the integration of wind energy into existing power grids, with a start date of July 1, 2023." ;
+    rdfs:comment "This project is a specific instance of a grid integration project." .
+
+ex:http://example.org/CleanS_tack rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Entity ;
+    rdfs:subClassOf ex:http://example.org/GridIntegrationProjectHorizonEurope ;
+    skos:definition "A project focused on enhancing the integration of wind energy into electrical grids, with a start date of February 1, 2023." ;
+    rdfs:comment "This project is a specific instance of a grid integration project." .
+
+# ===== Properties =====
+ex:hasTitle rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:Report ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The title of the report" .
+
+ex:writtenBy rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:Report ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The authors of the report" .
+
+ex:publishedBy rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:Report ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The organization that published this report" .
+
+ex:mainFocus rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:TechnologyDevelopmentStatusReport ;
+    rdfs:range xsd:string ;
+    rdfs:comment "What the main focus of the report is" .
+
+ex:publishedInYear rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:Report ;
+    rdfs:range xsd:integer ;
+    rdfs:comment "The year in which the report was published" .
+
+ex:discussesEnergyType rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:TechnologyDevelopmentStatusReport ;
+    rdfs:range ex:WindEnergyTechnology ;
+    rdfs:comment "What type of energy does the report mainly discuss" .
+
+ex:methodologyUsed rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:Report ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The methodology used in this report" .
+
+ex:numCountriesCovered rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:TechnologyDevelopmentStatusReport ;
+    rdfs:range xsd:integer ;
+    rdfs:comment "How many countries are covered by the EU 27 deployment section" .
+
+ex:mainObjectiveOfCETO rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:Report ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The main objectives of the Clean Energy Technology Observatory (CETO)" .
+
+ex:bodiesInvolvedInCETO rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:Report ;
+    rdfs:range xsd:string ;
+    rdfs:comment "European Commission bodies involved in running and supporting CETO" .
+
+ex:colleaguesContributedToCETO rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:Report ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Colleagues who contributed to the review and coordination of the CETO project" .
+
+ex:privateRDInvestmentPercentage rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:Report ;
+    rdfs:range xsd:decimal ;
+    rdfs:comment "The percentage of total private R&D funding invested by the EU from 2010 to 2020." .
+
+ex:floatingOffshoreWindSubstructuresUsed rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:FloatingOffshoreWindSubstructure ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The substructures used in floating offshore wind technology." .
+
+ex:preCommercialFloatingOffshoreWindDesigns rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:PreCommercialFloatingOffshoreWindDesign ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The designs of pre-commercial floating offshore wind technology that have been deployed." .
+
+ex:technologyReadinessLevelAssignedTo rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AirborneWindEnergySystem ;
+    rdfs:range ex:TechnologyReadinessLevel ;
+    rdfs:comment "Assigns the technology readiness level (TRL) to airborne wind energy systems." .
+
+ex:currentTRLForFloatingOffshoreWindTechnologies rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:FloatingOffshoreWindSubstructure ;
+    rdfs:range ex:TechnologyReadinessLevel ;
+    rdfs:comment "Provides the current TRL for floating offshore wind technologies such as spar-buoy and semi-submersible designs." .
+
+ex:efficiencyComparisonVAWTsToHAWTs rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:VerticalAxisWindTurbine ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Compares the efficiency of vertical axis wind turbines (VAWTs) to conventional horizontal axis wind turbines (HAWTs)." .
+
+ex:hasPublicRDInvestment rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:WindEnergyTechnology ;
+    rdfs:range xsd:integer ;
+    rdfs:comment "The amount of public R&D investment in wind energy in a given year, in millions of EUR." .
+
+ex:hasPrivateRDInvestment rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:WindEnergyTechnology ;
+    rdfs:range xsd:integer ;
+    rdfs:comment "The amount of private R&D investment in wind energy in a given year, in millions of EUR." .
+
+ex:hasPublicRDInvestmentShare rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:WindEnergyTechnology ;
+    rdfs:range xsd:decimal ;
+    rdfs:comment "The share of public R&D investment in wind energy as a percentage of total public investment." .
+
+ex:hasPrivateRDInvestmentShare rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:WindEnergyTechnology ;
+    rdfs:range xsd:decimal ;
+    rdfs:comment "The share of private R&D investment in wind energy as a percentage of total private investment." .
+
+ex:hasVCPEInvestment rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:WindEnergyTechnology ;
+    rdfs:range xsd:integer ;
+    rdfs:comment "The amount of venture capital and private equity investment in wind energy in a given year, in millions of EUR." .
+
+ex:leadsInPublicRDInvestment rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:WindEnergyTechnology ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Indicates which entity leads in public R&D investment in wind energy." .
+
+ex:leadsInPrivateRDInvestment rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:WindEnergyTechnology ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Indicates which entity leads in private R&D investment in wind energy." .
+
+ex:hasOriginCountry rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:WindEnergyTechnology ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The country of origin for a company or entity involved in wind energy R&D investment." .
+
+ex:hasRDInvestmentPriority rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:WindEnergyTechnology ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The R&D priority for which investment is allocated in wind energy." .
+
+ex:hasBeneficiaryCountryForVCPEInvestment rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:WindEnergyInvestment ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Identifies a country that is a beneficiary of venture capital and private equity investment in the wind energy sector." .
+
+ex:hasInvestmentDealStage rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:WindEnergyInvestment ;
+    rdfs:range ex:InvestmentDealStage ;
+    rdfs:comment "Categorizes the investment deal stage (e.g., early-stage, later-stage) for venture capital and private equity investments in the wind energy sector." .
+
+ex:hasInvestmentPeriod rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:WindEnergyInvestment ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Specifies the time period for which venture capital and private equity investment data in the wind energy sector is considered." .
+
+ex:hasInvestmentShare rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:WindEnergyInvestment ;
+    rdfs:range xsd:decimal ;
+    rdfs:comment "Represents the share of investment deals in the wind energy sector for a specific region or entity." .
+
+ex:hasCooperativePatentClassificationCode rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:WindEnergyInvention ;
+    rdfs:range ex:CooperativePatentClassificationCode ;
+    rdfs:comment "Associates a wind energy invention with a Cooperative Patent Classification code used for evaluating patenting activity." .
+
+ex:hasInternationalInventionShare rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:WindEnergyInvention ;
+    rdfs:range xsd:decimal ;
+    rdfs:comment "Indicates the percentage of wind energy inventions that are international for a given country or region." .
+
+ex:hasHighValueInventionShare rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:WindEnergyInvention ;
+    rdfs:range xsd:decimal ;
+    rdfs:comment "Represents the percentage of wind energy inventions that are considered high-value for a given country or region." .
+
+ex:hasNumberOfInventions rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:WindEnergyInvention ;
+    rdfs:range xsd:integer ;
+    rdfs:comment "The total number of wind energy inventions, represented by patent families, for a specific entity or period." .
+
+ex:hasPublicationYear rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:WindEnergyPublication ;
+    rdfs:range xsd:integer ;
+    rdfs:comment "The year in which a wind energy publication was published." .
+
+ex:hasPublicationCount rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:WindEnergyPublication ;
+    rdfs:range xsd:integer ;
+    rdfs:comment "The number of peer-reviewed articles published in the wind energy sector for a given year or region." .
+
+ex:isHighlyCited rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:WindEnergyPublication ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates whether a wind energy publication belongs to the top 10% most cited papers within its field and year." .
+
+ex:hasPOTEnCIACentralScenarioReport rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:Report ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The property to identify the report presenting the POTEnCIA Central Scenario for EU energy outlook to 2050." .
+
+ex:publishedByOrganization rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:Report ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The property to identify the organization that published a specific report." .
+
+ex:hasOffshoreWindCapacityAddition rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:Report ;
+    rdfs:range ex:OffshoreWindCapacityAddition ;
+    rdfs:comment "Relates a report to the process of offshore wind capacity addition it discusses." .
+
+ex:hasOnshoreWindCapacityAddition rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:Report ;
+    rdfs:range ex:OnshoreWindCapacityAddition ;
+    rdfs:comment "Relates a report to the process of onshore wind capacity addition it discusses." .
+
+ex:hasOffshoreWindInstalledCapacity rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:Report ;
+    rdfs:range ex:OffshoreWindInstalledCapacity ;
+    rdfs:comment "Relates a report to the cumulative installed capacity of offshore wind power generation it discusses." .
+
+ex:hasOnshoreWindInstalledCapacity rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:Report ;
+    rdfs:range ex:OnshoreWindInstalledCapacity ;
+    rdfs:comment "Relates a report to the cumulative installed capacity of onshore wind power generation it discusses." .
+
+ex:hasWindEnergyGeneration rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:Report ;
+    rdfs:range ex:WindEnergyGeneration ;
+    rdfs:comment "Relates a report to the process of wind energy electricity generation it discusses." .
+
+ex:hasWindEnergyLCOE rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:Report ;
+    rdfs:range ex:WindEnergyLCOE ;
+    rdfs:comment "Relates a report to the Levelized Cost of Energy for wind power it discusses." .
+
+ex:hasWindEnergyInvestmentCost rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:Report ;
+    rdfs:range ex:WindEnergyInvestmentCost ;
+    rdfs:comment "Relates a report to the investment costs for wind energy installations it discusses." .
+
+ex:hasPublicRAndIInvestmentWindEnergy rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:Report ;
+    rdfs:range ex:PublicRAndIInvestmentWindEnergy ;
+    rdfs:comment "Relates a report to the public R&I investment in wind energy it discusses." .
+
+ex:hasPrivateRAndIInvestmentWindEnergy rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:Report ;
+    rdfs:range ex:PrivateRAndIInvestmentWindEnergy ;
+    rdfs:comment "Relates a report to the private R&I investment in wind energy it discusses." .
+
+ex:hasWindEnergyVCPEInvestment rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:Report ;
+    rdfs:range ex:WindEnergyVCPEInvestment ;
+    rdfs:comment "Relates a report to the venture capital and private equity investment in the wind energy sector it discusses." .
+
+ex:hasWindEnergyInventionActivity rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:Report ;
+    rdfs:range ex:WindEnergyInventionActivity ;
+    rdfs:comment "Relates a report to the wind energy invention activity it discusses." .
+
+ex:hasWindEnergyPublicationActivity rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:Report ;
+    rdfs:range ex:WindEnergyPublicationActivity ;
+    rdfs:comment "Relates a report to the wind energy publication activity it discusses." .
+
+ex:hasWindSectorTurnover rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:Report ;
+    rdfs:range ex:WindSectorTurnover ;
+    rdfs:comment "Relates a report to the turnover of the wind energy sector it discusses." .
+
+ex:hasWindSectorGVA rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:Report ;
+    rdfs:range ex:WindSectorGVA ;
+    rdfs:comment "Relates a report to the Gross Value Added of the wind energy sector it discusses." .
+
+ex:hasWindTurbineMarketShare rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:Report ;
+    rdfs:range ex:WindTurbineMarketShare ;
+    rdfs:comment "Relates a report to the market share of wind turbines it discusses." .
+
+ex:hasWindEnergyEmployment rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:Report ;
+    rdfs:range ex:WindEnergyEmployment ;
+    rdfs:comment "Relates a report to the employment in the wind energy sector it discusses." .
+
+ex:discussesOffshoreWindCapacityAddition rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:Report ;
+    rdfs:range ex:OffshoreWindCapacityAddition ;
+    rdfs:comment "Indicates that a report discusses the process of offshore wind capacity addition." .
+
+ex:discussesOnshoreWindCapacityAddition rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:Report ;
+    rdfs:range ex:OnshoreWindCapacityAddition ;
+    rdfs:comment "Indicates that a report discusses the process of onshore wind capacity addition." .
+
+ex:discussesOffshoreWindInstalledCapacity rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:Report ;
+    rdfs:range ex:OffshoreWindInstalledCapacity ;
+    rdfs:comment "Indicates that a report discusses the cumulative installed capacity of offshore wind power generation." .
+
+ex:discussesOnshoreWindInstalledCapacity rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:Report ;
+    rdfs:range ex:OnshoreWindInstalledCapacity ;
+    rdfs:comment "Indicates that a report discusses the cumulative installed capacity of onshore wind power generation." .
+
+ex:discussesWindEnergyGeneration rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:Report ;
+    rdfs:range ex:WindEnergyGeneration ;
+    rdfs:comment "Indicates that a report discusses the process of wind energy electricity generation." .
+
+ex:discussesWindEnergyLCOE rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:Report ;
+    rdfs:range ex:WindEnergyLCOE ;
+    rdfs:comment "Indicates that a report discusses the Levelized Cost of Energy for wind power." .
+
+ex:discussesWindEnergyInvestmentCost rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:Report ;
+    rdfs:range ex:WindEnergyInvestmentCost ;
+    rdfs:comment "Indicates that a report discusses the investment costs for wind energy installations." .
+
+ex:discussesPublicRAndIInvestmentWindEnergy rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:Report ;
+    rdfs:range ex:PublicRAndIInvestmentWindEnergy ;
+    rdfs:comment "Indicates that a report discusses the public R&I investment in wind energy." .
+
+ex:discussesPrivateRAndIInvestmentWindEnergy rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:Report ;
+    rdfs:range ex:PrivateRAndIInvestmentWindEnergy ;
+    rdfs:comment "Indicates that a report discusses the private R&I investment in wind energy." .
+
+ex:discussesWindEnergyVCPEInvestment rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:Report ;
+    rdfs:range ex:WindEnergyVCPEInvestment ;
+    rdfs:comment "Indicates that a report discusses the venture capital and private equity investment in the wind energy sector." .
+
+ex:discussesWindEnergyInventionActivity rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:Report ;
+    rdfs:range ex:WindEnergyInventionActivity ;
+    rdfs:comment "Indicates that a report discusses the wind energy invention activity." .
+
+ex:discussesWindEnergyPublicationActivity rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:Report ;
+    rdfs:range ex:WindEnergyPublicationActivity ;
+    rdfs:comment "Indicates that a report discusses the wind energy publication activity." .
+
+ex:discussesWindSectorTurnover rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:Report ;
+    rdfs:range ex:WindSectorTurnover ;
+    rdfs:comment "Indicates that a report discusses the turnover of the wind energy sector." .
+
+ex:discussesWindSectorGVA rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:Report ;
+    rdfs:range ex:WindSectorGVA ;
+    rdfs:comment "Indicates that a report discusses the Gross Value Added of the wind energy sector." .
+
+ex:discussesWindTurbineMarketShare rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:Report ;
+    rdfs:range ex:WindTurbineMarketShare ;
+    rdfs:comment "Indicates that a report discusses the market share of wind turbines." .
+
+ex:discussesWindEnergyEmployment rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:Report ;
+    rdfs:range ex:WindEnergyEmployment ;
+    rdfs:comment "Indicates that a report discusses the employment in the wind energy sector." .
+
+ex:hasGlobalAnnualCapacityAddition rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:Report ;
+    rdfs:range ex:OffshoreWindCapacityAddition ;
+    rdfs:comment "Relates a report to the global annual capacity addition of offshore wind it discusses." .
+
+ex:hasEUCumulativeInstalledCapacity rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:Report ;
+    rdfs:range ex:OnshoreWindInstalledCapacity ;
+    rdfs:comment "Relates a report to the cumulative installed capacity of onshore wind in the EU it discusses." .
+
+ex:hasEUWindEnergyGeneration rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:Report ;
+    rdfs:range ex:WindEnergyGeneration ;
+    rdfs:comment "Relates a report to the wind energy electricity generation of EU Member States it discusses." .
+
+ex:hasOnshoreWindLCOE rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:Report ;
+    rdfs:range ex:WindEnergyLCOE ;
+    rdfs:comment "Relates a report to the range of historical and projected onshore wind LCoE estimates it discusses." .
+
+ex:hasOffshoreWindLCOE rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:Report ;
+    rdfs:range ex:WindEnergyLCOE ;
+    rdfs:comment "Relates a report to the range of historical and projected offshore wind LCoE estimates it discusses." .
+
+ex:hasOvernightInvestmentCosts rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:Report ;
+    rdfs:range ex:WindEnergyInvestmentCost ;
+    rdfs:comment "Relates a report to the overnight investment costs for onshore and offshore installations it discusses." .
+
+ex:hasPublicRAndIInvestmentEvolution rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:Report ;
+    rdfs:range ex:PublicRAndIInvestmentWindEnergy ;
+    rdfs:comment "Relates a report to the evolution of public R&I investment in wind energy it discusses." .
+
+ex:hasGlobalPrivateRDInvestment rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:Report ;
+    rdfs:range ex:PrivateRAndIInvestmentWindEnergy ;
+    rdfs:comment "Relates a report to the global private R&D investment in the wind energy sector it discusses." .
+
+ex:hasGlobalVCPEInvestment rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:Report ;
+    rdfs:range ex:WindEnergyVCPEInvestment ;
+    rdfs:comment "Relates a report to the global VC/PE investment in the wind energy sector it discusses." .
+
+ex:hasWindEnergyInventionActivityMetrics rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:Report ;
+    rdfs:range ex:WindEnergyInventionActivity ;
+    rdfs:comment "Relates a report to the number of wind energy inventions and share of high-value and international activity it discusses." .
+
+ex:hasWindEnergyPublicationActivityMetrics rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:Report ;
+    rdfs:range ex:WindEnergyPublicationActivity ;
+    rdfs:comment "Relates a report to the number of peer-reviewed articles on wind energy per year it discusses." .
+
+ex:hasEUWindFundingEvolution rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:Report ;
+    rdfs:range ex:WindEnergyFundingEvolution ;
+    rdfs:comment "Relates a report to the evolution of EU R&I funding for wind energy it discusses." .
+
+ex:hasWindSectorTurnoverEvolution rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:Report ;
+    rdfs:range ex:WindSectorTurnover ;
+    rdfs:comment "Relates a report to the evolution of the turnover of the EU wind sector it discusses." .
+
+ex:hasWindSectorGVAEvolution rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:Report ;
+    rdfs:range ex:WindSectorGVA ;
+    rdfs:comment "Relates a report to the evolution of the Gross Value Added of the EU wind sector it discusses." .
+
+ex:hasGlobalWindTurbineMarketShare rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:Report ;
+    rdfs:range ex:WindTurbineMarketShare ;
+    rdfs:comment "Relates a report to the global market share of wind turbines it discusses." .
+
+ex:hasWindEnergyEmploymentEvolution rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:Report ;
+    rdfs:range ex:WindEnergyEmployment ;
+    rdfs:comment "Relates a report to the evolution of direct and indirect jobs in the wind energy sector it discusses." .
+
+ex:hasOriginCountryForOEM rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:OriginalEquipmentManufacturer ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The country of origin for an Original Equipment Manufacturer (OEM) in the wind energy sector." .
+
+ex:hasMarketShareOverTime rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:WindTurbineMarketShare ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The market share of wind turbines over a specified period, often presented as a time series." .
+
+ex:hasEUProductionValuePerTurbine rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:WindEnergyTechnology ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The production value per wind turbine in the EU, expressed in thousand EUR per piece." .
+
+ex:hasEUProductionQuantity rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:WindEnergyTechnology ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The production quantity of wind turbines in the EU, expressed in thousand pieces." .
+
+ex:hasEUProductionValue rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:WindEnergyTechnology ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The total production value of wind turbines in the EU, expressed in million EUR." .
+
+ex:hasExtraEUTradeValue rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:WindEnergyTechnology ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The trade value of wind generating sets between the EU and non-EU countries, in EUR Million." .
+
+ex:hasExtraEUImportsToExportsRatio rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:WindEnergyTechnology ;
+    rdfs:range xsd:decimal ;
+    rdfs:comment "The ratio of extra-EU imports to exports for wind generating sets, indicating trade balance." .
+
+ex:hasEUTradeWithChina rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:WindEnergyTechnology ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The trade value between the EU and China for wind generating sets, in EUR Million." .
+
+ex:hasEUTradeWithIndia rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:WindEnergyTechnology ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The trade value between the EU and India for wind generating sets, in EUR Million." .
+
+ex:hasTopGlobalImportersValue rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:WindEnergyTechnology ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The trade value of wind generating sets for top global importers over a specified period, in EUR Million." .
+
+ex:hasTopGlobalExportersValue rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:WindEnergyTechnology ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The trade value of wind generating sets for top global exporters over a specified period, in EUR Million." .
+
+ex:hasRawMaterialList rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:WindEnergyTechnology ;
+    rdfs:range ex:RawMaterial ;
+    rdfs:comment "Lists the raw materials used in wind power plants." .
+
+ex:hasMaterialIntensityEstimate rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:WindEnergyTechnology ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Provides estimates of material intensity in kg/MW for wind turbines." .
+
+ex:hasGHGEmissionsRange rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:WindEnergyTechnology ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The range of Greenhouse Gas (GHG) emissions in gCO2eqv/kWh for onshore and offshore wind power plants." .
+
+ex:hasEnergyPaybackTime rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:WindEnergyTechnology ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The Energy Pay-Back Time (EPBT) for wind power plants, indicating the time required to generate the energy consumed during its lifecycle." .
+
+ex:discussesBiodiversityEnhancementInNorthSea rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:Report ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Indicates that a report discusses opportunities for biodiversity enhancement in the North Sea related to offshore wind farms." .
+
+ex:hasRAndIProjectsFundedByHorizonEurope rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:Report ;
+    rdfs:range ex:WindEnergyResearchProject ;
+    rdfs:comment "Relates a report to the wind energy research and innovation projects funded under the Horizon Europe programme that started in a specific year." .
+
+ex:hasExposureSymptom rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:WindEnergyTechnology ;
+    rdfs:range ex:ExposureSymptom ;
+    rdfs:comment "Relates wind energy technology to reported exposure symptoms." .
+
+ex:hasAnnoyanceFromNoiseImmissionLevel rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:WindEnergyTechnology ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Describes the relationship between annoyance from wind turbine noise and the immission level." .
+
+ex:hasStatisticallySignificantSleepDisturbanceAssociation rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:WindEnergyTechnology ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates whether a statistically significant association between noise levels and self-reported sleep disturbance was found." .
+
+ex:hasEMFLevelComparison rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:WindEnergyTechnology ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Compares electromagnetic field (EMF) levels from wind turbines to those in urban areas." .
+
+ex:hasShadowFlickerImpactOnResidents rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:WindEnergyTechnology ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Describes the impact on residents caused by the periodic casting of shadows from wind turbine rotors onto surrounding buildings." .
+
+ex:hasPublicAcceptanceDriver rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:WindEnergyTechnology ;
+    rdfs:range ex:PublicAcceptanceDriver ;
+    rdfs:comment "Identifies factors influencing public acceptance or opposition to wind energy projects." .
+
+ex:hasRepoweringDriver rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:WindEnergyTechnology ;
+    rdfs:range ex:RepoweringDriver ;
+    rdfs:comment "Identifies factors that drive wind energy repowering projects." .
+
+ex:hasLandscapeImpactOnRepowering rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:WindEnergyTechnology ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Describes the impact of repowering wind turbines on the local landscape." .
+
+ex:hasLocalOppositionForLifetimeExtension rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:WindEnergyTechnology ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Describes the perceived local opposition for lifetime extension of existing wind farms compared to repowering." .
+
+ex:hasPolicyInstrument rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:POTENCIACETOScenario ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Identifies a policy instrument that influences technology uptake within the POTEnCIA CETO 2024 scenario." .
+
+ex:hasEmissionReductionTarget rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:POTENCIACETOScenario ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Specifies an emission reduction target for the EU by a certain year within the POTEnCIA CETO 2024 scenario." .
+
+ex:hasMethodologicalApproach rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:POLESJRCModel ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Describes the methodological approach used by the POLES-JRC model for simulating energy systems." .
+
+ex:includesPowerGeneratingTechnology rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:POLESJRCModelPowerSystem ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Indicates a power generating technology included in the POLES-JRC model's power system description." .
+
+ex:considersHydrogenProductionRoute rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:POLESJRCModelHydrogenProduction ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Identifies a hydrogen production route considered within the POLES-JRC model." .
+
+ex:usesHydrogenInSector rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:POLESJRCModelHydrogenProduction ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Specifies a sector where hydrogen is used as a fuel or feedstock within the POLES-JRC model." .
+
+ex:considersCCUSInSector rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:POLESJRCModelCCUS ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Specifies a sector where Carbon Capture, Utilization, and Storage (CCUS) technologies are considered within the POLES-JRC model." .
+
+ex:capturesTechnologyLearningFor rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:TechnologyLearningInPOLESJRC ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Describes the clean energy technology for which the POLES-JRC model captures technology learning effects." .
+
+ex:operatesOnYearlyBasisUpTo rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:POLESJRCModel ;
+    rdfs:range xsd:integer ;
+    rdfs:comment "Specifies the yearly operational time horizon of the POLES-JRC model." .
+
+ex:isUpdatedYearlyWith rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:POLESJRCModel ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Indicates that the POLES-JRC model is updated yearly with specific types of information." .
+
+ex:learningRate rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:TechnologyLearningInPOLESJRC ;
+    rdfs:range xsd:decimal ;
+    rdfs:comment "Quantifies the percentage change of the cost of an energy technology based on a doubling of its cumulative capacity or production." .
+
+ex:floorCost rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:ComponentLevelLearning ;
+    rdfs:range xsd:decimal ;
+    rdfs:comment "Specifies the minimum achievable investment cost for a component or technology, acting as a limit for cost reduction through learning." .
+
+ex:hasEUFinancialContribution rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:HorizonEuropeRAndIProject ;
+    rdfs:range xsd:integer ;
+    rdfs:comment "The EU financial contribution in EUR for a Horizon Europe funded R&I project." .
+
+ex:hasResearchArea rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:HorizonEuropeRAndIProject ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The research area or focus of a Horizon Europe funded R&I project." .
+
+ex:differsFromScenario rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:POTENCIACETOScenario ;
+    rdfs:range ex:EnergySystemScenario ;
+    rdfs:comment "Indicates how this scenario differs from another energy system scenario, particularly in terms of model version, parameter updates, or driving logic." .
+
+ex:drivenBy rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:EnergySystemScenario ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Describes the primary driver or logic behind an energy system scenario, such as a global carbon price or alignment with climate laws." .
+
+ex:considersPolicy rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:EnergySystemScenario ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Specifies the climate policies or legislative packages considered within an energy system scenario." .
+
+# ===== Instances =====
+ex:wind_energy_report_2024 rdf:type ex:TechnologyDevelopmentStatusReport ;
+    rdfs:label "wind_energy_report_2024" .
+
+ex:publications_office_of_the_european_union rdf:type ex:Report ;
+    rdfs:label "publications_office_of_the_european_union" .
+
+ex:european_commission rdf:type ex:Report ;
+    rdfs:label "european_commission" .
+
+ex:joint_research_centre rdf:type ex:Report ;
+    rdfs:label "joint_research_centre" .
+
+ex:lucie_mc_govern rdf:type ex:Report ;
+    rdfs:label "lucie_mc_govern" .
+
+ex:trl rdf:type ex:TechnologyReadinessLevel ;
+    rdfs:label "trl" .
+
+ex:installed_energy_capacity_and_generation rdf:type ex:Report ;
+    rdfs:label "installed_energy_capacity_and_generation" .
+
+ex:global_deployment rdf:type ex:Report ;
+    rdfs:label "global_deployment" .
+
+ex:eu_27_deployment rdf:type ex:Report ;
+    rdfs:label "eu_27_deployment" .
+
+ex:european_and_global_electricity_generation rdf:type ex:Report ;
+    rdfs:label "european_and_global_electricity_generation" .
+
+ex:eu_27_and_global_modelling_projections rdf:type ex:Report ;
+    rdfs:label "eu_27_and_global_modelling_projections" .
+
+ex:technology_costs rdf:type ex:Report ;
+    rdfs:label "technology_costs" .
+
+ex:public_rdi_funding rdf:type ex:Report ;
+    rdfs:label "public_rdi_funding" .
+
+ex:private_rdi_funding rdf:type ex:Report ;
+    rdfs:label "private_rdi_funding" .
+
+ex:patenting_trends rdf:type ex:Report ;
+    rdfs:label "patenting_trends" .
+
+ex:scientific_publication_trends rdf:type ex:Report ;
+    rdfs:label "scientific_publication_trends" .
+
+ex:impact_and_trends_of_eu_supported_research_and_innovation rdf:type ex:Report ;
+    rdfs:label "impact_and_trends_of_eu_supported_research_and_innovation" .
+
+ex:development_and_priorities_of_r_d_investment_in_h2020_and_horizon_europe rdf:type ex:Report ;
+    rdfs:label "development_and_priorities_of_r_d_investment_in_h2020_and_horizon_europe" .
+
+ex:development_and_priorities_of_r_d_investment_in_the_innovation_fund_programme rdf:type ex:Report ;
+    rdfs:label "development_and_priorities_of_r_d_investment_in_the_innovation_fund_programme" .
+
+ex:value_chain_analysis rdf:type ex:Report ;
+    rdfs:label "value_chain_analysis" .
+
+ex:turnover rdf:type ex:Report ;
+    rdfs:label "turnover" .
+
+ex:gross_value_added rdf:type ex:Report ;
+    rdfs:label "gross_value_added" .
+
+ex:role_of_eu_companies rdf:type ex:Report ;
+    rdfs:label "role_of_eu_companies" .
+
+ex:employment rdf:type ex:Report ;
+    rdfs:label "employment" .
+
+ex:labour_productivity_and_energy_intensity rdf:type ex:Report ;
+    rdfs:label "labour_productivity_and_energy_intensity" .
+
+ex:eu_industrial_production rdf:type ex:Report ;
+    rdfs:label "eu_industrial_production" .
+
+ex:eu_market_position_and_global_competitiveness rdf:type ex:Report ;
+    rdfs:label "eu_market_position_and_global_competitiveness" .
+
+ex:global_eu_market_leaders rdf:type ex:Report ;
+    rdfs:label "global_eu_market_leaders" .
+
+ex:trade_import_export_and_trade_balance rdf:type ex:Report ;
+    rdfs:label "trade_import_export_and_trade_balance" .
+
+ex:resource_efficiency_and_dependence_in_relation_to_eu_competitiveness rdf:type ex:Report ;
+    rdfs:label "resource_efficiency_and_dependence_in_relation_to_eu_competitiveness" .
+
+ex:conclusions rdf:type ex:Report ;
+    rdfs:label "conclusions" .
+
+ex:annex_1_summary_table_of_data_sources_for_the_ceto_indicators rdf:type ex:Report ;
+    rdfs:label "annex_1_summary_table_of_data_sources_for_the_ceto_indicators" .
+
+ex:annex_2_sustainability_assessment_framework rdf:type ex:Report ;
+    rdfs:label "annex_2_sustainability_assessment_framework" .
+
+ex:annex_3_energy_system_models_and_scenarios_potencia_and_poles_jrc rdf:type ex:Report ;
+    rdfs:label "annex_3_energy_system_models_and_scenarios_potencia_and_poles_jrc" .
+
+ex:annex_3_potencia_model rdf:type ex:Report ;
+    rdfs:label "annex_3_potencia_model" .
+
+ex:annex_3_poles_jrc_model rdf:type ex:Report ;
+    rdfs:label "annex_3_poles_jrc_model" .
+
+ex:annex_3_distinctions_for_the_ceto_2024_scenarios rdf:type ex:Report ;
+    rdfs:label "annex_3_distinctions_for_the_ceto_2024_scenarios" .
+
+ex:annex_4_r_i_projects_funded_under_the_horizon_europe_programme rdf:type ex:Report ;
+    rdfs:label "annex_4_r_i_projects_funded_under_the_horizon_europe_programme" .
+
+ex:wind_energy_technology_report rdf:type ex:TechnologyDevelopmentStatusReport ;
+    rdfs:label "wind_energy_technology_report" .
+
+ex:clean_energy_technology_observatory rdf:type ex:CETOProject ;
+    rdfs:label "clean_energy_technology_observatory" .
+
+ex:directorate_generals_research_and_innovation rdf:type ex:Report ;
+    rdfs:label "directorate_generals_research_and_innovation" .
+
+ex:directorate_general_energy rdf:type ex:Report ;
+    rdfs:label "directorate_general_energy" .
+
+ex:ceto_objectives_report rdf:type ex:Report ;
+    rdfs:label "ceto_objectives_report" .
+
+ex:ceto_data_repository rdf:type ex:Report ;
+    rdfs:label "ceto_data_repository" .
+
+ex:ceto_target_audience rdf:type ex:Report ;
+    rdfs:label "ceto_target_audience" .
+
+ex:ceto_annual_reports rdf:type ex:Report ;
+    rdfs:label "ceto_annual_reports" .
+
+ex:clean_energy_technology_status_report rdf:type ex:Report ;
+    rdfs:label "clean_energy_technology_status_report" .
+
+ex:clean_energy_technology_system_integration_report rdf:type ex:Report ;
+    rdfs:label "clean_energy_technology_system_integration_report" .
+
+ex:foresight_analysis_report rdf:type ex:Report ;
+    rdfs:label "foresight_analysis_report" .
+
+ex:clean_energy_outlooks_report rdf:type ex:Report ;
+    rdfs:label "clean_energy_outlooks_report" .
+
+ex:system_modelling_report rdf:type ex:Report ;
+    rdfs:label "system_modelling_report" .
+
+ex:strategic_analysis_report rdf:type ex:Report ;
+    rdfs:label "strategic_analysis_report" .
+
+ex:enrico_degiorgis rdf:type ex:Report ;
+    rdfs:label "enrico_degiorgis" .
+
+ex:laila_kienel rdf:type ex:Report ;
+    rdfs:label "laila_kienel" .
+
+ex:nigel_taylor rdf:type ex:Report ;
+    rdfs:label "nigel_taylor" .
+
+ex:catriona_black rdf:type ex:Report ;
+    rdfs:label "catriona_black" .
+
+ex:moritz_wegener rdf:type ex:Report ;
+    rdfs:label "moritz_wegener" .
+
+ex:marc_jaxa_rozen rdf:type ex:Report ;
+    rdfs:label "marc_jaxa_rozen" .
+
+ex:raffaele_salvucci rdf:type ex:Report ;
+    rdfs:label "raffaele_salvucci" .
+
+ex:juan_gea_bermudez rdf:type ex:Report ;
+    rdfs:label "juan_gea_bermudez" .
+
+ex:frederik_neuwahl rdf:type ex:Report ;
+    rdfs:label "frederik_neuwahl" .
+
+ex:przemyslaw_sikora rdf:type ex:Report ;
+    rdfs:label "przemyslaw_sikora" .
+
+ex:mate_rozsai rdf:type ex:Report ;
+    rdfs:label "mate_rozsai" .
+
+ex:andreas_schmitz rdf:type ex:Report ;
+    rdfs:label "andreas_schmitz" .
+
+ex:burkhard_schade rdf:type ex:Report ;
+    rdfs:label "burkhard_schade" .
+
+ex:kimon_keramidas rdf:type ex:Report ;
+    rdfs:label "kimon_keramidas" .
+
+ex:florian_fosse rdf:type ex:Report ;
+    rdfs:label "florian_fosse" .
+
+ex:paul_dowling rdf:type ex:Report ;
+    rdfs:label "paul_dowling" .
+
+ex:peter_russ rdf:type ex:Report ;
+    rdfs:label "peter_russ" .
+
+ex:marcelina_grabowska rdf:type ex:Report ;
+    rdfs:label "marcelina_grabowska" .
+
+ex:evdokia_tapoglou rdf:type ex:Report ;
+    rdfs:label "evdokia_tapoglou" .
+
+ex:aliki_georgakaki rdf:type ex:Report ;
+    rdfs:label "aliki_georgakaki" .
+
+ex:aikaterini_mountraki rdf:type ex:Report ;
+    rdfs:label "aikaterini_mountraki" .
+
+ex:simon_letout rdf:type ex:Report ;
+    rdfs:label "simon_letout" .
+
+ex:ela_ince rdf:type ex:Report ;
+    rdfs:label "ela_ince" .
+
+ex:renewable_energy_directive_iii rdf:type ex:RenewableEnergyShareTarget ;
+    rdfs:label "renewable_energy_directive_iii" .
+
+ex:eu_renewable_energy_share_target_2030 rdf:type ex:RenewableEnergyShareTarget ;
+    rdfs:label "eu_renewable_energy_share_target_2030" .
+
+ex:eu_final_energy_consumption_2022 rdf:type ex:WindEnergyTechnology ;
+    rdfs:label "eu_final_energy_consumption_2022" .
+
+ex:wind_energy_share_2022 rdf:type ex:WindEnergyTechnology ;
+    rdfs:label "wind_energy_share_2022" .
+
+ex:eu_wind_capacity_2023 rdf:type ex:OnshoreWindInstalledCapacity ;
+    rdfs:label "eu_wind_capacity_2023" .
+
+ex:eu_onshore_wind_capacity_2023 rdf:type ex:OnshoreWindInstalledCapacity ;
+    rdfs:label "eu_onshore_wind_capacity_2023" .
+
+ex:eu_offshore_wind_capacity_2023 rdf:type ex:OffshoreWindCapacityAddition ;
+    rdfs:label "eu_offshore_wind_capacity_2023" .
+
+ex:total_wind_capacity_eu_2023 rdf:type ex:OnshoreWindInstalledCapacity ;
+    rdfs:label "total_wind_capacity_eu_2023" .
+
+ex:total_onshore_wind_capacity_eu_2023 rdf:type ex:OnshoreWindInstalledCapacity ;
+    rdfs:label "total_onshore_wind_capacity_eu_2023" .
+
+ex:total_offshore_wind_capacity_eu_2023 rdf:type ex:OffshoreWindInstalledCapacity ;
+    rdfs:label "total_offshore_wind_capacity_eu_2023" .
+
+ex:onshore_wind_cost_reduction_2010_2022 rdf:type ex:OnshoreWindCostReduction ;
+    rdfs:label "onshore_wind_cost_reduction_2010_2022" .
+
+ex:onshore_wind_lcoe_eur_per_mwh rdf:type ex:WindEnergyLCOE ;
+    rdfs:label "onshore_wind_lcoe_eur_per_mwh" .
+
+ex:eu_wind_sector_gva_2022 rdf:type ex:WindSectorGVA ;
+    rdfs:label "eu_wind_sector_gva_2022" .
+
+ex:global_wind_turbine_market_share_2023 rdf:type ex:WindTurbineMarketShare ;
+    rdfs:label "global_wind_turbine_market_share_2023" .
+
+ex:chinese_oems_market_share_2023 rdf:type ex:WindTurbineMarketShare ;
+    rdfs:label "chinese_oems_market_share_2023" .
+
+ex:european_oems_market_share_global_2023 rdf:type ex:WindTurbineMarketShare ;
+    rdfs:label "european_oems_market_share_global_2023" .
+
+ex:north_american_oems_market_share_global_2023 rdf:type ex:WindTurbineMarketShare ;
+    rdfs:label "north_american_oems_market_share_global_2023" .
+
+ex:european_oems_market_share_eu_onshore_2023 rdf:type ex:WindTurbineMarketShare ;
+    rdfs:label "european_oems_market_share_eu_onshore_2023" .
+
+ex:net_zero_industry_act_2030_target rdf:type ex:OnshoreWindInstalledCapacity2030 ;
+    rdfs:label "net_zero_industry_act_2030_target" .
+
+ex:eu_wind_sector_nacelles_blades_capacity_2023 rdf:type ex:WindEnergyTechnology ;
+    rdfs:label "eu_wind_sector_nacelles_blades_capacity_2023" .
+
+ex:critical_raw_materials_risk rdf:type ex:CriticalRawMaterial ;
+    rdfs:label "critical_raw_materials_risk" .
+
+ex:rare_earth_elements_risk rdf:type ex:RareEarthElement ;
+    rdfs:label "rare_earth_elements_risk" .
+
+ex:eu_public_rdi_investment_wind_energy_2013_2022 rdf:type ex:PublicRAndIInvestmentWindEnergy ;
+    rdfs:label "eu_public_rdi_investment_wind_energy_2013_2022" .
+
+ex:eu_horizon_programmes_rdi_contribution rdf:type ex:PublicRAndIInvestmentWindEnergy ;
+    rdfs:label "eu_horizon_programmes_rdi_contribution" .
+
+ex:eu_private_rdi_investment_wind_energy_2010_2020 rdf:type ex:PrivateRAndIInvestmentWindEnergy ;
+    rdfs:label "eu_private_rdi_investment_wind_energy_2010_2020" .
+
+ex:eu_private_rdi_investment_share_2010_2020 rdf:type ex:PrivateRAndIInvestmentWindEnergy ;
+    rdfs:label "eu_private_rdi_investment_share_2010_2020" .
+
+ex:eu_public_rdi_investment_share_2013_2022 rdf:type ex:PublicRAndIInvestmentWindEnergy ;
+    rdfs:label "eu_public_rdi_investment_share_2013_2022" .
+
+ex:china rdf:type ex:WindEnergyTechnology ;
+    rdfs:label "china" .
+
+ex:private_r_d_funding_2010_2020 rdf:type ex:PrivateRDInvestment ;
+    rdfs:label "private_r_d_funding_2010_2020" .
+
+ex:ceto_swot_analysis rdf:type ex:SWOTAnalysis ;
+    rdfs:label "ceto_swot_analysis" .
+
+ex:eu_wind_energy_sector rdf:type ex:WindEnergyTechnology ;
+    rdfs:label "eu_wind_energy_sector" .
+
+ex:floating_offshore_wind_development rdf:type ex:FloatingOffshoreWindSubstructure ;
+    rdfs:label "floating_offshore_wind_development" .
+
+ex:pre_commercial_wind_farms rdf:type ex:FloatingOffshoreWindSubstructure ;
+    rdfs:label "pre_commercial_wind_farms" .
+
+ex:eu_waters rdf:type ex:WindEnergyTechnology ;
+    rdfs:label "eu_waters" .
+
+ex:manufacturing_supply_chain rdf:type ex:WindEnergyTechnology ;
+    rdfs:label "manufacturing_supply_chain" .
+
+ex:eu_onshore_market rdf:type ex:WindEnergyTechnology ;
+    rdfs:label "eu_onshore_market" .
+
+ex:european_companies rdf:type ex:WindEnergyTechnology ;
+    rdfs:label "european_companies" .
+
+ex:global_market rdf:type ex:WindEnergyTechnology ;
+    rdfs:label "global_market" .
+
+ex:administrative_barriers rdf:type ex:WindEnergyTechnology ;
+    rdfs:label "administrative_barriers" .
+
+ex:permitting_process rdf:type ex:WindEnergyTechnology ;
+    rdfs:label "permitting_process" .
+
+ex:new_installations rdf:type ex:WindEnergyTechnology ;
+    rdfs:label "new_installations" .
+
+ex:permanent_magnets rdf:type ex:PermanentMagnet ;
+    rdfs:label "permanent_magnets" .
+
+ex:supply_risk rdf:type ex:WindEnergyTechnology ;
+    rdfs:label "supply_risk" .
+
+ex:circularity_by_design rdf:type ex:RecyclingCircularityProject ;
+    rdfs:label "circularity_by_design" .
+
+ex:environmental_impact rdf:type ex:WindEnergyTechnology ;
+    rdfs:label "environmental_impact" .
+
+ex:human_capital_agenda rdf:type ex:WindEnergyTechnology ;
+    rdfs:label "human_capital_agenda" .
+
+ex:maritime_spatial_planning rdf:type ex:WindEnergyTechnology ;
+    rdfs:label "maritime_spatial_planning" .
+
+ex:coexistence_among_sectors rdf:type ex:WindEnergyTechnology ;
+    rdfs:label "coexistence_among_sectors" .
+
+ex:annual_deployment_rates rdf:type ex:WindEnergyTechnology ;
+    rdfs:label "annual_deployment_rates" .
+
+ex:ambitious_2030_targets rdf:type ex:RenewableEnergyShareTarget ;
+    rdfs:label "ambitious_2030_targets" .
+
+ex:recycling_and_circularity_practices rdf:type ex:RecyclingCircularityProject ;
+    rdfs:label "recycling_and_circularity_practices" .
+
+ex:supply_chain_pressures rdf:type ex:WindEnergyTechnology ;
+    rdfs:label "supply_chain_pressures" .
+
+ex:public_acceptance rdf:type ex:PublicAcceptanceDriver ;
+    rdfs:label "public_acceptance" .
+
+ex:wind_technology rdf:type ex:WindEnergyTechnology ;
+    rdfs:label "wind_technology" .
+
+ex:offshore_wind_r_i_priorities rdf:type ex:WindEnergyTechnology ;
+    rdfs:label "offshore_wind_r_i_priorities" .
+
+ex:efficient_transmission_interconnection rdf:type ex:GridIntegrationProject ;
+    rdfs:label "efficient_transmission_interconnection" .
+
+ex:o_and_m rdf:type ex:WindEnergyTechnology ;
+    rdfs:label "o_and_m" .
+
+ex:supply_chain_bottlenecks rdf:type ex:WindEnergyTechnology ;
+    rdfs:label "supply_chain_bottlenecks" .
+
+ex:processed_materials rdf:type ex:WindEnergyTechnology ;
+    rdfs:label "processed_materials" .
+
+ex:ndfeb_magnets rdf:type ex:PermanentMagnet ;
+    rdfs:label "ndfeb_magnets" .
+
+ex:balsa_wood rdf:type ex:RawMaterial ;
+    rdfs:label "balsa_wood" .
+
+ex:commodity_price_inflation rdf:type ex:WindEnergyTechnology ;
+    rdfs:label "commodity_price_inflation" .
+
+ex:increased_transportation_costs rdf:type ex:WindEnergyTechnology ;
+    rdfs:label "increased_transportation_costs" .
+
+ex:trade_barriers rdf:type ex:WindEnergyTechnology ;
+    rdfs:label "trade_barriers" .
+
+ex:investment_across_value_chains rdf:type ex:WindEnergyTechnology ;
+    rdfs:label "investment_across_value_chains" .
+
+ex:competitiveness_of_eu_companies rdf:type ex:WindEnergyTechnology ;
+    rdfs:label "competitiveness_of_eu_companies" .
+
+ex:bottom_fixed_offshore_wind rdf:type ex:WindEnergyTechnology ;
+    rdfs:label "bottom_fixed_offshore_wind" .
+
+ex:airborne_wind_energy_systems rdf:type ex:AirborneWindEnergySystem ;
+    rdfs:label "airborne_wind_energy_systems" .
+
+ex:vertical_axis_wind_turbines rdf:type ex:VerticalAxisWindTurbine ;
+    rdfs:label "vertical_axis_wind_turbines" .
+
+ex:eu_funded_research rdf:type ex:WindEnergyTechnology ;
+    rdfs:label "eu_funded_research" .
+
+ex:technology_advancements_end_2023 rdf:type ex:WindEnergyTechnology ;
+    rdfs:label "technology_advancements_end_2023" .
+
+ex:set_plan_targets rdf:type ex:TechnologyDevelopmentStatusReport ;
+    rdfs:label "set_plan_targets" .
+
+ex:eu_global_competitiveness_wind_value_chain rdf:type ex:WindEnergyTechnology ;
+    rdfs:label "eu_global_competitiveness_wind_value_chain" .
+
+ex:european_green_deal rdf:type ex:WindEnergyTechnology ;
+    rdfs:label "european_green_deal" .
+
+ex:chapter_2_technology_indicators rdf:type ex:Report ;
+    rdfs:label "chapter_2_technology_indicators" .
+
+ex:technology_readiness_level rdf:type ex:TechnologyReadinessLevel ;
+    rdfs:label "technology_readiness_level" .
+
+ex:deployment_electricity_generation rdf:type ex:WindEnergyTechnology ;
+    rdfs:label "deployment_electricity_generation" .
+
+ex:modelling_projections_eu_global rdf:type ex:WindEnergyTechnology ;
+    rdfs:label "modelling_projections_eu_global" .
+
+ex:cost_developments_wind_energy rdf:type ex:WindEnergyTechnology ;
+    rdfs:label "cost_developments_wind_energy" .
+
+ex:levelised_cost_of_energy rdf:type ex:WindEnergyLCOE ;
+    rdfs:label "levelised_cost_of_energy" .
+
+ex:competitiveness_indicators rdf:type ex:WindEnergyTechnology ;
+    rdfs:label "competitiveness_indicators" .
+
+ex:public_private_r_d_funding rdf:type ex:WindEnergyTechnology ;
+    rdfs:label "public_private_r_d_funding" .
+
+ex:impact_trends_eu_supported_ri rdf:type ex:WindEnergyTechnology ;
+    rdfs:label "impact_trends_eu_supported_ri" .
+
+ex:chapter_3_wind_energy_value_chain rdf:type ex:Report ;
+    rdfs:label "chapter_3_wind_energy_value_chain" .
+
+ex:macroeconomic_indicators rdf:type ex:WindEnergyTechnology ;
+    rdfs:label "macroeconomic_indicators" .
+
+ex:environmental_socioeconomic_sustainability_indicators rdf:type ex:WindEnergyTechnology ;
+    rdfs:label "environmental_socioeconomic_sustainability_indicators" .
+
+ex:chapter_4_eu_global_position_competitiveness rdf:type ex:Report ;
+    rdfs:label "chapter_4_eu_global_position_competitiveness" .
+
+ex:market_shares_eu_global_leaders rdf:type ex:WindTurbineMarketShare ;
+    rdfs:label "market_shares_eu_global_leaders" .
+
+ex:trade_balance_eu_competitors rdf:type ex:WindEnergyTechnology ;
+    rdfs:label "trade_balance_eu_competitors" .
+
+ex:ceto_methodology rdf:type ex:CETOProject ;
+    rdfs:label "ceto_methodology" .
+
+ex:technology_maturity_status rdf:type ex:WindEnergyTechnology ;
+    rdfs:label "technology_maturity_status" .
+
+ex:onshore_wind_turbines rdf:type ex:OnshoreWindTurbine ;
+    rdfs:label "onshore_wind_turbines" .
+
+ex:standardized_steel_concrete_towers rdf:type ex:WindEnergyTechnology ;
+    rdfs:label "standardized_steel_concrete_towers" .
+
+ex:upwind_rotors rdf:type ex:WindEnergyTechnology ;
+    rdfs:label "upwind_rotors" .
+
+ex:bottom_fixed_foundation_types rdf:type ex:WindEnergyTechnology ;
+    rdfs:label "bottom_fixed_foundation_types" .
+
+ex:deeper_waters_installation rdf:type ex:WindEnergyTechnology ;
+    rdfs:label "deeper_waters_installation" .
+
+ex:deep_waters_eu_countries rdf:type ex:WindEnergyTechnology ;
+    rdfs:label "deep_waters_eu_countries" .
+
+ex:substructure_buoyancy_stability rdf:type ex:FloatingOffshoreWindSubstructure ;
+    rdfs:label "substructure_buoyancy_stability" .
+
+ex:spar_buoy_design rdf:type ex:FloatingOffshoreWindSubstructure ;
+    rdfs:label "spar_buoy_design" .
+
+ex:semi_submersible_design rdf:type ex:FloatingOffshoreWindSubstructure ;
+    rdfs:label "semi_submersible_design" .
+
+ex:pre_commercial_projects_north_sea rdf:type ex:FloatingOffshoreWindSubstructure ;
+    rdfs:label "pre_commercial_projects_north_sea" .
+
+ex:pre_commercial_projects_atlantic_ocean rdf:type ex:FloatingOffshoreWindSubstructure ;
+    rdfs:label "pre_commercial_projects_atlantic_ocean" .
+
+ex:horizontal_axis_wind_turbines rdf:type ex:WindEnergyTechnology ;
+    rdfs:label "horizontal_axis_wind_turbines" .
+
+ex:floating_devices rdf:type ex:WindEnergyTechnology ;
+    rdfs:label "floating_devices" .
+
+ex:wave_wind_energy rdf:type ex:WindEnergyTechnology ;
+    rdfs:label "wave_wind_energy" .
+
+ex:small_scale_wind_applications rdf:type ex:WindEnergyTechnology ;
+    rdfs:label "small_scale_wind_applications" .
+
+ex:concrete_barge_design rdf:type ex:FloatingOffshoreWindSubstructure ;
+    rdfs:label "concrete_barge_design" .
+
+ex:tension_leg_platform rdf:type ex:FloatingOffshoreWindSubstructure ;
+    rdfs:label "tension_leg_platform" .
+
+ex:jrc_analysis_2024 rdf:type ex:Report ;
+    rdfs:label "jrc_analysis_2024" .
+
+ex:gwec_2024 rdf:type ex:Report ;
+    rdfs:label "gwec_2024" .
+
+ex:wind_energy_technologies_table rdf:type ex:Report ;
+    rdfs:label "wind_energy_technologies_table" .
+
+ex:global_wind_capacity_figure rdf:type ex:Report ;
+    rdfs:label "global_wind_capacity_figure" .
+
+ex:onshore_capacity_additions_figure rdf:type ex:Report ;
+    rdfs:label "onshore_capacity_additions_figure" .
+
+ex:eu_onshore_capacity_additions_2023 rdf:type ex:OnshoreWindCapacityAddition ;
+    rdfs:label "eu_onshore_capacity_additions_2023" .
+
+ex:eu_onshore_installed_capacity_2023 rdf:type ex:OnshoreWindInstalledCapacity ;
+    rdfs:label "eu_onshore_installed_capacity_2023" .
+
+ex:uk_offshore_capacity_additions_2023 rdf:type ex:OffshoreWindCapacityAddition ;
+    rdfs:label "uk_offshore_capacity_additions_2023" .
+
+ex:uk_offshore_installed_capacity_2023 rdf:type ex:OffshoreWindInstalledCapacity ;
+    rdfs:label "uk_offshore_installed_capacity_2023" .
+
+ex:germany_onshore_capacity_additions_2023 rdf:type ex:OnshoreWindCapacityAddition ;
+    rdfs:label "germany_onshore_capacity_additions_2023" .
+
+ex:sweden_onshore_capacity_additions_2023 rdf:type ex:OnshoreWindCapacityAddition ;
+    rdfs:label "sweden_onshore_capacity_additions_2023" .
+
+ex:france_onshore_capacity_additions_2023 rdf:type ex:OnshoreWindCapacityAddition ;
+    rdfs:label "france_onshore_capacity_additions_2023" .
+
+ex:finland_onshore_capacity_additions_2023 rdf:type ex:OnshoreWindCapacityAddition ;
+    rdfs:label "finland_onshore_capacity_additions_2023" .
+
+ex:germany_total_onshore_wind_capacity rdf:type ex:OnshoreWindInstalledCapacity ;
+    rdfs:label "germany_total_onshore_wind_capacity" .
+
+ex:spain_total_onshore_wind_capacity rdf:type ex:OnshoreWindInstalledCapacity ;
+    rdfs:label "spain_total_onshore_wind_capacity" .
+
+ex:france_total_onshore_wind_capacity rdf:type ex:OnshoreWindInstalledCapacity ;
+    rdfs:label "france_total_onshore_wind_capacity" .
+
+ex:sweden_total_onshore_wind_capacity rdf:type ex:OnshoreWindInstalledCapacity ;
+    rdfs:label "sweden_total_onshore_wind_capacity" .
+
+ex:italy_total_onshore_wind_capacity rdf:type ex:OnshoreWindInstalledCapacity ;
+    rdfs:label "italy_total_onshore_wind_capacity" .
+
+ex:eu_offshore_capacity_additions_2023_detail rdf:type ex:OffshoreWindCapacityAddition ;
+    rdfs:label "eu_offshore_capacity_additions_2023_detail" .
+
+ex:offshore_wind_capacity_additions_eu_2023 rdf:type ex:OffshoreWindCapacityAddition ;
+    rdfs:label "offshore_wind_capacity_additions_eu_2023" .
+
+ex:netherlands_offshore_capacity_addition_2023 rdf:type ex:OffshoreWindCapacityAddition ;
+    rdfs:label "netherlands_offshore_capacity_addition_2023" .
+
+ex:france_offshore_capacity_addition_2023 rdf:type ex:OffshoreWindCapacityAddition ;
+    rdfs:label "france_offshore_capacity_addition_2023" .
+
+ex:denmark_offshore_capacity_addition_2023 rdf:type ex:OffshoreWindCapacityAddition ;
+    rdfs:label "denmark_offshore_capacity_addition_2023" .
+
+ex:germany_offshore_capacity_addition_2023 rdf:type ex:OffshoreWindCapacityAddition ;
+    rdfs:label "germany_offshore_capacity_addition_2023" .
+
+ex:spain_floating_offshore_capacity_2023 rdf:type ex:OffshoreWindCapacityAddition ;
+    rdfs:label "spain_floating_offshore_capacity_2023" .
+
+ex:cumulative_offshore_wind_capacity_eu_end_2023 rdf:type ex:OffshoreWindInstalledCapacity ;
+    rdfs:label "cumulative_offshore_wind_capacity_eu_end_2023" .
+
+ex:germany_cumulative_offshore_wind_capacity rdf:type ex:OffshoreWindInstalledCapacity ;
+    rdfs:label "germany_cumulative_offshore_wind_capacity" .
+
+ex:netherlands_cumulative_offshore_wind_capacity rdf:type ex:OffshoreWindInstalledCapacity ;
+    rdfs:label "netherlands_cumulative_offshore_wind_capacity" .
+
+ex:denmark_cumulative_offshore_wind_capacity rdf:type ex:OffshoreWindInstalledCapacity ;
+    rdfs:label "denmark_cumulative_offshore_wind_capacity" .
+
+ex:belgium_cumulative_offshore_wind_capacity rdf:type ex:OffshoreWindInstalledCapacity ;
+    rdfs:label "belgium_cumulative_offshore_wind_capacity" .
+
+ex:european_sea_basins_total_capacity_2023 rdf:type ex:OffshoreWindInstalledCapacity ;
+    rdfs:label "european_sea_basins_total_capacity_2023" .
+
+ex:eu_floating_offshore_capacity_end_2023 rdf:type ex:OffshoreWindInstalledCapacity ;
+    rdfs:label "eu_floating_offshore_capacity_end_2023" .
+
+ex:windfloat_atlantic_portugal rdf:type ex:FloatingOffshoreWindSubstructure ;
+    rdfs:label "windfloat_atlantic_portugal" .
+
+ex:floatgen_france rdf:type ex:FloatingOffshoreWindSubstructure ;
+    rdfs:label "floatgen_france" .
+
+ex:demosath_spain rdf:type ex:FloatingOffshoreWindSubstructure ;
+    rdfs:label "demosath_spain" .
+
+ex:installed_floating_offshore_capacity_2030 rdf:type ex:OffshoreWindInstalledCapacity2030 ;
+    rdfs:label "installed_floating_offshore_capacity_2030" .
+
+ex:wind_energy_generation_eu_2023 rdf:type ex:WindEnergyGeneration ;
+    rdfs:label "wind_energy_generation_eu_2023" .
+
+ex:eu_wind_electricity_share_2023 rdf:type ex:WindEnergyGeneration ;
+    rdfs:label "eu_wind_electricity_share_2023" .
+
+ex:denmark_wind_electricity_share rdf:type ex:WindEnergyGeneration ;
+    rdfs:label "denmark_wind_electricity_share" .
+
+ex:ireland_wind_electricity_share rdf:type ex:WindEnergyGeneration ;
+    rdfs:label "ireland_wind_electricity_share" .
+
+ex:portugal_wind_electricity_share rdf:type ex:WindEnergyGeneration ;
+    rdfs:label "portugal_wind_electricity_share" .
+
+ex:germany_wind_electricity_share rdf:type ex:WindEnergyGeneration ;
+    rdfs:label "germany_wind_electricity_share" .
+
+ex:uk_wind_electricity_share rdf:type ex:WindEnergyGeneration ;
+    rdfs:label "uk_wind_electricity_share" .
+
+ex:us_wind_electricity_share rdf:type ex:WindEnergyGeneration ;
+    rdfs:label "us_wind_electricity_share" .
+
+ex:global_wind_electricity_share_2023 rdf:type ex:WindEnergyGeneration ;
+    rdfs:label "global_wind_electricity_share_2023" .
+
+ex:global_primary_energy_consumption_wind_share_2022 rdf:type ex:WindEnergyTechnology ;
+    rdfs:label "global_primary_energy_consumption_wind_share_2022" .
+
+ex:denmark_primary_energy_consumption_wind_share rdf:type ex:WindEnergyTechnology ;
+    rdfs:label "denmark_primary_energy_consumption_wind_share" .
+
+ex:ireland_primary_energy_consumption_wind_share rdf:type ex:WindEnergyTechnology ;
+    rdfs:label "ireland_primary_energy_consumption_wind_share" .
+
+ex:eu_primary_energy_consumption_wind_share_2022 rdf:type ex:WindEnergyTechnology ;
+    rdfs:label "eu_primary_energy_consumption_wind_share_2022" .
+
+ex:eu_final_energy_consumption_wind_share_2022 rdf:type ex:WindEnergyTechnology ;
+    rdfs:label "eu_final_energy_consumption_wind_share_2022" .
+
+ex:brazil_primary_energy_consumption_wind_share rdf:type ex:WindEnergyTechnology ;
+    rdfs:label "brazil_primary_energy_consumption_wind_share" .
+
+ex:us_primary_energy_consumption_wind_share rdf:type ex:WindEnergyTechnology ;
+    rdfs:label "us_primary_energy_consumption_wind_share" .
+
+ex:repowereu_plan rdf:type ex:Report ;
+    rdfs:label "repowereu_plan" .
+
+ex:eu_renewable_energy_target_2030 rdf:type ex:RenewableEnergyShareTarget ;
+    rdfs:label "eu_renewable_energy_target_2030" .
+
+ex:eu_renewable_energy_ambition_2030 rdf:type ex:RenewableEnergyShareTarget ;
+    rdfs:label "eu_renewable_energy_ambition_2030" .
+
+ex:eu_wind_energy_target_2030 rdf:type ex:WindEnergyTechnology ;
+    rdfs:label "eu_wind_energy_target_2030" .
+
+ex:potencia_poles_jrc_models rdf:type ex:Report ;
+    rdfs:label "potencia_poles_jrc_models" .
+
+ex:potencia_ceto_2024_scenario rdf:type ex:Report ;
+    rdfs:label "potencia_ceto_2024_scenario" .
+
+ex:onshore_wind_installed_capacity_eu_2030_projection rdf:type ex:OnshoreWindInstalledCapacity2030 ;
+    rdfs:label "onshore_wind_installed_capacity_eu_2030_projection" .
+
+ex:offshore_wind_installed_capacity_eu_2050_projection rdf:type ex:OffshoreWindInstalledCapacity2050 ;
+    rdfs:label "offshore_wind_installed_capacity_eu_2050_projection" .
+
+ex:offshore_wind_capacity_2030 rdf:type ex:OffshoreWindInstalledCapacity2030 ;
+    rdfs:label "offshore_wind_capacity_2030" .
+
+ex:offshore_wind_capacity_2050 rdf:type ex:OffshoreWindInstalledCapacity2050 ;
+    rdfs:label "offshore_wind_capacity_2050" .
+
+ex:wind_share_eu_electricity_2030 rdf:type ex:WindEnergyTechnology ;
+    rdfs:label "wind_share_eu_electricity_2030" .
+
+ex:global_wind_electricity_needs_2050 rdf:type ex:WindEnergyTechnology ;
+    rdfs:label "global_wind_electricity_needs_2050" .
+
+ex:onshore_wind_lcoe_2010 rdf:type ex:WindEnergyLCOE ;
+    rdfs:label "onshore_wind_lcoe_2010" .
+
+ex:onshore_wind_lcoe_2022 rdf:type ex:WindEnergyLCOE ;
+    rdfs:label "onshore_wind_lcoe_2022" .
+
+ex:onshore_wind_lcoe_2030_median rdf:type ex:WindEnergyLCOE ;
+    rdfs:label "onshore_wind_lcoe_2030_median" .
+
+ex:onshore_wind_lcoe_2040_median rdf:type ex:WindEnergyLCOE ;
+    rdfs:label "onshore_wind_lcoe_2040_median" .
+
+ex:onshore_wind_lcoe_2050_median rdf:type ex:WindEnergyLCOE ;
+    rdfs:label "onshore_wind_lcoe_2050_median" .
+
+ex:onshore_wind_lcoe_2050_low_cost rdf:type ex:WindEnergyLCOE ;
+    rdfs:label "onshore_wind_lcoe_2050_low_cost" .
+
+ex:onshore_wind_lcoe_2023_bnef rdf:type ex:WindEnergyLCOE ;
+    rdfs:label "onshore_wind_lcoe_2023_bnef" .
+
+ex:global_ceto_2c_scenario_2024 rdf:type ex:GlobalCarbonPriceScenario ;
+    rdfs:label "global_ceto_2c_scenario_2024" .
+
+ex:figure_7 rdf:type ex:Report ;
+    rdfs:label "figure_7" .
+
+ex:figure_8 rdf:type ex:Report ;
+    rdfs:label "figure_8" .
+
+ex:figure_9 rdf:type ex:Report ;
+    rdfs:label "figure_9" .
+
+ex:jrc_2024 rdf:type ex:Report ;
+    rdfs:label "jrc_2024" .
+
+ex:irena_2023 rdf:type ex:Report ;
+    rdfs:label "irena_2023" .
+
+# ===== Relations =====
+ex:wind_energy_report_2024 ex:hasTitle ex:Wind_energy_in_the_European_Union_STATUS_REPORT_ON_TECHNOLOGY_DEVELOPMENT__TRENDS__VALUE_CHAINS___MARKETS .
+ex:wind_energy_report_2024 ex:publishedBy ex:Publications_Office_of_the_European_Union .
+ex:wind_energy_report_2024 ex:publishedInYear ex:2024 .
+ex:wind_energy_report_2024 ex:writtenBy ex:Mc_Govern__L___Tapoglou__E___Georgakaki__A___Mountraki__A___Letout__S___Ince__E___Gea_Bermudez__J___Schmitz__A__and_Grabowska__M_ .
+ex:wind_energy_report_2024 ex:discussesEnergyType ex:WindEnergyTechnology .
+ex:wind_energy_report_2024 ex:mainFocus ex:Technology_Development__Trends__Value_Chains___Markets .
+ex:wind_energy_report_2024 ex:publishedByOrganization ex:Joint_Research_Centre__JRC_ .
+ex:wind_energy_report_2024 ex:hasTitle ex:Clean_Energy_Technology_Observatory__Wind_Energy_in_the_European_Union___2024_Status_Report_on_Technology_Development__Trends__Value_Chains_and_Markets .
+ex:annex_3_energy_system_models_and_scenarios_potencia_and_poles_jrc ex:discussesEnergyType ex:annex_3_energy_system_models_and_scenarios_potencia_and_poles_jrc .
+ex:annex_3_energy_system_models_and_scenarios_potencia_and_poles_jrc ex:discussesEnergyType ex:annex_3_energy_system_models_and_scenarios_potencia_and_poles_jrc .
+ex:annex_3_energy_system_models_and_scenarios_potencia_and_poles_jrc ex:hasTitle ex:Annex_3_Energy_system_models_and_scenarios__POTEnCIA_and_POLES_JRC .
+ex:annex_3_energy_system_models_and_scenarios_potencia_and_poles_jrc ex:publishedBy ex:65 .
+ex:annex_3_potencia_model ex:hasTitle ex:AN_3_1_POTEnCIA_model .
+ex:annex_3_potencia_model ex:publishedBy ex:65 .
+ex:annex_3_poles_jrc_model ex:hasTitle ex:AN_3_2_POLES_JRC_model .
+ex:annex_3_poles_jrc_model ex:publishedBy ex:66 .
+ex:annex_3_distinctions_for_the_ceto_2024_scenarios ex:hasTitle ex:AN_3_3_Distinctions_for_the_CETO_2024_scenarios___POLES_JRC_vs__POTEnCIA .
+ex:annex_3_distinctions_for_the_ceto_2024_scenarios ex:publishedBy ex:69 .
+ex:annex_4_r_i_projects_funded_under_the_horizon_europe_programme ex:hasTitle ex:Annex_4_R_I_projects_funded_under_the_Horizon_Europe_programme .
+ex:annex_4_r_i_projects_funded_under_the_horizon_europe_programme ex:publishedBy ex:70 .
+ex:wind_energy_technology_report ex:mainFocus ex:state_of_the_art_of_wind_energy_technology .
+ex:wind_energy_technology_report ex:discussesEnergyType ex:WindEnergyTechnology .
+ex:wind_energy_technology_report ex:methodologyUsed ex:Research_and_developme_nt_trends_are_analysed__focussing_particularly_on_the_technology_progress_made_in_EU_funded_research_by_the_end_of_2023_in_view_of_SET_Plan_targets_ .
+ex:wind_energy_technology_report ex:methodologyUsed ex:This_report_also_assesses_the_EU_s_global_competitiveness_within_the_wind_value_chain_and_identifies_potent_ial_bottlenecks_and_supply_risks_ .
+ex:clean_energy_technology_observatory ex:mainObjectiveOfCETO ex:to_help_address_the_complexity_and_multi_faced_character_of_the_transition_to_a_climate_neutral_society_in_Europe_ .
+ex:clean_energy_technology_observatory ex:bodiesInvolvedInCETO ex:European_Commission_Joint_Research_Centre__JRC___and_Directorate_Generals_Research_and_Innovation__RTD__and_Energy__ENER_ .
+ex:clean_energy_technology_observatory ex:colleaguesContributedToCETO ex:European_Commission_Joint_Research_Centre__JRC___Directorate_Generals_Research_and_Innovation__RTD__and_Energy__ENER_ .
+ex:annex_1_summary_table_of_data_sources_for_the_ceto_indicators ex:mainObjectiveOfCETO ex:monitor_the_EU_research_and_innovation_activities_on_clean_energy_technologies_needed_for_the_delivery_of_the_European_Green_Deal .
+ex:annex_1_summary_table_of_data_sources_for_the_ceto_indicators ex:mainObjectiveOfCETO ex:assess_the_competitiveness_of_the_EU_clean_energy_sector_and_its_positioning_in_the_global_energy_market .
+ex:annex_1_summary_table_of_data_sources_for_the_ceto_indicators ex:mainObjectiveOfCETO ex:build_on_existing_Commission_studies__relevant_information___knowledge_in_Commission_services_and_agencies__and_the_Low_Carbon_Energy_Observatory__2015_2020_ .
+ex:annex_1_summary_table_of_data_sources_for_the_ceto_indicators ex:mainObjectiveOfCETO ex:publish_reports_on_the_Strategic_Energy_Technology_Plan__SET_Plan__SETIS_online_platform .
+ex:ceto_data_repository ex:mainFocus ex:techno___and_socio_economic_data_on_the_most_relevant_technologies_and_their_integration_in_the_energy_system .
+ex:ceto_target_audience ex:mainFocus ex:status_and_outlook_for_innovative_solutions_as_well_as_the_sustainable_market_uptake_of_both_mature_and_emerging_technologies .
+ex:ceto_annual_reports ex:mainFocus ex:Clean_Energy_Technology_Status__Value_Chains_and_Market .
+ex:ceto_annual_reports ex:mainFocus ex:Clean_Energy_Technology_System_Integration .
+ex:ceto_annual_reports ex:mainFocus ex:Foresight_Analysis_for_Future_Clean_Energy_Technologies_using_Weak_Signal_Analysis .
+ex:ceto_annual_reports ex:mainFocus ex:Clean_Energy_Outlooks__Analysis_and_Critical_Review .
+ex:ceto_annual_reports ex:mainFocus ex:System_Modelling_for_Clean_Energy_Technology_Scenarios .
+ex:ceto_annual_reports ex:mainFocus ex:Overall_Strategic_Analysis_of_Clean_Energy_Technology_Sector .
+ex:annex_1_summary_table_of_data_sources_for_the_ceto_indicators ex:colleaguesContributedToCETO ex:Enrico_DEGIORGIS__RTD_ .
+ex:annex_1_summary_table_of_data_sources_for_the_ceto_indicators ex:colleaguesContributedToCETO ex:Laila_KIENEL__ENER_ .
+ex:annex_1_summary_table_of_data_sources_for_the_ceto_indicators ex:colleaguesContributedToCETO ex:for_their_review_and_comments .
+ex:enrico_degiorgis ex:writtenBy ex:Report .
+ex:laila_kienel ex:writtenBy ex:Report .
+ex:nigel_taylor ex:writtenBy ex:CETOProject .
+ex:catriona_black ex:writtenBy ex:Report .
+ex:moritz_wegener ex:writtenBy ex:Report .
+ex:marc_jaxa_rozen ex:writtenBy ex:Report .
+ex:raffaele_salvucci ex:writtenBy ex:Report .
+ex:juan_gea_bermudez ex:writtenBy ex:Report .
+ex:frederik_neuwahl ex:writtenBy ex:Report .
+ex:przemyslaw_sikora ex:writtenBy ex:Report .
+ex:mate_rozsai ex:writtenBy ex:Report .
+ex:andreas_schmitz ex:writtenBy ex:Report .
+ex:burkhard_schade ex:writtenBy ex:Report .
+ex:kimon_keramidas ex:writtenBy ex:Report .
+ex:florian_fosse ex:writtenBy ex:Report .
+ex:paul_dowling ex:writtenBy ex:Report .
+ex:peter_russ ex:writtenBy ex:Report .
+ex:marcelina_grabowska ex:writtenBy ex:Report .
+ex:evdokia_tapoglou ex:writtenBy ex:Report .
+ex:aliki_georgakaki ex:writtenBy ex:Report .
+ex:aikaterini_mountraki ex:writtenBy ex:Report .
+ex:simon_letout ex:writtenBy ex:Report .
+ex:ela_ince ex:writtenBy ex:Report .
+ex:juan_gea_bermudez ex:writtenBy ex:Report .
+ex:andreas_schmitz ex:writtenBy ex:Report .
+ex:renewable_energy_directive_iii ex:hasTitle ex:RenewableEnergyShareTarget .
+ex:eu_renewable_energy_share_target_2030 ex:hasTitle ex:RenewableEnergyShareTarget .
+ex:eu_renewable_energy_share_target_2030 ex:hasTitle ex:RenewableEnergyShareTarget .
+ex:turnover ex:hasWindSectorTurnover ex:43000000000 .
+ex:eu_wind_sector_gva_2022 ex:hasWindSectorGVA ex:19000000000 .
+ex:employment ex:hasWindEnergyEmployment ex:326000 .
+ex:employment ex:hasWindEnergyEmployment ex:274000 .
+ex:employment ex:hasWindEnergyEmployment ex:30 .
+ex:global_wind_turbine_market_share_2023 ex:hasMarketShareOverTime ex:55_ .
+ex:global_wind_turbine_market_share_2023 ex:hasMarketShareOverTime ex:23_ .
+ex:global_wind_turbine_market_share_2023 ex:hasMarketShareOverTime ex:6_ .
+ex:european_oems_market_share_eu_onshore_2023 ex:hasMarketShareOverTime ex:88_ .
+ex:european_oems_market_share_eu_onshore_2023 ex:hasMarketShareOverTime ex:100_ .
+ex:net_zero_industry_act_2030_target ex:hasOnshoreWindCapacityAddition ex:40 .
+ex:net_zero_industry_act_2030_target ex:hasOnshoreWindCapacityAddition ex:15 .
+ex:eu_wind_sector_nacelles_blades_capacity_2023 ex:hasEUProductionQuantity ex:achieving_targets .
+ex:eu_public_rdi_investment_wind_energy_2013_2022 ex:hasPublicRAndIInvestmentWindEnergy ex:35 .
+ex:eu_horizon_programmes_rdi_contribution ex:hasPublicRAndIInvestmentWindEnergy ex:9 .
+ex:eu_private_rdi_investment_wind_energy_2010_2020 ex:hasPrivateRAndIInvestmentWindEnergy ex:40 .
+ex:publications_office_of_the_european_union ex:leadsInPrivateRDInvestment ex:china .
+ex:publications_office_of_the_european_union ex:privateRDInvestmentPercentage ex:40_ .
+ex:global_market ex:hasMarketShareOverTime ex:WindTurbineMarketShare .
+ex:trade_balance_eu_competitors ex:hasExtraEUImportsToExportsRatio ex:WindEnergyTechnology .
+ex:processed_materials ex:hasMaterialIntensityEstimate ex:WindEnergyTechnology .
+ex:ceto_methodology ex:methodologyUsed ex:Report .
+ex:ceto_methodology ex:mainObjectiveOfCETO ex:CETOProject .
+ex:onshore_wind_turbines ex:technologyReadinessLevelAssignedTo ex:trl .
+ex:bottom_fixed_offshore_wind ex:technologyReadinessLevelAssignedTo ex:trl .
+ex:wind_technology ex:technologyReadinessLevelAssignedTo ex:TechnologyReadinessLevel .
+ex:airborne_wind_energy_systems ex:technologyReadinessLevelAssignedTo ex:TechnologyReadinessLevel .
+ex:vertical_axis_wind_turbines ex:technologyReadinessLevelAssignedTo ex:TechnologyReadinessLevel .
+ex:airborne_wind_energy_systems ex:technologyReadinessLevelAssignedTo ex:trl .
+ex:vertical_axis_wind_turbines ex:efficiencyComparisonVAWTsToHAWTs ex:less_efficient_than_conventional_horizontal_axis_wind_turbines__HAWT__ .
+ex:vertical_axis_wind_turbines ex:technologyReadinessLevelAssignedTo ex:trl .
+ex:spar_buoy_design ex:currentTRLForFloatingOffshoreWindTechnologies ex:trl .
+ex:semi_submersible_design ex:currentTRLForFloatingOffshoreWindTechnologies ex:trl .
+ex:concrete_barge_design ex:currentTRLForFloatingOffshoreWindTechnologies ex:trl .
+ex:tension_leg_platform ex:currentTRLForFloatingOffshoreWindTechnologies ex:trl .
+ex:wind_energy_technologies_table ex:discussesOffshoreWindCapacityAddition ex:floating_offshore_wind_development .
+ex:wind_energy_technologies_table ex:discussesOffshoreWindCapacityAddition ex:onshore_wind_turbines .
+ex:wind_energy_technologies_table ex:discussesOffshoreWindCapacityAddition ex:bottom_fixed_offshore_wind .
+ex:wind_energy_technologies_table ex:discussesOffshoreWindCapacityAddition ex:airborne_wind_energy_systems .
+ex:global_wind_capacity_figure ex:hasGlobalAnnualCapacityAddition ex:OffshoreWindCapacityAddition .
+ex:global_wind_capacity_figure ex:hasGlobalAnnualCapacityAddition ex:OnshoreWindCapacityAddition .
+ex:global_wind_capacity_figure ex:hasOffshoreWindInstalledCapacity ex:OffshoreWindInstalledCapacity .
+ex:global_wind_capacity_figure ex:hasOnshoreWindInstalledCapacity ex:OnshoreWindInstalledCapacity .
+ex:gwec_2024 ex:discussesOnshoreWindCapacityAddition ex:china .
+ex:gwec_2024 ex:discussesOnshoreWindCapacityAddition ex:eu_onshore_capacity_additions_2023 .
+ex:gwec_2024 ex:discussesOnshoreWindCapacityAddition ex:eu_onshore_capacity_additions_2023 .
+ex:gwec_2024 ex:discussesOnshoreWindInstalledCapacity ex:china .
+ex:gwec_2024 ex:discussesOnshoreWindInstalledCapacity ex:eu_onshore_installed_capacity_2023 .
+ex:gwec_2024 ex:discussesOnshoreWindInstalledCapacity ex:eu_onshore_installed_capacity_2023 .
+ex:gwec_2024 ex:discussesOffshoreWindCapacityAddition ex:china .
+ex:gwec_2024 ex:discussesOffshoreWindCapacityAddition ex:eu_onshore_capacity_additions_2023 .
+ex:gwec_2024 ex:discussesOffshoreWindCapacityAddition ex:uk_offshore_capacity_additions_2023 .
+ex:gwec_2024 ex:discussesOffshoreWindInstalledCapacity ex:china .
+ex:gwec_2024 ex:discussesOffshoreWindInstalledCapacity ex:eu_onshore_installed_capacity_2023 .
+ex:gwec_2024 ex:discussesOffshoreWindInstalledCapacity ex:uk_offshore_installed_capacity_2023 .
+ex:gwec_2024 ex:discussesOnshoreWindCapacityAddition ex:eu_onshore_capacity_additions_2023 .
+ex:gwec_2024 ex:discussesOnshoreWindCapacityAddition ex:germany_onshore_capacity_additions_2023 .
+ex:gwec_2024 ex:discussesOnshoreWindCapacityAddition ex:sweden_onshore_capacity_additions_2023 .
+ex:gwec_2024 ex:discussesOnshoreWindCapacityAddition ex:france_onshore_capacity_additions_2023 .
+ex:gwec_2024 ex:discussesOnshoreWindCapacityAddition ex:finland_onshore_capacity_additions_2023 .
+ex:gwec_2024 ex:discussesOnshoreWindInstalledCapacity ex:total_onshore_wind_capacity_eu_2023 .
+ex:gwec_2024 ex:discussesOnshoreWindInstalledCapacity ex:germany_total_onshore_wind_capacity .
+ex:gwec_2024 ex:discussesOnshoreWindInstalledCapacity ex:spain_total_onshore_wind_capacity .
+ex:gwec_2024 ex:discussesOnshoreWindInstalledCapacity ex:france_total_onshore_wind_capacity .
+ex:gwec_2024 ex:discussesOnshoreWindInstalledCapacity ex:sweden_total_onshore_wind_capacity .
+ex:gwec_2024 ex:discussesOnshoreWindInstalledCapacity ex:italy_total_onshore_wind_capacity .
+ex:gwec_2024 ex:discussesOffshoreWindCapacityAddition ex:eu_offshore_capacity_additions_2023_detail .
+ex:potencia_ceto_2024_scenario ex:hasOffshoreWindCapacityAddition ex:offshore_wind_capacity_2030 .
+ex:potencia_ceto_2024_scenario ex:hasOffshoreWindCapacityAddition ex:offshore_wind_capacity_2050 .
+ex:potencia_ceto_2024_scenario ex:hasWindEnergyGeneration ex:wind_share_eu_electricity_2030 .
+ex:potencia_ceto_2024_scenario ex:hasWindEnergyGeneration ex:wind_share_eu_electricity_2030 .
+ex:global_ceto_2c_scenario_2024 ex:hasWindEnergyGeneration ex:global_wind_electricity_needs_2050 .
+ex:annex_3_poles_jrc_model ex:hasWindEnergyGeneration ex:global_wind_electricity_needs_2050 .
+ex:irena_2023 ex:hasWindEnergyLCOE ex:onshore_wind_lcoe_2010 .
+ex:irena_2023 ex:hasWindEnergyLCOE ex:onshore_wind_lcoe_2022 .
+ex:onshore_wind_lcoe_2023_bnef ex:hasWindEnergyLCOE ex:onshore_wind_lcoe_2030_median .
+ex:onshore_wind_lcoe_2023_bnef ex:hasWindEnergyLCOE ex:onshore_wind_lcoe_2040_median .
+ex:onshore_wind_lcoe_2023_bnef ex:hasWindEnergyLCOE ex:onshore_wind_lcoe_2050_median .
+ex:onshore_wind_lcoe_2023_bnef ex:hasWindEnergyLCOE ex:onshore_wind_lcoe_2050_low_cost .
+ex:irena_2023 ex:hasWindEnergyLCOE ex:onshore_wind_lcoe_2022 .
+ex:onshore_wind_lcoe_2023_bnef ex:hasWindEnergyLCOE ex:onshore_wind_lcoe_2023_bnef .
+ex:figure_7 ex:publishedBy ex:jrc_2024 .
+ex:figure_8 ex:publishedBy ex:jrc_2024 .
+ex:figure_9 ex:publishedBy ex:jrc_2024 .

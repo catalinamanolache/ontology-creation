@@ -1,0 +1,44 @@
+{
+  "questions": [
+    {
+      "question": "What is the total funding allocated by the Innovation Fund for offshore technology from 2022 to 2024?",
+      "scope": "class"
+    },
+    {
+      "question": "Which project received EUR 30 million in funding and when did it commence?",
+      "scope": "instance"
+    },
+    {
+      "question": "What are the main components of the SEAWORTHY demonstrator technology?",
+      "scope": "property"
+    },
+    {
+      "question": "How much did the turnover of the EU wind power sector range between from 2015 to 2022?",
+      "scope": "class"
+    },
+    {
+      "question": "Which country had the highest turnover in the EU wind sector for both 2021 and 2022?",
+      "scope": "instance"
+    },
+    {
+      "question": "What is the direct GVA of Germany in the EU wind sector according to EurObserv’ER’s analysis?",
+      "scope": "property"
+    },
+    {
+      "question": "Which companies dominate the global offshore market for wind turbines as of 2023?",
+      "scope": "class"
+    },
+    {
+      "question": "How much manufacturing capacity does China hold globally for nacelles compared to the EU?",
+      "scope": "instance"
+    },
+    {
+      "question": "What is the primary goal of the Net-Zero Industry Act adopted in June 2024?",
+      "scope": "property"
+    },
+    {
+      "question": "Which country had the highest number of FTEs employed directly and indirectly in the wind energy sector in 2022 according to EurObserv’ER?",
+      "scope": "instance"
+    }
+  ]
+}

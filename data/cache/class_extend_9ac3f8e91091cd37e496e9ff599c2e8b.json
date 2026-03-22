@@ -1,0 +1,162 @@
+{
+  "reasoning_steps": [
+    "The source text provides classifications of amino acids based on structure, nutritional requirement, metabolic fate, and polarity.",
+    "New classes are created for each of these classifications, and specific amino acids are categorized under them where not already covered by existing classes."
+  ],
+  "classes": [
+    {
+      "uri": "ex:BranchedChainAminoAcid",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": "ex:AminoAcid",
+      "aristotelian_definition": "A BranchedChainAminoAcid is an AminoAcid that has branched aliphatic side chains.",
+      "comment": "Amino acids with branched aliphatic side chains, such as leucine, isoleucine, and valine."
+    },
+    {
+      "uri": "ex:HydroxylGroupContainingAminoAcid",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": "ex:AminoAcid",
+      "aristotelian_definition": "A HydroxylGroupContainingAminoAcid is an AminoAcid that possesses a hydroxyl group in its side chain.",
+      "comment": "Amino acids that contain a hydroxyl group in their R group, including serine, threonine, and tyrosine."
+    },
+    {
+      "uri": "ex:SulfurContainingAminoAcid",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": "ex:AminoAcid",
+      "aristotelian_definition": "A SulfurContainingAminoAcid is an AminoAcid that contains sulfur in its side chain.",
+      "comment": "Amino acids that have sulfur in their side chain, such as cysteine and methionine."
+    },
+    {
+      "uri": "ex:AcidicAminoAcid",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": "ex:AminoAcid",
+      "aristotelian_definition": "An AcidicAminoAcid is an AminoAcid that has a carboxyl group in its side chain, resulting in a negative charge at physiological pH.",
+      "comment": "Amino acids with a carboxyl group in their side chain, such as aspartic acid and glutamic acid."
+    },
+    {
+      "uri": "ex:AmideAminoAcid",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": "ex:AminoAcid",
+      "aristotelian_definition": "An AmideAminoAcid is an AminoAcid that is an amide derivative of an acidic amino acid.",
+      "comment": "Amide derivatives of acidic amino acids, such as asparagine and glutamine."
+    },
+    {
+      "uri": "ex:BasicAminoAcid",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": "ex:AminoAcid",
+      "aristotelian_definition": "A BasicAminoAcid is an AminoAcid that has a basic functional group (like guanidino or imidazole) in its side chain, resulting in a positive charge at physiological pH.",
+      "comment": "Amino acids with a basic functional group in their side chain, such as lysine, arginine, and histidine."
+    },
+    {
+      "uri": "ex:AromaticAminoAcid",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": "ex:AminoAcid",
+      "aristotelian_definition": "An AromaticAminoAcid is an AminoAcid that contains an aromatic ring in its side chain.",
+      "comment": "Amino acids containing an aromatic ring in their side chain, including phenylalanine, tyrosine, and tryptophan."
+    },
+    {
+      "uri": "ex:IminoAcid",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": "ex:AminoAcid",
+      "aristotelian_definition": "An IminoAcid is an AminoAcid where the amino group is part of a ring structure, specifically a pyrrolidine ring in the case of proline.",
+      "comment": "An unusual amino acid, like proline, where the nitrogen atom is part of a ring structure."
+    },
+    {
+      "uri": "ex:HeterocyclicAminoAcid",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": "ex:AminoAcid",
+      "aristotelian_definition": "A HeterocyclicAminoAcid is an AminoAcid that contains a heterocyclic ring in its side chain.",
+      "comment": "Amino acids containing a heterocyclic ring in their side chain, such as histidine, tryptophan, and proline."
+    },
+    {
+      "uri": "ex:AlphaAminoAcid",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": "ex:AminoAcid",
+      "aristotelian_definition": "An AlphaAminoAcid is an AminoAcid where the amino group is attached to the alpha carbon atom, which is adjacent to the carboxyl group.",
+      "comment": "Amino acids in which the amino group is attached to the alpha carbon."
+    },
+    {
+      "uri": "ex:BetaAminoAcid",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": "ex:AminoAcid",
+      "aristotelian_definition": "A BetaAminoAcid is an AminoAcid where the amino group is attached to the beta carbon atom, which is two carbons away from the carboxyl group.",
+      "comment": "Amino acids in which the amino group is attached to the beta carbon."
+    },
+    {
+      "uri": "ex:GammaAminoAcid",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": "ex:AminoAcid",
+      "aristotelian_definition": "A GammaAminoAcid is an AminoAcid where the amino group is attached to the gamma carbon atom, which is three carbons away from the carboxyl group.",
+      "comment": "Amino acids in which the amino group is attached to the gamma carbon."
+    },
+    {
+      "uri": "ex:PurelyKetogenicAminoAcid",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": "ex:AminoAcid",
+      "aristotelian_definition": "A PurelyKetogenicAminoAcid is an AminoAcid that can only be metabolized into ketone bodies.",
+      "comment": "Amino acids that can be converted solely into ketone bodies, such as leucine and lysine."
+    },
+    {
+      "uri": "ex:KetogenicAndGlucogenicAminoAcid",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": "ex:AminoAcid",
+      "aristotelian_definition": "A KetogenicAndGlucogenicAminoAcid is an AminoAcid that can be metabolized into both ketone bodies and glucose.",
+      "comment": "Amino acids that can be metabolized into both ketone bodies and glucose, such as lysine, isoleucine, phenylalanine, tyrosine, and tryptophan."
+    },
+    {
+      "uri": "ex:PurelyGlucogenicAminoAcid",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": "ex:AminoAcid",
+      "aristotelian_definition": "A PurelyGlucogenicAminoAcid is an AminoAcid that can only be metabolized into glucose or glycogen.",
+      "comment": "Amino acids that can be converted solely into glucose or glycogen."
+    },
+    {
+      "uri": "ex:HydrophobicAminoAcid",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": "ex:AminoAcid",
+      "aristotelian_definition": "A HydrophobicAminoAcid is an AminoAcid with a non-polar side chain that repels water.",
+      "comment": "Amino acids with non-polar side chains that are water-repelling, also known as non-polar amino acids."
+    },
+    {
+      "uri": "ex:PolarUnchargedAminoAcid",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": "ex:AminoAcid",
+      "aristotelian_definition": "A PolarUnchargedAminoAcid is an AminoAcid with a polar side chain that does not carry a net charge at physiological pH.",
+      "comment": "Amino acids with polar side chains that are uncharged at physiological pH, capable of hydrogen bonding."
+    },
+    {
+      "uri": "ex:PolarPositivelyChargedAminoAcid",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": "ex:AminoAcid",
+      "aristotelian_definition": "A PolarPositivelyChargedAminoAcid is an AminoAcid with a polar side chain that carries a net positive charge at physiological pH.",
+      "comment": "Amino acids with polar side chains that carry a net positive charge at physiological pH."
+    },
+    {
+      "uri": "ex:PolarNegativelyChargedAminoAcid",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": "ex:AminoAcid",
+      "aristotelian_definition": "A PolarNegativelyChargedAminoAcid is an AminoAcid with a polar side chain that carries a net negative charge at physiological pH.",
+      "comment": "Amino acids with polar side chains that carry a net negative charge at physiological pH."
+    }
+  ],
+  "canonical_terms": {
+    "branched-chain amino acids": "ex:BranchedChainAminoAcid",
+    "Hydroxyl Group-containing Amino Acids": "ex:HydroxylGroupContainingAminoAcid",
+    "Sulphur Containing Amino acids": "ex:SulfurContainingAminoAcid",
+    "Acidic Amino Acids": "ex:AcidicAminoAcid",
+    "Amide derivatives": "ex:AmideAminoAcid",
+    "Basic Amino Acids": "ex:BasicAminoAcid",
+    "Aromatic Amino Acids": "ex:AromaticAminoAcid",
+    "Imino Acids": "ex:IminoAcid",
+    "Heterocyclic Amino Acids": "ex:HeterocyclicAminoAcid",
+    "α-amino acid": "ex:AlphaAminoAcid",
+    "Beta -amino acid": "ex:BetaAminoAcid",
+    "γ-amino acid": "ex:GammaAminoAcid",
+    "Purely ketogenic amino acids": "ex:PurelyKetogenicAminoAcid",
+    "Ketogenic and Glucogenic amino acids": "ex:KetogenicAndGlucogenicAminoAcid",
+    "Purely Glucogenic amino acids": "ex:PurelyGlucogenicAminoAcid",
+    "Non-polar amino acids": "ex:HydrophobicAminoAcid",
+    "Polar amino acids with no charge on 'R' group": "ex:PolarUnchargedAminoAcid",
+    "Polar amino acids with positive 'R' group": "ex:PolarPositivelyChargedAminoAcid",
+    "Polar amino acids with negative 'R‘group": "ex:PolarNegativelyChargedAminoAcid"
+  }
+}

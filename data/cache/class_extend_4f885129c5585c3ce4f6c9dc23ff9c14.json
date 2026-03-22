@@ -1,0 +1,436 @@
+{
+  "reasoning_steps": [
+    "Identified new amino acids and their therapeutic uses or roles mentioned in the text.",
+    "Classified these new amino acids based on their chemical structure or metabolic fate, and anchored them to bfo:MaterialEntity."
+  ],
+  "classes": [
+    {
+      "uri": "ex:Glycine",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": "ex:AminoAcid",
+      "aristotelian_definition": "A Glycine is an AminoAcid that is used to treat schizophrenia, sleep issues, BPH, metabolic syndrome, and inherited metabolic illnesses.",
+      "comment": "Glycine is an amino acid used in medicine for various conditions."
+    },
+    {
+      "uri": "ex:Alanine",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": "ex:AminoAcid",
+      "aristotelian_definition": "An Alanine is an AminoAcid that is utilized to boost immunity and provide the brain and central nervous system more energy.",
+      "comment": "Alanine is an amino acid that supports immunity and brain energy."
+    },
+    {
+      "uri": "ex:Valine",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": "ex:BranchedChainAminoAcid",
+      "aristotelian_definition": "A Valine is an AminoAcid that is involved in muscle synthesis and maintenance, stress management, child growth, and immune system support.",
+      "comment": "Valine is a branched-chain amino acid important for muscle and immunity."
+    },
+    {
+      "uri": "ex:Leucine",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": "ex:BranchedChainAminoAcid",
+      "aristotelian_definition": "A Leucine is an AminoAcid that increases physical performance, prevents muscle loss, and lowers blood glucose levels in type 2 diabetes.",
+      "comment": "Leucine is a branched-chain amino acid that enhances physical performance and regulates blood sugar."
+    },
+    {
+      "uri": "ex:Isoleucine",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": "ex:BranchedChainAminoAcid",
+      "aristotelian_definition": "An Isoleucine is an AminoAcid that is required for children's optimum growth and the maintenance of nitrogen balance in adults.",
+      "comment": "Isoleucine is a branched-chain amino acid crucial for growth and nitrogen balance."
+    },
+    {
+      "uri": "ex:Norleucine",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": "ex:AminoAcid",
+      "aristotelian_definition": "A Norleucine is an AminoAcid that is an artificial amino acid used to research protein structure and function.",
+      "comment": "Norleucine is a synthetic amino acid used in laboratory research."
+    },
+    {
+      "uri": "ex:Phenylalanine",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": "ex:AromaticAminoAcid",
+      "aristotelian_definition": "A Phenylalanine is an AminoAcid that is used to treat depression, Parkinson's illness, multiple sclerosis, pain, acupuncture anesthesia, and osteoarthritis.",
+      "comment": "Phenylalanine is an aromatic amino acid used in treating neurological and pain conditions."
+    },
+    {
+      "uri": "ex:Tyrosine",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": "ex:AromaticAminoAcid",
+      "aristotelian_definition": "A Tyrosine is an AminoAcid that is utilized in the production of thyroid hormone and helps with mental performance, alertness, and memory.",
+      "comment": "Tyrosine is an aromatic amino acid involved in thyroid hormone production and cognitive function."
+    },
+    {
+      "uri": "ex:Serine",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": "ex:HydroxylGroupContainingAminoAcid",
+      "aristotelian_definition": "A Serine is an AminoAcid that is particularly significant for the brain and central nervous system to function correctly.",
+      "comment": "Serine is an amino acid essential for proper brain and central nervous system function."
+    },
+    {
+      "uri": "ex:Cysteine",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": "ex:SulfurContainingAminoAcid",
+      "aristotelian_definition": "A Cysteine is an AminoAcid that is used in medicine to boost the efficiency of corticosteroid medications.",
+      "comment": "Cysteine is a sulfur-containing amino acid that enhances corticosteroid efficacy."
+    },
+    {
+      "uri": "ex:Cystine",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": "ex:SulfurContainingAminoAcid",
+      "aristotelian_definition": "A Cystine is an AminoAcid that can be used in the treatment of surgery and trauma.",
+      "comment": "Cystine is a sulfur-containing amino acid used in post-surgical and trauma treatment."
+    },
+    {
+      "uri": "ex:Threonine",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": "ex:AminoAcid",
+      "aristotelian_definition": "A Threonine is an AminoAcid that is used to treat spinal spasticity, multiple sclerosis, familial spastic paraparesis, and amyotrophic lateral sclerosis.",
+      "comment": "Threonine is an amino acid used in treating neurological conditions like spasticity and sclerosis."
+    },
+    {
+      "uri": "ex:Methionine",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": "ex:SulfurContainingAminoAcid",
+      "aristotelian_definition": "A Methionine is an AminoAcid that is used to prevent and cure depression, inflammation, liver illness, and muscle discomfort.",
+      "comment": "Methionine is a sulfur-containing amino acid used for depression, inflammation, and liver health."
+    },
+    {
+      "uri": "ex:Tryptophan",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": "ex:AminoAcid",
+      "aristotelian_definition": "A Tryptophan is an AminoAcid that has been used to treat anxiety and depression, and is used to treat migraines, headaches, and boost growth hormone production.",
+      "comment": "Tryptophan is an amino acid used for mood disorders, migraines, and growth hormone stimulation."
+    },
+    {
+      "uri": "ex:Proline",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": "ex:IminoAcid",
+      "aristotelian_definition": "A Proline is an AminoAcid that is used to improve joint and skin health, and may help with muscle development and injury healing.",
+      "comment": "Proline is an imino acid beneficial for joint, skin, and muscle health."
+    },
+    {
+      "uri": "ex:Hydroxyproline",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": "ex:IminoAcid",
+      "aristotelian_definition": "A Hydroxyproline is an AminoAcid that is required for the formation of collagen, the body's principal structural protein.",
+      "comment": "Hydroxyproline is an imino acid essential for collagen formation and structural integrity."
+    },
+    {
+      "uri": "ex:AsparticAcid",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": "ex:AcidicAminoAcid",
+      "aristotelian_definition": "An AsparticAcid is an AminoAcid that is occasionally used to treat stress and exhaustion, and aids in energy generation and RNA/DNA manufacturing.",
+      "comment": "Aspartic Acid is an acidic amino acid involved in energy production and nucleic acid synthesis."
+    },
+    {
+      "uri": "ex:Asparagine",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": "ex:AmideAminoAcid",
+      "aristotelian_definition": "An Asparagine is an AminoAcid that is necessary for brain development and function.",
+      "comment": "Asparagine is an amide amino acid crucial for brain development and function."
+    },
+    {
+      "uri": "ex:GlutamicAcid",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": "ex:AcidicAminoAcid",
+      "aristotelian_definition": "A GlutamicAcid is an AminoAcid that serves as a source of energy for the brain, improves brain clarity, mental alertness, and mood, and is used to treat Parkinson's, Fatigue, and Schizophrenia.",
+      "comment": "Glutamic Acid is an acidic amino acid vital for brain energy, cognition, and mood, used in treating neurological disorders."
+    },
+    {
+      "uri": "ex:BetaHydroxyGlutamicAcid",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": "ex:AminoAcid",
+      "aristotelian_definition": "A BetaHydroxyGlutamicAcid is an AminoAcid that is used to treat acne, photoaging, dry skin, psoriasis, and melasma, and has been studied for fibromyalgia, dental scaling, dry mouth, and urinary tract stones.",
+      "comment": "Beta-Hydroxy Glutamic Acid is an amino acid used for dermatological conditions and studied for other health issues."
+    },
+    {
+      "uri": "ex:Glutamine",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": "ex:AmideAminoAcid",
+      "aristotelian_definition": "A Glutamine is an AminoAcid that is used to keep blood sugar levels under control and consistent.",
+      "comment": "Glutamine is an amide amino acid that helps regulate blood sugar levels."
+    },
+    {
+      "uri": "ex:Ornithine",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": "ex:AminoAcid",
+      "aristotelian_definition": "An Ornithine is an AminoAcid that is primarily used in health supplements to support sports and performance, and to help with liver function and wound healing.",
+      "comment": "Ornithine is an amino acid used for sports performance, liver function, and wound healing."
+    },
+    {
+      "uri": "ex:Arginine",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": "ex:BasicAminoAcid",
+      "aristotelian_definition": "An Arginine is an AminoAcid that plays an important role in the treatment of cardiovascular disease due to its antiatherogenic, anti-ischemic, antiplatelet, and antithrombotic effects.",
+      "comment": "Arginine is a basic amino acid beneficial for cardiovascular health."
+    },
+    {
+      "uri": "ex:Lysine",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": "ex:AminoAcid",
+      "aristotelian_definition": "A Lysine is an AminoAcid that appears to minimize cold sores when taken orally or applied topically.",
+      "comment": "Lysine is an amino acid used to manage cold sores."
+    },
+    {
+      "uri": "ex:Histidine",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": "ex:BasicAminoAcid",
+      "aristotelian_definition": "A Histidine is an AminoAcid that is used to treat anemia and can reduce blood pressure, and is critical in baby feeding.",
+      "comment": "Histidine is a basic amino acid important for hemoglobin, blood pressure, and infant nutrition."
+    },
+    {
+      "uri": "ex:DPenicillamine",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": "ex:NonStandardAminoAcid",
+      "aristotelian_definition": "A D-Penicillamine is a NonStandardAminoAcid that is a metabolite of penicillin and is employed in the chelation therapy of Wilson’s disease.",
+      "comment": "D-Penicillamine is a non-standard amino acid used for Wilson's disease treatment."
+    },
+    {
+      "uri": "ex:NAcetylcysteine",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": "ex:NonStandardAminoAcid",
+      "aristotelian_definition": "A N-Acetylcysteine is a NonStandardAminoAcid that is used in cystic fibrosis and chronic renal insufficiency as an antioxidant.",
+      "comment": "N-Acetylcysteine is a non-standard amino acid used as an antioxidant for respiratory and kidney conditions."
+    },
+    {
+      "uri": "ex:Gabapentin",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": "ex:NonStandardAminoAcid",
+      "aristotelian_definition": "A Gabapentin is a NonStandardAminoAcid that is used as an anticonvulsant.",
+      "comment": "Gabapentin is a non-standard amino acid used as an anticonvulsant medication."
+    },
+    {
+      "uri": "ex:NonStandardAminoAcid",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": "ex:AminoAcid",
+      "aristotelian_definition": "A NonStandardAminoAcid is an AminoAcid that is not one of the 20 standard proteinogenic amino acids, and can be used as drugs.",
+      "comment": "Non-standard amino acids are amino acids not typically found in proteins, some of which have medicinal uses."
+    },
+    {
+      "uri": "ex:AminoAceticAcid",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": "ex:AminoAcid",
+      "aristotelian_definition": "An AminoAceticAcid is an AminoAcid that is the chemical name for Glycine.",
+      "comment": "AminoAceticAcid is the chemical name for Glycine."
+    },
+    {
+      "uri": "ex:AlphaAminopropionicAcid",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": "ex:AminoAcid",
+      "aristotelian_definition": "An AlphaAminopropionicAcid is an AminoAcid that is the chemical name for Alanine.",
+      "comment": "AlphaAminopropionicAcid is the chemical name for Alanine."
+    },
+    {
+      "uri": "ex:AlphaAminoisovalericAcid",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": "ex:AminoAcid",
+      "aristotelian_definition": "An AlphaAminoisovalericAcid is an AminoAcid that is the chemical name for Valine.",
+      "comment": "AlphaAminoisovalericAcid is the chemical name for Valine."
+    },
+    {
+      "uri": "ex:AlphaAminoisocaproicAcid",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": "ex:AminoAcid",
+      "aristotelian_definition": "An AlphaAminoisocaproicAcid is an AminoAcid that is the chemical name for Leucine.",
+      "comment": "AlphaAminoisocaproicAcid is the chemical name for Leucine."
+    },
+    {
+      "uri": "ex:AlphaAminoBetaMethylNValericAcid",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": "ex:AminoAcid",
+      "aristotelian_definition": "An AlphaAminoBetaMethylNValericAcid is an AminoAcid that is the chemical name for Isoleucine.",
+      "comment": "AlphaAminoBetaMethylNValericAcid is the chemical name for Isoleucine."
+    },
+    {
+      "uri": "ex:AlphaAminoNCaproicAcid",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": "ex:AminoAcid",
+      "aristotelian_definition": "An AlphaAminoNCaproicAcid is an AminoAcid that is the chemical name for Norleucine.",
+      "comment": "AlphaAminoNCaproicAcid is the chemical name for Norleucine."
+    },
+    {
+      "uri": "ex:AlphaAminoBetaPhenylpropionicAcid",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": "ex:AminoAcid",
+      "aristotelian_definition": "An AlphaAminoBetaPhenylpropionicAcid is an AminoAcid that is the chemical name for Phenylalanine.",
+      "comment": "AlphaAminoBetaPhenylpropionicAcid is the chemical name for Phenylalanine."
+    },
+    {
+      "uri": "ex:AlphaAminoBetaPHydroxyphenylPropionicAcid",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": "ex:AminoAcid",
+      "aristotelian_definition": "An AlphaAminoBetaPHydroxyphenylPropionicAcid is an AminoAcid that is the chemical name for Tyrosine.",
+      "comment": "AlphaAminoBetaPHydroxyphenylPropionicAcid is the chemical name for Tyrosine."
+    },
+    {
+      "uri": "ex:AlphaAminoBetaHydroxypropionicAcid",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": "ex:AminoAcid",
+      "aristotelian_definition": "An AlphaAminoBetaHydroxypropionicAcid is an AminoAcid that is the chemical name for Serine.",
+      "comment": "AlphaAminoBetaHydroxypropionicAcid is the chemical name for Serine."
+    },
+    {
+      "uri": "ex:AlphaAminoBetaMercaptopropionicAcid",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": "ex:AminoAcid",
+      "aristotelian_definition": "An AlphaAminoBetaMercaptopropionicAcid is an AminoAcid that is the chemical name for Cysteine.",
+      "comment": "AlphaAminoBetaMercaptopropionicAcid is the chemical name for Cysteine."
+    },
+    {
+      "uri": "ex:AlphaAminoBetaHydroxyNButyricAcid",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": "ex:AminoAcid",
+      "aristotelian_definition": "An AlphaAminoBetaHydroxyNButyricAcid is an AminoAcid that is the chemical name for Threonine.",
+      "comment": "AlphaAminoBetaHydroxyNButyricAcid is the chemical name for Threonine."
+    },
+    {
+      "uri": "ex:AlphaAminoGammaMethylthioNButyricAcid",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": "ex:AminoAcid",
+      "aristotelian_definition": "An AlphaAminoGammaMethylthioNButyricAcid is an AminoAcid that is the chemical name for Methionine.",
+      "comment": "AlphaAminoGammaMethylthioNButyricAcid is the chemical name for Methionine."
+    },
+    {
+      "uri": "ex:AlphaAminoBetaIndolepropionicAcid",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": "ex:AminoAcid",
+      "aristotelian_definition": "An AlphaAminoBetaIndolepropionicAcid is an AminoAcid that is the chemical name for Tryptophan.",
+      "comment": "AlphaAminoBetaIndolepropionicAcid is the chemical name for Tryptophan."
+    },
+    {
+      "uri": "ex:PyrrolidineAlphaCarboxylicAcid",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": "ex:IminoAcid",
+      "aristotelian_definition": "A PyrrolidineAlphaCarboxylicAcid is an AminoAcid that is the chemical name for Proline.",
+      "comment": "PyrrolidineAlphaCarboxylicAcid is the chemical name for Proline."
+    },
+    {
+      "uri": "ex:GammaHydroxypyrrolidineAlphaCarboxylicAcid",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": "ex:IminoAcid",
+      "aristotelian_definition": "A GammaHydroxypyrrolidineAlphaCarboxylicAcid is an AminoAcid that is the chemical name for Hydroxyproline.",
+      "comment": "GammaHydroxypyrrolidineAlphaCarboxylicAcid is the chemical name for Hydroxyproline."
+    },
+    {
+      "uri": "ex:AlphaAminosuccinicAcid",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": "ex:AminoAcid",
+      "aristotelian_definition": "An AlphaAminosuccinicAcid is an AminoAcid that is the chemical name for Aspartic Acid.",
+      "comment": "AlphaAminosuccinicAcid is the chemical name for Aspartic Acid."
+    },
+    {
+      "uri": "ex:AlphaAminosuccinamicAcid",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": "ex:AminoAcid",
+      "aristotelian_definition": "An AlphaAminosuccinamicAcid is an AminoAcid that is the chemical name for Asparagine.",
+      "comment": "AlphaAminosuccinamicAcid is the chemical name for Asparagine."
+    },
+    {
+      "uri": "ex:AlphaAminoglutaricAcid",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": "ex:AminoAcid",
+      "aristotelian_definition": "An AlphaAminoglutaricAcid is an AminoAcid that is the chemical name for Glutamic Acid.",
+      "comment": "AlphaAminoglutaricAcid is the chemical name for Glutamic Acid."
+    },
+    {
+      "uri": "ex:AlphaAminoBetaHydroxyglutaricAcid",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": "ex:AminoAcid",
+      "aristotelian_definition": "An AlphaAminoBetaHydroxyglutaricAcid is an AminoAcid that is the chemical name for Beta-Hydroxy Glutamic Acid.",
+      "comment": "AlphaAminoBetaHydroxyglutaricAcid is the chemical name for Beta-Hydroxy Glutamic Acid."
+    },
+    {
+      "uri": "ex:AlphaAminoGlutamicAcid",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": "ex:AminoAcid",
+      "aristotelian_definition": "An AlphaAminoGlutamicAcid is an AminoAcid that is the chemical name for Glutamine.",
+      "comment": "AlphaAminoGlutamicAcid is the chemical name for Glutamine."
+    },
+    {
+      "uri": "ex:AlphaDeltaDiaminoNValericAcid",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": "ex:AminoAcid",
+      "aristotelian_definition": "An AlphaDeltaDiaminoNValericAcid is an AminoAcid that is the chemical name for Ornithine.",
+      "comment": "AlphaDeltaDiaminoNValericAcid is the chemical name for Ornithine."
+    },
+    {
+      "uri": "ex:AlphaAminoDeltaGuanidinoNValericAcid",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": "ex:AminoAcid",
+      "aristotelian_definition": "An AlphaAminoDeltaGuanidinoNValericAcid is an AminoAcid that is the chemical name for Arginine.",
+      "comment": "AlphaAminoDeltaGuanidinoNValericAcid is the chemical name for Arginine."
+    },
+    {
+      "uri": "ex:AlphaDiaminocaproicAcid",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": "ex:AminoAcid",
+      "aristotelian_definition": "An AlphaDiaminocaproicAcid is an AminoAcid that is the chemical name for Lysine.",
+      "comment": "AlphaDiaminocaproicAcid is the chemical name for Lysine."
+    },
+    {
+      "uri": "ex:AlphaAminoBetaImidazolepropionicAcid",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": "ex:AminoAcid",
+      "aristotelian_definition": "An AlphaAminoBetaImidazolepropionicAcid is an AminoAcid that is the chemical name for Histidine.",
+      "comment": "AlphaAminoBetaImidazolepropionicAcid is the chemical name for Histidine."
+    }
+  ],
+  "canonical_terms": {
+    "Glycine": "ex:Glycine",
+    "Alanine": "ex:Alanine",
+    "Valine": "ex:Valine",
+    "L-valine": "ex:Valine",
+    "Leucine": "ex:Leucine",
+    "Isoleucine": "ex:Isoleucine",
+    "Norleucine": "ex:Norleucine",
+    "Phenylalanine": "ex:Phenylalanine",
+    "Tyrosine": "ex:Tyrosine",
+    "Serine": "ex:Serine",
+    "Cysteine": "ex:Cysteine",
+    "Cystine": "ex:Cystine",
+    "Threonine": "ex:Threonine",
+    "Methionine": "ex:Methionine",
+    "Tryptophan": "ex:Tryptophan",
+    "Proline": "ex:Proline",
+    "Hydroxyproline": "ex:Hydroxyproline",
+    "Aspartic acid": "ex:AsparticAcid",
+    "Asparagine": "ex:Asparagine",
+    "Glutamic acid": "ex:GlutamicAcid",
+    "Beta-hydroxy glutamic acid": "ex:BetaHydroxyGlutamicAcid",
+    "Glutamine": "ex:Glutamine",
+    "Ornithine": "ex:Ornithine",
+    "L-ornithine": "ex:Ornithine",
+    "Arginine": "ex:Arginine",
+    "L-arginine": "ex:Arginine",
+    "Lysine": "ex:Lysine",
+    "Histidine": "ex:Histidine",
+    "D-Penicillamine": "ex:DPenicillamine",
+    "N-Acetylcysteine": "ex:NAcetylcysteine",
+    "Gabapentin": "ex:Gabapentin",
+    "Amino acetic acid": "ex:AminoAceticAcid",
+    "Alpha Aminopropionic acid": "ex:AlphaAminopropionicAcid",
+    "alpha-Aminoisovaleric acid": "ex:AlphaAminoisovalericAcid",
+    "alpha-Aminoisocaproic acid": "ex:AlphaAminoisocaproicAcid",
+    "alpha-Amino-beta-methyl n-valeric acid": "ex:AlphaAminoBetaMethylNValericAcid",
+    "alpha-Amino n-caproic acid": "ex:AlphaAminoNCaproicAcid",
+    "alpha-Amino-beta-phenyl propionic acid": "ex:AlphaAminoBetaPhenylpropionicAcid",
+    "alpha-Amino-beta-(p-hydroxyphenyl) propionic acid": "ex:AlphaAminoBetaPHydroxyphenylPropionicAcid",
+    "alpha-Amino-beta-hydroxypropionic acid": "ex:AlphaAminoBetaHydroxypropionicAcid",
+    "alpha-Amino-beta-mercaptopropionic acid": "ex:AlphaAminoBetaMercaptopropionicAcid",
+    "alpha-Amino-beta-hydroxy-n-butyric acid": "ex:AlphaAminoBetaHydroxyNButyricAcid",
+    "alpha-Amino-gamma-methyl-thio-n-butyric acid": "ex:AlphaAminoGammaMethylthioNButyricAcid",
+    "alpha-Amino-beta-indolepropionic acid": "ex:AlphaAminoBetaIndolepropionicAcid",
+    "Pyrrolidine-alpha-carboxylic acid": "ex:PyrrolidineAlphaCarboxylicAcid",
+    "Gamma-Hydroxypyrolidine alpha-carboxylic acid": "ex:GammaHydroxypyrrolidineAlphaCarboxylicAcid",
+    "alpha-Aminosuccinic acid": "ex:AlphaAminosuccinicAcid",
+    "alpha-Aminosuccinamic acid": "ex:AlphaAminosuccinamicAcid",
+    "alpha-Aminoglutaric acid": "ex:AlphaAminoglutaricAcid",
+    "Alpha-Amino-beta-hydroxyglutaric acid": "ex:AlphaAminoBetaHydroxyglutaricAcid",
+    "Alpha-Amino glutamic acid": "ex:AlphaAminoGlutamicAcid",
+    "alpha-delta-Diamino-n-valeric acid": "ex:AlphaDeltaDiaminoNValericAcid",
+    "alpha-Amino-delta-guanidino-n-valeric acid": "ex:AlphaAminoDeltaGuanidinoNValericAcid",
+    "alpha-Diaminocaproic acid": "ex:AlphaDiaminocaproicAcid",
+    "alpha-Amino-beta-imidazolepropionic acid": "ex:AlphaAminoBetaImidazolepropionicAcid"
+  }
+}

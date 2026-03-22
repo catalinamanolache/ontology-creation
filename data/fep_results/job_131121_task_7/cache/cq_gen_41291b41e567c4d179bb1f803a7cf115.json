@@ -1,0 +1,44 @@
+{
+  "questions": [
+    {
+      "question": "What are the essential amino acids required by the human body?",
+      "scope": "class"
+    },
+    {
+      "question": "Which amino acids are classified as semi-essential and why?",
+      "scope": "instance"
+    },
+    {
+      "question": "List the non-essential amino acids that can be synthesized by the human body.",
+      "scope": "class"
+    },
+    {
+      "question": "What is the classification of amino acids based on their metabolic fates?",
+      "scope": "property"
+    },
+    {
+      "question": "Which amino acids are considered purely ketogenic and what does this imply about their metabolism?",
+      "scope": "instance"
+    },
+    {
+      "question": "How do amino acids classify into polar and non-polar categories based on polarity?",
+      "scope": "class"
+    },
+    {
+      "question": "What is the significance of the position of -NH2 in classifying amino acids?",
+      "scope": "property"
+    },
+    {
+      "question": "Which amino acids are classified as aromatic and why?",
+      "scope": "instance"
+    },
+    {
+      "question": "List the basic amino acids and their characteristics.",
+      "scope": "class"
+    },
+    {
+      "question": "What is the classification of amino acids based on their structure (aliphatic, hydroxyl group-containing, etc.)?",
+      "scope": "property"
+    }
+  ]
+}

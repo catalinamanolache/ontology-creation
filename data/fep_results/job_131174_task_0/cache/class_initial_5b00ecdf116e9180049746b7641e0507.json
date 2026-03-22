@@ -1,0 +1,46 @@
+{
+  "reasoning_steps": [
+    "Identified key concepts from the text that fit OWL class criteria, ensuring they are general and reusable."
+  ],
+  "classes": [
+    {
+      "uri": "ex:CleanEnergyTechnologyObservatory",
+      "bfo_parent": "bfo:Role",
+      "subclass_of": null,
+      "aristotelian_definition": "A CleanEnergyTechnologyObservatory is a Role that oversees the development of clean energy technologies.",
+      "comment": "null"
+    },
+    {
+      "uri": "ex:StatusReport",
+      "bfo_parent": "bfo:InformationContentEntity",
+      "subclass_of": null,
+      "aristotelian_definition": "A StatusReport is an InformationContentEntity that documents the current state and trends of a technology or industry.",
+      "comment": "null"
+    },
+    {
+      "uri": "ex:TechnologyReadinessLevel",
+      "bfo_parent": "bfo:Quality",
+      "subclass_of": null,
+      "aristotelian_definition": "A TechnologyReadinessLevel is a Quality that indicates the maturity level of a technology.",
+      "comment": "null"
+    },
+    {
+      "uri": "ex:Methodology",
+      "bfo_parent": "bfo:InformationContentEntity",
+      "subclass_of": null,
+      "aristotelian_definition": "A Methodology is an InformationContentEntity that outlines procedures and methods for conducting research or analysis.",
+      "comment": "null"
+    },
+    {
+      "uri": "ex:EUDeployment",
+      "bfo_parent": "bfo:SpatialRegion",
+      "subclass_of": null,
+      "aristotelian_definition": "An EUDeployment is a SpatialRegion that represents the geographical area of deployment within the European Union.",
+      "comment": "null"
+    }
+  ],
+  "canonical_terms": {
+    "CETO": "ex:CleanEnergyTechnologyObservatory",
+    "TRL": "ex:TechnologyReadinessLevel"
+  }
+}

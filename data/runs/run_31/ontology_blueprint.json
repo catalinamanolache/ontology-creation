@@ -1,0 +1,1820 @@
+{
+  "approved_classes": {
+    "ex:Report": {
+      "comment": "",
+      "bfo_parent": "bfo:InformationContentEntity",
+      "aristotelian_definition": "A Report is an InformationContentEntity that records structured information about technology development, trends, value chains and markets.",
+      "subclass_of": null
+    },
+    "ex:TechnologyDevelopmentStatusReport": {
+      "comment": "",
+      "bfo_parent": "bfo:InformationContentEntity",
+      "aristotelian_definition": "A TechnologyDevelopmentStatusReport is an InformationContentEntity that documents the status and trends of technology development, including readiness levels, deployment, costs, funding, patenting, and scientific publication.",
+      "subclass_of": null
+    },
+    "ex:WindEnergyTechnology": {
+      "comment": "",
+      "bfo_parent": "bfo:MaterialEntity",
+      "aristotelian_definition": "A WindEnergyTechnology is a MaterialEntity that represents the technology used for generating electricity from wind energy.",
+      "subclass_of": null
+    },
+    "ex:CETOProject": {
+      "comment": "Covers objectives and contributions from colleagues.",
+      "bfo_parent": "bfo:InformationContentEntity",
+      "aristotelian_definition": "A project that monitors EU research and innovation activities on clean energy technologies, assesses the competitiveness of the EU clean energy sector, builds on existing Commission studies, and publishes reports.",
+      "subclass_of": null
+    },
+    "ex:AnnualProgressReport": {
+      "comment": "Documents annual progress in clean energy technology.",
+      "bfo_parent": "bfo:InformationContentEntity",
+      "aristotelian_definition": "A report published annually by the Commission on the competitiveness of clean energy technologies, serving as a primary source of data.",
+      "subclass_of": null
+    },
+    "ex:RenewableEnergyShareTarget": {
+      "comment": "Defines the renewable energy goal.",
+      "bfo_parent": "bfo:Quality",
+      "aristotelian_definition": "A target set by the EU for its renewable energy share, aiming to reach at least 42.5% of final energy consumption by 2030.",
+      "subclass_of": null
+    },
+    "ex:OnshoreWindCostReduction": {
+      "comment": "Tracks the cost reduction trend.",
+      "bfo_parent": "bfo:Process",
+      "aristotelian_definition": "The process of reducing the cost of onshore wind between 2010 and 2022, resulting in a levelised cost of energy (LCoE) of EUR 31 per MWh.",
+      "subclass_of": null
+    },
+    "ex:GlobalMarketShare": {
+      "comment": "Represents market position.",
+      "bfo_parent": "bfo:Quality",
+      "aristotelian_definition": "The share of the global wind turbine market held by Chinese, European, and North American OEMs as of 2023.",
+      "subclass_of": null
+    },
+    "ex:EURDFrameworkProgrammeInvestment": {
+      "comment": "Tracks R&D funding.",
+      "bfo_parent": "bfo:Process",
+      "aristotelian_definition": "The investment in wind energy research and development by the EU framework programmes, including Horizon 2020 and Horizon Europe.",
+      "subclass_of": null
+    },
+    "ex:PrivateRDInvestment": {
+      "comment": "Covers the investment percentage from 2010 to 2020.",
+      "bfo_parent": "bfo:Process",
+      "aristotelian_definition": "The process of private research and development funding invested in various technologies, particularly focusing on wind energy.",
+      "subclass_of": null
+    },
+    "ex:SWOTAnalysis": {
+      "comment": "Maps to CETO SWOT analysis for the competitiveness of the EU wind energy sector.",
+      "bfo_parent": "bfo:InformationContentEntity",
+      "aristotelian_definition": "A structured analysis of strengths, weaknesses, opportunities, and threats related to the competitiveness of the EU wind energy sector.",
+      "subclass_of": null
+    },
+    "ex:TechnologyReadinessLevel": {
+      "comment": "Covers the current TRL of onshore and bottom-fixed offshore wind turbines.",
+      "bfo_parent": "bfo:Quality",
+      "aristotelian_definition": "The stage of technological development, indicating how close a technology is to commercialization.",
+      "subclass_of": null
+    },
+    "ex:FloatingOffshoreWindSubstructure": {
+      "comment": "Includes types like Spar-buoy, Semi-Submersible, TLP, Barge, and Multi-Platforms.",
+      "bfo_parent": "bfo:MaterialEntity",
+      "aristotelian_definition": "The substructures used in floating offshore wind technology to provide buoyancy and stability.",
+      "subclass_of": null
+    },
+    "ex:PreCommercialFloatingOffshoreWindDesign": {
+      "comment": "Includes designs like Spar-buoy and Semi-Submersible in the North Sea and Atlantic Ocean.",
+      "bfo_parent": "bfo:InformationContentEntity",
+      "aristotelian_definition": "The design of floating offshore wind technology that has been deployed pre-commercially.",
+      "subclass_of": null
+    },
+    "ex:LowerTRLTechnology": {
+      "comment": "Includes technologies like Airborne Wind Energy Systems (AWES) and Vertical Axis Wind Turbines (VAWT).",
+      "bfo_parent": "bfo:MaterialEntity",
+      "aristotelian_definition": "Technologies generating electricity that are at a lower technology readiness level than onshore and bottom-fixed offshore wind turbines.",
+      "subclass_of": null
+    },
+    "ex:AirborneWindEnergySystem": {
+      "comment": "Airborne wind energy systems are at a lower TRL than other wind technologies.",
+      "bfo_parent": "bfo:MaterialEntity",
+      "aristotelian_definition": "A technology that converts wind energy into electricity using autonomous kites or unmanned aircrafts, linked to the ground by one or more tethers.",
+      "subclass_of": null
+    },
+    "ex:VerticalAxisWindTurbine": {
+      "comment": "Vertical axis wind turbines are less efficient than conventional horizontal axis wind turbines.",
+      "bfo_parent": "bfo:MaterialEntity",
+      "aristotelian_definition": "A type of wind turbine that uses a vertical shaft around which the rotor turns, offering lower efficiency compared to horizontal axis wind turbines but potentially gaining momentum through hybridization or small-scale applications.",
+      "subclass_of": null
+    },
+    "ex:OnshoreWindInstalledCapacity2030": {
+      "comment": "This class represents a specific projection for onshore wind energy.",
+      "bfo_parent": "bfo:MaterialEntity",
+      "aristotelian_definition": "The projected installed capacity of onshore wind in the EU by 2030 under the POTEnCIA CETO 2024 scenario.",
+      "subclass_of": null
+    },
+    "ex:OnshoreWindInstalledCapacity2050": {
+      "comment": "This class represents a specific projection for onshore wind energy.",
+      "bfo_parent": "bfo:MaterialEntity",
+      "aristotelian_definition": "The projected installed capacity of onshore wind in the EU by 2050 under the POTEnCIA CETO 2024 scenario.",
+      "subclass_of": null
+    },
+    "ex:OffshoreWindInstalledCapacity2030": {
+      "comment": "This class represents a specific projection for offshore wind energy.",
+      "bfo_parent": "bfo:MaterialEntity",
+      "aristotelian_definition": "The projected installed capacity of offshore wind in the EU by 2030 under the POTEnCIA CETO 2024 scenario.",
+      "subclass_of": null
+    },
+    "ex:OffshoreWindInstalledCapacity2050": {
+      "comment": "This class represents a specific projection for offshore wind energy.",
+      "bfo_parent": "bfo:MaterialEntity",
+      "aristotelian_definition": "The projected installed capacity of offshore wind in the EU by 2050 under the POTEnCIA CETO 2024 scenario.",
+      "subclass_of": null
+    },
+    "ex:GlobalWindEnergyInstalledCapacity2030": {
+      "comment": "This class represents a specific projection for global wind energy.",
+      "bfo_parent": "bfo:MaterialEntity",
+      "aristotelian_definition": "The projected installed capacity of global wind energy by 2030 under the Global CETO 2\u00b0C scenario 2024.",
+      "subclass_of": null
+    },
+    "ex:GlobalWindEnergyInstalledCapacity2050": {
+      "comment": "This class represents a specific projection for global wind energy.",
+      "bfo_parent": "bfo:MaterialEntity",
+      "aristotelian_definition": "The projected installed capacity of global wind energy by 2050 under the Global CETO 2\u00b0C scenario 2024.",
+      "subclass_of": null
+    },
+    "http://example.org/vc_pe_investment_stages": {
+      "comment": "This class is used to categorize different stages of VC/PE investment.",
+      "bfo_parent": "bfo:Entity",
+      "aristotelian_definition": "A classification of venture capital and private equity investments based on the stage of development of the investee company.",
+      "subclass_of": null
+    },
+    "ex:InvestmentDealStage": {
+      "comment": "A classification of venture capital and private equity investments based on the stage of development of the investee company.",
+      "bfo_parent": "bfo:Quality",
+      "aristotelian_definition": "An InvestmentDealStage is a Quality that categorizes venture capital and private equity investments based on the developmental phase of the company receiving the investment.",
+      "subclass_of": null
+    },
+    "ex:WindEnergyInvestment": {
+      "comment": "Venture capital and private equity investment in the wind energy sector.",
+      "bfo_parent": "bfo:Process",
+      "aristotelian_definition": "A WindEnergyInvestment is a Process that represents the financial commitment of venture capital and private equity into the wind energy sector.",
+      "subclass_of": null
+    },
+    "ex:WindEnergyInvention": {
+      "comment": "A novel creation or discovery in the wind energy sector, represented by patent families.",
+      "bfo_parent": "bfo:MaterialEntity",
+      "aristotelian_definition": "A WindEnergyInvention is a MaterialEntity that represents a novel creation or discovery within the field of wind energy, often protected by patent families.",
+      "subclass_of": null
+    },
+    "ex:HighValueInvention": {
+      "comment": "A wind energy invention considered high-value due to patent applications filed in more than one patent office.",
+      "bfo_parent": "bfo:Entity",
+      "aristotelian_definition": "A HighValueInvention is a WindEnergyInvention that is considered significant due to its broad protection across multiple patent offices, indicating substantial commercial or technological importance.",
+      "subclass_of": null
+    },
+    "ex:InternationalInvention": {
+      "comment": "A wind energy invention for which patent applications are protected in a country other than the applicant's residence.",
+      "bfo_parent": "bfo:Entity",
+      "aristotelian_definition": "An InternationalInvention is a WindEnergyInvention where the patent application is protected in a country other than the applicant's residence, signifying cross-border intellectual property protection.",
+      "subclass_of": null
+    },
+    "ex:CooperativePatentClassificationCode": {
+      "comment": "A standardized code used for evaluating patenting activity in the wind sector.",
+      "bfo_parent": "bfo:InformationContentEntity",
+      "aristotelian_definition": "A CooperativePatentClassificationCode is an InformationContentEntity that serves as a standardized code used to categorize and evaluate patenting activity within a specific technological domain.",
+      "subclass_of": null
+    },
+    "ex:WindEnergyPublication": {
+      "comment": "A peer-reviewed article or scholarly work related to the wind energy sector.",
+      "bfo_parent": "bfo:InformationContentEntity",
+      "aristotelian_definition": "A WindEnergyPublication is an InformationContentEntity that represents a peer-reviewed article or other scholarly work discussing research and findings in the field of wind energy.",
+      "subclass_of": null
+    },
+    "ex:HighlyCitedPublication": {
+      "comment": "A wind energy publication that is among the top 10% most cited papers in its field and year.",
+      "bfo_parent": "bfo:Entity",
+      "aristotelian_definition": "A HighlyCitedPublication is a WindEnergyPublication that belongs to the top 10% most cited papers within its field and year, indicating significant impact and recognition.",
+      "subclass_of": null
+    },
+    "ex:CountryPublicationImpact": {
+      "comment": "A measure of the citation impact of publications from a country compared to the global average in the research field.",
+      "bfo_parent": "bfo:Quality",
+      "aristotelian_definition": "A CountryPublicationImpact is a Quality that measures the citation impact of publications from a specific country relative to the global average for that research field.",
+      "subclass_of": null
+    },
+    "ex:CountryPublicationProductivity": {
+      "comment": "A measure of both the productivity and citation impact of publications from a country.",
+      "bfo_parent": "bfo:Quality",
+      "aristotelian_definition": "A CountryPublicationProductivity is a Quality that assesses both the output (productivity) and the citation impact (h-index) of publications originating from a specific country.",
+      "subclass_of": null
+    },
+    "ex:OriginalEquipmentManufacturer": {
+      "comment": "A company that manufactures and sells equipment, often in the wind energy sector, under its own brand.",
+      "bfo_parent": "bfo:Role",
+      "aristotelian_definition": "An OriginalEquipmentManufacturer is a Role that designs, manufactures, and sells equipment under its own brand name, particularly in the context of the wind energy sector.",
+      "subclass_of": null
+    },
+    "ex:CountryPublicationActivity": {
+      "comment": "Represents the number of peer-reviewed articles published by a country in wind energy research.",
+      "bfo_parent": "bfo:InformationContentEntity",
+      "aristotelian_definition": "A CountryPublicationActivity is an InformationContentEntity that represents the scholarly output of a specific country in the field of wind energy research, measured by the number of peer-reviewed articles published within a defined period.",
+      "subclass_of": null
+    },
+    "ex:CollaborationNetwork": {
+      "comment": "Describes the co-publication relationships between entities in a research domain.",
+      "bfo_parent": "bfo:InformationContentEntity",
+      "aristotelian_definition": "A CollaborationNetwork is an InformationContentEntity that visualizes and describes the co-publication relationships between different entities (e.g., countries, organizations) in a specific research domain.",
+      "subclass_of": null
+    },
+    "ex:WindEnergyResearchProject": {
+      "comment": "Represents a funded initiative or program in wind energy research and innovation.",
+      "bfo_parent": "bfo:InformationContentEntity",
+      "aristotelian_definition": "A WindEnergyResearchProject is an InformationContentEntity that represents a funded initiative or program focused on advancing research and innovation within the wind energy sector.",
+      "subclass_of": null
+    },
+    "ex:RecyclingCircularityProject": {
+      "comment": "A wind energy research project focused on recycling and circularity solutions.",
+      "bfo_parent": "bfo:Entity",
+      "aristotelian_definition": "A RecyclingCircularityProject is a WindEnergyResearchProject that specifically focuses on developing solutions for recycling and promoting circular economy principles within the wind energy sector, particularly concerning end-of-life components.",
+      "subclass_of": null
+    },
+    "ex:BladeRecyclingProject": {
+      "comment": "A project focused on developing recycling solutions for wind turbine blades.",
+      "bfo_parent": "bfo:Entity",
+      "aristotelian_definition": "A BladeRecyclingProject is a RecyclingCircularityProject that aims to develop and implement recycling solutions for wind turbine blades.",
+      "subclass_of": "ex:RecyclingCircularityProject"
+    },
+    "ex:GridIntegrationProject": {
+      "comment": "A wind energy research project focused on improving grid integration.",
+      "bfo_parent": "bfo:Entity",
+      "aristotelian_definition": "A GridIntegrationProject is a WindEnergyResearchProject that focuses on improving the integration of wind energy into existing power grids, including aspects like converter interoperability and smart curtailment.",
+      "subclass_of": "ex:WindEnergyResearchProject"
+    },
+    "ex:ConverterInteroperabilityProject": {
+      "comment": "A project focused on improving the interoperability of converters for grid integration.",
+      "bfo_parent": "bfo:Entity",
+      "aristotelian_definition": "A ConverterInteroperabilityProject is a GridIntegrationProject that aims to enhance the grid-forming capabilities and interoperability of offshore and onshore converters within high-voltage direct current systems.",
+      "subclass_of": "ex:GridIntegrationProject"
+    },
+    "ex:FloatingOffshoreWindProject": {
+      "comment": "A wind energy research project focused on floating offshore wind technology.",
+      "bfo_parent": "bfo:Entity",
+      "aristotelian_definition": "A FloatingOffshoreWindProject is a WindEnergyResearchProject that focuses on the development, demonstration, or industrialization of floating offshore wind technologies.",
+      "subclass_of": "ex:WindEnergyResearchProject"
+    },
+    "ex:BatterySupplyChainProject": {
+      "comment": "A project focused on establishing a sustainable supply chain for lithium-ion batteries used in renewable energy.",
+      "bfo_parent": "bfo:Entity",
+      "aristotelian_definition": "A BatterySupplyChainProject is a WindEnergyResearchProject that aims to establish a sustainable end-to-end supply chain for lithium-ion batteries, particularly for applications in electric vehicles and renewable energy sources like solar and wind farms.",
+      "subclass_of": null
+    },
+    "http://example.org/TWAIN": {
+      "comment": "Priority: Maintenance and condition monitoring systems",
+      "bfo_parent": "bfo:Entity",
+      "aristotelian_definition": "A project focusing on the efficient deployment of AI in wind farm control and asset management to optimize operation for cost, performance, and efficiency while considering environmental and societal aspects.",
+      "subclass_of": null
+    },
+    "http://example.org/ULTFARMS": {
+      "comment": "Priority: Environmental impacts of wind energy",
+      "bfo_parent": "bfo:Entity",
+      "aristotelian_definition": "A project developing novel designs in six low trophic aquaculture pilots in offshore wind farm locations across the North and Baltic Seas to understand environmental impacts.",
+      "subclass_of": null
+    },
+    "http://example.org/off-coustics": {
+      "comment": "Priority: Environmental impacts of wind energy",
+      "bfo_parent": "bfo:Entity",
+      "aristotelian_definition": "A project aiming to achieve a comprehensive understanding of the acoustic repercussions of wind turbines, specifically their potential negative impact on marine life through acoustic damage.",
+      "subclass_of": null
+    },
+    "http://example.org/FLOW": {
+      "comment": "Priority: Resource assessment",
+      "bfo_parent": "bfo:Entity",
+      "aristotelian_definition": "A project developing new prediction methods for production statistics and load performance of modern GW-scale and 400-metre tall offshore and onshore wind energy systems.",
+      "subclass_of": null
+    },
+    "http://example.org/MADE4WIND": {
+      "comment": "Priority: New materials and components",
+      "bfo_parent": "bfo:Entity",
+      "aristotelian_definition": "A project developing and testing innovative components for a 15 MW floating wind turbine, including new designs and manufacturing techniques in lightweight materials, recyclability, and advanced software tools.",
+      "subclass_of": null
+    },
+    "http://example.org/Nanowings": {
+      "comment": "Priority: New materials and components",
+      "bfo_parent": "bfo:Entity",
+      "aristotelian_definition": "A project improving wind turbine performance and durability by developing nanocoating based on a blended formulation of super-glue polymers combined with nanoparticles, providing outstanding anti-icing and anti-fouling properties.",
+      "subclass_of": null
+    },
+    "http://example.org/WIMBY": {
+      "comment": "Priority: Social engagement",
+      "bfo_parent": "bfo:Entity",
+      "aristotelian_definition": "A project studying the drivers and barriers of social acceptance to address related challenges, gaining more popular support for wind energy.",
+      "subclass_of": null
+    },
+    "http://example.org/DATA-DRIVEN OFFSHORE": {
+      "comment": "Priority: Offshore technology",
+      "bfo_parent": "bfo:Entity",
+      "aristotelian_definition": "A project revolutionizing aerohydroelastic simulations used in wind turbine research and development by integrating experimental data into these simulations.",
+      "subclass_of": null
+    },
+    "http://example.org/Orcelle": {
+      "comment": "Priority: Other (shipping sector)",
+      "bfo_parent": "bfo:Entity",
+      "aristotelian_definition": "A project developing a solution involving wind as the main form of propulsion, aiming for an energy efficiency gain of more than 50%.",
+      "subclass_of": null
+    },
+    "http://example.org/WHISPER": {
+      "comment": "Priority: Other (shipping sector)",
+      "bfo_parent": "bfo:Entity",
+      "aristotelian_definition": "A project developing a modular retrofit solution, including a wingsail system for wind-assisted propulsion and testing efficiency savings of more than 20%.",
+      "subclass_of": null
+    },
+    "http://example.org/i4Offshore": {
+      "comment": "Priority: Offshore technology",
+      "bfo_parent": "bfo:Entity",
+      "aristotelian_definition": "A project aiming to reduce cost barriers in large-scale offshore developments by optimizing low-cost manufacturing through a hybrid-material gravity jacket foundation.",
+      "subclass_of": null
+    },
+    "http://example.org/COREWIND": {
+      "comment": "Priority: Offshore technology",
+      "bfo_parent": "bfo:Entity",
+      "aristotelian_definition": "A project contributing to cost and environmental footprint reductions in floating offshore wind energy systems by using digital tools and optimizing designs for station-keeping systems and dynamic cables.",
+      "subclass_of": null
+    },
+    "http://example.org/SUSMAGPRO": {
+      "comment": "Priority: Recycling and circularity",
+      "bfo_parent": "bfo:Entity",
+      "aristotelian_definition": "A project focusing on recycling and reusing neodymium-containing magnets from waste, creating a shorter recycling loop with higher recovery rate and increased yield.",
+      "subclass_of": null
+    },
+    "http://example.org/NAWEP": {
+      "comment": "Priority: Airborne wind energy systems",
+      "bfo_parent": "bfo:Entity",
+      "aristotelian_definition": "A project aiming to construct and operate an onshore array of at least twelve 100 kW AWES devices, generating a combined 1.2 MW with targeted cost and carbon footprint reductions.",
+      "subclass_of": null
+    },
+    "http://example.org/Aquilon": {
+      "comment": "Priority: Airborne wind energy systems",
+      "bfo_parent": "bfo:Entity",
+      "aristotelian_definition": "A project serving as a demonstrator for airborne wind energy production at 160 kW scale and an integrated renewable energy and storage solution.",
+      "subclass_of": null
+    },
+    "http://example.org/N2OWF": {
+      "comment": "Priority: Offshore technology",
+      "bfo_parent": "bfo:Entity",
+      "aristotelian_definition": "A project building and operating a first-of-its-kind offshore wind farm with 450 MW capacity, combined with on-site production, storage, and offtake of green hydrogen.",
+      "subclass_of": null
+    },
+    "http://example.org/SUSTAIN-SEA": {
+      "comment": "Priority: Other (shipping sector)",
+      "bfo_parent": "bfo:Entity",
+      "aristotelian_definition": "A project using wind energy to reduce fuel use and GHG emissions in the maritime transport sector by integrating a wind propulsion system into five large cargo vessels.",
+      "subclass_of": null
+    },
+    "http://example.org/HIPPOW": {
+      "comment": "Priority: Offshore technology",
+      "bfo_parent": "bfo:Entity",
+      "aristotelian_definition": "A project aiming to build and operate a 15 MW floating wind turbine with innovative technologies including wind turbines, foundations, and hydrogen technology solutions.",
+      "subclass_of": null
+    },
+    "http://example.org/SEAWORTHY": {
+      "comment": "Priority: Offshore technology",
+      "bfo_parent": "bfo:Entity",
+      "aristotelian_definition": "A project building and operating a 15 MW floating wind turbine with innovative technologies including wind turbines, foundations, and hydrogen technology solutions.",
+      "subclass_of": null
+    },
+    "http://example.org/hippow_project": {
+      "comment": "HIPPOW project is described as a commercial-scale demonstration integrating various renewable energy sources.",
+      "bfo_parent": "bfo:Entity",
+      "aristotelian_definition": "A commercial-scale demonstration of a technology capable of supplying clean dispatchable offshore power from wind, waves and hydrogen.",
+      "subclass_of": null
+    },
+    "http://example.org/seaworthy_project": {
+      "comment": "SEAWORTHY project is described as a commercial-scale demonstration integrating various renewable energy sources.",
+      "bfo_parent": "bfo:Entity",
+      "aristotelian_definition": "A commercial-scale demonstration of technology capable of supplying clean dispatchable offshore power from wind, waves and hydrogen.",
+      "subclass_of": null
+    },
+    "http://example.org/wind_energy_trade": {
+      "comment": "This class captures the overall context of international trade in wind generating sets.",
+      "bfo_parent": "bfo:Entity",
+      "aristotelian_definition": "The exchange and flow of wind generating sets between different countries, particularly focusing on the EU's trade dynamics.",
+      "subclass_of": null
+    },
+    "http://example.org/import_export_ratio": {
+      "comment": "This class represents the quantitative relationship between imports and exports.",
+      "bfo_parent": "bfo:Entity",
+      "aristotelian_definition": "The ratio between extra-EU imports and exports, indicating market share dynamics.",
+      "subclass_of": null
+    },
+    "http://example.org/critical_raw_materials_supply_chain": {
+      "comment": "This class describes the supply chain for essential components of wind turbines.",
+      "bfo_parent": "bfo:Entity",
+      "aristotelian_definition": "The entire process from extraction to manufacturing of critical raw materials used in wind power plants, particularly focusing on rare earth elements and permanent magnets.",
+      "subclass_of": null
+    },
+    "http://example.org/balsa_wood": {
+      "comment": "This class defines the specific material balsa wood and its usage.",
+      "bfo_parent": "bfo:Entity",
+      "aristotelian_definition": "A lightweight, stiff material used in wind turbine blades, especially in spar caps and blade cores.",
+      "subclass_of": null
+    },
+    "http://example.org/material_intensity": {
+      "comment": "This class quantifies the material requirements for wind turbine construction.",
+      "bfo_parent": "bfo:Entity",
+      "aristotelian_definition": "The amount of raw or composite materials required per unit of installed capacity in wind turbines.",
+      "subclass_of": null
+    },
+    "http://www.w3.org/2002/07/owl#Class": {
+      "comment": "These are essential for the production of permanent magnets in turbine generators.",
+      "bfo_parent": "bfo:Entity",
+      "aristotelian_definition": "Critical raw materials used in wind energy technology, specifically Neodymium magnets.",
+      "subclass_of": null
+    },
+    "http://example.org/new_knowledge": {
+      "comment": "This class represents the newly generated knowledge based on the references provided.",
+      "bfo_parent": "bfo:Entity",
+      "aristotelian_definition": "A new piece of information derived from existing sources.",
+      "subclass_of": null
+    },
+    "http://example.org/report_on_socio_economic_impacts_of_community_wind_power_projects_northern_scotland": {
+      "comment": "Describes the socio-economic impacts of community wind power projects in Northern Scotland.",
+      "bfo_parent": "bfo:InformationContentEntity",
+      "aristotelian_definition": "A report published by an organization on the socio-economic impacts of community wind power projects in Northern Scotland.",
+      "subclass_of": ""
+    },
+    "http://example.org/report_on_socio_economic_impact_study_of_offshore_wind": {
+      "comment": "Describes the socio-economic impact of offshore wind projects.",
+      "bfo_parent": "bfo:InformationContentEntity",
+      "aristotelian_definition": "A report published by an organization on the socio-economic impact study of offshore wind.",
+      "subclass_of": ""
+    },
+    "http://example.org/jrc_idees_2021_database_update_and_technical_documentation": {
+      "comment": "Provides updates and documentation for the JRC's energy system database.",
+      "bfo_parent": "bfo:InformationContentEntity",
+      "aristotelian_definition": "Technical documentation and database update for the Integrated Database of the European Energy System by the JRC.",
+      "subclass_of": ""
+    },
+    "http://example.org/wind_energy_technology_observatory_report": {
+      "comment": "Reports on the technology development, trends, value chains, and markets of wind energy in the EU.",
+      "bfo_parent": "bfo:InformationContentEntity",
+      "aristotelian_definition": "A report published by the Clean Energy Technology Observatory on wind energy in the European Union.",
+      "subclass_of": ""
+    },
+    "http://example.org/report_on_potencia_ceto_2024_scenario": {
+      "comment": "Describes the scenario for the EU energy outlook to 2050 under the POTEnCIA framework.",
+      "bfo_parent": "bfo:InformationContentEntity",
+      "aristotelian_definition": "A report published by an organization on the POTEnCIA CETO 2024 scenario for EU energy outlook to 2050.",
+      "subclass_of": ""
+    },
+    "ex:OffshoreWindCapacityAddition": {
+      "comment": "Represents the annual or periodic increase in installed offshore wind power capacity.",
+      "bfo_parent": "bfo:Process",
+      "aristotelian_definition": "An OffshoreWindCapacityAddition is a Process that represents the addition of new offshore wind power generation capacity over a specific period.",
+      "subclass_of": null
+    },
+    "ex:OnshoreWindCapacityAddition": {
+      "comment": "Represents the annual or periodic increase in installed onshore wind power capacity.",
+      "bfo_parent": "bfo:Process",
+      "aristotelian_definition": "An OnshoreWindCapacityAddition is a Process that represents the addition of new onshore wind power generation capacity over a specific period.",
+      "subclass_of": null
+    },
+    "ex:OffshoreWindInstalledCapacity": {
+      "comment": "Represents the total cumulative installed capacity of offshore wind power generation.",
+      "bfo_parent": "bfo:MaterialEntity",
+      "aristotelian_definition": "An OffshoreWindInstalledCapacity is a MaterialEntity that represents the total cumulative installed capacity of offshore wind power generation at a specific point in time.",
+      "subclass_of": null
+    },
+    "ex:OnshoreWindInstalledCapacity": {
+      "comment": "Represents the total cumulative installed capacity of onshore wind power generation.",
+      "bfo_parent": "bfo:MaterialEntity",
+      "aristotelian_definition": "An OnshoreWindInstalledCapacity is a MaterialEntity that represents the total cumulative installed capacity of onshore wind power generation at a specific point in time.",
+      "subclass_of": null
+    },
+    "ex:WindEnergyGeneration": {
+      "comment": "Represents the electricity generated by wind power.",
+      "bfo_parent": "bfo:Process",
+      "aristotelian_definition": "A WindEnergyGeneration is a Process that represents the production of electricity from wind energy over a specific period.",
+      "subclass_of": null
+    },
+    "ex:WindEnergyLCOE": {
+      "comment": "Represents the Levelized Cost of Energy for wind power.",
+      "bfo_parent": "bfo:Quality",
+      "aristotelian_definition": "A WindEnergyLCOE is a Quality that represents the Levelized Cost of Energy for wind power, indicating the average revenue per unit of electricity generation needed to recover costs of building and operating a wind power plant.",
+      "subclass_of": null
+    },
+    "ex:WindEnergyInvestmentCost": {
+      "comment": "Represents the overnight investment costs for wind energy installations.",
+      "bfo_parent": "bfo:Quality",
+      "aristotelian_definition": "A WindEnergyInvestmentCost is a Quality that represents the initial capital expenditure required for building wind energy installations.",
+      "subclass_of": null
+    },
+    "ex:PublicRAndIInvestmentWindEnergy": {
+      "comment": "Represents public investment in research and development for wind energy.",
+      "bfo_parent": "bfo:Process",
+      "aristotelian_definition": "A PublicRAndIInvestmentWindEnergy is a Process that represents public funding allocated to research and innovation activities within the wind energy sector.",
+      "subclass_of": null
+    },
+    "ex:PrivateRAndIInvestmentWindEnergy": {
+      "comment": "Represents private investment in research and development for wind energy.",
+      "bfo_parent": "bfo:Process",
+      "aristotelian_definition": "A PrivateRAndIInvestmentWindEnergy is a Process that represents private funding allocated to research and innovation activities within the wind energy sector.",
+      "subclass_of": null
+    },
+    "ex:WindEnergyVCPEInvestment": {
+      "comment": "Represents venture capital and private equity investment in the wind energy sector.",
+      "bfo_parent": "bfo:Process",
+      "aristotelian_definition": "A WindEnergyVCPEInvestment is a Process that represents financial investment by venture capital and private equity firms into the wind energy sector.",
+      "subclass_of": null
+    },
+    "ex:WindEnergyInventionActivity": {
+      "comment": "Represents the activity of inventing within the wind energy sector.",
+      "bfo_parent": "bfo:Process",
+      "aristotelian_definition": "A WindEnergyInventionActivity is a Process that represents the creation and documentation of new inventions within the wind energy sector.",
+      "subclass_of": null
+    },
+    "ex:WindEnergyPublicationActivity": {
+      "comment": "Represents the activity of publishing research in the wind energy sector.",
+      "bfo_parent": "bfo:Process",
+      "aristotelian_definition": "A WindEnergyPublicationActivity is a Process that represents the creation and dissemination of peer-reviewed articles and scholarly works in the field of wind energy.",
+      "subclass_of": null
+    },
+    "ex:WindEnergyFundingEvolution": {
+      "comment": "Represents the evolution of funding for wind energy research and innovation.",
+      "bfo_parent": "bfo:Process",
+      "aristotelian_definition": "A WindEnergyFundingEvolution is a Process that tracks the changes and trends in research and innovation funding for wind energy over time.",
+      "subclass_of": null
+    },
+    "ex:WindSectorTurnover": {
+      "comment": "Represents the turnover of the wind energy sector.",
+      "bfo_parent": "bfo:Process",
+      "aristotelian_definition": "A WindSectorTurnover is a Process that represents the total revenue generated by the wind energy sector over a specific period.",
+      "subclass_of": null
+    },
+    "ex:WindSectorGVA": {
+      "comment": "Represents the Gross Value Added of the wind energy sector.",
+      "bfo_parent": "bfo:Process",
+      "aristotelian_definition": "A WindSectorGVA is a Process that represents the Gross Value Added generated by the wind energy sector, indicating its contribution to the economy.",
+      "subclass_of": null
+    },
+    "ex:WindTurbineMarketShare": {
+      "comment": "Represents the market share of wind turbines.",
+      "bfo_parent": "bfo:Quality",
+      "aristotelian_definition": "A WindTurbineMarketShare is a Quality that represents the proportion of the global or regional market for wind turbines held by specific manufacturers or regions.",
+      "subclass_of": null
+    },
+    "ex:WindEnergyEmployment": {
+      "comment": "Represents the evolution of direct and indirect jobs in the wind energy sector.",
+      "bfo_parent": "bfo:Process",
+      "aristotelian_definition": "A WindEnergyEmployment is a Process that represents the number of direct and indirect jobs within the wind energy sector over a specific period.",
+      "subclass_of": null
+    },
+    "ex:RawMaterial": {
+      "comment": "Represents the basic substances used in the production of wind power plants.",
+      "bfo_parent": "bfo:MaterialEntity",
+      "aristotelian_definition": "A RawMaterial is a MaterialEntity that is a basic substance in its natural or processed state, used as a component in the manufacturing of wind power plants.",
+      "subclass_of": null
+    },
+    "ex:MaterialIntensity": {
+      "comment": "Measures the material consumption per unit of wind turbine capacity.",
+      "bfo_parent": "bfo:Quality",
+      "aristotelian_definition": "A MaterialIntensity is a Quality that quantifies the amount of raw or composite materials required per unit of installed capacity in wind turbines.",
+      "subclass_of": null
+    },
+    "ex:WindTurbineType": {
+      "comment": "Represents a specific classification or design of a wind turbine.",
+      "bfo_parent": "bfo:MaterialEntity",
+      "aristotelian_definition": "A WindTurbineType is a MaterialEntity that represents a specific category or design of wind turbine used for generating electricity from wind energy.",
+      "subclass_of": "ex:WindEnergyTechnology"
+    },
+    "ex:RareEarthElement": {
+      "comment": "Represents rare earth elements used in wind turbine components, particularly magnets.",
+      "bfo_parent": "bfo:MaterialEntity",
+      "aristotelian_definition": "A RareEarthElement is a RawMaterial that is a group of 17 chemically similar metallic elements with unique properties crucial for various high-tech applications, including wind turbine magnets.",
+      "subclass_of": "ex:RawMaterial"
+    },
+    "ex:PermanentMagnet": {
+      "comment": "Represents magnetic materials used in wind turbine generators.",
+      "bfo_parent": "bfo:MaterialEntity",
+      "aristotelian_definition": "A PermanentMagnet is a RawMaterial that is a magnetic material that retains its magnetism after being magnetized, commonly used in wind turbine generators.",
+      "subclass_of": "ex:RawMaterial"
+    },
+    "ex:OnshoreWindTurbine": {
+      "comment": "Represents a wind turbine installed on land.",
+      "bfo_parent": "bfo:MaterialEntity",
+      "aristotelian_definition": "An OnshoreWindTurbine is a WindTurbineType that is designed and installed for generating electricity from wind on land.",
+      "subclass_of": "ex:WindTurbineType"
+    },
+    "ex:OffshoreWindTurbine": {
+      "comment": "Represents a wind turbine installed offshore.",
+      "bfo_parent": "bfo:MaterialEntity",
+      "aristotelian_definition": "An OffshoreWindTurbine is a WindTurbineType that is designed and installed for generating electricity from wind in bodies of water.",
+      "subclass_of": "ex:WindTurbineType"
+    },
+    "ex:GHGEmissions": {
+      "comment": "Quantifies greenhouse gas emissions associated with wind energy generation.",
+      "bfo_parent": "bfo:Quality",
+      "aristotelian_definition": "A GHGEmissions is a Quality that quantifies the amount of greenhouse gases released into the atmosphere per unit of energy produced by wind power plants.",
+      "subclass_of": null
+    },
+    "ex:EnergyPaybackTime": {
+      "comment": "Measures the time it takes for a wind energy system to repay its energy investment.",
+      "bfo_parent": "bfo:Quality",
+      "aristotelian_definition": "An EnergyPaybackTime is a Quality that represents the time required for a wind energy system to generate the amount of energy equivalent to the energy consumed during its entire lifecycle.",
+      "subclass_of": null
+    },
+    "ex:BenthicBiodiversity": {
+      "comment": "Refers to the biodiversity found on the bottom of marine or freshwater ecosystems.",
+      "bfo_parent": "bfo:MaterialEntity",
+      "aristotelian_definition": "A BenthicBiodiversity is a MaterialEntity that represents the variety of life forms and their ecological interactions within the seabed environment.",
+      "subclass_of": null
+    },
+    "ex:SeabedRecovery": {
+      "comment": "The process by which the seabed ecosystem recovers from disturbances or pressures.",
+      "bfo_parent": "bfo:Process",
+      "aristotelian_definition": "A SeabedRecovery is a Process that describes the natural regeneration and restoration of the seabed ecosystem, potentially facilitated by reduced human activity.",
+      "subclass_of": null
+    },
+    "ex:BenthicFaunalBaseline": {
+      "comment": "A foundational dataset describing the state of benthic fauna before significant development or change.",
+      "bfo_parent": "bfo:InformationContentEntity",
+      "aristotelian_definition": "A BenthicFaunalBaseline is an InformationContentEntity that serves as a reference point for the composition and abundance of benthic fauna against which future changes can be assessed.",
+      "subclass_of": null
+    },
+    "ex:BlueWaterConsumption": {
+      "comment": "Measures the freshwater footprint of an activity or product.",
+      "bfo_parent": "bfo:Quality",
+      "aristotelian_definition": "A BlueWaterConsumption is a Quality that quantifies the net balance of freshwater inputs and outputs throughout the lifecycle of a product or process.",
+      "subclass_of": null
+    },
+    "ex:WaterScarcityFootprint": {
+      "comment": "Quantifies the contribution to water scarcity based on available water remaining.",
+      "bfo_parent": "bfo:Quality",
+      "aristotelian_definition": "A WaterScarcityFootprint is a Quality that assesses the impact of water consumption on water availability in a specific region, using a defined methodology like AWARE.",
+      "subclass_of": null
+    },
+    "ex:NdFeBMagnetProduction": {
+      "comment": "The industrial process of manufacturing NdFeB permanent magnets.",
+      "bfo_parent": "bfo:Process",
+      "aristotelian_definition": "A NdFeBMagnetProduction is a Process that encompasses the manufacturing steps involved in creating Neodymium-Iron-Boron permanent magnets.",
+      "subclass_of": null
+    },
+    "ex:ResourceDepletionWater": {
+      "comment": "Quantifies water used in resource extraction and processing that leads to depletion.",
+      "bfo_parent": "bfo:Quality",
+      "aristotelian_definition": "A ResourceDepletionWater is a Quality that measures the volume of water consumed during the extraction and processing of resources, contributing to water depletion.",
+      "subclass_of": null
+    },
+    "ex:HumanToxicityPotential": {
+      "comment": "An environmental impact category assessing health effects from toxic substances.",
+      "bfo_parent": "bfo:Quality",
+      "aristotelian_definition": "A HumanToxicityPotential is a Quality that measures the potential impact on human health from toxic substances released into the environment.",
+      "subclass_of": null
+    },
+    "ex:InstalledPowerDensity": {
+      "comment": "Measures the power output relative to the land or sea area occupied.",
+      "bfo_parent": "bfo:Quality",
+      "aristotelian_definition": "An InstalledPowerDensity is a Quality that represents the amount of power generation capacity installed per unit of area.",
+      "subclass_of": null
+    },
+    "ex:SoilAcidificationPotential": {
+      "comment": "An environmental impact category measuring the potential for soil acidification.",
+      "bfo_parent": "bfo:Quality",
+      "aristotelian_definition": "A SoilAcidificationPotential is a Quality that quantifies the potential for substances released during a process to cause acidification of the soil.",
+      "subclass_of": null
+    },
+    "ex:SoilEutrophicationPotential": {
+      "comment": "An environmental impact category measuring the potential for soil eutrophication.",
+      "bfo_parent": "bfo:Quality",
+      "aristotelian_definition": "A SoilEutrophicationPotential is a Quality that quantifies the potential for substances released during a process to cause excessive nutrient enrichment in the soil.",
+      "subclass_of": null
+    },
+    "ex:SoilPollution": {
+      "comment": "Contamination of soil by harmful substances.",
+      "bfo_parent": "bfo:Quality",
+      "aristotelian_definition": "A SoilPollution is a Quality that describes the presence of contaminants in the soil that can be harmful to the environment or human health.",
+      "subclass_of": null
+    },
+    "ex:HazardousMaterial": {
+      "comment": "Substances that pose a risk due to their properties.",
+      "bfo_parent": "bfo:MaterialEntity",
+      "aristotelian_definition": "A HazardousMaterial is a MaterialEntity that possesses properties that make it capable of causing harm to human health or the environment.",
+      "subclass_of": null
+    },
+    "ex:EconomicLCCStandard": {
+      "comment": "A standard or best practice for evaluating the total cost of ownership over a product's or project's lifecycle.",
+      "bfo_parent": "bfo:InformationContentEntity",
+      "aristotelian_definition": "An EconomicLCCStandard is an InformationContentEntity that defines best practices or methodologies for assessing the life cycle cost of economic activities or projects.",
+      "subclass_of": null
+    },
+    "ex:CriticalRawMaterial": {
+      "comment": "Raw materials vital for technology with a high risk of supply shortage.",
+      "bfo_parent": "bfo:MaterialEntity",
+      "aristotelian_definition": "A CriticalRawMaterial is a MaterialEntity that is essential for technological applications but faces a high risk of supply disruption.",
+      "subclass_of": null
+    },
+    "ex:CompositeWaste": {
+      "comment": "Waste material derived from composite structures, particularly wind turbine blades.",
+      "bfo_parent": "bfo:MaterialEntity",
+      "aristotelian_definition": "A CompositeWaste is a MaterialEntity that consists of discarded materials made from a combination of different components, such as those found in wind turbine blades.",
+      "subclass_of": null
+    },
+    "ex:RecyclingInfrastructure": {
+      "comment": "The physical setup and resources required for recycling processes.",
+      "bfo_parent": "bfo:MaterialEntity",
+      "aristotelian_definition": "A RecyclingInfrastructure is a MaterialEntity that comprises the facilities, equipment, and systems necessary for processing waste materials for reuse or recovery.",
+      "subclass_of": null
+    },
+    "ex:PermittingProcess": {
+      "comment": "The sequence of steps and regulations involved in obtaining official permission for a project.",
+      "bfo_parent": "bfo:Process",
+      "aristotelian_definition": "A PermittingProcess is a Process that involves the procedures and requirements for obtaining official authorization to undertake a specific activity or project, such as constructing a wind farm.",
+      "subclass_of": null
+    },
+    "ex:OneStopShopPermittingModel": {
+      "comment": "An administrative model that consolidates all permitting procedures into a single entity.",
+      "bfo_parent": "bfo:Process",
+      "aristotelian_definition": "A OneStopShopPermittingModel is a Process that centralizes all necessary administrative and regulatory steps for project permitting through a single point of contact or agency.",
+      "subclass_of": null
+    },
+    "ex:LowFrequencyNoise": {
+      "comment": "Sound characterized by low frequencies, often associated with wind turbine operation.",
+      "bfo_parent": "bfo:Quality",
+      "aristotelian_definition": "A LowFrequencyNoise is a Quality that refers to sound waves with frequencies typically below 200 Hz, which can be emitted by wind turbines.",
+      "subclass_of": null
+    },
+    "ex:PsychoMedicalEffect": {
+      "comment": "Adverse psychological or physiological responses to environmental factors.",
+      "bfo_parent": "bfo:Quality",
+      "aristotelian_definition": "A PsychoMedicalEffect is a Quality that describes the psychological or medical symptoms experienced by individuals due to exposure to certain stimuli, such as noise.",
+      "subclass_of": null
+    },
+    "ex:DirectPhysicalEffect": {
+      "comment": "A tangible, measurable physical impact on the body.",
+      "bfo_parent": "bfo:Quality",
+      "aristotelian_definition": "A DirectPhysicalEffect is a Quality that denotes a physiological impact on the human body directly caused by an external factor, independent of psychological perception.",
+      "subclass_of": null
+    },
+    "ex:ResidentAttitude": {
+      "comment": "The perspective or stance of local residents towards wind energy installations.",
+      "bfo_parent": "bfo:Quality",
+      "aristotelian_definition": "A ResidentAttitude is a Quality that represents the disposition, feelings, or opinions held by individuals living in proximity to wind turbines regarding their presence and impact.",
+      "subclass_of": null
+    },
+    "ex:ExposureSymptom": {
+      "comment": "Represents reported symptoms resulting from exposure to environmental factors like wind turbine noise.",
+      "bfo_parent": "bfo:Quality",
+      "aristotelian_definition": "An ExposureSymptom is a Quality that describes a physical or psychological manifestation reported by individuals due to exposure to a specific factor, such as infrasound and low frequency noise from wind turbines.",
+      "subclass_of": null
+    },
+    "ex:LowFrequencyNoiseEffect": {
+      "comment": "Describes the potential health or perceptual effects associated with low-frequency noise from wind turbines.",
+      "bfo_parent": "bfo:Quality",
+      "aristotelian_definition": "A LowFrequencyNoiseEffect is a Quality that describes a potential impact on human health or perception resulting from exposure to low-frequency noise, particularly from wind turbines, for which scientific understanding may be limited.",
+      "subclass_of": null
+    },
+    "ex:InfrasoundEffect": {
+      "comment": "Describes the potential health or perceptual effects associated with infrasound from wind turbines.",
+      "bfo_parent": "bfo:Quality",
+      "aristotelian_definition": "An InfrasoundEffect is a Quality that describes a potential impact on human health or perception resulting from exposure to infrasound, particularly from wind turbines, for which scientific understanding may be limited.",
+      "subclass_of": null
+    },
+    "ex:WindTurbineNoisePerception": {
+      "comment": "Refers to the subjective interpretation and experience of noise from wind turbines.",
+      "bfo_parent": "bfo:Quality",
+      "aristotelian_definition": "A WindTurbineNoisePerception is a Quality that represents how individuals perceive and interpret noise generated by wind turbines, which can be influenced by various factors beyond objective sound levels.",
+      "subclass_of": null
+    },
+    "ex:SleepDisturbance": {
+      "comment": "Represents a disruption in normal sleep patterns, potentially linked to environmental factors.",
+      "bfo_parent": "bfo:Quality",
+      "aristotelian_definition": "A SleepDisturbance is a Quality that describes an alteration or disruption in normal sleep patterns, which can be self-reported and potentially associated with environmental factors like noise.",
+      "subclass_of": null
+    },
+    "ex:ElectromagneticFieldExposure": {
+      "comment": "Quantifies exposure to electromagnetic fields generated by wind turbines.",
+      "bfo_parent": "bfo:Quality",
+      "aristotelian_definition": "An ElectromagneticFieldExposure is a Quality that quantifies the level of electromagnetic fields to which individuals or the environment are subjected, particularly in the context of wind turbine operation.",
+      "subclass_of": null
+    },
+    "ex:ShadowFlickerImpact": {
+      "comment": "Describes the impact on residents due to the periodic shadows cast by wind turbine rotors.",
+      "bfo_parent": "bfo:Quality",
+      "aristotelian_definition": "A ShadowFlickerImpact is a Quality that describes the effect on residents caused by the periodic casting of shadows from wind turbine rotors onto surrounding buildings during sunny intervals.",
+      "subclass_of": null
+    },
+    "ex:ShadowFlickerProtectionSystem": {
+      "comment": "A system used in wind turbines to prevent shadow flicker impacts on residents.",
+      "bfo_parent": "bfo:Entity",
+      "aristotelian_definition": "A ShadowFlickerProtectionSystem is a WindEnergyTechnology that is integrated into the control system of a wind turbine to prevent or mitigate the impact of shadow flicker on surrounding areas.",
+      "subclass_of": null
+    },
+    "ex:PublicAcceptanceDriver": {
+      "comment": "Factors that influence public acceptance or opposition to wind energy projects.",
+      "bfo_parent": "bfo:Quality",
+      "aristotelian_definition": "A PublicAcceptanceDriver is a Quality that represents a factor influencing the level of public acceptance or opposition towards wind energy projects.",
+      "subclass_of": null
+    },
+    "ex:RepoweringDriver": {
+      "comment": "Factors that drive decisions for wind energy repowering projects.",
+      "bfo_parent": "bfo:Quality",
+      "aristotelian_definition": "A RepoweringDriver is a Quality that represents a factor motivating or influencing decisions related to the repowering of existing wind energy projects.",
+      "subclass_of": null
+    },
+    "ex:LandscapeImpact": {
+      "comment": "The effect of wind energy projects on the visual landscape.",
+      "bfo_parent": "bfo:Quality",
+      "aristotelian_definition": "A LandscapeImpact is a Quality that describes the effect of wind energy projects, particularly repowering, on the visual and aesthetic characteristics of the surrounding landscape.",
+      "subclass_of": null
+    },
+    "ex:POTENCIAModel": {
+      "comment": "The Policy Oriented Tool for Energy and Climate Change Impact Assessment (POTEnCIA) model used for EU energy system analysis.",
+      "bfo_parent": "bfo:InformationContentEntity",
+      "aristotelian_definition": "A POTENCIAModel is an InformationContentEntity that is an energy system simulation model designed to compare alternative pathways for the EU energy system, covering energy supply and all energy demand sectors.",
+      "subclass_of": null
+    },
+    "ex:EnergySystemSimulationModel": {
+      "comment": "A model used to simulate energy systems and their responses to different policies and conditions.",
+      "bfo_parent": "bfo:InformationContentEntity",
+      "aristotelian_definition": "An EnergySystemSimulationModel is an InformationContentEntity that is a computational model designed to simulate the behavior and interactions of energy systems under various conditions and policies.",
+      "subclass_of": null
+    },
+    "ex:DecisionMakingSimulation": {
+      "comment": "Simulates the process of decision-making in energy systems, considering imperfect foresight and user behavior.",
+      "bfo_parent": "bfo:Process",
+      "aristotelian_definition": "A DecisionMakingSimulation is a Process that models and replicates the process of decision-making, particularly by energy users or agents, under various constraints and policy regimes.",
+      "subclass_of": null
+    },
+    "ex:EnergyMarketOperationSimulation": {
+      "comment": "Models the operation of energy markets based on economic principles and agent behavior.",
+      "bfo_parent": "bfo:Process",
+      "aristotelian_definition": "An EnergyMarketOperationSimulation is a Process that models the economically-driven operation of energy markets, including supply-demand interactions and the behavior of representative agents seeking to optimize their outcomes.",
+      "subclass_of": null
+    },
+    "ex:EnergySystemHistoricalDataCalibration": {
+      "comment": "The process of calibrating energy system models using historical data for accurate initial conditions.",
+      "bfo_parent": "bfo:Process",
+      "aristotelian_definition": "An EnergySystemHistoricalDataCalibration is a Process that involves adjusting the parameters and initial conditions of an energy system model using historical data to ensure accurate representation and forecasting.",
+      "subclass_of": null
+    },
+    "ex:POTENCIACETOScenario": {
+      "comment": "Represents the POTEnCIA CETO 2024 scenario for EU energy system modeling.",
+      "bfo_parent": "bfo:InformationContentEntity",
+      "aristotelian_definition": "A POTENCIACETOScenario is an InformationContentEntity that represents a climate-neutrality scenario for the EU energy system, aligning with the European Green Deal's GHG reduction objectives and incorporating policy instruments influencing technology uptake.",
+      "subclass_of": null
+    },
+    "ex:POLESJRCModel": {
+      "comment": "The Prospective Outlook for the Long-term Energy System (POLES-JRC) global energy model.",
+      "bfo_parent": "bfo:InformationContentEntity",
+      "aristotelian_definition": "A POLESJRCModel is an EnergySystemSimulationModel that is a global energy model used to evaluate the evolution of energy demand and supply, covering primary supply, transformation, and final sectoral demand, with endogenous calculation of international markets and prices.",
+      "subclass_of": "ex:EnergySystemSimulationModel"
+    },
+    "ex:POLESJRCModelPowerSystem": {
+      "comment": "Details the power system component of the POLES-JRC model.",
+      "bfo_parent": "bfo:InformationContentEntity",
+      "aristotelian_definition": "A POLESJRCModelPowerSystem is an InformationContentEntity that describes the power generation technologies, electricity demand, and power system operation and planning within the POLES-JRC model.",
+      "subclass_of": null
+    },
+    "ex:POLESJRCModelHydrogenProduction": {
+      "comment": "Describes the hydrogen production routes modeled in POLES-JRC.",
+      "bfo_parent": "bfo:InformationContentEntity",
+      "aristotelian_definition": "A POLESJRCModelHydrogenProduction is an InformationContentEntity that outlines the various hydrogen production routes considered within the POLES-JRC model, including electrolysis, steam reforming, and gasification.",
+      "subclass_of": null
+    },
+    "ex:POLESJRCModelBioenergy": {
+      "comment": "Represents the bioenergy modeling approach within the POLES-JRC model.",
+      "bfo_parent": "bfo:InformationContentEntity",
+      "aristotelian_definition": "A POLESJRCModelBioenergy is an InformationContentEntity that details how bioenergy demand and supply are modeled in the POLES-JRC model, often through soft-coupling with other models like GLOBIOM-G4M.",
+      "subclass_of": null
+    },
+    "ex:POLESJRCModelCCUS": {
+      "comment": "Details the integration of CCUS technologies in the POLES-JRC model.",
+      "bfo_parent": "bfo:InformationContentEntity",
+      "aristotelian_definition": "A POLESJRCModelCCUS is an InformationContentEntity that specifies the applications of Carbon Capture, Utilization, and Storage (CCUS) technologies within the POLES-JRC model across power generation, hydrogen production, and industrial sectors.",
+      "subclass_of": null
+    },
+    "ex:TechnologyLearningInPOLESJRC": {
+      "comment": "The process of incorporating technology learning into the POLES-JRC model.",
+      "bfo_parent": "bfo:Process",
+      "aristotelian_definition": "A TechnologyLearningInPOLESJRC is a Process that describes the enhancement of the POLES-JRC model to capture technology learning effects, particularly for clean energy technologies, through methods like learning-by-doing.",
+      "subclass_of": null
+    },
+    "ex:LearningByDoingApproach": {
+      "comment": "Represents the concept of cost reduction or efficiency improvement in technologies due to accumulated experience and production.",
+      "bfo_parent": "bfo:Process",
+      "aristotelian_definition": "A LearningByDoingApproach is a Process that models the reduction in cost or improvement in efficiency of a technology as its cumulative capacity or production increases.",
+      "subclass_of": null
+    },
+    "ex:LearningRate": {
+      "comment": "A parameter within learning-by-doing models that indicates the rate of cost reduction with increased experience.",
+      "bfo_parent": "bfo:Quality",
+      "aristotelian_definition": "A LearningRate is a Quality that quantifies the percentage change in the cost of an energy technology based on a doubling of its cumulative capacity or production.",
+      "subclass_of": null
+    },
+    "ex:FloorCost": {
+      "comment": "The minimum cost threshold for a component or technology, below which further cost reductions from learning are not expected.",
+      "bfo_parent": "bfo:Quality",
+      "aristotelian_definition": "A FloorCost is a Quality that specifies the minimum achievable investment cost for a component or technology, acting as a limit for cost reduction through learning.",
+      "subclass_of": null
+    },
+    "ex:ComponentLevelLearning": {
+      "comment": "Applies learning-by-doing principles at the component level to capture cross-technology and cross-sectoral spillover effects.",
+      "bfo_parent": "bfo:Process",
+      "aristotelian_definition": "A ComponentLevelLearning is a LearningByDoingApproach that applies learning-by-doing principles to individual components of technologies, allowing for the modeling of spillover effects across different technologies and sectors.",
+      "subclass_of": "ex:LearningByDoingApproach"
+    },
+    "ex:GlobalCarbonPriceScenario": {
+      "comment": "A scenario driven by a global carbon price trajectory to limit global warming, incorporating enacted policies but not future pledges.",
+      "bfo_parent": "bfo:InformationContentEntity",
+      "aristotelian_definition": "A GlobalCarbonPriceScenario is an InformationContentEntity that defines a pathway for limiting global temperature increase by implementing a single global carbon price across all regions, considering enacted climate policies but not long-term pledges.",
+      "subclass_of": null
+    },
+    "ex:DecarbonisationScenario": {
+      "comment": "A scenario focused on achieving net greenhouse gas emission reductions aligned with climate law objectives and sector-specific legislation.",
+      "bfo_parent": "bfo:InformationContentEntity",
+      "aristotelian_definition": "A DecarbonisationScenario is an InformationContentEntity that outlines a trajectory for achieving net greenhouse gas emission reductions aligned with specific climate laws and considering sector-specific legislation.",
+      "subclass_of": null
+    },
+    "ex:EnergySystemScenario": {
+      "comment": "A projection or simulation of the future energy system under specific assumptions and policy frameworks.",
+      "bfo_parent": "bfo:InformationContentEntity",
+      "aristotelian_definition": "An EnergySystemScenario is an InformationContentEntity that represents a simulation or projection of the future energy system, considering various techno-economic assumptions, fuel costs, and policy incentives.",
+      "subclass_of": null
+    },
+    "ex:TechnologyLearningEnhancement": {
+      "comment": "The process of enhancing energy system models to better represent endogenous learning effects in clean energy technologies.",
+      "bfo_parent": "bfo:Process",
+      "aristotelian_definition": "A TechnologyLearningEnhancement is a Process that involves improving energy system models to better capture the effects of endogenous learning in clean energy technologies.",
+      "subclass_of": null
+    },
+    "ex:TechnoEconomicParameterUpdate": {
+      "comment": "The process of revising and updating techno-economic parameters within energy system models.",
+      "bfo_parent": "bfo:Process",
+      "aristotelian_definition": "A TechnoEconomicParameterUpdate is a Process that involves revising and updating the techno-economic parameters used in energy system models, often based on expert knowledge and recent data.",
+      "subclass_of": null
+    },
+    "ex:HorizonEuropeRAndIProject": {
+      "comment": "A research and innovation project funded by the Horizon Europe programme related to wind energy.",
+      "bfo_parent": "bfo:InformationContentEntity",
+      "aristotelian_definition": "A HorizonEuropeRAndIProject is a WindEnergyResearchProject that is funded under the Horizon Europe programme and focuses on research and innovation within the wind energy sector.",
+      "subclass_of": null
+    },
+    "ex:FloatingOffshoreWindProjectHorizonEurope": {
+      "comment": "A Horizon Europe funded project focused on floating offshore wind technology.",
+      "bfo_parent": "bfo:Entity",
+      "aristotelian_definition": "A FloatingOffshoreWindProjectHorizonEurope is a HorizonEuropeRAndIProject that specifically focuses on the development, demonstration, or industrialization of floating offshore wind technologies.",
+      "subclass_of": null
+    },
+    "ex:WindEnergySocialEngagementProject": {
+      "comment": "A Horizon Europe funded project focused on social engagement aspects of wind energy.",
+      "bfo_parent": "bfo:Entity",
+      "aristotelian_definition": "A WindEnergySocialEngagementProject is a HorizonEuropeRAndIProject that addresses social aspects, acceptance, or engagement related to wind energy projects.",
+      "subclass_of": null
+    },
+    "ex:WindEnergyResourceAssessmentProject": {
+      "comment": "A Horizon Europe funded project focused on assessing wind energy resources.",
+      "bfo_parent": "bfo:Entity",
+      "aristotelian_definition": "A WindEnergyResourceAssessmentProject is a HorizonEuropeRAndIProject that focuses on assessing and understanding the resources available for wind energy generation.",
+      "subclass_of": null
+    },
+    "ex:WindEnergyEnvironmentalImpactProject": {
+      "comment": "A Horizon Europe funded project focused on the environmental impacts of wind energy.",
+      "bfo_parent": "bfo:Entity",
+      "aristotelian_definition": "A WindEnergyEnvironmentalImpactProject is a HorizonEuropeRAndIProject that investigates the environmental impacts associated with wind energy technologies and projects.",
+      "subclass_of": null
+    },
+    "ex:WindEnergyNewTurbineMaterialsProject": {
+      "comment": "A Horizon Europe funded project focused on new materials for wind turbines.",
+      "bfo_parent": "bfo:Entity",
+      "aristotelian_definition": "A WindEnergyNewTurbineMaterialsProject is a HorizonEuropeRAndIProject that focuses on the development and application of new materials for wind turbine components.",
+      "subclass_of": null
+    },
+    "ex:WindEnergyMaintenanceProject": {
+      "comment": "A Horizon Europe funded project focused on maintenance and condition monitoring for wind energy systems.",
+      "bfo_parent": "bfo:Entity",
+      "aristotelian_definition": "A WindEnergyMaintenanceProject is a HorizonEuropeRAndIProject that focuses on improving maintenance strategies, condition monitoring systems, or related technologies for wind energy systems.",
+      "subclass_of": null
+    },
+    "ex:WindEnergyGridIntegrationProjectHorizonEurope": {
+      "comment": "A Horizon Europe funded project focused on grid integration of wind energy.",
+      "bfo_parent": "bfo:Entity",
+      "aristotelian_definition": "A WindEnergyGridIntegrationProjectHorizonEurope is a HorizonEuropeRAndIProject that focuses on enhancing the integration of wind energy into electrical grids.",
+      "subclass_of": null
+    },
+    "http://example.org/BLOW": {
+      "comment": "This project is a specific instance of a floating offshore wind project.",
+      "bfo_parent": "bfo:Entity",
+      "aristotelian_definition": "A project focused on developing and deploying floating offshore wind technologies, with a start date of January 1, 2023.",
+      "subclass_of": "http://example.org/FloatingOffshoreWindProject"
+    },
+    "http://example.org/ICONIC": {
+      "comment": "This project is a specific instance of a wind energy new turbine materials project.",
+      "bfo_parent": "bfo:Entity",
+      "aristotelian_definition": "A project focused on the development and application of new materials for wind turbine components, with a start date of December 1, 2023.",
+      "subclass_of": "http://example.org/WindEnergyNewTurbineMaterialsProject"
+    },
+    "http://example.org/PhyDAWN": {
+      "comment": "This project is a specific instance of a wind energy grid integration project.",
+      "bfo_parent": "bfo:Entity",
+      "aristotelian_definition": "A project focused on enhancing the integration of wind energy into electrical grids, with a start date of July 1, 2023.",
+      "subclass_of": "http://example.org/WindEnergyGridIntegrationProjectHorizonEurope"
+    },
+    "http://example.org/Blades2Build": {
+      "comment": "This project is a specific instance of a blade recycling project.",
+      "bfo_parent": "bfo:Entity",
+      "aristotelian_definition": "A project focused on developing and implementing recycling solutions for wind turbine blades, with a start date of January 1, 2023.",
+      "subclass_of": "http://example.org/BladeRecyclingProject"
+    },
+    "http://example.org/EoLO-HUBs": {
+      "comment": "This project is a specific instance of a recycling and circularity project.",
+      "bfo_parent": "bfo:Entity",
+      "aristotelian_definition": "A project focused on recycling and promoting circular economy principles within the wind energy sector, particularly concerning end-of-life components, with a start date of January 1, 2023.",
+      "subclass_of": "http://example.org/RecyclingCircularityProject"
+    },
+    "http://example.org/OCEANBATTERY": {
+      "comment": "This project is a specific instance of a grid integration project.",
+      "bfo_parent": "bfo:Entity",
+      "aristotelian_definition": "A project focused on improving the integration of wind energy into existing power grids, with a start date of July 1, 2023.",
+      "subclass_of": "http://example.org/GridIntegrationProjectHorizonEurope"
+    },
+    "http://example.org/CleanS_tack": {
+      "comment": "This project is a specific instance of a grid integration project.",
+      "bfo_parent": "bfo:Entity",
+      "aristotelian_definition": "A project focused on enhancing the integration of wind energy into electrical grids, with a start date of February 1, 2023.",
+      "subclass_of": "http://example.org/GridIntegrationProjectHorizonEurope"
+    }
+  },
+  "approved_properties": {
+    "ex:hasTitle": {
+      "domain": "ex:Report",
+      "range": "xsd:string",
+      "comment": "The title of the report"
+    },
+    "ex:writtenBy": {
+      "domain": "ex:Report",
+      "range": "xsd:string",
+      "comment": "The authors of the report"
+    },
+    "ex:publishedBy": {
+      "domain": "ex:Report",
+      "range": "xsd:string",
+      "comment": "The organization that published this report"
+    },
+    "ex:mainFocus": {
+      "domain": "ex:TechnologyDevelopmentStatusReport",
+      "range": "xsd:string",
+      "comment": "What the main focus of the report is"
+    },
+    "ex:publishedInYear": {
+      "domain": "ex:Report",
+      "range": "xsd:integer",
+      "comment": "The year in which the report was published"
+    },
+    "ex:discussesEnergyType": {
+      "domain": "ex:TechnologyDevelopmentStatusReport",
+      "range": "ex:WindEnergyTechnology",
+      "comment": "What type of energy does the report mainly discuss"
+    },
+    "ex:methodologyUsed": {
+      "domain": "ex:Report",
+      "range": "xsd:string",
+      "comment": "The methodology used in this report"
+    },
+    "ex:numCountriesCovered": {
+      "domain": "ex:TechnologyDevelopmentStatusReport",
+      "range": "xsd:integer",
+      "comment": "How many countries are covered by the EU 27 deployment section"
+    },
+    "ex:mainObjectiveOfCETO": {
+      "domain": "ex:Report",
+      "range": "xsd:string",
+      "comment": "The main objectives of the Clean Energy Technology Observatory (CETO)"
+    },
+    "ex:bodiesInvolvedInCETO": {
+      "domain": "ex:Report",
+      "range": "xsd:string",
+      "comment": "European Commission bodies involved in running and supporting CETO"
+    },
+    "ex:colleaguesContributedToCETO": {
+      "domain": "ex:Report",
+      "range": "xsd:string",
+      "comment": "Colleagues who contributed to the review and coordination of the CETO project"
+    },
+    "ex:privateRDInvestmentPercentage": {
+      "domain": "ex:Report",
+      "range": "xsd:decimal",
+      "comment": "The percentage of total private R&D funding invested by the EU from 2010 to 2020."
+    },
+    "ex:floatingOffshoreWindSubstructuresUsed": {
+      "domain": "ex:FloatingOffshoreWindSubstructure",
+      "range": "xsd:string",
+      "comment": "The substructures used in floating offshore wind technology."
+    },
+    "ex:preCommercialFloatingOffshoreWindDesigns": {
+      "domain": "ex:PreCommercialFloatingOffshoreWindDesign",
+      "range": "xsd:string",
+      "comment": "The designs of pre-commercial floating offshore wind technology that have been deployed."
+    },
+    "ex:technologyReadinessLevelAssignedTo": {
+      "domain": "ex:AirborneWindEnergySystem",
+      "range": "ex:TechnologyReadinessLevel",
+      "comment": "Assigns the technology readiness level (TRL) to airborne wind energy systems."
+    },
+    "ex:currentTRLForFloatingOffshoreWindTechnologies": {
+      "domain": "ex:FloatingOffshoreWindSubstructure",
+      "range": "ex:TechnologyReadinessLevel",
+      "comment": "Provides the current TRL for floating offshore wind technologies such as spar-buoy and semi-submersible designs."
+    },
+    "ex:efficiencyComparisonVAWTsToHAWTs": {
+      "domain": "ex:VerticalAxisWindTurbine",
+      "range": "xsd:string",
+      "comment": "Compares the efficiency of vertical axis wind turbines (VAWTs) to conventional horizontal axis wind turbines (HAWTs)."
+    },
+    "ex:hasPublicRDInvestment": {
+      "domain": "ex:WindEnergyTechnology",
+      "range": "xsd:integer",
+      "comment": "The amount of public R&D investment in wind energy in a given year, in millions of EUR."
+    },
+    "ex:hasPrivateRDInvestment": {
+      "domain": "ex:WindEnergyTechnology",
+      "range": "xsd:integer",
+      "comment": "The amount of private R&D investment in wind energy in a given year, in millions of EUR."
+    },
+    "ex:hasPublicRDInvestmentShare": {
+      "domain": "ex:WindEnergyTechnology",
+      "range": "xsd:decimal",
+      "comment": "The share of public R&D investment in wind energy as a percentage of total public investment."
+    },
+    "ex:hasPrivateRDInvestmentShare": {
+      "domain": "ex:WindEnergyTechnology",
+      "range": "xsd:decimal",
+      "comment": "The share of private R&D investment in wind energy as a percentage of total private investment."
+    },
+    "ex:hasVCPEInvestment": {
+      "domain": "ex:WindEnergyTechnology",
+      "range": "xsd:integer",
+      "comment": "The amount of venture capital and private equity investment in wind energy in a given year, in millions of EUR."
+    },
+    "ex:leadsInPublicRDInvestment": {
+      "domain": "ex:WindEnergyTechnology",
+      "range": "xsd:string",
+      "comment": "Indicates which entity leads in public R&D investment in wind energy."
+    },
+    "ex:leadsInPrivateRDInvestment": {
+      "domain": "ex:WindEnergyTechnology",
+      "range": "xsd:string",
+      "comment": "Indicates which entity leads in private R&D investment in wind energy."
+    },
+    "ex:hasOriginCountry": {
+      "domain": "ex:WindEnergyTechnology",
+      "range": "xsd:string",
+      "comment": "The country of origin for a company or entity involved in wind energy R&D investment."
+    },
+    "ex:hasRDInvestmentPriority": {
+      "domain": "ex:WindEnergyTechnology",
+      "range": "xsd:string",
+      "comment": "The R&D priority for which investment is allocated in wind energy."
+    },
+    "ex:hasBeneficiaryCountryForVCPEInvestment": {
+      "domain": "ex:WindEnergyInvestment",
+      "range": "xsd:string",
+      "comment": "Identifies a country that is a beneficiary of venture capital and private equity investment in the wind energy sector."
+    },
+    "ex:hasInvestmentDealStage": {
+      "domain": "ex:WindEnergyInvestment",
+      "range": "ex:InvestmentDealStage",
+      "comment": "Categorizes the investment deal stage (e.g., early-stage, later-stage) for venture capital and private equity investments in the wind energy sector."
+    },
+    "ex:hasInvestmentPeriod": {
+      "domain": "ex:WindEnergyInvestment",
+      "range": "xsd:string",
+      "comment": "Specifies the time period for which venture capital and private equity investment data in the wind energy sector is considered."
+    },
+    "ex:hasInvestmentShare": {
+      "domain": "ex:WindEnergyInvestment",
+      "range": "xsd:decimal",
+      "comment": "Represents the share of investment deals in the wind energy sector for a specific region or entity."
+    },
+    "ex:hasCooperativePatentClassificationCode": {
+      "domain": "ex:WindEnergyInvention",
+      "range": "ex:CooperativePatentClassificationCode",
+      "comment": "Associates a wind energy invention with a Cooperative Patent Classification code used for evaluating patenting activity."
+    },
+    "ex:hasInternationalInventionShare": {
+      "domain": "ex:WindEnergyInvention",
+      "range": "xsd:decimal",
+      "comment": "Indicates the percentage of wind energy inventions that are international for a given country or region."
+    },
+    "ex:hasHighValueInventionShare": {
+      "domain": "ex:WindEnergyInvention",
+      "range": "xsd:decimal",
+      "comment": "Represents the percentage of wind energy inventions that are considered high-value for a given country or region."
+    },
+    "ex:hasNumberOfInventions": {
+      "domain": "ex:WindEnergyInvention",
+      "range": "xsd:integer",
+      "comment": "The total number of wind energy inventions, represented by patent families, for a specific entity or period."
+    },
+    "ex:hasPublicationYear": {
+      "domain": "ex:WindEnergyPublication",
+      "range": "xsd:integer",
+      "comment": "The year in which a wind energy publication was published."
+    },
+    "ex:hasPublicationCount": {
+      "domain": "ex:WindEnergyPublication",
+      "range": "xsd:integer",
+      "comment": "The number of peer-reviewed articles published in the wind energy sector for a given year or region."
+    },
+    "ex:isHighlyCited": {
+      "domain": "ex:WindEnergyPublication",
+      "range": "xsd:boolean",
+      "comment": "Indicates whether a wind energy publication belongs to the top 10% most cited papers within its field and year."
+    },
+    "ex:hasPOTEnCIACentralScenarioReport": {
+      "domain": "ex:Report",
+      "range": "xsd:string",
+      "comment": "The property to identify the report presenting the POTEnCIA Central Scenario for EU energy outlook to 2050."
+    },
+    "ex:publishedByOrganization": {
+      "domain": "ex:Report",
+      "range": "xsd:string",
+      "comment": "The property to identify the organization that published a specific report."
+    },
+    "ex:hasOffshoreWindCapacityAddition": {
+      "domain": "ex:Report",
+      "range": "ex:OffshoreWindCapacityAddition",
+      "comment": "Relates a report to the process of offshore wind capacity addition it discusses."
+    },
+    "ex:hasOnshoreWindCapacityAddition": {
+      "domain": "ex:Report",
+      "range": "ex:OnshoreWindCapacityAddition",
+      "comment": "Relates a report to the process of onshore wind capacity addition it discusses."
+    },
+    "ex:hasOffshoreWindInstalledCapacity": {
+      "domain": "ex:Report",
+      "range": "ex:OffshoreWindInstalledCapacity",
+      "comment": "Relates a report to the cumulative installed capacity of offshore wind power generation it discusses."
+    },
+    "ex:hasOnshoreWindInstalledCapacity": {
+      "domain": "ex:Report",
+      "range": "ex:OnshoreWindInstalledCapacity",
+      "comment": "Relates a report to the cumulative installed capacity of onshore wind power generation it discusses."
+    },
+    "ex:hasWindEnergyGeneration": {
+      "domain": "ex:Report",
+      "range": "ex:WindEnergyGeneration",
+      "comment": "Relates a report to the process of wind energy electricity generation it discusses."
+    },
+    "ex:hasWindEnergyLCOE": {
+      "domain": "ex:Report",
+      "range": "ex:WindEnergyLCOE",
+      "comment": "Relates a report to the Levelized Cost of Energy for wind power it discusses."
+    },
+    "ex:hasWindEnergyInvestmentCost": {
+      "domain": "ex:Report",
+      "range": "ex:WindEnergyInvestmentCost",
+      "comment": "Relates a report to the investment costs for wind energy installations it discusses."
+    },
+    "ex:hasPublicRAndIInvestmentWindEnergy": {
+      "domain": "ex:Report",
+      "range": "ex:PublicRAndIInvestmentWindEnergy",
+      "comment": "Relates a report to the public R&I investment in wind energy it discusses."
+    },
+    "ex:hasPrivateRAndIInvestmentWindEnergy": {
+      "domain": "ex:Report",
+      "range": "ex:PrivateRAndIInvestmentWindEnergy",
+      "comment": "Relates a report to the private R&I investment in wind energy it discusses."
+    },
+    "ex:hasWindEnergyVCPEInvestment": {
+      "domain": "ex:Report",
+      "range": "ex:WindEnergyVCPEInvestment",
+      "comment": "Relates a report to the venture capital and private equity investment in the wind energy sector it discusses."
+    },
+    "ex:hasWindEnergyInventionActivity": {
+      "domain": "ex:Report",
+      "range": "ex:WindEnergyInventionActivity",
+      "comment": "Relates a report to the wind energy invention activity it discusses."
+    },
+    "ex:hasWindEnergyPublicationActivity": {
+      "domain": "ex:Report",
+      "range": "ex:WindEnergyPublicationActivity",
+      "comment": "Relates a report to the wind energy publication activity it discusses."
+    },
+    "ex:hasWindSectorTurnover": {
+      "domain": "ex:Report",
+      "range": "ex:WindSectorTurnover",
+      "comment": "Relates a report to the turnover of the wind energy sector it discusses."
+    },
+    "ex:hasWindSectorGVA": {
+      "domain": "ex:Report",
+      "range": "ex:WindSectorGVA",
+      "comment": "Relates a report to the Gross Value Added of the wind energy sector it discusses."
+    },
+    "ex:hasWindTurbineMarketShare": {
+      "domain": "ex:Report",
+      "range": "ex:WindTurbineMarketShare",
+      "comment": "Relates a report to the market share of wind turbines it discusses."
+    },
+    "ex:hasWindEnergyEmployment": {
+      "domain": "ex:Report",
+      "range": "ex:WindEnergyEmployment",
+      "comment": "Relates a report to the employment in the wind energy sector it discusses."
+    },
+    "ex:discussesOffshoreWindCapacityAddition": {
+      "domain": "ex:Report",
+      "range": "ex:OffshoreWindCapacityAddition",
+      "comment": "Indicates that a report discusses the process of offshore wind capacity addition."
+    },
+    "ex:discussesOnshoreWindCapacityAddition": {
+      "domain": "ex:Report",
+      "range": "ex:OnshoreWindCapacityAddition",
+      "comment": "Indicates that a report discusses the process of onshore wind capacity addition."
+    },
+    "ex:discussesOffshoreWindInstalledCapacity": {
+      "domain": "ex:Report",
+      "range": "ex:OffshoreWindInstalledCapacity",
+      "comment": "Indicates that a report discusses the cumulative installed capacity of offshore wind power generation."
+    },
+    "ex:discussesOnshoreWindInstalledCapacity": {
+      "domain": "ex:Report",
+      "range": "ex:OnshoreWindInstalledCapacity",
+      "comment": "Indicates that a report discusses the cumulative installed capacity of onshore wind power generation."
+    },
+    "ex:discussesWindEnergyGeneration": {
+      "domain": "ex:Report",
+      "range": "ex:WindEnergyGeneration",
+      "comment": "Indicates that a report discusses the process of wind energy electricity generation."
+    },
+    "ex:discussesWindEnergyLCOE": {
+      "domain": "ex:Report",
+      "range": "ex:WindEnergyLCOE",
+      "comment": "Indicates that a report discusses the Levelized Cost of Energy for wind power."
+    },
+    "ex:discussesWindEnergyInvestmentCost": {
+      "domain": "ex:Report",
+      "range": "ex:WindEnergyInvestmentCost",
+      "comment": "Indicates that a report discusses the investment costs for wind energy installations."
+    },
+    "ex:discussesPublicRAndIInvestmentWindEnergy": {
+      "domain": "ex:Report",
+      "range": "ex:PublicRAndIInvestmentWindEnergy",
+      "comment": "Indicates that a report discusses the public R&I investment in wind energy."
+    },
+    "ex:discussesPrivateRAndIInvestmentWindEnergy": {
+      "domain": "ex:Report",
+      "range": "ex:PrivateRAndIInvestmentWindEnergy",
+      "comment": "Indicates that a report discusses the private R&I investment in wind energy."
+    },
+    "ex:discussesWindEnergyVCPEInvestment": {
+      "domain": "ex:Report",
+      "range": "ex:WindEnergyVCPEInvestment",
+      "comment": "Indicates that a report discusses the venture capital and private equity investment in the wind energy sector."
+    },
+    "ex:discussesWindEnergyInventionActivity": {
+      "domain": "ex:Report",
+      "range": "ex:WindEnergyInventionActivity",
+      "comment": "Indicates that a report discusses the wind energy invention activity."
+    },
+    "ex:discussesWindEnergyPublicationActivity": {
+      "domain": "ex:Report",
+      "range": "ex:WindEnergyPublicationActivity",
+      "comment": "Indicates that a report discusses the wind energy publication activity."
+    },
+    "ex:discussesWindSectorTurnover": {
+      "domain": "ex:Report",
+      "range": "ex:WindSectorTurnover",
+      "comment": "Indicates that a report discusses the turnover of the wind energy sector."
+    },
+    "ex:discussesWindSectorGVA": {
+      "domain": "ex:Report",
+      "range": "ex:WindSectorGVA",
+      "comment": "Indicates that a report discusses the Gross Value Added of the wind energy sector."
+    },
+    "ex:discussesWindTurbineMarketShare": {
+      "domain": "ex:Report",
+      "range": "ex:WindTurbineMarketShare",
+      "comment": "Indicates that a report discusses the market share of wind turbines."
+    },
+    "ex:discussesWindEnergyEmployment": {
+      "domain": "ex:Report",
+      "range": "ex:WindEnergyEmployment",
+      "comment": "Indicates that a report discusses the employment in the wind energy sector."
+    },
+    "ex:hasGlobalAnnualCapacityAddition": {
+      "domain": "ex:Report",
+      "range": "ex:OffshoreWindCapacityAddition",
+      "comment": "Relates a report to the global annual capacity addition of offshore wind it discusses."
+    },
+    "ex:hasEUCumulativeInstalledCapacity": {
+      "domain": "ex:Report",
+      "range": "ex:OnshoreWindInstalledCapacity",
+      "comment": "Relates a report to the cumulative installed capacity of onshore wind in the EU it discusses."
+    },
+    "ex:hasEUWindEnergyGeneration": {
+      "domain": "ex:Report",
+      "range": "ex:WindEnergyGeneration",
+      "comment": "Relates a report to the wind energy electricity generation of EU Member States it discusses."
+    },
+    "ex:hasOnshoreWindLCOE": {
+      "domain": "ex:Report",
+      "range": "ex:WindEnergyLCOE",
+      "comment": "Relates a report to the range of historical and projected onshore wind LCoE estimates it discusses."
+    },
+    "ex:hasOffshoreWindLCOE": {
+      "domain": "ex:Report",
+      "range": "ex:WindEnergyLCOE",
+      "comment": "Relates a report to the range of historical and projected offshore wind LCoE estimates it discusses."
+    },
+    "ex:hasOvernightInvestmentCosts": {
+      "domain": "ex:Report",
+      "range": "ex:WindEnergyInvestmentCost",
+      "comment": "Relates a report to the overnight investment costs for onshore and offshore installations it discusses."
+    },
+    "ex:hasPublicRAndIInvestmentEvolution": {
+      "domain": "ex:Report",
+      "range": "ex:PublicRAndIInvestmentWindEnergy",
+      "comment": "Relates a report to the evolution of public R&I investment in wind energy it discusses."
+    },
+    "ex:hasGlobalPrivateRDInvestment": {
+      "domain": "ex:Report",
+      "range": "ex:PrivateRAndIInvestmentWindEnergy",
+      "comment": "Relates a report to the global private R&D investment in the wind energy sector it discusses."
+    },
+    "ex:hasGlobalVCPEInvestment": {
+      "domain": "ex:Report",
+      "range": "ex:WindEnergyVCPEInvestment",
+      "comment": "Relates a report to the global VC/PE investment in the wind energy sector it discusses."
+    },
+    "ex:hasWindEnergyInventionActivityMetrics": {
+      "domain": "ex:Report",
+      "range": "ex:WindEnergyInventionActivity",
+      "comment": "Relates a report to the number of wind energy inventions and share of high-value and international activity it discusses."
+    },
+    "ex:hasWindEnergyPublicationActivityMetrics": {
+      "domain": "ex:Report",
+      "range": "ex:WindEnergyPublicationActivity",
+      "comment": "Relates a report to the number of peer-reviewed articles on wind energy per year it discusses."
+    },
+    "ex:hasEUWindFundingEvolution": {
+      "domain": "ex:Report",
+      "range": "ex:WindEnergyFundingEvolution",
+      "comment": "Relates a report to the evolution of EU R&I funding for wind energy it discusses."
+    },
+    "ex:hasWindSectorTurnoverEvolution": {
+      "domain": "ex:Report",
+      "range": "ex:WindSectorTurnover",
+      "comment": "Relates a report to the evolution of the turnover of the EU wind sector it discusses."
+    },
+    "ex:hasWindSectorGVAEvolution": {
+      "domain": "ex:Report",
+      "range": "ex:WindSectorGVA",
+      "comment": "Relates a report to the evolution of the Gross Value Added of the EU wind sector it discusses."
+    },
+    "ex:hasGlobalWindTurbineMarketShare": {
+      "domain": "ex:Report",
+      "range": "ex:WindTurbineMarketShare",
+      "comment": "Relates a report to the global market share of wind turbines it discusses."
+    },
+    "ex:hasWindEnergyEmploymentEvolution": {
+      "domain": "ex:Report",
+      "range": "ex:WindEnergyEmployment",
+      "comment": "Relates a report to the evolution of direct and indirect jobs in the wind energy sector it discusses."
+    },
+    "ex:hasOriginCountryForOEM": {
+      "domain": "ex:OriginalEquipmentManufacturer",
+      "range": "xsd:string",
+      "comment": "The country of origin for an Original Equipment Manufacturer (OEM) in the wind energy sector."
+    },
+    "ex:hasMarketShareOverTime": {
+      "domain": "ex:WindTurbineMarketShare",
+      "range": "xsd:string",
+      "comment": "The market share of wind turbines over a specified period, often presented as a time series."
+    },
+    "ex:hasEUProductionValuePerTurbine": {
+      "domain": "ex:WindEnergyTechnology",
+      "range": "xsd:string",
+      "comment": "The production value per wind turbine in the EU, expressed in thousand EUR per piece."
+    },
+    "ex:hasEUProductionQuantity": {
+      "domain": "ex:WindEnergyTechnology",
+      "range": "xsd:string",
+      "comment": "The production quantity of wind turbines in the EU, expressed in thousand pieces."
+    },
+    "ex:hasEUProductionValue": {
+      "domain": "ex:WindEnergyTechnology",
+      "range": "xsd:string",
+      "comment": "The total production value of wind turbines in the EU, expressed in million EUR."
+    },
+    "ex:hasExtraEUTradeValue": {
+      "domain": "ex:WindEnergyTechnology",
+      "range": "xsd:string",
+      "comment": "The trade value of wind generating sets between the EU and non-EU countries, in EUR Million."
+    },
+    "ex:hasExtraEUImportsToExportsRatio": {
+      "domain": "ex:WindEnergyTechnology",
+      "range": "xsd:decimal",
+      "comment": "The ratio of extra-EU imports to exports for wind generating sets, indicating trade balance."
+    },
+    "ex:hasEUTradeWithChina": {
+      "domain": "ex:WindEnergyTechnology",
+      "range": "xsd:string",
+      "comment": "The trade value between the EU and China for wind generating sets, in EUR Million."
+    },
+    "ex:hasEUTradeWithIndia": {
+      "domain": "ex:WindEnergyTechnology",
+      "range": "xsd:string",
+      "comment": "The trade value between the EU and India for wind generating sets, in EUR Million."
+    },
+    "ex:hasTopGlobalImportersValue": {
+      "domain": "ex:WindEnergyTechnology",
+      "range": "xsd:string",
+      "comment": "The trade value of wind generating sets for top global importers over a specified period, in EUR Million."
+    },
+    "ex:hasTopGlobalExportersValue": {
+      "domain": "ex:WindEnergyTechnology",
+      "range": "xsd:string",
+      "comment": "The trade value of wind generating sets for top global exporters over a specified period, in EUR Million."
+    },
+    "ex:hasRawMaterialList": {
+      "domain": "ex:WindEnergyTechnology",
+      "range": "ex:RawMaterial",
+      "comment": "Lists the raw materials used in wind power plants."
+    },
+    "ex:hasMaterialIntensityEstimate": {
+      "domain": "ex:WindEnergyTechnology",
+      "range": "xsd:string",
+      "comment": "Provides estimates of material intensity in kg/MW for wind turbines."
+    },
+    "ex:hasGHGEmissionsRange": {
+      "domain": "ex:WindEnergyTechnology",
+      "range": "xsd:string",
+      "comment": "The range of Greenhouse Gas (GHG) emissions in gCO2eqv/kWh for onshore and offshore wind power plants."
+    },
+    "ex:hasEnergyPaybackTime": {
+      "domain": "ex:WindEnergyTechnology",
+      "range": "xsd:string",
+      "comment": "The Energy Pay-Back Time (EPBT) for wind power plants, indicating the time required to generate the energy consumed during its lifecycle."
+    },
+    "ex:discussesBiodiversityEnhancementInNorthSea": {
+      "domain": "ex:Report",
+      "range": "xsd:string",
+      "comment": "Indicates that a report discusses opportunities for biodiversity enhancement in the North Sea related to offshore wind farms."
+    },
+    "ex:hasRAndIProjectsFundedByHorizonEurope": {
+      "domain": "ex:Report",
+      "range": "ex:WindEnergyResearchProject",
+      "comment": "Relates a report to the wind energy research and innovation projects funded under the Horizon Europe programme that started in a specific year."
+    },
+    "ex:hasExposureSymptom": {
+      "domain": "ex:WindEnergyTechnology",
+      "range": "ex:ExposureSymptom",
+      "comment": "Relates wind energy technology to reported exposure symptoms."
+    },
+    "ex:hasAnnoyanceFromNoiseImmissionLevel": {
+      "domain": "ex:WindEnergyTechnology",
+      "range": "xsd:string",
+      "comment": "Describes the relationship between annoyance from wind turbine noise and the immission level."
+    },
+    "ex:hasStatisticallySignificantSleepDisturbanceAssociation": {
+      "domain": "ex:WindEnergyTechnology",
+      "range": "xsd:boolean",
+      "comment": "Indicates whether a statistically significant association between noise levels and self-reported sleep disturbance was found."
+    },
+    "ex:hasEMFLevelComparison": {
+      "domain": "ex:WindEnergyTechnology",
+      "range": "xsd:string",
+      "comment": "Compares electromagnetic field (EMF) levels from wind turbines to those in urban areas."
+    },
+    "ex:hasShadowFlickerImpactOnResidents": {
+      "domain": "ex:WindEnergyTechnology",
+      "range": "xsd:string",
+      "comment": "Describes the impact on residents caused by the periodic casting of shadows from wind turbine rotors onto surrounding buildings."
+    },
+    "ex:hasPublicAcceptanceDriver": {
+      "domain": "ex:WindEnergyTechnology",
+      "range": "ex:PublicAcceptanceDriver",
+      "comment": "Identifies factors influencing public acceptance or opposition to wind energy projects."
+    },
+    "ex:hasRepoweringDriver": {
+      "domain": "ex:WindEnergyTechnology",
+      "range": "ex:RepoweringDriver",
+      "comment": "Identifies factors that drive wind energy repowering projects."
+    },
+    "ex:hasLandscapeImpactOnRepowering": {
+      "domain": "ex:WindEnergyTechnology",
+      "range": "xsd:string",
+      "comment": "Describes the impact of repowering wind turbines on the local landscape."
+    },
+    "ex:hasLocalOppositionForLifetimeExtension": {
+      "domain": "ex:WindEnergyTechnology",
+      "range": "xsd:string",
+      "comment": "Describes the perceived local opposition for lifetime extension of existing wind farms compared to repowering."
+    },
+    "ex:hasPolicyInstrument": {
+      "domain": "ex:POTENCIACETOScenario",
+      "range": "xsd:string",
+      "comment": "Identifies a policy instrument that influences technology uptake within the POTEnCIA CETO 2024 scenario."
+    },
+    "ex:hasEmissionReductionTarget": {
+      "domain": "ex:POTENCIACETOScenario",
+      "range": "xsd:string",
+      "comment": "Specifies an emission reduction target for the EU by a certain year within the POTEnCIA CETO 2024 scenario."
+    },
+    "ex:hasMethodologicalApproach": {
+      "domain": "ex:POLESJRCModel",
+      "range": "xsd:string",
+      "comment": "Describes the methodological approach used by the POLES-JRC model for simulating energy systems."
+    },
+    "ex:includesPowerGeneratingTechnology": {
+      "domain": "ex:POLESJRCModelPowerSystem",
+      "range": "xsd:string",
+      "comment": "Indicates a power generating technology included in the POLES-JRC model's power system description."
+    },
+    "ex:considersHydrogenProductionRoute": {
+      "domain": "ex:POLESJRCModelHydrogenProduction",
+      "range": "xsd:string",
+      "comment": "Identifies a hydrogen production route considered within the POLES-JRC model."
+    },
+    "ex:usesHydrogenInSector": {
+      "domain": "ex:POLESJRCModelHydrogenProduction",
+      "range": "xsd:string",
+      "comment": "Specifies a sector where hydrogen is used as a fuel or feedstock within the POLES-JRC model."
+    },
+    "ex:considersCCUSInSector": {
+      "domain": "ex:POLESJRCModelCCUS",
+      "range": "xsd:string",
+      "comment": "Specifies a sector where Carbon Capture, Utilization, and Storage (CCUS) technologies are considered within the POLES-JRC model."
+    },
+    "ex:capturesTechnologyLearningFor": {
+      "domain": "ex:TechnologyLearningInPOLESJRC",
+      "range": "xsd:string",
+      "comment": "Describes the clean energy technology for which the POLES-JRC model captures technology learning effects."
+    },
+    "ex:operatesOnYearlyBasisUpTo": {
+      "domain": "ex:POLESJRCModel",
+      "range": "xsd:integer",
+      "comment": "Specifies the yearly operational time horizon of the POLES-JRC model."
+    },
+    "ex:isUpdatedYearlyWith": {
+      "domain": "ex:POLESJRCModel",
+      "range": "xsd:string",
+      "comment": "Indicates that the POLES-JRC model is updated yearly with specific types of information."
+    },
+    "ex:learningRate": {
+      "domain": "ex:TechnologyLearningInPOLESJRC",
+      "range": "xsd:decimal",
+      "comment": "Quantifies the percentage change of the cost of an energy technology based on a doubling of its cumulative capacity or production."
+    },
+    "ex:floorCost": {
+      "domain": "ex:ComponentLevelLearning",
+      "range": "xsd:decimal",
+      "comment": "Specifies the minimum achievable investment cost for a component or technology, acting as a limit for cost reduction through learning."
+    },
+    "ex:hasEUFinancialContribution": {
+      "domain": "ex:HorizonEuropeRAndIProject",
+      "range": "xsd:integer",
+      "comment": "The EU financial contribution in EUR for a Horizon Europe funded R&I project."
+    },
+    "ex:hasResearchArea": {
+      "domain": "ex:HorizonEuropeRAndIProject",
+      "range": "xsd:string",
+      "comment": "The research area or focus of a Horizon Europe funded R&I project."
+    },
+    "ex:differsFromScenario": {
+      "domain": "ex:POTENCIACETOScenario",
+      "range": "ex:EnergySystemScenario",
+      "comment": "Indicates how this scenario differs from another energy system scenario, particularly in terms of model version, parameter updates, or driving logic."
+    },
+    "ex:drivenBy": {
+      "domain": "ex:EnergySystemScenario",
+      "range": "xsd:string",
+      "comment": "Describes the primary driver or logic behind an energy system scenario, such as a global carbon price or alignment with climate laws."
+    },
+    "ex:considersPolicy": {
+      "domain": "ex:EnergySystemScenario",
+      "range": "xsd:string",
+      "comment": "Specifies the climate policies or legislative packages considered within an energy system scenario."
+    }
+  },
+  "canonical_terms": {
+    "TRL": "ex:TechnologyReadinessLevel",
+    "CETO": "ex:CETOProject",
+    "SET-Plan": "ex:TechnologyDevelopmentStatusReport",
+    "SWOT": "ex:SWOTAnalysis",
+    "FOWS": "ex:FloatingOffshoreWindSubstructure",
+    "PCFOWD": "ex:PreCommercialFloatingOffshoreWindDesign",
+    "LTRLT": "ex:LowerTRLTechnology",
+    "AWES": "ex:AirborneWindEnergySystem",
+    "VAWTs": "ex:VerticalAxisWindTurbine",
+    "Pre-Seed": "http://example.org/pre_seed",
+    "Accelerator/Incubator": "http://example.org/incubator_accelerator",
+    "Angel": "http://example.org/angel_investment",
+    "Seed": "http://example.org/seed_investment",
+    "Early stage VC": "http://example.org/early_stage_vc",
+    "Late Stage VC": "http://example.org/late_stage_vc",
+    "Small M&A": "http://example.org/small_m_a",
+    "Private Equity Growth/Expansion": "http://example.org/private_equity_growth_expansion",
+    "VC/PE investment": "ex:WindEnergyInvestment",
+    "early-stage deals": "ex:InvestmentDealStage",
+    "later-stage deals": "ex:InvestmentDealStage",
+    "all-stage investments": "ex:InvestmentDealStage",
+    "patent families": "ex:WindEnergyInvention",
+    "international inventions": "ex:InternationalInvention",
+    "high-value inventions": "ex:HighValueInvention",
+    "Cooperative Patent Classification (CPC) codes": "ex:CooperativePatentClassificationCode",
+    "peer-reviewed articles": "ex:WindEnergyPublication",
+    "highly cited papers": "ex:HighlyCitedPublication",
+    "FWCI": "ex:CountryPublicationImpact",
+    "h-index": "ex:CountryPublicationProductivity",
+    "OEMs": "ex:OriginalEquipmentManufacturer",
+    "Blades2Build": "ex:BladeRecyclingProject",
+    "REFRESH": "ex:RecyclingCircularityProject",
+    "EoLO-HUBs": "ex:RecyclingCircularityProject",
+    "GR4FITE3": "ex:BatterySupplyChainProject",
+    "WHEEL": "ex:FloatingOffshoreWindProject",
+    "BLOW": "ex:FloatingOffshoreWindProject",
+    "ShareWind": "ex:FloatingOffshoreWindProject",
+    "WILLOW": "ex:GridIntegrationProject",
+    "InterOPERA": "ex:ConverterInteroperabilityProject",
+    "CriticalRawMaterialsInWindEnergy": "Critical raw materials used in wind energy technology",
+    "RareEarthElementsInWindEnergy": "Rare earth elements used in wind energy technology",
+    "new_knowledge": "A new piece of information derived from existing sources.",
+    "POTEnCIA": "http://example.org/report_on_potencia_ceto_2024_scenario",
+    "JRC-IDEES-2021": "http://example.org/jrc_idees_2021_database_update_and_technical_documentation",
+    "IDEES": "http://example.org/jrc_idees_2021_database_update_and_technical_documentation",
+    "Clean Energy Technology Observatory": "http://example.org/wind_energy_technology_observatory_report",
+    "global annual capacity addition of offshore wind": "ex:OffshoreWindCapacityAddition",
+    "cumulative installed capacity of onshore wind": "ex:OnshoreWindInstalledCapacity",
+    "wind energy electricity generation": "ex:WindEnergyGeneration",
+    "onshore wind Levelized Cost of Energy (LCoE)": "ex:WindEnergyLCOE",
+    "offshore wind Levelized Cost of Energy (LCoE)": "ex:WindEnergyLCOE",
+    "overnight investment costs for onshore and offshore installations": "ex:WindEnergyInvestmentCost",
+    "public R&I investment in wind energy": "ex:PublicRAndIInvestmentWindEnergy",
+    "global private R&D investment in the wind energy sector": "ex:PrivateRAndIInvestmentWindEnergy",
+    "global VC/PE investment in the wind energy sector": "ex:WindEnergyVCPEInvestment",
+    "number of wind energy inventions": "ex:WindEnergyInventionActivity",
+    "number of peer-reviewed articles on wind energy": "ex:WindEnergyPublicationActivity",
+    "EU R&I funding for wind energy": "ex:WindEnergyFundingEvolution",
+    "turnover of the EU wind sector": "ex:WindSectorTurnover",
+    "Gross Value Added (GVA) of the EU wind sector": "ex:WindSectorGVA",
+    "global market share of wind turbines": "ex:WindTurbineMarketShare",
+    "direct and indirect jobs in the wind energy sector": "ex:WindEnergyEmployment",
+    "GHG emissions": "ex:GHGEmissions",
+    "Energy Pay-Back Time (EPBT)": "ex:EnergyPaybackTime",
+    "material intensity": "ex:MaterialIntensity",
+    "raw materials": "ex:RawMaterial",
+    "wind generating sets": "ex:WindEnergyTechnology",
+    "rare earth elements": "ex:RareEarthElement",
+    "permanent magnets": "ex:PermanentMagnet",
+    "OWFs": "ex:OffshoreWindProject",
+    "OW": "ex:OffshoreWindProject",
+    "NdFeB Permanent Magnet Production": "ex:NdFeBMagnetProduction",
+    "HTP": "ex:HumanToxicityPotential",
+    "LCoE": "ex:WindEnergyLCOE",
+    "NdFeB magnets": "ex:PermanentMagnet",
+    "LFN": "ex:LowFrequencyNoise",
+    "IS and LF": "ex:InfrasoundEffect, ex:LowFrequencyNoiseEffect",
+    "immission level": "ex:WindTurbineNoisePerception",
+    "sleep disturbance": "ex:SleepDisturbance",
+    "EMF": "ex:ElectromagneticFieldExposure",
+    "shadow flicker": "ex:ShadowFlickerImpact",
+    "public acceptance": "ex:PublicAcceptanceDriver",
+    "repowering": "ex:RepoweringDriver",
+    "learning rate": "ex:LearningRate",
+    "floor cost": "ex:FloorCost",
+    "learning-by-doing": "ex:LearningByDoingApproach",
+    "Global CETO 2\u00b0C scenario 2024": "ex:GlobalCarbonPriceScenario",
+    "POTEnCIA CETO 2024 scenario": "ex:DecarbonisationScenario",
+    "POLES-JRC": "ex:POLESJRCModel",
+    "Horizon Europe": "ex:HorizonEuropeRAndIProject",
+    "MADE4WIND": "http://example.org/FloatingOffshoreWindProjectHorizonEurope",
+    "ICONIC": "http://example.org/WindEnergyNewTurbineMaterialsProject",
+    "PhyDAWN": "http://example.org/WindEnergyGridIntegrationProjectHorizonEurope",
+    "Orcelle": "http://example.org/Orcelle",
+    "WHISPER": "http://example.org/WHISPER",
+    "off-coustics": "http://example.org/off-coustics",
+    "DATA-DRIVEN OFFSHORE": "http://example.org/DataDrivenOffshore",
+    "WIMBY": "http://example.org/WIMBY",
+    "ULTFARMS": "http://example.org/ULTFARMS",
+    "AdvanSiC": "http://example.org/AdvanSiC",
+    "D-STANDART": "http://example.org/D-STANDART",
+    "OCEANBATTERY": "http://example.org/OCEANBATTERY",
+    "Clean(S)tack": "http://example.org/CleanS_tack",
+    "NEXTBMS": "http://example.org/NEXTBMS"
+  },
+  "subclass_relations": {
+    "ex:BladeRecyclingProject": "ex:RecyclingCircularityProject",
+    "ex:GridIntegrationProject": "ex:WindEnergyResearchProject",
+    "ex:ConverterInteroperabilityProject": "ex:GridIntegrationProject",
+    "ex:FloatingOffshoreWindProject": "ex:WindEnergyResearchProject",
+    "ex:WindTurbineType": "ex:WindEnergyTechnology",
+    "ex:RareEarthElement": "ex:RawMaterial",
+    "ex:PermanentMagnet": "ex:RawMaterial",
+    "ex:OnshoreWindTurbine": "ex:WindTurbineType",
+    "ex:OffshoreWindTurbine": "ex:WindTurbineType",
+    "ex:POLESJRCModel": "ex:EnergySystemSimulationModel",
+    "ex:ComponentLevelLearning": "ex:LearningByDoingApproach",
+    "http://example.org/BLOW": "http://example.org/FloatingOffshoreWindProject",
+    "http://example.org/ICONIC": "http://example.org/WindEnergyNewTurbineMaterialsProject",
+    "http://example.org/PhyDAWN": "http://example.org/WindEnergyGridIntegrationProjectHorizonEurope",
+    "http://example.org/Blades2Build": "http://example.org/BladeRecyclingProject",
+    "http://example.org/EoLO-HUBs": "http://example.org/RecyclingCircularityProject",
+    "http://example.org/OCEANBATTERY": "http://example.org/GridIntegrationProjectHorizonEurope",
+    "http://example.org/CleanS_tack": "http://example.org/GridIntegrationProjectHorizonEurope"
+  }
+}

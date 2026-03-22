@@ -1,0 +1,44 @@
+{
+  "questions": [
+    {
+      "question": "How many types of amino acids are involved in protein synthesis?",
+      "scope": "class"
+    },
+    {
+      "question": "What is the relationship between amino acids and proteins?",
+      "scope": "property"
+    },
+    {
+      "question": "Which amino acids are classified as essential, non-essential, or semi-essential?",
+      "scope": "instance"
+    },
+    {
+      "question": "What functional groups do all amino acids contain?",
+      "scope": "class"
+    },
+    {
+      "question": "How does the presence of an asymmetric carbon atom affect optical properties in amino acids?",
+      "scope": "property"
+    },
+    {
+      "question": "Which amino acid is optically inactive and why?",
+      "scope": "instance"
+    },
+    {
+      "question": "What are the three stages involved in the acid-base titration of glycine?",
+      "scope": "instance"
+    },
+    {
+      "question": "How do amino acids react with mineral acids to form salts?",
+      "scope": "property"
+    },
+    {
+      "question": "Which amino acids undergo decarboxylation reactions and what are the products?",
+      "scope": "instance"
+    },
+    {
+      "question": "What is the significance of L-amino acids in protein synthesis compared to D-amino acids?",
+      "scope": "property"
+    }
+  ]
+}

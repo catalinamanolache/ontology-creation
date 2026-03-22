@@ -1,0 +1,44 @@
+{
+  "questions": [
+    {
+      "question": "What is the source of the data for Figures 41 and 42?",
+      "scope": "property"
+    },
+    {
+      "question": "How many full-time equivalents (FTE) per MW installed are estimated for offshore wind projects in 2022 due to productivity improvements?",
+      "scope": "instance"
+    },
+    {
+      "question": "What is the range of direct job estimates for single onshore wind projects from 2015-2019 according to case studies and econometric models?",
+      "scope": "property"
+    },
+    {
+      "question": "Which countries were the top EU producers of wind turbines in terms of value in 2023, and what percentage did they hold respectively?",
+      "scope": "instance"
+    },
+    {
+      "question": "What is the cumulative energy demand (CED) for onshore wind turbines from specific case studies and OEM data in 2011 compared to 2022?",
+      "scope": "property"
+    },
+    {
+      "question": "How has the global market share of European original equipment manufacturers (OEMs) changed over the past decade, and what is their current ranking?",
+      "scope": "instance"
+    },
+    {
+      "question": "What was the change in EU production value per wind turbine piece from 2023 compared to previous years?",
+      "scope": "property"
+    },
+    {
+      "question": "How does the Prodcom code 28112400 distinguish between onshore and offshore wind turbines?",
+      "scope": "class"
+    },
+    {
+      "question": "What is the estimated direct person-years (FTE/MW) for offshore wind based on different case studies and modelling approaches in 2022?",
+      "scope": "instance"
+    },
+    {
+      "question": "How did EU imports of wind generating sets change from 2023 compared to the previous year?",
+      "scope": "property"
+    }
+  ]
+}

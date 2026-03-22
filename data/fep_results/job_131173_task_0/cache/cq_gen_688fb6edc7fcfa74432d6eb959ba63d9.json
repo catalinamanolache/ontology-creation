@@ -1,0 +1,44 @@
+{
+  "questions": [
+    {
+      "question": "What is the current TRL level for airborne wind energy systems?",
+      "scope": "property"
+    },
+    {
+      "question": "Which countries led in onshore wind capacity additions in 2023?",
+      "scope": "instance"
+    },
+    {
+      "question": "How much cumulative offshore wind capacity did China have at the end of 2023?",
+      "scope": "instance"
+    },
+    {
+      "question": "What are the main differences between vertical axis wind turbines and conventional horizontal axis wind turbines?",
+      "scope": "property"
+    },
+    {
+      "question": "Which European countries contributed to the record-breaking offshore wind capacity additions in 2023?",
+      "scope": "instance"
+    },
+    {
+      "question": "How much did EU onshore wind capacity increase from 2022 to 2023?",
+      "scope": "instance"
+    },
+    {
+      "question": "What is the current TRL level for floating offshore wind designs such as spar-buoy and semi-submersible?",
+      "scope": "property"
+    },
+    {
+      "question": "Which countries are leading in cumulative installed capacity of onshore wind by the end of 2023?",
+      "scope": "instance"
+    },
+    {
+      "question": "What percentage of total electricity generation was attributed to EU wind energy in 2023?",
+      "scope": "instance"
+    },
+    {
+      "question": "How much new floating offshore wind capacity did Spain contribute to the EU in 2023?",
+      "scope": "instance"
+    }
+  ]
+}

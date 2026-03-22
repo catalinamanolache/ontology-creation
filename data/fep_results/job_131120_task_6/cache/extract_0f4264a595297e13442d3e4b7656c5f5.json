@@ -1,0 +1,142 @@
+{
+  "reasoning_steps": [
+    "Identify amino acids and their properties from the text.",
+    "Match identified entities with existing IDs or create new ones if necessary."
+  ],
+  "entities": [
+    {
+      "id": "ex:methionine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Methionine"
+    },
+    {
+      "id": "ex:tryptophan",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Tryptophan"
+    },
+    {
+      "id": "ex:proline",
+      "class_uri": "ex:IminoAcid",
+      "evidence_span": "Proline"
+    },
+    {
+      "id": "ex:hydroxyproline",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Hydroxyproline"
+    },
+    {
+      "id": "ex:aspartic_acid",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Aspartic acid"
+    },
+    {
+      "id": "ex:glutamic_acid",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Glutamic acid"
+    },
+    {
+      "id": "ex:beta_hydroxy_glutamic_acid",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Beta-hydroxy glutamic acid"
+    },
+    {
+      "id": "ex:glutamine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Glutamine"
+    },
+    {
+      "id": "ex:ornithine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "L-ornithine"
+    },
+    {
+      "id": "ex:arginine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Arginine"
+    },
+    {
+      "id": "ex:lysine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Lysine"
+    },
+    {
+      "id": "ex:histidine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Histidine"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "ex:methionine",
+      "property_uri": "ex:classifiedAsSulphurContainingAminoAcid",
+      "target_id": "ex:SulphurContainingAminoAcid",
+      "evidence_span": "Methionine"
+    },
+    {
+      "source_id": "ex:tryptophan",
+      "property_uri": "ex:classifiedAsAromaticAminoAcid",
+      "target_id": "ex:AromaticAminoAcid",
+      "evidence_span": "Tryptophan"
+    },
+    {
+      "source_id": "ex:proline",
+      "property_uri": "ex:classifiedAsIminoAcid",
+      "target_id": "ex:IminoAcid",
+      "evidence_span": "Proline"
+    },
+    {
+      "source_id": "ex:hydroxyproline",
+      "property_uri": "ex:classifiedAsHydroxylGroupContainingAminoAcid",
+      "target_id": "ex:HydroxylGroupContainingAminoAcid",
+      "evidence_span": "Hydroxyproline"
+    },
+    {
+      "source_id": "ex:aspartic_acid",
+      "property_uri": "ex:classifiedAsPolarAminoAcidWithNegativeCharge",
+      "target_id": "ex:PolarAminoAcidWithNegativeCharge",
+      "evidence_span": "Aspartic acid"
+    },
+    {
+      "source_id": "ex:glutamic_acid",
+      "property_uri": "ex:classifiedAsPolarAminoAcidWithNegativeCharge",
+      "target_id": "ex:PolarAminoAcidWithNegativeCharge",
+      "evidence_span": "Glutamic acid"
+    },
+    {
+      "source_id": "ex:beta_hydroxy_glutamic_acid",
+      "property_uri": "ex:classifiedAsHydroxylGroupContainingAminoAcid",
+      "target_id": "ex:HydroxylGroupContainingAminoAcid",
+      "evidence_span": "Beta-hydroxy glutamic acid"
+    },
+    {
+      "source_id": "ex:glutamine",
+      "property_uri": "ex:classifiedAsPolarAminoAcidWithNoCharge",
+      "target_id": "ex:PolarAminoAcidWithNoCharge",
+      "evidence_span": "Glutamine"
+    },
+    {
+      "source_id": "ex:ornithine",
+      "property_uri": "ex:classifiedAsNonEssentialAminoAcid",
+      "target_id": "ex:NonEssentialAminoAcid",
+      "evidence_span": "L-ornithine"
+    },
+    {
+      "source_id": "ex:arginine",
+      "property_uri": "ex:classifiedAsBasicAminoAcid",
+      "target_id": "ex:BasicAminoAcid",
+      "evidence_span": "Arginine"
+    },
+    {
+      "source_id": "ex:lysine",
+      "property_uri": "ex:classifiedAsPurelyKetogenicAminoAcid",
+      "target_id": "ex:PurelyKetogenicAminoAcid",
+      "evidence_span": "Lysine"
+    },
+    {
+      "source_id": "ex:histidine",
+      "property_uri": "ex:classifiedAsBasicAminoAcid",
+      "target_id": "ex:BasicAminoAcid",
+      "evidence_span": "Histidine"
+    }
+  ]
+}

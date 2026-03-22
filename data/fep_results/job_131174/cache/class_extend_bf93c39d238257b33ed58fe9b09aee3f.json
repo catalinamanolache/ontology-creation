@@ -1,0 +1,58 @@
+{
+  "reasoning_steps": [
+    "AirborneWindEnergySystem and VerticalAxisWindTurbine are new concepts that need to be defined based on their descriptions.",
+    "The TRL levels for specific technologies like AWES, VAWTs, and floating offshore designs (spar-buoy, semi-submersible) require dedicated classes."
+  ],
+  "classes": [
+    {
+      "uri": "ex:AirborneWindEnergySystem",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": null,
+      "aristotelian_definition": "An Airborne Wind Energy System is a type of wind energy technology that uses autonomous kites or unmanned aircrafts to convert wind energy into electricity.",
+      "comment": "AWES are distinct from conventional wind turbines as they operate at higher altitudes using tethers."
+    },
+    {
+      "uri": "ex:VerticalAxisWindTurbine",
+      "bfo_parent": "bfo:MaterialEntity",
+      "subclass_of": null,
+      "aristotelian_definition": "A Vertical Axis Wind Turbine is a type of wind turbine that uses a vertical shaft around which the rotor turns.",
+      "comment": "VAWTs are less efficient than HAWTs but offer potential in hybrid applications and small-scale installations."
+    },
+    {
+      "uri": "ex:AirborneWindEnergySystemTRL",
+      "bfo_parent": "bfo:Quality",
+      "subclass_of": null,
+      "aristotelian_definition": "The Technology Readiness Level of an Airborne Wind Energy System indicates the maturity level of this technology.",
+      "comment": "AWES TRL ranges from 3 to 5."
+    },
+    {
+      "uri": "ex:SparBuoyDesignTRL",
+      "bfo_parent": "bfo:Quality",
+      "subclass_of": null,
+      "aristotelian_definition": "The Technology Readiness Level of a Spar Buoy Design indicates the maturity level of this floating offshore wind technology.",
+      "comment": "Spar buoy designs are at TRL 8-9."
+    },
+    {
+      "uri": "ex:SemiSubmersibleDesignTRL",
+      "bfo_parent": "bfo:Quality",
+      "subclass_of": null,
+      "aristotelian_definition": "The Technology Readiness Level of a Semi-Submersible Design indicates the maturity level of this floating offshore wind technology.",
+      "comment": "Semi-submersible designs are at TRL 8-9."
+    },
+    {
+      "uri": "ex:ConcreteBargeDesignTRL",
+      "bfo_parent": "bfo:Quality",
+      "subclass_of": null,
+      "aristotelian_definition": "The Technology Readiness Level of a Concrete Barge Design indicates the maturity level of this floating offshore wind technology.",
+      "comment": "Concrete barge designs are at TRL 7-8."
+    },
+    {
+      "uri": "ex:TensionLegPlatformDesignTRL",
+      "bfo_parent": "bfo:Quality",
+      "subclass_of": null,
+      "aristotelian_definition": "The Technology Readiness Level of a Tension Leg Platform Design indicates the maturity level of this floating offshore wind technology.",
+      "comment": "Tension leg platforms are at TRL 6."
+    }
+  ],
+  "canonical_terms": {}
+}

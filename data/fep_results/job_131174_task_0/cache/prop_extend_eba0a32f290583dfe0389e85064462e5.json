@@ -1,0 +1,20 @@
+{
+  "reasoning_steps": [
+    "The source text introduces new information about TRL levels for specific technologies and their current status.",
+    "New properties are needed to capture these relationships without duplicating existing ones."
+  ],
+  "properties": [
+    {
+      "uri": "ex:hasAWESTRL",
+      "domain": "ex:AirborneWindEnergySystem",
+      "range": "ex:TechnologyReadinessLevel",
+      "comment": "Describes the Technology Readiness Level of an Airborne Wind Energy System."
+    },
+    {
+      "uri": "ex:hasVAWTTRL",
+      "domain": "ex:VerticalAxisWindTurbine",
+      "range": "ex:TechnologyReadinessLevel",
+      "comment": "Describes the Technology Readiness Level of a Vertical Axis Wind Turbine."
+    }
+  ]
+}

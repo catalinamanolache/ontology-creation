@@ -1,0 +1,1646 @@
+@prefix ex: <http://example.org/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix bfo: <http://purl.obolibrary.org/obo/BFO_> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+# ===== OWL Classes (BFO-anchored) =====
+ex:AminoAcid rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    skos:definition "An AminoAcid is a MaterialEntity that contains a basic amino group, an acidic carboxyl group, and an organic R group." ;
+    rdfs:comment "An organic molecule that is a building block of proteins." .
+
+ex:Protein rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    skos:definition "A Protein is a MaterialEntity that is a polymer composed of amino acid residues." ;
+    rdfs:comment "A large biomolecule consisting of one or more long chains of amino acid residues." .
+
+ex:EssentialAminoAcid rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    rdfs:subClassOf ex:AminoAcid ;
+    skos:definition "An EssentialAminoAcid is an AminoAcid that cannot be synthesized by the body and must be obtained from the diet." ;
+    rdfs:comment "An amino acid that must be supplied through the diet because the body cannot synthesize it." .
+
+ex:NonEssentialAminoAcid rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    rdfs:subClassOf ex:AminoAcid ;
+    skos:definition "A NonEssentialAminoAcid is an AminoAcid that can be synthesized by the body." ;
+    rdfs:comment "An amino acid that the body can synthesize and does not need to be obtained from the diet." .
+
+ex:SemiEssentialAminoAcid rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    rdfs:subClassOf ex:AminoAcid ;
+    skos:definition "A SemiEssentialAminoAcid is an AminoAcid that can be synthesized by the body, but not in sufficient quantities." ;
+    rdfs:comment "An amino acid that the body can synthesize, but may require dietary intake under certain conditions." .
+
+ex:AminoGroup rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Quality ;
+    skos:definition "An AminoGroup is a Quality that is a basic functional group containing a nitrogen atom bonded to hydrogen atoms or organic substituents." ;
+    rdfs:comment "A functional group with the general formula -NH2, -NHR, or -NR2." .
+
+ex:CarboxylGroup rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Quality ;
+    skos:definition "A CarboxylGroup is a Quality that is an acidic functional group with the formula -COOH." ;
+    rdfs:comment "A functional group consisting of a carbon atom double-bonded to an oxygen atom and single-bonded to a hydroxyl group." .
+
+ex:RGroup rdf:type owl:Class ;
+    rdfs:subClassOf bfo:Quality ;
+    skos:definition "An RGroup is a Quality that is the unique side chain of an amino acid." ;
+    rdfs:comment "The variable side chain of an amino acid that determines its specific properties." .
+
+ex:BranchedChainAminoAcid rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    rdfs:subClassOf ex:AminoAcid ;
+    skos:definition "A BranchedChainAminoAcid is an AminoAcid that has branched aliphatic side chains." ;
+    rdfs:comment "Amino acids with branched aliphatic side chains, such as leucine, isoleucine, and valine." .
+
+ex:HydroxylGroupContainingAminoAcid rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    rdfs:subClassOf ex:AminoAcid ;
+    skos:definition "A HydroxylGroupContainingAminoAcid is an AminoAcid that possesses a hydroxyl group in its side chain." ;
+    rdfs:comment "Amino acids that contain a hydroxyl group in their R group, including serine, threonine, and tyrosine." .
+
+ex:SulfurContainingAminoAcid rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    rdfs:subClassOf ex:AminoAcid ;
+    skos:definition "A SulfurContainingAminoAcid is an AminoAcid that contains sulfur in its side chain." ;
+    rdfs:comment "Amino acids that have sulfur in their side chain, such as cysteine and methionine." .
+
+ex:AcidicAminoAcid rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    rdfs:subClassOf ex:AminoAcid ;
+    skos:definition "An AcidicAminoAcid is an AminoAcid that has a carboxyl group in its side chain, resulting in a negative charge at physiological pH." ;
+    rdfs:comment "Amino acids with a carboxyl group in their side chain, such as aspartic acid and glutamic acid." .
+
+ex:AmideAminoAcid rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    rdfs:subClassOf ex:AminoAcid ;
+    skos:definition "An AmideAminoAcid is an AminoAcid that is an amide derivative of an acidic amino acid." ;
+    rdfs:comment "Amide derivatives of acidic amino acids, such as asparagine and glutamine." .
+
+ex:BasicAminoAcid rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    rdfs:subClassOf ex:AminoAcid ;
+    skos:definition "A BasicAminoAcid is an AminoAcid that has a basic functional group (like guanidino or imidazole) in its side chain, resulting in a positive charge at physiological pH." ;
+    rdfs:comment "Amino acids with a basic functional group in their side chain, such as lysine, arginine, and histidine." .
+
+ex:AromaticAminoAcid rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    rdfs:subClassOf ex:AminoAcid ;
+    skos:definition "An AromaticAminoAcid is an AminoAcid that contains an aromatic ring in its side chain." ;
+    rdfs:comment "Amino acids containing an aromatic ring in their side chain, including phenylalanine, tyrosine, and tryptophan." .
+
+ex:IminoAcid rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    rdfs:subClassOf ex:AminoAcid ;
+    skos:definition "An IminoAcid is an AminoAcid where the amino group is part of a ring structure, specifically a pyrrolidine ring in the case of proline." ;
+    rdfs:comment "An unusual amino acid, like proline, where the nitrogen atom is part of a ring structure." .
+
+ex:HeterocyclicAminoAcid rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    rdfs:subClassOf ex:AminoAcid ;
+    skos:definition "A HeterocyclicAminoAcid is an AminoAcid that contains a heterocyclic ring in its side chain." ;
+    rdfs:comment "Amino acids containing a heterocyclic ring in their side chain, such as histidine, tryptophan, and proline." .
+
+ex:AlphaAminoAcid rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    rdfs:subClassOf ex:AminoAcid ;
+    skos:definition "An AlphaAminoAcid is an AminoAcid where the amino group is attached to the alpha carbon atom, which is adjacent to the carboxyl group." ;
+    rdfs:comment "Amino acids in which the amino group is attached to the alpha carbon." .
+
+ex:BetaAminoAcid rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    rdfs:subClassOf ex:AminoAcid ;
+    skos:definition "A BetaAminoAcid is an AminoAcid where the amino group is attached to the beta carbon atom, which is two carbons away from the carboxyl group." ;
+    rdfs:comment "Amino acids in which the amino group is attached to the beta carbon." .
+
+ex:GammaAminoAcid rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    rdfs:subClassOf ex:AminoAcid ;
+    skos:definition "A GammaAminoAcid is an AminoAcid where the amino group is attached to the gamma carbon atom, which is three carbons away from the carboxyl group." ;
+    rdfs:comment "Amino acids in which the amino group is attached to the gamma carbon." .
+
+ex:PurelyKetogenicAminoAcid rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    rdfs:subClassOf ex:AminoAcid ;
+    skos:definition "A PurelyKetogenicAminoAcid is an AminoAcid that can only be metabolized into ketone bodies." ;
+    rdfs:comment "Amino acids that can be converted solely into ketone bodies, such as leucine and lysine." .
+
+ex:KetogenicAndGlucogenicAminoAcid rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    rdfs:subClassOf ex:AminoAcid ;
+    skos:definition "A KetogenicAndGlucogenicAminoAcid is an AminoAcid that can be metabolized into both ketone bodies and glucose." ;
+    rdfs:comment "Amino acids that can be metabolized into both ketone bodies and glucose, such as lysine, isoleucine, phenylalanine, tyrosine, and tryptophan." .
+
+ex:PurelyGlucogenicAminoAcid rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    rdfs:subClassOf ex:AminoAcid ;
+    skos:definition "A PurelyGlucogenicAminoAcid is an AminoAcid that can only be metabolized into glucose or glycogen." ;
+    rdfs:comment "Amino acids that can be converted solely into glucose or glycogen." .
+
+ex:HydrophobicAminoAcid rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    rdfs:subClassOf ex:AminoAcid ;
+    skos:definition "A HydrophobicAminoAcid is an AminoAcid with a non-polar side chain that repels water." ;
+    rdfs:comment "Amino acids with non-polar side chains that are water-repelling, also known as non-polar amino acids." .
+
+ex:PolarUnchargedAminoAcid rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    rdfs:subClassOf ex:AminoAcid ;
+    skos:definition "A PolarUnchargedAminoAcid is an AminoAcid with a polar side chain that does not carry a net charge at physiological pH." ;
+    rdfs:comment "Amino acids with polar side chains that are uncharged at physiological pH, capable of hydrogen bonding." .
+
+ex:PolarPositivelyChargedAminoAcid rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    rdfs:subClassOf ex:AminoAcid ;
+    skos:definition "A PolarPositivelyChargedAminoAcid is an AminoAcid with a polar side chain that carries a net positive charge at physiological pH." ;
+    rdfs:comment "Amino acids with polar side chains that carry a net positive charge at physiological pH." .
+
+ex:PolarNegativelyChargedAminoAcid rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    rdfs:subClassOf ex:AminoAcid ;
+    skos:definition "A PolarNegativelyChargedAminoAcid is an AminoAcid with a polar side chain that carries a net negative charge at physiological pH." ;
+    rdfs:comment "Amino acids with polar side chains that carry a net negative charge at physiological pH." .
+
+ex:Glycine rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    rdfs:subClassOf ex:AminoAcid ;
+    skos:definition "A Glycine is an AminoAcid that is used to treat schizophrenia, sleep issues, BPH, metabolic syndrome, and inherited metabolic illnesses." ;
+    rdfs:comment "Glycine is an amino acid used in medicine for various conditions." .
+
+ex:Alanine rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    rdfs:subClassOf ex:AminoAcid ;
+    skos:definition "An Alanine is an AminoAcid that is utilized to boost immunity and provide the brain and central nervous system more energy." ;
+    rdfs:comment "Alanine is an amino acid that supports immunity and brain energy." .
+
+ex:Valine rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    rdfs:subClassOf ex:BranchedChainAminoAcid ;
+    skos:definition "A Valine is an AminoAcid that is involved in muscle synthesis and maintenance, stress management, child growth, and immune system support." ;
+    rdfs:comment "Valine is a branched-chain amino acid important for muscle and immunity." .
+
+ex:Leucine rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    rdfs:subClassOf ex:BranchedChainAminoAcid ;
+    skos:definition "A Leucine is an AminoAcid that increases physical performance, prevents muscle loss, and lowers blood glucose levels in type 2 diabetes." ;
+    rdfs:comment "Leucine is a branched-chain amino acid that enhances physical performance and regulates blood sugar." .
+
+ex:Isoleucine rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    rdfs:subClassOf ex:BranchedChainAminoAcid ;
+    skos:definition "An Isoleucine is an AminoAcid that is required for children's optimum growth and the maintenance of nitrogen balance in adults." ;
+    rdfs:comment "Isoleucine is a branched-chain amino acid crucial for growth and nitrogen balance." .
+
+ex:Norleucine rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    rdfs:subClassOf ex:AminoAcid ;
+    skos:definition "A Norleucine is an AminoAcid that is an artificial amino acid used to research protein structure and function." ;
+    rdfs:comment "Norleucine is a synthetic amino acid used in laboratory research." .
+
+ex:Phenylalanine rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    rdfs:subClassOf ex:AromaticAminoAcid ;
+    skos:definition "A Phenylalanine is an AminoAcid that is used to treat depression, Parkinson's illness, multiple sclerosis, pain, acupuncture anesthesia, and osteoarthritis." ;
+    rdfs:comment "Phenylalanine is an aromatic amino acid used in treating neurological and pain conditions." .
+
+ex:Tyrosine rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    rdfs:subClassOf ex:AromaticAminoAcid ;
+    skos:definition "A Tyrosine is an AminoAcid that is utilized in the production of thyroid hormone and helps with mental performance, alertness, and memory." ;
+    rdfs:comment "Tyrosine is an aromatic amino acid involved in thyroid hormone production and cognitive function." .
+
+ex:Serine rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    rdfs:subClassOf ex:HydroxylGroupContainingAminoAcid ;
+    skos:definition "A Serine is an AminoAcid that is particularly significant for the brain and central nervous system to function correctly." ;
+    rdfs:comment "Serine is an amino acid essential for proper brain and central nervous system function." .
+
+ex:Cysteine rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    rdfs:subClassOf ex:SulfurContainingAminoAcid ;
+    skos:definition "A Cysteine is an AminoAcid that is used in medicine to boost the efficiency of corticosteroid medications." ;
+    rdfs:comment "Cysteine is a sulfur-containing amino acid that enhances corticosteroid efficacy." .
+
+ex:Cystine rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    rdfs:subClassOf ex:SulfurContainingAminoAcid ;
+    skos:definition "A Cystine is an AminoAcid that can be used in the treatment of surgery and trauma." ;
+    rdfs:comment "Cystine is a sulfur-containing amino acid used in post-surgical and trauma treatment." .
+
+ex:Threonine rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    rdfs:subClassOf ex:AminoAcid ;
+    skos:definition "A Threonine is an AminoAcid that is used to treat spinal spasticity, multiple sclerosis, familial spastic paraparesis, and amyotrophic lateral sclerosis." ;
+    rdfs:comment "Threonine is an amino acid used in treating neurological conditions like spasticity and sclerosis." .
+
+ex:Methionine rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    rdfs:subClassOf ex:SulfurContainingAminoAcid ;
+    skos:definition "A Methionine is an AminoAcid that is used to prevent and cure depression, inflammation, liver illness, and muscle discomfort." ;
+    rdfs:comment "Methionine is a sulfur-containing amino acid used for depression, inflammation, and liver health." .
+
+ex:Tryptophan rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    rdfs:subClassOf ex:AminoAcid ;
+    skos:definition "A Tryptophan is an AminoAcid that has been used to treat anxiety and depression, and is used to treat migraines, headaches, and boost growth hormone production." ;
+    rdfs:comment "Tryptophan is an amino acid used for mood disorders, migraines, and growth hormone stimulation." .
+
+ex:Proline rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    rdfs:subClassOf ex:IminoAcid ;
+    skos:definition "A Proline is an AminoAcid that is used to improve joint and skin health, and may help with muscle development and injury healing." ;
+    rdfs:comment "Proline is an imino acid beneficial for joint, skin, and muscle health." .
+
+ex:Hydroxyproline rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    rdfs:subClassOf ex:IminoAcid ;
+    skos:definition "A Hydroxyproline is an AminoAcid that is required for the formation of collagen, the body's principal structural protein." ;
+    rdfs:comment "Hydroxyproline is an imino acid essential for collagen formation and structural integrity." .
+
+ex:AsparticAcid rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    rdfs:subClassOf ex:AcidicAminoAcid ;
+    skos:definition "An AsparticAcid is an AminoAcid that is occasionally used to treat stress and exhaustion, and aids in energy generation and RNA/DNA manufacturing." ;
+    rdfs:comment "Aspartic Acid is an acidic amino acid involved in energy production and nucleic acid synthesis." .
+
+ex:Asparagine rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    rdfs:subClassOf ex:AmideAminoAcid ;
+    skos:definition "An Asparagine is an AminoAcid that is necessary for brain development and function." ;
+    rdfs:comment "Asparagine is an amide amino acid crucial for brain development and function." .
+
+ex:GlutamicAcid rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    rdfs:subClassOf ex:AcidicAminoAcid ;
+    skos:definition "A GlutamicAcid is an AminoAcid that serves as a source of energy for the brain, improves brain clarity, mental alertness, and mood, and is used to treat Parkinson's, Fatigue, and Schizophrenia." ;
+    rdfs:comment "Glutamic Acid is an acidic amino acid vital for brain energy, cognition, and mood, used in treating neurological disorders." .
+
+ex:BetaHydroxyGlutamicAcid rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    rdfs:subClassOf ex:AminoAcid ;
+    skos:definition "A BetaHydroxyGlutamicAcid is an AminoAcid that is used to treat acne, photoaging, dry skin, psoriasis, and melasma, and has been studied for fibromyalgia, dental scaling, dry mouth, and urinary tract stones." ;
+    rdfs:comment "Beta-Hydroxy Glutamic Acid is an amino acid used for dermatological conditions and studied for other health issues." .
+
+ex:Glutamine rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    rdfs:subClassOf ex:AmideAminoAcid ;
+    skos:definition "A Glutamine is an AminoAcid that is used to keep blood sugar levels under control and consistent." ;
+    rdfs:comment "Glutamine is an amide amino acid that helps regulate blood sugar levels." .
+
+ex:Ornithine rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    rdfs:subClassOf ex:AminoAcid ;
+    skos:definition "An Ornithine is an AminoAcid that is primarily used in health supplements to support sports and performance, and to help with liver function and wound healing." ;
+    rdfs:comment "Ornithine is an amino acid used for sports performance, liver function, and wound healing." .
+
+ex:Arginine rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    rdfs:subClassOf ex:BasicAminoAcid ;
+    skos:definition "An Arginine is an AminoAcid that plays an important role in the treatment of cardiovascular disease due to its antiatherogenic, anti-ischemic, antiplatelet, and antithrombotic effects." ;
+    rdfs:comment "Arginine is a basic amino acid beneficial for cardiovascular health." .
+
+ex:Lysine rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    rdfs:subClassOf ex:AminoAcid ;
+    skos:definition "A Lysine is an AminoAcid that appears to minimize cold sores when taken orally or applied topically." ;
+    rdfs:comment "Lysine is an amino acid used to manage cold sores." .
+
+ex:Histidine rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    rdfs:subClassOf ex:BasicAminoAcid ;
+    skos:definition "A Histidine is an AminoAcid that is used to treat anemia and can reduce blood pressure, and is critical in baby feeding." ;
+    rdfs:comment "Histidine is a basic amino acid important for hemoglobin, blood pressure, and infant nutrition." .
+
+ex:DPenicillamine rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    rdfs:subClassOf ex:NonStandardAminoAcid ;
+    skos:definition "A D-Penicillamine is a NonStandardAminoAcid that is a metabolite of penicillin and is employed in the chelation therapy of Wilson’s disease." ;
+    rdfs:comment "D-Penicillamine is a non-standard amino acid used for Wilson's disease treatment." .
+
+ex:NAcetylcysteine rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    rdfs:subClassOf ex:NonStandardAminoAcid ;
+    skos:definition "A N-Acetylcysteine is a NonStandardAminoAcid that is used in cystic fibrosis and chronic renal insufficiency as an antioxidant." ;
+    rdfs:comment "N-Acetylcysteine is a non-standard amino acid used as an antioxidant for respiratory and kidney conditions." .
+
+ex:Gabapentin rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    rdfs:subClassOf ex:NonStandardAminoAcid ;
+    skos:definition "A Gabapentin is a NonStandardAminoAcid that is used as an anticonvulsant." ;
+    rdfs:comment "Gabapentin is a non-standard amino acid used as an anticonvulsant medication." .
+
+ex:NonStandardAminoAcid rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    rdfs:subClassOf ex:AminoAcid ;
+    skos:definition "A NonStandardAminoAcid is an AminoAcid that is not one of the 20 standard proteinogenic amino acids, and can be used as drugs." ;
+    rdfs:comment "Non-standard amino acids are amino acids not typically found in proteins, some of which have medicinal uses." .
+
+ex:AminoAceticAcid rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    rdfs:subClassOf ex:AminoAcid ;
+    skos:definition "An AminoAceticAcid is an AminoAcid that is the chemical name for Glycine." ;
+    rdfs:comment "AminoAceticAcid is the chemical name for Glycine." .
+
+ex:AlphaAminopropionicAcid rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    rdfs:subClassOf ex:AminoAcid ;
+    skos:definition "An AlphaAminopropionicAcid is an AminoAcid that is the chemical name for Alanine." ;
+    rdfs:comment "AlphaAminopropionicAcid is the chemical name for Alanine." .
+
+ex:AlphaAminoisovalericAcid rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    rdfs:subClassOf ex:AminoAcid ;
+    skos:definition "An AlphaAminoisovalericAcid is an AminoAcid that is the chemical name for Valine." ;
+    rdfs:comment "AlphaAminoisovalericAcid is the chemical name for Valine." .
+
+ex:AlphaAminoisocaproicAcid rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    rdfs:subClassOf ex:AminoAcid ;
+    skos:definition "An AlphaAminoisocaproicAcid is an AminoAcid that is the chemical name for Leucine." ;
+    rdfs:comment "AlphaAminoisocaproicAcid is the chemical name for Leucine." .
+
+ex:AlphaAminoBetaMethylNValericAcid rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    rdfs:subClassOf ex:AminoAcid ;
+    skos:definition "An AlphaAminoBetaMethylNValericAcid is an AminoAcid that is the chemical name for Isoleucine." ;
+    rdfs:comment "AlphaAminoBetaMethylNValericAcid is the chemical name for Isoleucine." .
+
+ex:AlphaAminoNCaproicAcid rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    rdfs:subClassOf ex:AminoAcid ;
+    skos:definition "An AlphaAminoNCaproicAcid is an AminoAcid that is the chemical name for Norleucine." ;
+    rdfs:comment "AlphaAminoNCaproicAcid is the chemical name for Norleucine." .
+
+ex:AlphaAminoBetaPhenylpropionicAcid rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    rdfs:subClassOf ex:AminoAcid ;
+    skos:definition "An AlphaAminoBetaPhenylpropionicAcid is an AminoAcid that is the chemical name for Phenylalanine." ;
+    rdfs:comment "AlphaAminoBetaPhenylpropionicAcid is the chemical name for Phenylalanine." .
+
+ex:AlphaAminoBetaPHydroxyphenylPropionicAcid rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    rdfs:subClassOf ex:AminoAcid ;
+    skos:definition "An AlphaAminoBetaPHydroxyphenylPropionicAcid is an AminoAcid that is the chemical name for Tyrosine." ;
+    rdfs:comment "AlphaAminoBetaPHydroxyphenylPropionicAcid is the chemical name for Tyrosine." .
+
+ex:AlphaAminoBetaHydroxypropionicAcid rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    rdfs:subClassOf ex:AminoAcid ;
+    skos:definition "An AlphaAminoBetaHydroxypropionicAcid is an AminoAcid that is the chemical name for Serine." ;
+    rdfs:comment "AlphaAminoBetaHydroxypropionicAcid is the chemical name for Serine." .
+
+ex:AlphaAminoBetaMercaptopropionicAcid rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    rdfs:subClassOf ex:AminoAcid ;
+    skos:definition "An AlphaAminoBetaMercaptopropionicAcid is an AminoAcid that is the chemical name for Cysteine." ;
+    rdfs:comment "AlphaAminoBetaMercaptopropionicAcid is the chemical name for Cysteine." .
+
+ex:AlphaAminoBetaHydroxyNButyricAcid rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    rdfs:subClassOf ex:AminoAcid ;
+    skos:definition "An AlphaAminoBetaHydroxyNButyricAcid is an AminoAcid that is the chemical name for Threonine." ;
+    rdfs:comment "AlphaAminoBetaHydroxyNButyricAcid is the chemical name for Threonine." .
+
+ex:AlphaAminoGammaMethylthioNButyricAcid rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    rdfs:subClassOf ex:AminoAcid ;
+    skos:definition "An AlphaAminoGammaMethylthioNButyricAcid is an AminoAcid that is the chemical name for Methionine." ;
+    rdfs:comment "AlphaAminoGammaMethylthioNButyricAcid is the chemical name for Methionine." .
+
+ex:AlphaAminoBetaIndolepropionicAcid rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    rdfs:subClassOf ex:AminoAcid ;
+    skos:definition "An AlphaAminoBetaIndolepropionicAcid is an AminoAcid that is the chemical name for Tryptophan." ;
+    rdfs:comment "AlphaAminoBetaIndolepropionicAcid is the chemical name for Tryptophan." .
+
+ex:PyrrolidineAlphaCarboxylicAcid rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    rdfs:subClassOf ex:IminoAcid ;
+    skos:definition "A PyrrolidineAlphaCarboxylicAcid is an AminoAcid that is the chemical name for Proline." ;
+    rdfs:comment "PyrrolidineAlphaCarboxylicAcid is the chemical name for Proline." .
+
+ex:GammaHydroxypyrrolidineAlphaCarboxylicAcid rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    rdfs:subClassOf ex:IminoAcid ;
+    skos:definition "A GammaHydroxypyrrolidineAlphaCarboxylicAcid is an AminoAcid that is the chemical name for Hydroxyproline." ;
+    rdfs:comment "GammaHydroxypyrrolidineAlphaCarboxylicAcid is the chemical name for Hydroxyproline." .
+
+ex:AlphaAminosuccinicAcid rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    rdfs:subClassOf ex:AminoAcid ;
+    skos:definition "An AlphaAminosuccinicAcid is an AminoAcid that is the chemical name for Aspartic Acid." ;
+    rdfs:comment "AlphaAminosuccinicAcid is the chemical name for Aspartic Acid." .
+
+ex:AlphaAminosuccinamicAcid rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    rdfs:subClassOf ex:AminoAcid ;
+    skos:definition "An AlphaAminosuccinamicAcid is an AminoAcid that is the chemical name for Asparagine." ;
+    rdfs:comment "AlphaAminosuccinamicAcid is the chemical name for Asparagine." .
+
+ex:AlphaAminoglutaricAcid rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    rdfs:subClassOf ex:AminoAcid ;
+    skos:definition "An AlphaAminoglutaricAcid is an AminoAcid that is the chemical name for Glutamic Acid." ;
+    rdfs:comment "AlphaAminoglutaricAcid is the chemical name for Glutamic Acid." .
+
+ex:AlphaAminoBetaHydroxyglutaricAcid rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    rdfs:subClassOf ex:AminoAcid ;
+    skos:definition "An AlphaAminoBetaHydroxyglutaricAcid is an AminoAcid that is the chemical name for Beta-Hydroxy Glutamic Acid." ;
+    rdfs:comment "AlphaAminoBetaHydroxyglutaricAcid is the chemical name for Beta-Hydroxy Glutamic Acid." .
+
+ex:AlphaAminoGlutamicAcid rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    rdfs:subClassOf ex:AminoAcid ;
+    skos:definition "An AlphaAminoGlutamicAcid is an AminoAcid that is the chemical name for Glutamine." ;
+    rdfs:comment "AlphaAminoGlutamicAcid is the chemical name for Glutamine." .
+
+ex:AlphaDeltaDiaminoNValericAcid rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    rdfs:subClassOf ex:AminoAcid ;
+    skos:definition "An AlphaDeltaDiaminoNValericAcid is an AminoAcid that is the chemical name for Ornithine." ;
+    rdfs:comment "AlphaDeltaDiaminoNValericAcid is the chemical name for Ornithine." .
+
+ex:AlphaAminoDeltaGuanidinoNValericAcid rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    rdfs:subClassOf ex:AminoAcid ;
+    skos:definition "An AlphaAminoDeltaGuanidinoNValericAcid is an AminoAcid that is the chemical name for Arginine." ;
+    rdfs:comment "AlphaAminoDeltaGuanidinoNValericAcid is the chemical name for Arginine." .
+
+ex:AlphaDiaminocaproicAcid rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    rdfs:subClassOf ex:AminoAcid ;
+    skos:definition "An AlphaDiaminocaproicAcid is an AminoAcid that is the chemical name for Lysine." ;
+    rdfs:comment "AlphaDiaminocaproicAcid is the chemical name for Lysine." .
+
+ex:AlphaAminoBetaImidazolepropionicAcid rdf:type owl:Class ;
+    rdfs:subClassOf bfo:MaterialEntity ;
+    rdfs:subClassOf ex:AminoAcid ;
+    skos:definition "An AlphaAminoBetaImidazolepropionicAcid is an AminoAcid that is the chemical name for Histidine." ;
+    rdfs:comment "AlphaAminoBetaImidazolepropionicAcid is the chemical name for Histidine." .
+
+# ===== Properties =====
+ex:hasBuildingBlock rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:Protein ;
+    rdfs:range ex:AminoAcid ;
+    rdfs:comment "Relates a protein to the amino acids that constitute it." .
+
+ex:hasFunctionalGroup rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range ex:AminoGroup ;
+    rdfs:comment "Relates an amino acid to its basic amino functional group." .
+
+ex:hasUniqueSideChain rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range ex:RGroup ;
+    rdfs:comment "Relates an amino acid to its unique organic R group or side chain." .
+
+ex:isIncorporatedInto rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range ex:Protein ;
+    rdfs:comment "Relates an amino acid that is incorporated into proteins." .
+
+ex:isSynthesizedByBody rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates whether an amino acid can be synthesized by the body." .
+
+ex:hasTaste rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Describes the taste characteristic of an amino acid." .
+
+ex:hasOpticalActivity rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates whether an amino acid exhibits optical activity." .
+
+ex:undergoesDecarboxylationTo rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Describes the product formed after decarboxylation of an amino acid." .
+
+ex:reactsWithNinhydrinToGive rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Describes the color produced when an amino acid reacts with Ninhydrin." .
+
+ex:isBranchedChainAminoAcid rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range ex:BranchedChainAminoAcid ;
+    rdfs:comment "Relates an amino acid to its classification as a branched-chain amino acid." .
+
+ex:isHydroxylGroupContainingAminoAcid rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range ex:HydroxylGroupContainingAminoAcid ;
+    rdfs:comment "Relates an amino acid to its classification as a hydroxyl group-containing amino acid." .
+
+ex:isSulfurContainingAminoAcid rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range ex:SulfurContainingAminoAcid ;
+    rdfs:comment "Relates an amino acid to its classification as a sulfur-containing amino acid." .
+
+ex:isAcidicAminoAcid rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range ex:AcidicAminoAcid ;
+    rdfs:comment "Relates an amino acid to its classification as an acidic amino acid." .
+
+ex:isAmideAminoAcid rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range ex:AmideAminoAcid ;
+    rdfs:comment "Relates an amino acid to its classification as an amide amino acid." .
+
+ex:isBasicAminoAcid rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range ex:BasicAminoAcid ;
+    rdfs:comment "Relates an amino acid to its classification as a basic amino acid." .
+
+ex:isAromaticAminoAcid rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range ex:AromaticAminoAcid ;
+    rdfs:comment "Relates an amino acid to its classification as an aromatic amino acid." .
+
+ex:isIminoAcid rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range ex:IminoAcid ;
+    rdfs:comment "Relates an amino acid to its classification as an imino acid." .
+
+ex:isHeterocyclicAminoAcid rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range ex:HeterocyclicAminoAcid ;
+    rdfs:comment "Relates an amino acid to its classification as a heterocyclic amino acid." .
+
+ex:isAlphaAminoAcid rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range ex:AlphaAminoAcid ;
+    rdfs:comment "Relates an amino acid to its classification as an alpha amino acid." .
+
+ex:isBetaAminoAcid rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range ex:BetaAminoAcid ;
+    rdfs:comment "Relates an amino acid to its classification as a beta amino acid." .
+
+ex:isGammaAminoAcid rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range ex:GammaAminoAcid ;
+    rdfs:comment "Relates an amino acid to its classification as a gamma amino acid." .
+
+ex:isPurelyKetogenicAminoAcid rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range ex:PurelyKetogenicAminoAcid ;
+    rdfs:comment "Relates an amino acid to its classification as purely ketogenic." .
+
+ex:isKetogenicAndGlucogenicAminoAcid rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range ex:KetogenicAndGlucogenicAminoAcid ;
+    rdfs:comment "Relates an amino acid to its classification as both ketogenic and glucogenic." .
+
+ex:isPurelyGlucogenicAminoAcid rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range ex:PurelyGlucogenicAminoAcid ;
+    rdfs:comment "Relates an amino acid to its classification as purely glucogenic." .
+
+ex:isHydrophobicAminoAcid rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range ex:HydrophobicAminoAcid ;
+    rdfs:comment "Relates an amino acid to its classification as hydrophobic." .
+
+ex:isPolarUnchargedAminoAcid rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range ex:PolarUnchargedAminoAcid ;
+    rdfs:comment "Relates an amino acid to its classification as polar and uncharged." .
+
+ex:isPolarPositivelyChargedAminoAcid rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range ex:PolarPositivelyChargedAminoAcid ;
+    rdfs:comment "Relates an amino acid to its classification as polar and positively charged." .
+
+ex:isPolarNegativelyChargedAminoAcid rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range ex:PolarNegativelyChargedAminoAcid ;
+    rdfs:comment "Relates an amino acid to its classification as polar and negatively charged." .
+
+ex:isEssentialAminoAcid rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range ex:EssentialAminoAcid ;
+    rdfs:comment "Relates an amino acid to its classification as essential." .
+
+ex:isNonEssentialAminoAcid rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range ex:NonEssentialAminoAcid ;
+    rdfs:comment "Relates an amino acid to its classification as non-essential." .
+
+ex:isSemiEssentialAminoAcid rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range ex:SemiEssentialAminoAcid ;
+    rdfs:comment "Relates an amino acid to its classification as semi-essential." .
+
+ex:isProducedByNucleophilicAdditionOfAmmoniaToAldehyde rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Indicates if an amino acid is produced by the nucleophilic addition of ammonia to an aldehyde." .
+
+ex:isProducedByRemovingWaterAndAddingCyanideToAldimine rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:AlphaAminoAcid ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Indicates if an alpha amino acid is produced by removing water and then adding cyanide to aldimine." .
+
+ex:isProducedByTreatingAlphaHalogenatedAcidEsterWithPotassiumPhthalimideAndHydrolysis rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Indicates if an amino acid is produced via the Gabriel Phthalimide Synthesis." .
+
+ex:isUsedToTreatSchizophrenia rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates if an amino acid is used to treat schizophrenia." .
+
+ex:isUsedToTreatStroke rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates if an amino acid is used to treat stroke." .
+
+ex:isUsedToTreatSleepIssues rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates if an amino acid is used to treat sleep issues." .
+
+ex:isUsedToTreatBPH rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates if an amino acid is used to treat Benign Prostatic Hyperplasia (BPH)." .
+
+ex:isUsedToTreatMetabolicSyndrome rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates if an amino acid is used to treat metabolic syndrome." .
+
+ex:isUsedToTreatInheritedMetabolicIllnesses rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates if an amino acid is used to treat inherited metabolic illnesses." .
+
+ex:isUsedToBoostImmunity rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates if an amino acid is used to boost immunity." .
+
+ex:isUsedToProvideEnergyToBrainAndCentralNervousSystem rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates if an amino acid is used to provide energy to the brain and central nervous system." .
+
+ex:increasesPhysicalPerformance rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates if an amino acid increases physical performance." .
+
+ex:preventsMuscleLoss rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates if an amino acid prevents muscle loss." .
+
+ex:lowersBloodGlucoseInType2Diabetes rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates if an amino acid lowers blood glucose levels in type 2 diabetes." .
+
+ex:isRequiredForChildrensOptimumGrowth rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates if an amino acid is required for children's optimum growth." .
+
+ex:maintainsNitrogenBalanceInAdults rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates if an amino acid is required for maintaining nitrogen balance in adults." .
+
+ex:isUsedToResearchProteinStructureAndFunction rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates if an amino acid is used to research protein structure and function." .
+
+ex:isUsedToTreatDepression rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates if an amino acid is used to treat depression." .
+
+ex:isUsedToTreatParkinsonsDisease rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates if an amino acid is used to treat Parkinson's disease." .
+
+ex:isUsedToTreatMultipleSclerosis rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates if an amino acid is used to treat multiple sclerosis." .
+
+ex:isUsedToTreatPain rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates if an amino acid is used to treat pain." .
+
+ex:isUsedToTreatAcupunctureAnesthesia rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates if an amino acid is used to treat acupuncture anesthesia." .
+
+ex:isUsedToTreatOsteoarthritis rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates if an amino acid is used to treat osteoarthritis." .
+
+ex:isUtilizedInProductionOfThyroidHormone rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates if an amino acid is utilized in the production of thyroid hormone." .
+
+ex:improvesMentalPerformance rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates if an amino acid improves mental performance." .
+
+ex:improvesAlertness rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates if an amino acid improves alertness." .
+
+ex:improvesMemory rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates if an amino acid improves memory." .
+
+ex:isSignificantForBrainAndCentralNervousSystemFunction rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates if an amino acid is significant for the brain and central nervous system to function correctly." .
+
+ex:isUsedToBoostEfficiencyOfCorticosteroidMedications rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates if an amino acid is used to boost the efficiency of corticosteroid medications." .
+
+ex:isUsedInTreatmentOfSurgeryAndTrauma rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates if an amino acid is used in the treatment of surgery and trauma." .
+
+ex:isUsedToTreatSpinalSpasticity rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates if an amino acid is used to treat spinal spasticity." .
+
+ex:isUsedToTreatFamilialSpasticParaparesis rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates if an amino acid is used to treat familial spastic paraparesis." .
+
+ex:isUsedToTreatAmyotrophicLateralSclerosis rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates if an amino acid is used to treat amyotrophic lateral sclerosis." .
+
+ex:isUsedToPreventAndCureInflammation rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates if an amino acid is used to prevent and cure inflammation." .
+
+ex:isUsedToPreventAndCureLiverIllness rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates if an amino acid is used to prevent and cure liver illness." .
+
+ex:isUsedToPreventAndCureMuscleDiscomfort rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates if an amino acid is used to prevent and cure muscle discomfort." .
+
+ex:isUsedToTreatAnxiety rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates if an amino acid is used to treat anxiety." .
+
+ex:isUsedToBoostGrowthHormoneProduction rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates if an amino acid is used to boost growth hormone production." .
+
+ex:improvesJointHealth rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates if an amino acid improves joint health." .
+
+ex:improvesSkinHealth rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates if an amino acid improves skin health." .
+
+ex:helpsWithMuscleDevelopment rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates if an amino acid helps with muscle development." .
+
+ex:helpsWithInjuryHealing rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates if an amino acid helps with injury healing." .
+
+ex:isRequiredForTheFormationOfCollagen rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates if an amino acid is required for the formation of collagen." .
+
+ex:isUsedToTreatStress rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates if an amino acid is used to treat stress." .
+
+ex:isUsedToTreatExhaustion rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates if an amino acid is used to treat exhaustion." .
+
+ex:aidsInEnergyGenerationFromCarbohydrates rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates if an amino acid aids in energy generation from carbohydrates." .
+
+ex:aidsInManufacturingOfRNAAndDNA rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates if an amino acid aids in the manufacturing of RNA and DNA." .
+
+ex:isNecessaryForBrainDevelopmentAndFunction rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates if an amino acid is necessary for brain development and function." .
+
+ex:servesAsEnergySourceForTheBrain rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates if an amino acid serves as a source of energy for the brain." .
+
+ex:improvesBrainClarity rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates if an amino acid improves brain clarity." .
+
+ex:improvesMood rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates if an amino acid improves mood." .
+
+ex:isUsedToTreatAcne rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates if an amino acid is used to treat acne." .
+
+ex:isUsedToTreatPhotoaging rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates if an amino acid is used to treat photoaging." .
+
+ex:isUsedToTreatDrySkin rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates if an amino acid is used to treat dry skin." .
+
+ex:isUsedToTreatPsoriasis rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates if an amino acid is used to treat psoriasis." .
+
+ex:isUsedToTreatMelasma rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates if an amino acid is used to treat melasma." .
+
+ex:hasBeenStudiedForFibromyalgia rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates if an amino acid has been studied for fibromyalgia." .
+
+ex:hasBeenStudiedForDentalScaling rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates if an amino acid has been studied for dental scaling." .
+
+ex:hasBeenStudiedForDryMouth rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates if an amino acid has been studied for dry mouth." .
+
+ex:isUsedForPreventionAndTreatmentOfUrinaryTractStones rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates if an amino acid is used for the prevention and treatment of urinary tract stones." .
+
+ex:isUsedToKeepBloodSugarLevelsUnderControlAndConsistent rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates if an amino acid is used to keep blood sugar levels under control and consistent." .
+
+ex:isUsedInHealthSupplementsToSupportSportsAndPerformance rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates if an amino acid is used in health supplements to support sports and performance." .
+
+ex:isUtilizedToHelpWithLiverFunction rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates if an amino acid is utilized to help with liver function." .
+
+ex:isUtilizedToHelpWithWoundHealing rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates if an amino acid is utilized to help with wound healing." .
+
+ex:hasAntiatherogenicEffects rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates if an amino acid has antiatherogenic effects." .
+
+ex:hasAntiischemicEffects rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates if an amino acid has anti-ischemic effects." .
+
+ex:hasAntiplateletEffects rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates if an amino acid has antiplatelet effects." .
+
+ex:hasAntithromboticEffects rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates if an amino acid has antithrombotic effects." .
+
+ex:appearsToMinimizeColdSores rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates if an amino acid appears to minimize cold sores." .
+
+ex:isCriticalInBabyFeeding rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates if an amino acid is critical in baby feeding." .
+
+ex:isEmployedInChelationTherapyOfWilsonsDisease rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:NonStandardAminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates if a non-standard amino acid is employed in the chelation therapy of Wilson's disease." .
+
+ex:functionsAsAntioxidantInCysticFibrosisAndChronicRenalInsufficiency rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:NonStandardAminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates if a non-standard amino acid functions as an antioxidant in cystic fibrosis and chronic renal insufficiency." .
+
+ex:isUsedAsAnticonvulsant rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:NonStandardAminoAcid ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates if a non-standard amino acid is used as an anticonvulsant." .
+
+ex:hasChemicalName rdf:type owl:DatatypeProperty ;
+    rdfs:domain ex:AminoAcid ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Relates an amino acid to its chemical name." .
+
+# ===== Instances =====
+ex:protein rdf:type ex:Protein ;
+    rdfs:label "protein" .
+
+ex:amino_acids rdf:type ex:AminoAcid ;
+    rdfs:label "amino_acids" .
+
+ex:amino_group rdf:type ex:AminoGroup ;
+    rdfs:label "amino_group" .
+
+ex:carboxyl_group rdf:type ex:CarboxylGroup ;
+    rdfs:label "carboxyl_group" .
+
+ex:alpha_carbon rdf:type ex:AminoAcid ;
+    rdfs:label "alpha_carbon" .
+
+ex:r_group rdf:type ex:RGroup ;
+    rdfs:label "r_group" .
+
+ex:hydrogen_atom rdf:type ex:AminoAcid ;
+    rdfs:label "hydrogen_atom" .
+
+ex:glycine_taste rdf:type ex:Glycine ;
+    rdfs:label "glycine_taste" .
+
+ex:alanine_taste rdf:type ex:Alanine ;
+    rdfs:label "alanine_taste" .
+
+ex:valine_taste rdf:type ex:Valine ;
+    rdfs:label "valine_taste" .
+
+ex:leucine_taste rdf:type ex:Leucine ;
+    rdfs:label "leucine_taste" .
+
+ex:arginine_taste rdf:type ex:Arginine ;
+    rdfs:label "arginine_taste" .
+
+ex:glycine_optical_properties rdf:type ex:Glycine ;
+    rdfs:label "glycine_optical_properties" .
+
+ex:zwitterion rdf:type ex:AminoAcid ;
+    rdfs:label "zwitterion" .
+
+ex:glycine_optical_activity rdf:type ex:Glycine ;
+    rdfs:label "glycine_optical_activity" .
+
+ex:glycine_asymmetric_carbon rdf:type ex:Glycine ;
+    rdfs:label "glycine_asymmetric_carbon" .
+
+ex:histidine rdf:type ex:Histidine ;
+    rdfs:label "histidine" .
+
+ex:tyrosine rdf:type ex:Tyrosine ;
+    rdfs:label "tyrosine" .
+
+ex:tryptophan rdf:type ex:Tryptophan ;
+    rdfs:label "tryptophan" .
+
+ex:aspartic_acid rdf:type ex:AsparticAcid ;
+    rdfs:label "aspartic_acid" .
+
+ex:glutamic_acid rdf:type ex:GlutamicAcid ;
+    rdfs:label "glutamic_acid" .
+
+ex:isoleucine rdf:type ex:Isoleucine ;
+    rdfs:label "isoleucine" .
+
+ex:threonine rdf:type ex:Threonine ;
+    rdfs:label "threonine" .
+
+ex:methionine rdf:type ex:Methionine ;
+    rdfs:label "methionine" .
+
+ex:phenylalanine rdf:type ex:Phenylalanine ;
+    rdfs:label "phenylalanine" .
+
+ex:lysine rdf:type ex:Lysine ;
+    rdfs:label "lysine" .
+
+ex:histamine rdf:type ex:AminoAcid ;
+    rdfs:label "histamine" .
+
+ex:tyramine rdf:type ex:AminoAcid ;
+    rdfs:label "tyramine" .
+
+ex:tryptamine rdf:type ex:AminoAcid ;
+    rdfs:label "tryptamine" .
+
+ex:asparagine rdf:type ex:Asparagine ;
+    rdfs:label "asparagine" .
+
+ex:glutamine rdf:type ex:Glutamine ;
+    rdfs:label "glutamine" .
+
+ex:arginine_non_essential rdf:type ex:NonEssentialAminoAcid ;
+    rdfs:label "arginine_non_essential" .
+
+ex:cystine_non_essential rdf:type ex:NonEssentialAminoAcid ;
+    rdfs:label "cystine_non_essential" .
+
+ex:glycine_non_essential rdf:type ex:NonEssentialAminoAcid ;
+    rdfs:label "glycine_non_essential" .
+
+ex:proline rdf:type ex:NonEssentialAminoAcid ;
+    rdfs:label "proline" .
+
+ex:serine rdf:type ex:NonEssentialAminoAcid ;
+    rdfs:label "serine" .
+
+ex:glycine_aliphatic rdf:type ex:AminoAcid ;
+    rdfs:label "glycine_aliphatic" .
+
+ex:alanine_aliphatic rdf:type ex:AminoAcid ;
+    rdfs:label "alanine_aliphatic" .
+
+ex:valine_aliphatic rdf:type ex:AminoAcid ;
+    rdfs:label "valine_aliphatic" .
+
+ex:leucine_aliphatic rdf:type ex:AminoAcid ;
+    rdfs:label "leucine_aliphatic" .
+
+ex:cysteine_sulfur rdf:type ex:AminoAcid ;
+    rdfs:label "cysteine_sulfur" .
+
+ex:arginine_basic rdf:type ex:AminoAcid ;
+    rdfs:label "arginine_basic" .
+
+ex:aspatic_acid rdf:type ex:AminoAcid ;
+    rdfs:label "aspatic_acid" .
+
+ex:imino_acids rdf:type ex:IminoAcid ;
+    rdfs:label "imino_acids" .
+
+ex:guanidino_group rdf:type ex:AminoGroup ;
+    rdfs:label "guanidino_group" .
+
+ex:imidazole_ring rdf:type ex:AminoGroup ;
+    rdfs:label "imidazole_ring" .
+
+ex:indole_ring rdf:type ex:RGroup ;
+    rdfs:label "indole_ring" .
+
+ex:pyrrolidine_ring rdf:type ex:RGroup ;
+    rdfs:label "pyrrolidine_ring" .
+
+ex:imino_group rdf:type ex:AminoGroup ;
+    rdfs:label "imino_group" .
+
+ex:gaba rdf:type ex:GammaAminoAcid ;
+    rdfs:label "gaba" .
+
+ex:pvtlvphly_mnemonic rdf:type ex:EssentialAminoAcid ;
+    rdfs:label "pvtlvphly_mnemonic" .
+
+ex:aldehyde rdf:type ex:AminoAcid ;
+    rdfs:label "aldehyde" .
+
+ex:norleucine rdf:type ex:Norleucine ;
+    rdfs:label "norleucine" .
+
+ex:depression_ailment rdf:type ex:AminoAcid ;
+    rdfs:label "depression_ailment" .
+
+ex:inflammation_ailment rdf:type ex:AminoAcid ;
+    rdfs:label "inflammation_ailment" .
+
+ex:liver_illness_ailment rdf:type ex:AminoAcid ;
+    rdfs:label "liver_illness_ailment" .
+
+ex:muscle_discomfort_ailment rdf:type ex:AminoAcid ;
+    rdfs:label "muscle_discomfort_ailment" .
+
+ex:diiodothyronine rdf:type ex:AminoAcid ;
+    rdfs:label "diiodothyronine" .
+
+ex:weight_reduction_use rdf:type ex:AminoAcid ;
+    rdfs:label "weight_reduction_use" .
+
+ex:cholesterol_reduction_use rdf:type ex:AminoAcid ;
+    rdfs:label "cholesterol_reduction_use" .
+
+ex:muscle_development_use rdf:type ex:AminoAcid ;
+    rdfs:label "muscle_development_use" .
+
+ex:levothyroxine rdf:type ex:AminoAcid ;
+    rdfs:label "levothyroxine" .
+
+ex:thyroid_underactivity rdf:type ex:AminoAcid ;
+    rdfs:label "thyroid_underactivity" .
+
+ex:anxiety_treatment rdf:type ex:AminoAcid ;
+    rdfs:label "anxiety_treatment" .
+
+ex:depression_treatment rdf:type ex:AminoAcid ;
+    rdfs:label "depression_treatment" .
+
+ex:migraines_treatment rdf:type ex:AminoAcid ;
+    rdfs:label "migraines_treatment" .
+
+ex:headaches_treatment rdf:type ex:AminoAcid ;
+    rdfs:label "headaches_treatment" .
+
+ex:growth_hormone_production_boost rdf:type ex:AminoAcid ;
+    rdfs:label "growth_hormone_production_boost" .
+
+ex:joint_health_improvement rdf:type ex:AminoAcid ;
+    rdfs:label "joint_health_improvement" .
+
+ex:skin_health_improvement rdf:type ex:AminoAcid ;
+    rdfs:label "skin_health_improvement" .
+
+ex:muscle_development_help rdf:type ex:AminoAcid ;
+    rdfs:label "muscle_development_help" .
+
+ex:injury_healing_help rdf:type ex:AminoAcid ;
+    rdfs:label "injury_healing_help" .
+
+ex:collagen_formation_requirement rdf:type ex:AminoAcid ;
+    rdfs:label "collagen_formation_requirement" .
+
+ex:stress_treatment rdf:type ex:AminoAcid ;
+    rdfs:label "stress_treatment" .
+
+ex:exhaustion_treatment rdf:type ex:AminoAcid ;
+    rdfs:label "exhaustion_treatment" .
+
+ex:energy_generation_from_carbohydrates rdf:type ex:AminoAcid ;
+    rdfs:label "energy_generation_from_carbohydrates" .
+
+ex:rna_dna_manufacturing rdf:type ex:AminoAcid ;
+    rdfs:label "rna_dna_manufacturing" .
+
+ex:brain_development_function_necessity rdf:type ex:AminoAcid ;
+    rdfs:label "brain_development_function_necessity" .
+
+ex:energy_source_for_brain rdf:type ex:AminoAcid ;
+    rdfs:label "energy_source_for_brain" .
+
+ex:brain_clarity_improvement rdf:type ex:AminoAcid ;
+    rdfs:label "brain_clarity_improvement" .
+
+ex:mental_alertness_improvement rdf:type ex:AminoAcid ;
+    rdfs:label "mental_alertness_improvement" .
+
+ex:mood_improvement rdf:type ex:AminoAcid ;
+    rdfs:label "mood_improvement" .
+
+ex:parkinsons_treatment rdf:type ex:AminoAcid ;
+    rdfs:label "parkinsons_treatment" .
+
+ex:fatigue_treatment rdf:type ex:AminoAcid ;
+    rdfs:label "fatigue_treatment" .
+
+ex:schizophrenia_treatment rdf:type ex:AminoAcid ;
+    rdfs:label "schizophrenia_treatment" .
+
+ex:acne_treatment rdf:type ex:AminoAcid ;
+    rdfs:label "acne_treatment" .
+
+ex:photoaging_treatment rdf:type ex:AminoAcid ;
+    rdfs:label "photoaging_treatment" .
+
+ex:dry_skin_treatment rdf:type ex:AminoAcid ;
+    rdfs:label "dry_skin_treatment" .
+
+ex:psoriasis_treatment rdf:type ex:AminoAcid ;
+    rdfs:label "psoriasis_treatment" .
+
+ex:melasma_treatment rdf:type ex:AminoAcid ;
+    rdfs:label "melasma_treatment" .
+
+ex:fibromyalgia_study rdf:type ex:AminoAcid ;
+    rdfs:label "fibromyalgia_study" .
+
+ex:dental_scaling_study rdf:type ex:AminoAcid ;
+    rdfs:label "dental_scaling_study" .
+
+ex:dry_mouth_study rdf:type ex:AminoAcid ;
+    rdfs:label "dry_mouth_study" .
+
+ex:urinary_tract_stones_prevention_treatment rdf:type ex:AminoAcid ;
+    rdfs:label "urinary_tract_stones_prevention_treatment" .
+
+ex:blood_sugar_control_consistency rdf:type ex:AminoAcid ;
+    rdfs:label "blood_sugar_control_consistency" .
+
+ex:ornithine rdf:type ex:Ornithine ;
+    rdfs:label "ornithine" .
+
+ex:sports_performance_support rdf:type ex:AminoAcid ;
+    rdfs:label "sports_performance_support" .
+
+ex:liver_function_help rdf:type ex:AminoAcid ;
+    rdfs:label "liver_function_help" .
+
+ex:wound_healing_help rdf:type ex:AminoAcid ;
+    rdfs:label "wound_healing_help" .
+
+ex:l_arginine rdf:type ex:AminoAcid ;
+    rdfs:label "l_arginine" .
+
+ex:antiatherogenic_effects rdf:type ex:AminoAcid ;
+    rdfs:label "antiatherogenic_effects" .
+
+ex:anti_ischemic_effects rdf:type ex:AminoAcid ;
+    rdfs:label "anti_ischemic_effects" .
+
+ex:antiplatelet_effects rdf:type ex:AminoAcid ;
+    rdfs:label "antiplatelet_effects" .
+
+ex:antithrombotic_effects rdf:type ex:AminoAcid ;
+    rdfs:label "antithrombotic_effects" .
+
+ex:cardiovascular_disease_treatment rdf:type ex:AminoAcid ;
+    rdfs:label "cardiovascular_disease_treatment" .
+
+ex:cold_sores_minimization rdf:type ex:AminoAcid ;
+    rdfs:label "cold_sores_minimization" .
+
+ex:hemoglobin rdf:type ex:Protein ;
+    rdfs:label "hemoglobin" .
+
+ex:anemia_treatment rdf:type ex:AminoAcid ;
+    rdfs:label "anemia_treatment" .
+
+ex:blood_pressure_reduction rdf:type ex:AminoAcid ;
+    rdfs:label "blood_pressure_reduction" .
+
+ex:baby_feeding_criticality rdf:type ex:AminoAcid ;
+    rdfs:label "baby_feeding_criticality" .
+
+ex:d_penicillamine rdf:type ex:DPenicillamine ;
+    rdfs:label "d_penicillamine" .
+
+ex:wilsons_disease rdf:type ex:AminoAcid ;
+    rdfs:label "wilsons_disease" .
+
+ex:n_acetylcysteine rdf:type ex:NAcetylcysteine ;
+    rdfs:label "n_acetylcysteine" .
+
+ex:cystic_fibrosis rdf:type ex:AminoAcid ;
+    rdfs:label "cystic_fibrosis" .
+
+ex:chronic_renal_insufficiency rdf:type ex:AminoAcid ;
+    rdfs:label "chronic_renal_insufficiency" .
+
+ex:antioxidant rdf:type ex:AminoAcid ;
+    rdfs:label "antioxidant" .
+
+ex:anticonvulsant rdf:type ex:AminoAcid ;
+    rdfs:label "anticonvulsant" .
+
+# ===== Relations =====
+ex:protein ex:hasBuildingBlock ex:amino_acids .
+ex:amino_acids ex:hasFunctionalGroup ex:amino_group .
+ex:amino_acids ex:hasFunctionalGroup ex:carboxyl_group .
+ex:amino_acids ex:isEssentialAminoAcid ex:amino_acids .
+ex:amino_acids ex:isNonEssentialAminoAcid ex:amino_acids .
+ex:amino_acids ex:isSemiEssentialAminoAcid ex:amino_acids .
+ex:amino_acids ex:isAlphaAminoAcid ex:alpha_carbon .
+ex:alpha_carbon ex:hasUniqueSideChain ex:r_group .
+ex:alpha_carbon ex:hasFunctionalGroup ex:hydrogen_atom .
+ex:amino_acids ex:isAlphaAminoAcid ex:amino_acids .
+ex:amino_acids ex:isBetaAminoAcid ex:amino_acids .
+ex:amino_acids ex:isGammaAminoAcid ex:amino_acids .
+ex:amino_acids ex:isGammaAminoAcid ex:amino_acids .
+ex:glycine_taste ex:hasTaste ex:sweet .
+ex:alanine_taste ex:hasTaste ex:sweet .
+ex:valine_taste ex:hasTaste ex:sweet .
+ex:leucine_taste ex:hasTaste ex:tasteless .
+ex:arginine_taste ex:hasTaste ex:Bitter .
+ex:leucine_taste ex:hasTaste ex:Bitter .
+ex:glycine_optical_properties ex:hasOpticalActivity ex:false .
+ex:alpha_carbon ex:hasOpticalActivity ex:true .
+ex:zwitterion ex:isAlphaAminoAcid ex:true .
+ex:glycine_optical_activity ex:hasOpticalActivity ex:false .
+ex:amino_acids ex:isAlphaAminoAcid ex:true .
+ex:glycine_asymmetric_carbon ex:hasOpticalActivity ex:false .
+ex:histidine ex:undergoesDecarboxylationTo ex:histamine .
+ex:tyrosine ex:undergoesDecarboxylationTo ex:tyramine .
+ex:tryptophan ex:undergoesDecarboxylationTo ex:tryptamine .
+ex:valine_taste ex:isEssentialAminoAcid ex:amino_acids .
+ex:leucine_taste ex:isEssentialAminoAcid ex:amino_acids .
+ex:isoleucine ex:isEssentialAminoAcid ex:amino_acids .
+ex:threonine ex:isEssentialAminoAcid ex:amino_acids .
+ex:methionine ex:isEssentialAminoAcid ex:amino_acids .
+ex:phenylalanine ex:isEssentialAminoAcid ex:amino_acids .
+ex:tryptophan ex:isEssentialAminoAcid ex:amino_acids .
+ex:lysine ex:isEssentialAminoAcid ex:amino_acids .
+ex:glycine_taste ex:hasOpticalActivity ex:false .
+ex:valine_taste ex:isEssentialAminoAcid ex:EssentialAminoAcid .
+ex:leucine_taste ex:isEssentialAminoAcid ex:EssentialAminoAcid .
+ex:isoleucine ex:isEssentialAminoAcid ex:EssentialAminoAcid .
+ex:threonine ex:isEssentialAminoAcid ex:EssentialAminoAcid .
+ex:methionine ex:isEssentialAminoAcid ex:EssentialAminoAcid .
+ex:phenylalanine ex:isEssentialAminoAcid ex:EssentialAminoAcid .
+ex:tryptophan ex:isEssentialAminoAcid ex:EssentialAminoAcid .
+ex:lysine ex:isEssentialAminoAcid ex:EssentialAminoAcid .
+ex:arginine_taste ex:isSemiEssentialAminoAcid ex:SemiEssentialAminoAcid .
+ex:histidine ex:isSemiEssentialAminoAcid ex:SemiEssentialAminoAcid .
+ex:alanine_taste ex:isNonEssentialAminoAcid ex:NonEssentialAminoAcid .
+ex:arginine_non_essential ex:isNonEssentialAminoAcid ex:NonEssentialAminoAcid .
+ex:aspartic_acid ex:isNonEssentialAminoAcid ex:NonEssentialAminoAcid .
+ex:asparagine ex:isNonEssentialAminoAcid ex:NonEssentialAminoAcid .
+ex:cystine_non_essential ex:isNonEssentialAminoAcid ex:NonEssentialAminoAcid .
+ex:cystine_non_essential ex:isNonEssentialAminoAcid ex:NonEssentialAminoAcid .
+ex:glutamic_acid ex:isNonEssentialAminoAcid ex:NonEssentialAminoAcid .
+ex:glutamine ex:isNonEssentialAminoAcid ex:NonEssentialAminoAcid .
+ex:glycine_non_essential ex:isNonEssentialAminoAcid ex:NonEssentialAminoAcid .
+ex:histidine ex:isNonEssentialAminoAcid ex:NonEssentialAminoAcid .
+ex:proline ex:isNonEssentialAminoAcid ex:NonEssentialAminoAcid .
+ex:serine ex:isNonEssentialAminoAcid ex:NonEssentialAminoAcid .
+ex:glycine_aliphatic ex:isAlphaAminoAcid ex:AlphaAminoAcid .
+ex:alanine_aliphatic ex:isAlphaAminoAcid ex:AlphaAminoAcid .
+ex:valine_aliphatic ex:isAlphaAminoAcid ex:AlphaAminoAcid .
+ex:leucine_aliphatic ex:isAlphaAminoAcid ex:AlphaAminoAcid .
+ex:isoleucine ex:isAlphaAminoAcid ex:AlphaAminoAcid .
+ex:valine_aliphatic ex:isBranchedChainAminoAcid ex:BranchedChainAminoAcid .
+ex:leucine_aliphatic ex:isBranchedChainAminoAcid ex:BranchedChainAminoAcid .
+ex:isoleucine ex:isBranchedChainAminoAcid ex:BranchedChainAminoAcid .
+ex:serine ex:isHydroxylGroupContainingAminoAcid ex:HydroxylGroupContainingAminoAcid .
+ex:threonine ex:isHydroxylGroupContainingAminoAcid ex:HydroxylGroupContainingAminoAcid .
+ex:tyrosine ex:isHydroxylGroupContainingAminoAcid ex:HydroxylGroupContainingAminoAcid .
+ex:cysteine_sulfur ex:isSulfurContainingAminoAcid ex:SulfurContainingAminoAcid .
+ex:methionine ex:isSulfurContainingAminoAcid ex:SulfurContainingAminoAcid .
+ex:aspartic_acid ex:isAcidicAminoAcid ex:AcidicAminoAcid .
+ex:glutamic_acid ex:isAcidicAminoAcid ex:AcidicAminoAcid .
+ex:asparagine ex:isAmideAminoAcid ex:AmideAminoAcid .
+ex:glutamine ex:isAmideAminoAcid ex:AmideAminoAcid .
+ex:lysine ex:isBasicAminoAcid ex:BasicAminoAcid .
+ex:arginine_basic ex:isBasicAminoAcid ex:BasicAminoAcid .
+ex:histidine ex:isBasicAminoAcid ex:BasicAminoAcid .
+ex:lysine ex:isBasicAminoAcid ex:amino_acids .
+ex:arginine_taste ex:isBasicAminoAcid ex:amino_acids .
+ex:histidine ex:isBasicAminoAcid ex:amino_acids .
+ex:phenylalanine ex:isAromaticAminoAcid ex:amino_acids .
+ex:tyrosine ex:isAromaticAminoAcid ex:amino_acids .
+ex:tryptophan ex:isAromaticAminoAcid ex:amino_acids .
+ex:histidine ex:isAromaticAminoAcid ex:amino_acids .
+ex:proline ex:isIminoAcid ex:imino_acids .
+ex:proline ex:isHeterocyclicAminoAcid ex:amino_acids .
+ex:histidine ex:isHeterocyclicAminoAcid ex:amino_acids .
+ex:tryptophan ex:isHeterocyclicAminoAcid ex:amino_acids .
+ex:amino_acids ex:isAlphaAminoAcid ex:amino_acids .
+ex:amino_acids ex:isBetaAminoAcid ex:amino_acids .
+ex:amino_acids ex:isGammaAminoAcid ex:amino_acids .
+ex:amino_acids ex:isEssentialAminoAcid ex:amino_acids .
+ex:amino_acids ex:isNonEssentialAminoAcid ex:amino_acids .
+ex:amino_acids ex:isSemiEssentialAminoAcid ex:amino_acids .
+ex:arginine_taste ex:isSemiEssentialAminoAcid ex:amino_acids .
+ex:histidine ex:isSemiEssentialAminoAcid ex:amino_acids .
+ex:lysine ex:isEssentialAminoAcid ex:amino_acids .
+ex:arginine_taste ex:isEssentialAminoAcid ex:amino_acids .
+ex:threonine ex:isEssentialAminoAcid ex:amino_acids .
+ex:tryptophan ex:isEssentialAminoAcid ex:amino_acids .
+ex:valine_taste ex:isEssentialAminoAcid ex:amino_acids .
+ex:isoleucine ex:isEssentialAminoAcid ex:amino_acids .
+ex:leucine ex:isEssentialAminoAcid ex:amino_acids .
+ex:phenylalanine ex:isEssentialAminoAcid ex:amino_acids .
+ex:histidine ex:isEssentialAminoAcid ex:amino_acids .
+ex:methionine ex:isEssentialAminoAcid ex:amino_acids .
+ex:glycine_taste ex:isNonEssentialAminoAcid ex:amino_acids .
+ex:alanine_taste ex:isNonEssentialAminoAcid ex:amino_acids .
+ex:serine ex:isNonEssentialAminoAcid ex:amino_acids .
+ex:cysteine_sulfur ex:isNonEssentialAminoAcid ex:amino_acids .
+ex:asparagine ex:isNonEssentialAminoAcid ex:amino_acids .
+ex:aspatic_acid ex:isNonEssentialAminoAcid ex:amino_acids .
+ex:glutamic_acid ex:isNonEssentialAminoAcid ex:amino_acids .
+ex:glutamine ex:isNonEssentialAminoAcid ex:amino_acids .
+ex:tyrosine ex:isNonEssentialAminoAcid ex:amino_acids .
+ex:proline ex:isNonEssentialAminoAcid ex:amino_acids .
+ex:arginine_taste ex:hasFunctionalGroup ex:guanidino_group .
+ex:histidine ex:hasFunctionalGroup ex:imidazole_ring .
+ex:tryptophan ex:hasUniqueSideChain ex:indole_ring .
+ex:proline ex:hasUniqueSideChain ex:pyrrolidine_ring .
+ex:proline ex:hasFunctionalGroup ex:imino_group .
+ex:gaba ex:isGammaAminoAcid ex:amino_acids .
+ex:pvtlvphly_mnemonic ex:isEssentialAminoAcid ex:amino_acids .
+ex:leucine_taste ex:isKetogenicAndGlucogenicAminoAcid ex:amino_acids .
+ex:lysine ex:isKetogenicAndGlucogenicAminoAcid ex:amino_acids .
+ex:leucine_taste ex:isPurelyKetogenicAminoAcid ex:amino_acids .
+ex:lysine ex:isPurelyKetogenicAminoAcid ex:amino_acids .
+ex:lysine ex:isKetogenicAndGlucogenicAminoAcid ex:amino_acids .
+ex:isoleucine ex:isKetogenicAndGlucogenicAminoAcid ex:amino_acids .
+ex:phenylalanine ex:isKetogenicAndGlucogenicAminoAcid ex:amino_acids .
+ex:tyrosine ex:isKetogenicAndGlucogenicAminoAcid ex:amino_acids .
+ex:tryptophan ex:isKetogenicAndGlucogenicAminoAcid ex:amino_acids .
+ex:alanine_taste ex:isHydrophobicAminoAcid ex:amino_acids .
+ex:leucine_taste ex:isHydrophobicAminoAcid ex:amino_acids .
+ex:isoleucine ex:isHydrophobicAminoAcid ex:amino_acids .
+ex:valine_taste ex:isHydrophobicAminoAcid ex:amino_acids .
+ex:methionine ex:isHydrophobicAminoAcid ex:amino_acids .
+ex:phenylalanine ex:isHydrophobicAminoAcid ex:amino_acids .
+ex:tryptophan ex:isHydrophobicAminoAcid ex:amino_acids .
+ex:proline ex:isHydrophobicAminoAcid ex:amino_acids .
+ex:glycine_taste ex:isPolarUnchargedAminoAcid ex:amino_acids .
+ex:serine ex:isPolarUnchargedAminoAcid ex:amino_acids .
+ex:threonine ex:isPolarUnchargedAminoAcid ex:amino_acids .
+ex:cysteine_sulfur ex:isPolarUnchargedAminoAcid ex:amino_acids .
+ex:glutamine ex:isPolarUnchargedAminoAcid ex:amino_acids .
+ex:asparagine ex:isPolarUnchargedAminoAcid ex:amino_acids .
+ex:tyrosine ex:isPolarUnchargedAminoAcid ex:amino_acids .
+ex:lysine ex:isPolarPositivelyChargedAminoAcid ex:amino_acids .
+ex:arginine_taste ex:isPolarPositivelyChargedAminoAcid ex:amino_acids .
+ex:histidine ex:isPolarPositivelyChargedAminoAcid ex:amino_acids .
+ex:aspatic_acid ex:isPolarNegativelyChargedAminoAcid ex:amino_acids .
+ex:glutamic_acid ex:isPolarNegativelyChargedAminoAcid ex:amino_acids .
+ex:aldehyde ex:isProducedByNucleophilicAdditionOfAmmoniaToAldehyde ex:true .
+ex:amino_acids ex:isProducedByRemovingWaterAndAddingCyanideToAldimine ex:true .
+ex:glycine_taste ex:isUsedToTreatSchizophrenia ex:glycine_treatment_schizophrenia .
+ex:glycine_taste ex:isUsedToTreatStroke ex:glycine_treatment_stroke .
+ex:glycine_taste ex:isUsedToTreatSleepIssues ex:glycine_treatment_sleep_issues .
+ex:glycine_taste ex:isUsedToTreatBPH ex:glycine_treatment_bph .
+ex:glycine_taste ex:isUsedToTreatMetabolicSyndrome ex:glycine_treatment_metabolic_syndrome .
+ex:glycine_taste ex:isUsedToTreatInheritedMetabolicIllnesses ex:glycine_treatment_inherited_metabolic_illnesses .
+ex:alanine_taste ex:isUsedToBoostImmunity ex:alanine_boost_immunity .
+ex:alanine_taste ex:isUsedToProvideEnergyToBrainAndCentralNervousSystem ex:alanine_provide_energy_brain_nervous_system .
+ex:valine_taste ex:isUsedInHealthSupplementsToSupportSportsAndPerformance ex:valine_health_supplements_muscle_synthesis_maintenance .
+ex:valine_taste ex:isUsedToTreatStress ex:valine_stress_management .
+ex:valine_taste ex:isRequiredForChildrensOptimumGrowth ex:valine_child_growth .
+ex:valine_taste ex:isUsedToBoostImmunity ex:valine_immune_system_support .
+ex:leucine_taste ex:increasesPhysicalPerformance ex:leucine_increases_physical_performance .
+ex:leucine_taste ex:increasesPhysicalPerformance ex:leucine_increases_long_term_physical_performance .
+ex:leucine_taste ex:preventsMuscleLoss ex:leucine_preventing_muscle_loss .
+ex:leucine_taste ex:lowersBloodGlucoseInType2Diabetes ex:leucine_lowers_blood_glucose_type2diabetes .
+ex:isoleucine ex:isRequiredForChildrensOptimumGrowth ex:isoleucine_childrens_optimum_growth .
+ex:isoleucine ex:maintainsNitrogenBalanceInAdults ex:isoleucine_maintenance_nitrogen_balance_adults .
+ex:norleucine ex:isUsedToResearchProteinStructureAndFunction ex:norleucine_research_protein_structure_function .
+ex:phenylalanine ex:isUsedToTreatDepression ex:phenylalanine_treatment_depression .
+ex:phenylalanine ex:isUsedToTreatParkinsonsDisease ex:phenylalanine_treatment_parkinsons .
+ex:phenylalanine ex:isUsedToTreatMultipleSclerosis ex:phenylalanine_treatment_multiple_sclerosis .
+ex:phenylalanine ex:isUsedToTreatPain ex:phenylalanine_treatment_pain .
+ex:phenylalanine ex:isUsedToTreatAcupunctureAnesthesia ex:phenylalanine_treatment_acupuncture_anesthesia .
+ex:phenylalanine ex:isUsedToTreatOsteoarthritis ex:phenylalanine_treatment_osteoarthritis .
+ex:tyrosine ex:isUtilizedInProductionOfThyroidHormone ex:tyrosine_production_thyroid_hormone .
+ex:tyrosine ex:improvesMentalPerformance ex:tyrosine_mental_performance .
+ex:tyrosine ex:improvesAlertness ex:tyrosine_alertness .
+ex:tyrosine ex:improvesMemory ex:tyrosine_memory .
+ex:serine ex:isSignificantForBrainAndCentralNervousSystemFunction ex:serine_significant_brain_nervous_system_function .
+ex:cysteine_sulfur ex:isUsedToBoostEfficiencyOfCorticosteroidMedications ex:cysteine_boost_efficiency_corticosteroid_medications .
+ex:cystine_non_essential ex:isUsedInTreatmentOfSurgeryAndTrauma ex:cystine_treatment_surgery_trauma .
+ex:threonine ex:isUsedToTreatSpinalSpasticity ex:threonine_treatment_spinal_spasticity .
+ex:threonine ex:isUsedToTreatMultipleSclerosis ex:threonine_treatment_multiple_sclerosis .
+ex:threonine ex:isUsedToTreatFamilialSpasticParaparesis ex:threonine_treatment_familial_spastic_paraparesis .
+ex:threonine ex:isUsedToTreatAmyotrophicLateralSclerosis ex:threonine_treatment_amyotrophic_lateral_sclerosis .
+ex:glycine_taste ex:hasChemicalName ex:Amino_acetic_acid .
+ex:alanine_taste ex:hasChemicalName ex:Alpha_Aminopropionic_acid .
+ex:valine_taste ex:hasChemicalName ex:alpha_Aminoisovaleric_acid .
+ex:leucine_taste ex:hasChemicalName ex:alpha_Aminoisocaproic_acid .
+ex:isoleucine ex:hasChemicalName ex:alpha_Amino_beta_methyl_n_valeric_acid .
+ex:norleucine ex:hasChemicalName ex:alpha_Amino_n_caproic_acid .
+ex:phenylalanine ex:hasChemicalName ex:alpha_Amino_beta_phenyl_propionic_acid .
+ex:tyrosine ex:hasChemicalName ex:alpha_Amino_beta__p_hydroxyphenyl__propionic_acid .
+ex:serine ex:hasChemicalName ex:alpha_Amino_beta_hydroxypropionic_acid .
+ex:cysteine_sulfur ex:hasChemicalName ex:alpha_Amino_beta_mercaptopropionic_acid .
+ex:threonine ex:hasChemicalName ex:alpha_Amino_beta_hydroxy_n_butyric_acid .
+ex:methionine ex:hasChemicalName ex:alpha_Amino_gamma_methyl_thio_n_butyric_acid .
+ex:glutamic_acid ex:hasChemicalName ex:alpha_Aminoglutaric_acid .
+ex:methionine ex:isUsedToPreventAndCureInflammation ex:true .
+ex:methionine ex:isUsedToPreventAndCureLiverIllness ex:true .
+ex:methionine ex:isUsedToPreventAndCureMuscleDiscomfort ex:true .
+ex:methionine ex:isUsedToTreatDepression ex:true .
+ex:diiodothyronine ex:increasesPhysicalPerformance ex:true .
+ex:diiodothyronine ex:isUsedToTreatMetabolicSyndrome ex:true .
+ex:diiodothyronine ex:isUsedToTreatBPH ex:true .
+ex:tryptophan ex:isUsedToTreatAnxiety ex:true .
+ex:tryptophan ex:isUsedToTreatDepression ex:true .
+ex:tryptophan ex:isUsedToBoostGrowthHormoneProduction ex:true .
+ex:proline ex:improvesJointHealth ex:true .
+ex:proline ex:improvesSkinHealth ex:true .
+ex:proline ex:helpsWithMuscleDevelopment ex:true .
+ex:proline ex:helpsWithInjuryHealing ex:true .
+ex:proline ex:isRequiredForTheFormationOfCollagen ex:true .
+ex:proline ex:isIncorporatedInto ex:collagen_formation_requirement .
+ex:aspatic_acid ex:isUsedToTreatStress ex:true .
+ex:aspatic_acid ex:isUsedToTreatExhaustion ex:true .
+ex:aspatic_acid ex:aidsInEnergyGenerationFromCarbohydrates ex:true .
+ex:aspatic_acid ex:aidsInManufacturingOfRNAAndDNA ex:true .
+ex:asparagine ex:isNecessaryForBrainDevelopmentAndFunction ex:true .
+ex:glutamic_acid ex:servesAsEnergySourceForTheBrain ex:true .
+ex:glutamic_acid ex:improvesBrainClarity ex:true .
+ex:glutamic_acid ex:improvesAlertness ex:true .
+ex:glutamic_acid ex:improvesMood ex:true .
+ex:glutamic_acid ex:isUsedToTreatParkinsonsDisease ex:true .
+ex:glutamic_acid ex:isUsedToTreatSchizophrenia ex:true .
+ex:glutamic_acid ex:isUsedToTreatAcne ex:true .
+ex:glutamic_acid ex:isUsedToTreatPhotoaging ex:true .
+ex:glutamic_acid ex:isUsedToTreatDrySkin ex:true .
+ex:glutamic_acid ex:isUsedToTreatPsoriasis ex:true .
+ex:glutamic_acid ex:isUsedToTreatMelasma ex:true .
+ex:glutamic_acid ex:hasBeenStudiedForFibromyalgia ex:true .
+ex:glutamic_acid ex:hasBeenStudiedForDentalScaling ex:true .
+ex:glutamic_acid ex:hasBeenStudiedForDryMouth ex:true .
+ex:glutamic_acid ex:isUsedForPreventionAndTreatmentOfUrinaryTractStones ex:true .
+ex:glutamine ex:isUsedToKeepBloodSugarLevelsUnderControlAndConsistent ex:true .
+ex:ornithine ex:isUsedInHealthSupplementsToSupportSportsAndPerformance ex:true .
+ex:ornithine ex:isUtilizedToHelpWithLiverFunction ex:true .
+ex:ornithine ex:isUtilizedToHelpWithWoundHealing ex:true .
+ex:arginine_taste ex:hasAntiatherogenicEffects ex:true .
+ex:arginine_taste ex:hasAntiischemicEffects ex:true .
+ex:arginine_taste ex:hasAntiplateletEffects ex:true .
+ex:arginine_taste ex:hasAntithromboticEffects ex:true .
+ex:lysine ex:appearsToMinimizeColdSores ex:true .
+ex:histidine ex:isIncorporatedInto ex:hemoglobin .
+ex:histidine ex:isCriticalInBabyFeeding ex:true .
+ex:histidine ex:hasBuildingBlock ex:hemoglobin .
+ex:histidine ex:isCriticalInBabyFeeding ex:baby_feeding_criticality .
+ex:d_penicillamine ex:isEmployedInChelationTherapyOfWilsonsDisease ex:wilsons_disease .
+ex:n_acetylcysteine ex:functionsAsAntioxidantInCysticFibrosisAndChronicRenalInsufficiency ex:cystic_fibrosis .
+ex:n_acetylcysteine ex:functionsAsAntioxidantInCysticFibrosisAndChronicRenalInsufficiency ex:chronic_renal_insufficiency .
+ex:n_acetylcysteine ex:functionsAsAntioxidantInCysticFibrosisAndChronicRenalInsufficiency ex:antioxidant .
+ex:gaba ex:isUsedAsAnticonvulsant ex:anticonvulsant .
+ex:glycine_taste ex:hasChemicalName ex:amino_acetic_acid .
+ex:alanine_taste ex:hasChemicalName ex:alpha_aminopropionic_acid .
+ex:valine_taste ex:hasChemicalName ex:alpha_aminoisovaleric_acid .
+ex:leucine_taste ex:hasChemicalName ex:alpha_aminoisocaproic_acid .
+ex:isoleucine ex:hasChemicalName ex:alpha_amino_beta_methyl_n_valeric_acid .
+ex:norleucine ex:hasChemicalName ex:alpha_amino_n_caproic_acid .
+ex:phenylalanine ex:hasChemicalName ex:alpha_amino_beta_phenyl_propionic_acid .
+ex:tyrosine ex:hasChemicalName ex:alpha_amino_beta_p_hydroxyphenyl_propionic_acid .
+ex:serine ex:hasChemicalName ex:alpha_amino_beta_hydroxypropionic_acid .
+ex:cysteine_sulfur ex:hasChemicalName ex:alpha_amino_beta_mercaptopropionic_acid .
+ex:threonine ex:hasChemicalName ex:alpha_amino_beta_hydroxy_n_butyric_acid .
+ex:methionine ex:hasChemicalName ex:alpha_amino_gamma_methylthio_n_butyric_acid .
+ex:tryptophan ex:hasChemicalName ex:alpha_amino_beta_indolepropionic_acid .
+ex:proline ex:hasChemicalName ex:pyrrolidine_alpha_carboxylic_acid .
+ex:proline ex:hasChemicalName ex:gamma_hydroxypyrrolidine_alpha_carboxylic_acid .
+ex:aspartic_acid ex:hasChemicalName ex:alpha_aminosuccinic_acid .
+ex:asparagine ex:hasChemicalName ex:alpha_aminosuccinamic_acid .
+ex:glutamic_acid ex:hasChemicalName ex:alpha_aminoglutaric_acid .
+ex:glutamic_acid ex:hasChemicalName ex:alpha_amino_beta_hydroxyglutaric_acid .
+ex:glutamine ex:hasChemicalName ex:alpha_amino_glutamic_acid .
+ex:ornithine ex:hasChemicalName ex:alpha_delta_diamino_n_valeric_acid .
+ex:arginine_taste ex:hasChemicalName ex:alpha_amino_delta_guanidino_n_valeric_acid .
+ex:lysine ex:hasChemicalName ex:alpha_diaminocaproic_acid .
+ex:histidine ex:hasChemicalName ex:alpha_amino_beta_imidazolepropionic_acid .

@@ -1,0 +1,234 @@
+{
+  "reasoning_steps": [
+    "Identify entities and their types based on the provided ontology and text.",
+    "Extract relations between entities using the defined properties and evidence from the text.",
+    "Ensure all extracted information adheres to the STRICT FILTRATION RULES and uses ONLY the approved ontology."
+  ],
+  "entities": [
+    {
+      "id": "alpha_carbon_atom",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "α-carbon atom"
+    },
+    {
+      "id": "hydrogen_atom",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "hydrogen (H) atom"
+    },
+    {
+      "id": "r_group_1",
+      "class_uri": "ex:RGroup",
+      "evidence_span": "R group"
+    },
+    {
+      "id": "amino_acid_elements",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "carbon (C), hydrogen (H), oxygen (O), and nitrogen (N)"
+    },
+    {
+      "id": "amino_acids_in_genetic_code",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "20 a ppear within the genetic code"
+    },
+    {
+      "id": "alpha_amino_acids",
+      "class_uri": "ex:AlphaAminoAcid",
+      "evidence_span": "alpha- (α-)"
+    },
+    {
+      "id": "beta_amino_acids",
+      "class_uri": "ex:BetaAminoAcid",
+      "evidence_span": "beta- (β-)"
+    },
+    {
+      "id": "gamma_amino_acids",
+      "class_uri": "ex:GammaAminoAcid",
+      "evidence_span": "gamma- (γ-)"
+    },
+    {
+      "id": "delta_amino_acids",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "delta- (δ-) amino acids"
+    },
+    {
+      "id": "amino_acids_solubility",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Most of the amino acids are usually soluble in water and insoluble in organic solvents."
+    },
+    {
+      "id": "amino_acids_melting_point",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Amino acids are generally melted at a higher temperature often above 2000 C."
+    },
+    {
+      "id": "glycine_taste",
+      "class_uri": "ex:Glycine",
+      "evidence_span": "sweet (Glycine, Alanine and Valine)"
+    },
+    {
+      "id": "alanine_taste",
+      "class_uri": "ex:Alanine",
+      "evidence_span": "sweet (Glycine, Alanine and Valine)"
+    },
+    {
+      "id": "valine_taste",
+      "class_uri": "ex:Valine",
+      "evidence_span": "sweet (Glycine, Alanine and Valine)"
+    },
+    {
+      "id": "leucine_taste",
+      "class_uri": "ex:Leucine",
+      "evidence_span": "tasteless (Leucine)"
+    },
+    {
+      "id": "arginine_taste",
+      "class_uri": "ex:Arginine",
+      "evidence_span": "Bitter (Arginine & Isoleucine)"
+    },
+    {
+      "id": "isoleucine_taste",
+      "class_uri": "ex:Isoleucine",
+      "evidence_span": "Bitter (Arginine & Isoleucine)"
+    },
+    {
+      "id": "glycine_optical_properties",
+      "class_uri": "ex:Glycine",
+      "evidence_span": "All amino acids except glycine possess optical isomers because of the presence of asymmetric α-carbon atoms and show optical activity."
+    },
+    {
+      "id": "asymmetric_alpha_carbon_atoms",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "asymmetric α-carbon atoms"
+    },
+    {
+      "id": "zwitterion",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Zwitter ion (or) dipolar ion is a hybrid molecule containing positive & negatively ionic groups."
+    },
+    {
+      "id": "glycine_optical_activity",
+      "class_uri": "ex:Glycine",
+      "evidence_span": "Glycine is optically inactive"
+    },
+    {
+      "id": "glycine_simplest_amino_acid",
+      "class_uri": "ex:Glycine",
+      "evidence_span": "the simplest amino acid"
+    },
+    {
+      "id": "glycine_asymmetric_carbon",
+      "class_uri": "ex:Glycine",
+      "evidence_span": "which don't have an asymmetric carbon atom."
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "alpha_carbon_atom",
+      "property_uri": "ex:hasUniqueSideChain",
+      "target_id": "r_group_1",
+      "evidence_span": "R group"
+    },
+    {
+      "source_id": "alpha_carbon_atom",
+      "property_uri": "ex:hasFunctionalGroup",
+      "target_id": "hydrogen_atom",
+      "evidence_span": "hydrogen (H) atom"
+    },
+    {
+      "source_id": "amino_acids_in_genetic_code",
+      "property_uri": "ex:isAlphaAminoAcid",
+      "target_id": "alpha_amino_acids",
+      "evidence_span": "alpha- (α-)"
+    },
+    {
+      "source_id": "amino_acids_in_genetic_code",
+      "property_uri": "ex:isBetaAminoAcid",
+      "target_id": "beta_amino_acids",
+      "evidence_span": "beta- (β-)"
+    },
+    {
+      "source_id": "amino_acids_in_genetic_code",
+      "property_uri": "ex:isGammaAminoAcid",
+      "target_id": "gamma_amino_acids",
+      "evidence_span": "gamma- (γ-)"
+    },
+    {
+      "source_id": "amino_acids_in_genetic_code",
+      "property_uri": "ex:isGammaAminoAcid",
+      "target_id": "delta_amino_acids",
+      "evidence_span": "delta- (δ-) amino acids"
+    },
+    {
+      "source_id": "glycine_taste",
+      "property_uri": "ex:hasTaste",
+      "target_id": "sweet",
+      "evidence_span": "sweet (Glycine, Alanine and Valine)"
+    },
+    {
+      "source_id": "alanine_taste",
+      "property_uri": "ex:hasTaste",
+      "target_id": "sweet",
+      "evidence_span": "sweet (Glycine, Alanine and Valine)"
+    },
+    {
+      "source_id": "valine_taste",
+      "property_uri": "ex:hasTaste",
+      "target_id": "sweet",
+      "evidence_span": "sweet (Glycine, Alanine and Valine)"
+    },
+    {
+      "source_id": "leucine_taste",
+      "property_uri": "ex:hasTaste",
+      "target_id": "tasteless",
+      "evidence_span": "tasteless (Leucine)"
+    },
+    {
+      "source_id": "arginine_taste",
+      "property_uri": "ex:hasTaste",
+      "target_id": "Bitter",
+      "evidence_span": "Bitter (Arginine & Isoleucine)"
+    },
+    {
+      "source_id": "isoleucine_taste",
+      "property_uri": "ex:hasTaste",
+      "target_id": "Bitter",
+      "evidence_span": "Bitter (Arginine & Isoleucine)"
+    },
+    {
+      "source_id": "glycine_optical_properties",
+      "property_uri": "ex:hasOpticalActivity",
+      "target_id": "false",
+      "evidence_span": "All amino acids except glycine possess optical isomers because of the presence of asymmetric α-carbon atoms and show optical activity."
+    },
+    {
+      "source_id": "asymmetric_alpha_carbon_atoms",
+      "property_uri": "ex:hasOpticalActivity",
+      "target_id": "true",
+      "evidence_span": "show optical activity"
+    },
+    {
+      "source_id": "zwitterion",
+      "property_uri": "ex:isAlphaAminoAcid",
+      "target_id": "true",
+      "evidence_span": "The name zwitter is derived from the German word which implies hybrid."
+    },
+    {
+      "source_id": "glycine_optical_activity",
+      "property_uri": "ex:hasOpticalActivity",
+      "target_id": "false",
+      "evidence_span": "Glycine is optically inactive"
+    },
+    {
+      "source_id": "glycine_simplest_amino_acid",
+      "property_uri": "ex:isAlphaAminoAcid",
+      "target_id": "true",
+      "evidence_span": "the simplest amino acid"
+    },
+    {
+      "source_id": "glycine_asymmetric_carbon",
+      "property_uri": "ex:hasOpticalActivity",
+      "target_id": "false",
+      "evidence_span": "which don't have an asymmetric carbon atom."
+    }
+  ]
+}

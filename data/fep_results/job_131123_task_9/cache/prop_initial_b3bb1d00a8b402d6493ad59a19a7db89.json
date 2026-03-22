@@ -1,0 +1,20 @@
+{
+  "reasoning_steps": [
+    "Amino acids can undergo decarboxylation reactions.",
+    "Ninhydrin reaction identifies amino acids."
+  ],
+  "properties": [
+    {
+      "uri": "ex:undergoesDecarboxylationReaction",
+      "domain": "ex:AminoAcid",
+      "range": "ex:DecarboxylationReaction",
+      "comment": "An AminoAcid undergoes a DecarboxylationReaction."
+    },
+    {
+      "uri": "ex:identifiedByNinhydrinReaction",
+      "domain": "ex:AminoAcid",
+      "range": "ex:NinhydrinReaction",
+      "comment": "An AminoAcid is identified by a NinhydrinReaction."
+    }
+  ]
+}

@@ -1,0 +1,529 @@
+{
+  "validations": [
+    {
+      "child_uri": "ex:EssentialAminoAcid",
+      "parent_uri": "ex:AminoAcid",
+      "forward_valid": true,
+      "reverse_valid": false,
+      "reasoning": "Essential amino acids are a subset of all amino acids, meaning every essential amino acid is an amino acid, but not all amino acids are essential."
+    },
+    {
+      "child_uri": "ex:NonEssentialAminoAcid",
+      "parent_uri": "ex:AminoAcid",
+      "forward_valid": true,
+      "reverse_valid": false,
+      "reasoning": "Non-essential amino acids are a subset of all amino acids, meaning every non-essential amino acid is an amino acid, but not all amino acids are non-essential."
+    },
+    {
+      "child_uri": "ex:SemiEssentialAminoAcid",
+      "parent_uri": "ex:AminoAcid",
+      "forward_valid": true,
+      "reverse_valid": false,
+      "reasoning": "Semi-essential amino acids are a subset of all amino acids, meaning every semi-essential amino acid is an amino acid, but not all amino acids are semi-essential."
+    },
+    {
+      "child_uri": "ex:BranchedChainAminoAcid",
+      "parent_uri": "ex:AminoAcid",
+      "forward_valid": true,
+      "reverse_valid": false,
+      "reasoning": "Branched-chain amino acids are a specific type of amino acid, so every branched-chain amino acid is an amino acid, but not all amino acids have a branched chain."
+    },
+    {
+      "child_uri": "ex:HydroxylGroupContainingAminoAcid",
+      "parent_uri": "ex:AminoAcid",
+      "forward_valid": true,
+      "reverse_valid": false,
+      "reasoning": "Amino acids containing a hydroxyl group are a subset of all amino acids, meaning every such amino acid is an amino acid, but not all amino acids contain a hydroxyl group."
+    },
+    {
+      "child_uri": "ex:SulfurContainingAminoAcid",
+      "parent_uri": "ex:AminoAcid",
+      "forward_valid": true,
+      "reverse_valid": false,
+      "reasoning": "Sulfur-containing amino acids are a subset of all amino acids, meaning every sulfur-containing amino acid is an amino acid, but not all amino acids contain sulfur."
+    },
+    {
+      "child_uri": "ex:AcidicAminoAcid",
+      "parent_uri": "ex:AminoAcid",
+      "forward_valid": true,
+      "reverse_valid": false,
+      "reasoning": "Acidic amino acids are a subset of all amino acids, meaning every acidic amino acid is an amino acid, but not all amino acids are acidic."
+    },
+    {
+      "child_uri": "ex:AmideAminoAcid",
+      "parent_uri": "ex:AminoAcid",
+      "forward_valid": true,
+      "reverse_valid": false,
+      "reasoning": "Amide amino acids are a subset of all amino acids, meaning every amide amino acid is an amino acid, but not all amino acids are amides."
+    },
+    {
+      "child_uri": "ex:BasicAminoAcid",
+      "parent_uri": "ex:AminoAcid",
+      "forward_valid": true,
+      "reverse_valid": false,
+      "reasoning": "Basic amino acids are a subset of all amino acids, meaning every basic amino acid is an amino acid, but not all amino acids are basic."
+    },
+    {
+      "child_uri": "ex:AromaticAminoAcid",
+      "parent_uri": "ex:AminoAcid",
+      "forward_valid": true,
+      "reverse_valid": false,
+      "reasoning": "Aromatic amino acids are a subset of all amino acids, meaning every aromatic amino acid is an amino acid, but not all amino acids are aromatic."
+    },
+    {
+      "child_uri": "ex:IminoAcid",
+      "parent_uri": "ex:AminoAcid",
+      "forward_valid": true,
+      "reverse_valid": false,
+      "reasoning": "Imino acids are a specific type of amino acid, so every imino acid is an amino acid, but not all amino acids are imino acids."
+    },
+    {
+      "child_uri": "ex:HeterocyclicAminoAcid",
+      "parent_uri": "ex:AminoAcid",
+      "forward_valid": true,
+      "reverse_valid": false,
+      "reasoning": "Heterocyclic amino acids are a subset of all amino acids, meaning every heterocyclic amino acid is an amino acid, but not all amino acids are heterocyclic."
+    },
+    {
+      "child_uri": "ex:AlphaAminoAcid",
+      "parent_uri": "ex:AminoAcid",
+      "forward_valid": true,
+      "reverse_valid": false,
+      "reasoning": "Alpha amino acids are the most common type of amino acid, so every alpha amino acid is an amino acid, but not all amino acids are alpha amino acids."
+    },
+    {
+      "child_uri": "ex:BetaAminoAcid",
+      "parent_uri": "ex:AminoAcid",
+      "forward_valid": true,
+      "reverse_valid": false,
+      "reasoning": "Beta amino acids are a type of amino acid, so every beta amino acid is an amino acid, but not all amino acids are beta amino acids."
+    },
+    {
+      "child_uri": "ex:GammaAminoAcid",
+      "parent_uri": "ex:AminoAcid",
+      "forward_valid": true,
+      "reverse_valid": false,
+      "reasoning": "Gamma amino acids are a type of amino acid, so every gamma amino acid is an amino acid, but not all amino acids are gamma amino acids."
+    },
+    {
+      "child_uri": "ex:PurelyKetogenicAminoAcid",
+      "parent_uri": "ex:AminoAcid",
+      "forward_valid": true,
+      "reverse_valid": false,
+      "reasoning": "Purely ketogenic amino acids are a subset of all amino acids, meaning every purely ketogenic amino acid is an amino acid, but not all amino acids are purely ketogenic."
+    },
+    {
+      "child_uri": "ex:KetogenicAndGlucogenicAminoAcid",
+      "parent_uri": "ex:AminoAcid",
+      "forward_valid": true,
+      "reverse_valid": false,
+      "reasoning": "Ketogenic and glucogenic amino acids are a subset of all amino acids, meaning every such amino acid is an amino acid, but not all amino acids are both ketogenic and glucogenic."
+    },
+    {
+      "child_uri": "ex:PurelyGlucogenicAminoAcid",
+      "parent_uri": "ex:AminoAcid",
+      "forward_valid": true,
+      "reverse_valid": false,
+      "reasoning": "Purely glucogenic amino acids are a subset of all amino acids, meaning every purely glucogenic amino acid is an amino acid, but not all amino acids are purely glucogenic."
+    },
+    {
+      "child_uri": "ex:HydrophobicAminoAcid",
+      "parent_uri": "ex:AminoAcid",
+      "forward_valid": true,
+      "reverse_valid": false,
+      "reasoning": "Hydrophobic amino acids are a subset of all amino acids, meaning every hydrophobic amino acid is an amino acid, but not all amino acids are hydrophobic."
+    },
+    {
+      "child_uri": "ex:PolarUnchargedAminoAcid",
+      "parent_uri": "ex:AminoAcid",
+      "forward_valid": true,
+      "reverse_valid": false,
+      "reasoning": "Polar uncharged amino acids are a subset of all amino acids, meaning every polar uncharged amino acid is an amino acid, but not all amino acids are polar and uncharged."
+    },
+    {
+      "child_uri": "ex:PolarPositivelyChargedAminoAcid",
+      "parent_uri": "ex:AminoAcid",
+      "forward_valid": true,
+      "reverse_valid": false,
+      "reasoning": "Polar positively charged amino acids are a subset of all amino acids, meaning every such amino acid is an amino acid, but not all amino acids are polar and positively charged."
+    },
+    {
+      "child_uri": "ex:PolarNegativelyChargedAminoAcid",
+      "parent_uri": "ex:AminoAcid",
+      "forward_valid": true,
+      "reverse_valid": false,
+      "reasoning": "Polar negatively charged amino acids are a subset of all amino acids, meaning every such amino acid is an amino acid, but not all amino acids are polar and negatively charged."
+    },
+    {
+      "child_uri": "ex:Glycine",
+      "parent_uri": "ex:AminoAcid",
+      "forward_valid": true,
+      "reverse_valid": false,
+      "reasoning": "Glycine is a specific amino acid, so every instance of glycine is an amino acid, but not every amino acid is glycine."
+    },
+    {
+      "child_uri": "ex:Alanine",
+      "parent_uri": "ex:AminoAcid",
+      "forward_valid": true,
+      "reverse_valid": false,
+      "reasoning": "Alanine is a specific amino acid, so every instance of alanine is an amino acid, but not every amino acid is alanine."
+    },
+    {
+      "child_uri": "ex:Valine",
+      "parent_uri": "ex:BranchedChainAminoAcid",
+      "forward_valid": true,
+      "reverse_valid": false,
+      "reasoning": "Valine is a type of branched-chain amino acid, so every valine is a branched-chain amino acid, but not every branched-chain amino acid is valine."
+    },
+    {
+      "child_uri": "ex:Leucine",
+      "parent_uri": "ex:BranchedChainAminoAcid",
+      "forward_valid": true,
+      "reverse_valid": false,
+      "reasoning": "Leucine is a type of branched-chain amino acid, so every leucine is a branched-chain amino acid, but not every branched-chain amino acid is leucine."
+    },
+    {
+      "child_uri": "ex:Isoleucine",
+      "parent_uri": "ex:BranchedChainAminoAcid",
+      "forward_valid": true,
+      "reverse_valid": false,
+      "reasoning": "Isoleucine is a type of branched-chain amino acid, so every isoleucine is a branched-chain amino acid, but not every branched-chain amino acid is isoleucine."
+    },
+    {
+      "child_uri": "ex:Norleucine",
+      "parent_uri": "ex:AminoAcid",
+      "forward_valid": true,
+      "reverse_valid": false,
+      "reasoning": "Norleucine is a specific amino acid, so every instance of norleucine is an amino acid, but not every amino acid is norleucine."
+    },
+    {
+      "child_uri": "ex:Phenylalanine",
+      "parent_uri": "ex:AromaticAminoAcid",
+      "forward_valid": true,
+      "reverse_valid": false,
+      "reasoning": "Phenylalanine is a type of aromatic amino acid, so every phenylalanine is an aromatic amino acid, but not every aromatic amino acid is phenylalanine."
+    },
+    {
+      "child_uri": "ex:Tyrosine",
+      "parent_uri": "ex:AromaticAminoAcid",
+      "forward_valid": true,
+      "reverse_valid": false,
+      "reasoning": "Tyrosine is a type of aromatic amino acid, so every tyrosine is an aromatic amino acid, but not every aromatic amino acid is tyrosine."
+    },
+    {
+      "child_uri": "ex:Serine",
+      "parent_uri": "ex:HydroxylGroupContainingAminoAcid",
+      "forward_valid": true,
+      "reverse_valid": false,
+      "reasoning": "Serine is an amino acid containing a hydroxyl group, so every serine is a hydroxyl group containing amino acid, but not every hydroxyl group containing amino acid is serine."
+    },
+    {
+      "child_uri": "ex:Cysteine",
+      "parent_uri": "ex:SulfurContainingAminoAcid",
+      "forward_valid": true,
+      "reverse_valid": false,
+      "reasoning": "Cysteine is an amino acid containing sulfur, so every cysteine is a sulfur-containing amino acid, but not every sulfur-containing amino acid is cysteine."
+    },
+    {
+      "child_uri": "ex:Cystine",
+      "parent_uri": "ex:SulfurContainingAminoAcid",
+      "forward_valid": true,
+      "reverse_valid": false,
+      "reasoning": "Cystine is an amino acid containing sulfur, so every cystine is a sulfur-containing amino acid, but not every sulfur-containing amino acid is cystine."
+    },
+    {
+      "child_uri": "ex:Threonine",
+      "parent_uri": "ex:AminoAcid",
+      "forward_valid": true,
+      "reverse_valid": false,
+      "reasoning": "Threonine is a specific amino acid, so every instance of threonine is an amino acid, but not every amino acid is threonine."
+    },
+    {
+      "child_uri": "ex:Methionine",
+      "parent_uri": "ex:SulfurContainingAminoAcid",
+      "forward_valid": true,
+      "reverse_valid": false,
+      "reasoning": "Methionine is an amino acid containing sulfur, so every methionine is a sulfur-containing amino acid, but not every sulfur-containing amino acid is methionine."
+    },
+    {
+      "child_uri": "ex:Tryptophan",
+      "parent_uri": "ex:AminoAcid",
+      "forward_valid": true,
+      "reverse_valid": false,
+      "reasoning": "Tryptophan is a specific amino acid, so every instance of tryptophan is an amino acid, but not every amino acid is tryptophan."
+    },
+    {
+      "child_uri": "ex:Proline",
+      "parent_uri": "ex:IminoAcid",
+      "forward_valid": true,
+      "reverse_valid": false,
+      "reasoning": "Proline is a type of imino acid, so every proline is an imino acid, but not every imino acid is proline."
+    },
+    {
+      "child_uri": "ex:Hydroxyproline",
+      "parent_uri": "ex:IminoAcid",
+      "forward_valid": true,
+      "reverse_valid": false,
+      "reasoning": "Hydroxyproline is a type of imino acid, so every hydroxyproline is an imino acid, but not every imino acid is hydroxyproline."
+    },
+    {
+      "child_uri": "ex:AsparticAcid",
+      "parent_uri": "ex:AcidicAminoAcid",
+      "forward_valid": true,
+      "reverse_valid": false,
+      "reasoning": "Aspartic acid is an acidic amino acid, so every aspartic acid is an acidic amino acid, but not every acidic amino acid is aspartic acid."
+    },
+    {
+      "child_uri": "ex:Asparagine",
+      "parent_uri": "ex:AmideAminoAcid",
+      "forward_valid": true,
+      "reverse_valid": false,
+      "reasoning": "Asparagine is an amide amino acid, so every asparagine is an amide amino acid, but not every amide amino acid is asparagine."
+    },
+    {
+      "child_uri": "ex:GlutamicAcid",
+      "parent_uri": "ex:AcidicAminoAcid",
+      "forward_valid": true,
+      "reverse_valid": false,
+      "reasoning": "Glutamic acid is an acidic amino acid, so every glutamic acid is an acidic amino acid, but not every acidic amino acid is glutamic acid."
+    },
+    {
+      "child_uri": "ex:BetaHydroxyGlutamicAcid",
+      "parent_uri": "ex:AminoAcid",
+      "forward_valid": true,
+      "reverse_valid": false,
+      "reasoning": "Beta-hydroxyglutamic acid is a specific amino acid, so every instance of it is an amino acid, but not every amino acid is beta-hydroxyglutamic acid."
+    },
+    {
+      "child_uri": "ex:Glutamine",
+      "parent_uri": "ex:AmideAminoAcid",
+      "forward_valid": true,
+      "reverse_valid": false,
+      "reasoning": "Glutamine is an amide amino acid, so every glutamine is an amide amino acid, but not every amide amino acid is glutamine."
+    },
+    {
+      "child_uri": "ex:Ornithine",
+      "parent_uri": "ex:AminoAcid",
+      "forward_valid": true,
+      "reverse_valid": false,
+      "reasoning": "Ornithine is a specific amino acid, so every instance of ornithine is an amino acid, but not every amino acid is ornithine."
+    },
+    {
+      "child_uri": "ex:Arginine",
+      "parent_uri": "ex:BasicAminoAcid",
+      "forward_valid": true,
+      "reverse_valid": false,
+      "reasoning": "Arginine is a basic amino acid, so every arginine is a basic amino acid, but not every basic amino acid is arginine."
+    },
+    {
+      "child_uri": "ex:Lysine",
+      "parent_uri": "ex:AminoAcid",
+      "forward_valid": true,
+      "reverse_valid": false,
+      "reasoning": "Lysine is a specific amino acid, so every instance of lysine is an amino acid, but not every amino acid is lysine."
+    },
+    {
+      "child_uri": "ex:Histidine",
+      "parent_uri": "ex:BasicAminoAcid",
+      "forward_valid": true,
+      "reverse_valid": false,
+      "reasoning": "Histidine is a basic amino acid, so every histidine is a basic amino acid, but not every basic amino acid is histidine."
+    },
+    {
+      "child_uri": "ex:DPenicillamine",
+      "parent_uri": "ex:NonStandardAminoAcid",
+      "forward_valid": true,
+      "reverse_valid": false,
+      "reasoning": "D-Penicillamine is a non-standard amino acid, so every D-Penicillamine is a non-standard amino acid, but not every non-standard amino acid is D-Penicillamine."
+    },
+    {
+      "child_uri": "ex:NAcetylcysteine",
+      "parent_uri": "ex:NonStandardAminoAcid",
+      "forward_valid": true,
+      "reverse_valid": false,
+      "reasoning": "N-Acetylcysteine is a non-standard amino acid, so every N-Acetylcysteine is a non-standard amino acid, but not every non-standard amino acid is N-Acetylcysteine."
+    },
+    {
+      "child_uri": "ex:Gabapentin",
+      "parent_uri": "ex:NonStandardAminoAcid",
+      "forward_valid": true,
+      "reverse_valid": false,
+      "reasoning": "Gabapentin is considered a non-standard amino acid in some contexts, so every gabapentin is a non-standard amino acid, but not every non-standard amino acid is gabapentin."
+    },
+    {
+      "child_uri": "ex:NonStandardAminoAcid",
+      "parent_uri": "ex:AminoAcid",
+      "forward_valid": true,
+      "reverse_valid": false,
+      "reasoning": "Non-standard amino acids are a subset of amino acids, meaning every non-standard amino acid is an amino acid, but not all amino acids are non-standard."
+    },
+    {
+      "child_uri": "ex:AminoAceticAcid",
+      "parent_uri": "ex:AminoAcid",
+      "forward_valid": true,
+      "reverse_valid": false,
+      "reasoning": "Aminoacetic acid (glycine) is a specific amino acid, so every instance of it is an amino acid, but not every amino acid is aminoacetic acid."
+    },
+    {
+      "child_uri": "ex:AlphaAminopropionicAcid",
+      "parent_uri": "ex:AminoAcid",
+      "forward_valid": true,
+      "reverse_valid": false,
+      "reasoning": "Alpha-aminopropionic acid (alanine) is a specific amino acid, so every instance of it is an amino acid, but not every amino acid is alpha-aminopropionic acid."
+    },
+    {
+      "child_uri": "ex:AlphaAminoisovalericAcid",
+      "parent_uri": "ex:AminoAcid",
+      "forward_valid": true,
+      "reverse_valid": false,
+      "reasoning": "Alpha-aminoisovaleric acid (valine) is a specific amino acid, so every instance of it is an amino acid, but not every amino acid is alpha-aminoisovaleric acid."
+    },
+    {
+      "child_uri": "ex:AlphaAminoisocaproicAcid",
+      "parent_uri": "ex:AminoAcid",
+      "forward_valid": true,
+      "reverse_valid": false,
+      "reasoning": "Alpha-aminoisocaproic acid (leucine) is a specific amino acid, so every instance of it is an amino acid, but not every amino acid is alpha-aminoisocaproic acid."
+    },
+    {
+      "child_uri": "ex:AlphaAminoBetaMethylNValericAcid",
+      "parent_uri": "ex:AminoAcid",
+      "forward_valid": true,
+      "reverse_valid": false,
+      "reasoning": "Alpha-amino-beta-methyl-n-valeric acid (isoleucine) is a specific amino acid, so every instance of it is an amino acid, but not every amino acid is alpha-amino-beta-methyl-n-valeric acid."
+    },
+    {
+      "child_uri": "ex:AlphaAminoNCaproicAcid",
+      "parent_uri": "ex:AminoAcid",
+      "forward_valid": true,
+      "reverse_valid": false,
+      "reasoning": "Alpha-amino-n-caproic acid (norleucine) is a specific amino acid, so every instance of it is an amino acid, but not every amino acid is alpha-amino-n-caproic acid."
+    },
+    {
+      "child_uri": "ex:AlphaAminoBetaPhenylpropionicAcid",
+      "parent_uri": "ex:AminoAcid",
+      "forward_valid": true,
+      "reverse_valid": false,
+      "reasoning": "Alpha-amino-beta-phenylpropionic acid (phenylalanine) is a specific amino acid, so every instance of it is an amino acid, but not every amino acid is alpha-amino-beta-phenylpropionic acid."
+    },
+    {
+      "child_uri": "ex:AlphaAminoBetaPHydroxyphenylPropionicAcid",
+      "parent_uri": "ex:AminoAcid",
+      "forward_valid": true,
+      "reverse_valid": false,
+      "reasoning": "Alpha-amino-beta-p-hydroxyphenylpropionic acid (tyrosine) is a specific amino acid, so every instance of it is an amino acid, but not every amino acid is alpha-amino-beta-p-hydroxyphenylpropionic acid."
+    },
+    {
+      "child_uri": "ex:AlphaAminoBetaHydroxypropionicAcid",
+      "parent_uri": "ex:AminoAcid",
+      "forward_valid": true,
+      "reverse_valid": false,
+      "reasoning": "Alpha-amino-beta-hydroxypropionic acid (serine) is a specific amino acid, so every instance of it is an amino acid, but not every amino acid is alpha-amino-beta-hydroxypropionic acid."
+    },
+    {
+      "child_uri": "ex:AlphaAminoBetaMercaptopropionicAcid",
+      "parent_uri": "ex:AminoAcid",
+      "forward_valid": true,
+      "reverse_valid": false,
+      "reasoning": "Alpha-amino-beta-mercaptopropionic acid (cysteine) is a specific amino acid, so every instance of it is an amino acid, but not every amino acid is alpha-amino-beta-mercaptopropionic acid."
+    },
+    {
+      "child_uri": "ex:AlphaAminoBetaHydroxyNButyricAcid",
+      "parent_uri": "ex:AminoAcid",
+      "forward_valid": true,
+      "reverse_valid": false,
+      "reasoning": "Alpha-amino-beta-hydroxy-n-butyric acid (isoserine) is a specific amino acid, so every instance of it is an amino acid, but not every amino acid is alpha-amino-beta-hydroxy-n-butyric acid."
+    },
+    {
+      "child_uri": "ex:AlphaAminoGammaMethylthioNButyricAcid",
+      "parent_uri": "ex:AminoAcid",
+      "forward_valid": true,
+      "reverse_valid": false,
+      "reasoning": "Alpha-amino-gamma-methylthio-n-butyric acid (methionine) is a specific amino acid, so every instance of it is an amino acid, but not every amino acid is alpha-amino-gamma-methylthio-n-butyric acid."
+    },
+    {
+      "child_uri": "ex:AlphaAminoBetaIndolepropionicAcid",
+      "parent_uri": "ex:AminoAcid",
+      "forward_valid": true,
+      "reverse_valid": false,
+      "reasoning": "Alpha-amino-beta-indolepropionic acid (tryptophan) is a specific amino acid, so every instance of it is an amino acid, but not every amino acid is alpha-amino-beta-indolepropionic acid."
+    },
+    {
+      "child_uri": "ex:PyrrolidineAlphaCarboxylicAcid",
+      "parent_uri": "ex:IminoAcid",
+      "forward_valid": true,
+      "reverse_valid": false,
+      "reasoning": "Pyrrolidine alpha carboxylic acid (proline) is a type of imino acid, so every instance of it is an imino acid, but not every imino acid is pyrrolidine alpha carboxylic acid."
+    },
+    {
+      "child_uri": "ex:GammaHydroxypyrrolidineAlphaCarboxylicAcid",
+      "parent_uri": "ex:IminoAcid",
+      "forward_valid": true,
+      "reverse_valid": false,
+      "reasoning": "Gamma-hydroxypyrrolidine alpha carboxylic acid (hydroxyproline) is a type of imino acid, so every instance of it is an imino acid, but not every imino acid is gamma-hydroxypyrrolidine alpha carboxylic acid."
+    },
+    {
+      "child_uri": "ex:AlphaAminosuccinicAcid",
+      "parent_uri": "ex:AminoAcid",
+      "forward_valid": true,
+      "reverse_valid": false,
+      "reasoning": "Alpha-aminosuccinic acid (aspartic acid) is a specific amino acid, so every instance of it is an amino acid, but not every amino acid is alpha-aminosuccinic acid."
+    },
+    {
+      "child_uri": "ex:AlphaAminosuccinamicAcid",
+      "parent_uri": "ex:AminoAcid",
+      "forward_valid": true,
+      "reverse_valid": false,
+      "reasoning": "Alpha-aminosuccinamic acid (asparagine) is a specific amino acid, so every instance of it is an amino acid, but not every amino acid is alpha-aminosuccinamic acid."
+    },
+    {
+      "child_uri": "ex:AlphaAminoglutaricAcid",
+      "parent_uri": "ex:AminoAcid",
+      "forward_valid": true,
+      "reverse_valid": false,
+      "reasoning": "Alpha-aminoglutaric acid (glutamic acid) is a specific amino acid, so every instance of it is an amino acid, but not every amino acid is alpha-aminoglutaric acid."
+    },
+    {
+      "child_uri": "ex:AlphaAminoBetaHydroxyglutaricAcid",
+      "parent_uri": "ex:AminoAcid",
+      "forward_valid": true,
+      "reverse_valid": false,
+      "reasoning": "Alpha-amino-beta-hydroxyglutaric acid is a specific amino acid, so every instance of it is an amino acid, but not every amino acid is alpha-amino-beta-hydroxyglutaric acid."
+    },
+    {
+      "child_uri": "ex:AlphaAminoGlutamicAcid",
+      "parent_uri": "ex:AminoAcid",
+      "forward_valid": true,
+      "reverse_valid": false,
+      "reasoning": "Alpha-amino-glutamic acid (glutamine) is a specific amino acid, so every instance of it is an amino acid, but not every amino acid is alpha-amino-glutamic acid."
+    },
+    {
+      "child_uri": "ex:AlphaDeltaDiaminoNValericAcid",
+      "parent_uri": "ex:AminoAcid",
+      "forward_valid": true,
+      "reverse_valid": false,
+      "reasoning": "Alpha-delta-diamino-n-valeric acid (ornithine) is a specific amino acid, so every instance of it is an amino acid, but not every amino acid is alpha-delta-diamino-n-valeric acid."
+    },
+    {
+      "child_uri": "ex:AlphaAminoDeltaGuanidinoNValericAcid",
+      "parent_uri": "ex:AminoAcid",
+      "forward_valid": true,
+      "reverse_valid": false,
+      "reasoning": "Alpha-amino-delta-guanidino-n-valeric acid (arginine) is a specific amino acid, so every instance of it is an amino acid, but not every amino acid is alpha-amino-delta-guanidino-n-valeric acid."
+    },
+    {
+      "child_uri": "ex:AlphaDiaminocaproicAcid",
+      "parent_uri": "ex:AminoAcid",
+      "forward_valid": true,
+      "reverse_valid": false,
+      "reasoning": "Alpha-diaminocaproic acid (lysine) is a specific amino acid, so every instance of it is an amino acid, but not every amino acid is alpha-diaminocaproic acid."
+    },
+    {
+      "child_uri": "ex:AlphaAminoBetaImidazolepropionicAcid",
+      "parent_uri": "ex:AminoAcid",
+      "forward_valid": true,
+      "reverse_valid": false,
+      "reasoning": "Alpha-amino-beta-imidazolepropionic acid (histidine) is a specific amino acid, so every instance of it is an amino acid, but not every amino acid is alpha-amino-beta-imidazolepropionic acid."
+    }
+  ]
+}

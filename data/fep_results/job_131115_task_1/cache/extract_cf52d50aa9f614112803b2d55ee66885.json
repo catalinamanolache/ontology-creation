@@ -1,0 +1,26 @@
+{
+  "reasoning_steps": [
+    "Identified key elements and structural classifications of amino acids.",
+    "Extracted classification based on alpha, beta, gamma, or delta positions."
+  ],
+  "entities": [
+    {
+      "id": "ex:amino_acids",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "The key elements of an amino acid are carbon (C), hydrogen (H), oxygen (O), and nitrogen (N)"
+    },
+    {
+      "id": "ex:alpha_amino_acids",
+      "class_uri": "ex:AlphaAminoAcid",
+      "evidence_span": "They will be classified in step with the core structural-functional groups' locations as alpha- (α-) "
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "ex:amino_acids",
+      "property_uri": "ex:classifiedAsAlphaAminoAcid",
+      "target_id": "ex:alpha_amino_acids",
+      "evidence_span": "They will be classified in step with the core structural-functional groups' locations as alpha- (α-) "
+    }
+  ]
+}

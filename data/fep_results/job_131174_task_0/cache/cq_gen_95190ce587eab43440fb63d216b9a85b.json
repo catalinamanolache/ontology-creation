@@ -1,0 +1,44 @@
+{
+  "questions": [
+    {
+      "question": "What is the total global public R&D funding for wind energy in 2022?",
+      "scope": "instance"
+    },
+    {
+      "question": "Which classification codes are used by IEA to categorize wind technology R&D investments?",
+      "scope": "class"
+    },
+    {
+      "question": "How much did EU MSs spend on public R&I in wind energy from 2010 to 2022?",
+      "scope": "instance"
+    },
+    {
+      "question": "Which country leads in EU public R&D investment for wind energy between 2013 and 2022?",
+      "scope": "instance"
+    },
+    {
+      "question": "What percentage of global private R&D funding in the wind energy sector is attributed to the EU from 2010-2020?",
+      "scope": "instance"
+    },
+    {
+      "question": "Which two MSs are highly concentrated in terms of private R&D investment within the EU for wind energy?",
+      "scope": "instance"
+    },
+    {
+      "question": "What companies were among the top five global R&D investors in the wind energy sector from 2015-2019?",
+      "scope": "instance"
+    },
+    {
+      "question": "Which type of private equity financing is offered to start-ups and small businesses with high growth potential in the wind industry?",
+      "scope": "class"
+    },
+    {
+      "question": "What was the global VC/PE investment level in the wind energy sector in 2023 compared to peak years in 2021 and 2022?",
+      "scope": "instance"
+    },
+    {
+      "question": "Which region represented more than half of all VC/PE investments in the wind energy sector in 2023?",
+      "scope": "instance"
+    }
+  ]
+}

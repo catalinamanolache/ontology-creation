@@ -1,0 +1,695 @@
+{
+  "reasoning_steps": [
+    "Identify entities and their types based on the provided ontology and text.",
+    "Extract relations between entities using the properties defined in the ontology.",
+    "Ensure all extracted information strictly adheres to the provided ontology and filtration rules."
+  ],
+  "entities": [
+    {
+      "id": "methionine",
+      "class_uri": "ex:Methionine",
+      "evidence_span": "Methionine"
+    },
+    {
+      "id": "depression_ailment",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "depression"
+    },
+    {
+      "id": "inflammation_ailment",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "inflammation"
+    },
+    {
+      "id": "liver_illness_ailment",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "liver illness"
+    },
+    {
+      "id": "muscle_discomfort_ailment",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "muscle discomfort"
+    },
+    {
+      "id": "diiodothyronine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Diiodothyronine"
+    },
+    {
+      "id": "weight_reduction_use",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "reduce weight"
+    },
+    {
+      "id": "cholesterol_reduction_use",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "lower cholesterol"
+    },
+    {
+      "id": "muscle_development_use",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "develop muscle"
+    },
+    {
+      "id": "levothyroxine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "levothyroxine"
+    },
+    {
+      "id": "thyroid_underactivity",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Thyroid underactivity"
+    },
+    {
+      "id": "tryptophan",
+      "class_uri": "ex:Tryptophan",
+      "evidence_span": "Tryptophan"
+    },
+    {
+      "id": "anxiety_treatment",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "anxiety"
+    },
+    {
+      "id": "depression_treatment",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "depression"
+    },
+    {
+      "id": "migraines_treatment",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "migraines"
+    },
+    {
+      "id": "headaches_treatment",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "headaches"
+    },
+    {
+      "id": "growth_hormone_production_boost",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "boost the production of growth hormones"
+    },
+    {
+      "id": "proline",
+      "class_uri": "ex:Proline",
+      "evidence_span": "Proline"
+    },
+    {
+      "id": "l_proline_supplements",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "L-proline supplements"
+    },
+    {
+      "id": "joint_health_improvement",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "improve joint"
+    },
+    {
+      "id": "skin_health_improvement",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "skin health"
+    },
+    {
+      "id": "muscle_development_help",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "muscle development"
+    },
+    {
+      "id": "injury_healing_help",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "injury healing"
+    },
+    {
+      "id": "hydroxyproline",
+      "class_uri": "ex:Hydroxyproline",
+      "evidence_span": "Hydroxyproline"
+    },
+    {
+      "id": "collagen_formation_requirement",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "required for the formation of collagen"
+    },
+    {
+      "id": "collagen",
+      "class_uri": "ex:Protein",
+      "evidence_span": "collagen"
+    },
+    {
+      "id": "aspatic_acid",
+      "class_uri": "ex:AsparticAcid",
+      "evidence_span": "Aspartic acid"
+    },
+    {
+      "id": "stress_treatment",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "treat stress"
+    },
+    {
+      "id": "exhaustion_treatment",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "exhaustion"
+    },
+    {
+      "id": "energy_generation_from_carbohydrates",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "aids in the generation of energy from carbohydrates"
+    },
+    {
+      "id": "rna_dna_manufacturing",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "manufacturing of RNA and DNA"
+    },
+    {
+      "id": "asparagine",
+      "class_uri": "ex:Asparagine",
+      "evidence_span": "Asparagine"
+    },
+    {
+      "id": "brain_development_function_necessity",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "necessary for brain development and function"
+    },
+    {
+      "id": "glutamic_acid",
+      "class_uri": "ex:GlutamicAcid",
+      "evidence_span": "Glutamic acid"
+    },
+    {
+      "id": "energy_source_for_brain",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "serves as a source of energy for the brain"
+    },
+    {
+      "id": "brain_clarity_improvement",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "improves brain clarity"
+    },
+    {
+      "id": "mental_alertness_improvement",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "mental alertness"
+    },
+    {
+      "id": "mood_improvement",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "mood"
+    },
+    {
+      "id": "parkinsons_treatment",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "treat Parkinson's"
+    },
+    {
+      "id": "fatigue_treatment",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Fatigue"
+    },
+    {
+      "id": "schizophrenia_treatment",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Schizophrenia"
+    },
+    {
+      "id": "beta_hydroxy_glutamic_acid",
+      "class_uri": "ex:BetaHydroxyGlutamicAcid",
+      "evidence_span": "Beta-hydroxy glutamic acid"
+    },
+    {
+      "id": "acne_treatment",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "treat acne"
+    },
+    {
+      "id": "photoaging_treatment",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "photoaging"
+    },
+    {
+      "id": "dry_skin_treatment",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "dry skin"
+    },
+    {
+      "id": "psoriasis_treatment",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "psoriasis"
+    },
+    {
+      "id": "melasma_treatment",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "melasma"
+    },
+    {
+      "id": "fibromyalgia_study",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "fibromyalgia"
+    },
+    {
+      "id": "dental_scaling_study",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "dental scaling"
+    },
+    {
+      "id": "dry_mouth_study",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "dry mouth"
+    },
+    {
+      "id": "urinary_tract_stones_prevention_treatment",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "prevention and treatment of urinary tract stones"
+    },
+    {
+      "id": "glutamine",
+      "class_uri": "ex:Glutamine",
+      "evidence_span": "Glutamine"
+    },
+    {
+      "id": "blood_sugar_control_consistency",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "keep blood sugar levels under control and consistent"
+    },
+    {
+      "id": "ornithine",
+      "class_uri": "ex:Ornithine",
+      "evidence_span": "Ornithine"
+    },
+    {
+      "id": "l_ornithine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "L-ornithine"
+    },
+    {
+      "id": "sports_performance_support",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "support sports and performance"
+    },
+    {
+      "id": "liver_function_help",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "help with liver function"
+    },
+    {
+      "id": "wound_healing_help",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "wound healing"
+    },
+    {
+      "id": "arginine",
+      "class_uri": "ex:Arginine",
+      "evidence_span": "Arginine"
+    },
+    {
+      "id": "l_arginine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "L-arginine"
+    },
+    {
+      "id": "antiatherogenic_effects",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "antiatherogenic"
+    },
+    {
+      "id": "anti_ischemic_effects",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "anti -ischemic"
+    },
+    {
+      "id": "antiplatelet_effects",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "antiplatelet"
+    },
+    {
+      "id": "antithrombotic_effects",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "antithr ombotic"
+    },
+    {
+      "id": "cardiovascular_disease_treatment",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "treatment of cardiovascular disease"
+    },
+    {
+      "id": "lysine",
+      "class_uri": "ex:Lysine",
+      "evidence_span": "Lysine"
+    },
+    {
+      "id": "cold_sores_minimization",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "minimize cold sores"
+    },
+    {
+      "id": "histidine",
+      "class_uri": "ex:Histidine",
+      "evidence_span": "Histidine"
+    },
+    {
+      "id": "hemoglobin",
+      "class_uri": "ex:Protein",
+      "evidence_span": "Hemoglobin"
+    },
+    {
+      "id": "anemia_treatment",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "treat anemia"
+    },
+    {
+      "id": "blood_pressure_reduction",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "reduce blood pressure"
+    },
+    {
+      "id": "baby_feeding_criticality",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "critical in baby feeding"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "methionine",
+      "property_uri": "ex:isUsedToPreventAndCureInflammation",
+      "target_id": "true",
+      "evidence_span": "inflammation"
+    },
+    {
+      "source_id": "methionine",
+      "property_uri": "ex:isUsedToPreventAndCureLiverIllness",
+      "target_id": "true",
+      "evidence_span": "liver illness"
+    },
+    {
+      "source_id": "methionine",
+      "property_uri": "ex:isUsedToPreventAndCureMuscleDiscomfort",
+      "target_id": "true",
+      "evidence_span": "muscle discomfort"
+    },
+    {
+      "source_id": "methionine",
+      "property_uri": "ex:isUsedToTreatDepression",
+      "target_id": "true",
+      "evidence_span": "depression"
+    },
+    {
+      "source_id": "diiodothyronine",
+      "property_uri": "ex:increasesPhysicalPerformance",
+      "target_id": "true",
+      "evidence_span": "develop muscle"
+    },
+    {
+      "source_id": "diiodothyronine",
+      "property_uri": "ex:isUsedToTreatMetabolicSyndrome",
+      "target_id": "true",
+      "evidence_span": "reduce weight"
+    },
+    {
+      "source_id": "diiodothyronine",
+      "property_uri": "ex:isUsedToTreatBPH",
+      "target_id": "true",
+      "evidence_span": "lower cholesterol"
+    },
+    {
+      "source_id": "levothyroxine",
+      "property_uri": "ex:isUsedToTreatThyroidUnderactivity",
+      "target_id": "true",
+      "evidence_span": "Thyroid underactivity"
+    },
+    {
+      "source_id": "tryptophan",
+      "property_uri": "ex:isUsedToTreatAnxiety",
+      "target_id": "true",
+      "evidence_span": "anxiety"
+    },
+    {
+      "source_id": "tryptophan",
+      "property_uri": "ex:isUsedToTreatDepression",
+      "target_id": "true",
+      "evidence_span": "depression"
+    },
+    {
+      "source_id": "tryptophan",
+      "property_uri": "ex:isUsedToTreatMigraines",
+      "target_id": "true",
+      "evidence_span": "migraines"
+    },
+    {
+      "source_id": "tryptophan",
+      "property_uri": "ex:isUsedToTreatHeadaches",
+      "target_id": "true",
+      "evidence_span": "headaches"
+    },
+    {
+      "source_id": "tryptophan",
+      "property_uri": "ex:isUsedToBoostGrowthHormoneProduction",
+      "target_id": "true",
+      "evidence_span": "boost the production of growth hormones"
+    },
+    {
+      "source_id": "proline",
+      "property_uri": "ex:improvesJointHealth",
+      "target_id": "true",
+      "evidence_span": "improve joint"
+    },
+    {
+      "source_id": "proline",
+      "property_uri": "ex:improvesSkinHealth",
+      "target_id": "true",
+      "evidence_span": "skin health"
+    },
+    {
+      "source_id": "proline",
+      "property_uri": "ex:helpsWithMuscleDevelopment",
+      "target_id": "true",
+      "evidence_span": "muscle development"
+    },
+    {
+      "source_id": "proline",
+      "property_uri": "ex:helpsWithInjuryHealing",
+      "target_id": "true",
+      "evidence_span": "injury healing"
+    },
+    {
+      "source_id": "hydroxyproline",
+      "property_uri": "ex:isRequiredForTheFormationOfCollagen",
+      "target_id": "true",
+      "evidence_span": "required for the formation of collagen"
+    },
+    {
+      "source_id": "hydroxyproline",
+      "property_uri": "ex:isIncorporatedInto",
+      "target_id": "collagen",
+      "evidence_span": "collagen"
+    },
+    {
+      "source_id": "aspatic_acid",
+      "property_uri": "ex:isUsedToTreatStress",
+      "target_id": "true",
+      "evidence_span": "treat stress"
+    },
+    {
+      "source_id": "aspatic_acid",
+      "property_uri": "ex:isUsedToTreatExhaustion",
+      "target_id": "true",
+      "evidence_span": "exhaustion"
+    },
+    {
+      "source_id": "aspatic_acid",
+      "property_uri": "ex:aidsInEnergyGenerationFromCarbohydrates",
+      "target_id": "true",
+      "evidence_span": "aids in the generation of energy from carbohydrates"
+    },
+    {
+      "source_id": "aspatic_acid",
+      "property_uri": "ex:aidsInManufacturingOfRNAAndDNA",
+      "target_id": "true",
+      "evidence_span": "manufacturing of RNA and DNA"
+    },
+    {
+      "source_id": "asparagine",
+      "property_uri": "ex:isNecessaryForBrainDevelopmentAndFunction",
+      "target_id": "true",
+      "evidence_span": "necessary for brain development and function"
+    },
+    {
+      "source_id": "glutamic_acid",
+      "property_uri": "ex:servesAsEnergySourceForTheBrain",
+      "target_id": "true",
+      "evidence_span": "serves as a source of energy for the brain"
+    },
+    {
+      "source_id": "glutamic_acid",
+      "property_uri": "ex:improvesBrainClarity",
+      "target_id": "true",
+      "evidence_span": "improves brain clarity"
+    },
+    {
+      "source_id": "glutamic_acid",
+      "property_uri": "ex:improvesAlertness",
+      "target_id": "true",
+      "evidence_span": "mental alertness"
+    },
+    {
+      "source_id": "glutamic_acid",
+      "property_uri": "ex:improvesMood",
+      "target_id": "true",
+      "evidence_span": "mood"
+    },
+    {
+      "source_id": "glutamic_acid",
+      "property_uri": "ex:isUsedToTreatParkinsonsDisease",
+      "target_id": "true",
+      "evidence_span": "treat Parkinson's"
+    },
+    {
+      "source_id": "glutamic_acid",
+      "property_uri": "ex:isUsedToTreatFatigue",
+      "target_id": "true",
+      "evidence_span": "Fatigue"
+    },
+    {
+      "source_id": "glutamic_acid",
+      "property_uri": "ex:isUsedToTreatSchizophrenia",
+      "target_id": "true",
+      "evidence_span": "Schizophrenia"
+    },
+    {
+      "source_id": "beta_hydroxy_glutamic_acid",
+      "property_uri": "ex:isUsedToTreatAcne",
+      "target_id": "true",
+      "evidence_span": "treat acne"
+    },
+    {
+      "source_id": "beta_hydroxy_glutamic_acid",
+      "property_uri": "ex:isUsedToTreatPhotoaging",
+      "target_id": "true",
+      "evidence_span": "photoaging"
+    },
+    {
+      "source_id": "beta_hydroxy_glutamic_acid",
+      "property_uri": "ex:isUsedToTreatDrySkin",
+      "target_id": "true",
+      "evidence_span": "dry skin"
+    },
+    {
+      "source_id": "beta_hydroxy_glutamic_acid",
+      "property_uri": "ex:isUsedToTreatPsoriasis",
+      "target_id": "true",
+      "evidence_span": "psoriasis"
+    },
+    {
+      "source_id": "beta_hydroxy_glutamic_acid",
+      "property_uri": "ex:isUsedToTreatMelasma",
+      "target_id": "true",
+      "evidence_span": "melasma"
+    },
+    {
+      "source_id": "beta_hydroxy_glutamic_acid",
+      "property_uri": "ex:hasBeenStudiedForFibromyalgia",
+      "target_id": "true",
+      "evidence_span": "fibromyalgia"
+    },
+    {
+      "source_id": "beta_hydroxy_glutamic_acid",
+      "property_uri": "ex:hasBeenStudiedForDentalScaling",
+      "target_id": "true",
+      "evidence_span": "dental scaling"
+    },
+    {
+      "source_id": "beta_hydroxy_glutamic_acid",
+      "property_uri": "ex:hasBeenStudiedForDryMouth",
+      "target_id": "true",
+      "evidence_span": "dry mouth"
+    },
+    {
+      "source_id": "beta_hydroxy_glutamic_acid",
+      "property_uri": "ex:isUsedForPreventionAndTreatmentOfUrinaryTractStones",
+      "target_id": "true",
+      "evidence_span": "prevention and treatment of urinary tract stones"
+    },
+    {
+      "source_id": "glutamine",
+      "property_uri": "ex:isUsedToKeepBloodSugarLevelsUnderControlAndConsistent",
+      "target_id": "true",
+      "evidence_span": "keep blood sugar levels under control and consistent"
+    },
+    {
+      "source_id": "ornithine",
+      "property_uri": "ex:isUsedInHealthSupplementsToSupportSportsAndPerformance",
+      "target_id": "true",
+      "evidence_span": "support sports and performance"
+    },
+    {
+      "source_id": "ornithine",
+      "property_uri": "ex:isUtilizedToHelpWithLiverFunction",
+      "target_id": "true",
+      "evidence_span": "help with liver function"
+    },
+    {
+      "source_id": "ornithine",
+      "property_uri": "ex:isUtilizedToHelpWithWoundHealing",
+      "target_id": "true",
+      "evidence_span": "wound healing"
+    },
+    {
+      "source_id": "arginine",
+      "property_uri": "ex:hasAntiatherogenicEffects",
+      "target_id": "true",
+      "evidence_span": "antiatherogenic"
+    },
+    {
+      "source_id": "arginine",
+      "property_uri": "ex:hasAntiischemicEffects",
+      "target_id": "true",
+      "evidence_span": "anti -ischemic"
+    },
+    {
+      "source_id": "arginine",
+      "property_uri": "ex:hasAntiplateletEffects",
+      "target_id": "true",
+      "evidence_span": "antiplatelet"
+    },
+    {
+      "source_id": "arginine",
+      "property_uri": "ex:hasAntithromboticEffects",
+      "target_id": "true",
+      "evidence_span": "antithr ombotic"
+    },
+    {
+      "source_id": "arginine",
+      "property_uri": "ex:isUsedToTreatCardiovascularDisease",
+      "target_id": "true",
+      "evidence_span": "treatment of cardiovascular disease"
+    },
+    {
+      "source_id": "lysine",
+      "property_uri": "ex:appearsToMinimizeColdSores",
+      "target_id": "true",
+      "evidence_span": "minimize cold sores"
+    },
+    {
+      "source_id": "histidine",
+      "property_uri": "ex:isIncorporatedInto",
+      "target_id": "hemoglobin",
+      "evidence_span": "Hemoglobin"
+    },
+    {
+      "source_id": "histidine",
+      "property_uri": "ex:isUsedToTreatAnemia",
+      "target_id": "true",
+      "evidence_span": "treat anemia"
+    },
+    {
+      "source_id": "histidine",
+      "property_uri": "ex:isUsedToReduceBloodPressure",
+      "target_id": "true",
+      "evidence_span": "reduce blood pressure"
+    },
+    {
+      "source_id": "histidine",
+      "property_uri": "ex:isCriticalInBabyFeeding",
+      "target_id": "true",
+      "evidence_span": "critical in baby feeding"
+    }
+  ]
+}

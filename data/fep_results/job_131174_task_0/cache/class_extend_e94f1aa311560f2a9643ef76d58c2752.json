@@ -1,0 +1,50 @@
+{
+  "reasoning_steps": [
+    "The text introduces new concepts related to investment deals, patenting trends, and scientific publications in the wind energy sector that are not covered by existing classes."
+  ],
+  "classes": [
+    {
+      "uri": "ex:VCPEInvestmentDeal",
+      "bfo_parent": "bfo:InformationContentEntity",
+      "subclass_of": null,
+      "aristotelian_definition": "An VC/PE Investment Deal is an Information Content Entity representing financial support provided to companies in the wind energy sector.",
+      "comment": "Represents venture capital and private equity investment deals specific to the wind energy industry."
+    },
+    {
+      "uri": "ex:HighValueInvention",
+      "bfo_parent": "bfo:InformationContentEntity",
+      "subclass_of": null,
+      "aristotelian_definition": "A High Value Invention is an Information Content Entity representing patent families with applications filed in multiple patent offices.",
+      "comment": "Represents inventions that have significant international protection and are considered high-value."
+    },
+    {
+      "uri": "ex:PublicationActivity",
+      "bfo_parent": "bfo:InformationContentEntity",
+      "subclass_of": null,
+      "aristotelian_definition": "A Publication Activity is an Information Content Entity representing the number of peer-reviewed articles published in a specific field.",
+      "comment": "Captures the publication trends and activities within the wind energy sector."
+    },
+    {
+      "uri": "ex:EUEconomicIndicatorForVCPE",
+      "bfo_parent": "bfo:Quality",
+      "subclass_of": null,
+      "aristotelian_definition": "An EUEconomicIndicatorForVCPE is a Quality indicating economic factors related to VC/PE funding within the EU wind sector.",
+      "comment": "Measures economic indicators specific to venture capital and private equity investments in the European Union."
+    },
+    {
+      "uri": "ex:HighValueInventionShare",
+      "bfo_parent": "bfo:Quality",
+      "subclass_of": null,
+      "aristotelian_definition": "A High Value Invention Share is a Quality indicating the proportion of high-value inventions within a specific region or country.",
+      "comment": "Represents the share of high-value patents filed in different regions."
+    },
+    {
+      "uri": "ex:PublicationImpactMetric",
+      "bfo_parent": "bfo:Quality",
+      "subclass_of": null,
+      "aristotelian_definition": "A Publication Impact Metric is a Quality measuring the citation impact and productivity of publications.",
+      "comment": "Captures metrics such as FWCI and h-index for assessing publication impact."
+    }
+  ],
+  "canonical_terms": {}
+}

@@ -1,0 +1,87 @@
+{
+  "reasoning_steps": [
+    "Identify amino acids mentioned in the text and classify them according to their properties using approved ontology.",
+    "Ensure all extracted entities and relations adhere strictly to the provided schema."
+  ],
+  "entities": [
+    {
+      "id": "ex:lysine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "lysine"
+    },
+    {
+      "id": "ex:arginine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "arginine"
+    },
+    {
+      "id": "ex:histidine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "histidine"
+    },
+    {
+      "id": "ex:phenylalanine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "phenylalanine"
+    },
+    {
+      "id": "ex:tyrosine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "tyrosine"
+    },
+    {
+      "id": "ex:tryptophan",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "tryptophan"
+    },
+    {
+      "id": "ex:proline",
+      "class_uri": "ex:IminoAcid",
+      "evidence_span": "proline"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "ex:lysine",
+      "property_uri": "ex:classifiedAsBasicAminoAcid",
+      "target_id": "ex:basic_amino_acids",
+      "evidence_span": "lysine"
+    },
+    {
+      "source_id": "ex:arginine",
+      "property_uri": "ex:classifiedAsBasicAminoAcid",
+      "target_id": "ex:basic_amino_acids",
+      "evidence_span": "arginine"
+    },
+    {
+      "source_id": "ex:histidine",
+      "property_uri": "ex:classifiedAsBasicAminoAcid",
+      "target_id": "ex:basic_amino_acids",
+      "evidence_span": "histidine"
+    },
+    {
+      "source_id": "ex:phenylalanine",
+      "property_uri": "ex:classifiedAsAromaticAminoAcid",
+      "target_id": "ex:aromatic_amino_acids",
+      "evidence_span": "phenylalanine"
+    },
+    {
+      "source_id": "ex:tyrosine",
+      "property_uri": "ex:classifiedAsAromaticAminoAcid",
+      "target_id": "ex:aromatic_amino_acids",
+      "evidence_span": "tyrosine"
+    },
+    {
+      "source_id": "ex:tryptophan",
+      "property_uri": "ex:classifiedAsAromaticAminoAcid",
+      "target_id": "ex:aromatic_amino_acids",
+      "evidence_span": "tryptophan"
+    },
+    {
+      "source_id": "ex:proline",
+      "property_uri": "ex:classifiedAsIminoAcid",
+      "target_id": "ex:imino_acids",
+      "evidence_span": "proline"
+    }
+  ]
+}

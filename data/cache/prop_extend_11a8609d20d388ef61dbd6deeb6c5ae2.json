@@ -1,0 +1,140 @@
+{
+  "reasoning_steps": [
+    "Identified new relationships between amino acids and their classifications based on structure, nutritional requirement, metabolic fate, and polarity.",
+    "Created new properties to represent these classifications, ensuring no overlap with existing properties and using the provided class URIs."
+  ],
+  "properties": [
+    {
+      "uri": "ex:isBranchedChainAminoAcid",
+      "domain": "ex:AminoAcid",
+      "range": "ex:BranchedChainAminoAcid",
+      "comment": "Relates an amino acid to its classification as a branched-chain amino acid."
+    },
+    {
+      "uri": "ex:isHydroxylGroupContainingAminoAcid",
+      "domain": "ex:AminoAcid",
+      "range": "ex:HydroxylGroupContainingAminoAcid",
+      "comment": "Relates an amino acid to its classification as a hydroxyl group-containing amino acid."
+    },
+    {
+      "uri": "ex:isSulfurContainingAminoAcid",
+      "domain": "ex:AminoAcid",
+      "range": "ex:SulfurContainingAminoAcid",
+      "comment": "Relates an amino acid to its classification as a sulfur-containing amino acid."
+    },
+    {
+      "uri": "ex:isAcidicAminoAcid",
+      "domain": "ex:AminoAcid",
+      "range": "ex:AcidicAminoAcid",
+      "comment": "Relates an amino acid to its classification as an acidic amino acid."
+    },
+    {
+      "uri": "ex:isAmideAminoAcid",
+      "domain": "ex:AminoAcid",
+      "range": "ex:AmideAminoAcid",
+      "comment": "Relates an amino acid to its classification as an amide amino acid."
+    },
+    {
+      "uri": "ex:isBasicAminoAcid",
+      "domain": "ex:AminoAcid",
+      "range": "ex:BasicAminoAcid",
+      "comment": "Relates an amino acid to its classification as a basic amino acid."
+    },
+    {
+      "uri": "ex:isAromaticAminoAcid",
+      "domain": "ex:AminoAcid",
+      "range": "ex:AromaticAminoAcid",
+      "comment": "Relates an amino acid to its classification as an aromatic amino acid."
+    },
+    {
+      "uri": "ex:isIminoAcid",
+      "domain": "ex:AminoAcid",
+      "range": "ex:IminoAcid",
+      "comment": "Relates an amino acid to its classification as an imino acid."
+    },
+    {
+      "uri": "ex:isHeterocyclicAminoAcid",
+      "domain": "ex:AminoAcid",
+      "range": "ex:HeterocyclicAminoAcid",
+      "comment": "Relates an amino acid to its classification as a heterocyclic amino acid."
+    },
+    {
+      "uri": "ex:isAlphaAminoAcid",
+      "domain": "ex:AminoAcid",
+      "range": "ex:AlphaAminoAcid",
+      "comment": "Relates an amino acid to its classification as an alpha amino acid."
+    },
+    {
+      "uri": "ex:isBetaAminoAcid",
+      "domain": "ex:AminoAcid",
+      "range": "ex:BetaAminoAcid",
+      "comment": "Relates an amino acid to its classification as a beta amino acid."
+    },
+    {
+      "uri": "ex:isGammaAminoAcid",
+      "domain": "ex:AminoAcid",
+      "range": "ex:GammaAminoAcid",
+      "comment": "Relates an amino acid to its classification as a gamma amino acid."
+    },
+    {
+      "uri": "ex:isPurelyKetogenicAminoAcid",
+      "domain": "ex:AminoAcid",
+      "range": "ex:PurelyKetogenicAminoAcid",
+      "comment": "Relates an amino acid to its classification as purely ketogenic."
+    },
+    {
+      "uri": "ex:isKetogenicAndGlucogenicAminoAcid",
+      "domain": "ex:AminoAcid",
+      "range": "ex:KetogenicAndGlucogenicAminoAcid",
+      "comment": "Relates an amino acid to its classification as both ketogenic and glucogenic."
+    },
+    {
+      "uri": "ex:isPurelyGlucogenicAminoAcid",
+      "domain": "ex:AminoAcid",
+      "range": "ex:PurelyGlucogenicAminoAcid",
+      "comment": "Relates an amino acid to its classification as purely glucogenic."
+    },
+    {
+      "uri": "ex:isHydrophobicAminoAcid",
+      "domain": "ex:AminoAcid",
+      "range": "ex:HydrophobicAminoAcid",
+      "comment": "Relates an amino acid to its classification as hydrophobic."
+    },
+    {
+      "uri": "ex:isPolarUnchargedAminoAcid",
+      "domain": "ex:AminoAcid",
+      "range": "ex:PolarUnchargedAminoAcid",
+      "comment": "Relates an amino acid to its classification as polar and uncharged."
+    },
+    {
+      "uri": "ex:isPolarPositivelyChargedAminoAcid",
+      "domain": "ex:AminoAcid",
+      "range": "ex:PolarPositivelyChargedAminoAcid",
+      "comment": "Relates an amino acid to its classification as polar and positively charged."
+    },
+    {
+      "uri": "ex:isPolarNegativelyChargedAminoAcid",
+      "domain": "ex:AminoAcid",
+      "range": "ex:PolarNegativelyChargedAminoAcid",
+      "comment": "Relates an amino acid to its classification as polar and negatively charged."
+    },
+    {
+      "uri": "ex:isEssentialAminoAcid",
+      "domain": "ex:AminoAcid",
+      "range": "ex:EssentialAminoAcid",
+      "comment": "Relates an amino acid to its classification as essential."
+    },
+    {
+      "uri": "ex:isNonEssentialAminoAcid",
+      "domain": "ex:AminoAcid",
+      "range": "ex:NonEssentialAminoAcid",
+      "comment": "Relates an amino acid to its classification as non-essential."
+    },
+    {
+      "uri": "ex:isSemiEssentialAminoAcid",
+      "domain": "ex:AminoAcid",
+      "range": "ex:SemiEssentialAminoAcid",
+      "comment": "Relates an amino acid to its classification as semi-essential."
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "questions": [
+    {
+      "question": "What is the percentage change in EU exports of wind generating sets from 2020-2022 to 2021-2023?",
+      "scope": "property"
+    },
+    {
+      "question": "Which countries are the main importing partners for extra-EU imports of wind generating sets in 2023?",
+      "scope": "instance"
+    },
+    {
+      "question": "What is the share of intra-EU imports compared to extra-EU imports from 2020-2022 to 2021-2023?",
+      "scope": "property"
+    },
+    {
+      "question": "Which countries are listed as growing markets for wind generating sets based on a two-year average of import change, and what is the EU's share in these markets?",
+      "scope": "instance"
+    },
+    {
+      "question": "What raw materials are used in wind power plants according to Table 5?",
+      "scope": "class"
+    },
+    {
+      "question": "Which countries dominate the rare earth elements market and what is their role in permanent magnet manufacturing?",
+      "scope": "instance"
+    },
+    {
+      "question": "What percentage of offshore wind turbines in the EU used generators with rare earth permanent magnets in 2020?",
+      "scope": "property"
+    },
+    {
+      "question": "Which countries are listed as top global importers and exporters of wind generating sets according to Figure 51?",
+      "scope": "instance"
+    },
+    {
+      "question": "What is the EU's production share in raw materials compared to China’s, and what does this indicate about resource dependence?",
+      "scope": "property"
+    },
+    {
+      "question": "Which alternative material can be used for wind turbine blades instead of balsa wood due to supply bottlenecks?",
+      "scope": "class"
+    }
+  ]
+}

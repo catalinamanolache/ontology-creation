@@ -1,0 +1,44 @@
+{
+  "questions": [
+    {
+      "question": "What process produces amino acids from products through hydrolysis?",
+      "scope": "property"
+    },
+    {
+      "question": "Which amino acid is used to treat schizophrenia and metabolic syndrome?",
+      "scope": "instance"
+    },
+    {
+      "question": "List the amino acids that can be produced using Gabriel synthesis.",
+      "scope": "class"
+    },
+    {
+      "question": "What are the medical uses of phenylalanine?",
+      "scope": "property"
+    },
+    {
+      "question": "Which non-standard amino acid is used in chelation therapy for Wilson's disease?",
+      "scope": "instance"
+    },
+    {
+      "question": "How does cysteine enhance the effectiveness of corticosteroid medications?",
+      "scope": "property"
+    },
+    {
+      "question": "What role does histidine play in treating anemia and reducing blood pressure?",
+      "scope": "property"
+    },
+    {
+      "question": "Which amino acid is crucial for brain development and function?",
+      "scope": "instance"
+    },
+    {
+      "question": "List the three-letter abbreviations of all amino acids mentioned.",
+      "scope": "class"
+    },
+    {
+      "question": "What are the benefits of using L-valine in health supplements?",
+      "scope": "property"
+    }
+  ]
+}

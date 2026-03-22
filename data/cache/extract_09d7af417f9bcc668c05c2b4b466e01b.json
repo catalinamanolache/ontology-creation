@@ -1,0 +1,464 @@
+{
+  "reasoning_steps": [
+    "Identify essential amino acids mentioned in the text and map them to the 'ex:EssentialAminoAcid' class.",
+    "Identify semi-essential amino acids mentioned and map them to the 'ex:SemiEssentialAminoAcid' class.",
+    "Identify non-essential amino acids mentioned and map them to the 'ex:NonEssentialAminoAcid' class.",
+    "Extract relationships between amino acids and their classifications (essential, semi-essential, non-essential).",
+    "Identify amino acids with aliphatic side chains and classify them.",
+    "Identify amino acids with hydroxyl groups and classify them.",
+    "Identify sulfur-containing amino acids and classify them.",
+    "Identify acidic amino acids and their amides and classify them.",
+    "Identify basic amino acids and classify them."
+  ],
+  "entities": [
+    {
+      "id": "valine",
+      "class_uri": "ex:EssentialAminoAcid",
+      "evidence_span": "Valine"
+    },
+    {
+      "id": "leucine",
+      "class_uri": "ex:EssentialAminoAcid",
+      "evidence_span": "Leucine"
+    },
+    {
+      "id": "isoleucine",
+      "class_uri": "ex:EssentialAminoAcid",
+      "evidence_span": "Isoleucine"
+    },
+    {
+      "id": "threonine",
+      "class_uri": "ex:EssentialAminoAcid",
+      "evidence_span": "Threonine"
+    },
+    {
+      "id": "methionine",
+      "class_uri": "ex:EssentialAminoAcid",
+      "evidence_span": "Methionine"
+    },
+    {
+      "id": "phenylalanine",
+      "class_uri": "ex:EssentialAminoAcid",
+      "evidence_span": "Phenylalanine"
+    },
+    {
+      "id": "tryptophan",
+      "class_uri": "ex:EssentialAminoAcid",
+      "evidence_span": "Tryptophan"
+    },
+    {
+      "id": "lysine",
+      "class_uri": "ex:EssentialAminoAcid",
+      "evidence_span": "Lysine"
+    },
+    {
+      "id": "arginine",
+      "class_uri": "ex:SemiEssentialAminoAcid",
+      "evidence_span": "Arginine"
+    },
+    {
+      "id": "histidine",
+      "class_uri": "ex:SemiEssentialAminoAcid",
+      "evidence_span": "Histidine"
+    },
+    {
+      "id": "alanine",
+      "class_uri": "ex:NonEssentialAminoAcid",
+      "evidence_span": "Alanine"
+    },
+    {
+      "id": "arginine_non_essential",
+      "class_uri": "ex:NonEssentialAminoAcid",
+      "evidence_span": "Arginine"
+    },
+    {
+      "id": "aspartic_acid_non_essential",
+      "class_uri": "ex:NonEssentialAminoAcid",
+      "evidence_span": "Aspartic acid"
+    },
+    {
+      "id": "asparagine_non_essential",
+      "class_uri": "ex:NonEssentialAminoAcid",
+      "evidence_span": "Asparagine"
+    },
+    {
+      "id": "cystine_non_essential",
+      "class_uri": "ex:NonEssentialAminoAcid",
+      "evidence_span": "Cystine"
+    },
+    {
+      "id": "cysteine_non_essential",
+      "class_uri": "ex:NonEssentialAminoAcid",
+      "evidence_span": "Cysteine"
+    },
+    {
+      "id": "glutamic_acid_non_essential",
+      "class_uri": "ex:NonEssentialAminoAcid",
+      "evidence_span": "Glutamic acid"
+    },
+    {
+      "id": "glutamine_non_essential",
+      "class_uri": "ex:NonEssentialAminoAcid",
+      "evidence_span": "Glutamine"
+    },
+    {
+      "id": "glycine_non_essential",
+      "class_uri": "ex:NonEssentialAminoAcid",
+      "evidence_span": "Glycine"
+    },
+    {
+      "id": "histidine_non_essential",
+      "class_uri": "ex:NonEssentialAminoAcid",
+      "evidence_span": "Histidine"
+    },
+    {
+      "id": "proline",
+      "class_uri": "ex:NonEssentialAminoAcid",
+      "evidence_span": "Proline"
+    },
+    {
+      "id": "serine",
+      "class_uri": "ex:NonEssentialAminoAcid",
+      "evidence_span": "Serine"
+    },
+    {
+      "id": "glycine_aliphatic",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "glycine"
+    },
+    {
+      "id": "alanine_aliphatic",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "alanine"
+    },
+    {
+      "id": "valine_aliphatic",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "valine"
+    },
+    {
+      "id": "leucine_aliphatic",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "leucine"
+    },
+    {
+      "id": "isoleucine_aliphatic",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "isoleucine"
+    },
+    {
+      "id": "serine_hydroxyl",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Serine"
+    },
+    {
+      "id": "threonine_hydroxyl",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "threonine"
+    },
+    {
+      "id": "tyrosine_hydroxyl",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "tyrosine"
+    },
+    {
+      "id": "cysteine_sulfur",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "cysteine"
+    },
+    {
+      "id": "methionine_sulfur",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "methionine"
+    },
+    {
+      "id": "aspartic_acid_acidic",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Aspartic acid"
+    },
+    {
+      "id": "glutamic_acid_acidic",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "glutamic acids"
+    },
+    {
+      "id": "asparagine_amide",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "asparagine"
+    },
+    {
+      "id": "glutamine_amide",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "glutamine"
+    },
+    {
+      "id": "lysine_basic",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "lysine"
+    },
+    {
+      "id": "arginine_basic",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "arginine"
+    },
+    {
+      "id": "histidine_basic",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "histidine"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "valine",
+      "property_uri": "ex:isEssentialAminoAcid",
+      "target_id": "ex:EssentialAminoAcid",
+      "evidence_span": "Valine"
+    },
+    {
+      "source_id": "leucine",
+      "property_uri": "ex:isEssentialAminoAcid",
+      "target_id": "ex:EssentialAminoAcid",
+      "evidence_span": "Leucine"
+    },
+    {
+      "source_id": "isoleucine",
+      "property_uri": "ex:isEssentialAminoAcid",
+      "target_id": "ex:EssentialAminoAcid",
+      "evidence_span": "Isoleucine"
+    },
+    {
+      "source_id": "threonine",
+      "property_uri": "ex:isEssentialAminoAcid",
+      "target_id": "ex:EssentialAminoAcid",
+      "evidence_span": "Threonine"
+    },
+    {
+      "source_id": "methionine",
+      "property_uri": "ex:isEssentialAminoAcid",
+      "target_id": "ex:EssentialAminoAcid",
+      "evidence_span": "Methionine"
+    },
+    {
+      "source_id": "phenylalanine",
+      "property_uri": "ex:isEssentialAminoAcid",
+      "target_id": "ex:EssentialAminoAcid",
+      "evidence_span": "Phenylalanine"
+    },
+    {
+      "source_id": "tryptophan",
+      "property_uri": "ex:isEssentialAminoAcid",
+      "target_id": "ex:EssentialAminoAcid",
+      "evidence_span": "Tryptophan"
+    },
+    {
+      "source_id": "lysine",
+      "property_uri": "ex:isEssentialAminoAcid",
+      "target_id": "ex:EssentialAminoAcid",
+      "evidence_span": "Lysine"
+    },
+    {
+      "source_id": "arginine",
+      "property_uri": "ex:isSemiEssentialAminoAcid",
+      "target_id": "ex:SemiEssentialAminoAcid",
+      "evidence_span": "Arginine"
+    },
+    {
+      "source_id": "histidine",
+      "property_uri": "ex:isSemiEssentialAminoAcid",
+      "target_id": "ex:SemiEssentialAminoAcid",
+      "evidence_span": "Histidine"
+    },
+    {
+      "source_id": "alanine",
+      "property_uri": "ex:isNonEssentialAminoAcid",
+      "target_id": "ex:NonEssentialAminoAcid",
+      "evidence_span": "Alanine"
+    },
+    {
+      "source_id": "arginine_non_essential",
+      "property_uri": "ex:isNonEssentialAminoAcid",
+      "target_id": "ex:NonEssentialAminoAcid",
+      "evidence_span": "Arginine"
+    },
+    {
+      "source_id": "aspartic_acid_non_essential",
+      "property_uri": "ex:isNonEssentialAminoAcid",
+      "target_id": "ex:NonEssentialAminoAcid",
+      "evidence_span": "Aspartic acid"
+    },
+    {
+      "source_id": "asparagine_non_essential",
+      "property_uri": "ex:isNonEssentialAminoAcid",
+      "target_id": "ex:NonEssentialAminoAcid",
+      "evidence_span": "Asparagine"
+    },
+    {
+      "source_id": "cystine_non_essential",
+      "property_uri": "ex:isNonEssentialAminoAcid",
+      "target_id": "ex:NonEssentialAminoAcid",
+      "evidence_span": "Cystine"
+    },
+    {
+      "source_id": "cysteine_non_essential",
+      "property_uri": "ex:isNonEssentialAminoAcid",
+      "target_id": "ex:NonEssentialAminoAcid",
+      "evidence_span": "Cysteine"
+    },
+    {
+      "source_id": "glutamic_acid_non_essential",
+      "property_uri": "ex:isNonEssentialAminoAcid",
+      "target_id": "ex:NonEssentialAminoAcid",
+      "evidence_span": "Glutamic acid"
+    },
+    {
+      "source_id": "glutamine_non_essential",
+      "property_uri": "ex:isNonEssentialAminoAcid",
+      "target_id": "ex:NonEssentialAminoAcid",
+      "evidence_span": "Glutamine"
+    },
+    {
+      "source_id": "glycine_non_essential",
+      "property_uri": "ex:isNonEssentialAminoAcid",
+      "target_id": "ex:NonEssentialAminoAcid",
+      "evidence_span": "Glycine"
+    },
+    {
+      "source_id": "histidine_non_essential",
+      "property_uri": "ex:isNonEssentialAminoAcid",
+      "target_id": "ex:NonEssentialAminoAcid",
+      "evidence_span": "Histidine"
+    },
+    {
+      "source_id": "proline",
+      "property_uri": "ex:isNonEssentialAminoAcid",
+      "target_id": "ex:NonEssentialAminoAcid",
+      "evidence_span": "Proline"
+    },
+    {
+      "source_id": "serine",
+      "property_uri": "ex:isNonEssentialAminoAcid",
+      "target_id": "ex:NonEssentialAminoAcid",
+      "evidence_span": "Serine"
+    },
+    {
+      "source_id": "glycine_aliphatic",
+      "property_uri": "ex:isAlphaAminoAcid",
+      "target_id": "ex:AlphaAminoAcid",
+      "evidence_span": "glycine"
+    },
+    {
+      "source_id": "alanine_aliphatic",
+      "property_uri": "ex:isAlphaAminoAcid",
+      "target_id": "ex:AlphaAminoAcid",
+      "evidence_span": "alanine"
+    },
+    {
+      "source_id": "valine_aliphatic",
+      "property_uri": "ex:isAlphaAminoAcid",
+      "target_id": "ex:AlphaAminoAcid",
+      "evidence_span": "valine"
+    },
+    {
+      "source_id": "leucine_aliphatic",
+      "property_uri": "ex:isAlphaAminoAcid",
+      "target_id": "ex:AlphaAminoAcid",
+      "evidence_span": "leucine"
+    },
+    {
+      "source_id": "isoleucine_aliphatic",
+      "property_uri": "ex:isAlphaAminoAcid",
+      "target_id": "ex:AlphaAminoAcid",
+      "evidence_span": "isoleucine"
+    },
+    {
+      "source_id": "valine_aliphatic",
+      "property_uri": "ex:isBranchedChainAminoAcid",
+      "target_id": "ex:BranchedChainAminoAcid",
+      "evidence_span": "valine"
+    },
+    {
+      "source_id": "leucine_aliphatic",
+      "property_uri": "ex:isBranchedChainAminoAcid",
+      "target_id": "ex:BranchedChainAminoAcid",
+      "evidence_span": "leucine"
+    },
+    {
+      "source_id": "isoleucine_aliphatic",
+      "property_uri": "ex:isBranchedChainAminoAcid",
+      "target_id": "ex:BranchedChainAminoAcid",
+      "evidence_span": "isoleucine"
+    },
+    {
+      "source_id": "serine_hydroxyl",
+      "property_uri": "ex:isHydroxylGroupContainingAminoAcid",
+      "target_id": "ex:HydroxylGroupContainingAminoAcid",
+      "evidence_span": "Serine"
+    },
+    {
+      "source_id": "threonine_hydroxyl",
+      "property_uri": "ex:isHydroxylGroupContainingAminoAcid",
+      "target_id": "ex:HydroxylGroupContainingAminoAcid",
+      "evidence_span": "threonine"
+    },
+    {
+      "source_id": "tyrosine_hydroxyl",
+      "property_uri": "ex:isHydroxylGroupContainingAminoAcid",
+      "target_id": "ex:HydroxylGroupContainingAminoAcid",
+      "evidence_span": "tyrosine"
+    },
+    {
+      "source_id": "cysteine_sulfur",
+      "property_uri": "ex:isSulfurContainingAminoAcid",
+      "target_id": "ex:SulfurContainingAminoAcid",
+      "evidence_span": "cysteine"
+    },
+    {
+      "source_id": "methionine_sulfur",
+      "property_uri": "ex:isSulfurContainingAminoAcid",
+      "target_id": "ex:SulfurContainingAminoAcid",
+      "evidence_span": "methionine"
+    },
+    {
+      "source_id": "aspartic_acid_acidic",
+      "property_uri": "ex:isAcidicAminoAcid",
+      "target_id": "ex:AcidicAminoAcid",
+      "evidence_span": "Aspartic acid"
+    },
+    {
+      "source_id": "glutamic_acid_acidic",
+      "property_uri": "ex:isAcidicAminoAcid",
+      "target_id": "ex:AcidicAminoAcid",
+      "evidence_span": "glutamic acids"
+    },
+    {
+      "source_id": "asparagine_amide",
+      "property_uri": "ex:isAmideAminoAcid",
+      "target_id": "ex:AmideAminoAcid",
+      "evidence_span": "asparagine"
+    },
+    {
+      "source_id": "glutamine_amide",
+      "property_uri": "ex:isAmideAminoAcid",
+      "target_id": "ex:AmideAminoAcid",
+      "evidence_span": "glutamine"
+    },
+    {
+      "source_id": "lysine_basic",
+      "property_uri": "ex:isBasicAminoAcid",
+      "target_id": "ex:BasicAminoAcid",
+      "evidence_span": "lysine"
+    },
+    {
+      "source_id": "arginine_basic",
+      "property_uri": "ex:isBasicAminoAcid",
+      "target_id": "ex:BasicAminoAcid",
+      "evidence_span": "arginine"
+    },
+    {
+      "source_id": "histidine_basic",
+      "property_uri": "ex:isBasicAminoAcid",
+      "target_id": "ex:BasicAminoAcid",
+      "evidence_span": "histidine"
+    }
+  ]
+}

@@ -1,0 +1,342 @@
+{
+  "reasoning_steps": [
+    "Identify mentions of amino acids and their classifications.",
+    "Map these classifications to the approved ontology properties.",
+    "Extract entities and relations based on the identified classifications and properties."
+  ],
+  "entities": [
+    {
+      "id": "leucine",
+      "class_uri": "ex:Leucine",
+      "evidence_span": "leucine"
+    },
+    {
+      "id": "lysine",
+      "class_uri": "ex:Lysine",
+      "evidence_span": "lysine"
+    },
+    {
+      "id": "isoleucine",
+      "class_uri": "ex:Isoleucine",
+      "evidence_span": "Isoleucine"
+    },
+    {
+      "id": "phenylalanine",
+      "class_uri": "ex:Phenylalanine",
+      "evidence_span": "Phenylalanine"
+    },
+    {
+      "id": "tyrosine",
+      "class_uri": "ex:Tyrosine",
+      "evidence_span": "Tyrosine"
+    },
+    {
+      "id": "tryptophan",
+      "class_uri": "ex:Tryptophan",
+      "evidence_span": "Tryptophan"
+    },
+    {
+      "id": "alanine",
+      "class_uri": "ex:Alanine",
+      "evidence_span": "Alanine"
+    },
+    {
+      "id": "valine",
+      "class_uri": "ex:Valine",
+      "evidence_span": "Valine"
+    },
+    {
+      "id": "methionine",
+      "class_uri": "ex:Methionine",
+      "evidence_span": "Methionine"
+    },
+    {
+      "id": "proline",
+      "class_uri": "ex:Proline",
+      "evidence_span": "Proline"
+    },
+    {
+      "id": "glycine",
+      "class_uri": "ex:Glycine",
+      "evidence_span": "Glycine"
+    },
+    {
+      "id": "serine",
+      "class_uri": "ex:Serine",
+      "evidence_span": "Serine"
+    },
+    {
+      "id": "threonine",
+      "class_uri": "ex:Threonine",
+      "evidence_span": "Threonine"
+    },
+    {
+      "id": "cysteine",
+      "class_uri": "ex:Cysteine",
+      "evidence_span": "Cysteine"
+    },
+    {
+      "id": "glutamine",
+      "class_uri": "ex:Glutamine",
+      "evidence_span": "Glutamine"
+    },
+    {
+      "id": "asparagine",
+      "class_uri": "ex:Asparagine",
+      "evidence_span": "Asparagine"
+    },
+    {
+      "id": "arginine",
+      "class_uri": "ex:Arginine",
+      "evidence_span": "Arginine"
+    },
+    {
+      "id": "histidine",
+      "class_uri": "ex:Histidine",
+      "evidence_span": "Histidine"
+    },
+    {
+      "id": "aspatic_acid",
+      "class_uri": "ex:AsparticAcid",
+      "evidence_span": "Aspartic acid"
+    },
+    {
+      "id": "glutamic_acid",
+      "class_uri": "ex:GlutamicAcid",
+      "evidence_span": "Glutamic acid"
+    },
+    {
+      "id": "purely_ketogenic_amino_acids",
+      "class_uri": "ex:PurelyKetogenicAminoAcid",
+      "evidence_span": "Purely ketogenic amino acids"
+    },
+    {
+      "id": "ketogenic_and_glucogenic_amino_acids",
+      "class_uri": "ex:KetogenicAndGlucogenicAminoAcid",
+      "evidence_span": "Ketogenic and Glucogenic amino acids"
+    },
+    {
+      "id": "purely_glucogenic_amino_acids",
+      "class_uri": "ex:PurelyGlucogenicAminoAcid",
+      "evidence_span": "Purely Glucogenic amino acids"
+    },
+    {
+      "id": "non_polar_amino_acids",
+      "class_uri": "ex:HydrophobicAminoAcid",
+      "evidence_span": "Non-polar amino acids"
+    },
+    {
+      "id": "polar_amino_acids_with_no_charge_on_r_group",
+      "class_uri": "ex:PolarUnchargedAminoAcid",
+      "evidence_span": "Polar amino acids with no charge on 'R' group"
+    },
+    {
+      "id": "polar_amino_acids_with_positive_r_group",
+      "class_uri": "ex:PolarPositivelyChargedAminoAcid",
+      "evidence_span": "Polar amino acids with positive 'R' group"
+    },
+    {
+      "id": "polar_amino_acids_with_negative_r_group",
+      "class_uri": "ex:PolarNegativelyChargedAminoAcid",
+      "evidence_span": "Polar amino acids with negative 'R ‘group"
+    },
+    {
+      "id": "aldehyde",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "aldehyde"
+    },
+    {
+      "id": "alpha_amino_acids",
+      "class_uri": "ex:AlphaAminoAcid",
+      "evidence_span": "Alpha amino acids"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "leucine",
+      "property_uri": "ex:isKetogenicAndGlucogenicAminoAcid",
+      "target_id": "ketogenic_and_glucogenic_amino_acids",
+      "evidence_span": "leucine and lysine are completely ketogenic"
+    },
+    {
+      "source_id": "lysine",
+      "property_uri": "ex:isKetogenicAndGlucogenicAminoAcid",
+      "target_id": "ketogenic_and_glucogenic_amino_acids",
+      "evidence_span": "leucine and lysine are completely ketogenic"
+    },
+    {
+      "source_id": "leucine",
+      "property_uri": "ex:isPurelyKetogenicAminoAcid",
+      "target_id": "purely_ketogenic_amino_acids",
+      "evidence_span": "leucine and lysine are completely ketogenic"
+    },
+    {
+      "source_id": "lysine",
+      "property_uri": "ex:isPurelyKetogenicAminoAcid",
+      "target_id": "purely_ketogenic_amino_acids",
+      "evidence_span": "leucine and lysine are completely ketogenic"
+    },
+    {
+      "source_id": "lysine",
+      "property_uri": "ex:isKetogenicAndGlucogenicAminoAcid",
+      "target_id": "ketogenic_and_glucogenic_amino_acids",
+      "evidence_span": "Lysine, Isoleucine, Phenylalanine, Tyrosine & Tryptophan are partially ketogenic and partially glucogenic"
+    },
+    {
+      "source_id": "isoleucine",
+      "property_uri": "ex:isKetogenicAndGlucogenicAminoAcid",
+      "target_id": "ketogenic_and_glucogenic_amino_acids",
+      "evidence_span": "Lysine, Isoleucine, Phenylalanine, Tyrosine & Tryptophan are partially ketogenic and partially glucogenic"
+    },
+    {
+      "source_id": "phenylalanine",
+      "property_uri": "ex:isKetogenicAndGlucogenicAminoAcid",
+      "target_id": "ketogenic_and_glucogenic_amino_acids",
+      "evidence_span": "Lysine, Isoleucine, Phenylalanine, Tyrosine & Tryptophan are partially ketogenic and partially glucogenic"
+    },
+    {
+      "source_id": "tyrosine",
+      "property_uri": "ex:isKetogenicAndGlucogenicAminoAcid",
+      "target_id": "ketogenic_and_glucogenic_amino_acids",
+      "evidence_span": "Lysine, Isoleucine, Phenylalanine, Tyrosine & Tryptophan are partially ketogenic and partially glucogenic"
+    },
+    {
+      "source_id": "tryptophan",
+      "property_uri": "ex:isKetogenicAndGlucogenicAminoAcid",
+      "target_id": "ketogenic_and_glucogenic_amino_acids",
+      "evidence_span": "Lysine, Isoleucine, Phenylalanine, Tyrosine & Tryptophan are partially ketogenic and partially glucogenic"
+    },
+    {
+      "source_id": "alanine",
+      "property_uri": "ex:isHydrophobicAminoAcid",
+      "target_id": "non_polar_amino_acids",
+      "evidence_span": "Alanine, Leucine, Isoleucine, Valine, Methionine, Phenylalanine, Tryptophan, and Proline."
+    },
+    {
+      "source_id": "leucine",
+      "property_uri": "ex:isHydrophobicAminoAcid",
+      "target_id": "non_polar_amino_acids",
+      "evidence_span": "Alanine, Leucine, Isoleucine, Valine, Methionine, Phenylalanine, Tryptophan, and Proline."
+    },
+    {
+      "source_id": "isoleucine",
+      "property_uri": "ex:isHydrophobicAminoAcid",
+      "target_id": "non_polar_amino_acids",
+      "evidence_span": "Alanine, Leucine, Isoleucine, Valine, Methionine, Phenylalanine, Tryptophan, and Proline."
+    },
+    {
+      "source_id": "valine",
+      "property_uri": "ex:isHydrophobicAminoAcid",
+      "target_id": "non_polar_amino_acids",
+      "evidence_span": "Alanine, Leucine, Isoleucine, Valine, Methionine, Phenylalanine, Tryptophan, and Proline."
+    },
+    {
+      "source_id": "methionine",
+      "property_uri": "ex:isHydrophobicAminoAcid",
+      "target_id": "non_polar_amino_acids",
+      "evidence_span": "Alanine, Leucine, Isoleucine, Valine, Methionine, Phenylalanine, Tryptophan, and Proline."
+    },
+    {
+      "source_id": "phenylalanine",
+      "property_uri": "ex:isHydrophobicAminoAcid",
+      "target_id": "non_polar_amino_acids",
+      "evidence_span": "Alanine, Leucine, Isoleucine, Valine, Methionine, Phenylalanine, Tryptophan, and Proline."
+    },
+    {
+      "source_id": "tryptophan",
+      "property_uri": "ex:isHydrophobicAminoAcid",
+      "target_id": "non_polar_amino_acids",
+      "evidence_span": "Alanine, Leucine, Isoleucine, Valine, Methionine, Phenylalanine, Tryptophan, and Proline."
+    },
+    {
+      "source_id": "proline",
+      "property_uri": "ex:isHydrophobicAminoAcid",
+      "target_id": "non_polar_amino_acids",
+      "evidence_span": "Alanine, Leucine, Isoleucine, Valine, Methionine, Phenylalanine, Tryptophan, and Proline."
+    },
+    {
+      "source_id": "glycine",
+      "property_uri": "ex:isPolarUnchargedAminoAcid",
+      "target_id": "polar_amino_acids_with_no_charge_on_r_group",
+      "evidence_span": "Glycine, Serine, Threonine, Cysteine, Glutamine, Asparagine, and Tyrosine."
+    },
+    {
+      "source_id": "serine",
+      "property_uri": "ex:isPolarUnchargedAminoAcid",
+      "target_id": "polar_amino_acids_with_no_charge_on_r_group",
+      "evidence_span": "Glycine, Serine, Threonine, Cysteine, Glutamine, Asparagine, and Tyrosine."
+    },
+    {
+      "source_id": "threonine",
+      "property_uri": "ex:isPolarUnchargedAminoAcid",
+      "target_id": "polar_amino_acids_with_no_charge_on_r_group",
+      "evidence_span": "Glycine, Serine, Threonine, Cysteine, Glutamine, Asparagine, and Tyrosine."
+    },
+    {
+      "source_id": "cysteine",
+      "property_uri": "ex:isPolarUnchargedAminoAcid",
+      "target_id": "polar_amino_acids_with_no_charge_on_r_group",
+      "evidence_span": "Glycine, Serine, Threonine, Cysteine, Glutamine, Asparagine, and Tyrosine."
+    },
+    {
+      "source_id": "glutamine",
+      "property_uri": "ex:isPolarUnchargedAminoAcid",
+      "target_id": "polar_amino_acids_with_no_charge_on_r_group",
+      "evidence_span": "Glycine, Serine, Threonine, Cysteine, Glutamine, Asparagine, and Tyrosine."
+    },
+    {
+      "source_id": "asparagine",
+      "property_uri": "ex:isPolarUnchargedAminoAcid",
+      "target_id": "polar_amino_acids_with_no_charge_on_r_group",
+      "evidence_span": "Glycine, Serine, Threonine, Cysteine, Glutamine, Asparagine, and Tyrosine."
+    },
+    {
+      "source_id": "tyrosine",
+      "property_uri": "ex:isPolarUnchargedAminoAcid",
+      "target_id": "polar_amino_acids_with_no_charge_on_r_group",
+      "evidence_span": "Glycine, Serine, Threonine, Cysteine, Glutamine, Asparagine, and Tyrosine."
+    },
+    {
+      "source_id": "lysine",
+      "property_uri": "ex:isPolarPositivelyChargedAminoAcid",
+      "target_id": "polar_amino_acids_with_positive_r_group",
+      "evidence_span": "Lysine, Arginine, and Histidine."
+    },
+    {
+      "source_id": "arginine",
+      "property_uri": "ex:isPolarPositivelyChargedAminoAcid",
+      "target_id": "polar_amino_acids_with_positive_r_group",
+      "evidence_span": "Lysine, Arginine, and Histidine."
+    },
+    {
+      "source_id": "histidine",
+      "property_uri": "ex:isPolarPositivelyChargedAminoAcid",
+      "target_id": "polar_amino_acids_with_positive_r_group",
+      "evidence_span": "Lysine, Arginine, and Histidine."
+    },
+    {
+      "source_id": "aspatic_acid",
+      "property_uri": "ex:isPolarNegativelyChargedAminoAcid",
+      "target_id": "polar_amino_acids_with_negative_r_group",
+      "evidence_span": "Aspartic acid and Glutamic acid."
+    },
+    {
+      "source_id": "glutamic_acid",
+      "property_uri": "ex:isPolarNegativelyChargedAminoAcid",
+      "target_id": "polar_amino_acids_with_negative_r_group",
+      "evidence_span": "Aspartic acid and Glutamic acid."
+    },
+    {
+      "source_id": "aldehyde",
+      "property_uri": "ex:isProducedByNucleophilicAdditionOfAmmoniaToAldehyde",
+      "target_id": "true",
+      "evidence_span": "The nucleophilic addition of ammonia to aldehyde starts the reaction."
+    },
+    {
+      "source_id": "alpha_amino_acids",
+      "property_uri": "ex:isProducedByRemovingWaterAndAddingCyanideToAldimine",
+      "target_id": "true",
+      "evidence_span": "The nucleophilic addition of ammonia to aldehyde starts the reaction."
+    }
+  ]
+}

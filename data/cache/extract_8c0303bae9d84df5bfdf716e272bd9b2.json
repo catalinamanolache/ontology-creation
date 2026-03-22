@@ -1,0 +1,105 @@
+{
+  "reasoning_steps": [
+    "Identify 'Protein' as a class and 'amino acids' as its building blocks.",
+    "Identify 'amino acids' as a class and extract their functional groups: 'Amino (NH2)' and 'Carboxyl (COOH)'.",
+    "Identify the classification of amino acids into 'essential amino acids', 'non-essential amino acids', and 'semi-essential amino acids'.",
+    "Identify the general structure of an amino acid, noting the central alpha-carbon and its attached groups: amino, carboxyl, hydrogen, and R group."
+  ],
+  "entities": [
+    {
+      "id": "protein",
+      "class_uri": "ex:Protein",
+      "evidence_span": "Protein"
+    },
+    {
+      "id": "amino_acids",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "amino acids"
+    },
+    {
+      "id": "amino_group",
+      "class_uri": "ex:AminoGroup",
+      "evidence_span": "Amino (NH 2)"
+    },
+    {
+      "id": "carboxyl_group",
+      "class_uri": "ex:CarboxylGroup",
+      "evidence_span": "Carboxyl (COOH)"
+    },
+    {
+      "id": "essential_amino_acids",
+      "class_uri": "ex:EssentialAminoAcid",
+      "evidence_span": "essential amino acids"
+    },
+    {
+      "id": "non_essential_amino_acids",
+      "class_uri": "ex:NonEssentialAminoAcid",
+      "evidence_span": "non -essential amino acids"
+    },
+    {
+      "id": "semi_essential_amino_acids",
+      "class_uri": "ex:SemiEssentialAminoAcid",
+      "evidence_span": "semi-essential amino acids"
+    },
+    {
+      "id": "alpha_carbon",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "α-carbon"
+    },
+    {
+      "id": "r_group",
+      "class_uri": "ex:RGroup",
+      "evidence_span": "R group"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "protein",
+      "property_uri": "ex:hasBuildingBlock",
+      "target_id": "amino_acids",
+      "evidence_span": "Protein is made up of amino acids"
+    },
+    {
+      "source_id": "amino_acids",
+      "property_uri": "ex:hasFunctionalGroup",
+      "target_id": "amino_group",
+      "evidence_span": "Amino (NH 2)"
+    },
+    {
+      "source_id": "amino_acids",
+      "property_uri": "ex:hasFunctionalGroup",
+      "target_id": "carboxyl_group",
+      "evidence_span": "Carboxyl (COOH)"
+    },
+    {
+      "source_id": "amino_acids",
+      "property_uri": "ex:isEssentialAminoAcid",
+      "target_id": "essential_amino_acids",
+      "evidence_span": "essential amino acids"
+    },
+    {
+      "source_id": "amino_acids",
+      "property_uri": "ex:isNonEssentialAminoAcid",
+      "target_id": "non_essential_amino_acids",
+      "evidence_span": "non -essential amino acids"
+    },
+    {
+      "source_id": "amino_acids",
+      "property_uri": "ex:isSemiEssentialAminoAcid",
+      "target_id": "semi_essential_amino_acids",
+      "evidence_span": "semi-essential amino acids"
+    },
+    {
+      "source_id": "amino_acids",
+      "property_uri": "ex:isAlphaAminoAcid",
+      "target_id": "alpha_carbon",
+      "evidence_span": "α-amino [alpha-amino] acid"
+    },
+    {
+      "source_id": "alpha_carbon",
+      "property_uri": "ex:hasUniqueSideChain",
+      "target_id": "r_group",
+      "evidence_span": "R group"
+    }
+  ]
+}

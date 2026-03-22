@@ -1,0 +1,940 @@
+{
+  "approved_classes": {
+    "ex:AminoAcid": {
+      "comment": "Amino acids are the building blocks of proteins.",
+      "bfo_parent": "bfo:Entity",
+      "aristotelian_definition": "An AminoAcid is a MaterialEntity that contains both an amino group and a carboxyl group.",
+      "subclass_of": null
+    },
+    "ex:EssentialAminoAcid": {
+      "comment": "These amino acids are crucial for protein synthesis and overall health.",
+      "bfo_parent": "bfo:Entity",
+      "aristotelian_definition": "An EssentialAminoAcid is a MaterialEntity that must be obtained through diet as it cannot be synthesized by the body.",
+      "subclass_of": null
+    },
+    "ex:NonEssentialAminoAcid": {
+      "comment": "These amino acids are produced within the body.",
+      "bfo_parent": "bfo:Entity",
+      "aristotelian_definition": "A NonEssentialAminoAcid is a MaterialEntity that can be synthesized by the body.",
+      "subclass_of": null
+    },
+    "ex:SemiEssentialAminoAcid": {
+      "comment": "These amino acids require dietary supplementation.",
+      "bfo_parent": "bfo:Entity",
+      "aristotelian_definition": "A SemiEssentialAminoAcid is a MaterialEntity that can be synthesized by the body but in insufficient amounts.",
+      "subclass_of": null
+    },
+    "ex:AlphaAminoAcid": {
+      "comment": "The most common type of amino acid.",
+      "bfo_parent": "bfo:Entity",
+      "aristotelian_definition": "An AlphaAminoAcid is a MaterialEntity that has both an amino and carboxyl group attached to the alpha carbon.",
+      "subclass_of": null
+    },
+    "ex:DecarboxylationReaction": {
+      "comment": "Involves the removal of a carboxyl group.",
+      "bfo_parent": "bfo:Entity",
+      "aristotelian_definition": "A DecarboxylationReaction is a Process that converts an amino acid into an amine and carbon dioxide.",
+      "subclass_of": null
+    },
+    "ex:Zwitterion": {
+      "comment": "Characterized by the presence of an amino group and a carboxyl group.",
+      "bfo_parent": "bfo:Entity",
+      "aristotelian_definition": "A Zwitterion is a MaterialEntity that contains both positive and negative ionic groups.",
+      "subclass_of": null
+    },
+    "ex:NinhydrinReaction": {
+      "comment": "Involves the reaction of ninhydrin with amino groups.",
+      "bfo_parent": "bfo:Entity",
+      "aristotelian_definition": "A NinhydrinReaction is a Process that identifies amino acids through color change.",
+      "subclass_of": null
+    },
+    "ex:AliphaticAminoAcid": {
+      "comment": "Includes amino acids like glycine, alanine, valine, leucine, and isoleucine.",
+      "bfo_parent": "bfo:MaterialEntity",
+      "aristotelian_definition": "An AliphaticAminoAcid is an AminoAcid with a side chain that consists of carbon atoms in open chains or unbranched rings.",
+      "subclass_of": null
+    },
+    "ex:HydroxylGroupContainingAminoAcid": {
+      "comment": "Includes serine, threonine, and tyrosine.",
+      "bfo_parent": "bfo:MaterialEntity",
+      "aristotelian_definition": "A HydroxylGroupContainingAminoAcid is an AminoAcid with a hydroxyl group (-OH) attached to its side chain.",
+      "subclass_of": null
+    },
+    "ex:SulphurContainingAminoAcid": {
+      "comment": "Includes cysteine and methionine.",
+      "bfo_parent": "bfo:MaterialEntity",
+      "aristotelian_definition": "A SulphurContainingAminoAcid is an AminoAcid with a sulfur-containing side chain.",
+      "subclass_of": null
+    },
+    "ex:BasicAminoAcid": {
+      "comment": "Includes lysine, arginine, and histidine.",
+      "bfo_parent": "bfo:MaterialEntity",
+      "aristotelian_definition": "A BasicAminoAcid is an AminoAcid with a side chain that has basic properties.",
+      "subclass_of": null
+    },
+    "ex:AromaticAminoAcid": {
+      "comment": "Includes phenylalanine, tyrosine, and tryptophan.",
+      "bfo_parent": "bfo:MaterialEntity",
+      "aristotelian_definition": "An AromaticAminoAcid is an AminoAcid with a side chain that contains aromatic rings.",
+      "subclass_of": null
+    },
+    "ex:IminoAcid": {
+      "comment": "Includes proline.",
+      "bfo_parent": "bfo:MaterialEntity",
+      "aristotelian_definition": "An IminoAcid is an AminoAcid with a side chain that contains an imino group (=NH) instead of the usual amino group (-NH2).",
+      "subclass_of": null
+    },
+    "ex:BetaAminoAcid": {
+      "comment": "Includes β-alanine.",
+      "bfo_parent": "bfo:MaterialEntity",
+      "aristotelian_definition": "A BetaAminoAcid is an AminoAcid with the amino group attached to the beta carbon.",
+      "subclass_of": null
+    },
+    "ex:GammaAminoAcid": {
+      "comment": "Includes GABA (gamma-aminobutyric acid).",
+      "bfo_parent": "bfo:MaterialEntity",
+      "aristotelian_definition": "A GammaAminoAcid is an AminoAcid with the amino group attached to the gamma carbon.",
+      "subclass_of": null
+    },
+    "ex:PurelyKetogenicAminoAcid": {
+      "comment": "Includes leucine and lysine.",
+      "bfo_parent": "bfo:MaterialEntity",
+      "aristotelian_definition": "A PurelyKetogenicAminoAcid is an AminoAcid that can only be metabolized to produce ketone bodies.",
+      "subclass_of": null
+    },
+    "ex:KetogenicAndGlucogenicAminoAcid": {
+      "comment": "Includes lysine, isoleucine, phenylalanine, tyrosine, and tryptophan.",
+      "bfo_parent": "bfo:MaterialEntity",
+      "aristotelian_definition": "A KetogenicAndGlucogenicAminoAcid is an AminoAcid that can be metabolized to produce both ketone bodies and glucose.",
+      "subclass_of": null
+    },
+    "ex:PurelyGlucogenicAminoAcid": {
+      "comment": "Includes alanine, aspartic acid, glutamic acid, etc.",
+      "bfo_parent": "bfo:MaterialEntity",
+      "aristotelian_definition": "A PurelyGlucogenicAminoAcid is an AminoAcid that can only be metabolized to produce glucose or glycogen.",
+      "subclass_of": null
+    },
+    "ex:NonPolarAminoAcid": {
+      "comment": "Includes alanine, leucine, valine, methionine, phenylalanine, tryptophan, and proline.",
+      "bfo_parent": "bfo:MaterialEntity",
+      "aristotelian_definition": "A NonPolarAminoAcid is an AminoAcid with a side chain that does not have any charge.",
+      "subclass_of": null
+    },
+    "ex:PolarAminoAcidWithNoCharge": {
+      "comment": "Includes glycine, serine, threonine, cysteine, glutamine, asparagine, and tyrosine.",
+      "bfo_parent": "bfo:MaterialEntity",
+      "aristotelian_definition": "A PolarAminoAcidWithNoCharge is an AminoAcid with a side chain that has polar groups but no charge.",
+      "subclass_of": null
+    },
+    "ex:PolarAminoAcidWithPositiveCharge": {
+      "comment": "Includes lysine, arginine, and histidine.",
+      "bfo_parent": "bfo:MaterialEntity",
+      "aristotelian_definition": "A PolarAminoAcidWithPositiveCharge is an AminoAcid with a side chain that has a positive charge.",
+      "subclass_of": null
+    },
+    "ex:PolarAminoAcidWithNegativeCharge": {
+      "comment": "Includes aspartic acid and glutamic acid.",
+      "bfo_parent": "bfo:MaterialEntity",
+      "aristotelian_definition": "A PolarAminoAcidWithNegativeCharge is an AminoAcid with a side chain that has a negative charge.",
+      "subclass_of": null
+    },
+    "ex:AminoAcidSynthesisProcess": {
+      "comment": "This class covers various synthetic pathways for amino acids.",
+      "bfo_parent": "bfo:Process",
+      "aristotelian_definition": "An AminoAcidSynthesisProcess is a Process that involves the chemical reactions necessary to produce an amino acid from precursor molecules.",
+      "subclass_of": null
+    },
+    "ex:CyanideAdditionReaction": {
+      "comment": "This reaction is part of the Gabriel synthesis method.",
+      "bfo_parent": "bfo:Process",
+      "aristotelian_definition": "A CyanideAdditionReaction is a Process that involves the addition of cyanide to an aldimine, resulting in the formation of amino acids.",
+      "subclass_of": null
+    },
+    "ex:PhthalimideSynthesisProcess": {
+      "comment": "This process is used in the preparation of certain amino acids.",
+      "bfo_parent": "bfo:Process",
+      "aristotelian_definition": "A PhthalimideSynthesisProcess is a Process that involves treating an alpha halogenated acid ester with potassium phthalimide to produce substituted phthalimides, which are then hydrolyzed to yield amino acids.",
+      "subclass_of": null
+    },
+    "ex:NonStandardAminoAcid": {
+      "comment": "This class includes non-standard amino acids like D-Penicillamine.",
+      "bfo_parent": "bfo:MaterialEntity",
+      "aristotelian_definition": "A NonStandardAminoAcid is a MaterialEntity that does not conform to the standard set of 20 amino acids used in protein synthesis but has specific medical applications.",
+      "subclass_of": null
+    },
+    "ex:DPenicillamine": {
+      "comment": "It is a metabolite of penicillin with specific medical applications.",
+      "bfo_parent": "bfo:MaterialEntity",
+      "aristotelian_definition": "DPenicillamine is a NonStandardAminoAcid that acts as a chelating agent and is used in the treatment of Wilson's disease.",
+      "subclass_of": null
+    },
+    "ex:NAcetylcysteine": {
+      "comment": "It has various medical applications beyond amino acid synthesis.",
+      "bfo_parent": "bfo:MaterialEntity",
+      "aristotelian_definition": "N-Acetylcysteine is a NonStandardAminoAcid that functions as an antioxidant and is used in the treatment of cystic fibrosis and chronic renal insufficiency.",
+      "subclass_of": null
+    },
+    "ex:Gabapentin": {
+      "comment": "It has specific medical uses unrelated to protein synthesis.",
+      "bfo_parent": "bfo:MaterialEntity",
+      "aristotelian_definition": "Gabapentin is a NonStandardAminoAcid that acts as an anticonvulsant and is used in the treatment of epilepsy.",
+      "subclass_of": null
+    }
+  },
+  "approved_properties": {
+    "ex:undergoesDecarboxylationReaction": {
+      "domain": "ex:AminoAcid",
+      "range": "ex:DecarboxylationReaction",
+      "comment": "An AminoAcid undergoes a DecarboxylationReaction."
+    },
+    "ex:identifiedByNinhydrinReaction": {
+      "domain": "ex:AminoAcid",
+      "range": "ex:NinhydrinReaction",
+      "comment": "An AminoAcid is identified by a NinhydrinReaction."
+    },
+    "ex:classifiedAsEssentialAminoAcid": {
+      "domain": "ex:AminoAcid",
+      "range": "ex:EssentialAminoAcid",
+      "comment": "An AminoAcid is classified as an EssentialAminoAcid."
+    },
+    "ex:classifiedAsNonEssentialAminoAcid": {
+      "domain": "ex:AminoAcid",
+      "range": "ex:NonEssentialAminoAcid",
+      "comment": "An AminoAcid is classified as a NonEssentialAminoAcid."
+    },
+    "ex:classifiedAsSemiEssentialAminoAcid": {
+      "domain": "ex:AminoAcid",
+      "range": "ex:SemiEssentialAminoAcid",
+      "comment": "An AminoAcid is classified as a SemiEssentialAminoAcid."
+    },
+    "ex:classifiedAsPurelyKetogenicAminoAcid": {
+      "domain": "ex:AminoAcid",
+      "range": "ex:PurelyKetogenicAminoAcid",
+      "comment": "An AminoAcid is classified as a PurelyKetogenicAminoAcid."
+    },
+    "ex:classifiedAsKetogenicAndGlucogenicAminoAcid": {
+      "domain": "ex:AminoAcid",
+      "range": "ex:KetogenicAndGlucogenicAminoAcid",
+      "comment": "An AminoAcid is classified as a KetogenicAndGlucogenicAminoAcid."
+    },
+    "ex:classifiedAsPurelyGlucogenicAminoAcid": {
+      "domain": "ex:AminoAcid",
+      "range": "ex:PurelyGlucogenicAminoAcid",
+      "comment": "An AminoAcid is classified as a PurelyGlucogenicAminoAcid."
+    },
+    "ex:classifiedAsNonPolarAminoAcid": {
+      "domain": "ex:AminoAcid",
+      "range": "ex:NonPolarAminoAcid",
+      "comment": "An AminoAcid is classified as a NonPolarAminoAcid."
+    },
+    "ex:classifiedAsPolarAminoAcidWithNoCharge": {
+      "domain": "ex:AminoAcid",
+      "range": "ex:PolarAminoAcidWithNoCharge",
+      "comment": "An AminoAcid is classified as a PolarAminoAcidWithNoCharge."
+    },
+    "ex:classifiedAsPolarAminoAcidWithPositiveCharge": {
+      "domain": "ex:AminoAcid",
+      "range": "ex:PolarAminoAcidWithPositiveCharge",
+      "comment": "An AminoAcid is classified as a PolarAminoAcidWithPositiveCharge."
+    },
+    "ex:classifiedAsPolarAminoAcidWithNegativeCharge": {
+      "domain": "ex:AminoAcid",
+      "range": "ex:PolarAminoAcidWithNegativeCharge",
+      "comment": "An AminoAcid is classified as a PolarAminoAcidWithNegativeCharge."
+    },
+    "ex:classifiedAsAliphaticAminoAcid": {
+      "domain": "ex:AminoAcid",
+      "range": "ex:AliphaticAminoAcid",
+      "comment": "An AminoAcid is classified as an AliphaticAminoAcid."
+    },
+    "ex:classifiedAsHydroxylGroupContainingAminoAcid": {
+      "domain": "ex:AminoAcid",
+      "range": "ex:HydroxylGroupContainingAminoAcid",
+      "comment": "An AminoAcid is classified as a HydroxylGroupContainingAminoAcid."
+    },
+    "ex:classifiedAsSulphurContainingAminoAcid": {
+      "domain": "ex:AminoAcid",
+      "range": "ex:SulphurContainingAminoAcid",
+      "comment": "An AminoAcid is classified as a SulphurContainingAminoAcid."
+    },
+    "ex:classifiedAsBasicAminoAcid": {
+      "domain": "ex:AminoAcid",
+      "range": "ex:BasicAminoAcid",
+      "comment": "An AminoAcid is classified as a BasicAminoAcid."
+    },
+    "ex:classifiedAsAromaticAminoAcid": {
+      "domain": "ex:AminoAcid",
+      "range": "ex:AromaticAminoAcid",
+      "comment": "An AminoAcid is classified as an AromaticAminoAcid."
+    },
+    "ex:classifiedAsIminoAcid": {
+      "domain": "ex:AminoAcid",
+      "range": "ex:IminoAcid",
+      "comment": "An AminoAcid is classified as an IminoAcid."
+    },
+    "ex:classifiedAsBetaAminoAcid": {
+      "domain": "ex:AminoAcid",
+      "range": "ex:BetaAminoAcid",
+      "comment": "An AminoAcid is classified as a BetaAminoAcid."
+    },
+    "ex:classifiedAsGammaAminoAcid": {
+      "domain": "ex:AminoAcid",
+      "range": "ex:GammaAminoAcid",
+      "comment": "An AminoAcid is classified as a GammaAminoAcid."
+    },
+    "ex:producedByHydrolysis": {
+      "domain": "ex:AminoAcid",
+      "range": "ex:AminoAcidSynthesisProcess",
+      "comment": "An AminoAcid is produced by a Hydrolysis process."
+    }
+  },
+  "canonical_terms": {
+    "AA": "ex:AminoAcid",
+    "DPenicillamine": "ex:DPenicillamine",
+    "N-Acetylcysteine": "ex:NAcetylcysteine",
+    "Gabapentin": "ex:Gabapentin"
+  },
+  "subclass_relations": {},
+  "entities": {
+    "ex:amino_acids": {
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Amino acids are the building blocks of proteins."
+    },
+    "ex:essential_amino_acids": {
+      "class_uri": "ex:EssentialAminoAcid",
+      "evidence_span": "Because some amino acids are not produced by the body, they must be consumed through the food. These amino acids are referred to as essential amino acids."
+    },
+    "ex:non_essential_amino_acids": {
+      "class_uri": "ex:NonEssentialAminoAcid",
+      "evidence_span": "Some amino acids are generated in the body and do not require supplementation; these amino acids are referred to as non-essential amino acids."
+    },
+    "ex:semi_essential_amino_acids": {
+      "class_uri": "ex:SemiEssentialAminoAcid",
+      "evidence_span": "Some amino acids are generated in the body, but production is insufficient; these amino acids are referred to as semi-essential amino acids."
+    },
+    "ex:alpha_amino_acids": {
+      "class_uri": "ex:AlphaAminoAcid",
+      "evidence_span": "They will be classified in step with the core structural-functional groups' locations as alpha- (α-) "
+    },
+    "ex:glycine": {
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Glycine"
+    },
+    "ex:histidine": {
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Histidine"
+    },
+    "ex:tyrosine": {
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Tyrosine"
+    },
+    "ex:tryptophan": {
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Tryptophan"
+    },
+    "ex:valine": {
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Valine"
+    },
+    "ex:leucine": {
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Leucine"
+    },
+    "ex:isoleucine": {
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Isoleucine"
+    },
+    "ex:threonine": {
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Threonine"
+    },
+    "ex:methionine": {
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Methionine"
+    },
+    "ex:phenylalanine": {
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Phenylalanine"
+    },
+    "ex:lysine": {
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Lysine"
+    },
+    "ex:arginine": {
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "arginine"
+    },
+    "ex:proline": {
+      "class_uri": "ex:IminoAcid",
+      "evidence_span": "proline"
+    },
+    "ex:serine": {
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Polar amino acids with no charge on 'R' group: As a result, the 'R' group of these amino acids is uncharged. They do, however, have groups like hydroxyl, sulfhydryl, and amide, and they contribute to protein structure hydrogen bonding. e.g.: Glycine, Serine, Threonine, Cysteine, Glutamine, Asparagine, and Tyrosine."
+    },
+    "ex:cysteine": {
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Polar amino acids with no charge on 'R' group: As a result, the 'R' group of these amino acids is uncharged. They do, however, have groups like hydroxyl, sulfhydryl, and amide, and they contribute to protein structure hydrogen bonding. e.g.: Glycine, Serine, Threonine, Cysteine, Glutamine, Asparagine, and Tyrosine."
+    },
+    "ex:glutamine": {
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Polar amino acids with no charge on 'R' group: As a result, the 'R' group of these amino acids is uncharged. They do, however, have groups like hydroxyl, sulfhydryl, and amide, and they contribute to protein structure hydrogen bonding. e.g.: Glycine, Serine, Threonine, Cysteine, Glutamine, Asparagine, and Tyrosine."
+    },
+    "ex:asparagine": {
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Polar amino acids with no charge on 'R' group: As a result, the 'R' group of these amino acids is uncharged. They do, however, have groups like hydroxyl, sulfhydryl, and amide, and they contribute to protein structure hydrogen bonding. e.g.: Glycine, Serine, Threonine, Cysteine, Glutamine, Asparagine, and Tyrosine."
+    },
+    "ex:aspartic_acid": {
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Polar amino acids with negative 'R ‘group: The aromatic dicarboxylic monoamino acids-e.g.: Aspartic acid and Glutamic acid."
+    },
+    "ex:glutamic_acid": {
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Polar amino acids with negative 'R ‘group: The aromatic dicarboxylic monoamino acids-e.g.: Aspartic acid and Glutamic acid."
+    },
+    "ex:alanine": {
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Alanine"
+    },
+    "ex:norleucine": {
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Norleucine"
+    },
+    "ex:hydroxyproline": {
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Hydroxyproline"
+    },
+    "ex:beta_hydroxy_glutamic_acid": {
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Beta-hydroxy glutamic acid"
+    },
+    "ex:ornithine": {
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "L-ornithine"
+    },
+    "ex:d_penicillamine": {
+      "class_uri": "ex:DPenicillamine",
+      "evidence_span": "D-Penicillamine: It is a metabolite of penicillin."
+    },
+    "ex:n_acetylcysteine": {
+      "class_uri": "ex:NAcetylcysteine",
+      "evidence_span": "N-Acetylcysteine: It is used in cystic fibrosis, and chronic renal insufficiency"
+    },
+    "ex:gabapentin": {
+      "class_uri": "ex:Gabapentin",
+      "evidence_span": "Gabapentin: It is used as anticonvulsant."
+    }
+  },
+  "relations": [
+    {
+      "source_id": "ex:amino_acids",
+      "property_uri": "ex:classifiedAsEssentialAminoAcid",
+      "target_id": "ex:essential_amino_acids",
+      "evidence_span": "Because some amino acids are not produced by the body, they must be consumed through the food. These amino acids are referred to as essential amino acids."
+    },
+    {
+      "source_id": "ex:amino_acids",
+      "property_uri": "ex:classifiedAsNonEssentialAminoAcid",
+      "target_id": "ex:non_essential_amino_acids",
+      "evidence_span": "Some amino acids are generated in the body and do not require supplementation; these amino acids are referred to as non-essential amino acids."
+    },
+    {
+      "source_id": "ex:amino_acids",
+      "property_uri": "ex:classifiedAsSemiEssentialAminoAcid",
+      "target_id": "ex:semi_essential_amino_acids",
+      "evidence_span": "Some amino acids are generated in the body, but production is insufficient; these amino acids are referred to as semi-essential amino acids."
+    },
+    {
+      "source_id": "ex:glycine",
+      "property_uri": "ex:undergoesDecarboxylationReaction",
+      "target_id": "ex:DecarboxylationReaction",
+      "evidence_span": "Glycine undergoes acid-base titration"
+    },
+    {
+      "source_id": "ex:histidine",
+      "property_uri": "ex:undergoesDecarboxylationReaction",
+      "target_id": "ex:DecarboxylationReaction",
+      "evidence_span": "Histidine → Histamine + CO2"
+    },
+    {
+      "source_id": "ex:tyrosine",
+      "property_uri": "ex:undergoesDecarboxylationReaction",
+      "target_id": "ex:DecarboxylationReaction",
+      "evidence_span": "Tyrosine → Tyramine + CO2"
+    },
+    {
+      "source_id": "ex:tryptophan",
+      "property_uri": "ex:undergoesDecarboxylationReaction",
+      "target_id": "ex:DecarboxylationReaction",
+      "evidence_span": "Tryptophan → Tryptamine + CO2"
+    },
+    {
+      "source_id": "ex:glycine",
+      "property_uri": "ex:identifiedByNinhydrinReaction",
+      "target_id": "ex:NinhydrinReaction",
+      "evidence_span": "When Amino acids (or) Imino acid react with Ninhydrin molecule it gives Color."
+    },
+    {
+      "source_id": "ex:histidine",
+      "property_uri": "ex:identifiedByNinhydrinReaction",
+      "target_id": "ex:NinhydrinReaction",
+      "evidence_span": "When Amino acids (or) Imino acid react with Ninhydrin molecule it gives Color."
+    },
+    {
+      "source_id": "ex:tyrosine",
+      "property_uri": "ex:identifiedByNinhydrinReaction",
+      "target_id": "ex:NinhydrinReaction",
+      "evidence_span": "When Amino acids (or) Imino acid react with Ninhydrin molecule it gives Color."
+    },
+    {
+      "source_id": "ex:tryptophan",
+      "property_uri": "ex:identifiedByNinhydrinReaction",
+      "target_id": "ex:NinhydrinReaction",
+      "evidence_span": "When Amino acids (or) Imino acid react with Ninhydrin molecule it gives Color."
+    },
+    {
+      "source_id": "ex:valine",
+      "property_uri": "ex:classifiedAsEssentialAminoAcid",
+      "target_id": "ex:essential_amino_acids",
+      "evidence_span": "Valine"
+    },
+    {
+      "source_id": "ex:leucine",
+      "property_uri": "ex:classifiedAsEssentialAminoAcid",
+      "target_id": "ex:essential_amino_acids",
+      "evidence_span": "Leucine"
+    },
+    {
+      "source_id": "ex:isoleucine",
+      "property_uri": "ex:classifiedAsEssentialAminoAcid",
+      "target_id": "ex:essential_amino_acids",
+      "evidence_span": "Isoleucine"
+    },
+    {
+      "source_id": "ex:threonine",
+      "property_uri": "ex:classifiedAsEssentialAminoAcid",
+      "target_id": "ex:essential_amino_acids",
+      "evidence_span": "Threonine"
+    },
+    {
+      "source_id": "ex:methionine",
+      "property_uri": "ex:classifiedAsEssentialAminoAcid",
+      "target_id": "ex:essential_amino_acids",
+      "evidence_span": "Methionine"
+    },
+    {
+      "source_id": "ex:phenylalanine",
+      "property_uri": "ex:classifiedAsEssentialAminoAcid",
+      "target_id": "ex:essential_amino_acids",
+      "evidence_span": "Phenylalanine"
+    },
+    {
+      "source_id": "ex:tryptophan",
+      "property_uri": "ex:classifiedAsEssentialAminoAcid",
+      "target_id": "ex:essential_amino_acids",
+      "evidence_span": "Tryptophan"
+    },
+    {
+      "source_id": "ex:lysine",
+      "property_uri": "ex:classifiedAsEssentialAminoAcid",
+      "target_id": "ex:essential_amino_acids",
+      "evidence_span": "Lysine"
+    },
+    {
+      "source_id": "ex:lysine",
+      "property_uri": "ex:classifiedAsBasicAminoAcid",
+      "target_id": "ex:basic_amino_acids",
+      "evidence_span": "lysine"
+    },
+    {
+      "source_id": "ex:arginine",
+      "property_uri": "ex:classifiedAsBasicAminoAcid",
+      "target_id": "ex:basic_amino_acids",
+      "evidence_span": "arginine"
+    },
+    {
+      "source_id": "ex:histidine",
+      "property_uri": "ex:classifiedAsBasicAminoAcid",
+      "target_id": "ex:basic_amino_acids",
+      "evidence_span": "histidine"
+    },
+    {
+      "source_id": "ex:phenylalanine",
+      "property_uri": "ex:classifiedAsAromaticAminoAcid",
+      "target_id": "ex:aromatic_amino_acids",
+      "evidence_span": "phenylalanine"
+    },
+    {
+      "source_id": "ex:tyrosine",
+      "property_uri": "ex:classifiedAsAromaticAminoAcid",
+      "target_id": "ex:aromatic_amino_acids",
+      "evidence_span": "tyrosine"
+    },
+    {
+      "source_id": "ex:tryptophan",
+      "property_uri": "ex:classifiedAsAromaticAminoAcid",
+      "target_id": "ex:aromatic_amino_acids",
+      "evidence_span": "tryptophan"
+    },
+    {
+      "source_id": "ex:proline",
+      "property_uri": "ex:classifiedAsIminoAcid",
+      "target_id": "ex:imino_acids",
+      "evidence_span": "proline"
+    },
+    {
+      "source_id": "ex:leucine",
+      "property_uri": "ex:classifiedAsPurelyKetogenicAminoAcid",
+      "target_id": "ex:PurelyKetogenicAminoAcid",
+      "evidence_span": "Because it is transformed into ketone bodies, leucine and lysine are completely ketogenic."
+    },
+    {
+      "source_id": "ex:lysine",
+      "property_uri": "ex:classifiedAsPurelyKetogenicAminoAcid",
+      "target_id": "ex:PurelyKetogenicAminoAcid",
+      "evidence_span": "Because it is transformed into ketone bodies, leucine and lysine are completely ketogenic."
+    },
+    {
+      "source_id": "ex:phenylalanine",
+      "property_uri": "ex:classifiedAsKetogenicAndGlucogenicAminoAcid",
+      "target_id": "ex:KetogenicAndGlucogenicAminoAcid",
+      "evidence_span": "Lysine, Isoleucine, Phenylalanine, Tyrosine & Tryptophan are partially ketogenic and partially glucogenic."
+    },
+    {
+      "source_id": "ex:tyrosine",
+      "property_uri": "ex:classifiedAsKetogenicAndGlucogenicAminoAcid",
+      "target_id": "ex:KetogenicAndGlucogenicAminoAcid",
+      "evidence_span": "Lysine, Isoleucine, Phenylalanine, Tyrosine & Tryptophan are partially ketogenic and partially glucogenic."
+    },
+    {
+      "source_id": "ex:tryptophan",
+      "property_uri": "ex:classifiedAsKetogenicAndGlucogenicAminoAcid",
+      "target_id": "ex:KetogenicAndGlucogenicAminoAcid",
+      "evidence_span": "Lysine, Isoleucine, Phenylalanine, Tyrosine & Tryptophan are partially ketogenic and partially glucogenic."
+    },
+    {
+      "source_id": "ex:valine",
+      "property_uri": "ex:classifiedAsNonPolarAminoAcid",
+      "target_id": "ex:NonPolarAminoAcid",
+      "evidence_span": "Non-polar amino acids These amino acids are also known as hydrophobic amino acids (water -hating) they have no charge on the 'R' group. e.g.: Alanine, Leucine, Isoleucine, Valine, Methionine, Phenylalanine, Tryptophan, and Proline."
+    },
+    {
+      "source_id": "ex:isoleucine",
+      "property_uri": "ex:classifiedAsNonPolarAminoAcid",
+      "target_id": "ex:NonPolarAminoAcid",
+      "evidence_span": "Non-polar amino acids These amino acids are also known as hydrophobic amino acids (water -hating) they have no charge on the 'R' group. e.g.: Alanine, Leucine, Isoleucine, Valine, Methionine, Phenylalanine, Tryptophan, and Proline."
+    },
+    {
+      "source_id": "ex:methionine",
+      "property_uri": "ex:classifiedAsNonPolarAminoAcid",
+      "target_id": "ex:NonPolarAminoAcid",
+      "evidence_span": "Non-polar amino acids These amino acids are also known as hydrophobic amino acids (water -hating) they have no charge on the 'R' group. e.g.: Alanine, Leucine, Isoleucine, Valine, Methionine, Phenylalanine, Tryptophan, and Proline."
+    },
+    {
+      "source_id": "ex:glycine",
+      "property_uri": "ex:classifiedAsPolarAminoAcidWithNoCharge",
+      "target_id": "ex:PolarAminoAcidWithNoCharge",
+      "evidence_span": "Polar amino acids with no charge on 'R' group: As a result, the 'R' group of these amino acids is uncharged. They do, however, have groups like hydroxyl, sulfhydryl, and amide, and they contribute to protein structure hydrogen bonding. e.g.: Glycine, Serine, Threonine, Cysteine, Glutamine, Asparagine, and Tyrosine."
+    },
+    {
+      "source_id": "ex:serine",
+      "property_uri": "ex:classifiedAsPolarAminoAcidWithNoCharge",
+      "target_id": "ex:PolarAminoAcidWithNoCharge",
+      "evidence_span": "Polar amino acids with no charge on 'R' group: As a result, the 'R' group of these amino acids is uncharged. They do, however, have groups like hydroxyl, sulfhydryl, and amide, and they contribute to protein structure hydrogen bonding. e.g.: Glycine, Serine, Threonine, Cysteine, Glutamine, Asparagine, and Tyrosine."
+    },
+    {
+      "source_id": "ex:threonine",
+      "property_uri": "ex:classifiedAsPolarAminoAcidWithNoCharge",
+      "target_id": "ex:PolarAminoAcidWithNoCharge",
+      "evidence_span": "Polar amino acids with no charge on 'R' group: As a result, the 'R' group of these amino acids is uncharged. They do, however, have groups like hydroxyl, sulfhydryl, and amide, and they contribute to protein structure hydrogen bonding. e.g.: Glycine, Serine, Threonine, Cysteine, Glutamine, Asparagine, and Tyrosine."
+    },
+    {
+      "source_id": "ex:cysteine",
+      "property_uri": "ex:classifiedAsPolarAminoAcidWithNoCharge",
+      "target_id": "ex:PolarAminoAcidWithNoCharge",
+      "evidence_span": "Polar amino acids with no charge on 'R' group: As a result, the 'R' group of these amino acids is uncharged. They do, however, have groups like hydroxyl, sulfhydryl, and amide, and they contribute to protein structure hydrogen bonding. e.g.: Glycine, Serine, Threonine, Cysteine, Glutamine, Asparagine, and Tyrosine."
+    },
+    {
+      "source_id": "ex:glutamine",
+      "property_uri": "ex:classifiedAsPolarAminoAcidWithNoCharge",
+      "target_id": "ex:PolarAminoAcidWithNoCharge",
+      "evidence_span": "Polar amino acids with no charge on 'R' group: As a result, the 'R' group of these amino acids is uncharged. They do, however, have groups like hydroxyl, sulfhydryl, and amide, and they contribute to protein structure hydrogen bonding. e.g.: Glycine, Serine, Threonine, Cysteine, Glutamine, Asparagine, and Tyrosine."
+    },
+    {
+      "source_id": "ex:asparagine",
+      "property_uri": "ex:classifiedAsPolarAminoAcidWithNoCharge",
+      "target_id": "ex:PolarAminoAcidWithNoCharge",
+      "evidence_span": "Polar amino acids with no charge on 'R' group: As a result, the 'R' group of these amino acids is uncharged. They do, however, have groups like hydroxyl, sulfhydryl, and amide, and they contribute to protein structure hydrogen bonding. e.g.: Glycine, Serine, Threonine, Cysteine, Glutamine, Asparagine, and Tyrosine."
+    },
+    {
+      "source_id": "ex:aspartic_acid",
+      "property_uri": "ex:classifiedAsPolarAminoAcidWithNegativeCharge",
+      "target_id": "ex:PolarAminoAcidWithNegativeCharge",
+      "evidence_span": "Polar amino acids with negative 'R ‘group: The aromatic dicarboxylic monoamino acids-e.g.: Aspartic acid and Glutamic acid."
+    },
+    {
+      "source_id": "ex:glutamic_acid",
+      "property_uri": "ex:classifiedAsPolarAminoAcidWithNegativeCharge",
+      "target_id": "ex:PolarAminoAcidWithNegativeCharge",
+      "evidence_span": "Polar amino acids with negative 'R ‘group: The aromatic dicarboxylic monoamino acids-e.g.: Aspartic acid and Glutamic acid."
+    },
+    {
+      "source_id": "ex:cysteine",
+      "property_uri": "ex:identifiedByNinhydrinReaction",
+      "target_id": "ex:NinhydrinReaction",
+      "evidence_span": "cysteine is used to boost the efficiency of corticosteroid medications."
+    },
+    {
+      "source_id": "ex:norleucine",
+      "property_uri": "ex:classifiedAsSemiEssentialAminoAcid",
+      "target_id": "ex:SemiEssentialAminoAcid",
+      "evidence_span": "It has a similar structure to METHIONINE"
+    },
+    {
+      "source_id": "ex:phenylalanine",
+      "property_uri": "ex:classifiedAsKetogenicAndGlucogenicAminoAcid",
+      "target_id": "ex:KetogenicAndGlucogenicAminoAcid",
+      "evidence_span": "Phenylalanine"
+    },
+    {
+      "source_id": "ex:tyrosine",
+      "property_uri": "ex:classifiedAsPolarAminoAcidWithNoCharge",
+      "target_id": "ex:PolarAminoAcidWithNoCharge",
+      "evidence_span": "Tyrosine is a supplement that helps with mental performance, alertness, and memory."
+    },
+    {
+      "source_id": "ex:cysteine",
+      "property_uri": "ex:classifiedAsSulphurContainingAminoAcid",
+      "target_id": "ex:SulphurContainingAminoAcid",
+      "evidence_span": "Cysteine"
+    },
+    {
+      "source_id": "ex:norleucine",
+      "property_uri": "ex:producedByHydrolysis",
+      "target_id": "ex:AminoAcidSynthesisProcess",
+      "evidence_span": "Norleucine is an artificial amino acid that has been used to research protein structure and fu nction in the lab."
+    },
+    {
+      "source_id": "ex:cysteine",
+      "property_uri": "ex:undergoesDecarboxylationReaction",
+      "target_id": "ex:DecarboxylationReaction",
+      "evidence_span": "Cysteine"
+    },
+    {
+      "source_id": "ex:norleucine",
+      "property_uri": "ex:classifiedAsAliphaticAminoAcid",
+      "target_id": "ex:AliphaticAminoAcid",
+      "evidence_span": "Norleucine is an artificial amino acid that has been used to research protein structure and fu nction in the lab."
+    },
+    {
+      "source_id": "ex:cysteine",
+      "property_uri": "ex:classifiedAsHydroxylGroupContainingAminoAcid",
+      "target_id": "ex:HydroxylGroupContainingAminoAcid",
+      "evidence_span": "Cysteine"
+    },
+    {
+      "source_id": "ex:norleucine",
+      "property_uri": "ex:classifiedAsEssentialAminoAcid",
+      "target_id": "ex:EssentialAminoAcid",
+      "evidence_span": "Norleucine is an artificial amino acid that has been used to research protein structure and fu nction in the lab."
+    },
+    {
+      "source_id": "ex:cysteine",
+      "property_uri": "ex:classifiedAsPolarAminoAcidWithNoCharge",
+      "target_id": "ex:PolarAminoAcidWithNoCharge",
+      "evidence_span": "Cysteine"
+    },
+    {
+      "source_id": "ex:norleucine",
+      "property_uri": "ex:classifiedAsNonEssentialAminoAcid",
+      "target_id": "ex:NonEssentialAminoAcid",
+      "evidence_span": "Norleucine is an artificial amino acid that has been used to research protein structure and fu nction in the lab."
+    },
+    {
+      "source_id": "ex:cysteine",
+      "property_uri": "ex:classifiedAsSemiEssentialAminoAcid",
+      "target_id": "ex:SemiEssentialAminoAcid",
+      "evidence_span": "Cysteine"
+    },
+    {
+      "source_id": "ex:norleucine",
+      "property_uri": "ex:classifiedAsPurelyKetogenicAminoAcid",
+      "target_id": "ex:PurelyKetogenicAminoAcid",
+      "evidence_span": "Norleucine is an artificial amino acid that has been used to research protein structure and fu nction in the lab."
+    },
+    {
+      "source_id": "ex:cysteine",
+      "property_uri": "ex:classifiedAsPolarAminoAcidWithPositiveCharge",
+      "target_id": "ex:PolarAminoAcidWithPositiveCharge",
+      "evidence_span": "Cysteine"
+    },
+    {
+      "source_id": "ex:norleucine",
+      "property_uri": "ex:classifiedAsPurelyGlucogenicAminoAcid",
+      "target_id": "ex:PurelyGlucogenicAminoAcid",
+      "evidence_span": "Norleucine is an artificial amino acid that has been used to research protein structure and fu nction in the lab."
+    },
+    {
+      "source_id": "ex:cysteine",
+      "property_uri": "ex:classifiedAsPolarAminoAcidWithNegativeCharge",
+      "target_id": "ex:PolarAminoAcidWithNegativeCharge",
+      "evidence_span": "Cysteine"
+    },
+    {
+      "source_id": "ex:norleucine",
+      "property_uri": "ex:classifiedAsNonPolarAminoAcid",
+      "target_id": "ex:NonPolarAminoAcid",
+      "evidence_span": "Norleucine is an artificial amino acid that has been used to research protein structure and fu nction in the lab."
+    },
+    {
+      "source_id": "ex:cysteine",
+      "property_uri": "ex:classifiedAsAliphaticAminoAcid",
+      "target_id": "ex:AliphaticAminoAcid",
+      "evidence_span": "Cysteine"
+    },
+    {
+      "source_id": "ex:norleucine",
+      "property_uri": "ex:classifiedAsHydroxylGroupContainingAminoAcid",
+      "target_id": "ex:HydroxylGroupContainingAminoAcid",
+      "evidence_span": "Norleucine is an artificial amino acid that has been used to research protein structure and fu nction in the lab."
+    },
+    {
+      "source_id": "ex:norleucine",
+      "property_uri": "ex:classifiedAsBasicAminoAcid",
+      "target_id": "ex:BasicAminoAcid",
+      "evidence_span": "Norleucine is an artificial amino acid that has been used to research protein structure and fu nction in the lab."
+    },
+    {
+      "source_id": "ex:cysteine",
+      "property_uri": "ex:classifiedAsIminoAcid",
+      "target_id": "ex:IminoAcid",
+      "evidence_span": "Cysteine"
+    },
+    {
+      "source_id": "ex:norleucine",
+      "property_uri": "ex:classifiedAsAromaticAminoAcid",
+      "target_id": "ex:AromaticAminoAcid",
+      "evidence_span": "Norleucine is an artificial amino acid that has been used to research protein structure and fu nction in the lab."
+    },
+    {
+      "source_id": "ex:cysteine",
+      "property_uri": "ex:classifiedAsBetaAminoAcid",
+      "target_id": "ex:BetaAminoAcid",
+      "evidence_span": "Cysteine"
+    },
+    {
+      "source_id": "ex:norleucine",
+      "property_uri": "ex:classifiedAsGammaAminoAcid",
+      "target_id": "ex:GammaAminoAcid",
+      "evidence_span": "Norleucine is an artificial amino acid that has been used to research protein structure and fu nction in the lab."
+    },
+    {
+      "source_id": "ex:cysteine",
+      "property_uri": "ex:classifiedAsPurelyKetogenicAminoAcid",
+      "target_id": "ex:PurelyKetogenicAminoAcid",
+      "evidence_span": "Cysteine"
+    },
+    {
+      "source_id": "ex:cysteine",
+      "property_uri": "ex:classifiedAsPurelyGlucogenicAminoAcid",
+      "target_id": "ex:PurelyGlucogenicAminoAcid",
+      "evidence_span": "Cysteine"
+    },
+    {
+      "source_id": "ex:norleucine",
+      "property_uri": "ex:undergoesDecarboxylationReaction",
+      "target_id": "ex:DecarboxylationReaction",
+      "evidence_span": "Norleucine is an artificial amino acid that has been used to research protein structure and fu nction in the lab."
+    },
+    {
+      "source_id": "ex:cysteine",
+      "property_uri": "ex:classifiedAsNonPolarAminoAcid",
+      "target_id": "ex:NonPolarAminoAcid",
+      "evidence_span": "Cysteine"
+    },
+    {
+      "source_id": "ex:norleucine",
+      "property_uri": "ex:identifiedByNinhydrinReaction",
+      "target_id": "ex:NinhydrinReaction",
+      "evidence_span": "Norleucine is an artificial amino acid that has been used to research protein structure and fu nction in the lab."
+    },
+    {
+      "source_id": "ex:methionine",
+      "property_uri": "ex:classifiedAsSulphurContainingAminoAcid",
+      "target_id": "ex:SulphurContainingAminoAcid",
+      "evidence_span": "Methionine"
+    },
+    {
+      "source_id": "ex:tryptophan",
+      "property_uri": "ex:classifiedAsAromaticAminoAcid",
+      "target_id": "ex:AromaticAminoAcid",
+      "evidence_span": "Tryptophan"
+    },
+    {
+      "source_id": "ex:proline",
+      "property_uri": "ex:classifiedAsIminoAcid",
+      "target_id": "ex:IminoAcid",
+      "evidence_span": "Proline"
+    },
+    {
+      "source_id": "ex:hydroxyproline",
+      "property_uri": "ex:classifiedAsHydroxylGroupContainingAminoAcid",
+      "target_id": "ex:HydroxylGroupContainingAminoAcid",
+      "evidence_span": "Hydroxyproline"
+    },
+    {
+      "source_id": "ex:aspartic_acid",
+      "property_uri": "ex:classifiedAsPolarAminoAcidWithNegativeCharge",
+      "target_id": "ex:PolarAminoAcidWithNegativeCharge",
+      "evidence_span": "Aspartic acid"
+    },
+    {
+      "source_id": "ex:glutamic_acid",
+      "property_uri": "ex:classifiedAsPolarAminoAcidWithNegativeCharge",
+      "target_id": "ex:PolarAminoAcidWithNegativeCharge",
+      "evidence_span": "Glutamic acid"
+    },
+    {
+      "source_id": "ex:beta_hydroxy_glutamic_acid",
+      "property_uri": "ex:classifiedAsHydroxylGroupContainingAminoAcid",
+      "target_id": "ex:HydroxylGroupContainingAminoAcid",
+      "evidence_span": "Beta-hydroxy glutamic acid"
+    },
+    {
+      "source_id": "ex:glutamine",
+      "property_uri": "ex:classifiedAsPolarAminoAcidWithNoCharge",
+      "target_id": "ex:PolarAminoAcidWithNoCharge",
+      "evidence_span": "Glutamine"
+    },
+    {
+      "source_id": "ex:ornithine",
+      "property_uri": "ex:classifiedAsNonEssentialAminoAcid",
+      "target_id": "ex:NonEssentialAminoAcid",
+      "evidence_span": "L-ornithine"
+    },
+    {
+      "source_id": "ex:arginine",
+      "property_uri": "ex:classifiedAsBasicAminoAcid",
+      "target_id": "ex:BasicAminoAcid",
+      "evidence_span": "Arginine"
+    },
+    {
+      "source_id": "ex:lysine",
+      "property_uri": "ex:classifiedAsPurelyKetogenicAminoAcid",
+      "target_id": "ex:PurelyKetogenicAminoAcid",
+      "evidence_span": "Lysine"
+    },
+    {
+      "source_id": "ex:histidine",
+      "property_uri": "ex:classifiedAsBasicAminoAcid",
+      "target_id": "ex:BasicAminoAcid",
+      "evidence_span": "Histidine"
+    },
+    {
+      "source_id": "ex:histidine",
+      "property_uri": "ex:classifiedAsEssentialAminoAcid",
+      "target_id": "ex:essential_amino_acids",
+      "evidence_span": "Histidine Hemoglobin has a high percentage of histidine."
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "reasoning_steps": [
+    "Identified new projects and priorities from the text.",
+    "Mapped new concepts to appropriate BFO categories."
+  ],
+  "classes": [
+    {
+      "uri": "ex:TWAINProject",
+      "bfo_parent": "bfo:InformationContentEntity",
+      "subclass_of": null,
+      "aristotelian_definition": "A project that aims to deploy AI in wind farm control and asset management.",
+      "comment": "The TWAIN project focuses on efficient deployment of AI for cost, performance, and efficiency optimization."
+    },
+    {
+      "uri": "ex:ULTFARMSProject",
+      "bfo_parent": "bfo:InformationContentEntity",
+      "subclass_of": null,
+      "aristotelian_definition": "A project developing novel designs in low trophic aquaculture pilots within offshore wind farm locations.",
+      "comment": "The ULTFARMS project aims to develop new designs for six pilot projects across the North and Baltic Seas."
+    },
+    {
+      "uri": "ex:FLOWProject",
+      "bfo_parent": "bfo:InformationContentEntity",
+      "subclass_of": null,
+      "aristotelian_definition": "A project developing prediction methods for production statistics and load performance of modern GW-scale wind energy systems.",
+      "comment": "The FLOW project focuses on new prediction methods for offshore and onshore wind energy systems."
+    },
+    {
+      "uri": "ex:MADE4WINDProject",
+      "bfo_parent": "bfo:InformationContentEntity",
+      "subclass_of": null,
+      "aristotelian_definition": "A project developing innovative components for a 15 MW floating wind turbine.",
+      "comment": "The MADE4WIND project aims to introduce new designs and manufacturing techniques in lightweight materials."
+    },
+    {
+      "uri": "ex:NanowingsProject",
+      "bfo_parent": "bfo:InformationContentEntity",
+      "subclass_of": null,
+      "aristotelian_definition": "A project developing nanocoatings for wind turbine performance improvement.",
+      "comment": "The Nanowings project aims to enhance wind turbine durability and performance with advanced coatings."
+    },
+    {
+      "uri": "ex:WIMBYProject",
+      "bfo_parent": "bfo:InformationContentEntity",
+      "subclass_of": null,
+      "aristotelian_definition": "A project studying social acceptance drivers and barriers for wind energy.",
+      "comment": "The WIMBY project focuses on understanding the challenges of gaining public support for wind energy."
+    },
+    {
+      "uri": "ex:DATA_DRIVEN_OFFSHOREProject",
+      "bfo_parent": "bfo:InformationContentEntity",
+      "subclass_of": null,
+      "aristotelian_definition": "A project revolutionizing aerohydroelastic simulations in wind turbine research.",
+      "comment": "The DATA-DRIVEN OFFSHORE project aims to integrate experimental data into simulations."
+    },
+    {
+      "uri": "ex:OrcelleProject",
+      "bfo_parent": "bfo:InformationContentEntity",
+      "subclass_of": null,
+      "aristotelian_definition": "A project developing wind-assisted propulsion solutions for shipping.",
+      "comment": "The Orcelle project aims to achieve significant energy efficiency gains in the shipping sector."
+    },
+    {
+      "uri": "ex:WHISPERProject",
+      "bfo_parent": "bfo:InformationContentEntity",
+      "subclass_of": null,
+      "aristotelian_definition": "A project developing modular retrofit solutions for wind-assisted propulsion.",
+      "comment": "The WHISPER project aims to test the viability of a wingsail system in reducing CO2 emissions."
+    },
+    {
+      "uri": "ex:NordseeTwoOffshoreWindfarmInnovationProject",
+      "bfo_parent": "bfo:InformationContentEntity",
+      "subclass_of": null,
+      "aristotelian_definition": "A project building and operating an offshore wind farm with integrated green hydrogen production.",
+      "comment": "The Nordsee Two Offshore Windfarm Innovation Project aims to demonstrate innovative technologies for energy generation."
+    }
+  ],
+  "canonical_terms": {}
+}

@@ -1,0 +1,186 @@
+{
+  "reasoning_steps": [
+    "Identify amino acids and their classifications based on metabolic fate and polarity.",
+    "Match identified amino acids with existing entities or create new ones if necessary."
+  ],
+  "entities": [
+    {
+      "id": "ex:leucine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Purely ketogenic amino acids These amino acids can be used to make fat. Because it is transformed into ketone bodies, leucine and lysine are completely ketogenic."
+    },
+    {
+      "id": "ex:lysine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Because it is transformed into ketone bodies, leucine and lysine are completely ketogenic."
+    },
+    {
+      "id": "ex:phenylalanine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Lysine, Isoleucine, Phenylalanine, Tyrosine & Tryptophan are partially ketogenic and partially glucogenic."
+    },
+    {
+      "id": "ex:tyrosine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Lysine, Isoleucine, Phenylalanine, Tyrosine & Tryptophan are partially ketogenic and partially glucogenic."
+    },
+    {
+      "id": "ex:tryptophan",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Lysine, Isoleucine, Phenylalanine, Tyrosine & Tryptophan are partially ketogenic and partially glucogenic."
+    },
+    {
+      "id": "ex:valine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Non-polar amino acids These amino acids are also known as hydrophobic amino acids (water -hating) they have no charge on the 'R' group. e.g.: Alanine, Leucine, Isoleucine, Valine, Methionine, Phenylalanine, Tryptophan, and Proline."
+    },
+    {
+      "id": "ex:isoleucine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Non-polar amino acids These amino acids are also known as hydrophobic amino acids (water -hating) they have no charge on the 'R' group. e.g.: Alanine, Leucine, Isoleucine, Valine, Methionine, Phenylalanine, Tryptophan, and Proline."
+    },
+    {
+      "id": "ex:methionine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Non-polar amino acids These amino acids are also known as hydrophobic amino acids (water -hating) they have no charge on the 'R' group. e.g.: Alanine, Leucine, Isoleucine, Valine, Methionine, Phenylalanine, Tryptophan, and Proline."
+    },
+    {
+      "id": "ex:glycine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Polar amino acids with no charge on 'R' group: As a result, the 'R' group of these amino acids is uncharged. They do, however, have groups like hydroxyl, sulfhydryl, and amide, and they contribute to protein structure hydrogen bonding. e.g.: Glycine, Serine, Threonine, Cysteine, Glutamine, Asparagine, and Tyrosine."
+    },
+    {
+      "id": "ex:serine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Polar amino acids with no charge on 'R' group: As a result, the 'R' group of these amino acids is uncharged. They do, however, have groups like hydroxyl, sulfhydryl, and amide, and they contribute to protein structure hydrogen bonding. e.g.: Glycine, Serine, Threonine, Cysteine, Glutamine, Asparagine, and Tyrosine."
+    },
+    {
+      "id": "ex:threonine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Polar amino acids with no charge on 'R' group: As a result, the 'R' group of these amino acids is uncharged. They do, however, have groups like hydroxyl, sulfhydryl, and amide, and they contribute to protein structure hydrogen bonding. e.g.: Glycine, Serine, Threonine, Cysteine, Glutamine, Asparagine, and Tyrosine."
+    },
+    {
+      "id": "ex:cysteine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Polar amino acids with no charge on 'R' group: As a result, the 'R' group of these amino acids is uncharged. They do, however, have groups like hydroxyl, sulfhydryl, and amide, and they contribute to protein structure hydrogen bonding. e.g.: Glycine, Serine, Threonine, Cysteine, Glutamine, Asparagine, and Tyrosine."
+    },
+    {
+      "id": "ex:glutamine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Polar amino acids with no charge on 'R' group: As a result, the 'R' group of these amino acids is uncharged. They do, however, have groups like hydroxyl, sulfhydryl, and amide, and they contribute to protein structure hydrogen bonding. e.g.: Glycine, Serine, Threonine, Cysteine, Glutamine, Asparagine, and Tyrosine."
+    },
+    {
+      "id": "ex:asparagine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Polar amino acids with no charge on 'R' group: As a result, the 'R' group of these amino acids is uncharged. They do, however, have groups like hydroxyl, sulfhydryl, and amide, and they contribute to protein structure hydrogen bonding. e.g.: Glycine, Serine, Threonine, Cysteine, Glutamine, Asparagine, and Tyrosine."
+    },
+    {
+      "id": "ex:aspartic_acid",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Polar amino acids with negative 'R ‘group: The aromatic dicarboxylic monoamino acids-e.g.: Aspartic acid and Glutamic acid."
+    },
+    {
+      "id": "ex:glutamic_acid",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Polar amino acids with negative 'R ‘group: The aromatic dicarboxylic monoamino acids-e.g.: Aspartic acid and Glutamic acid."
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "ex:leucine",
+      "property_uri": "ex:classifiedAsPurelyKetogenicAminoAcid",
+      "target_id": "ex:PurelyKetogenicAminoAcid",
+      "evidence_span": "Because it is transformed into ketone bodies, leucine and lysine are completely ketogenic."
+    },
+    {
+      "source_id": "ex:lysine",
+      "property_uri": "ex:classifiedAsPurelyKetogenicAminoAcid",
+      "target_id": "ex:PurelyKetogenicAminoAcid",
+      "evidence_span": "Because it is transformed into ketone bodies, leucine and lysine are completely ketogenic."
+    },
+    {
+      "source_id": "ex:phenylalanine",
+      "property_uri": "ex:classifiedAsKetogenicAndGlucogenicAminoAcid",
+      "target_id": "ex:KetogenicAndGlucogenicAminoAcid",
+      "evidence_span": "Lysine, Isoleucine, Phenylalanine, Tyrosine & Tryptophan are partially ketogenic and partially glucogenic."
+    },
+    {
+      "source_id": "ex:tyrosine",
+      "property_uri": "ex:classifiedAsKetogenicAndGlucogenicAminoAcid",
+      "target_id": "ex:KetogenicAndGlucogenicAminoAcid",
+      "evidence_span": "Lysine, Isoleucine, Phenylalanine, Tyrosine & Tryptophan are partially ketogenic and partially glucogenic."
+    },
+    {
+      "source_id": "ex:tryptophan",
+      "property_uri": "ex:classifiedAsKetogenicAndGlucogenicAminoAcid",
+      "target_id": "ex:KetogenicAndGlucogenicAminoAcid",
+      "evidence_span": "Lysine, Isoleucine, Phenylalanine, Tyrosine & Tryptophan are partially ketogenic and partially glucogenic."
+    },
+    {
+      "source_id": "ex:valine",
+      "property_uri": "ex:classifiedAsNonPolarAminoAcid",
+      "target_id": "ex:NonPolarAminoAcid",
+      "evidence_span": "Non-polar amino acids These amino acids are also known as hydrophobic amino acids (water -hating) they have no charge on the 'R' group. e.g.: Alanine, Leucine, Isoleucine, Valine, Methionine, Phenylalanine, Tryptophan, and Proline."
+    },
+    {
+      "source_id": "ex:isoleucine",
+      "property_uri": "ex:classifiedAsNonPolarAminoAcid",
+      "target_id": "ex:NonPolarAminoAcid",
+      "evidence_span": "Non-polar amino acids These amino acids are also known as hydrophobic amino acids (water -hating) they have no charge on the 'R' group. e.g.: Alanine, Leucine, Isoleucine, Valine, Methionine, Phenylalanine, Tryptophan, and Proline."
+    },
+    {
+      "source_id": "ex:methionine",
+      "property_uri": "ex:classifiedAsNonPolarAminoAcid",
+      "target_id": "ex:NonPolarAminoAcid",
+      "evidence_span": "Non-polar amino acids These amino acids are also known as hydrophobic amino acids (water -hating) they have no charge on the 'R' group. e.g.: Alanine, Leucine, Isoleucine, Valine, Methionine, Phenylalanine, Tryptophan, and Proline."
+    },
+    {
+      "source_id": "ex:glycine",
+      "property_uri": "ex:classifiedAsPolarAminoAcidWithNoCharge",
+      "target_id": "ex:PolarAminoAcidWithNoCharge",
+      "evidence_span": "Polar amino acids with no charge on 'R' group: As a result, the 'R' group of these amino acids is uncharged. They do, however, have groups like hydroxyl, sulfhydryl, and amide, and they contribute to protein structure hydrogen bonding. e.g.: Glycine, Serine, Threonine, Cysteine, Glutamine, Asparagine, and Tyrosine."
+    },
+    {
+      "source_id": "ex:serine",
+      "property_uri": "ex:classifiedAsPolarAminoAcidWithNoCharge",
+      "target_id": "ex:PolarAminoAcidWithNoCharge",
+      "evidence_span": "Polar amino acids with no charge on 'R' group: As a result, the 'R' group of these amino acids is uncharged. They do, however, have groups like hydroxyl, sulfhydryl, and amide, and they contribute to protein structure hydrogen bonding. e.g.: Glycine, Serine, Threonine, Cysteine, Glutamine, Asparagine, and Tyrosine."
+    },
+    {
+      "source_id": "ex:threonine",
+      "property_uri": "ex:classifiedAsPolarAminoAcidWithNoCharge",
+      "target_id": "ex:PolarAminoAcidWithNoCharge",
+      "evidence_span": "Polar amino acids with no charge on 'R' group: As a result, the 'R' group of these amino acids is uncharged. They do, however, have groups like hydroxyl, sulfhydryl, and amide, and they contribute to protein structure hydrogen bonding. e.g.: Glycine, Serine, Threonine, Cysteine, Glutamine, Asparagine, and Tyrosine."
+    },
+    {
+      "source_id": "ex:cysteine",
+      "property_uri": "ex:classifiedAsPolarAminoAcidWithNoCharge",
+      "target_id": "ex:PolarAminoAcidWithNoCharge",
+      "evidence_span": "Polar amino acids with no charge on 'R' group: As a result, the 'R' group of these amino acids is uncharged. They do, however, have groups like hydroxyl, sulfhydryl, and amide, and they contribute to protein structure hydrogen bonding. e.g.: Glycine, Serine, Threonine, Cysteine, Glutamine, Asparagine, and Tyrosine."
+    },
+    {
+      "source_id": "ex:glutamine",
+      "property_uri": "ex:classifiedAsPolarAminoAcidWithNoCharge",
+      "target_id": "ex:PolarAminoAcidWithNoCharge",
+      "evidence_span": "Polar amino acids with no charge on 'R' group: As a result, the 'R' group of these amino acids is uncharged. They do, however, have groups like hydroxyl, sulfhydryl, and amide, and they contribute to protein structure hydrogen bonding. e.g.: Glycine, Serine, Threonine, Cysteine, Glutamine, Asparagine, and Tyrosine."
+    },
+    {
+      "source_id": "ex:asparagine",
+      "property_uri": "ex:classifiedAsPolarAminoAcidWithNoCharge",
+      "target_id": "ex:PolarAminoAcidWithNoCharge",
+      "evidence_span": "Polar amino acids with no charge on 'R' group: As a result, the 'R' group of these amino acids is uncharged. They do, however, have groups like hydroxyl, sulfhydryl, and amide, and they contribute to protein structure hydrogen bonding. e.g.: Glycine, Serine, Threonine, Cysteine, Glutamine, Asparagine, and Tyrosine."
+    },
+    {
+      "source_id": "ex:aspartic_acid",
+      "property_uri": "ex:classifiedAsPolarAminoAcidWithNegativeCharge",
+      "target_id": "ex:PolarAminoAcidWithNegativeCharge",
+      "evidence_span": "Polar amino acids with negative 'R ‘group: The aromatic dicarboxylic monoamino acids-e.g.: Aspartic acid and Glutamic acid."
+    },
+    {
+      "source_id": "ex:glutamic_acid",
+      "property_uri": "ex:classifiedAsPolarAminoAcidWithNegativeCharge",
+      "target_id": "ex:PolarAminoAcidWithNegativeCharge",
+      "evidence_span": "Polar amino acids with negative 'R ‘group: The aromatic dicarboxylic monoamino acids-e.g.: Aspartic acid and Glutamic acid."
+    }
+  ]
+}

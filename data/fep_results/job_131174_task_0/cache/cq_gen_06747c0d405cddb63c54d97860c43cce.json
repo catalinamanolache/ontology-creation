@@ -1,0 +1,44 @@
+{
+  "questions": [
+    {
+      "question": "Which country has published the highest number of articles in wind energy research from 2010 to 2023?",
+      "scope": "instance"
+    },
+    {
+      "question": "What is the Field Weighted Citation Impact (FWCI) for EU's wind energy research compared to the global average?",
+      "scope": "property"
+    },
+    {
+      "question": "Which countries have over 100 peer-reviewed articles in wind energy research from 2010 to 2023 within the EU?",
+      "scope": "instance"
+    },
+    {
+      "question": "What is the H-index of the EU for wind energy research compared to other major competitors like China, US and UK?",
+      "scope": "property"
+    },
+    {
+      "question": "Which countries show the strongest collaboration ties in publishing peer-reviewed articles with organisations from the UK within the EU?",
+      "scope": "instance"
+    },
+    {
+      "question": "What percentage of European Union’s funding went to wind energy projects focused on recycling and circularity in 2023?",
+      "scope": "property"
+    },
+    {
+      "question": "Which project aims to develop recycling solutions for wind turbine blades with the largest investment?",
+      "scope": "instance"
+    },
+    {
+      "question": "How much funding was granted specifically for floating offshore wind projects in 2023?",
+      "scope": "property"
+    },
+    {
+      "question": "What is the objective of the WHEEL project regarding floating wind technology?",
+      "scope": "property"
+    },
+    {
+      "question": "Which project aims to study the use of shared anchors to reduce construction costs of floating wind turbines?",
+      "scope": "instance"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "reasoning_steps": [
+    "The process described involves hydrolysis to produce amino acids, which can be linked to existing synthesis processes.",
+    "DPenicillamine is used for chelation therapy in Wilson's disease."
+  ],
+  "properties": [
+    {
+      "uri": "ex:producedByHydrolysis",
+      "domain": "ex:AminoAcid",
+      "range": "ex:AminoAcidSynthesisProcess",
+      "comment": "An AminoAcid is produced by a Hydrolysis process."
+    },
+    {
+      "uri": "ex:treatedWithDPenicillamine",
+      "domain": "ex:WilsonDisease",
+      "range": "ex:DPenicillamine",
+      "comment": "A Wilson's disease patient is treated with DPenicillamine."
+    }
+  ]
+}

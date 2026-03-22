@@ -1,0 +1,44 @@
+{
+  "questions": [
+    {
+      "question": "What are the different methods for producing amino acids mentioned in the text?",
+      "scope": "class"
+    },
+    {
+      "question": "What are the therapeutic uses of Glycine?",
+      "scope": "instance"
+    },
+    {
+      "question": "Which amino acids are used to treat neurological conditions like depression or Parkinson's disease?",
+      "scope": "instance"
+    },
+    {
+      "question": "What is the relationship between L-valine and muscle synthesis?",
+      "scope": "property"
+    },
+    {
+      "question": "Which amino acids are described as having roles in energy production for the brain?",
+      "scope": "instance"
+    },
+    {
+      "question": "What are the chemical names for the amino acids Glycine, Alanine, and Valine?",
+      "scope": "instance"
+    },
+    {
+      "question": "What are the benefits of L-arginine in the context of cardiovascular disease?",
+      "scope": "instance"
+    },
+    {
+      "question": "Which amino acids are used in medicine for their antioxidant properties?",
+      "scope": "instance"
+    },
+    {
+      "question": "What is the role of Hydroxyproline in the body?",
+      "scope": "property"
+    },
+    {
+      "question": "What are the uses of non-standard amino acids as drugs?",
+      "scope": "instance"
+    }
+  ]
+}

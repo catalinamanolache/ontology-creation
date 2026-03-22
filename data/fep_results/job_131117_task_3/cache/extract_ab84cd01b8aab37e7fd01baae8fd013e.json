@@ -1,0 +1,48 @@
+{
+  "reasoning_steps": [
+    "Identified relevant sentences describing amino acids and their classifications.",
+    "Mapped descriptions to approved ontology classes and properties."
+  ],
+  "entities": [
+    {
+      "id": "ex:amino_acids",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Amino acids are the building blocks of proteins."
+    },
+    {
+      "id": "ex:essential_amino_acids",
+      "class_uri": "ex:EssentialAminoAcid",
+      "evidence_span": "Because some amino acids are not produced by the body, they must be consumed through the food. These amino acids are referred to as essential amino acids."
+    },
+    {
+      "id": "ex:non_essential_amino_acids",
+      "class_uri": "ex:NonEssentialAminoAcid",
+      "evidence_span": "Some amino acids are generated in the body and do not require supplementation; these amino acids are referred to as non-essential amino acids."
+    },
+    {
+      "id": "ex:semi_essential_amino_acids",
+      "class_uri": "ex:SemiEssentialAminoAcid",
+      "evidence_span": "Some amino acids are generated in the body, but production is insufficient; these amino acids are referred to as semi-essential amino acids."
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "ex:amino_acids",
+      "property_uri": "ex:classifiedAsEssentialAminoAcid",
+      "target_id": "ex:essential_amino_acids",
+      "evidence_span": "Because some amino acids are not produced by the body, they must be consumed through the food. These amino acids are referred to as essential amino acids."
+    },
+    {
+      "source_id": "ex:amino_acids",
+      "property_uri": "ex:classifiedAsNonEssentialAminoAcid",
+      "target_id": "ex:non_essential_amino_acids",
+      "evidence_span": "Some amino acids are generated in the body and do not require supplementation; these amino acids are referred to as non-essential amino acids."
+    },
+    {
+      "source_id": "ex:amino_acids",
+      "property_uri": "ex:classifiedAsSemiEssentialAminoAcid",
+      "target_id": "ex:semi_essential_amino_acids",
+      "evidence_span": "Some amino acids are generated in the body, but production is insufficient; these amino acids are referred to as semi-essential amino acids."
+    }
+  ]
+}

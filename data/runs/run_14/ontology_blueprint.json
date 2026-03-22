@@ -1,0 +1,271 @@
+{
+  "approved_classes": {
+    "ex:AminoAcid": "Amino acid, any of a group of organic molecules that contain a basic amino group (NH2) and an acidic carboxyl group (COOH).",
+    "ex:Protein": "Protein is made up of amino acids, which are the building blocks of the molecule.",
+    "ex:ChemicalSubstance": "A general class for chemical substances.",
+    "ex:Element": "Element, a fundamental substance in chemistry.",
+    "ex:BiologicalProcess": "A process related to biological functions.",
+    "ex:Disease": "A condition that impairs the normal functioning of an organism.",
+    "ex:ChemicalReaction": "A process where one or more substances are transformed into one or more new substances.",
+    "ex:PhysicalProperty": "A property that can be observed without changing the chemical identity of a substance.",
+    "ex:OpticalProperty": "A property related to the interaction of light with a substance.",
+    "ex:Classification": "A method of categorizing or organizing things into groups.",
+    "ex:Valine": "A specific amino acid.",
+    "ex:Leucine": "A specific amino acid.",
+    "ex:Isoleucine": "A specific amino acid.",
+    "ex:Threonine": "A specific amino acid.",
+    "ex:Methionine": "A specific amino acid.",
+    "ex:Phenylalanine": "A specific amino acid.",
+    "ex:Tryptophan": "A specific amino acid.",
+    "ex:Lysine": "A specific amino acid.",
+    "ex:Arginine": "A specific amino acid.",
+    "ex:Histidine": "A specific amino acid.",
+    "ex:Alanine": "A specific amino acid.",
+    "ex:AsparticAcid": "A specific amino acid.",
+    "ex:Asparagine": "A specific amino acid.",
+    "ex:Cystine": "A specific amino acid.",
+    "ex:Cysteine": "A specific amino acid.",
+    "ex:GlutamicAcid": "A specific amino acid.",
+    "ex:Glutamine": "A specific amino acid.",
+    "ex:Glycine": "A specific amino acid.",
+    "ex:Proline": "A specific amino acid.",
+    "ex:SemiEssentialAminoAcid": "A specific type of amino acid.",
+    "ex:NonEssentialAminoAcid": "A specific type of amino acid.",
+    "ex:AliphaticAminoAcid": "A specific type of amino acid.",
+    "ex:HydroxylGroupContainingAminoAcid": "A specific type of amino acid.",
+    "ex:SulphurContainingAminoAcid": "A specific type of amino acid.",
+    "ex:AcidicAminoAcid": "A specific type of amino acid.",
+    "ex:BasicAminoAcid": "A specific type of amino acid.",
+    "ex:AromaticAminoAcid": "A specific type of amino acid.",
+    "ex:IminoAminoAcid": "A specific type of amino acid.",
+    "ex:HeterocyclicAminoAcid": "A specific type of amino acid.",
+    "ex:AlphaAminoAcid": "A specific type of amino acid.",
+    "ex:BetaAminoAcid": "A specific type of amino acid.",
+    "ex:GammaAminoAcid": "A specific type of amino acid.",
+    "ex:PurelyKetogenicAminoAcid": "A specific type of amino acid.",
+    "ex:KetogenicAndGlucogenicAminoAcid": "A specific type of amino acid.",
+    "ex:PurelyGlucogenicAminoAcid": "A specific type of amino acid.",
+    "ex:NonPolarAminoAcid": "A specific type of amino acid.",
+    "ex:PolarAminoAcidWithNoCharge": "A specific type of amino acid.",
+    "ex:PolarAminoAcidWithPositiveCharge": "A specific type of amino acid.",
+    "ex:PolarAminoAcidWithNegativeCharge": "A specific type of amino acid.",
+    "ex:Hydroxyproline": "A specific amino acid.",
+    "ex:BetaHydroxyGlutamicAcid": "A specific amino acid.",
+    "ex:DPenicillamine": "A specific amino acid used as a drug.",
+    "ex:NAcetylcysteine": "A specific amino acid used as a drug.",
+    "ex:Gabapentin": "A specific amino acid used as a drug."
+  },
+  "approved_properties": {
+    "ex:hasComposition": {
+      "domain": "ex:AminoAcid",
+      "range": "ex:ChemicalSubstance",
+      "comment": "Describes the composition of an amino acid."
+    },
+    "ex:isMadeUpOf": {
+      "domain": "ex:Protein",
+      "range": "ex:AminoAcid",
+      "comment": "Describes the relationship between a protein and its amino acid components."
+    },
+    "ex:requires": {
+      "domain": "ex:Disease",
+      "range": "ex:AminoAcid",
+      "comment": "Describes the requirement of amino acids for the prevention or treatment of a disease."
+    },
+    "ex:hasFunction": {
+      "domain": "ex:BiologicalProcess",
+      "range": "ex:AminoAcid",
+      "comment": "Describes the function of amino acids in biological processes."
+    },
+    "ex:hasPhysicalProperty": {
+      "domain": "ex:AminoAcid",
+      "range": "ex:PhysicalProperty",
+      "comment": "Describes the physical properties of an amino acid."
+    },
+    "ex:hasOpticalProperty": {
+      "domain": "ex:AminoAcid",
+      "range": "ex:OpticalProperty",
+      "comment": "Describes the optical properties of an amino acid."
+    },
+    "ex:isClassifiedAs": {
+      "domain": "ex:AminoAcid",
+      "range": "ex:Classification",
+      "comment": "Describes the classification of an amino acid."
+    },
+    "ex:isSemiEssentialAminoAcid": {
+      "domain": "ex:AminoAcid",
+      "range": "ex:SemiEssentialAminoAcid",
+      "comment": "Describes whether an amino acid is semi-essential."
+    },
+    "ex:isNonEssentialAminoAcid": {
+      "domain": "ex:AminoAcid",
+      "range": "ex:NonEssentialAminoAcid",
+      "comment": "Describes whether an amino acid is non-essential."
+    },
+    "ex:isAliphaticAminoAcid": {
+      "domain": "ex:AminoAcid",
+      "range": "ex:AliphaticAminoAcid",
+      "comment": "Describes whether an amino acid is aliphatic."
+    },
+    "ex:isHydroxylGroupContainingAminoAcid": {
+      "domain": "ex:AminoAcid",
+      "range": "ex:HydroxylGroupContainingAminoAcid",
+      "comment": "Describes whether an amino acid contains a hydroxyl group."
+    },
+    "ex:isSulphurContainingAminoAcid": {
+      "domain": "ex:AminoAcid",
+      "range": "ex:SulphurContainingAminoAcid",
+      "comment": "Describes whether an amino acid contains sulfur."
+    },
+    "ex:isAcidicAminoAcid": {
+      "domain": "ex:AminoAcid",
+      "range": "ex:AcidicAminoAcid",
+      "comment": "Describes whether an amino acid is acidic."
+    },
+    "ex:isBasicAminoAcid": {
+      "domain": "ex:AminoAcid",
+      "range": "ex:BasicAminoAcid",
+      "comment": "Describes whether an amino acid is basic."
+    },
+    "ex:isAromaticAminoAcid": {
+      "domain": "ex:AminoAcid",
+      "range": "ex:AromaticAminoAcid",
+      "comment": "Describes whether an amino acid is aromatic."
+    },
+    "ex:isIminoAminoAcid": {
+      "domain": "ex:AminoAcid",
+      "range": "ex:IminoAminoAcid",
+      "comment": "Describes whether an amino acid is imino."
+    },
+    "ex:isHeterocyclicAminoAcid": {
+      "domain": "ex:AminoAcid",
+      "range": "ex:HeterocyclicAminoAcid",
+      "comment": "Describes whether an amino acid is heterocyclic."
+    },
+    "ex:isAlphaAminoAcid": {
+      "domain": "ex:AminoAcid",
+      "range": "ex:AlphaAminoAcid",
+      "comment": "Describes whether an amino acid is alpha."
+    },
+    "ex:isBetaAminoAcid": {
+      "domain": "ex:AminoAcid",
+      "range": "ex:BetaAminoAcid",
+      "comment": "Describes whether an amino acid is beta."
+    },
+    "ex:isGammaAminoAcid": {
+      "domain": "ex:AminoAcid",
+      "range": "ex:GammaAminoAcid",
+      "comment": "Describes whether an amino acid is gamma."
+    },
+    "ex:isPurelyKetogenicAminoAcid": {
+      "domain": "ex:AminoAcid",
+      "range": "ex:PurelyKetogenicAminoAcid",
+      "comment": "Describes whether an amino acid is purely ketogenic."
+    },
+    "ex:isKetogenicAndGlucogenicAminoAcid": {
+      "domain": "ex:AminoAcid",
+      "range": "ex:KetogenicAndGlucogenicAminoAcid",
+      "comment": "Describes whether an amino acid is ketogenic and glucogenic."
+    },
+    "ex:isPurelyGlucogenicAminoAcid": {
+      "domain": "ex:AminoAcid",
+      "range": "ex:PurelyGlucogenicAminoAcid",
+      "comment": "Describes whether an amino acid is purely glucogenic."
+    },
+    "ex:isNonPolarAminoAcid": {
+      "domain": "ex:AminoAcid",
+      "range": "ex:NonPolarAminoAcid",
+      "comment": "Describes whether an amino acid is non-polar."
+    },
+    "ex:isPolarAminoAcidWithNoCharge": {
+      "domain": "ex:AminoAcid",
+      "range": "ex:PolarAminoAcidWithNoCharge",
+      "comment": "Describes whether an amino acid is polar with no charge."
+    },
+    "ex:isPolarAminoAcidWithPositiveCharge": {
+      "domain": "ex:AminoAcid",
+      "range": "ex:PolarAminoAcidWithPositiveCharge",
+      "comment": "Describes whether an amino acid is polar with positive charge."
+    },
+    "ex:isPolarAminoAcidWithNegativeCharge": {
+      "domain": "ex:AminoAcid",
+      "range": "ex:PolarAminoAcidWithNegativeCharge",
+      "comment": "Describes whether an amino acid is polar with negative charge."
+    },
+    "ex:synthesizesFrom": {
+      "domain": "ex:AminoAcid",
+      "range": "ex:ChemicalSubstance",
+      "comment": "Describes the chemical substance from which an amino acid is synthesized."
+    },
+    "ex:isHydrolyzedTo": {
+      "domain": "ex:AminoAcid",
+      "range": "ex:AminoAcid",
+      "comment": "Describes the amino acid produced by the hydrolysis of another amino acid."
+    },
+    "ex:isUsedIn": {
+      "domain": "ex:AminoAcid",
+      "range": "ex:Disease",
+      "comment": "Describes the diseases in which an amino acid is used for treatment."
+    },
+    "ex:isDrug": {
+      "domain": "ex:AminoAcid",
+      "range": "ex:ChemicalSubstance",
+      "comment": "Describes the amino acid that is used as a drug."
+    }
+  },
+  "canonical_terms": {
+    "aa": "ex:AminoAcid",
+    "protein": "ex:Protein",
+    "chemical substance": "ex:ChemicalSubstance",
+    "element": "ex:Element",
+    "biological process": "ex:BiologicalProcess",
+    "disease": "ex:Disease",
+    "chemical reaction": "ex:ChemicalReaction",
+    "physical property": "ex:PhysicalProperty",
+    "optical property": "ex:OpticalProperty",
+    "classification": "ex:Classification",
+    "valine": "ex:Valine",
+    "leucine": "ex:Leucine",
+    "isoleucine": "ex:Isoleucine",
+    "threonine": "ex:Threonine",
+    "methionine": "ex:Methionine",
+    "phenylalanine": "ex:Phenylalanine",
+    "tryptophan": "ex:Tryptophan",
+    "lysine": "ex:Lysine",
+    "arginine": "ex:Arginine",
+    "histidine": "ex:Histidine",
+    "alanine": "ex:Alanine",
+    "asparticacid": "ex:AsparticAcid",
+    "asparagine": "ex:Asparagine",
+    "cystine": "ex:Cystine",
+    "cysteine": "ex:Cysteine",
+    "glutamicacid": "ex:GlutamicAcid",
+    "glutamine": "ex:Glutamine",
+    "glycine": "ex:Glycine",
+    "proline": "ex:Proline",
+    "semiessentialaminoacid": "ex:SemiEssentialAminoAcid",
+    "nonessentialaminoacid": "ex:NonEssentialAminoAcid",
+    "aliphaticaminoacid": "ex:AliphaticAminoAcid",
+    "hydroxylgroupcontainingaminoacid": "ex:HydroxylGroupContainingAminoAcid",
+    "sulphurcontainingaminoacid": "ex:SulphurContainingAminoAcid",
+    "acidicaminoacid": "ex:AcidicAminoAcid",
+    "basicaminoacid": "ex:BasicAminoAcid",
+    "aromaticaminoacid": "ex:AromaticAminoAcid",
+    "iminoaminoacid": "ex:IminoAminoAcid",
+    "heterocyclicaminoacid": "ex:HeterocyclicAminoAcid",
+    "alphaaminoacid": "ex:AlphaAminoAcid",
+    "betaaminoacid": "ex:BetaAminoAcid",
+    "gammaaminoacid": "ex:GammaAminoAcid",
+    "purelyketogenicaminoacid": "ex:PurelyKetogenicAminoAcid",
+    "ketogenicandglucogenicaminoacid": "ex:KetogenicAndGlucogenicAminoAcid",
+    "purelyglucogenicaminoacid": "ex:PurelyGlucogenicAminoAcid",
+    "nonpolaraminoacid": "ex:NonPolarAminoAcid",
+    "polaraminoacidwithnocharge": "ex:PolarAminoAcidWithNoCharge",
+    "polaraminoacidwithpositivecharge": "ex:PolarAminoAcidWithPositiveCharge",
+    "polaraminoacidwithnegativecharge": "ex:PolarAminoAcidWithNegativeCharge",
+    "hydroxyproline": "ex:Hydroxyproline",
+    "beta-hydroxy glutamic acid": "ex:BetaHydroxyGlutamicAcid",
+    "d-penicillamine": "ex:DPenicillamine",
+    "n-acetylcysteine": "ex:NAcetylcysteine",
+    "gabapentin": "ex:Gabapentin"
+  }
+}

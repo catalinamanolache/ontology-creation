@@ -1,0 +1,621 @@
+{
+  "reasoning_steps": [
+    "Identify sentences describing the synthesis or properties of amino acids.",
+    "Map the identified facts to the provided ontology, ensuring exact matches for evidence spans and correct class/property URIs.",
+    "Create entities for each amino acid and its properties mentioned.",
+    "Create relations between amino acids and their properties or classifications based on the text and ontology."
+  ],
+  "entities": [
+    {
+      "id": "glycine",
+      "class_uri": "ex:Glycine",
+      "evidence_span": "Glycine"
+    },
+    {
+      "id": "glycine_treatment_schizophrenia",
+      "class_uri": "xsd:boolean",
+      "evidence_span": "treat schizophrenia"
+    },
+    {
+      "id": "glycine_treatment_stroke",
+      "class_uri": "xsd:boolean",
+      "evidence_span": "stroke"
+    },
+    {
+      "id": "glycine_treatment_sleep_issues",
+      "class_uri": "xsd:boolean",
+      "evidence_span": "sleep issues"
+    },
+    {
+      "id": "glycine_treatment_bph",
+      "class_uri": "xsd:boolean",
+      "evidence_span": "BPH"
+    },
+    {
+      "id": "glycine_treatment_metabolic_syndrome",
+      "class_uri": "xsd:boolean",
+      "evidence_span": "metabolic syndrome"
+    },
+    {
+      "id": "glycine_treatment_inherited_metabolic_illnesses",
+      "class_uri": "xsd:boolean",
+      "evidence_span": "inherited metabolic illnesses"
+    },
+    {
+      "id": "alanine",
+      "class_uri": "ex:Alanine",
+      "evidence_span": "Alanine"
+    },
+    {
+      "id": "alanine_boost_immunity",
+      "class_uri": "xsd:boolean",
+      "evidence_span": "boost immunity"
+    },
+    {
+      "id": "alanine_provide_energy_brain_nervous_system",
+      "class_uri": "xsd:boolean",
+      "evidence_span": "provide the brain and central nervous system more energy"
+    },
+    {
+      "id": "valine",
+      "class_uri": "ex:Valine",
+      "evidence_span": "L-valine"
+    },
+    {
+      "id": "valine_health_supplements_muscle_synthesis_maintenance",
+      "class_uri": "xsd:boolean",
+      "evidence_span": "health supplements for its involvement in muscle synthesis and maintenance"
+    },
+    {
+      "id": "valine_stress_management",
+      "class_uri": "xsd:boolean",
+      "evidence_span": "Stress management"
+    },
+    {
+      "id": "valine_child_growth",
+      "class_uri": "xsd:boolean",
+      "evidence_span": "child growth"
+    },
+    {
+      "id": "valine_immune_system_support",
+      "class_uri": "xsd:boolean",
+      "evidence_span": "immune system support"
+    },
+    {
+      "id": "leucine",
+      "class_uri": "ex:Leucine",
+      "evidence_span": "Leucine"
+    },
+    {
+      "id": "leucine_increases_physical_performance",
+      "class_uri": "xsd:boolean",
+      "evidence_span": "Increases the physical performance or strength in the short term"
+    },
+    {
+      "id": "leucine_increases_long_term_physical_performance",
+      "class_uri": "xsd:boolean",
+      "evidence_span": "increases long-term physical performance"
+    },
+    {
+      "id": "leucine_preventing_muscle_loss",
+      "class_uri": "xsd:boolean",
+      "evidence_span": "preventing muscle loss"
+    },
+    {
+      "id": "leucine_lowers_blood_glucose_type2diabetes",
+      "class_uri": "xsd:boolean",
+      "evidence_span": "Lowering blood glucose levels in type 2 diabetes"
+    },
+    {
+      "id": "isoleucine",
+      "class_uri": "ex:Isoleucine",
+      "evidence_span": "Isoleucine"
+    },
+    {
+      "id": "isoleucine_childrens_optimum_growth",
+      "class_uri": "xsd:boolean",
+      "evidence_span": "required for children's optimum growth"
+    },
+    {
+      "id": "isoleucine_maintenance_nitrogen_balance_adults",
+      "class_uri": "xsd:boolean",
+      "evidence_span": "maintenance of nitrogen balance in adults"
+    },
+    {
+      "id": "norleucine",
+      "class_uri": "ex:Norleucine",
+      "evidence_span": "Norleucine"
+    },
+    {
+      "id": "norleucine_research_protein_structure_function",
+      "class_uri": "xsd:boolean",
+      "evidence_span": "research protein structure and fu nction in the lab"
+    },
+    {
+      "id": "phenylalanine",
+      "class_uri": "ex:Phenylalanine",
+      "evidence_span": "Phenylalanine"
+    },
+    {
+      "id": "phenylalanine_treatment_depression",
+      "class_uri": "xsd:boolean",
+      "evidence_span": "Depression"
+    },
+    {
+      "id": "phenylalanine_treatment_parkinsons",
+      "class_uri": "xsd:boolean",
+      "evidence_span": "Parkinson's illness"
+    },
+    {
+      "id": "phenylalanine_treatment_multiple_sclerosis",
+      "class_uri": "xsd:boolean",
+      "evidence_span": "multiple sclerosis"
+    },
+    {
+      "id": "phenylalanine_treatment_pain",
+      "class_uri": "xsd:boolean",
+      "evidence_span": "pain"
+    },
+    {
+      "id": "phenylalanine_treatment_acupuncture_anesthesia",
+      "class_uri": "xsd:boolean",
+      "evidence_span": "acupuncture anesthesia"
+    },
+    {
+      "id": "phenylalanine_treatment_osteoarthritis",
+      "class_uri": "xsd:boolean",
+      "evidence_span": "osteoarthritis"
+    },
+    {
+      "id": "tyrosine",
+      "class_uri": "ex:Tyrosine",
+      "evidence_span": "Tyrosine"
+    },
+    {
+      "id": "tyrosine_production_thyroid_hormone",
+      "class_uri": "xsd:boolean",
+      "evidence_span": "production of thyroid hormone"
+    },
+    {
+      "id": "tyrosine_mental_performance",
+      "class_uri": "xsd:boolean",
+      "evidence_span": "mental performance"
+    },
+    {
+      "id": "tyrosine_alertness",
+      "class_uri": "xsd:boolean",
+      "evidence_span": "alertness"
+    },
+    {
+      "id": "tyrosine_memory",
+      "class_uri": "xsd:boolean",
+      "evidence_span": "memory"
+    },
+    {
+      "id": "serine",
+      "class_uri": "ex:Serine",
+      "evidence_span": "Serine"
+    },
+    {
+      "id": "serine_significant_brain_nervous_system_function",
+      "class_uri": "xsd:boolean",
+      "evidence_span": "significant for the brain and central nervous system to function correctly"
+    },
+    {
+      "id": "cysteine",
+      "class_uri": "ex:Cysteine",
+      "evidence_span": "cysteine"
+    },
+    {
+      "id": "cysteine_boost_efficiency_corticosteroid_medications",
+      "class_uri": "xsd:boolean",
+      "evidence_span": "boost the efficiency of corticosteroid medications"
+    },
+    {
+      "id": "cystine",
+      "class_uri": "ex:Cystine",
+      "evidence_span": "L-Cystine"
+    },
+    {
+      "id": "cystine_treatment_surgery_trauma",
+      "class_uri": "xsd:boolean",
+      "evidence_span": "treatment of surgery and trauma"
+    },
+    {
+      "id": "threonine",
+      "class_uri": "ex:Threonine",
+      "evidence_span": "Threonine"
+    },
+    {
+      "id": "threonine_treatment_spinal_spasticity",
+      "class_uri": "xsd:boolean",
+      "evidence_span": "Spinal spasticity"
+    },
+    {
+      "id": "threonine_treatment_multiple_sclerosis",
+      "class_uri": "xsd:boolean",
+      "evidence_span": "multiple sclerosis"
+    },
+    {
+      "id": "threonine_treatment_familial_spastic_paraparesis",
+      "class_uri": "xsd:boolean",
+      "evidence_span": "familial spastic paraparesis"
+    },
+    {
+      "id": "threonine_treatment_amyotrophic_lateral_sclerosis",
+      "class_uri": "xsd:boolean",
+      "evidence_span": "amyotrophic late ral sclerosis"
+    },
+    {
+      "id": "glycine_chemical_name",
+      "class_uri": "xsd:string",
+      "evidence_span": "Amino acetic acid"
+    },
+    {
+      "id": "alanine_chemical_name",
+      "class_uri": "xsd:string",
+      "evidence_span": "Alpha Aminopropionic acid"
+    },
+    {
+      "id": "valine_chemical_name",
+      "class_uri": "xsd:string",
+      "evidence_span": "alpha-Aminoisovaleric acid"
+    },
+    {
+      "id": "leucine_chemical_name",
+      "class_uri": "xsd:string",
+      "evidence_span": "alpha-Aminoisocaproic acid"
+    },
+    {
+      "id": "isoleucine_chemical_name",
+      "class_uri": "xsd:string",
+      "evidence_span": "alpha-Amino-beta-methyl n-valeric acid"
+    },
+    {
+      "id": "norleucine_chemical_name",
+      "class_uri": "xsd:string",
+      "evidence_span": "alpha-Amino n-caproic acid"
+    },
+    {
+      "id": "phenylalanine_chemical_name",
+      "class_uri": "xsd:string",
+      "evidence_span": "alpha-Amino-beta-phenyl propionic acid"
+    },
+    {
+      "id": "tyrosine_chemical_name",
+      "class_uri": "xsd:string",
+      "evidence_span": "alpha-Amino-beta-(p-hydroxyphenyl) propionic acid"
+    },
+    {
+      "id": "serine_chemical_name",
+      "class_uri": "xsd:string",
+      "evidence_span": "alpha-Amino-beta-hydroxypropionic acid"
+    },
+    {
+      "id": "cysteine_chemical_name",
+      "class_uri": "xsd:string",
+      "evidence_span": "alpha-Amino-beta-mercaptopropionic acid"
+    },
+    {
+      "id": "threonine_chemical_name",
+      "class_uri": "xsd:string",
+      "evidence_span": "alpha-Amino-beta-hydroxy-n-butyric acid"
+    },
+    {
+      "id": "methionine",
+      "class_uri": "ex:Methionine",
+      "evidence_span": "Methionine"
+    },
+    {
+      "id": "methionine_chemical_name",
+      "class_uri": "xsd:string",
+      "evidence_span": "alpha-Amino-gamma-methyl-thio-n-butyric acid"
+    },
+    {
+      "id": "glutamic_acid",
+      "class_uri": "ex:GlutamicAcid",
+      "evidence_span": "Glutamic acid"
+    },
+    {
+      "id": "glutamic_acid_chemical_name",
+      "class_uri": "xsd:string",
+      "evidence_span": "alpha-Aminoglutaric acid"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "glycine",
+      "property_uri": "ex:isUsedToTreatSchizophrenia",
+      "target_id": "glycine_treatment_schizophrenia",
+      "evidence_span": "Glycine is used to treat schizophrenia"
+    },
+    {
+      "source_id": "glycine",
+      "property_uri": "ex:isUsedToTreatStroke",
+      "target_id": "glycine_treatment_stroke",
+      "evidence_span": "stroke"
+    },
+    {
+      "source_id": "glycine",
+      "property_uri": "ex:isUsedToTreatSleepIssues",
+      "target_id": "glycine_treatment_sleep_issues",
+      "evidence_span": "sleep issues"
+    },
+    {
+      "source_id": "glycine",
+      "property_uri": "ex:isUsedToTreatBPH",
+      "target_id": "glycine_treatment_bph",
+      "evidence_span": "BPH"
+    },
+    {
+      "source_id": "glycine",
+      "property_uri": "ex:isUsedToTreatMetabolicSyndrome",
+      "target_id": "glycine_treatment_metabolic_syndrome",
+      "evidence_span": "metabolic syndrome"
+    },
+    {
+      "source_id": "glycine",
+      "property_uri": "ex:isUsedToTreatInheritedMetabolicIllnesses",
+      "target_id": "glycine_treatment_inherited_metabolic_illnesses",
+      "evidence_span": "inherited metabolic illnesses"
+    },
+    {
+      "source_id": "alanine",
+      "property_uri": "ex:isUsedToBoostImmunity",
+      "target_id": "alanine_boost_immunity",
+      "evidence_span": "boost immunity"
+    },
+    {
+      "source_id": "alanine",
+      "property_uri": "ex:isUsedToProvideEnergyToBrainAndCentralNervousSystem",
+      "target_id": "alanine_provide_energy_brain_nervous_system",
+      "evidence_span": "provide the brain and central nervous system more energy"
+    },
+    {
+      "source_id": "valine",
+      "property_uri": "ex:isUsedInHealthSupplementsToSupportSportsAndPerformance",
+      "target_id": "valine_health_supplements_muscle_synthesis_maintenance",
+      "evidence_span": "health supplements for its involvement in muscle synthesis and maintenance"
+    },
+    {
+      "source_id": "valine",
+      "property_uri": "ex:isUsedToTreatStress",
+      "target_id": "valine_stress_management",
+      "evidence_span": "Stress management"
+    },
+    {
+      "source_id": "valine",
+      "property_uri": "ex:isRequiredForChildrensOptimumGrowth",
+      "target_id": "valine_child_growth",
+      "evidence_span": "child growth"
+    },
+    {
+      "source_id": "valine",
+      "property_uri": "ex:isUsedToBoostImmunity",
+      "target_id": "valine_immune_system_support",
+      "evidence_span": "immune system support"
+    },
+    {
+      "source_id": "leucine",
+      "property_uri": "ex:increasesPhysicalPerformance",
+      "target_id": "leucine_increases_physical_performance",
+      "evidence_span": "Increases the physical performance or strength in the short term"
+    },
+    {
+      "source_id": "leucine",
+      "property_uri": "ex:increasesPhysicalPerformance",
+      "target_id": "leucine_increases_long_term_physical_performance",
+      "evidence_span": "increases long-term physical performance"
+    },
+    {
+      "source_id": "leucine",
+      "property_uri": "ex:preventsMuscleLoss",
+      "target_id": "leucine_preventing_muscle_loss",
+      "evidence_span": "preventing muscle loss"
+    },
+    {
+      "source_id": "leucine",
+      "property_uri": "ex:lowersBloodGlucoseInType2Diabetes",
+      "target_id": "leucine_lowers_blood_glucose_type2diabetes",
+      "evidence_span": "Lowering blood glucose levels in type 2 diabetes"
+    },
+    {
+      "source_id": "isoleucine",
+      "property_uri": "ex:isRequiredForChildrensOptimumGrowth",
+      "target_id": "isoleucine_childrens_optimum_growth",
+      "evidence_span": "required for children's optimum growth"
+    },
+    {
+      "source_id": "isoleucine",
+      "property_uri": "ex:maintainsNitrogenBalanceInAdults",
+      "target_id": "isoleucine_maintenance_nitrogen_balance_adults",
+      "evidence_span": "maintenance of nitrogen balance in adults"
+    },
+    {
+      "source_id": "norleucine",
+      "property_uri": "ex:isUsedToResearchProteinStructureAndFunction",
+      "target_id": "norleucine_research_protein_structure_function",
+      "evidence_span": "research protein structure and fu nction in the lab"
+    },
+    {
+      "source_id": "phenylalanine",
+      "property_uri": "ex:isUsedToTreatDepression",
+      "target_id": "phenylalanine_treatment_depression",
+      "evidence_span": "Depression"
+    },
+    {
+      "source_id": "phenylalanine",
+      "property_uri": "ex:isUsedToTreatParkinsonsDisease",
+      "target_id": "phenylalanine_treatment_parkinsons",
+      "evidence_span": "Parkinson's illness"
+    },
+    {
+      "source_id": "phenylalanine",
+      "property_uri": "ex:isUsedToTreatMultipleSclerosis",
+      "target_id": "phenylalanine_treatment_multiple_sclerosis",
+      "evidence_span": "multiple sclerosis"
+    },
+    {
+      "source_id": "phenylalanine",
+      "property_uri": "ex:isUsedToTreatPain",
+      "target_id": "phenylalanine_treatment_pain",
+      "evidence_span": "pain"
+    },
+    {
+      "source_id": "phenylalanine",
+      "property_uri": "ex:isUsedToTreatAcupunctureAnesthesia",
+      "target_id": "phenylalanine_treatment_acupuncture_anesthesia",
+      "evidence_span": "acupuncture anesthesia"
+    },
+    {
+      "source_id": "phenylalanine",
+      "property_uri": "ex:isUsedToTreatOsteoarthritis",
+      "target_id": "phenylalanine_treatment_osteoarthritis",
+      "evidence_span": "osteoarthritis"
+    },
+    {
+      "source_id": "tyrosine",
+      "property_uri": "ex:isUtilizedInProductionOfThyroidHormone",
+      "target_id": "tyrosine_production_thyroid_hormone",
+      "evidence_span": "production of thyroid hormone"
+    },
+    {
+      "source_id": "tyrosine",
+      "property_uri": "ex:improvesMentalPerformance",
+      "target_id": "tyrosine_mental_performance",
+      "evidence_span": "mental performance"
+    },
+    {
+      "source_id": "tyrosine",
+      "property_uri": "ex:improvesAlertness",
+      "target_id": "tyrosine_alertness",
+      "evidence_span": "alertness"
+    },
+    {
+      "source_id": "tyrosine",
+      "property_uri": "ex:improvesMemory",
+      "target_id": "tyrosine_memory",
+      "evidence_span": "memory"
+    },
+    {
+      "source_id": "serine",
+      "property_uri": "ex:isSignificantForBrainAndCentralNervousSystemFunction",
+      "target_id": "serine_significant_brain_nervous_system_function",
+      "evidence_span": "significant for the brain and central nervous system to function correctly"
+    },
+    {
+      "source_id": "cysteine",
+      "property_uri": "ex:isUsedToBoostEfficiencyOfCorticosteroidMedications",
+      "target_id": "cysteine_boost_efficiency_corticosteroid_medications",
+      "evidence_span": "boost the efficiency of corticosteroid medications"
+    },
+    {
+      "source_id": "cystine",
+      "property_uri": "ex:isUsedInTreatmentOfSurgeryAndTrauma",
+      "target_id": "cystine_treatment_surgery_trauma",
+      "evidence_span": "treatment of surgery and trauma"
+    },
+    {
+      "source_id": "threonine",
+      "property_uri": "ex:isUsedToTreatSpinalSpasticity",
+      "target_id": "threonine_treatment_spinal_spasticity",
+      "evidence_span": "Spinal spasticity"
+    },
+    {
+      "source_id": "threonine",
+      "property_uri": "ex:isUsedToTreatMultipleSclerosis",
+      "target_id": "threonine_treatment_multiple_sclerosis",
+      "evidence_span": "multiple sclerosis"
+    },
+    {
+      "source_id": "threonine",
+      "property_uri": "ex:isUsedToTreatFamilialSpasticParaparesis",
+      "target_id": "threonine_treatment_familial_spastic_paraparesis",
+      "evidence_span": "familial spastic paraparesis"
+    },
+    {
+      "source_id": "threonine",
+      "property_uri": "ex:isUsedToTreatAmyotrophicLateralSclerosis",
+      "target_id": "threonine_treatment_amyotrophic_lateral_sclerosis",
+      "evidence_span": "amyotrophic late ral sclerosis"
+    },
+    {
+      "source_id": "glycine",
+      "property_uri": "ex:hasChemicalName",
+      "target_id": "Amino acetic acid",
+      "evidence_span": "Amino acetic acid"
+    },
+    {
+      "source_id": "alanine",
+      "property_uri": "ex:hasChemicalName",
+      "target_id": "Alpha Aminopropionic acid",
+      "evidence_span": "Alpha Aminopropionic acid"
+    },
+    {
+      "source_id": "valine",
+      "property_uri": "ex:hasChemicalName",
+      "target_id": "alpha-Aminoisovaleric acid",
+      "evidence_span": "alpha-Aminoisovaleric acid"
+    },
+    {
+      "source_id": "leucine",
+      "property_uri": "ex:hasChemicalName",
+      "target_id": "alpha-Aminoisocaproic acid",
+      "evidence_span": "alpha-Aminoisocaproic acid"
+    },
+    {
+      "source_id": "isoleucine",
+      "property_uri": "ex:hasChemicalName",
+      "target_id": "alpha-Amino-beta-methyl n-valeric acid",
+      "evidence_span": "alpha-Amino-beta-methyl n-valeric acid"
+    },
+    {
+      "source_id": "norleucine",
+      "property_uri": "ex:hasChemicalName",
+      "target_id": "alpha-Amino n-caproic acid",
+      "evidence_span": "alpha-Amino n-caproic acid"
+    },
+    {
+      "source_id": "phenylalanine",
+      "property_uri": "ex:hasChemicalName",
+      "target_id": "alpha-Amino-beta-phenyl propionic acid",
+      "evidence_span": "alpha-Amino-beta-phenyl propionic acid"
+    },
+    {
+      "source_id": "tyrosine",
+      "property_uri": "ex:hasChemicalName",
+      "target_id": "alpha-Amino-beta-(p-hydroxyphenyl) propionic acid",
+      "evidence_span": "alpha-Amino-beta-(p-hydroxyphenyl) propionic acid"
+    },
+    {
+      "source_id": "serine",
+      "property_uri": "ex:hasChemicalName",
+      "target_id": "alpha-Amino-beta-hydroxypropionic acid",
+      "evidence_span": "alpha-Amino-beta-hydroxypropionic acid"
+    },
+    {
+      "source_id": "cysteine",
+      "property_uri": "ex:hasChemicalName",
+      "target_id": "alpha-Amino-beta-mercaptopropionic acid",
+      "evidence_span": "alpha-Amino-beta-mercaptopropionic acid"
+    },
+    {
+      "source_id": "threonine",
+      "property_uri": "ex:hasChemicalName",
+      "target_id": "alpha-Amino-beta-hydroxy-n-butyric acid",
+      "evidence_span": "alpha-Amino-beta-hydroxy-n-butyric acid"
+    },
+    {
+      "source_id": "methionine",
+      "property_uri": "ex:hasChemicalName",
+      "target_id": "alpha-Amino-gamma-methyl-thio-n-butyric acid",
+      "evidence_span": "alpha-Amino-gamma-methyl-thio-n-butyric acid"
+    },
+    {
+      "source_id": "glutamic_acid",
+      "property_uri": "ex:hasChemicalName",
+      "target_id": "alpha-Aminoglutaric acid",
+      "evidence_span": "alpha-Aminoglutaric acid"
+    }
+  ]
+}

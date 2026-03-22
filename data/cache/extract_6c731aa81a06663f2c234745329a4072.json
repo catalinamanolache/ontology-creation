@@ -1,0 +1,190 @@
+{
+  "reasoning_steps": [
+    "Identify entities: 'Glycine', 'Histidine', 'Tyrosine', 'Tryptophan', 'Aspartic acid', 'Glutamic acid', 'Valine', 'Leucine', 'Isoleucine', 'Threonine', 'Methionine', 'Phenylalanine', 'Tryptophan', 'Lysine'.",
+    "Identify relations based on chemical reactions and classifications: 'undergoes alpha Decarboxylation to make the corresponding amines', 'reacts with NH3 to form Amides', 'are essential amino acids'.",
+    "Map identified entities and relations to the approved ontology and format as JSON."
+  ],
+  "entities": [
+    {
+      "id": "glycine",
+      "class_uri": "ex:Glycine",
+      "evidence_span": "Glycine"
+    },
+    {
+      "id": "histidine",
+      "class_uri": "ex:Histidine",
+      "evidence_span": "Histidine"
+    },
+    {
+      "id": "tyrosine",
+      "class_uri": "ex:Tyrosine",
+      "evidence_span": "Tyrosine"
+    },
+    {
+      "id": "tryptophan",
+      "class_uri": "ex:Tryptophan",
+      "evidence_span": "Tryptophan"
+    },
+    {
+      "id": "aspartic_acid",
+      "class_uri": "ex:AsparticAcid",
+      "evidence_span": "Aspartic acid"
+    },
+    {
+      "id": "glutamic_acid",
+      "class_uri": "ex:GlutamicAcid",
+      "evidence_span": "Glutamic acid"
+    },
+    {
+      "id": "valine",
+      "class_uri": "ex:Valine",
+      "evidence_span": "Valine"
+    },
+    {
+      "id": "leucine",
+      "class_uri": "ex:Leucine",
+      "evidence_span": "Leucine"
+    },
+    {
+      "id": "isoleucine",
+      "class_uri": "ex:Isoleucine",
+      "evidence_span": "Isoleucine"
+    },
+    {
+      "id": "threonine",
+      "class_uri": "ex:Threonine",
+      "evidence_span": "Threonine"
+    },
+    {
+      "id": "methionine",
+      "class_uri": "ex:Methionine",
+      "evidence_span": "Methionine"
+    },
+    {
+      "id": "phenylalanine",
+      "class_uri": "ex:Phenylalanine",
+      "evidence_span": "Phenylalanine"
+    },
+    {
+      "id": "lysine",
+      "class_uri": "ex:Lysine",
+      "evidence_span": "Lysine"
+    },
+    {
+      "id": "histamine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Histamine"
+    },
+    {
+      "id": "tyramine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Tyramine"
+    },
+    {
+      "id": "tryptamine",
+      "class_uri": "ex:AminoAcid",
+      "evidence_span": "Tryptamine"
+    },
+    {
+      "id": "asparagine",
+      "class_uri": "ex:Asparagine",
+      "evidence_span": "Asparagine"
+    },
+    {
+      "id": "glutamine",
+      "class_uri": "ex:Glutamine",
+      "evidence_span": "Glutamine"
+    },
+    {
+      "id": "essential_amino_acids",
+      "class_uri": "ex:EssentialAminoAcid",
+      "evidence_span": "Essential Amino Acids"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "histidine",
+      "property_uri": "ex:undergoesDecarboxylationTo",
+      "target_id": "histamine",
+      "evidence_span": "Histidine → Histamine + CO2"
+    },
+    {
+      "source_id": "tyrosine",
+      "property_uri": "ex:undergoesDecarboxylationTo",
+      "target_id": "tyramine",
+      "evidence_span": "Tyrosine → Tyramine + CO2"
+    },
+    {
+      "source_id": "tryptophan",
+      "property_uri": "ex:undergoesDecarboxylationTo",
+      "target_id": "tryptamine",
+      "evidence_span": "Tryptophan → Tryptamine + CO2"
+    },
+    {
+      "source_id": "aspartic_acid",
+      "property_uri": "ex:reactsWithAmmoniaToForm",
+      "target_id": "asparagine",
+      "evidence_span": "Aspartic acid + NH3→ Asparagine"
+    },
+    {
+      "source_id": "glutamic_acid",
+      "property_uri": "ex:reactsWithAmmoniaToForm",
+      "target_id": "glutamine",
+      "evidence_span": "Glutamic acid + NH3→Glutamine"
+    },
+    {
+      "source_id": "valine",
+      "property_uri": "ex:isEssentialAminoAcid",
+      "target_id": "essential_amino_acids",
+      "evidence_span": "Valine, Leucine, Isoleucine, Threonine, Methionine, Phenylalanine, Tryptophan, and Lysine."
+    },
+    {
+      "source_id": "leucine",
+      "property_uri": "ex:isEssentialAminoAcid",
+      "target_id": "essential_amino_acids",
+      "evidence_span": "Valine, Leucine, Isoleucine, Threonine, Methionine, Phenylalanine, Tryptophan, and Lysine."
+    },
+    {
+      "source_id": "isoleucine",
+      "property_uri": "ex:isEssentialAminoAcid",
+      "target_id": "essential_amino_acids",
+      "evidence_span": "Valine, Leucine, Isoleucine, Threonine, Methionine, Phenylalanine, Tryptophan, and Lysine."
+    },
+    {
+      "source_id": "threonine",
+      "property_uri": "ex:isEssentialAminoAcid",
+      "target_id": "essential_amino_acids",
+      "evidence_span": "Valine, Leucine, Isoleucine, Threonine, Methionine, Phenylalanine, Tryptophan, and Lysine."
+    },
+    {
+      "source_id": "methionine",
+      "property_uri": "ex:isEssentialAminoAcid",
+      "target_id": "essential_amino_acids",
+      "evidence_span": "Valine, Leucine, Isoleucine, Threonine, Methionine, Phenylalanine, Tryptophan, and Lysine."
+    },
+    {
+      "source_id": "phenylalanine",
+      "property_uri": "ex:isEssentialAminoAcid",
+      "target_id": "essential_amino_acids",
+      "evidence_span": "Valine, Leucine, Isoleucine, Threonine, Methionine, Phenylalanine, Tryptophan, and Lysine."
+    },
+    {
+      "source_id": "tryptophan",
+      "property_uri": "ex:isEssentialAminoAcid",
+      "target_id": "essential_amino_acids",
+      "evidence_span": "Valine, Leucine, Isoleucine, Threonine, Methionine, Phenylalanine, Tryptophan, and Lysine."
+    },
+    {
+      "source_id": "lysine",
+      "property_uri": "ex:isEssentialAminoAcid",
+      "target_id": "essential_amino_acids",
+      "evidence_span": "Valine, Leucine, Isoleucine, Threonine, Methionine, Phenylalanine, Tryptophan, and Lysine."
+    },
+    {
+      "source_id": "glycine",
+      "property_uri": "ex:hasOpticalActivity",
+      "target_id": "false",
+      "evidence_span": "Glycine, the only amino acid, has no enantiomers"
+    }
+  ]
+}

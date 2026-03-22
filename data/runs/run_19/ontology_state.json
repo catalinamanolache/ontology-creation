@@ -1,0 +1,253 @@
+{
+  "approved_classes": {
+    "ex:AminoAcid": "The class of all amino acids.",
+    "ex:EssentialAminoAcid": "A subclass of AminoAcid that are not produced by the body and must be obtained through food.",
+    "ex:NonEssentialAminoAcid": "A subclass of AminoAcid that are produced by the body and do not require supplementation.",
+    "ex:SemiEssentialAminoAcid": "A subclass of AminoAcid that are produced by the body but in insufficient amounts.",
+    "ex:BranchedChainAminoAcid": "A subclass of AminoAcid that have branched aliphatic side chains.",
+    "ex:HydroxylGroupContainingAminoAcid": "A subclass of AminoAcid that contain hydroxyl groups.",
+    "ex:SulfurContainingAminoAcid": "A subclass of AminoAcid that contain sulfur.",
+    "ex:AcidicAminoAcid": "A subclass of AminoAcid that are acidic in nature.",
+    "ex:BasicAminoAcid": "A subclass of AminoAcid that are basic in nature.",
+    "ex:AromaticAminoAcid": "A subclass of AminoAcid that have aromatic rings.",
+    "ex:IminoAminoAcid": "A subclass of AminoAcid that have an imino group.",
+    "ex:HeterocyclicAminoAcid": "A subclass of AminoAcid that have heterocyclic rings.",
+    "ex:PurelyKetogenicAminoAcid": "A subclass of AminoAcid that are purely ketogenic.",
+    "ex:KetogenicAndGlucogenicAminoAcid": "A subclass of AminoAcid that are ketogenic and glucogenic.",
+    "ex:PurelyGlucogenicAminoAcid": "A subclass of AminoAcid that are purely glucogenic.",
+    "ex:NonPolarAminoAcid": "A subclass of AminoAcid that are non-polar.",
+    "ex:PolarAminoAcidWithNoCharge": "A subclass of AminoAcid that are polar with no charge on 'R' group.",
+    "ex:PolarAminoAcidWithPositiveCharge": "A subclass of AminoAcid that are polar with positive charge on 'R' group.",
+    "ex:PolarAminoAcidWithNegativeCharge": "A subclass of AminoAcid that are polar with negative charge on 'R' group.",
+    "ex:Cysteine": "A subclass of AminoAcid that contains a mercapto group.",
+    "ex:Cystine": "A subclass of AminoAcid that is the disulfide bond form of Cysteine.",
+    "ex:Diiodothyronine": "A subclass of Hormone that is a type of medicine used to help people reduce weight, lower cholesterol, and develop muscle.",
+    "ex:D-Penicillamine": "A subclass of Drug that is a metabolite of penicillin used in chelation therapy of Wilson’s disease.",
+    "ex:Gabapentin": "A subclass of Anticonvulsant that is used as an anticonvulsant.",
+    "ex:Histidine": "A subclass of AminoAcid that is critical for baby feeding and can reduce blood pressure.",
+    "ex:N-Acetylcysteine": "A subclass of Drug that is used in cystic fibrosis and chronic renal insufficiency as an antioxidant.",
+    "ex:Ornithine": "A subclass of AminoAcid that is primarily used in health supplements to support sports and performance.",
+    "ex:Proline": "A subclass of AminoAcid that is one of the most important reasons to use L-proline supplements for joint and skin health.",
+    "ex:Tyrosine": "A subclass of AminoAcid that is commonly used in the production of thyroid hormone."
+  },
+  "approved_properties": {
+    "ex:hasSolubility": {
+      "domain": "ex:AminoAcid",
+      "range": "ex:Solubility",
+      "comment": "The solubility of an amino acid in water."
+    },
+    "ex:hasMeltingPoint": {
+      "domain": "ex:AminoAcid",
+      "range": "ex:Temperature",
+      "comment": "The melting point of an amino acid."
+    },
+    "ex:hasTaste": {
+      "domain": "ex:AminoAcid",
+      "range": "ex:Taste",
+      "comment": "The taste of an amino acid."
+    },
+    "ex:hasOpticalActivity": {
+      "domain": "ex:AminoAcid",
+      "range": "ex:OpticalActivity",
+      "comment": "The optical activity of an amino acid."
+    },
+    "ex:hasZwitterion": {
+      "domain": "ex:AminoAcid",
+      "range": "ex:Zwitterion",
+      "comment": "Whether an amino acid is a zwitterion."
+    },
+    "ex:hasIsoelectricPoint": {
+      "domain": "ex:AminoAcid",
+      "range": "ex:PhValue",
+      "comment": "The isoelectric point of an amino acid."
+    },
+    "ex:undergoesDecarboxylation": {
+      "domain": "ex:AminoAcid",
+      "range": "ex:AminoAcid",
+      "comment": "The decarboxylation reaction of an amino acid."
+    },
+    "ex:reactsWithAlkalies": {
+      "domain": "ex:AminoAcid",
+      "range": "ex:Salt",
+      "comment": "The reaction of an amino acid with alkalies."
+    },
+    "ex:reactsWithAlcohols": {
+      "domain": "ex:AminoAcid",
+      "range": "ex:Ester",
+      "comment": "The esterification reaction of an amino acid with alcohols."
+    },
+    "ex:reactsWithAmmonia": {
+      "domain": "ex:AminoAcid",
+      "range": "ex:Amide",
+      "comment": "The reaction of an amino acid with ammonia to form amides."
+    },
+    "ex:reactsWithMineralAcids": {
+      "domain": "ex:AminoAcid",
+      "range": "ex:AcidSalt",
+      "comment": "The reaction of an amino acid with mineral acids to form acid salts."
+    },
+    "ex:reactsWithNinhydrin": {
+      "domain": "ex:AminoAcid",
+      "range": "ex:Color",
+      "comment": "The reaction of an amino acid with ninhydrin to form a color."
+    },
+    "ex:classifiesAsBranchedChainAminoAcid": {
+      "domain": "ex:AminoAcid",
+      "range": "rdfs:Class",
+      "comment": "Indicates if an amino acid is a branched-chain amino acid."
+    },
+    "ex:classifiesAsHydroxylGroupContainingAminoAcid": {
+      "domain": "ex:AminoAcid",
+      "range": "rdfs:Class",
+      "comment": "Indicates if an amino acid is a hydroxyl group containing amino acid."
+    },
+    "ex:classifiesAsSulfurContainingAminoAcid": {
+      "domain": "ex:AminoAcid",
+      "range": "rdfs:Class",
+      "comment": "Indicates if an amino acid is a sulfur containing amino acid."
+    },
+    "ex:classifiesAsAcidicAminoAcid": {
+      "domain": "ex:AminoAcid",
+      "range": "rdfs:Class",
+      "comment": "Indicates if an amino acid is an acidic amino acid."
+    },
+    "ex:classifiesAsBasicAminoAcid": {
+      "domain": "ex:AminoAcid",
+      "range": "rdfs:Class",
+      "comment": "Indicates if an amino acid is a basic amino acid."
+    },
+    "ex:classifiesAsAromaticAminoAcid": {
+      "domain": "ex:AminoAcid",
+      "range": "rdfs:Class",
+      "comment": "Indicates if an amino acid is an aromatic amino acid."
+    },
+    "ex:classifiesAsIminoAminoAcid": {
+      "domain": "ex:AminoAcid",
+      "range": "rdfs:Class",
+      "comment": "Indicates if an amino acid is an imino amino acid."
+    },
+    "ex:classifiesAsHeterocyclicAminoAcid": {
+      "domain": "ex:AminoAcid",
+      "range": "rdfs:Class",
+      "comment": "Indicates if an amino acid is a heterocyclic amino acid."
+    },
+    "ex:classifiesAsPurelyKetogenicAminoAcid": {
+      "domain": "ex:AminoAcid",
+      "range": "rdfs:Class",
+      "comment": "Indicates if an amino acid is a purely ketogenic amino acid."
+    },
+    "ex:classifiesAsKetogenicAndGlucogenicAminoAcid": {
+      "domain": "ex:AminoAcid",
+      "range": "rdfs:Class",
+      "comment": "Indicates if an amino acid is a ketogenic and glucogenic amino acid."
+    },
+    "ex:classifiesAsPurelyGlucogenicAminoAcid": {
+      "domain": "ex:AminoAcid",
+      "range": "rdfs:Class",
+      "comment": "Indicates if an amino acid is a purely glucogenic amino acid."
+    },
+    "ex:classifiesAsNonPolarAminoAcid": {
+      "domain": "ex:AminoAcid",
+      "range": "rdfs:Class",
+      "comment": "Indicates if an amino acid is a non-polar amino acid."
+    },
+    "ex:classifiesAsPolarAminoAcidWithNoCharge": {
+      "domain": "ex:AminoAcid",
+      "range": "rdfs:Class",
+      "comment": "Indicates if an amino acid is a polar amino acid with no charge on 'R' group."
+    },
+    "ex:classifiesAsPolarAminoAcidWithPositiveCharge": {
+      "domain": "ex:AminoAcid",
+      "range": "rdfs:Class",
+      "comment": "Indicates if an amino acid is a polar amino acid with positive charge on 'R' group."
+    },
+    "ex:classifiesAsPolarAminoAcidWithNegativeCharge": {
+      "domain": "ex:AminoAcid",
+      "range": "rdfs:Class",
+      "comment": "Indicates if an amino acid is a polar amino acid with negative charge on 'R' group."
+    },
+    "ex:classifiesAsCysteine": {
+      "domain": "ex:AminoAcid",
+      "range": "rdfs:Class",
+      "comment": "Indicates if an amino acid is cysteine."
+    },
+    "ex:classifiesAsCystine": {
+      "domain": "ex:AminoAcid",
+      "range": "rdfs:Class",
+      "comment": "Indicates if an amino acid is cystine."
+    },
+    "ex:classifiesAsDiiodothyronine": {
+      "domain": "ex:Hormone",
+      "range": "rdfs:Class",
+      "comment": "Indicates if a hormone is diiodothyronine."
+    },
+    "ex:classifiesAsD-Penicillamine": {
+      "domain": "ex:Drug",
+      "range": "rdfs:Class",
+      "comment": "Indicates if a drug is D-Penicillamine."
+    },
+    "ex:classifiesAsGabapentin": {
+      "domain": "ex:Anticonvulsant",
+      "range": "rdfs:Class",
+      "comment": "Indicates if an anticonvulsant is gabapentin."
+    },
+    "ex:classifiesAsHistidine": {
+      "domain": "ex:AminoAcid",
+      "range": "rdfs:Class",
+      "comment": "Indicates if an amino acid is histidine."
+    },
+    "ex:classifiesAsN-Acetylcysteine": {
+      "domain": "ex:Drug",
+      "range": "rdfs:Class",
+      "comment": "Indicates if a drug is N-Acetylcysteine."
+    },
+    "ex:classifiesAsOrnithine": {
+      "domain": "ex:AminoAcid",
+      "range": "rdfs:Class",
+      "comment": "Indicates if an amino acid is ornithine."
+    },
+    "ex:classifiesAsProline": {
+      "domain": "ex:AminoAcid",
+      "range": "rdfs:Class",
+      "comment": "Indicates if an amino acid is proline."
+    },
+    "ex:classifiesAsTyrosine": {
+      "domain": "ex:AminoAcid",
+      "range": "rdfs:Class",
+      "comment": "Indicates if an amino acid is tyrosine."
+    }
+  },
+  "canonical_terms": {
+    "AminoAcid": "ex:AminoAcid",
+    "EssentialAminoAcid": "ex:EssentialAminoAcid",
+    "NonEssentialAminoAcid": "ex:NonEssentialAminoAcid",
+    "SemiEssentialAminoAcid": "ex:SemiEssentialAminoAcid",
+    "BranchedChainAminoAcid": "ex:BranchedChainAminoAcid",
+    "HydroxylGroupContainingAminoAcid": "ex:HydroxylGroupContainingAminoAcid",
+    "SulfurContainingAminoAcid": "ex:SulfurContainingAminoAcid",
+    "AcidicAminoAcid": "ex:AcidicAminoAcid",
+    "BasicAminoAcid": "ex:BasicAminoAcid",
+    "AromaticAminoAcid": "ex:AromaticAminoAcid",
+    "IminoAminoAcid": "ex:IminoAminoAcid",
+    "HeterocyclicAminoAcid": "ex:HeterocyclicAminoAcid",
+    "PurelyKetogenicAminoAcid": "ex:PurelyKetogenicAminoAcid",
+    "KetogenicAndGlucogenicAminoAcid": "ex:KetogenicAndGlucogenicAminoAcid",
+    "PurelyGlucogenicAminoAcid": "ex:PurelyGlucogenicAminoAcid",
+    "NonPolarAminoAcid": "ex:NonPolarAminoAcid",
+    "PolarAminoAcidWithNoCharge": "ex:PolarAminoAcidWithNoCharge",
+    "PolarAminoAcidWithPositiveCharge": "ex:PolarAminoAcidWithPositiveCharge",
+    "PolarAminoAcidWithNegativeCharge": "ex:PolarAminoAcidWithNegativeCharge",
+    "Cysteine": "ex:Cysteine",
+    "Cystine": "ex:Cystine",
+    "Diiodothyronine": "ex:Diiodothyronine",
+    "D-Penicillamine": "ex:D-Penicillamine",
+    "Gabapentin": "ex:Gabapentin",
+    "Histidine": "ex:Histidine",
+    "N-Acetylcysteine": "ex:N-Acetylcysteine",
+    "Ornithine": "ex:Ornithine",
+    "Proline": "ex:Proline",
+    "Tyrosine": "ex:Tyrosine"
+  },
+  "entities": {},
+  "relations": []
+}

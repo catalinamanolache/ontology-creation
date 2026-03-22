@@ -1,0 +1,25 @@
+{
+  "reasoning_steps": [
+    "The source text introduces new relationships that are not covered by existing properties and require additional OWL properties for proper representation."
+  ],
+  "properties": [
+    {
+      "uri": "ex:hasObjective",
+      "domain": "ex:CleanEnergyTechnologyObservatory",
+      "range": "xsd:string",
+      "comment": "Describes the overall objectives of the Clean Energy Technology Observatory."
+    },
+    {
+      "uri": "ex:coversThemesIn",
+      "domain": "ex:CETOThematicReportCategory",
+      "range": "xsd:string",
+      "comment": "Indicates which themes are covered in CETO's annual reports."
+    },
+    {
+      "uri": "ex:hasProjectLeader",
+      "domain": "ex:CETOProjectLeader",
+      "range": "xsd:string",
+      "comment": "Identifies the individual who coordinates and supports the CleanEnergyTechnologyObservatory project."
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "questions": [
+    {
+      "question": "What is the percentage share of global investment deals for the period 2018 to 2023 represented by the EU?",
+      "scope": "class"
+    },
+    {
+      "question": "Which countries show an increase in VC/PE funding from 2012-2017 to 2018-2023, and which ones had the most substantial evolution?",
+      "scope": "instance"
+    },
+    {
+      "question": "What are the top three countries for early-stage investment deals in the wind energy sector?",
+      "scope": "class"
+    },
+    {
+      "question": "Which regions or countries have a higher share of high-value inventions compared to international inventions?",
+      "scope": "property"
+    },
+    {
+      "question": "How does the number of high-value inventions change from 2020 to 2021 globally and for specific countries like China, EU, US, Japan?",
+      "scope": "instance"
+    },
+    {
+      "question": "Which companies are among the top 10 OEMs in terms of high-value patents filed during the period 2019-2021?",
+      "scope": "instance"
+    },
+    {
+      "question": "What is the share of inventions protected by EU applicants in the US and China compared to other regions?",
+      "scope": "property"
+    },
+    {
+      "question": "Which countries lead in terms of high-value patents filed during the period 2019-2021, and how do they rank globally?",
+      "scope": "instance"
+    },
+    {
+      "question": "What is the trend in the number of wind energy publications from 2010 to 2023 globally and within the EU?",
+      "scope": "class"
+    },
+    {
+      "question": "Which countries have the highest publication activity in the wind sector based on Scopus data for 2010-2023?",
+      "scope": "instance"
+    }
+  ]
+}

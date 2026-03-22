@@ -1,0 +1,20 @@
+{
+  "reasoning_steps": [
+    "The new property ex:hasCumulativePrivateRDIFundingPercentage captures the cumulative percentage of private R&D funding invested by the EU from 2010 to 2020.",
+    "The new property ex:affectsCompetitivenessBy identifies how trade barriers and supply risks hinder the competitiveness of EU companies."
+  ],
+  "properties": [
+    {
+      "uri": "ex:hasCumulativePrivateRDIFundingPercentage",
+      "domain": "ex:EUEconomicIndicator",
+      "range": "xsd:string",
+      "comment": "Describes the cumulative percentage of private R&D funding invested by the EU from 2010 to 2020."
+    },
+    {
+      "uri": "ex:affectsCompetitivenessBy",
+      "domain": "ex:MarketCompetitivenessFactor",
+      "range": "xsd:string",
+      "comment": "Describes how trade barriers and supply risks hinder the competitiveness of EU companies."
+    }
+  ]
+}
