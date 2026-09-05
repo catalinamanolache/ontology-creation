@@ -1,86 +1,94 @@
 # Enterprise Knowledge Graph Pipeline (AbA Architecture)
 
-This project implements an enterprise-grade pipeline for generating a strictly consistent Knowledge Graph (KG) and Ontology from unstructured text. It avoids the systematic failures of standard LLM extraction (like hallucinated constraints, category errors, and cycle creation) by employing an **Axiom-by-Axiom (AbA)** decomposed architecture and **Neuro-Symbolic Validation**.
+This project builds a Knowledge Graph (KG) and ontology from unstructured text using a decomposed **Axiom-by-Axiom (AbA)** pipeline and neuro-symbolic validation.
 
 ## Key Innovations
 
-- **Axiom-by-Axiom (AbA) Decomposition**: Properties and classes are never queried simultaneously. The T-Box schema is built sequentially through competency questions, classes, and then properties bound strictly to established domains/ranges.
-- **BFO Anchoring**: Uses a custom BFO 2.0 (Basic Formal Ontology) skeleton to anchor every dynamically discovered class to an upper ontology category (e.g., `bfo:MaterialEntity`, `bfo:Process`), naturally preventing category errors.
-- **Two-Way Chain-of-Thought Validation**: Eliminates hierarchical cycles and inversions by forcing the LLM to justify `subClassOf` relationships bidirectionally.
-- **Neuro-Symbolic Self-Correction**: Implements a 3-layer OWL validator (Python heuristics → RDFLib → HermiT Reasoner via Owlready2) that audits the schema and loops back to the LLM up to 3 times to self-correct logical inconsistencies.
-- **Aristotelian Definitions**: Enforces strict `"A [Class] is a [Parent] that [Differentia]"` textual definitions for high semantic value.
-- **SLURM Cluster Ready**: Native support for HPC environments (FEP / Apptainer / Job Chaining) with built-in cache resumption for massive documents.
+- **Axiom-by-Axiom decomposition**: competency questions, classes, and properties are extracted in separate steps.
+- **BFO anchoring**: each discovered class is attached to an upper ontology category.
+- **Two-way hierarchy validation**: subclass relations are checked forward and reverse.
+- **Neuro-symbolic correction loop**: Python checks, RDF checks, and OWL reasoner feedback are used to fix schema issues.
+- **Aristotelian definitions**: classes are forced into high-signal definition format.
 
-## Setup Instructions
+## Setup
 
-1.  **Activate Virtual Environment:**
-    ```bash
-    # Windows
-    .\.venv\Scripts\activate
-    
-    # Unix / WSL
-    source .venv/bin/activate
-    ```
+1. Activate your virtual environment.
+2. Create a `.env` file in the repository root.
+3. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+4. Place source documents (`.pdf` or `.txt`) in `/home/runner/work/ontology-creation/ontology-creation/data/input/`.
 
-2.  **Configure Environment Variables:**
-    Create a `.env` file in the root directory:
-    ```env
-    # Choose backend: gemini, ollama, or huggingface
-    LLM_BACKEND=ollama
-    OLLAMA_MODEL=qwen2.5:7b
-    
-    # Or Google
-    # LLM_BACKEND=gemini
-    # GOOGLE_API_KEY=your-key
-    ```
-
-3.  **Install Dependencies:**
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-4.  **Data Placement:**
-    Place your source documents (PDF or TXT) in `data/input/`. (Default: `sample.pdf`).
+Example `.env`:
+```env
+LLM_BACKEND=ollama
+OLLAMA_MODEL=qwen2.5:7b
+# or use gemini/huggingface with their API keys
+```
 
 ## Execution
 
-**Run the full architectural pipeline locally:**
+Run full pipeline:
 ```bash
-python src/main.py --input "sample.pdf" --no-cache
+python src/main.py --input "sample.pdf"
 ```
 
-**Generate only the T-Box Blueprint (Schema construction and validation):**
+Run only schema construction (blueprint):
 ```bash
 python src/main.py --blueprint-only
 ```
 
-**Cluster Execution (FEP / SLURM):**
-Using the provided `fep/launch.sh`, you can chain multiple jobs for documents that exceed cluster timeouts, or run massive parallel tests. For complete instructions, see `TUTORIAL_FEP.md`.
-```bash
-./fep/launch.sh --input "document_mare.pdf" --chain 5
-```
-
-## Analytics & Reporting
-
-The project includes custom evaluation tools to measure run-to-run drift and LLM hallucination variance across multiple executions.
-
-**Standard Evaluation:**
-Compares `data/runs/run_X` locally and generates interactive `knowledge_graph.html` representations via `pyvis`.
+Evaluate local run-to-run stability:
 ```bash
 python src/final_report.py
 ```
 
-**Cluster Evaluation (Nested SLURM Jobs):**
-Automatically recurses through complex HPC outputs (`data/fep_results/job_X/...`) to benchmark internal Job runs and inter-job stability.
-```bash
-python src/final_report_fep.py
-```
+## Technical Flow (English)
+
+### Phase 1 — Deterministic Document Processing
+- Input is loaded from PDF/TXT.
+- Text is cleaned with deterministic rules (metadata/noise removal).
+- Reference sections are trimmed when present.
+- Text is split into stable overlapping chunks.
+- Chunks are saved for reproducibility.
+
+### Phase 2 — Decomposed T-Box Construction
+- **2.1 Competency Questions**: generate ontology questions that guide extraction.
+- **2.2 Class Extraction**: extract classes only, with BFO parent and Aristotelian definition.
+- **2.4 Property Extraction**: extract properties only, constrained by already-approved classes for domain/range.
+- **2.5 Hierarchy Validation**:
+  - Python DFS cycle detection and auto-removal.
+  - LLM two-way subclass validation (forward must hold, reverse must not).
+- **2.6 OWL Validation + Self-Correction**:
+  - Layer 1: Python heuristic checks.
+  - Layer 2: RDFLib graph/serialization checks.
+  - Layer 3: owlready2/HermiT (when available).
+  - If inconsistent, correction actions are generated and applied (up to 3 rounds).
+- A frozen schema blueprint is emitted at the end of phase 2.
+
+### Phase 3 — A-Box Population
+- Each chunk is processed against the frozen schema (closed world assumption).
+- Entities and relations are validated against approved classes/properties.
+- Fuzzy deduplication merges equivalent entity IDs.
+- Accepted triples are accumulated in KG state.
+
+### Phase 4 — Export and Persistence
+- Export complete state as JSON.
+- Export ontology as Turtle (`.ttl`) with class/property constraints.
+- Archive each run under incremented `run_N` folders.
+
+### Phase 5 — Stability Reporting
+- Build graph views from saved runs.
+- Compute Jaccard similarity for classes, properties, and triples.
+- Report stable vs divergent schema evolution between runs.
 
 ## Core Components
 
-- `src/main.py`: Orchestrates the 5-phase logic (Chunking → T-Box → Blueprint Freeze → A-Box Population → Output).
-- `src/extraction.py`: Handles all LLM communication patterns, batch delta-extractions, and JSON repair.
-- `src/owl_validator.py`: The 3-layer neuro-symbolic engine validating ontology coherence.
-- `src/state_tracker.py`: Manages the strictly typed `subClassOf` state and exports standard Turtle (.ttl) graphs.
-- `src/bfo_skeleton.py`: Provides the foundational top-level BFO alignment.
-- `src/prompts.py`: Optimized multi-stage prompts using the AbA methodology.
+- `/home/runner/work/ontology-creation/ontology-creation/src/main.py` — orchestration entrypoint.
+- `/home/runner/work/ontology-creation/ontology-creation/src/extraction.py` — LLM extraction/caching/retry.
+- `/home/runner/work/ontology-creation/ontology-creation/src/state_tracker.py` — ontology and KG state handling.
+- `/home/runner/work/ontology-creation/ontology-creation/src/owl_validator.py` — layered validation.
+- `/home/runner/work/ontology-creation/ontology-creation/src/document_processor.py` — deterministic preprocessing/chunking.
+- `/home/runner/work/ontology-creation/ontology-creation/src/prompts.py` — prompt templates for each phase.
+- `/home/runner/work/ontology-creation/ontology-creation/src/schemas.py` — structured output contracts.
