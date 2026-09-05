@@ -44,7 +44,7 @@ Evaluate local run-to-run stability:
 python src/final_report.py
 ```
 
-## Technical Flow (English)
+## Technical Flow
 
 ### Phase 1 — Deterministic Document Processing
 - Input is loaded from PDF/TXT.
