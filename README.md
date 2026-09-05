@@ -85,10 +85,10 @@ python src/final_report.py
 
 ## Core Components
 
-- `/home/runner/work/ontology-creation/ontology-creation/src/main.py` — orchestration entrypoint.
-- `/home/runner/work/ontology-creation/ontology-creation/src/extraction.py` — LLM extraction/caching/retry.
-- `/home/runner/work/ontology-creation/ontology-creation/src/state_tracker.py` — ontology and KG state handling.
-- `/home/runner/work/ontology-creation/ontology-creation/src/owl_validator.py` — layered validation.
-- `/home/runner/work/ontology-creation/ontology-creation/src/document_processor.py` — deterministic preprocessing/chunking.
-- `/home/runner/work/ontology-creation/ontology-creation/src/prompts.py` — prompt templates for each phase.
-- `/home/runner/work/ontology-creation/ontology-creation/src/schemas.py` — structured output contracts.
+- `src/main.py` — orchestration entrypoint.
+- `src/extraction.py` — LLM extraction/caching/retry.
+- `src/state_tracker.py` — ontology and KG state handling.
+- `src/owl_validator.py` — layered validation.
+- `src/document_processor.py` — deterministic preprocessing/chunking.
+- `src/prompts.py` — prompt templates for each phase.
+- `src/schemas.py` — structured output contracts.
