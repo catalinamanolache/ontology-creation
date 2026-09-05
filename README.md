@@ -18,7 +18,7 @@ This project builds a Knowledge Graph (KG) and ontology from unstructured text u
    ```bash
    pip install -r requirements.txt
    ```
-4. Place source documents (`.pdf` or `.txt`) in `/home/runner/work/ontology-creation/ontology-creation/data/input/`.
+4. Place source documents (`.pdf` or `.txt`) in `data/input/`.
 
 Example `.env`:
 ```env
