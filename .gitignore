@@ -6,3 +6,11 @@ __pycache__/
 .pytest_cache/
 .env
 *.env
+
+# Generated runtime artifacts
+data/chunks/
+data/cache/
+data/output/
+data/runs/
+data/fep_results/
+*.log
